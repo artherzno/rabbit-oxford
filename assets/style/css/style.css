@@ -7,4 +7,10 @@ nav {
   color: #fff; }
 
 body {
-  background-color: #000; }
+  background-color: #000;
+  color: #fff;
+  font-family: "oswald";
+  src: url("assets/fonts/oswald.eot");
+  /* IE9 Compat Modes */
+  src: url("assets/fonts/oswald.eot?#iefix") format("embedded-opentype"), url("assets/fonts/oswald.woff2") format("woff2"), url("assets/fonts/oswald.woff") format("woff"), url("assets/fonts/oswald.ttf") format("truetype"), url("assets/fonts/oswald.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }

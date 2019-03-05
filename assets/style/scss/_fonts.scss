@@ -1,0 +1,9 @@
+@mixin fontface($fontname, $fontpath) {
+  font-family: $fontname;
+  src: url('#{$fontpath}.eot'); /* IE9 Compat Modes */
+  src: url('#{$fontpath}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('#{$fontpath}.woff2') format('woff2'), /* Super Modern Browsers */
+       url('#{$fontpath}.woff') format('woff'), /* Pretty Modern Browsers */
+       url('#{$fontpath}.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('#{$fontpath}.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
