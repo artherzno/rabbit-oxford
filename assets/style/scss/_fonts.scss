@@ -1,9 +1,30 @@
-@mixin fontface($fontname, $fontpath) {
-  font-family: $fontname;
-  src: url('#{$fontpath}.eot'); /* IE9 Compat Modes */
-  src: url('#{$fontpath}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('#{$fontpath}.woff2') format('woff2'), /* Super Modern Browsers */
-       url('#{$fontpath}.woff') format('woff'), /* Pretty Modern Browsers */
-       url('#{$fontpath}.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('#{$fontpath}.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
+// @mixin fontface($fontname, $fontpath) {
+//   font-family: $fontname;
+//   src: url('#{$fontpath}-webfont.eot'); /* IE9 Compat Modes */
+//   src: url('#{$fontpath}-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//        url('#{$fontpath}-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+//        url('#{$fontpath}-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+//        url('#{$fontpath}-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+//        url('#{$fontpath}-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+// }
+//
+//
+// .font-oswald-b {
+//   @include fontface('oswald-bold', 'assets/fonts/oswald-bold');
+// }
+//
+// .font-oswald-h {
+//   @include fontface('oswald-heavy', 'assets/fonts/oswald-heavy');
+// }
+//
+// .font-oswald-l {
+//   @include fontface('oswald-light', 'assets/fonts/oswald-light');
+// }
+//
+// .font-oswald-m {
+//   @include fontface('oswald-medium', 'assets/fonts/oswald-medium');
+// }
+//
+// .font-oswald-r {
+//   @include fontface('oswald-regular', 'assets/fonts/oswald-regular');
+// }

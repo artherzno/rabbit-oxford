@@ -1,16 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700");
 nav {
   width: 100%;
   height: 60px;
   position: fixed;
   top: 0;
   left: 0;
-  color: #fff; }
+  right: 0;
+  margin: auto;
+  color: #fff;
+  font-size: 14px; }
+  nav a {
+    font-weight: bold; }
+    nav a.active {
+      color: #f7d0cb; }
 
 body {
   background-color: #000;
   color: #fff;
-  font-family: "oswald";
-  src: url("assets/fonts/oswald.eot");
-  /* IE9 Compat Modes */
-  src: url("assets/fonts/oswald.eot?#iefix") format("embedded-opentype"), url("assets/fonts/oswald.woff2") format("woff2"), url("assets/fonts/oswald.woff") format("woff"), url("assets/fonts/oswald.ttf") format("truetype"), url("assets/fonts/oswald.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  font: 24px/20px arial; }
+
+a {
+  color: #fff; }
+
+.container {
+  max-width: 1400px; }
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  background: url("/assets/images/home/oxf_bg_intro.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center; }

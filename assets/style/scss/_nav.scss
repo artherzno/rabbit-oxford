@@ -4,5 +4,16 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  margin: auto;
   color: $white;
+  font-size: 14px;
+
+  a {
+    font-weight: bold;
+
+    &.active {
+      color: $pink;
+    }
+  }
 }
