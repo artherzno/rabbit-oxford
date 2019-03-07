@@ -1,0 +1,23 @@
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin transform-style($property) {
+  -webkit-transform-style: $property;
+  -ms-transform-style: $property;
+  transform-style: $property;
+}
+
+@mixin transform-origin($property) {
+  -webkit-transform-origin: $property;
+  -ms-transform-origin: $property;
+  transform-origin: $property;
+}
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -ms-transition: $property;
+  transition: $property;
+}

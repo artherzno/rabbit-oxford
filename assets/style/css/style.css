@@ -3,16 +3,57 @@ nav {
   width: 100%;
   height: 60px;
   position: fixed;
-  top: 0;
+  top: 88px;
   left: 0;
   right: 0;
   margin: auto;
   color: #fff;
-  font-size: 14px; }
-  nav a {
-    font-weight: bold; }
-    nav a.active {
+  font-size: 14px;
+  z-index: 10; }
+  nav li.nav-item a.nav-link {
+    margin: 0 15px 15px;
+    padding: 0;
+    font-weight: bold;
+    position: relative; }
+    nav li.nav-item a.nav-link.dropdown-toggle {
+      margin-right: 30px; }
+    nav li.nav-item a.nav-link.active {
       color: #f7d0cb; }
+      nav li.nav-item a.nav-link.active hr {
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1); }
+    nav li.nav-item a.nav-link:hover, nav li.nav-item a.nav-link:focus, nav li.nav-item a.nav-link:active {
+      color: #f7d0cb; }
+      nav li.nav-item a.nav-link:hover hr, nav li.nav-item a.nav-link:focus hr, nav li.nav-item a.nav-link:active hr {
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0 50%;
+        -ms-transform-origin: 0 50%;
+        transform-origin: 0 50%; }
+    nav li.nav-item a.nav-link:after {
+      position: absolute;
+      right: -15px;
+      top: 20%; }
+  nav li.nav-item:last-child a.nav-link {
+    margin-right: 0; }
+  nav hr {
+    border-top: 3px solid #f7d0cb;
+    margin: 15px 0;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
 
 body {
   background-color: #000;
@@ -22,12 +63,67 @@ body {
 a {
   color: #fff; }
 
-.container {
-  max-width: 1400px; }
-
 #intro {
   width: 100%;
   height: 100vh;
   background: url("../../images/home/oxf_bg_intro.jpg") no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+  #intro .container {
+    position: relative;
+    height: 100%; }
+    #intro .container .logo {
+      width: 100%;
+      height: 120px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      margin: auto;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      #intro .container .logo .content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%; }
+      #intro .container .logo .brain {
+        position: absolute;
+        right: 70px;
+        top: -216%;
+        width: 30%;
+        pointer-events: none;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d; }
+    #intro .container .scroll-down {
+      width: 92px;
+      height: 60px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center; }
+      #intro .container .scroll-down p {
+        font-size: 12px;
+        margin-bottom: 15px;
+        line-height: 0.8; }
+
+/* Responsive */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px; }
+  #intro .logo .brain {
+    right: 110px;
+    top: -230%;
+    width: auto; } }

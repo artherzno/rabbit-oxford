@@ -35,19 +35,31 @@ $(document).ready(function(){
         .addTo(controller); // assign the scene to the controller
   });
 
-  // hover logo animate
-  // var options = {
-  //   effectWeight: 1.5,
-  //   outerBuffer: 1.30,
-  //   elementDepth: 100,
-  //   smoothingMultiplier: 1.5,
-  //   directions: [ 1, 1, -1, 1, 1, 1, 1, 1 ]
-  //     };
-  // $('.logo').logosDistort();
-  // var logo = $(".logo");
-  // logo.on("mousemove",function(e) {
-  //   var ax = -($(window).innerWidth()/2- e.pageX)/20;
-  //   var ay = ($(window).innerHeight()/2- e.pageY)/10;
-  //   logo.attr("style", "transform: rotateY("+ax+"deg); -webkit-transform: rotateY("+ax+"deg);-moz-transform: rotateY("+ax+"deg)");
-  // });
+  var brain = $(".brain"),
+      intro = $("#intro"),
+      elementX = 0,
+      elementY = 0,
+      elementW = 0,
+      elementH = 0,
+      mouseX = 0,
+      mouseY = 0;
+  intro.mousemove(function(e) {
+    var position = brain.offset(),
+    obj = brain;
+    elementX = position.left;
+    elementY = position.top;
+
+    elementW = obj.width();
+    elementH = obj.height();
+
+    var halfW = elementW/2;
+    var halfH = elementH/2;
+
+    mouseX = (e.pageX - elementX - halfW)/halfW;
+    mouseY = (e.pageY - elementY - halfH)/halfH;
+    mouseX = Math.round(mouseX * 100)/200;
+    mouseY = Math.round(mouseY * 100)/200;
+
+    brain.css("transform", "rotateX("+mouseY*-10+"deg) rotateY("+mouseX*10+"deg)");
+  });
 });

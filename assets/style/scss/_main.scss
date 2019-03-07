@@ -8,14 +8,82 @@ a {
   color: $white;
 }
 
-.container {
-  max-width: 1400px;
-}
-
 #intro {
   width: 100%;
   height: 100vh;
   background: url('../../images/home/oxf_bg_intro.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
+  @include transform-style(preserve-3d);
+
+  .container {
+    position: relative;
+    height: 100%;
+
+    .logo {
+      width: 100%;
+      height: 120px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      margin: auto;
+      text-align: center;
+      @include transform(translateY(-50%));
+
+      .content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+      }
+
+      .brain {
+        position: absolute;
+        right: 70px;
+        top: -216%;
+        width: 30%;
+        pointer-events: none;
+        @include transform(translateZ(0));
+        @include transform-style(preserve-3d);
+      }
+    }
+
+    .scroll-down {
+      width: 92px;
+      height: 60px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+
+      p {
+        font-size: 12px;
+        margin-bottom: 15px;
+        line-height: 0.8;
+      }
+    }
+  }
+
+}
+
+/* Responsive */
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1400px;
+  }
+
+  #intro {
+    .logo {
+
+      .brain {
+        right: 110px;
+        top: -230%;
+        width: auto;
+      }
+    }
+  }
 }
