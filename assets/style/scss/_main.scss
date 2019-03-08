@@ -41,9 +41,9 @@ a {
 
       .brain {
         position: absolute;
-        right: 70px;
-        top: -216%;
-        width: 30%;
+        right: 110px;
+        top: -230%;
+        width: auto;
         pointer-events: none;
         @include transform(translateZ(0));
         @include transform-style(preserve-3d);
@@ -71,19 +71,41 @@ a {
 }
 
 /* Responsive */
-@media (min-width: 1400px) {
-  .container {
-      max-width: 1400px;
-  }
+@media (min-width: 992px) {
 
+}
+
+@media (min-width: 1200px) {
   #intro {
-    .logo {
 
-      .brain {
-        right: 110px;
-        top: -230%;
-        width: auto;
+    .container {
+
+      .logo {
+
+        .brain {
+          right: 74px;
+          top: -200%;
+          width: 28%;
+        }
       }
     }
+  }
+}
+
+@media (min-width: 1400px) {
+  #intro {
+
+    .container {
+        max-width: 1400px;
+
+        .logo {
+
+          .brain {
+            right: 110px;
+            top: -216%;
+            width: auto;
+          }
+        }
+      }
   }
 }

@@ -95,9 +95,9 @@ a {
         width: 100%; }
       #intro .container .logo .brain {
         position: absolute;
-        right: 70px;
-        top: -216%;
-        width: 30%;
+        right: 110px;
+        top: -230%;
+        width: auto;
         pointer-events: none;
         -webkit-transform: translateZ(0);
         -ms-transform: translateZ(0);
@@ -120,10 +120,16 @@ a {
         line-height: 0.8; }
 
 /* Responsive */
+@media (min-width: 1200px) {
+  #intro .container .logo .brain {
+    right: 74px;
+    top: -200%;
+    width: 28%; } }
+
 @media (min-width: 1400px) {
-  .container {
+  #intro .container {
     max-width: 1400px; }
-  #intro .logo .brain {
-    right: 110px;
-    top: -230%;
-    width: auto; } }
+    #intro .container .logo .brain {
+      right: 110px;
+      top: -216%;
+      width: auto; } }
