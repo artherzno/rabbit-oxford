@@ -1,14 +1,25 @@
 nav {
-  width: 100%;
-  height: 60px;
-  position: fixed;
-  top: 88px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  color: $white;
-  font-size: 14px;
-  z-index: 10;
+
+  &.navbar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 88px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: $white;
+    font-size: 14px;
+    z-index: 10;
+
+    .navbar-nav {
+      margin-top: 30px;
+    }
+  }
+
+  .logo {
+    opacity: 0;
+  }
 
   li.nav-item {
 
@@ -59,5 +70,15 @@ nav {
     @include transform(scaleX(0));
     @include transform-origin(100% 50%);
     @include transition(transform 0.3s ease-in-out);
+  }
+
+  &.active {
+    background-color: $blue;
+    top: 0;
+    height: 140px;
+
+    .logo {
+      opacity: 1;
+    }
   }
 }

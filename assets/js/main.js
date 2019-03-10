@@ -22,10 +22,11 @@ $(document).ready(function(){
 
     mouseX = (e.pageX - elementX - halfW)/halfW;
     mouseY = (e.pageY - elementY - halfH)/halfH;
-    mouseX = Math.round(mouseX * 100)/200;
+    mouseX = Math.round(mouseX * 100)/300;
     mouseY = Math.round(mouseY * 100)/200;
 
-    brain.css("transform", "rotateX("+mouseY*-10+"deg) rotateY("+mouseX*10+"deg)");
+    // brain.css("transform", "rotateX("+mouseY*-10+"deg) rotateY("+mouseX*10+"deg)");
+    brain.css("transform", "rotateY("+mouseX*10+"deg)");
   });
 
   // Config Modal

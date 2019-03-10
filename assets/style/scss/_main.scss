@@ -338,7 +338,7 @@ h3 {
     &:last-child {
       margin-top: 100px;
 
-      button {
+      button, a {
         margin: 0 auto;
       }
     }
@@ -460,7 +460,131 @@ h3 {
 
 /* Blog page ******************************************************************/
 #blog-page {
-  
+  margin-top: 140px;
+
+  .content {
+    padding: 100px 0;
+  }
+
+  h1 {
+    color: $blue;
+    margin-bottom: 85px;
+  }
+
+  .row {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-top: 100px;
+
+      button, a {
+        margin: 0 auto;
+      }
+    }
+
+    nav {
+      position: static;
+      width: 100%;
+
+      .page-item {
+
+        .page-link {
+          font: 600 20px/1 oswald, arial;
+          border: none;
+          color: $gray;
+
+          &.arrow {
+            font: 400 30px/0.5 oswald, arial;
+          }
+        }
+
+        &.active, &:hover {
+
+          .page-link {
+            color: $black;
+            text-decoration: underline;
+            background-color: transparent;
+          }
+        }
+
+        &.disabled {
+
+          &:hover {
+
+            .page-link {
+              text-decoration: none;
+            }
+          }
+
+          .page-link {
+            color: $gray-medium;
+          }
+        }
+      }
+    }
+  }
+
+  .figure {
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.3);
+
+    img {
+      width: 100%;
+    }
+
+    .figcaption {
+      padding: 35px;
+      overflow: hidden;
+
+      h3 {
+        color: $black;
+        margin-bottom: 30px;
+      }
+
+      p {
+        color: $black;
+        font: 18px/1 arial;
+        margin-bottom: 30px;
+
+        &.date {
+          color: $gray;
+          margin-bottom: 0;
+        }
+      }
+
+      a {
+        color: $black;
+        font: 600 18px/1 oswald, arial;
+      }
+    }
+
+    &:hover {
+      .figcaption {
+        background-color: $gray-soft;
+      }
+    }
+  }
+}
+
+/* Breadcrumb *****************************************************************/
+$breadcrumb-divider: quote(">");
+.breadcrumb {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 80px;
+
+  .breadcrumb-item {
+    font: 400 24px/1 oswald, arial;
+
+    a {
+      color: $gray;
+      font: 400 24px/1 oswald, arial;
+    }
+
+    &.active {
+      color: $blue;
+    }
+  }
 }
 
 /* Modal **********************************************************************/
@@ -560,6 +684,10 @@ h3 {
 }
 
 @media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+
   #intro {
 
     .container {
@@ -568,8 +696,8 @@ h3 {
         .logo {
 
           .brain {
-            right: 50px;
-            top: -230%;
+            right: 110px;
+            top: -220%;
             width: auto;
           }
         }

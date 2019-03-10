@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700");
-nav {
+nav.navbar {
   width: 100%;
   height: 60px;
   position: fixed;
@@ -10,50 +10,65 @@ nav {
   color: #fff;
   font-size: 14px;
   z-index: 10; }
-  nav li.nav-item a.nav-link {
-    margin: 0 15px 15px;
-    padding: 0;
-    font-weight: bold;
-    position: relative; }
-    nav li.nav-item a.nav-link.dropdown-toggle {
-      margin-right: 30px; }
-    nav li.nav-item a.nav-link.active {
-      color: #f7d0cb; }
-      nav li.nav-item a.nav-link.active hr {
-        -webkit-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        transform: scaleX(1); }
-    nav li.nav-item a.nav-link:hover, nav li.nav-item a.nav-link:focus, nav li.nav-item a.nav-link:active {
-      color: #f7d0cb; }
-      nav li.nav-item a.nav-link:hover hr, nav li.nav-item a.nav-link:focus hr, nav li.nav-item a.nav-link:active hr {
-        -webkit-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        transform: scaleX(1);
-        -webkit-transform-origin: 0 50%;
-        -ms-transform-origin: 0 50%;
-        transform-origin: 0 50%; }
-    nav li.nav-item a.nav-link:after {
-      position: absolute;
-      right: -15px;
-      top: 20%; }
-  nav li.nav-item:last-child a.nav-link {
-    margin-right: 0; }
-  nav hr {
-    border-top: 3px solid #f7d0cb;
-    margin: 15px 0;
-    -webkit-transform: scaleX(0);
-    -ms-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 100% 50%;
-    -ms-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-    -webkit-transition: transform 0.3s ease-in-out;
-    -ms-transition: transform 0.3s ease-in-out;
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+  nav.navbar .navbar-nav {
+    margin-top: 30px; }
+
+nav .logo {
+  opacity: 0; }
+
+nav li.nav-item a.nav-link {
+  margin: 0 15px 15px;
+  padding: 0;
+  font-weight: bold;
+  position: relative; }
+  nav li.nav-item a.nav-link.dropdown-toggle {
+    margin-right: 30px; }
+  nav li.nav-item a.nav-link.active {
+    color: #f7d0cb; }
+    nav li.nav-item a.nav-link.active hr {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1); }
+  nav li.nav-item a.nav-link:hover, nav li.nav-item a.nav-link:focus, nav li.nav-item a.nav-link:active {
+    color: #f7d0cb; }
+    nav li.nav-item a.nav-link:hover hr, nav li.nav-item a.nav-link:focus hr, nav li.nav-item a.nav-link:active hr {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+      transform-origin: 0 50%; }
+  nav li.nav-item a.nav-link:after {
+    position: absolute;
+    right: -15px;
+    top: 20%; }
+
+nav li.nav-item:last-child a.nav-link {
+  margin-right: 0; }
+
+nav hr {
+  border-top: 3px solid #f7d0cb;
+  margin: 15px 0;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+
+nav.active {
+  background-color: #1f3052;
+  top: 0;
+  height: 140px; }
+  nav.active .logo {
+    opacity: 1; }
 
 body {
   color: #fff;
@@ -352,7 +367,7 @@ h3 {
 
 #blog .row:last-child {
   margin-top: 100px; }
-  #blog .row:last-child button {
+  #blog .row:last-child button, #blog .row:last-child a {
     margin: 0 auto; }
 
 #blog .figure {
@@ -412,6 +427,74 @@ h3 {
     margin: 70px 0 0; }
 
 /* Blog page ******************************************************************/
+#blog-page {
+  margin-top: 140px; }
+  #blog-page .content {
+    padding: 100px 0; }
+  #blog-page h1 {
+    color: #1f3052;
+    margin-bottom: 85px; }
+  #blog-page .row {
+    margin-bottom: 40px; }
+    #blog-page .row:last-child {
+      margin-top: 100px; }
+      #blog-page .row:last-child button, #blog-page .row:last-child a {
+        margin: 0 auto; }
+    #blog-page .row nav {
+      position: static;
+      width: 100%; }
+      #blog-page .row nav .page-item .page-link {
+        font: 600 20px/1 oswald, arial;
+        border: none;
+        color: #999; }
+        #blog-page .row nav .page-item .page-link.arrow {
+          font: 400 30px/0.5 oswald, arial; }
+      #blog-page .row nav .page-item.active .page-link, #blog-page .row nav .page-item:hover .page-link {
+        color: #000;
+        text-decoration: underline;
+        background-color: transparent; }
+      #blog-page .row nav .page-item.disabled:hover .page-link {
+        text-decoration: none; }
+      #blog-page .row nav .page-item.disabled .page-link {
+        color: #cfcfcf; }
+  #blog-page .figure {
+    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3); }
+    #blog-page .figure img {
+      width: 100%; }
+    #blog-page .figure .figcaption {
+      padding: 35px;
+      overflow: hidden; }
+      #blog-page .figure .figcaption h3 {
+        color: #000;
+        margin-bottom: 30px; }
+      #blog-page .figure .figcaption p {
+        color: #000;
+        font: 18px/1 arial;
+        margin-bottom: 30px; }
+        #blog-page .figure .figcaption p.date {
+          color: #999;
+          margin-bottom: 0; }
+      #blog-page .figure .figcaption a {
+        color: #000;
+        font: 600 18px/1 oswald, arial; }
+    #blog-page .figure:hover .figcaption {
+      background-color: #f4f4f4; }
+
+/* Breadcrumb *****************************************************************/
+.breadcrumb {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 80px; }
+  .breadcrumb .breadcrumb-item {
+    font: 400 24px/1 oswald, arial; }
+    .breadcrumb .breadcrumb-item a {
+      color: #999;
+      font: 400 24px/1 oswald, arial; }
+    .breadcrumb .breadcrumb-item.active {
+      color: #1f3052; }
+
 /* Modal **********************************************************************/
 .modal-backdrop {
   display: none; }
@@ -477,7 +560,9 @@ h3 {
     width: 28%; } }
 
 @media (min-width: 1400px) {
+  .container {
+    max-width: 1400px; }
   #intro .container .logo .brain {
-    right: 50px;
-    top: -230%;
+    right: 110px;
+    top: -220%;
     width: auto; } }
