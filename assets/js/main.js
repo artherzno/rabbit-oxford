@@ -1,40 +1,5 @@
 $(document).ready(function(){
-  console.log('test');
-  // init controller
-  var controller = new ScrollMagic.Controller();
-
-  // pin the intro
-  var pinIntroScene = new ScrollMagic.Scene({
-    triggerElement: '#section-1',
-    triggerHook: 0
-  })
-  .setPin('#section-1')
-  .addTo(controller);
-
-
-  // loop each section
-  $('.section').each(function(){
-    // create a scene
-    var section = new ScrollMagic.Scene({
-            triggerElement: this.children[0],
-            duration: '600',
-            triggerHook: 0.5,
-            // reverse: false
-        })
-        .setClassToggle(this.children[0], 'fade-in')
-        // .setClassToggle(this, 'on')
-        .addIndicators({
-          name: 'fade scene',
-          colorTrigger: 'red',
-          colorStart: 'yellow',
-          colorEnd: 'orange'
-        })
-        // .on('start', function(event) {
-        //   alert('Hi');
-        // })
-        .addTo(controller); // assign the scene to the controller
-  });
-
+  // Animate Brain
   var brain = $(".brain"),
       intro = $("#intro"),
       elementX = 0,
@@ -62,4 +27,22 @@ $(document).ready(function(){
 
     brain.css("transform", "rotateX("+mouseY*-10+"deg) rotateY("+mouseX*10+"deg)");
   });
+
+  // Config Modal
+  var converageBtn = $('#converage .button-none');
+  converageBtn.on('click', function(event) {
+    $('.close').trigger('click');
+    $('body').removeAttr('style');
+    $('#converage button').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  // Remove modal
+  $('#converage').on('mouseleave', function(){
+    console.log(555);
+    $('.close').trigger('click');
+    $('#converage button').removeClass('active');
+  });
+
+
 });

@@ -21,3 +21,36 @@
   -ms-transition: $property;
   transition: $property;
 }
+
+@mixin button($color) {
+  border: 2px solid $color;
+  color: $color;
+  padding: 15px 30px;
+  background-color: transparent;
+  font: 600 18px/1 oswald, arial;
+  min-width: 160px;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    color: $black;
+    border: 2px solid $pink;
+  }
+
+  &:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $pink;
+    transform-origin:left;
+    @include transition(width 0.2s ease);
+    z-index: -1;
+  }
+
+  &:hover:before {
+    width: 100%;
+  }
+}
