@@ -39,10 +39,16 @@ $(document).ready(function(){
   });
 
   // Remove modal
-  $('#converage').on('mouseleave', function(){
-    console.log(555);
+  var closeModal = function() {
     $('.close').trigger('click');
     $('#converage button').removeClass('active');
+  }
+  $('#converage').on('mouseleave', function(){
+    closeModal();
+  });
+
+  $( window ).scroll(function() {
+    // closeModal();
   });
 
 

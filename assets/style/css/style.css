@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Parisienne");
 nav.navbar {
   width: 100%;
   height: 60px;
@@ -64,15 +65,16 @@ nav hr {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
 
 nav.active {
-  background-color: #1f3052;
   top: 0;
   height: 140px; }
   nav.active .logo {
     opacity: 1; }
+  nav.active._bg {
+    background-color: #1f3052; }
 
 body {
   color: #fff;
-  font: 24px/1 arial; }
+  font: 24px/1.2 arial; }
 
 *:focus {
   outline: none !important; }
@@ -87,10 +89,10 @@ h1 {
   font: 700 60px/1 oswald, arial; }
 
 h2 {
-  font: 600 40px/1 oswald, arial; }
+  font: 600 40px/1.2 oswald, arial; }
 
 h3 {
-  font: 600 24px/1 oswald, arial; }
+  font: 600 24px/1.2 oswald, arial; }
 
 .button-white {
   border: 2px solid #fff;
@@ -100,7 +102,9 @@ h3 {
   font: 600 18px/1 oswald, arial;
   min-width: 160px;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  display: inline-block;
+  text-align: center; }
   .button-white:hover {
     color: #000;
     border: 2px solid #f7d0cb; }
@@ -131,7 +135,9 @@ h3 {
   font: 600 18px/1 oswald, arial;
   min-width: 160px;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  display: inline-block;
+  text-align: center; }
   .button-blue:hover {
     color: #000;
     border: 2px solid #f7d0cb; }
@@ -383,7 +389,7 @@ h3 {
       margin-bottom: 30px; }
     #blog .figure .figcaption p {
       color: #000;
-      font: 18px/1 arial; }
+      font: 18px/1.2 arial; }
       #blog .figure .figcaption p.date {
         color: #999; }
     #blog .figure .figcaption a {
@@ -397,10 +403,10 @@ h3 {
   #getintouch .content {
     padding: 100px 0; }
     #getintouch .content h2 {
-      font: 600 60px/1 oswald, arial;
+      font: 600 60px/1.2 oswald, arial;
       margin-bottom: 30px; }
     #getintouch .content p {
-      font: 400 24px/1 oswald, arial;
+      font: 400 24px/1.2 oswald, arial;
       margin-bottom: 50px; }
 
 #footer {
@@ -426,6 +432,105 @@ h3 {
     background-color: #636f86;
     margin: 70px 0 0; }
 
+/* Team page ******************************************************************/
+#team-page .banner {
+  width: 100%;
+  height: 890px;
+  background: url("../../images/team/oxf_team_banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  #team-page .banner .container {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #team-page .banner .container h1 {
+      font: 700 140px/1.2 oswald, arial;
+      color: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      bottom: 110px;
+      right: 0;
+      margin: auto; }
+
+#team-page .content {
+  padding: 100px 0; }
+
+#team-page h1 {
+  color: #1f3052;
+  margin-bottom: 85px; }
+
+#team-page .row {
+  margin-bottom: 40px; }
+
+#team-page .figure {
+  display: block; }
+  #team-page .figure img {
+    width: 100%; }
+  #team-page .figure .figcaption {
+    padding: 30px 15px;
+    overflow: hidden; }
+    #team-page .figure .figcaption .fullname {
+      color: #1f3052;
+      font: 600 22px/1.2 oswald, arial;
+      margin-bottom: 10px; }
+    #team-page .figure .figcaption .position {
+      color: #000;
+      font: 400 18px/1.2 oswald, arial;
+      margin-bottom: 30px; }
+      #team-page .figure .figcaption .position.date {
+        color: #999;
+        margin-bottom: 0; }
+    #team-page .figure .figcaption a {
+      color: #000;
+      font: 600 18px/1 oswald, arial; }
+  #team-page .figure:hover {
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); }
+    #team-page .figure:hover .figcaption {
+      background-color: #f4f4f4; }
+
+/* Team detail page ***********************************************************/
+#teamdetail-page {
+  background-color: #000; }
+  #teamdetail-page .breadcrumb .breadcrumb-item {
+    color: #666; }
+    #teamdetail-page .breadcrumb .breadcrumb-item.active {
+      color: #fff; }
+  #teamdetail-page .banner {
+    width: 100%;
+    background: url("../../images/teamdetail/oxf_bg_teamdetail1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center bottom; }
+    #teamdetail-page .banner img {
+      width: 50%;
+      display: inline-block;
+      margin-top: 4%; }
+    #teamdetail-page .banner .wording {
+      font: 40px/1.2 Parisienne, oswald, arial;
+      color: #f7d0cb;
+      display: inline-block;
+      vertical-align: bottom;
+      margin-bottom: 140px;
+      text-align: center;
+      width: 48%; }
+  #teamdetail-page .detail {
+    width: 100%;
+    background: url("../../images/teamdetail/oxf_bg_teamdetail2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center top; }
+    #teamdetail-page .detail .fullname {
+      font-size: 50px;
+      margin-bottom: 20px; }
+    #teamdetail-page .detail .position {
+      font: 400 30px/1.2 oswald, arial;
+      color: #cfcfcf;
+      margin-bottom: 90px; }
+    #teamdetail-page .detail p {
+      line-height: 1.2;
+      color: #999;
+      margin-bottom: 40px; }
+    #teamdetail-page .detail .row a {
+      margin: 90px auto 100px; }
+
 /* Blog page ******************************************************************/
 #blog-page {
   margin-top: 140px; }
@@ -444,7 +549,7 @@ h3 {
       position: static;
       width: 100%; }
       #blog-page .row nav .page-item .page-link {
-        font: 600 20px/1 oswald, arial;
+        font: 600 20px/1.2 oswald, arial;
         border: none;
         color: #999; }
         #blog-page .row nav .page-item .page-link.arrow {
@@ -470,7 +575,7 @@ h3 {
         margin-bottom: 30px; }
       #blog-page .figure .figcaption p {
         color: #000;
-        font: 18px/1 arial;
+        font: 18px/1.2 arial;
         margin-bottom: 30px; }
         #blog-page .figure .figcaption p.date {
           color: #999;
@@ -488,12 +593,16 @@ h3 {
   padding: 0;
   margin-bottom: 80px; }
   .breadcrumb .breadcrumb-item {
-    font: 400 24px/1 oswald, arial; }
+    font: 400 24px/1.2 oswald, arial; }
     .breadcrumb .breadcrumb-item a {
       color: #999;
       font: 400 24px/1 oswald, arial; }
     .breadcrumb .breadcrumb-item.active {
       color: #1f3052; }
+    .breadcrumb .breadcrumb-item:before {
+      content: ">"; }
+    .breadcrumb .breadcrumb-item:first-child:before {
+      content: ''; }
 
 /* Modal **********************************************************************/
 .modal-backdrop {

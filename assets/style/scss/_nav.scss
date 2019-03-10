@@ -73,12 +73,15 @@ nav {
   }
 
   &.active {
-    background-color: $blue;
     top: 0;
     height: 140px;
 
     .logo {
       opacity: 1;
+    }
+
+    &._bg {
+      background-color: $blue;
     }
   }
 }

@@ -1,7 +1,7 @@
 body {
   // background-color: $black;
   color: $white;
-  font: 24px/1 arial;
+  font: 24px/1.2 arial;
 }
 
 * {
@@ -25,11 +25,11 @@ h1 {
 }
 
 h2 {
-  font: 600 40px/1 oswald, arial;
+  font: 600 40px/1.2 oswald, arial;
 }
 
 h3 {
-  font: 600 24px/1 oswald, arial;
+  font: 600 24px/1.2 oswald, arial;
 }
 
 .button-white {
@@ -362,7 +362,7 @@ h3 {
 
       p {
         color: $black;
-        font: 18px/1 arial;
+        font: 18px/1.2 arial;
 
         &.date {
           color: $gray;
@@ -390,12 +390,12 @@ h3 {
     padding: 100px 0;
 
     h2 {
-      font: 600 60px/1 oswald, arial;;
+      font: 600 60px/1.2 oswald, arial;;
       margin-bottom: 30px;
     }
 
     p {
-      font: 400 24px/1 oswald, arial;
+      font: 400 24px/1.2 oswald, arial;
       margin-bottom: 50px;
     }
   }
@@ -458,6 +458,160 @@ h3 {
   }
 }
 
+/* Team page ******************************************************************/
+#team-page {
+  .banner {
+    width: 100%;
+    height: 890px;
+    background: url('../../images/team/oxf_team_banner.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      h1 {
+        font: 700 140px/1.2 oswald, arial;
+        color: rgba(255,255,255,0.1);
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+        margin: auto;
+      }
+    }
+
+
+  }
+
+  .content {
+    padding: 100px 0;
+  }
+
+  h1 {
+    color: $blue;
+    margin-bottom: 85px;
+  }
+
+  .row {
+    margin-bottom: 40px;
+  }
+
+  .figure {
+    display: block;
+
+    img {
+      width: 100%;
+    }
+
+    .figcaption {
+      padding: 30px 15px;
+      overflow: hidden;
+
+      .fullname {
+        color: $blue;
+        font: 600 22px/1.2 oswald, arial;
+        margin-bottom: 10px;
+      }
+
+      .position {
+        color: $black;
+        font: 400 18px/1.2 oswald, arial;
+        margin-bottom: 30px;
+
+        &.date {
+          color: $gray;
+          margin-bottom: 0;
+        }
+      }
+
+      a {
+        color: $black;
+        font: 600 18px/1 oswald, arial;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+
+      .figcaption {
+        background-color: $gray-soft;
+      }
+    }
+  }
+}
+
+/* Team detail page ***********************************************************/
+#teamdetail-page {
+  background-color: $black;
+
+  .breadcrumb {
+
+    .breadcrumb-item {
+      color: #666;
+
+      &.active {
+        color: $white;
+      }
+    }
+  }
+
+  .banner {
+    width: 100%;
+    background: url('../../images/teamdetail/oxf_bg_teamdetail1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    img {
+      width: 50%;
+      display: inline-block;
+      margin-top: 4%;
+    }
+
+    .wording {
+      font: 40px/1.2 Parisienne, oswald, arial;
+      color: $pink;
+      display: inline-block;
+      vertical-align: bottom;
+      margin-bottom: 140px;
+      text-align: center;
+      width: 48%;
+    }
+  }
+
+  .detail {
+    width: 100%;
+    background: url('../../images/teamdetail/oxf_bg_teamdetail2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+    .fullname {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .position {
+      font: 400 30px/1.2 oswald, arial;
+      color: $gray-medium;
+      margin-bottom: 90px;
+    }
+
+    p {
+      line-height: 1.2;
+      color: $gray;
+      margin-bottom: 40px;
+    }
+
+    .row {
+
+      a {
+        margin: 90px auto 100px;
+      }
+    }
+  }
+}
+
 /* Blog page ******************************************************************/
 #blog-page {
   margin-top: 140px;
@@ -489,7 +643,7 @@ h3 {
       .page-item {
 
         .page-link {
-          font: 600 20px/1 oswald, arial;
+          font: 600 20px/1.2 oswald, arial;
           border: none;
           color: $gray;
 
@@ -542,7 +696,7 @@ h3 {
 
       p {
         color: $black;
-        font: 18px/1 arial;
+        font: 18px/1.2 arial;
         margin-bottom: 30px;
 
         &.date {
@@ -574,7 +728,7 @@ $breadcrumb-divider: quote(">");
   margin-bottom: 80px;
 
   .breadcrumb-item {
-    font: 400 24px/1 oswald, arial;
+    font: 400 24px/1.2 oswald, arial;
 
     a {
       color: $gray;
@@ -583,6 +737,17 @@ $breadcrumb-divider: quote(">");
 
     &.active {
       color: $blue;
+    }
+
+    &:before {
+      content: $breadcrumb-divider;
+    }
+
+    &:first-child {
+
+      &:before {
+        content: '';
+      }
     }
   }
 }
