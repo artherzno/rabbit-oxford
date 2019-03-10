@@ -532,58 +532,129 @@ h3 {
       margin: 90px auto 100px; }
 
 /* Blog page ******************************************************************/
-#blog-page {
+#blogs-page {
   margin-top: 140px; }
-  #blog-page .content {
+  #blogs-page .content {
     padding: 100px 0; }
-  #blog-page h1 {
+  #blogs-page h1 {
     color: #1f3052;
     margin-bottom: 85px; }
-  #blog-page .row {
+  #blogs-page .row {
     margin-bottom: 40px; }
-    #blog-page .row:last-child {
+    #blogs-page .row:last-child {
       margin-top: 100px; }
-      #blog-page .row:last-child button, #blog-page .row:last-child a {
+      #blogs-page .row:last-child button, #blogs-page .row:last-child a {
         margin: 0 auto; }
-    #blog-page .row nav {
+    #blogs-page .row nav {
       position: static;
       width: 100%; }
-      #blog-page .row nav .page-item .page-link {
+      #blogs-page .row nav .page-item .page-link {
         font: 600 20px/1.2 oswald, arial;
         border: none;
         color: #999; }
-        #blog-page .row nav .page-item .page-link.arrow {
+        #blogs-page .row nav .page-item .page-link.arrow {
           font: 400 30px/0.5 oswald, arial; }
-      #blog-page .row nav .page-item.active .page-link, #blog-page .row nav .page-item:hover .page-link {
+      #blogs-page .row nav .page-item.active .page-link, #blogs-page .row nav .page-item:hover .page-link {
         color: #000;
         text-decoration: underline;
         background-color: transparent; }
-      #blog-page .row nav .page-item.disabled:hover .page-link {
+      #blogs-page .row nav .page-item.disabled:hover .page-link {
         text-decoration: none; }
-      #blog-page .row nav .page-item.disabled .page-link {
+      #blogs-page .row nav .page-item.disabled .page-link {
         color: #cfcfcf; }
-  #blog-page .figure {
+  #blogs-page .figure {
     -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3); }
-    #blog-page .figure img {
+    #blogs-page .figure img {
       width: 100%; }
-    #blog-page .figure .figcaption {
+    #blogs-page .figure .figcaption {
       padding: 35px;
       overflow: hidden; }
-      #blog-page .figure .figcaption h3 {
+      #blogs-page .figure .figcaption h3 {
         color: #000;
         margin-bottom: 30px; }
-      #blog-page .figure .figcaption p {
+      #blogs-page .figure .figcaption p {
         color: #000;
         font: 18px/1.2 arial;
         margin-bottom: 30px; }
-        #blog-page .figure .figcaption p.date {
+        #blogs-page .figure .figcaption p.date {
           color: #999;
           margin-bottom: 0; }
-      #blog-page .figure .figcaption a {
+      #blogs-page .figure .figcaption a {
         color: #000;
         font: 600 18px/1 oswald, arial; }
-    #blog-page .figure:hover .figcaption {
+        #blogs-page .figure .figcaption a:hover {
+          color: #f7d0cb; }
+    #blogs-page .figure:hover .figcaption {
+      background-color: #f4f4f4; }
+
+/* Blog page ******************************************************************/
+#blogsdetail-page {
+  margin-top: 140px; }
+  #blogsdetail-page .content {
+    padding: 100px 0; }
+    #blogsdetail-page .content .detail h2 {
+      color: #000;
+      margin: 80px 0 25px; }
+    #blogsdetail-page .content .detail .date {
+      font: 22px/1.2 arial;
+      color: #999;
+      margin-bottom: 35px; }
+    #blogsdetail-page .content .detail .head-img {
+      margin-bottom: 80px; }
+    #blogsdetail-page .content .detail .text-detail {
+      color: #000;
+      padding: 0 14%;
+      margin-bottom: 135px; }
+      #blogsdetail-page .content .detail .text-detail img {
+        width: 100%;
+        margin-bottom: 60px; }
+  #blogsdetail-page .related h2 {
+    color: #000;
+    margin: 60px 0 65px; }
+  #blogsdetail-page .row {
+    margin-bottom: 40px; }
+    #blogsdetail-page .row nav {
+      position: static;
+      width: 100%; }
+      #blogsdetail-page .row nav .page-item .page-link {
+        font: 600 20px/1.2 oswald, arial;
+        border: none;
+        color: #999; }
+        #blogsdetail-page .row nav .page-item .page-link.arrow {
+          font: 400 30px/0.5 oswald, arial; }
+      #blogsdetail-page .row nav .page-item.active .page-link, #blogsdetail-page .row nav .page-item:hover .page-link {
+        color: #000;
+        text-decoration: underline;
+        background-color: transparent; }
+      #blogsdetail-page .row nav .page-item.disabled:hover .page-link {
+        text-decoration: none; }
+      #blogsdetail-page .row nav .page-item.disabled .page-link {
+        color: #cfcfcf; }
+  #blogsdetail-page .figure {
+    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3); }
+    #blogsdetail-page .figure img {
+      width: 100%; }
+    #blogsdetail-page .figure .figcaption {
+      padding: 35px;
+      overflow: hidden; }
+      #blogsdetail-page .figure .figcaption h3 {
+        color: #000;
+        margin-bottom: 30px; }
+      #blogsdetail-page .figure .figcaption p {
+        color: #000;
+        font: 18px/1.2 arial;
+        margin-bottom: 30px; }
+        #blogsdetail-page .figure .figcaption p.date {
+          color: #999;
+          margin-bottom: 0; }
+      #blogsdetail-page .figure .figcaption a {
+        color: #000;
+        font: 600 18px/1 oswald, arial; }
+        #blogsdetail-page .figure .figcaption a:hover {
+          color: #f7d0cb; }
+    #blogsdetail-page .figure:hover .figcaption {
       background-color: #f4f4f4; }
 
 /* Breadcrumb *****************************************************************/
