@@ -49,6 +49,12 @@ $(document).ready(function(){
 
   $( window ).scroll(function() {
     // closeModal();
+     var scroll = $(window).scrollTop();
+     if(scroll>=10) {
+      $('#nav-main').addClass('active');
+    } else {
+      $('#nav-main').removeClass('active');
+    }
   });
 
 
