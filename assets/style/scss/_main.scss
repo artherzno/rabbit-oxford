@@ -55,6 +55,15 @@ h3 {
   background-size: cover;
   background-position: center center;
   @include transform-style(preserve-3d);
+  opacity: 1;
+  @include transition(all 0.5s linear);
+  position: absolute;
+  z-index: 1;
+
+  &.fade-out {
+    opacity: 0;
+    @include transform(translateY(-100%));
+  }
 
   .container {
     position: relative;
@@ -70,6 +79,12 @@ h3 {
       margin: auto;
       text-align: center;
       @include transform(translateY(-50%));
+      opacity: 0;
+      @include transition(all 0.5s ease-in-out);
+
+      &.fade-in {
+        opacity: 1;
+      }
 
       .content {
         position: absolute;
@@ -110,10 +125,18 @@ h3 {
 
 }
 
+@keyframes animateCloud {
+  0%   {background-position: 0 0;}
+  100% {background-position: 100% 0;}
+}
+
 #banner {
   width: 100%;
   height: 100%;
+  // height: 100vh;
   position: relative;
+  background-color: #090909;
+  overflow: hidden;
 
   .obj {
     position: absolute;
@@ -125,10 +148,28 @@ h3 {
 
     &.city {
       background-image: url('../../images/home/oxf_bg_banner_city.jpg');
+      @include transition(all 1s ease-out 0.2s);
+      @include transform(translateY(200%));
+      opacity: 0;
+
+      &.fade-in {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
     }
 
     &.cloud {
       background-image: url('../../images/home/oxf_bg_banner_cloud.png');
+      background-repeat: repeat-x;
+      @include transition(all 1s ease-out);
+      @include transform(translateY(200%));
+      opacity: 0;
+
+      &.fade-in {
+        opacity: 1;
+        @include transform(translateY(0));
+        @include animation(animateCloud, 20s, linear, 0.1s, infinite, alternate);
+      }
     }
     /*img {
       width: 100%;
@@ -140,41 +181,115 @@ h3 {
     height: 100%;
 
     .content {
+      min-height: 880px;
       text-align: center;
-      padding: 20% 0;
+      padding: 26% 0 14%;
+      @include transition(all 0.5s ease 0.3s);
+      opacity: 0;
+      @include transform(translateY(200%));
 
-      p {
-        font: 500 45px/1.2 oswald, arial;
-        text-transform: uppercase;
-        text-shadow: 0 4px 18px rgba(0, 0, 0, 1);
-        color: $gray-medium;
+      &.fade-in {
+        @include transform(translateY(0));
+        opacity: 1;
+      }
 
-        span {
-          font: 700 90px/1.2 oswald, arial;
+      .box {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        cursor: pointer;
+        @include transition(transform 1s);
+        @include transform-style(preserve-3d);
+
+        .box-content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+
+          &._first {
+          }
+
+          &._second {
+            transform: rotateY( 180deg );
+          }
+
+          p {
+            font: 500 45px/1.2 oswald, arial;
+            text-transform: uppercase;
+            text-shadow: 0 4px 18px rgba(0, 0, 0, 1);
+            color: $gray-medium;
+
+            span {
+              font: 700 90px/1.2 oswald, arial;
+            }
+          }
+        }
+
+        &:hover {
+          transform: rotateY(180deg);
         }
       }
 
-      &._second {
-        display: none;
-      }
+
     }
   }
 }
 
 #whatwedo {
+  // background-color: $white;
 
   .row {
-    margin: 100px 0 168px;
+    margin: 0 0 15%;
   }
 
-  h1 {
-    color: $black;
-    margin-bottom: 60px;
-  }
+  .figcaption {
+    position: relative;
 
-  p {
-    color: $black;
-    margin-bottom: 55px;
+    .content {
+
+      h1 {
+        color: $black;
+        margin-bottom: 60px;
+        @include transition(all 0.8s ease-out 0.5s);
+        opacity: 0;
+        @include transform(translateY(200%));
+      }
+
+      p {
+        color: $black;
+        margin-bottom: 55px;
+        @include transition(all 0.8s ease-out 0.7s);
+        opacity: 0;
+        @include transform(translateY(200%));
+      }
+
+      .button-blue {
+        @include transition(all 0.8s ease-out 0.9s);
+        opacity: 0;
+        @include transform(translateY(200%));
+      }
+
+      &.fade-in {
+        h1 {
+          opacity: 1;
+          @include transform(translateY(0));
+        }
+
+        p {
+          opacity: 1;
+          @include transform(translateY(0));
+        }
+
+        .button-blue {
+          opacity: 1;
+          @include transform(translateY(0));
+        }
+
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
   }
 
   .figure {
@@ -186,85 +301,175 @@ h3 {
       right: 0;
       top: 25%;
       width: 150%;
+      @include transition(all 0.8s ease-out);
+      opacity: 0;
+      @include transform(translateY(200%));
+
+      &.fade-in {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
     }
   }
 }
 
 #practics {
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  position: relative;
+
+  .obj {
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-color: $white;
-    position: relative;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    .obj {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-position: center 90%;
-      background-repeat: no-repeat;
-      background-size: cover;
+    &.city {
+      background-image: url('../../images/home/oxf_bg_practice.jpg');
+      @include transition(all 1s ease-out);
+      @include transform(translateY(100%));
+      opacity: 0;
 
-      &.city {
-        background-image: url('../../images/home/oxf_bg_practice_city.jpg');
+      &.fade-in {
+        opacity: 1;
+        @include transform(translateY(0));
       }
-
-      &.cloud {
-        background-image: url('../../images/home/oxf_bg_practice_cloud.png');
-      }
-      /*img {
-        width: 100%;
-      }*/
     }
 
-    .container {
-      position: relative;
-      height: 100%;
-      padding: 350px 0 0;
+    &.cloud {
+      background-image: url('../../images/home/oxf_bg_practice_cloud.png');
+      @include animation(animateCloud, 20s, linear, 0.1s, infinite, alternate);
+    }
+    /*img {
+      width: 100%;
+    }*/
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+    padding: 350px 0 40px;
+
+    .content {
+      width: 80%;
+      margin-left: 20%;
 
       h1 {
         color: $black;
         margin-bottom: 60px;
+        @include transition(all 1s ease-out);
+        opacity: 0;
+        @include transform(translateY(100%));
       }
 
       p {
         color: $black;
         margin-bottom: 55px;
+        @include transition(all 1s ease-out 0.2s);
+        opacity: 0;
+        @include transform(translateY(100%));
+      }
+
+      &.fade-in {
+
+        h1 {
+          color: $black;
+          margin-bottom: 60px;
+          @include transform(translateY(0));
+          opacity: 1;
+        }
+
+        p {
+          color: $black;
+          margin-bottom: 55px;
+          @include transform(translateY(0));
+          opacity: 1;
+        }
+
       }
     }
+  }
 }
 
 #hospitality {
+  background-color: $white;
 
   .row {
 
   }
 
-  h1 {
-    color: $blue;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+  .figcaption {
 
-    &.number {
-      font-size: 100px;
-      margin-bottom: 20px;
-      color: $pink;
+    h1 {
+      color: $blue;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      @include transition(all 0.5s ease-out 0.3s);
+      opacity: 0;
+      @include transform(translateY(100%));
+
+      &.number {
+        font-size: 100px;
+        margin-bottom: 20px;
+        color: $pink;
+      }
+    }
+
+    p {
+      color: $black;
+      margin-bottom: 55px;
+      @include transition(all 0.5s ease-out 0.6s);
+      opacity: 0;
+      @include transform(translateY(100%));
+    }
+
+    .button-blue {
+      @include transition(all 0.5s ease-out 0.9s);
+      opacity: 0;
+      @include transform(translateY(100%));
+    }
+
+    &.fade-in {
+      h1 {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+
+      p {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+
+      .button-blue {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
     }
   }
 
-  p {
-    color: $black;
-    margin-bottom: 55px;
-  }
+
 
   .figure {
     position: relative;
-    z-index: -1;
+    // z-index: -1;
 
     img {
       position: absolute;
       left: 0;
       top: 0;
       width: 150%;
+
+      @include transition(all 1s ease-out);
+      opacity: 0;
+      @include transform(translateY(100%));
+
+      &.fade-in {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
     }
   }
 
@@ -272,6 +477,9 @@ h3 {
     display: block;
     margin-top: 90px;
     margin-bottom: 85px;
+    @include transition(all 0.5s ease-out 0.2s);
+    opacity: 0;
+    @include transform(translateY(100%));
 
     a {
       color: $black;
@@ -284,13 +492,25 @@ h3 {
         color: $pink;
       }
     }
+
+    &.fade-in {
+      opacity: 1;
+      @include transform(translateY(0));
+    }
   }
 }
 
 #converage {
-  background: $black url('../../images/home/oxf_bg_converage.jpg') no-repeat;
-  background-position: center center;
+  background: url('../../images/home/oxf_bg_converage.jpg') no-repeat;
+  background-position: center 200px;
   background-size: cover;
+  opacity: 0;
+  @include transition(all 0.8s ease-out);
+
+  &.fade-in {
+    opacity: 1;
+    background-position: center 0;
+  }
 
   .content {
     padding: 120px 0;
@@ -298,6 +518,9 @@ h3 {
     h1 {
       margin-bottom: 70px;
       float: right;
+      @include transition(all 0.5s ease-out);
+      opacity: 0;
+      @include transform(translateY(100%));
     }
 
     h2, button {
@@ -319,6 +542,38 @@ h3 {
       width: 24px;
       margin: 0 0 20px auto;
     }
+
+    .asia, .africa, .europe, .latin {
+      opacity: 0;
+      @include transform(translateY(100%));
+    }
+
+    .asia {
+      @include transition(all 0.5s ease-out 0.2s);
+    }
+
+    .africa {
+      @include transition(all 0.5s ease-out 0.4s);
+    }
+
+    .europe {
+      @include transition(all 0.5s ease-out 0.6s);
+    }
+
+    .latin {
+      @include transition(all 0.5s ease-out 0.8s);
+    }
+
+    &.fade-in {
+      h1 {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+      .asia, .africa, .europe, .latin {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
   }
 }
 
@@ -331,6 +586,9 @@ h3 {
   h1 {
     color: $black;
     margin-bottom: 85px;
+    opacity: 0;
+    @include transform(translateY(100%));
+    @include transition(all 0.5s ease-out);
   }
 
   .row {
@@ -346,6 +604,23 @@ h3 {
 
   .figure {
     box-shadow: 0px 4px 14px rgba(0,0,0,0.3);
+
+    &._1, &._2, &._3 {
+      opacity: 0;
+      @include transform(translateY(100%));
+    }
+
+    &._1 {
+      @include transition(all 0.8s ease-out 0.2s);
+    }
+
+    &._2 {
+      @include transition(all 0.8s ease-out 0.4s);
+    }
+
+    &._3 {
+      @include transition(all 0.8s ease-out 0.6s);
+    }
 
     img {
       width: 100%;
@@ -381,10 +656,39 @@ h3 {
       }
     }
   }
+
+  .button-blue {
+    opacity: 0;
+    @include transform(translateY(100%));
+    @include transition(all 0.8s ease-out 1.2s);
+  }
+
+  &.fade-in {
+
+    h1 {
+      opacity: 1;
+      @include transform(translateY(0));
+    }
+
+    .figure {
+
+      &._1, &._2, &._3 {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+
+    .button-blue {
+      opacity: 1;
+      @include transform(translateY(0));
+    }
+  }
 }
 
 #getintouch {
   background-color: $black;
+  opacity: 0;
+  @include transition(all 0.8s ease-out);
 
   .content {
     padding: 100px 0;
@@ -392,11 +696,33 @@ h3 {
     h2 {
       font: 600 60px/1.2 oswald, arial;;
       margin-bottom: 30px;
+      opacity: 0;
+      @include transform(translateY(100%));
+      @include transition(all 0.8s ease-out 0.2s);
     }
 
     p {
       font: 400 24px/1.2 oswald, arial;
       margin-bottom: 50px;
+      opacity: 0;
+      @include transform(translateY(100%));
+      @include transition(all 0.8s ease-out 0.4s);
+    }
+
+    .button-white {
+      opacity: 0;
+      @include transform(translateY(100%));
+      @include transition(all 0.8s ease-out 0.6s);
+    }
+  }
+
+  &.fade-in {
+    opacity: 1;
+    background-position: center 0;
+
+    h2, p, .button-white {
+      opacity: 1;
+      @include transform(translateY(0));
     }
   }
 }
