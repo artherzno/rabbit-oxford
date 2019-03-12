@@ -204,7 +204,7 @@ $(document).ready(function(){
     triggerElement: '#getintouch',
     triggerHook: 0.70,
   })
-  .addIndicators({ name: 'getintouch'})
+  // .addIndicators({ name: 'getintouch'})
   .setClassToggle('#getintouch', 'fade-in')
   .addTo(controller);
 
