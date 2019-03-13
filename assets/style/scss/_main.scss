@@ -125,11 +125,6 @@ h3 {
 
 }
 
-@keyframes animateCloud {
-  0%   {background-position: 0 0;}
-  100% {background-position: 100% 0;}
-}
-
 #banner {
   width: 100%;
   height: 100%;
@@ -148,8 +143,8 @@ h3 {
 
     &.city {
       background-image: url('../../images/home/oxf_bg_banner_city.jpg');
-      @include transition(all 1s ease-out 0.2s);
-      @include transform(translateY(200%));
+      @include transition(all 1s ease-out 0.4s);
+      @include transform(translateY(100%));
       opacity: 0;
 
       &.fade-in {
@@ -162,7 +157,7 @@ h3 {
       background-image: url('../../images/home/oxf_bg_banner_cloud.png');
       background-repeat: repeat-x;
       @include transition(all 1s ease-out);
-      @include transform(translateY(200%));
+      @include transform(translateY(100%));
       opacity: 0;
 
       &.fade-in {
@@ -330,7 +325,7 @@ h3 {
     &.city {
       background-image: url('../../images/home/oxf_bg_practice.jpg');
       @include transition(all 1s ease-out);
-      @include transform(translateY(100%));
+      @include transform(translateY(20%));
       opacity: 0;
 
       &.fade-in {
@@ -362,7 +357,7 @@ h3 {
         margin-bottom: 60px;
         @include transition(all 1s ease-out);
         opacity: 0;
-        @include transform(translateY(100%));
+        @include transform(translateY(20%));
       }
 
       p {
@@ -370,7 +365,7 @@ h3 {
         margin-bottom: 55px;
         @include transition(all 1s ease-out 0.2s);
         opacity: 0;
-        @include transform(translateY(100%));
+        @include transform(translateY(20%));
       }
 
       &.fade-in {
@@ -409,7 +404,7 @@ h3 {
       text-transform: uppercase;
       @include transition(all 0.5s ease-out 0.3s);
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(20%));
 
       &.number {
         font-size: 100px;
@@ -423,13 +418,13 @@ h3 {
       margin-bottom: 55px;
       @include transition(all 0.5s ease-out 0.6s);
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(20%));
     }
 
     .button-blue {
       @include transition(all 0.5s ease-out 0.9s);
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(20%));
     }
 
     &.fade-in {
@@ -464,7 +459,7 @@ h3 {
 
       @include transition(all 1s ease-out);
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(20%));
 
       &.fade-in {
         opacity: 1;
@@ -479,7 +474,7 @@ h3 {
     margin-bottom: 85px;
     @include transition(all 0.5s ease-out 0.2s);
     opacity: 0;
-    @include transform(translateY(100%));
+    @include transform(translateY(20%));
 
     a {
       color: $black;
@@ -520,7 +515,7 @@ h3 {
       float: right;
       @include transition(all 0.5s ease-out);
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(20%));
     }
 
     h2, button {
@@ -545,7 +540,7 @@ h3 {
 
     .asia, .africa, .europe, .latin {
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(20%));
     }
 
     .asia {
@@ -587,7 +582,7 @@ h3 {
     color: $black;
     margin-bottom: 85px;
     opacity: 0;
-    @include transform(translateY(100%));
+    @include transform(translateY(20%));
     @include transition(all 0.5s ease-out);
   }
 
@@ -607,7 +602,7 @@ h3 {
 
     &._1, &._2, &._3 {
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(20%));
     }
 
     &._1 {
@@ -659,7 +654,7 @@ h3 {
 
   .button-blue {
     opacity: 0;
-    @include transform(translateY(100%));
+    @include transform(translateY(20%));
     @include transition(all 0.8s ease-out 1.2s);
   }
 
@@ -697,7 +692,7 @@ h3 {
       font: 600 60px/1.2 oswald, arial;;
       margin-bottom: 30px;
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(50%));
       @include transition(all 0.8s ease-out 0.2s);
     }
 
@@ -705,20 +700,19 @@ h3 {
       font: 400 24px/1.2 oswald, arial;
       margin-bottom: 50px;
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(50%));
       @include transition(all 0.8s ease-out 0.4s);
     }
 
     .button-white {
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(20%));
       @include transition(all 0.8s ease-out 0.6s);
     }
   }
 
   &.fade-in {
     opacity: 1;
-    background-position: center 0;
 
     h2, p, .button-white {
       opacity: 1;
@@ -805,19 +799,46 @@ h3 {
         bottom: 110px;
         right: 0;
         margin: auto;
+        opacity: 0;
+        @include transform(translateY(50%));
+        @include transition(all 0.8s ease-out);
       }
     }
 
+    &.fade-in {
+
+      h1 {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
 
   }
 
   .content {
     padding: 100px 0;
+
+    &.fade-in {
+
+      .breadcrumb, h1 {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+  }
+
+  .breadcrumb {
+    opacity: 0;
+    @include transform(translateY(50%));
+    @include transition(all 0.8s ease-out);
   }
 
   h1 {
     color: $blue;
     margin-bottom: 85px;
+    opacity: 0;
+    @include transform(translateY(50%));
+    @include transition(all 0.8s ease-out 0.2s);
   }
 
   .row {
@@ -865,6 +886,34 @@ h3 {
         background-color: $gray-soft;
       }
     }
+
+    &.column {
+      opacity: 0;
+      @include transform(translateY(20%));
+
+      &.col_1 {
+        @include transition(all 0.8s ease-out 0.2s);
+      }
+      &.col_2 {
+        @include transition(all 0.8s ease-out 0.4s);
+      }
+      &.col_3 {
+        @include transition(all 0.8s ease-out 0.6s);
+      }
+      &.col_4 {
+        @include transition(all 0.8s ease-out 0.8s);
+      }
+    }
+    &.fade-in {
+
+      &.column {
+
+        &.col_1, &.col_2, &.col_3, &.col_4 {
+          @include transform(translateY(0));
+            opacity: 1;
+        }
+      }
+    }
   }
 }
 
@@ -873,6 +922,9 @@ h3 {
   background-color: $black;
 
   .breadcrumb {
+    opacity: 0;
+    @include transform(translateY(50%));
+    @include transition(all 0.8s ease-out);
 
     .breadcrumb-item {
       color: #666;
@@ -893,6 +945,9 @@ h3 {
       width: 50%;
       display: inline-block;
       margin-top: 4%;
+      opacity: 0;
+      // @include transform(translateY(50%));
+      @include transition(all 0.8s ease-out);
     }
 
     .wording {
@@ -903,6 +958,17 @@ h3 {
       margin-bottom: 140px;
       text-align: center;
       width: 48%;
+      opacity: 0;
+      @include transform(translateY(50%));
+      @include transition(all 0.8s ease-out 0.2s);
+    }
+
+    &.fade-in {
+
+      img, .wording {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
     }
   }
 
@@ -912,21 +978,74 @@ h3 {
     background-size: cover;
     background-position: center top;
 
+    &.fade-in {
+
+      .breadcrumb, .fullname, .position {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+
     .fullname {
       font-size: 50px;
       margin-bottom: 20px;
+      opacity: 0;
+      @include transform(translateY(50%));
+      @include transition(all 0.8s ease-out);
     }
 
     .position {
       font: 400 30px/1.2 oswald, arial;
       color: $gray-medium;
       margin-bottom: 90px;
+      opacity: 0;
+      @include transform(translateY(50%));
+      @include transition(all 0.8s ease-out);
     }
 
     p {
       line-height: 1.2;
       color: $gray;
       margin-bottom: 40px;
+
+      &.paragraph {
+        opacity: 0;
+        @include transform(translateY(50%));
+
+        &._1 {
+          @include transition(all 0.8s ease-out);
+        }
+
+        &._2 {
+          @include transition(all 0.8s ease-out 0.2s);
+        }
+
+        &._3 { 
+          @include transition(all 0.8s ease-out 0.4s);
+        }
+
+        &._4 {
+          @include transition(all 0.8s ease-out 0.6s);
+        }
+
+        &._5 {
+          @include transition(all 0.8s ease-out 0.8s);
+        }
+
+        &._6 {
+          @include transition(all 0.8s ease-out 1s);
+        }
+
+        &._7 {
+          @include transition(all 0.8s ease-out 1.2s);
+        }
+
+        &.fade-in {
+          opacity: 1;
+          @include transform(translateY(0));
+        }
+
+      }
     }
 
     .row {
@@ -942,6 +1061,14 @@ h3 {
 #blogs-page {
   margin-top: 140px;
 
+  &.fade-in {
+
+    .breadcrumb, h1 {
+      opacity: 1;
+      @include transform(translateY(0));
+    }
+  }
+
   .content {
     padding: 100px 0;
   }
@@ -949,6 +1076,12 @@ h3 {
   h1 {
     color: $blue;
     margin-bottom: 85px;
+  }
+
+  .breadcrumb, h1 {
+    opacity: 0;
+    @include transform(translateY(20%));
+    @include transition(all 0.8s ease-out);
   }
 
   .row {
@@ -1041,36 +1174,107 @@ h3 {
       }
     }
 
+    &.column {
+      opacity: 0;
+      @include transform(translateY(20%));
+
+      &.col_1 {
+        @include transition(all 0.8s ease-out 0.2s);
+      }
+      &.col_2 {
+        @include transition(all 0.8s ease-out 0.4s);
+      }
+      &.col_3 {
+        @include transition(all 0.8s ease-out 0.6s);
+      }
+    }
+
     &:hover {
       .figcaption {
         background-color: $gray-soft;
       }
     }
+
+    &.fade-in {
+
+      &.column {
+
+        &.col_1, &.col_2, &.col_3 {
+          @include transform(translateY(0));
+            opacity: 1;
+        }
+      }
+    }
   }
 }
 
-/* Blog page ******************************************************************/
+/* Blog Detail page ***********************************************************/
 #blogsdetail-page {
   margin-top: 140px;
+
+  &.fade-in {
+
+    .content {
+      .breadcrumb {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+
+      .header {
+
+        h2, .date {
+          opacity: 1;
+          @include transform(translateY(0));
+        }
+      }
+    }
+  }
 
   .content {
     padding: 100px 0;
 
-    .detail {
+    .breadcrumb {
+      opacity: 0;
+      @include transform(translateY(50%));
+      @include transition(all 0.8s ease-out);
+    }
+
+    .header {
 
       h2 {
         color: $black;
         margin: 80px 0 25px;
+        opacity: 0;
+        @include transform(translateY(50%));
+        @include transition(all 0.8s ease-out);
       }
 
       .date {
         font: 22px/1.2 arial;
         color: $gray;
         margin-bottom: 35px;
+        opacity: 0;
+        @include transform(translateY(50%));
+        @include transition(all 0.8s ease-out 0.2s);
+      }
+    }
+
+    .detail {
+
+      &.fade-in {
+
+        .head-img {
+          opacity: 1;
+          @include transform(translateY(0));
+        }
       }
 
       .head-img {
         margin-bottom: 80px;
+        width: 100%;
+        opacity: 0;
+        @include transform(translateY(20%));
+        @include transition(all 0.8s ease-out 0.4s);
       }
 
       .text-detail {
@@ -1088,101 +1292,146 @@ h3 {
 
   .related {
 
-
     h2 {
       color: $black;
       margin: 60px 0 65px;
+      opacity: 0;
+      @include transform(translateY(50%));
+      @include transition(all 0.8s ease-out);
     }
-  }
 
-  .row {
-    margin-bottom: 40px;
+    .row {
+      margin-bottom: 40px;
 
-    nav {
-      position: static;
-      width: 100%;
+      nav {
+        position: static;
+        width: 100%;
 
-      .page-item {
-
-        .page-link {
-          font: 600 20px/1.2 oswald, arial;
-          border: none;
-          color: $gray;
-
-          &.arrow {
-            font: 400 30px/0.5 oswald, arial;
-          }
-        }
-
-        &.active, &:hover {
+        .page-item {
 
           .page-link {
-            color: $black;
-            text-decoration: underline;
-            background-color: transparent;
-          }
-        }
+            font: 600 20px/1.2 oswald, arial;
+            border: none;
+            color: $gray;
 
-        &.disabled {
-
-          &:hover {
-
-            .page-link {
-              text-decoration: none;
+            &.arrow {
+              font: 400 30px/0.5 oswald, arial;
             }
           }
 
-          .page-link {
-            color: $gray-medium;
+          &.active, &:hover {
+
+            .page-link {
+              color: $black;
+              text-decoration: underline;
+              background-color: transparent;
+            }
+          }
+
+          &.disabled {
+
+            &:hover {
+
+              .page-link {
+                text-decoration: none;
+              }
+            }
+
+            .page-link {
+              color: $gray-medium;
+            }
+          }
+        }
+      }
+    }
+
+    .figure {
+      box-shadow: 0px 4px 14px rgba(0,0,0,0.3);
+
+      img {
+        width: 100%;
+      }
+
+      .figcaption {
+        padding: 35px;
+        overflow: hidden;
+
+        h3 {
+          color: $black;
+          margin-bottom: 30px;
+        }
+
+        p {
+          color: $black;
+          font: 18px/1.2 arial;
+          margin-bottom: 30px;
+
+          &.date {
+            color: $gray;
+            margin-bottom: 0;
+          }
+        }
+
+        a {
+          color: $black;
+          font: 600 18px/1 oswald, arial;
+
+          &:hover {
+            color: $pink;
+          }
+        }
+      }
+
+      &:hover {
+        .figcaption {
+          background-color: $gray-soft;
+        }
+      }
+
+      &.column {
+        opacity: 0;
+        @include transform(translateY(50%));
+
+        &.col_1 {
+          @include transition(all 0.8s ease-out);
+        }
+
+        &.col_2 {
+          @include transition(all 0.8s ease-out 0.2s);
+        }
+
+        &.col_3 {
+          @include transition(all 0.8s ease-out 0.4s);
+        }
+
+      }
+    }
+
+    &.fade-in {
+
+      h2 {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+
+      .figure {
+
+        &.column {
+
+          &.col_1, &.col_2, &.col_3 {
+            opacity: 1;
+            @include transform(translateY(0));
           }
         }
       }
     }
   }
+}
 
-  .figure {
-    box-shadow: 0px 4px 14px rgba(0,0,0,0.3);
-
-    img {
-      width: 100%;
-    }
-
-    .figcaption {
-      padding: 35px;
-      overflow: hidden;
-
-      h3 {
-        color: $black;
-        margin-bottom: 30px;
-      }
-
-      p {
-        color: $black;
-        font: 18px/1.2 arial;
-        margin-bottom: 30px;
-
-        &.date {
-          color: $gray;
-          margin-bottom: 0;
-        }
-      }
-
-      a {
-        color: $black;
-        font: 600 18px/1 oswald, arial;
-
-        &:hover {
-          color: $pink;
-        }
-      }
-    }
-
-    &:hover {
-      .figcaption {
-        background-color: $gray-soft;
-      }
-    }
-  }
+/* Keyframes ******************************************************************/
+@keyframes animateCloud {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
 }
 
 /* Breadcrumb *****************************************************************/
@@ -1277,7 +1526,6 @@ $breadcrumb-divider: quote(">");
       }
     }
 }
-
 
 /* Responsive *****************************************************************/
 @media (min-width: 992px) {

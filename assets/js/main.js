@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
   // Animate Brain /////////////////////////////////////////////////////////////
   var brain = $(".brain"),
       intro = $("#intro"),
@@ -29,6 +31,8 @@ $(document).ready(function(){
     brain.css("transform", "rotateY("+mouseX*10+"deg)");
   });
 
+
+
   // Config Modal //////////////////////////////////////////////////////////////
   var converageBtn = $('#converage .button-none');
   converageBtn.on('click', function(event) {
@@ -38,6 +42,8 @@ $(document).ready(function(){
     $(this).addClass('active');
   });
 
+
+
   // Remove modal //////////////////////////////////////////////////////////////
   var closeModal = function() {
     $('.close').trigger('click');
@@ -46,6 +52,8 @@ $(document).ready(function(){
   $('#converage').on('mouseleave', function(){
     closeModal();
   });
+
+
 
  // Window scroll //////////////////////////////////////////////////////////////
   $( window ).scroll(function() {
@@ -67,10 +75,12 @@ $(document).ready(function(){
     }
   });
 
+
+
   // ScrollMagic ///////////////////////////////////////////////////////////////
   var controller = new ScrollMagic.Controller();
 
-  // Pin intro
+  // Pin intro ----------------------------------------- //
   // var pinIntro = new ScrollMagic.Scene({
   //   triggerElement: '#intro',
   //   triggerHook: 0,
@@ -79,7 +89,7 @@ $(document).ready(function(){
   // .setPin('#intro', { pushFollowers: false })
   // .addTo(controller);
 
-  // Pin banner
+  // Pin banner ----------------------------------------- //
   // var pinIntro = new ScrollMagic.Scene({
   //   triggerElement: '#banner',
   //   triggerHook: 0,
@@ -89,7 +99,7 @@ $(document).ready(function(){
   // .setPin('#banner')
   // .addTo(controller);
 
-  // Cloud banner
+  // Cloud banner ----------------------------------------- //
   // var pinIntro = new ScrollMagic.Scene({
   //   triggerElement: '#banner',
   //   triggerHook: 0.9,
@@ -99,7 +109,7 @@ $(document).ready(function(){
   // .setClassToggle('#banner .cloud', 'fade-in')
   // .addTo(controller);
 
-  // City banner
+  // City banner ----------------------------------------- //
   // var pinIntro = new ScrollMagic.Scene({
   //   triggerElement: '#banner',
   //   triggerHook: 0.9,
@@ -109,7 +119,7 @@ $(document).ready(function(){
   // .setClassToggle('#banner .city', 'fade-in')
   // .addTo(controller);
 
-  // What we do - img
+  // What we do - img ----------------------------------------- //
   var imgWhatwedo = new ScrollMagic.Scene({
     triggerElement: '#whatwedo',
     triggerHook: 0.8,
@@ -118,7 +128,7 @@ $(document).ready(function(){
   .setClassToggle('#whatwedo img', 'fade-in')
   .addTo(controller);
 
-  // What we do - content
+  // What we do - content ----------------------------------------- //
   var contentWhatwedo = new ScrollMagic.Scene({
     triggerElement: '#whatwedo',
     triggerHook: 0.75,
@@ -127,7 +137,7 @@ $(document).ready(function(){
   .setClassToggle('#whatwedo .content', 'fade-in')
   .addTo(controller);
 
-  // practics - city
+  // practics - city ----------------------------------------- //
   var practicsCity = new ScrollMagic.Scene({
     triggerElement: '#practics',
     triggerHook: 0.75,
@@ -136,16 +146,16 @@ $(document).ready(function(){
   .setClassToggle('#practics .city', 'fade-in')
   .addTo(controller);
 
-  // practics - content
+  // practics - content ----------------------------------------- //
   var practicsContent = new ScrollMagic.Scene({
     triggerElement: '#practics',
-    triggerHook: 0.5,
+    triggerHook: 0.3,
   })
   // .addIndicators({ name: 'practics content'})
   .setClassToggle('#practics .content', 'fade-in')
   .addTo(controller);
 
-  // Hospitality - img
+  // Hospitality - img ----------------------------------------- //
   var imgHospitality = new ScrollMagic.Scene({
     triggerElement: '#hospitality',
     triggerHook: 0.8,
@@ -154,7 +164,7 @@ $(document).ready(function(){
   .setClassToggle('#hospitality img', 'fade-in')
   .addTo(controller);
 
-  // Hospitality - content
+  // Hospitality - content ----------------------------------------- //
   var contentHospitality = new ScrollMagic.Scene({
     triggerElement: '#hospitality',
     triggerHook: 0.7,
@@ -163,7 +173,7 @@ $(document).ready(function(){
   .setClassToggle('#hospitality .figcaption', 'fade-in')
   .addTo(controller);
 
-  // Hospitality - nav
+  // Hospitality - nav ----------------------------------------- //
   var tabnavHospitality = new ScrollMagic.Scene({
     triggerElement: '#hospitality',
     triggerHook: 0.35,
@@ -172,7 +182,7 @@ $(document).ready(function(){
   .setClassToggle('#hospitality .tab-nav', 'fade-in')
   .addTo(controller);
 
-  // converage - bg
+  // converage - bg  ----------------------------------------- //
   var bgConverage = new ScrollMagic.Scene({
     triggerElement: '#converage',
     triggerHook: 0.85,
@@ -181,7 +191,7 @@ $(document).ready(function(){
   .setClassToggle('#converage', 'fade-in')
   .addTo(controller);
 
-  // converage - content
+  // converage - content  ----------------------------------------- //
   var contentConverage = new ScrollMagic.Scene({
     triggerElement: '#converage',
     triggerHook: 0.45,
@@ -190,7 +200,7 @@ $(document).ready(function(){
   .setClassToggle('#converage .content', 'fade-in')
   .addTo(controller);
 
-  // Blog
+  // Blog ----------------------------------------- //
   var contentBlog = new ScrollMagic.Scene({
     triggerElement: '#blog',
     triggerHook: 0.70,
@@ -199,14 +209,139 @@ $(document).ready(function(){
   .setClassToggle('#blog', 'fade-in')
   .addTo(controller);
 
-  // Get in touch
+  // Get in touch ----------------------------------------- //
   var getintouch = new ScrollMagic.Scene({
     triggerElement: '#getintouch',
-    triggerHook: 0.70,
+    triggerHook: 0.75,
   })
   // .addIndicators({ name: 'getintouch'})
   .setClassToggle('#getintouch', 'fade-in')
   .addTo(controller);
+
+  // Blogs - header ----------------------------------------- //
+  var blogsHeader = new ScrollMagic.Scene({
+    triggerElement: '#blogs-page',
+    triggerHook: 0.5,
+  })
+  // .addIndicators({ name: 'blogsHeader'})
+  .setClassToggle('#blogs-page', 'fade-in')
+  .addTo(controller);
+
+  // Blogs - row ----------------------------------------- //
+  var blogsRow1 = new ScrollMagic.Scene({
+    triggerElement: '#blogs-page .row_1',
+    triggerHook: 0.75,
+  })
+  // .addIndicators({ name: 'blogs-page items1'})
+  .setClassToggle('#blogs-page .row_1 .column', 'fade-in')
+  .addTo(controller);
+
+  var blogsRow2 = new ScrollMagic.Scene({
+    triggerElement: '#blogs-page .row_2',
+    triggerHook: 0.75,
+  })
+  // .addIndicators({ name: 'blogs-page items2'})
+  .setClassToggle('#blogs-page .row_2 .column', 'fade-in')
+  .addTo(controller);
+
+  var blogsRow3 = new ScrollMagic.Scene({
+    triggerElement: '#blogs-page .row_3',
+    triggerHook: 0.75,
+  })
+  // .addIndicators({ name: 'blogs-page items3'})
+  .setClassToggle('#blogs-page .row_3 .column', 'fade-in')
+  .addTo(controller);
+
+  // Blogs detail - header ----------------------------------------- //
+  var headerBlogdetail = new ScrollMagic.Scene({
+    triggerElement: '#blogsdetail-page',
+    triggerHook: 0.5,
+  })
+  // .addIndicators({ name: 'blogs-page items3'})
+  .setClassToggle('#blogsdetail-page', 'fade-in')
+  .addTo(controller);
+
+  // Blogs detail - content ----------------------------------------- //
+  var contentBlogdetail = new ScrollMagic.Scene({
+    triggerElement: '#blogsdetail-page .detail',
+    triggerHook: 0.7,
+  })
+  // .addIndicators({ name: 'blogsdetail-page detail'})
+  .setClassToggle('#blogsdetail-page .detail', 'fade-in')
+  .addTo(controller);
+
+  // Blogs detail - related ----------------------------------------- //
+  var relatedBlogdetail = new ScrollMagic.Scene({
+    triggerElement: '#blogsdetail-page .related',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'blogsdetail-page related'})
+  .setClassToggle('#blogsdetail-page .related', 'fade-in')
+  .addTo(controller);
+
+  // Team - banner ----------------------------------------- //
+  var bannerTeam = new ScrollMagic.Scene({
+    triggerElement: '#team-page',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'team-page'})
+  .setClassToggle('#team-page .banner', 'fade-in')
+  .addTo(controller);
+
+  // Team - header ----------------------------------------- //
+  var headerTeam = new ScrollMagic.Scene({
+    triggerElement: '#team-page .content',
+    triggerHook: 0.7,
+  })
+  // .addIndicators({ name: 'team-page'})
+  .setClassToggle('#team-page .content', 'fade-in')
+  .addTo(controller);
+
+  // Team - row ----------------------------------------- //
+  var rowTeam1 = new ScrollMagic.Scene({
+    triggerElement: '#team-page .row_1',
+    triggerHook: 0.9,
+  })
+  // .addIndicators({ name: 'team-page'})
+  .setClassToggle('#team-page .row_1 .column', 'fade-in')
+  .addTo(controller);
+
+  var rowTeam2 = new ScrollMagic.Scene({
+    triggerElement: '#team-page .row_2',
+    triggerHook: 0.9,
+  })
+  // .addIndicators({ name: 'team-page'})
+  .setClassToggle('#team-page .row_2 .column', 'fade-in')
+  .addTo(controller);
+
+  // Team detail - banner ----------------------------------------- //
+  var bannerTeamdetail = new ScrollMagic.Scene({
+    triggerElement: '#teamdetail-page',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'teamdetail-page'})
+  .setClassToggle('#teamdetail-page .banner', 'fade-in')
+  .addTo(controller);
+
+  // Team detail - content ----------------------------------------- //
+  var contentTeamdetail = new ScrollMagic.Scene({
+    triggerElement: '#teamdetail-page .detail',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'teamdetail-page'})
+  .setClassToggle('#teamdetail-page .detail', 'fade-in')
+  .addTo(controller);
+
+  // Team detail - paragrah ----------------------------------------- //
+  var paragrahTeamdetail1 = new ScrollMagic.Scene({
+    triggerElement: '#teamdetail-page .paragraph._1',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'teamdetail-page'})
+  .setClassToggle('#teamdetail-page .detail .paragraph', 'fade-in')
+  .addTo(controller);
+
+
 
   // Initial ///////////////////////////////////////////////////////////////////
   $('#intro .logo').addClass('fade-in');
