@@ -174,30 +174,30 @@ $(document).ready(function(){
   .addTo(controller);
 
   // Hospitality - nav ----------------------------------------- //
-  var tabnavHospitality = new ScrollMagic.Scene({
+  var menuHospitality = new ScrollMagic.Scene({
     triggerElement: '#hospitality',
     triggerHook: 0.35,
   })
   // .addIndicators({ name: 'hospitality tab-nav'})
-  .setClassToggle('#hospitality .tab-nav', 'fade-in')
+  .setClassToggle('#hospitality .carousel-indicators', 'fade-in')
   .addTo(controller);
 
-  // converage - bg  ----------------------------------------- //
-  var bgConverage = new ScrollMagic.Scene({
-    triggerElement: '#converage',
+  // locations - bg  ----------------------------------------- //
+  var bgLocations = new ScrollMagic.Scene({
+    triggerElement: '#locations',
     triggerHook: 0.85,
   })
-  // .addIndicators({ name: 'converage'})
-  .setClassToggle('#converage', 'fade-in')
+  // .addIndicators({ name: 'locations'})
+  .setClassToggle('#locations', 'fade-in')
   .addTo(controller);
 
-  // converage - content  ----------------------------------------- //
-  var contentConverage = new ScrollMagic.Scene({
-    triggerElement: '#converage',
+  // locations - content  ----------------------------------------- //
+  var contentLocations = new ScrollMagic.Scene({
+    triggerElement: '#locations',
     triggerHook: 0.45,
   })
-  // .addIndicators({ name: 'converage content'})
-  .setClassToggle('#converage .content', 'fade-in')
+  // .addIndicators({ name: 'locations content'})
+  .setClassToggle('#locations .content', 'fade-in')
   .addTo(controller);
 
   // Blog ----------------------------------------- //

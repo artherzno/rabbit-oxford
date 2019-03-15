@@ -437,7 +437,7 @@ h3 {
     position: absolute;
     right: 0;
     top: 25%;
-    width: 150%;
+    width: 130%;
     -webkit-transition: all 0.8s ease-out;
     -ms-transition: all 0.8s ease-out;
     -o-transition: all 0.8s ease-out;
@@ -517,9 +517,9 @@ h3 {
         -o-transition: all 1s ease-out;
         transition: all 1s ease-out;
         opacity: 0;
-        -webkit-transform: translateY(20%);
-        -ms-transform: translateY(20%);
-        transform: translateY(20%); }
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        transform: translateY(100%); }
       #practics .container .content p {
         color: #000;
         margin-bottom: 55px;
@@ -528,9 +528,9 @@ h3 {
         -o-transition: all 1s ease-out 0.2s;
         transition: all 1s ease-out 0.2s;
         opacity: 0;
-        -webkit-transform: translateY(20%);
-        -ms-transform: translateY(20%);
-        transform: translateY(20%); }
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        transform: translateY(100%); }
       #practics .container .content.fade-in h1 {
         color: #000;
         margin-bottom: 60px;
@@ -548,64 +548,66 @@ h3 {
 
 #hospitality {
   background-color: #fff; }
-  #hospitality .figcaption h1 {
-    color: #1f3052;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    -webkit-transition: all 0.5s ease-out 0.3s;
-    -ms-transition: all 0.5s ease-out 0.3s;
-    -o-transition: all 0.5s ease-out 0.3s;
-    transition: all 0.5s ease-out 0.3s;
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-    -ms-transform: translateY(20%);
-    transform: translateY(20%); }
-    #hospitality .figcaption h1.number {
-      font-size: 100px;
-      margin-bottom: 20px;
-      color: #f7d0cb; }
-  #hospitality .figcaption p {
-    color: #000;
-    margin-bottom: 55px;
-    -webkit-transition: all 0.5s ease-out 0.6s;
-    -ms-transition: all 0.5s ease-out 0.6s;
-    -o-transition: all 0.5s ease-out 0.6s;
-    transition: all 0.5s ease-out 0.6s;
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-    -ms-transform: translateY(20%);
-    transform: translateY(20%); }
-  #hospitality .figcaption .button-blue {
-    -webkit-transition: all 0.5s ease-out 0.9s;
-    -ms-transition: all 0.5s ease-out 0.9s;
-    -o-transition: all 0.5s ease-out 0.9s;
-    transition: all 0.5s ease-out 0.9s;
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-    -ms-transform: translateY(20%);
-    transform: translateY(20%); }
-  #hospitality .figcaption.fade-in h1 {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-  #hospitality .figcaption.fade-in p {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-  #hospitality .figcaption.fade-in .button-blue {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
+  #hospitality .figcaption {
+    text-align: right; }
+    #hospitality .figcaption h1 {
+      color: #1f3052;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      -webkit-transition: all 0.5s ease-out 0.3s;
+      -ms-transition: all 0.5s ease-out 0.3s;
+      -o-transition: all 0.5s ease-out 0.3s;
+      transition: all 0.5s ease-out 0.3s;
+      opacity: 0;
+      -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+      transform: translateY(20%); }
+      #hospitality .figcaption h1.number {
+        font-size: 100px;
+        margin-bottom: 20px;
+        color: #f7d0cb; }
+    #hospitality .figcaption p {
+      color: #000;
+      margin-bottom: 55px;
+      -webkit-transition: all 0.5s ease-out 0.6s;
+      -ms-transition: all 0.5s ease-out 0.6s;
+      -o-transition: all 0.5s ease-out 0.6s;
+      transition: all 0.5s ease-out 0.6s;
+      opacity: 0;
+      -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+      transform: translateY(20%); }
+    #hospitality .figcaption .button-blue {
+      -webkit-transition: all 0.5s ease-out 0.9s;
+      -ms-transition: all 0.5s ease-out 0.9s;
+      -o-transition: all 0.5s ease-out 0.9s;
+      transition: all 0.5s ease-out 0.9s;
+      opacity: 0;
+      -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+      transform: translateY(20%); }
+    #hospitality .figcaption.fade-in h1 {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    #hospitality .figcaption.fade-in p {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    #hospitality .figcaption.fade-in .button-blue {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
   #hospitality .figure {
     position: relative; }
     #hospitality .figure img {
       position: absolute;
-      left: 0;
+      left: 3.8%;
       top: 0;
-      width: 150%;
+      width: 130%;
       -webkit-transition: all 1s ease-out;
       -ms-transition: all 1s ease-out;
       -o-transition: all 1s ease-out;
@@ -619,10 +621,16 @@ h3 {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0); }
-  #hospitality .tab-nav {
+  #hospitality .carousel .carousel-inner .carousel-item {
+    height: 100%;
+    min-height: 500px; }
+  #hospitality .carousel .carousel-indicators {
     display: block;
-    margin-top: 90px;
     margin-bottom: 85px;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 0;
+    position: static;
     -webkit-transition: all 0.5s ease-out 0.2s;
     -ms-transition: all 0.5s ease-out 0.2s;
     -o-transition: all 0.5s ease-out 0.2s;
@@ -631,21 +639,27 @@ h3 {
     -webkit-transform: translateY(20%);
     -ms-transform: translateY(20%);
     transform: translateY(20%); }
-    #hospitality .tab-nav a {
+    #hospitality .carousel .carousel-indicators li {
+      text-indent: 0;
       color: #000;
+      width: auto;
+      height: auto;
       font: 400 20px/1 oswald, arial;
-      display: inline-block;
-      margin-bottom: 20px;
-      text-transform: uppercase; }
-      #hospitality .tab-nav a.active, #hospitality .tab-nav a:hover {
+      display: block;
+      text-transform: uppercase;
+      background-color: transparent;
+      opacity: 1; }
+      #hospitality .carousel .carousel-indicators li.active {
         color: #f7d0cb; }
-    #hospitality .tab-nav.fade-in {
+    #hospitality .carousel .carousel-indicators.fade-in {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
+  #hospitality .carousel .carousel-control-next, #hospitality .carousel .carousel-control-prev {
+    display: none; }
 
-#converage {
+#locations {
   background: url("../../images/home/oxf_bg_converage.jpg") no-repeat;
   background-position: center 200px;
   background-size: cover;
@@ -654,12 +668,12 @@ h3 {
   -ms-transition: all 0.8s ease-out;
   -o-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out; }
-  #converage.fade-in {
+  #locations.fade-in {
     opacity: 1;
     background-position: center 0; }
-  #converage .content {
+  #locations .content {
     padding: 120px 0; }
-    #converage .content h1 {
+    #locations .content h1 {
       margin-bottom: 70px;
       float: right;
       -webkit-transition: all 0.5s ease-out;
@@ -670,49 +684,49 @@ h3 {
       -webkit-transform: translateY(20%);
       -ms-transform: translateY(20%);
       transform: translateY(20%); }
-    #converage .content h2, #converage .content button {
+    #locations .content h2, #locations .content button {
       margin-bottom: 20px; }
-    #converage .content button {
+    #locations .content button {
       font: 600 24px/1 oswald, arial;
       color: #fff; }
-      #converage .content button:hover, #converage .content button.active {
+      #locations .content button:hover, #locations .content button.active {
         color: #f7d0cb; }
-    #converage .content hr {
+    #locations .content hr {
       background-color: #fff;
       height: 2px;
       width: 24px;
       margin: 0 0 20px auto; }
-    #converage .content .asia, #converage .content .africa, #converage .content .europe, #converage .content .latin {
+    #locations .content .asia, #locations .content .africa, #locations .content .europe, #locations .content .latin {
       opacity: 0;
       -webkit-transform: translateY(20%);
       -ms-transform: translateY(20%);
       transform: translateY(20%); }
-    #converage .content .asia {
+    #locations .content .asia {
       -webkit-transition: all 0.5s ease-out 0.2s;
       -ms-transition: all 0.5s ease-out 0.2s;
       -o-transition: all 0.5s ease-out 0.2s;
       transition: all 0.5s ease-out 0.2s; }
-    #converage .content .africa {
+    #locations .content .africa {
       -webkit-transition: all 0.5s ease-out 0.4s;
       -ms-transition: all 0.5s ease-out 0.4s;
       -o-transition: all 0.5s ease-out 0.4s;
       transition: all 0.5s ease-out 0.4s; }
-    #converage .content .europe {
+    #locations .content .europe {
       -webkit-transition: all 0.5s ease-out 0.6s;
       -ms-transition: all 0.5s ease-out 0.6s;
       -o-transition: all 0.5s ease-out 0.6s;
       transition: all 0.5s ease-out 0.6s; }
-    #converage .content .latin {
+    #locations .content .latin {
       -webkit-transition: all 0.5s ease-out 0.8s;
       -ms-transition: all 0.5s ease-out 0.8s;
       -o-transition: all 0.5s ease-out 0.8s;
       transition: all 0.5s ease-out 0.8s; }
-    #converage .content.fade-in h1 {
+    #locations .content.fade-in h1 {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-    #converage .content.fade-in .asia, #converage .content.fade-in .africa, #converage .content.fade-in .europe, #converage .content.fade-in .latin {
+    #locations .content.fade-in .asia, #locations .content.fade-in .africa, #locations .content.fade-in .europe, #locations .content.fade-in .latin {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);

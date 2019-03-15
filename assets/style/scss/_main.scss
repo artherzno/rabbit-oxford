@@ -295,7 +295,7 @@ h3 {
       position: absolute;
       right: 0;
       top: 25%;
-      width: 150%;
+      width: 130%;
       @include transition(all 0.8s ease-out);
       opacity: 0;
       @include transform(translateY(200%));
@@ -357,7 +357,7 @@ h3 {
         margin-bottom: 60px;
         @include transition(all 1s ease-out);
         opacity: 0;
-        @include transform(translateY(20%));
+        @include transform(translateY(100%));
       }
 
       p {
@@ -365,7 +365,7 @@ h3 {
         margin-bottom: 55px;
         @include transition(all 1s ease-out 0.2s);
         opacity: 0;
-        @include transform(translateY(20%));
+        @include transform(translateY(100%));
       }
 
       &.fade-in {
@@ -392,11 +392,8 @@ h3 {
 #hospitality {
   background-color: $white;
 
-  .row {
-
-  }
-
   .figcaption {
+    text-align: right;
 
     h1 {
       color: $blue;
@@ -453,9 +450,9 @@ h3 {
 
     img {
       position: absolute;
-      left: 0;
+      left: 3.8%;
       top: 0;
-      width: 150%;
+      width: 130%;
 
       @include transition(all 1s ease-out);
       opacity: 0;
@@ -468,34 +465,58 @@ h3 {
     }
   }
 
-  .tab-nav {
-    display: block;
-    margin-top: 90px;
-    margin-bottom: 85px;
-    @include transition(all 0.5s ease-out 0.2s);
-    opacity: 0;
-    @include transform(translateY(20%));
+  .carousel {
 
-    a {
-      color: $black;
-      font: 400 20px/1 oswald, arial;
-      display: inline-block;
-      margin-bottom: 20px;
-      text-transform: uppercase;
+    .carousel-inner {
 
-      &.active, &:hover {
-        color: $pink;
+      .carousel-item {
+        height: 100%;
+        min-height: 500px;
       }
     }
 
-    &.fade-in {
-      opacity: 1;
-      @include transform(translateY(0));
+    .carousel-indicators {
+      display: block;
+      margin-bottom: 85px;
+      margin-left: auto;
+      margin-right: 0;
+      z-index: 0;
+      position: static;
+      @include transition(all 0.5s ease-out 0.2s);
+      opacity: 0;
+      @include transform(translateY(20%));
+
+      li {
+        text-indent: 0;
+        color: $black;
+        width: auto;
+        height: auto;
+        font: 400 20px/1 oswald, arial;
+        display: block;
+        text-transform: uppercase;
+        background-color: transparent;
+        opacity: 1;
+
+        &.active {
+          color: $pink;
+        }
+      }
+
+      &.fade-in {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+      display: none;
     }
   }
+
+
 }
 
-#converage {
+#locations {
   background: url('../../images/home/oxf_bg_converage.jpg') no-repeat;
   background-position: center 200px;
   background-size: cover;
@@ -1020,7 +1041,7 @@ h3 {
           @include transition(all 0.8s ease-out 0.2s);
         }
 
-        &._3 { 
+        &._3 {
           @include transition(all 0.8s ease-out 0.4s);
         }
 
