@@ -1549,10 +1549,79 @@ $breadcrumb-divider: quote(">");
 }
 
 /* Responsive *****************************************************************/
+@media (min-width: 768px) {
+  nav {
+
+    &.navbar {
+
+      .navbar-collapse {
+
+        .navbar-brand {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  #footer {
+
+    .nav-link {
+      padding: .5rem .3rem;
+    }
+  }
+
+  #intro {
+
+    .container {
+
+      .logo {
+
+        .brain {
+          right: 46px;
+          top: -126%;
+          width: 28%;
+        }
+      }
+    }
+  }
+
+  #banner {
+    height: 100vh;
+
+    .container {
+
+      .content {
+        margin-top: 30%;
+
+        .box {
+
+          .box-content {
+
+            p {
+              font-size: 22px;
+
+              span {
+                font-size: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 992px) {
   nav {
 
     &.navbar {
+
+      .navbar-collapse {
+
+        .navbar-brand {
+          margin-left: 0;
+        }
+      }
 
       .navbar-nav {
 
@@ -1573,13 +1642,8 @@ $breadcrumb-divider: quote(">");
         }
       }
     }
-  }
 
-  #footer {
 
-    .nav-link {
-      padding: .5rem .5rem;
-    }
   }
 
   #intro {
@@ -1592,6 +1656,31 @@ $breadcrumb-divider: quote(">");
           right: 60px;
           top: -160%;
           width: 28%;
+        }
+      }
+    }
+  }
+
+  #banner {
+    height: 100%;
+
+    .container {
+
+      .content {
+        margin-top: 26%;
+
+        .box {
+
+          .box-content {
+
+            p {
+              font-size: 40px;
+
+              span {
+                font-size: 80px;
+              }
+            }
+          }
         }
       }
     }
