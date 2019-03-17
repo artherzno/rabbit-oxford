@@ -181,6 +181,42 @@ h3 {
   padding: 0;
   margin: 0; }
 
+.oxford-dt {
+  display: block !important; }
+
+.oxford-mb {
+  display: none !important; }
+
+/* Footer ******************************************************************/
+#footer {
+  background-color: #1f3052; }
+  #footer .row._first {
+    padding: 70px 0 0; }
+    #footer .row._first .logo img {
+      width: 100%;
+      max-width: 340px; }
+    #footer .row._first .nav li a {
+      font-size: 14px;
+      font-weight: bold; }
+    #footer .row._first .nav li:last-child a {
+      padding-right: 0; }
+  #footer .row._second {
+    padding: 60px 0; }
+    #footer .row._second .copyright {
+      display: block; }
+    #footer .row._second .copyright-m {
+      display: none; }
+    #footer .row._second p {
+      font-size: 16px; }
+    #footer .row._second .nav {
+      float: right; }
+      #footer .row._second .nav a {
+        margin: 0 10px; }
+  #footer hr {
+    width: 100%;
+    background-color: #636f86;
+    margin: 70px 0 0; }
+
 /* Home page ******************************************************************/
 #intro {
   width: 100%;
@@ -378,7 +414,8 @@ h3 {
           transform: rotateY(180deg); }
 
 #whatwedo .row {
-  margin: 0 0 15%; }
+  margin: 0 0 15%;
+  position: relative; }
 
 #whatwedo .figcaption {
   position: relative; }
@@ -509,7 +546,7 @@ h3 {
   #practics .container {
     position: relative;
     height: 100%;
-    padding: 350px 0 40px; }
+    padding: 350px 15px 40px; }
     #practics .container .content {
       width: 80%;
       margin-left: 20%; }
@@ -537,14 +574,12 @@ h3 {
         transform: translateY(100%); }
       #practics .container .content.fade-in h1 {
         color: #000;
-        margin-bottom: 60px;
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0);
         opacity: 1; }
       #practics .container .content.fade-in p {
         color: #000;
-        margin-bottom: 55px;
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0);
@@ -552,12 +587,15 @@ h3 {
 
 #hospitality {
   background-color: #fff; }
+  #hospitality .row {
+    position: relative; }
   #hospitality .figcaption {
     text-align: right; }
     #hospitality .figcaption h1 {
       color: #1f3052;
       margin-bottom: 30px;
       text-transform: uppercase;
+      float: right;
       -webkit-transition: all 0.5s ease-out 0.3s;
       -ms-transition: all 0.5s ease-out 0.3s;
       -o-transition: all 0.5s ease-out 0.3s;
@@ -664,7 +702,7 @@ h3 {
     display: none; }
 
 #locations {
-  background: url("../../images/home/oxf_bg_converage.jpg") no-repeat;
+  background: url("../../images/home/oxf_bg_locations.jpg") no-repeat;
   background-position: center 200px;
   background-size: cover;
   opacity: 0;
@@ -873,29 +911,6 @@ h3 {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-
-#footer {
-  background-color: #1f3052; }
-  #footer .row._first {
-    padding: 70px 0 0; }
-    #footer .row._first .logo img {
-      width: 100%;
-      max-width: 340px; }
-    #footer .row._first .nav li a {
-      font-size: 14px;
-      font-weight: bold; }
-    #footer .row._first .nav li:last-child a {
-      padding-right: 0; }
-  #footer .row._second {
-    padding: 60px 0; }
-    #footer .row._second p {
-      font-size: 16px; }
-    #footer .row._second .nav a {
-      margin: 0 10px; }
-  #footer hr {
-    width: 100%;
-    background-color: #636f86;
-    margin: 70px 0 0; }
 
 /* Team page ******************************************************************/
 #team-page .banner {
@@ -1489,11 +1504,229 @@ h3 {
           margin: 0; }
 
 /* Responsive *****************************************************************/
-@media (min-width: 768px) {
+@media (max-width: 575.98px) {
+  body {
+    font: 14px/1.2 arial; }
+  h1 {
+    font-size: 50px; }
+  h2 {
+    font-size: 40px; }
+  .oxford-dt {
+    display: none !important; }
+  .oxford-mb {
+    display: block !important; }
+  .button-none, .button-blue, .button-white {
+    border-width: 1px;
+    padding: 10px; }
+  button[data-toggle="collapse"][aria-expanded="false"] {
+    position: relative;
+    padding-right: 20px; }
+    button[data-toggle="collapse"][aria-expanded="false"]:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #fff; }
+  button[data-toggle="collapse"][aria-expanded="true"] {
+    position: relative;
+    color: #f7d0cb;
+    padding-right: 20px; }
+    button[data-toggle="collapse"][aria-expanded="true"]:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid #f7d0cb; }
+  #footer .row._first {
+    padding-top: 60px;
+    text-align: center; }
+    #footer .row._first .logo {
+      margin-bottom: 1.75rem; }
+      #footer .row._first .logo img {
+        width: 70%;
+        margin: 0 auto; }
+    #footer .row._first .nav .nav-item {
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-top: 1rem; }
+      #footer .row._first .nav .nav-item .nav-link {
+        font-size: 20px; }
+  #footer .row._second {
+    padding: 40px 0 55px; }
+    #footer .row._second .copyright {
+      display: none; }
+    #footer .row._second .copyright-m {
+      display: block;
+      text-align: center;
+      margin-top: 35px; }
+      #footer .row._second .copyright-m p {
+        font-size: 16px;
+        margin: 0; }
+    #footer .row._second .social {
+      text-align: center; }
+    #footer .row._second .nav {
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+      display: inline-block; }
+      #footer .row._second .nav li {
+        display: inline-block; }
+  #intro .container .logo {
+    top: 56%; }
+    #intro .container .logo .brain {
+      right: 24px;
+      top: -64%;
+      width: 28%; }
+  #banner {
+    height: 100vh; }
+    #banner .container .content {
+      margin-top: 30%; }
+      #banner .container .content .box .box-content p {
+        font-size: 22px; }
+        #banner .container .content .box .box-content p span {
+          font-size: 35px; }
+  #whatwedo .container {
+    overflow: hidden; }
+  #whatwedo .row {
+    margin: 0 0 5%; }
+  #whatwedo .figcaption .content p {
+    margin: 100% 0 5%; }
+  #whatwedo .figure {
+    position: absolute;
+    padding-top: 40px; }
+    #whatwedo .figure img.oxford-mb {
+      width: 110%;
+      margin-top: 60px;
+      left: 0; }
+  #practics .container {
+    padding-top: 120px; }
+    #practics .container .content {
+      margin-left: 0;
+      width: 100%; }
+      #practics .container .content h1 {
+        margin-bottom: 40px; }
+      #practics .container .content p {
+        margin-bottom: 5%; }
+  #hospitality .row {
+    margin-bottom: 5%; }
+  #hospitality .figcaption {
+    padding: 0 5% 0 20%; }
+    #hospitality .figcaption h1 {
+      font-size: 36px;
+      margin-bottom: 104%;
+      float: right; }
+      #hospitality .figcaption h1.h-oneline {
+        margin-bottom: 118%;
+        clear: both; }
+    #hospitality .figcaption p {
+      float: right;
+      margin-bottom: 5%; }
+    #hospitality .figcaption button {
+      float: right; }
+  #hospitality .figure img.oxford-mb {
+    width: 92%;
+    margin-top: 220px;
+    right: 0;
+    left: auto; }
+  #hospitality .carousel .carousel-inner .carousel-item {
+    min-height: 0; }
+  #locations {
+    background: #1b1b1b url("../../images/home/oxf_bg_locations_m.jpg") no-repeat;
+    background-size: contain; }
+    #locations .content {
+      padding: 60px 0; }
+      #locations .content .oxford-mb {
+        padding-right: 10px; }
+      #locations .content h1 {
+        margin-bottom: 40px;
+        float: none; }
+      #locations .content h2 {
+        margin: 0; }
+      #locations .content button {
+        margin-bottom: 10px; }
+  #blog h1 {
+    margin-bottom: 50px; }
+  #blog .container {
+    overflow: hidden; }
+  #blog .content {
+    padding: 50px 0; }
+    #blog .content .overflow-x-auto {
+      overflow-x: auto;
+      overflow-y: hidden; }
+    #blog .content .row {
+      width: 900px;
+      padding-bottom: 20px; }
+      #blog .content .row:last-child {
+        margin: 0 -5px; }
+      #blog .content .row.text-center {
+        width: 100%;
+        margin-top: 40px; }
+      #blog .content .row .col-md-4 {
+        display: inline-block;
+        width: 33%; }
+  #getintouch .content h2 {
+    font-size: 40px; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #intro .container .logo .brain {
+    right: 26px;
+    top: -70%;
+    width: 28%; }
+  #banner {
+    height: 100vh; }
+    #banner .container .content {
+      margin-top: 30%; }
+      #banner .container .content .box .box-content p {
+        font-size: 22px; }
+        #banner .container .content .box .box-content p span {
+          font-size: 40px; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
   nav.navbar .navbar-collapse .navbar-brand {
     margin-left: 15px; }
-  #footer .nav-link {
-    padding: .5rem .3rem; }
+  #footer .row._first {
+    padding-top: 70px;
+    text-align: left; }
+    #footer .row._first .logo {
+      margin-bottom: 1.75rem; }
+      #footer .row._first .logo img {
+        width: 100%; }
+    #footer .row._first .nav .nav-item {
+      width: auto;
+      display: inline-block;
+      text-align: left;
+      margin-top: 0; }
+      #footer .row._first .nav .nav-item .nav-link {
+        font-size: 14px;
+        padding: .5rem .3rem; }
+  #footer .row._second {
+    padding: 40px 0 55px; }
+    #footer .row._second .copyright {
+      display: block; }
+    #footer .row._second .copyright-m {
+      display: none; }
+    #footer .row._second .social {
+      text-align: right; }
+    #footer .row._second .nav {
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+      display: inline-block; }
+      #footer .row._second .nav li {
+        display: inline-block; }
   #intro .container .logo .brain {
     right: 46px;
     top: -126%;
@@ -1507,7 +1740,7 @@ h3 {
         #banner .container .content .box .box-content p span {
           font-size: 60px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   nav.navbar .navbar-collapse .navbar-brand {
     margin-left: 0; }
   nav.navbar .navbar-nav li .nav-link {
