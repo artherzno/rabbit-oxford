@@ -32,6 +32,15 @@ nav {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
 
+  .navbar-toggler-logo {
+    width: 80%;
+
+    img {
+      width: 80%;
+      opacity: 1;
+    }
+  }
+
   li.nav-item {
 
     a.nav-link {
@@ -99,6 +108,54 @@ nav {
     &._bg {
       background: none;
       background-color: $blue;
+    }
+  }
+
+  .navbar-collapse {
+
+    &.show, &.collapsing {
+
+      .nav {
+
+        li.nav-item {
+
+          a.nav-link {
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+
+            &:after {
+              right: 26%;
+              top: 38%;
+            }
+
+            &.dropdown-toggle {
+              // margin-bottom: 0;
+              // padding-bottom: 0;
+            }
+
+            hr {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-nav {
+
+      .dropdown-menu {
+        padding-top: 0;
+        background: transparent;
+        border: none;
+
+        .dropdown-item {
+          text-align: center;
+          color: #b4bed4;
+          margin-bottom: 15px;
+          padding-bottom: 10px;
+        }
+      }
     }
   }
 }
