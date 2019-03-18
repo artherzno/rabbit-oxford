@@ -478,6 +478,7 @@ h3 {
       margin-bottom: 30px;
       text-transform: uppercase;
       float: right;
+      clear: both;
       @include transition(all 0.5s ease-out 0.3s);
       opacity: 0;
       @include transform(translateY(20%));
@@ -492,12 +493,16 @@ h3 {
     p {
       color: $black;
       margin-bottom: 55px;
+      float: right;
+      clear: both;
       @include transition(all 0.5s ease-out 0.6s);
       opacity: 0;
       @include transform(translateY(20%));
     }
 
     .button-blue {
+      float: right;
+      clear: both;
       @include transition(all 0.5s ease-out 0.9s);
       opacity: 0;
       @include transform(translateY(20%));
