@@ -1484,6 +1484,307 @@ h3 {
     -ms-transform: translateY(0);
     transform: translateY(0); }
 
+/* Locatios page ******************************************************************/
+#locations-page .banner {
+  width: 100%;
+  height: 890px;
+  background: url("../../images/location/oxf_bg_banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  #locations-page .banner .container {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #locations-page .banner .container h1 {
+      font: 700 140px/1.2 oswald, arial;
+      color: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      bottom: 110px;
+      right: 0;
+      margin: auto;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+  #locations-page .banner.fade-in h1 {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+#locations-page .content {
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d url("../../images/location/oxf_bg_content.jpg") no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding-bottom: 120px; }
+  #locations-page .content h1 {
+    font-size: 50px;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%); }
+  #locations-page .content h2 {
+    font-size: 40px;
+    color: #f7d0cb; }
+  #locations-page .content h3 {
+    font-size: 30px;
+    margin-bottom: 50px; }
+  #locations-page .content p {
+    margin: 0; }
+  #locations-page .content .row {
+    margin-bottom: 130px; }
+    #locations-page .content .row .column {
+      opacity: 0;
+      -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+      transform: translateY(20%); }
+      #locations-page .content .row .column.col_1 {
+        -webkit-transition: all 0.8s ease-out 0.2s;
+        -ms-transition: all 0.8s ease-out 0.2s;
+        -o-transition: all 0.8s ease-out 0.2s;
+        transition: all 0.8s ease-out 0.2s; }
+      #locations-page .content .row .column.col_2 {
+        -webkit-transition: all 0.8s ease-out 0.4s;
+        -ms-transition: all 0.8s ease-out 0.4s;
+        -o-transition: all 0.8s ease-out 0.4s;
+        transition: all 0.8s ease-out 0.4s; }
+      #locations-page .content .row .column.col_3 {
+        -webkit-transition: all 0.8s ease-out 0.6s;
+        -ms-transition: all 0.8s ease-out 0.6s;
+        -o-transition: all 0.8s ease-out 0.6s;
+        transition: all 0.8s ease-out 0.6s; }
+      #locations-page .content .row .column.fade-in.col_1, #locations-page .content .row .column.fade-in.col_2, #locations-page .content .row .column.fade-in.col_3 {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1; }
+  #locations-page .content hr {
+    border-color: #585a5c;
+    margin: 35px 0; }
+  #locations-page .content.fade-in .breadcrumb, #locations-page .content.fade-in h1 {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+#locations-page .breadcrumb {
+  margin-bottom: 60px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out; }
+  #locations-page .breadcrumb .breadcrumb-item.active {
+    color: #fff; }
+
+#locations-page h1 {
+  color: #fff;
+  margin-bottom: 95px;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.8s ease-out 0.2s;
+  -ms-transition: all 0.8s ease-out 0.2s;
+  -o-transition: all 0.8s ease-out 0.2s;
+  transition: all 0.8s ease-out 0.2s; }
+
+#locations-page .row {
+  margin-bottom: 40px; }
+
+/* Locatios page ******************************************************************/
+#strategy-page .banner {
+  background: url("../../images/strategy/oxf_bg_banner.jpg") no-repeat; }
+
+#demandfulfillment-page .banner {
+  background: url("../../images/demandfulfillment/oxf_bg_banner.jpg") no-repeat; }
+
+#financialtransformation-page .banner {
+  background: url("../../images/financialtransformation/oxf_bg_banner.jpg") no-repeat; }
+
+#demandfulfillment-page .banner, #strategy-page .banner, #financialtransformation-page .banner {
+  width: 100%;
+  height: 890px;
+  background-size: cover;
+  background-position: center center; }
+  #demandfulfillment-page .banner .container, #strategy-page .banner .container, #financialtransformation-page .banner .container {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #demandfulfillment-page .banner .container h1, #strategy-page .banner .container h1, #financialtransformation-page .banner .container h1 {
+      font: 700 140px/1.2 oswald, arial;
+      color: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      bottom: 110px;
+      right: 0;
+      margin: auto;
+      text-align: right;
+      font-size: 120px;
+      line-height: 1;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+  #demandfulfillment-page .banner.fade-in h1, #strategy-page .banner.fade-in h1, #financialtransformation-page .banner.fade-in h1 {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+#demandfulfillment-page .content, #strategy-page .content, #financialtransformation-page .content {
+  position: relative;
+  z-index: 2; }
+  #demandfulfillment-page .content .row, #strategy-page .content .row, #financialtransformation-page .content .row {
+    height: 100%;
+    position: relative;
+    min-height: 620px; }
+    #demandfulfillment-page .content .row .column, #strategy-page .content .row .column, #financialtransformation-page .content .row .column {
+      position: absolute; }
+      #demandfulfillment-page .content .row .column._left, #strategy-page .content .row .column._left, #financialtransformation-page .content .row .column._left {
+        left: 0;
+        padding: 6% 4% 14% 6%;
+        z-index: 1; }
+      #demandfulfillment-page .content .row .column._right, #strategy-page .content .row .column._right, #financialtransformation-page .content .row .column._right {
+        right: 0; }
+    #demandfulfillment-page .content .row h1, #strategy-page .content .row h1, #financialtransformation-page .content .row h1 {
+      color: #1f3052;
+      margin-bottom: 47px;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      -webkit-transition: all 0.8s ease-out 0.3s;
+      -ms-transition: all 0.8s ease-out 0.3s;
+      -o-transition: all 0.8s ease-out 0.3s;
+      transition: all 0.8s ease-out 0.3s; }
+      #demandfulfillment-page .content .row h1.number, #strategy-page .content .row h1.number, #financialtransformation-page .content .row h1.number {
+        font-size: 100px;
+        margin-bottom: 14px;
+        color: #f7d0cb; }
+    #demandfulfillment-page .content .row p, #strategy-page .content .row p, #financialtransformation-page .content .row p {
+      color: #000;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      -webkit-transition: all 0.8s ease-out 0.6s;
+      -ms-transition: all 0.8s ease-out 0.6s;
+      -o-transition: all 0.8s ease-out 0.6s;
+      transition: all 0.8s ease-out 0.6s; }
+    #demandfulfillment-page .content .row img, #strategy-page .content .row img, #financialtransformation-page .content .row img {
+      opacity: 0;
+      -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+      transform: translateY(20%);
+      -webkit-transition: all 0.8s ease-out 0.9s;
+      -ms-transition: all 0.8s ease-out 0.9s;
+      -o-transition: all 0.8s ease-out 0.9s;
+      transition: all 0.8s ease-out 0.9s; }
+  #demandfulfillment-page .content.fade-in .breadcrumb, #demandfulfillment-page .content.fade-in h1, #demandfulfillment-page .content.fade-in p, #demandfulfillment-page .content.fade-in img, #strategy-page .content.fade-in .breadcrumb, #strategy-page .content.fade-in h1, #strategy-page .content.fade-in p, #strategy-page .content.fade-in img, #financialtransformation-page .content.fade-in .breadcrumb, #financialtransformation-page .content.fade-in h1, #financialtransformation-page .content.fade-in p, #financialtransformation-page .content.fade-in img {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+#demandfulfillment-page .breadcrumb, #strategy-page .breadcrumb, #financialtransformation-page .breadcrumb {
+  margin: 70px 0 60px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out; }
+  #demandfulfillment-page .breadcrumb .breadcrumb-item.active, #strategy-page .breadcrumb .breadcrumb-item.active, #financialtransformation-page .breadcrumb .breadcrumb-item.active {
+    color: #1f3052; }
+
+#demandfulfillment-page .carousel-section, #strategy-page .carousel-section, #financialtransformation-page .carousel-section {
+  width: 100%;
+  background: url("../../images/demandfulfillment/oxf_bg_content.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
+  -webkit-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out; }
+  #demandfulfillment-page .carousel-section .carousel, #strategy-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel {
+    width: 100%;
+    height: 912px; }
+    #demandfulfillment-page .carousel-section .carousel .carousel-item, #strategy-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item {
+      padding: 12% 0; }
+      #demandfulfillment-page .carousel-section .carousel .carousel-item .row.row_1, #strategy-page .carousel-section .carousel .carousel-item .row.row_1, #financialtransformation-page .carousel-section .carousel .carousel-item .row.row_1 {
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+        -webkit-transition: all 0.8s ease-out 0.3;
+        -ms-transition: all 0.8s ease-out 0.3;
+        -o-transition: all 0.8s ease-out 0.3;
+        transition: all 0.8s ease-out 0.3; }
+      #demandfulfillment-page .carousel-section .carousel .carousel-item .row.row_2, #strategy-page .carousel-section .carousel .carousel-item .row.row_2, #financialtransformation-page .carousel-section .carousel .carousel-item .row.row_2 {
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+        -webkit-transition: all 0.8s ease-out 0.6s;
+        -ms-transition: all 0.8s ease-out 0.6s;
+        -o-transition: all 0.8s ease-out 0.6s;
+        transition: all 0.8s ease-out 0.6s; }
+      #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child {
+        margin-top: 160px; }
+    #demandfulfillment-page .carousel-section .carousel .carousel-indicators li, #strategy-page .carousel-section .carousel .carousel-indicators li, #financialtransformation-page .carousel-section .carousel .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 8px;
+      opacity: 0.3; }
+      #demandfulfillment-page .carousel-section .carousel .carousel-indicators li.active, #strategy-page .carousel-section .carousel .carousel-indicators li.active, #financialtransformation-page .carousel-section .carousel .carousel-indicators li.active {
+        opacity: 1; }
+  #demandfulfillment-page .carousel-section .carousel-indicators, #strategy-page .carousel-section .carousel-indicators, #financialtransformation-page .carousel-section .carousel-indicators {
+    bottom: 68px; }
+  #demandfulfillment-page .carousel-section .carousel-control-prev, #strategy-page .carousel-section .carousel-control-prev, #financialtransformation-page .carousel-section .carousel-control-prev {
+    left: -5%;
+    width: 5%; }
+    #demandfulfillment-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #strategy-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #financialtransformation-page .carousel-section .carousel-control-prev .carousel-control-prev-icon {
+      background-image: url("../../images/icon/oxf_arrow_l.png");
+      width: 43px;
+      height: 81px; }
+  #demandfulfillment-page .carousel-section .carousel-control-next, #strategy-page .carousel-section .carousel-control-next, #financialtransformation-page .carousel-section .carousel-control-next {
+    right: -5%;
+    width: 5%; }
+    #demandfulfillment-page .carousel-section .carousel-control-next .carousel-control-next-icon, #strategy-page .carousel-section .carousel-control-next .carousel-control-next-icon, #financialtransformation-page .carousel-section .carousel-control-next .carousel-control-next-icon {
+      background-image: url("../../images/icon/oxf_arrow_r.png");
+      width: 43px;
+      height: 81px; }
+  #demandfulfillment-page .carousel-section.fade-in, #strategy-page .carousel-section.fade-in, #financialtransformation-page .carousel-section.fade-in {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+    #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row_1, #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row_2, #strategy-page .carousel-section.fade-in .carousel .carousel-item .row_1, #strategy-page .carousel-section.fade-in .carousel .carousel-item .row_2, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row_1, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row_2 {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+
 /* Keyframes ******************************************************************/
 @-webkit-keyframes animateCloud {
   from {

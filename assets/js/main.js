@@ -341,6 +341,138 @@ $(document).ready(function(){
   .setClassToggle('#teamdetail-page .detail .paragraph', 'fade-in')
   .addTo(controller);
 
+  // Locations - banner ----------------------------------------- //
+  var bannerTeam = new ScrollMagic.Scene({
+    triggerElement: '#locations-page',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'locations-page'})
+  .setClassToggle('#locations-page .banner', 'fade-in')
+  .addTo(controller);
+
+  // Locations - header ----------------------------------------- //
+  var headerTeam = new ScrollMagic.Scene({
+    triggerElement: '#locations-page .content',
+    triggerHook: 0.7,
+  })
+  // .addIndicators({ name: 'locations-page'})
+  .setClassToggle('#locations-page .content', 'fade-in')
+  .addTo(controller);
+
+  // Locations - row ----------------------------------------- //
+  var rowLocations1 = new ScrollMagic.Scene({
+    triggerElement: '#locations-page .row_1',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'locations-page'})
+  .setClassToggle('#locations-page .row_1 .column', 'fade-in')
+  .addTo(controller);
+
+  var rowLocations2 = new ScrollMagic.Scene({
+    triggerElement: '#locations-page .row_2',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'locations-page'})
+  .setClassToggle('#locations-page .row_2 .column', 'fade-in')
+  .addTo(controller);
+
+  var rowLocations3 = new ScrollMagic.Scene({
+    triggerElement: '#locations-page .row_3',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'locations-page'})
+  .setClassToggle('#locations-page .row_3 .column', 'fade-in')
+  .addTo(controller);
+
+  var rowLocations4 = new ScrollMagic.Scene({
+    triggerElement: '#locations-page .row_4',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'locations-page'})
+  .setClassToggle('#locations-page .row_4 .column', 'fade-in')
+  .addTo(controller);
+
+  // Demandfulfillment - banner ----------------------------------------- //
+  var bannerDemandfulfillment = new ScrollMagic.Scene({
+    triggerElement: '#demandfulfillment-page',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'demandfulfillment-page'})
+  .setClassToggle('#demandfulfillment-page .banner', 'fade-in')
+  .addTo(controller);
+
+  // Demandfulfillment - header ----------------------------------------- //
+  var headerDemandfulfillment = new ScrollMagic.Scene({
+    triggerElement: '#demandfulfillment-page .content',
+    triggerHook: 0.7,
+  })
+  // .addIndicators({ name: 'demandfulfillment-page'})
+  .setClassToggle('#demandfulfillment-page .content', 'fade-in')
+  .addTo(controller);
+
+  // Demandfulfillment - carousel ----------------------------------------- //
+  var carouselDemandfulfillment = new ScrollMagic.Scene({
+    triggerElement: '#demandfulfillment-page .carousel-section',
+    triggerHook: 0.7,
+  })
+  // .addIndicators({ name: 'demandfulfillment-page'})
+  .setClassToggle('#demandfulfillment-page .carousel-section', 'fade-in')
+  .addTo(controller);
+
+  // Strategy - banner ----------------------------------------- //
+  var bannerStrategy = new ScrollMagic.Scene({
+    triggerElement: '#strategy-page',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'strategy-page'})
+  .setClassToggle('#strategy-page .banner', 'fade-in')
+  .addTo(controller);
+
+  // Strategy - header ----------------------------------------- //
+  var headerStrategy = new ScrollMagic.Scene({
+    triggerElement: '#strategy-page .content',
+    triggerHook: 0.7,
+  })
+  // .addIndicators({ name: 'strategy-page'})
+  .setClassToggle('#strategy-page .content', 'fade-in')
+  .addTo(controller);
+
+  // Strategy - carousel ----------------------------------------- //
+  var carouselStrategy = new ScrollMagic.Scene({
+    triggerElement: '#strategy-page .carousel-section',
+    triggerHook: 0.7,
+  })
+  // .addIndicators({ name: 'strategy-page'})
+  .setClassToggle('#strategy-page .carousel-section', 'fade-in')
+  .addTo(controller);
+
+  // Financial Transformation - banner ----------------------------------------- //
+  var bannerFinancialtransformation = new ScrollMagic.Scene({
+    triggerElement: '#financialtransformation-page',
+    triggerHook: 0.8,
+  })
+  // .addIndicators({ name: 'financialtransformation-page'})
+  .setClassToggle('#financialtransformation-page .banner', 'fade-in')
+  .addTo(controller);
+
+  // Financial Transformation - header ----------------------------------------- //
+  var headerFinancialtransformation = new ScrollMagic.Scene({
+    triggerElement: '#financialtransformation-page .content',
+    triggerHook: 0.7,
+  })
+  // .addIndicators({ name: 'financialtransformation-page'})
+  .setClassToggle('#financialtransformation-page .content', 'fade-in')
+  .addTo(controller);
+
+  // Financial Transformation - carousel ----------------------------------------- //
+  var carouselFinancialtransformation = new ScrollMagic.Scene({
+    triggerElement: '#financialtransformation-page .carousel-section',
+    triggerHook: 0.7,
+  })
+  // .addIndicators({ name: 'financialtransformation-page'})
+  .setClassToggle('#financialtransformation-page .carousel-section', 'fade-in')
+  .addTo(controller);
+
 
 
   // Initial ///////////////////////////////////////////////////////////////////
