@@ -1541,9 +1541,9 @@ h3 {
     margin-bottom: 130px; }
     #locations-page .content .row .column {
       opacity: 0;
-      -webkit-transform: translateY(20%);
-      -ms-transform: translateY(20%);
-      transform: translateY(20%); }
+      -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      transform: translateY(100%); }
       #locations-page .content .row .column.col_1 {
         -webkit-transition: all 0.8s ease-out 0.2s;
         -ms-transition: all 0.8s ease-out 0.2s;
@@ -1589,9 +1589,9 @@ h3 {
 #locations-page h1 {
   color: #fff;
   margin-bottom: 95px;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
   -webkit-transition: all 0.8s ease-out 0.2s;
   -ms-transition: all 0.8s ease-out 0.2s;
   -o-transition: all 0.8s ease-out 0.2s;
