@@ -22,6 +22,12 @@
   transition: $property;
 }
 
+@mixin transition2prop($property, $property2) {
+  -webkit-transition: $property, $property2;
+  -ms-transition: $property, $property2;
+  transition: $property, $property2;
+}
+
 @mixin button($color) {
   border: 2px solid $color;
   color: $color;
@@ -35,8 +41,8 @@
   text-align: center;
 
   &:hover {
-    color: $black;
-    border: 2px solid $pink;
+    color: $white;
+    border: 2px solid $blue;
   }
 
   &:before {
@@ -46,7 +52,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: $pink;
+    background-color: $blue;
     transform-origin:left;
     @include transition(width 0.2s ease);
     z-index: -1;

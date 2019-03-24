@@ -3,15 +3,15 @@ nav {
 
   &.navbar {
     width: 100%;
-    // height: 60px;
+    height: 80px;
     position: fixed;
-    top: 88px;
+    top: 0;
     left: 0;
     right: 0;
     margin: auto;
     color: $white;
     font-size: 14px;
-    z-index: 10;
+    z-index: 1051;
 
     .navbar-nav {
       margin-top: 30px;
@@ -125,10 +125,11 @@ nav {
     top: 0;
     // height: 140px;
 
-    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    // background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    // background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    // background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    background-color: $blue;
 
     .logo {
       opacity: 1;
@@ -151,16 +152,47 @@ nav {
           top: 20%;
         }
 
+        &.dropdown {
+
+          &:hover {
+
+            .dropdown-menu {
+              display: block;
+              border: 1px solid $gray-soft;
+
+              hr {
+                margin: 0;
+                padding: 0;
+              }
+
+              &.hover {
+                hr {
+                    @include transform(scaleX(1));
+                    @include transform-origin(0 50%);
+                }
+              }
+            }
+          }
+        }
+
         .dropdown-menu {
           padding-top: 0;
           background: transparent;
           border: none;
+          top: 66%;
+          background-color: $white;
+          border-radius: 0;
+          padding: 0;
 
           .dropdown-item {
             text-align: left;
             color: $white;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
+            // margin-bottom: 15px;
+            // padding-bottom: 10px;
+            color: $black;
+            font-weight: bold;
+            border-bottom: 1px solid $gray-soft;
+            padding: 1rem 22px;
 
             &:hover {
               background-color: transparent;
@@ -173,7 +205,7 @@ nav {
     }
 
 
-        &.show, &.collapsing {
+    &.show, &.collapsing {
 
           .nav {
 

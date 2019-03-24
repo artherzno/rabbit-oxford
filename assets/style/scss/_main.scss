@@ -47,6 +47,13 @@ h3 {
   margin: 0;
 }
 
+.button-readmore {
+
+  &:hover {
+    color: $pink !important;
+  }
+}
+
 .oxford-dt {
   display: block !important;
 }
@@ -110,6 +117,25 @@ h3 {
 
         a {
           margin: 0 10px;
+          width: 26px;
+          height: 26px;
+          display: inline-block;
+
+          &.fb {
+            background: url('../../images/icon/oxf_icon_fb.svg') no-repeat;
+
+            &:hover {
+              background: url('../../images/icon/oxf_icon_fb_a.svg') no-repeat;
+            }
+          }
+
+          &.tw {
+            background: url('../../images/icon/oxf_icon_tw.svg') no-repeat;
+
+            &:hover {
+              background: url('../../images/icon/oxf_icon_tw_a.svg') no-repeat;
+            }
+          }
         }
       }
     }
@@ -131,7 +157,7 @@ h3 {
   background-position: center center;
   @include transform-style(preserve-3d);
   opacity: 1;
-  @include transition(all 0.5s linear);
+  @include transition(all 1s linear);
   position: absolute;
   z-index: 1;
 
@@ -155,7 +181,7 @@ h3 {
       text-align: center;
       @include transform(translateY(-50%));
       opacity: 0;
-      @include transition(all 0.5s ease-in-out);
+      @include transition(all 2s ease-in-out);
 
       &.fade-in {
         opacity: 1;
@@ -202,7 +228,7 @@ h3 {
 
 #banner {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   // height: 100vh;
   position: relative;
   background-color: #090909;
@@ -218,8 +244,8 @@ h3 {
 
     &.city {
       background-image: url('../../images/home/oxf_bg_banner_city.jpg');
-      @include transition(all 1s ease-out 0.4s);
-      @include transform(translateY(100%));
+      @include transition(all 1s ease-out 0.8s);
+      @include transform(translateY(200%));
       opacity: 0;
 
       &.fade-in {
@@ -231,7 +257,7 @@ h3 {
     &.cloud {
       background-image: url('../../images/home/oxf_bg_banner_cloud.png');
       background-repeat: repeat-x;
-      @include transition(all 1s ease-out);
+      @include transition(all 1s ease-out 0.6s);
       @include transform(translateY(100%));
       opacity: 0;
 
@@ -253,13 +279,13 @@ h3 {
     .content {
       min-height: 880px;
       text-align: center;
-      padding: 26% 0 14%;
-      @include transition(all 0.5s ease 0.3s);
+      padding: 50% 0 14%;
+      @include transition(all 2s ease 1.4s);
       opacity: 0;
       @include transform(translateY(200%));
 
       &.fade-in {
-        @include transform(translateY(0));
+        @include transform(translateY(-50%));
         opacity: 1;
       }
 
@@ -275,33 +301,69 @@ h3 {
           position: absolute;
           width: 100%;
           height: 100%;
+          margin: 0 auto;
           backface-visibility: hidden;
-
-          &._first {
-          }
-
-          &._second {
-            transform: rotateY( 180deg );
-          }
 
           p {
             font: 500 45px/1.2 oswald, arial;
             text-transform: uppercase;
-            text-shadow: 0 4px 18px rgba(0, 0, 0, 1);
-            color: $gray-medium;
+            // text-shadow: 0 4px 18px rgba(0, 0, 0, 1);
+            // color: $gray-medium;
+            text-align: center;
+            margin: 0 auto;
+            background: radial-gradient(circle closest-side, $white, $gray);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            margin: auto;
 
             span {
               font: 700 90px/1.2 oswald, arial;
             }
+
+            &.text-shadow {
+              color: $gray-medium;
+              text-shadow: 0 4px 18px rgba(0, 0, 0, 1);
+            }
+          }
+
+          &._first {
+            @include transition(all 1.8s ease);
+            opacity: 0;
+            @include transform(translateY(100px));
+          }
+
+          &._second {
+            @include transition(all 1.8s ease);
+            opacity: 1;
+            @include transform(translateY(0));
+
+            p {
+              width: 56%;
+            }
           }
         }
 
-        &:hover {
-          transform: rotateY(180deg);
+        &.fade-in {
+
+          .box-content {
+
+            &._first {
+              opacity: 1;
+              @include transform(translateY(0));
+            }
+
+            &._second {
+              opacity: 0;
+              @include transform(translateY(100px));
+            }
+          }
         }
       }
-
-
     }
   }
 }
@@ -322,23 +384,24 @@ h3 {
       h1 {
         color: $black;
         margin-bottom: 60px;
-        @include transition(all 0.8s ease-out 0.5s);
+        @include transition(all 1s ease-out 1s);
         opacity: 0;
-        @include transform(translateY(200%));
+        @include transform(translateY(50%));
       }
 
       p {
         color: $black;
         margin-bottom: 55px;
-        @include transition(all 0.8s ease-out 0.7s);
+        @include transition(all 1s ease-out 1.2s);
         opacity: 0;
-        @include transform(translateY(200%));
+        @include transform(translateY(50%));
       }
 
       .button-blue {
-        @include transition(all 0.8s ease-out 0.9s);
         opacity: 0;
         @include transform(translateY(200%));
+        @include transition(transform 0.8s ease-out 1.6s);
+        @include transition(opacity 1s ease-out 1.6s);
       }
 
       &.fade-in {
@@ -372,7 +435,7 @@ h3 {
       right: 0;
       top: 25%;
       width: 130%;
-      @include transition(all 0.8s ease-out);
+      @include transition(all 1s ease-out);
       opacity: 0;
       @include transform(translateY(200%));
 
@@ -472,6 +535,7 @@ h3 {
 
   .figcaption {
     text-align: right;
+    padding-right: 5%;
 
     h1 {
       color: $blue;
@@ -489,8 +553,9 @@ h3 {
 
       &.number {
         font-size: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         color: $pink;
+        line-height: 0.78;
 
         &.oxford-mb {
           margin-right: -20px;
@@ -500,7 +565,7 @@ h3 {
 
     p {
       color: $black;
-      margin-bottom: 55px;
+      margin-bottom: 20px;
       float: right;
       clear: both;
       @include transition(all 0.5s ease-out 0.6s);
@@ -511,9 +576,10 @@ h3 {
     .button-blue {
       float: right;
       clear: both;
-      @include transition(all 0.5s ease-out 0.9s);
       opacity: 0;
       @include transform(translateY(20%));
+      @include transition(transform 0.8s ease-out 0.9s);
+      @include transition(opacity 0.8s ease-out 0.9s);
     }
 
     &.fade-in {
@@ -591,6 +657,7 @@ h3 {
 
         &.active {
           color: $pink;
+          font-weight: 600;
         }
       }
 
@@ -620,8 +687,27 @@ h3 {
     background-position: center 0;
   }
 
+  .row {
+    position: relative;
+
+    .modal-area {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .modal-list {
+      width: 25%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 15px;
+    }
+  }
+
   .content {
     padding: 120px 0;
+    min-height: 800px;
 
     h1 {
       margin-bottom: 70px;
@@ -631,8 +717,18 @@ h3 {
       @include transform(translateY(20%));
     }
 
-    h2, button {
+    h2 {
+      margin: 0;
+      float: right;
+    }
+
+    button {
       margin-bottom: 20px;
+      float: right;
+
+      &:active, &:hover {
+        color: $pink;
+      }
     }
 
     button {
@@ -641,6 +737,43 @@ h3 {
 
       &:hover, &.active {
         color: $pink;
+
+        &.collapsed {
+          color: $white;
+        }
+      }
+
+      &.button-head {
+        position: relative;
+        padding-right: 20px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 0;
+          height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 6px solid #fff;
+        }
+
+        &:hover, &.active  {
+
+          &:after {
+            border-top-color: $pink;
+          }
+
+          &.collapsed {
+
+            &:after {
+              border-top-color: $white;
+            }
+          }
+        }
       }
     }
 
@@ -682,6 +815,13 @@ h3 {
         @include transform(translateY(0));
       }
     }
+
+    #accordionLocation-mb {
+
+      button {
+        float: none;
+      }
+    }
   }
 }
 
@@ -712,6 +852,10 @@ h3 {
 
   .figure {
     box-shadow: 0px 4px 14px rgba(0,0,0,0.3);
+    &:hover {
+      box-shadow: 0px 4px 14px rgba(0,0,0,0.6);
+        background-color: $gray-soft;
+    }
 
     &._1, &._2, &._3 {
       opacity: 0;
@@ -719,15 +863,18 @@ h3 {
     }
 
     &._1 {
-      @include transition(all 0.8s ease-out 0.2s);
+      @include transition(opacity 0.8s ease-out 0.2s);
+      @include transition(transform 0.8s ease-out 0.2s);
     }
 
     &._2 {
-      @include transition(all 0.8s ease-out 0.4s);
+      @include transition(opacity 0.8s ease-out 0.4s);
+      @include transition(transform 0.8s ease-out 0.4s);
     }
 
     &._3 {
-      @include transition(all 0.8s ease-out 0.6s);
+      @include transition(opacity 0.8s ease-out 0.6s);
+      @include transition(transform 0.8s ease-out 0.6s);
     }
 
     img {
@@ -757,18 +904,14 @@ h3 {
         font: 600 18px/1 oswald, arial;
       }
     }
-
-    &:hover {
-      .figcaption {
-        background-color: $gray-soft;
-      }
-    }
   }
 
   .button-blue {
     opacity: 0;
     @include transform(translateY(20%));
-    @include transition(all 0.8s ease-out 1.2s);
+    @include transition(opacity 0.8s ease-out 1.2s);
+    @include transition(transform 0.8s ease-out 1.2s);
+
   }
 
   &.fade-in {
@@ -820,7 +963,9 @@ h3 {
     .button-white {
       opacity: 0;
       @include transform(translateY(20%));
-      @include transition(all 0.8s ease-out 0.6s);
+      @include transition(opacity 0.8s ease-out 0.6s);
+      @include transition(transform 0.8s ease-out 0.6s);
+
     }
   }
 
@@ -850,7 +995,7 @@ h3 {
 
       h1 {
         font: 700 140px/1.2 oswald, arial;
-        color: rgba(255,255,255,0.1);
+        color: rgba(255,255,255,0.2);
         position: absolute;
         bottom: 110px;
         right: 0;
@@ -872,7 +1017,7 @@ h3 {
   }
 
   .content {
-    padding: 100px 0;
+    padding: 70px 0;
 
     &.fade-in {
 
@@ -899,10 +1044,29 @@ h3 {
 
   .row {
     margin-bottom: 40px;
+    opacity: 0;
+    @include transform(translateY(20%));
+
+    &.fade-in {
+
+      &.row_1, &.row_2 {
+        @include transform(translateY(0));
+        opacity: 1;
+      }
+
+      &.row_1 {
+        @include transition(all 0.8s ease-out 0.2s);
+      }
+      &.row_2 {
+        @include transition(all 0.8s ease-out 0.4s);
+      }
+    }
   }
 
   .figure {
     display: block;
+    height: 100%;
+    max-width: 554px;
 
     img {
       width: 100%;
@@ -919,7 +1083,7 @@ h3 {
       }
 
       .position {
-        color: $black;
+        color: #666;
         font: 400 18px/1.2 oswald, arial;
         margin-bottom: 30px;
 
@@ -937,39 +1101,37 @@ h3 {
 
     &:hover {
       box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
-
-      .figcaption {
-        background-color: $gray-soft;
-      }
+      background-color: $gray-soft;
     }
 
-    &.column {
-      opacity: 0;
-      @include transform(translateY(20%));
-
-      &.col_1 {
-        @include transition(all 0.8s ease-out 0.2s);
-      }
-      &.col_2 {
-        @include transition(all 0.8s ease-out 0.4s);
-      }
-      &.col_3 {
-        @include transition(all 0.8s ease-out 0.6s);
-      }
-      &.col_4 {
-        @include transition(all 0.8s ease-out 0.8s);
-      }
-    }
-    &.fade-in {
-
-      &.column {
-
-        &.col_1, &.col_2, &.col_3, &.col_4 {
-          @include transform(translateY(0));
-            opacity: 1;
-        }
-      }
-    }
+    // &.column {
+    //   opacity: 0;
+    //   @include transform(translateY(20%));
+    //
+    //   &.col_1 {
+    //     @include transition(all 0.8s ease-out 0.2s);
+    //   }
+    //   &.col_2 {
+    //     @include transition(all 0.8s ease-out 0.4s);
+    //   }
+    //   &.col_3 {
+    //     @include transition(all 0.8s ease-out 0.6s);
+    //   }
+    //   &.col_4 {
+    //     @include transition(all 0.8s ease-out 0.8s);
+    //   }
+    // }
+    //
+    // &.fade-in {
+    //
+    //   &.column {
+    //
+    //     &.col_1, &.col_2, &.col_3, &.col_4 {
+    //       @include transform(translateY(0));
+    //         opacity: 1;
+    //     }
+    //   }
+    // }
   }
 }
 
@@ -1115,7 +1277,7 @@ h3 {
 
 /* Blog page ******************************************************************/
 #blogs-page {
-  margin-top: 140px;
+  margin-top: 80px;
 
   &.fade-in {
 
@@ -1126,7 +1288,7 @@ h3 {
   }
 
   .content {
-    padding: 100px 0;
+    padding: 70px 0;
   }
 
   h1 {
@@ -1266,7 +1428,7 @@ h3 {
 
 /* Blog Detail page ***********************************************************/
 #blogsdetail-page {
-  margin-top: 140px;
+  margin-top: 80px;
 
   &.fade-in {
 
@@ -1287,7 +1449,7 @@ h3 {
   }
 
   .content {
-    padding: 100px 0;
+    padding: 70px 0;
 
     .breadcrumb {
       opacity: 0;
@@ -1500,7 +1662,7 @@ h3 {
 
       h1 {
         font: 700 140px/1.2 oswald, arial;
-        color: rgba(255,255,255,0.1);
+        color: rgba(255,255,255,0.2);
         position: absolute;
         bottom: 110px;
         right: 0;
@@ -1537,7 +1699,6 @@ h3 {
 
     h2 {
       font-size: 40px;
-      color: $pink;
     }
 
     h3 {
@@ -1653,7 +1814,7 @@ h3 {
 
       h1 {
         font: 700 140px/1.2 oswald, arial;
-        color: rgba(255,255,255,0.1);
+        color: rgba(255,255,255,0.2);
         position: absolute;
         bottom: 110px;
         right: 0;
@@ -1774,7 +1935,7 @@ h3 {
           &.row_1 {
             opacity: 0;
             @include transform(translateY(50%));
-            @include transition(all 0.8s ease-out 0.3);
+            @include transition(all 0.8s ease-out 0.3s);
           }
 
           &.row_2 {
@@ -1904,6 +2065,7 @@ $breadcrumb-divider: quote(">");
 }
 
 .modal {
+  display: block !important;
     position: absolute;
     @include transform(scale(0));
     @include transition(all 0.5s ease);
@@ -2244,8 +2406,15 @@ $breadcrumb-divider: quote(">");
       }
     }
 
+    .row {
+
+      .modal-list {
+        width: 100%;
+      }
+    }
+
     .content {
-      padding: 60px 0;
+      padding: 10% 0;
 
       .oxford-mb {
         padding-right: 10px;
@@ -2253,7 +2422,7 @@ $breadcrumb-divider: quote(">");
 
       h1 {
         margin-bottom: 40px;
-        float: none;
+        // float: none;
       }
 
       h2 {

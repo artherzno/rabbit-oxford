@@ -24,7 +24,7 @@ $(document).ready(function(){
 
     mouseX = (e.pageX - elementX - halfW)/halfW;
     mouseY = (e.pageY - elementY - halfH)/halfH;
-    mouseX = Math.round(mouseX * 100)/300;
+    mouseX = Math.round(mouseX * 100)/180;
     mouseY = Math.round(mouseY * 100)/200;
 
     // brain.css("transform", "rotateX("+mouseY*-10+"deg) rotateY("+mouseX*10+"deg)");
@@ -34,24 +34,28 @@ $(document).ready(function(){
 
 
   // Config Modal //////////////////////////////////////////////////////////////
-  var converageBtn = $('#converage .button-none');
-  converageBtn.on('click', function(event) {
+  var locattionBtn = $('#locations .button-none');
+  locattionBtn.on('click', function(event) {
     $('.close').trigger('click');
     $('body').removeAttr('style');
-    $('#converage button').removeClass('active');
+    $('#locations button').removeClass('active');
     $(this).addClass('active');
   });
 
 
 
   // Remove modal //////////////////////////////////////////////////////////////
-  var closeModal = function() {
-    $('.close').trigger('click');
-    $('#converage button').removeClass('active');
-  }
-  $('#converage').on('mouseleave', function(){
-    closeModal();
+  $('.modal .close').on('click', function() {
+      $('#locations .button-modal').removeClass('active');
+
   });
+  // var closeModal = function() {
+  //   $('.close').trigger('click');
+  //   $('#locations .button-modal').removeClass('active');
+  // }
+  // $('#locations').on('mouseleave', function(){
+  //   closeModal();
+  // });
 
 
 
@@ -89,16 +93,6 @@ $(document).ready(function(){
   // .setPin('#intro', { pushFollowers: false })
   // .addTo(controller);
 
-  // Pin banner ----------------------------------------- //
-  // var pinIntro = new ScrollMagic.Scene({
-  //   triggerElement: '#banner',
-  //   triggerHook: 0,
-  //   duration: '100'
-  // })
-  // .addIndicators({ name: 'banner'})
-  // .setPin('#banner')
-  // .addTo(controller);
-
   // Cloud banner ----------------------------------------- //
   // var pinIntro = new ScrollMagic.Scene({
   //   triggerElement: '#banner',
@@ -118,6 +112,26 @@ $(document).ready(function(){
   // .addIndicators({ name: 'city banner'})
   // .setClassToggle('#banner .city', 'fade-in')
   // .addTo(controller);
+
+  // Pin banner ----------------------------------------- //
+  var pinBanner = new ScrollMagic.Scene({
+    triggerElement: '#banner',
+    triggerHook: 0,
+    duration: '80%'
+  })
+  // .addIndicators({ name: 'banner'})
+  .setPin('#banner')
+  .addTo(controller);
+
+  // Second content banner ----------------------------------------- //
+  var secondContentBanner = new ScrollMagic.Scene({
+    triggerElement: '#banner',
+    triggerHook: 0.3,
+    duration: '80%'
+  })
+  // .addIndicators({ name: 'banner'})
+  .setClassToggle('#banner .box', 'fade-in')
+  .addTo(controller);
 
   // What we do - img ----------------------------------------- //
   var imgWhatwedo = new ScrollMagic.Scene({
@@ -303,7 +317,7 @@ $(document).ready(function(){
     triggerHook: 0.9,
   })
   // .addIndicators({ name: 'team-page'})
-  .setClassToggle('#team-page .row_1 .column', 'fade-in')
+  .setClassToggle('#team-page .row_1', 'fade-in')
   .addTo(controller);
 
   var rowTeam2 = new ScrollMagic.Scene({
@@ -311,7 +325,7 @@ $(document).ready(function(){
     triggerHook: 0.9,
   })
   // .addIndicators({ name: 'team-page'})
-  .setClassToggle('#team-page .row_2 .column', 'fade-in')
+  .setClassToggle('#team-page .row_2', 'fade-in')
   .addTo(controller);
 
   // Team detail - banner ----------------------------------------- //
@@ -478,5 +492,7 @@ $(document).ready(function(){
   // Initial ///////////////////////////////////////////////////////////////////
   $('#intro .logo').addClass('fade-in');
 
-
+  $('.nav-item.dropdown').hover(function() {
+    $('.dropdown-menu').toggleClass('hover');
+  });
 });

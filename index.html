@@ -41,8 +41,9 @@
               <a href="team.html" class="nav-link">TEAM<hr></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbar-practics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRACTICES<hr></a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbar-practics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRACTICES<!--<hr>--></a>
               <div class="dropdown-menu" aria-labelledby="navbar-practics">
+                <hr>
                 <a class="dropdown-item" href="#">HOSPITALITY</a>
                 <a class="dropdown-item" href="strategy.html">STRATEGY</a>
                 <a class="dropdown-item" href="#">DEMAND GENERATION
@@ -93,11 +94,17 @@
         <div class="content">
           <div class="box">
             <div class="box-content _first">
+              <p class="text-shadow">We DELIVER <span>shareholder value</span> through
+              <span>Business Transformation</span>
+              and <span>MARKET EXPANSION.</span></p>
               <p>We DELIVER <span>shareholder value</span> through
               <span>Business Transformation</span>
               and <span>MARKET EXPANSION.</span></p>
             </div>
             <div class="box-content _second">
+              <p class="text-shadow">We hAve <span>Excellences</span> and
+              <span>Entrepreneurship</span>
+              at the core of our business.</p>
               <p>We hAve <span>Excellences</span> and
               <span>Entrepreneurship</span>
               at the core of our business.</p>
@@ -260,7 +267,7 @@
     <div id="locations" class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md-9" style="position: relative;">
+          <div class="modal-area" style="position: relative;">
 
             <!-- Modal -->
             <div class="modal" id="modal-bkk" tabindex="-1" role="dialog" aria-labelledby="modal-bkk" aria-hidden="true">
@@ -361,54 +368,62 @@
 
           </div>
 
-          <div class="col-md-3">
+          <div class="modal-list">
             <div class="content text-right">
               <h1>LOCATIONS</h1>
-              <div class="oxford-dt">
+              <div id="accordionLocation-dt" class="oxford-dt accordion">
                 <div class="asia">
-                  <h2>ASIA</h2>
-                  <button type="button" class="button-none" data-toggle="modal" data-target="#modal-bkk">BANGKOK</button><br>
-                  <button type="button" class="button-none" data-toggle="modal" data-target="#modal-sgp">SINGAPORE</button>
+                  <button class="button-none button-head" data-toggle="collapse" data-target="#collapse-asia-dt" aria-expanded="true" aria-controls="collapse-asia-dt"><h2>ASIA</h2></button>
+                  <div id="collapse-asia-dt" class="collapse" aria-labelledby="headingOne" data-parent="#accordionLocation-dt">
+                    <button type="button" class="button-none button-modal" data-toggle="modal" data-target="#modal-bkk">BANGKOK</button><br>
+                    <button type="button" class="button-none button-modal" data-toggle="modal" data-target="#modal-sgp">SINGAPORE</button>
+                  </div>
                   <hr>
                 </div>
                 <div class="africa">
-                  <h2>AFRICA</h2>
-                  <button type="button" class="button-none" data-toggle="modal" data-target="#modal-jbg">JOHANNESBURG</button>
+                  <button class="button-none button-head" data-toggle="collapse" data-target="#collapse-africa-dt" aria-expanded="false" aria-controls="collapse-africa-dt"><h2>AFRICA</h2></button>
+                  <div id="collapse-africa-dt" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLocation-dt">
+                    <button type="button" class="button-none button-modal" data-toggle="modal" data-target="#modal-jbg">JOHANNESBURG</button>
+                  </div>
                   <hr>
                 </div>
                 <div class="europe">
-                  <h2>EUROPE</h2>
-                  <button type="button" class="button-none" data-toggle="modal" data-target="#modal-bcr">BUCHAREST</button><br>
-                  <button type="button" class="button-none" data-toggle="modal" data-target="#modal-dmk">DENMARK</button>
+                  <button class="button-none button-head" data-toggle="collapse" data-target="#collapse-europe-dt" aria-expanded="false" aria-controls="collapse-europe-dt"><h2>EUROPE</h2></button>
+                  <div id="collapse-europe-dt" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLocation-dt">
+                    <button type="button" class="button-none button-modal" data-toggle="modal" data-target="#modal-bcr">BUCHAREST</button><br>
+                    <button type="button" class="button-none button-modal" data-toggle="modal" data-target="#modal-dmk">DENMARK</button>
+                  </div>
                   <hr>
                 </div>
                 <div class="latin">
-                  <h2>LATIN AMERICA</h2>
-                  <button type="button" class="button-none" data-toggle="modal" data-target="#modal-mxc">MEXICO CITY</button>
+                  <button class="button-none button-head" data-toggle="collapse" data-target="#collapse-latin-dt" aria-expanded="false" aria-controls="collapse-latin-dt"><h2>LATIN AMERICA</h2></button>
+                  <div id="collapse-latin-dt" class="collapse" aria-labelledby="headingFour" data-parent="#accordionLocation-dt">
+                    <button type="button" class="button-none button-modal" data-toggle="modal" data-target="#modal-mxc">MEXICO CITY</button>
+                  </div>
                 </div>
               </div>
-              <div class="oxford-mb">
+              <div id="accordionLocation-mb" class="oxford-mb accordion">
                 <div class="asia">
-                  <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-asia" aria-expanded="false" aria-controls="collapse-asia">
+                  <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-asia-mb" aria-expanded="false" aria-controls="collapse-asia-mb">
                     <h2>ASIA</h2>
                   </button>
-                  <div class="collapse" id="collapse-asia">
+                  <div class="collapse" id="collapse-asia-mb" aria-labelledby="headingMbOne" data-parent="#accordionLocation-mb">
                     <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-bkk" aria-expanded="false" aria-controls="collapse-bkk">BANGKOK</button>
-                    <div class="collapse" id="collapse-bkk">
+                    <div class="collapse" id="collapse-bkk" aria-labelledby="headingMbSubOne" data-parent="#collapse-asia-mb">
                       239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330
                     </div>
                     <br>
-                    <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-sgp" aria-expanded="false" aria-controls="collapse-sgp">SINGAPORE</button>
-                    <div class="collapse" id="collapse-sgp">
+                    <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-sgp-mb" aria-expanded="false" aria-controls="collapse-sgp-mb">SINGAPORE</button>
+                    <div class="collapse" id="collapse-sgp-mb" aria-labelledby="headingMbSubTwo" data-parent="#collapse-asia-mb">
                       239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330
                     </div>
                   </div>
                 </div>
                 <div class="africa">
-                  <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-africa" aria-expanded="false" aria-controls="collapse-africa">
+                  <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-africa-mb" aria-expanded="false" aria-controls="collapse-africa-mb">
                     <h2>AFRICA</h2>
                   </button>
-                  <div class="collapse" id="collapse-africa">
+                  <div class="collapse" id="collapse-africa-mb" aria-labelledby="headingMbTwo" data-parent="#accordionLocation-mb">
                     <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-jbg" aria-expanded="false" aria-controls="collapse-jbg">JOHANNESBURG</button>
                     <div class="collapse" id="collapse-jbg">
                       239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330
@@ -416,17 +431,17 @@
                   </div>
                 </div>
                 <div class="europe">
-                  <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-europe" aria-expanded="false" aria-controls="collapse-europe">
+                  <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-europe-mb" aria-expanded="false" aria-controls="collapse-europe-mb">
                     <h2>EUROPE</h2>
                   </button>
-                  <div class="collapse" id="collapse-europe">
+                  <div class="collapse" id="collapse-europe-mb" aria-labelledby="headingMbThree" data-parent="#accordionLocation-mb">
                     <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-bcr" aria-expanded="false" aria-controls="collapse-bcr">BUCHAREST</button>
-                    <div class="collapse" id="collapse-bcr">
+                    <div class="collapse" id="collapse-bcr" aria-labelledby="headingMbSubThree" data-parent="#collapse-europe-mb">
                       239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330
                     </div>
                     <br>
                     <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-dmk" aria-expanded="false" aria-controls="collapse-dmk">DENMARK</button>
-                    <div class="collapse" id="collapse-dmk">
+                    <div class="collapse" id="collapse-dmk" aria-labelledby="headingMbSubThree" data-parent="#collapse-europe-mb">
                       239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330
                     </div>
                   </div>
@@ -435,7 +450,7 @@
                   <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-latin" aria-expanded="false" aria-controls="collapse-latin">
                     <h2>LATIN AMERICA</h2>
                   </button>
-                  <div class="collapse" id="collapse-latin">
+                  <div class="collapse" id="collapse-latin" aria-labelledby="headingMbFour" data-parent="#accordionLocation-mb">
                     <button type="button" class="button-none" data-toggle="collapse" data-target="#collapse-mxc" aria-expanded="false" aria-controls="collapse-mxc">MEXICO CITY</button>
                     <div class="collapse" id="collapse-mxc">
                       239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330
@@ -458,36 +473,36 @@
             <div class="row">
             <div class=" col-md-4">
               <div class="figure _1">
-                <img src="assets/images/blogs/oxf_blog_img1.jpg" alt="Oxford Acuity">
-                <div class="figcaption">
-                  <h3>10 Reasons I'm Thankful For Thailand Hospitality Industry On Thanksgiving</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut arcu id sapien auctor facilisis id vel ipsum. Ut egestas quam sed urna malesuada malesuada.</p>
-                  <p class="date float-left">Nov 20, 2018</p>
-                  <a href="blogsdetail.html" class="float-right">READ MORE</a>
+                  <img src="assets/images/blogs/oxf_blog_img1.jpg" alt="Oxford Acuity">
+                  <div class="figcaption">
+                    <h3>10 Reasons I'm Thankful For Thailand Hospitality Industry On Thanksgiving</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut arcu id sapien auctor facilisis id vel ipsum. Ut egestas quam sed urna malesuada malesuada.</p>
+                    <p class="date float-left">Nov 20, 2018</p>
+                    <a href="blogsdetail.html" class="button-readmore float-right">READ MORE</a>
+                  </div>
                 </div>
-              </div>
             </div>
             <div class=" col-md-4">
               <div class="figure _2">
-                <img src="assets/images/blogs/oxf_blog_img2.jpg" alt="Oxford Acuity">
-                <div class="figcaption">
-                  <h3>10 Reasons I'm Thankful For Thailand Hospitality Industry On Thanksgiving</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut arcu id sapien auctor facilisis id vel ipsum. Ut egestas quam sed urna malesuada malesuada.</p>
-                  <p class="date float-left">Nov 20, 2018</p>
-                  <a href="blogsdetail.html" class="float-right">READ MORE</a>
+                  <img src="assets/images/blogs/oxf_blog_img2.jpg" alt="Oxford Acuity">
+                  <div class="figcaption">
+                    <h3>10 Reasons I'm Thankful For Thailand Hospitality Industry On Thanksgiving</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut arcu id sapien auctor facilisis id vel ipsum. Ut egestas quam sed urna malesuada malesuada.</p>
+                    <p class="date float-left">Nov 20, 2018</p>
+                    <a href="blogsdetail.html" class="button-readmore float-right">READ MORE</a>
+                  </div>
                 </div>
-              </div>
             </div>
             <div class=" col-md-4">
               <div class="figure _3">
-                <img src="assets/images/blogs/oxf_blog_img3.jpg" alt="Oxford Acuity">
-                <div class="figcaption">
-                  <h3>10 Reasons I'm Thankful For Thailand Hospitality Industry On Thanksgiving</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut arcu id sapien auctor facilisis id vel ipsum. Ut egestas quam sed urna malesuada malesuada.</p>
-                  <p class="date float-left">Nov 20, 2018</p>
-                  <a href="blogsdetail.html" class="float-right">READ MORE</a>
+                  <img src="assets/images/blogs/oxf_blog_img3.jpg" alt="Oxford Acuity">
+                  <div class="figcaption">
+                    <h3>10 Reasons I'm Thankful For Thailand Hospitality Industry On Thanksgiving</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut arcu id sapien auctor facilisis id vel ipsum. Ut egestas quam sed urna malesuada malesuada.</p>
+                    <p class="date float-left">Nov 20, 2018</p>
+                    <a href="blogsdetail.html" class="button-readmore float-right">READ MORE</a>
+                  </div>
                 </div>
-              </div>
             </div>
           </div>
           </div>
@@ -519,7 +534,7 @@
           <div class="col-sm-12 col-md-9">
             <ul class="nav float-right">
               <li class="nav-item">
-                <a href="home.html"  class="nav-link active">HOME</a>
+                <a href="/"  class="nav-link active">HOME</a>
               </li>
               <li class="nav-item">
                 <a href="team.html" class="nav-link">TEAM</a>
@@ -554,14 +569,10 @@
           <div class="social col-sm-12 col-md-6">
             <ul class="nav">
               <li>
-                <a href="">
-                  <img src="assets/images/icon/oxf_icon_fb.png" alt="">
-                </a>
+                <a href="" class="fb"></a>
               </li>
               <li>
-                <a href="">
-                  <img src="assets/images/icon/oxf_icon_tw.png" alt="">
-                </a>
+                <a href="" class="tw"></a>
               </li>
             </ul>
           </div>
