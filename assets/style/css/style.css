@@ -188,7 +188,7 @@ h3 {
 .buttonWhite {
   border: 2px solid #fff;
   color: #fff;
-  padding: 15px 30px;
+  padding: 10px 30px;
   background-color: transparent;
   font: 600 18px/1 oswald, arial;
   width: 180px;
@@ -216,7 +216,7 @@ h3 {
 .buttonBlue {
   border: 2px solid #1f3052;
   color: #1f3052;
-  padding: 15px 30px;
+  padding: 10px 30px;
   background-color: transparent;
   font: 600 18px/1 oswald, arial;
   width: 180px;
@@ -444,7 +444,7 @@ h3 {
     #banner .container .content {
       min-height: 880px;
       text-align: center;
-      padding: 50% 0 14%;
+      padding: 60% 0 14%;
       -webkit-transition: all 2s ease 1.4s;
       -ms-transition: all 2s ease 1.4s;
       -o-transition: all 2s ease 1.4s;

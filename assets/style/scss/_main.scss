@@ -279,7 +279,7 @@ h3 {
     .content {
       min-height: 880px;
       text-align: center;
-      padding: 50% 0 14%;
+      padding: 60% 0 14%;
       @include transition(all 2s ease 1.4s);
       opacity: 0;
       @include transform(translateY(200%));
