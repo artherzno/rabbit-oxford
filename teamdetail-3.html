@@ -17,8 +17,10 @@
     <!-- Nav -->
     <nav id="nav-main" class="navbar navbar-expand-lg">
       <div class="container">
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon icon-close"></span>
+          <span class="navbar-toggler-icon icon-burger"></span>
         </button>
 
         <div class="navbar-toggler-logo justify-content-center oxford-mb">
@@ -29,14 +31,28 @@
           <div class="navbar-brand oxford-dt">
             <a href="index.html"><img class="logo" src="assets/images/oxf_logo_nav.png" alt="Oxford Acuity"></a>
           </div>
-          <ul class="nav navbar-nav">
+          <div class="navbar-nav-list">
+            <ul class="nav navbar-nav">
             <li class="nav-item">
-              <a href="index.html" class="nav-link">HOME<hr></a>
+              <a href="index.html" class="nav-link active">HOME<hr></a>
             </li>
             <li class="nav-item">
               <a href="team.html" class="nav-link">TEAM<hr></a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item oxford-mb">
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbar-practics-mb" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRACTICES</a>
+                <div class="dropdown-menu" aria-labelledby="navbar-practics-mb">
+                  <a class="dropdown-item" href="#">HOSPITALITY</a>
+                  <a class="dropdown-item" href="strategy.html">STRATEGY</a>
+                  <a class="dropdown-item" href="#">DEMAND GENERATION
+                  <a class="dropdown-item" href="demandfulfillment.html">DEMAND FULFILLMENT</a>
+                  <a class="dropdown-item" href="#">ORGANISATIONAL OPTIMISATION</a>
+                  <a class="dropdown-item" href="financialtransformation.html">FINANCIAL TRANSFORMATION</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown oxford-dt" id="navbar-practics-dt">
               <a class="nav-link dropdown-toggle" href="#" id="navbar-practics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRACTICES<!--<hr>--></a>
               <div class="dropdown-menu" aria-labelledby="navbar-practics">
                 <hr>
@@ -64,6 +80,7 @@
               <a href="" class="nav-link">CONTACT US<hr></a>
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -106,7 +123,7 @@
             <p class="paragraph _6">Rolando is based in Mexico City, Mexico. </p>
 
             <div class="button row text-center">
-              <a href="team.html" class="button-white">BACK</a>
+              <a href="team.html" class="buttonWhite">BACK</a>
             </div>
           </div>
         </div>

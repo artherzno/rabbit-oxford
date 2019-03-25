@@ -28,16 +28,21 @@ nav {
     }
   }
 
-  .navbar-toggler-icon {
-    margin: 5px 0;
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  .navbar-nav-list {
+    margin-left: auto;
   }
 
-  .navbar-toggler-close {
-    color: $white;
-    font-size: 50px;
-    font-family: none;
-    line-height: 0.8;
+  .navbar-toggler-icon {
+
+    &.icon-burger {
+      margin: 5px 0;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    &.icon-close {
+      margin: 5px 0;
+      background-image: url('../../images/icon/oxf_icon_close.svg');
+    }
   }
 
   .navbar-toggler-logo {
@@ -45,26 +50,32 @@ nav {
 
     img {
       width: 80%;
+      max-width: 312px;
       opacity: 1;
     }
   }
 
   .navbar-toggler {
-    .navbar-toggler-icon {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 1053;
+
+    .icon-burger {
       display: inline-block;
     }
 
-    .navbar-toggler-close {
+    .icon-close  {
       display: none;
     }
 
     &[aria-expanded="true"] {
 
-      .navbar-toggler-icon {
+      .icon-burger {
         display: none;
       }
 
-      .navbar-toggler-close {
+      .icon-close {
         display: inline-block;
       }
     }
@@ -207,44 +218,62 @@ nav {
 
     &.show, &.collapsing {
 
-          .nav {
+      .nav {
 
-            li.nav-item {
+        li.nav-item {
 
-              a.nav-link {
-                text-align: center;
-                font-size: 18px;
-                padding: 10px;
+          a.nav-link {
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
 
-                &:after {
-                  right: 26%;
-                  top: 38%;
-                }
+            &:after {
+              right: 26%;
+              top: 38%;
+            }
 
-                &.dropdown-toggle {
-                  // margin-bottom: 0;
-                  // padding-bottom: 0;
-                }
+            &.dropdown-toggle {
+              // margin-bottom: 0;
+              // padding-bottom: 0;
+            }
 
-                hr {
-                  display: none;
-                }
-              }
+            hr {
+              display: none;
+            }
+          }
 
-              .dropdown-menu {
-                padding-top: 0;
-                background: transparent;
-                border: none;
+          .dropdown-menu {
+            padding-top: 0;
+            background: transparent;
+            border: none;
 
-                .dropdown-item {
-                  text-align: center;
-                  color: #b4bed4;
-                  margin-bottom: 15px;
-                  padding-bottom: 10px;
-                }
-              }
+            .dropdown-item {
+              text-align: center;
+              color: #b4bed4;
+              margin-bottom: 15px;
+              padding-bottom: 10px;
             }
           }
         }
+      }
+    }
+  }
+
+  .oxford-mb {
+
+    #navbar-practics-mb {
+
+
+      &+.dropdown-menu {
+
+        .dropdown-item {
+          border: none;
+          font-weight: 400;
+          margin: 0;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 }

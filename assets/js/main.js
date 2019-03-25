@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 
   // Config Modal //////////////////////////////////////////////////////////////
-  var locattionBtn = $('#locations .button-none');
+  var locattionBtn = $('#locations .buttonNone');
   locattionBtn.on('click', function(event) {
     $('.close').trigger('click');
     $('body').removeAttr('style');
@@ -492,7 +492,12 @@ $(document).ready(function(){
   // Initial ///////////////////////////////////////////////////////////////////
   $('#intro .logo').addClass('fade-in');
 
-  $('.nav-item.dropdown').hover(function() {
+  $('#navbar-practics-dt').hover(function() {
     $('.dropdown-menu').toggleClass('hover');
+  });
+
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+
   });
 });
