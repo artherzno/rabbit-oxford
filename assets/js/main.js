@@ -117,19 +117,19 @@ $(document).ready(function(){
   var pinBanner = new ScrollMagic.Scene({
     triggerElement: '#banner',
     triggerHook: 0,
-    duration: '80%'
+    duration: '120%'
   })
-  // .addIndicators({ name: 'banner'})
+  .addIndicators({ name: 'banner'})
   .setPin('#banner')
   .addTo(controller);
 
   // Second content banner ----------------------------------------- //
   var secondContentBanner = new ScrollMagic.Scene({
     triggerElement: '#banner',
-    triggerHook: 0.3,
+    triggerHook: 0,
     duration: '80%'
   })
-  // .addIndicators({ name: 'banner'})
+  .addIndicators({ name: 'banner second'})
   .setClassToggle('#banner .box', 'fade-in')
   .addTo(controller);
 
