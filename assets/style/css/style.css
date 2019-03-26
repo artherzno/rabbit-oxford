@@ -313,12 +313,23 @@ h3 {
   -o-transition: all 1s linear;
   transition: all 1s linear;
   position: absolute;
-  z-index: 1; }
+  z-index: 1;
+  overflow: hidden; }
   #intro.fade-out {
     opacity: 0;
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%); }
+  #intro video {
+    position: fixed;
+    left: -500%;
+    top: 0;
+    right: -500%;
+    bottom: 0;
+    margin: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0; }
   #intro .container {
     position: relative;
     height: 100%; }
@@ -2494,10 +2505,12 @@ h3 {
       display: inline-block; }
       #footer .row._second .nav li {
         display: inline-block; }
-  #intro .container .logo .brain {
-    right: 46px;
-    top: -126%;
-    width: 28%; }
+  #intro .container .logo {
+    top: 56%; }
+    #intro .container .logo .brain {
+      right: 46px;
+      top: -126%;
+      width: 28%; }
   #banner {
     height: 100vh; }
     #banner .obj.cloud.fade-in {

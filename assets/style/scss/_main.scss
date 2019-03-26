@@ -160,10 +160,23 @@ h3 {
   @include transition(all 1s linear);
   position: absolute;
   z-index: 1;
+  overflow: hidden;
 
   &.fade-out {
     opacity: 0;
     @include transform(translateY(-100%));
+  }
+
+  video {
+    position: fixed;
+    left: -500%;
+    top: 0;
+    right: -500%;
+    bottom: 0;
+    margin: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
   }
 
   .container {
@@ -3051,7 +3064,7 @@ $breadcrumb-divider: quote(">");
     .container {
 
       .logo {
-
+        top: 56%;
         .brain {
           right: 46px;
           top: -126%;
