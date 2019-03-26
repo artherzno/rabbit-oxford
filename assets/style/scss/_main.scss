@@ -167,7 +167,7 @@ h3 {
     @include transform(translateY(-100%));
   }
 
-  video {
+  #introVideo {
     position: fixed;
     left: -500%;
     top: 0;
@@ -2315,7 +2315,7 @@ $breadcrumb-divider: quote(">");
     .container {
 
       .content {
-        margin-top: 30%;
+        margin-top: 50%;
         min-height: 0;
 
         .box {
@@ -3065,6 +3065,7 @@ $breadcrumb-divider: quote(">");
 
       .logo {
         top: 56%;
+
         .brain {
           right: 46px;
           top: -126%;

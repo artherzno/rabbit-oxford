@@ -320,7 +320,7 @@ h3 {
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%); }
-  #intro video {
+  #intro #introVideo {
     position: fixed;
     left: -500%;
     top: 0;
@@ -2128,7 +2128,7 @@ h3 {
       -webkit-animation-duration: 200s;
       animation-duration: 200s; }
     #banner .container .content {
-      margin-top: 30%;
+      margin-top: 50%;
       min-height: 0; }
       #banner .container .content .box .box-content p {
         font-size: 22px; }
