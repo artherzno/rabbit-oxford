@@ -119,7 +119,7 @@ $(document).ready(function(){
     triggerHook: 0,
     duration: '120%'
   })
-  .addIndicators({ name: 'banner'})
+  // .addIndicators({ name: 'banner'})
   .setPin('#banner')
   .addTo(controller);
 
@@ -129,7 +129,7 @@ $(document).ready(function(){
     triggerHook: 0,
     duration: '80%'
   })
-  .addIndicators({ name: 'banner second'})
+  // .addIndicators({ name: 'banner second'})
   .setClassToggle('#banner .box', 'fade-in')
   .addTo(controller);
 
