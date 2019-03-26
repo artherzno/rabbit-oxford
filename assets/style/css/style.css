@@ -2558,7 +2558,7 @@ h3 {
     padding: .5rem .8rem; }
   #intro .container .logo .brain {
     right: 74px;
-    top: -200%;
+    top: -180%;
     width: 28%; } }
 
 @media (min-width: 1400px) {
@@ -2572,6 +2572,6 @@ h3 {
   .container {
     max-width: 1400px; }
   #intro .container .logo .brain {
-    right: 110px;
+    right: 90px;
     top: -220%;
     width: auto; } }
