@@ -159,7 +159,7 @@ h3 {
   opacity: 1;
   @include transition(all 1s linear);
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
 
   &.fade-out {
@@ -246,6 +246,10 @@ h3 {
   position: relative;
   background-color: #090909;
   overflow: hidden;
+
+  &.fade-in {
+    background-color: $white;
+  }
 
   .obj {
     position: absolute;
@@ -648,7 +652,7 @@ h3 {
       }
     }
 
-    .carousel-indicators {
+    .carouselHospitality-indicators {
       display: block;
       margin-bottom: 85px;
       margin-left: auto;
@@ -669,6 +673,8 @@ h3 {
         text-transform: uppercase;
         background-color: transparent;
         opacity: 1;
+        padding: 10px 0;
+        cursor: pointer;
 
         &.active {
           color: $pink;
@@ -1450,6 +1456,7 @@ h3 {
 /* Blog Detail page ***********************************************************/
 #blogsdetail-page {
   margin-top: 80px;
+  overflow: hidden;
 
   &.fade-in {
 
@@ -1524,6 +1531,44 @@ h3 {
         img {
           width: 100%;
           margin-bottom: 60px;
+        }
+      }
+    }
+
+    .carousel-dot {
+
+      li {
+        color: $black;
+      }
+    }
+  }
+
+  .carouselBlogDetail-dot {
+    position: fixed;
+    top: 40px;
+    left: 2%;
+    z-index: 1099;
+    width: 100%;
+    text-align: center;
+
+    li {
+      display: inline-block;
+
+      span {
+        width: 8px;
+        height: 8px;
+        margin: 5px 7px;
+        background: #D6D6D6;
+        display: block;
+        opacity: 0.4;
+        border-radius: 30px;
+      }
+
+      &.active {
+
+        span {
+          background: $white;
+          opacity: 1;
         }
       }
     }
@@ -1971,7 +2016,7 @@ h3 {
         }
       }
 
-      .carousel-indicators {
+      .carouselHospitality-indicators {
 
         li {
           width: 10px;
@@ -1987,7 +2032,7 @@ h3 {
       }
     }
 
-    .carousel-indicators {
+    .carouselHospitality-indicators {
       bottom: 68px;
     }
 
@@ -2135,14 +2180,14 @@ $breadcrumb-divider: quote(">");
 
 /* OWL Carousel ***************************************************************/
 .owl-carousel {
-  
+
   .owl-stage  {
     padding-left: 0 !important;
   }
 }
 
 /* Responsive *****************************************************************/
-@media (max-width: 374.98px) { 
+@media (max-width: 374.98px) {
   #hospitality {
 
     .figcaption.fade-in {
@@ -2967,7 +3012,7 @@ $breadcrumb-divider: quote(">");
 }
 
 #hospitality {
-  
+
   .container {
     padding: 0;
   }
@@ -3150,7 +3195,7 @@ $breadcrumb-divider: quote(">");
     }
   }
   #blog {
-    
+
     .figure {
 
       .figcaption {
