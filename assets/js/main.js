@@ -498,6 +498,27 @@ $(document).ready(function(){
 
   $('.owl-carousel').owlCarousel({
     items: 1,
-
+    dots: 0,
+    responsive: {
+      0: {
+        stagePadding: 40,
+        margin: 10,
+        items: 1
+      },
+      768: {
+        stagePadding: 0,
+        margin: 0,
+      }
+    }
   });
+
+  $('.carousel-indicators li').on('click', function() {
+      var $this = $(this);
+      var slideNum = $(this).data('slide-to');
+
+      $('.carousel-indicators li').removeClass('active');
+      $this.addClass('active');
+      $("#carouselHospitality").trigger('to.owl.carousel', [slideNum, 300]);
+  });
+
 });
