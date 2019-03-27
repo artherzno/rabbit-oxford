@@ -2279,7 +2279,9 @@ $breadcrumb-divider: quote(">");
       }
 
       .navbar-toggler-logo {
-        display: block !important;
+        // display: block !important;
+        opacity: 1;
+        @include transition(all 0.2s ease-in);
       }
     }
 
@@ -2290,11 +2292,14 @@ $breadcrumb-divider: quote(">");
       top: 32%;
       margin: auto;
       z-index: 1053;
-      display: none !important;
+      // display: none !important;
+      opacity: 0;
     }
 
     .navbar-toggler[aria-expanded="true"] + .navbar-toggler-logo {
-      display: block !important;
+      // display: block !important;
+      opacity: 1;
+      @include transition(all 0.2s ease-in 0.2s);
     }
 
     .navbar-nav-list {
@@ -2302,10 +2307,14 @@ $breadcrumb-divider: quote(">");
       position: relative;
       overflow: auto;
       margin-top: 20%;
+      opacity: 0;
+      @include transition(all 0.2s ease-in 0.3s);
     }
 
     #collapsibleNavbar {
       background-color: $blue;
+      opacity: 0;
+      @include transition(all 0.2s ease-in);
 
       &.show, &.collapsing {
         position: fixed;
@@ -2313,6 +2322,14 @@ $breadcrumb-divider: quote(">");
         left: 0;
         width: 100%;
         height: 100%;
+        opacity: 1;
+      }
+
+      &.show {
+
+        .navbar-nav-list {
+          opacity: 1;
+        }
       }
     }
   }

@@ -1959,7 +1959,10 @@ h3 {
   nav.active._bg {
     padding: 30px 15px; }
   nav.active .navbar-toggler-logo {
-    display: block !important; }
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
   nav .navbar-toggler-logo {
     position: absolute;
     left: 20%;
@@ -1967,22 +1970,36 @@ h3 {
     top: 32%;
     margin: auto;
     z-index: 1053;
-    display: none !important; }
+    opacity: 0; }
   nav .navbar-toggler[aria-expanded="true"] + .navbar-toggler-logo {
-    display: block !important; }
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in 0.2s;
+    -ms-transition: all 0.2s ease-in 0.2s;
+    transition: all 0.2s ease-in 0.2s; }
   nav .navbar-nav-list {
     height: 88%;
     position: relative;
     overflow: auto;
-    margin-top: 20%; }
+    margin-top: 20%;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in 0.3s;
+    -ms-transition: all 0.2s ease-in 0.3s;
+    transition: all 0.2s ease-in 0.3s; }
   nav #collapsibleNavbar {
-    background-color: #1f3052; }
+    background-color: #1f3052;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
     nav #collapsibleNavbar.show, nav #collapsibleNavbar.collapsing {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      opacity: 1; }
+    nav #collapsibleNavbar.show .navbar-nav-list {
+      opacity: 1; }
 
   #footer .row._first {
     padding-top: 60px;
