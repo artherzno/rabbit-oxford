@@ -380,6 +380,32 @@ h3 {
             }
           }
         }
+
+        &.oxford-mb {
+
+          .box-content {
+
+            &._first {
+              opacity: 1;
+            }
+
+            &._second {
+              @include transform(translateY(150px));
+              opacity: 0;
+            }
+
+            &.fade-in {
+
+              &._first {
+                opacity: 0;
+              }
+
+              &._second {
+                opacity: 1;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -2084,6 +2110,11 @@ h3 {
   to { background-position: 100% 0; }
 }
 
+@keyframes animateContentBanner {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 /* Breadcrumb *****************************************************************/
 $breadcrumb-divider: quote(">");
 .breadcrumb {
@@ -2386,7 +2417,7 @@ $breadcrumb-divider: quote(">");
     .container {
 
       .content {
-        margin-top: 50%;
+        margin-top: 0%;
         min-height: 0;
 
         .box {

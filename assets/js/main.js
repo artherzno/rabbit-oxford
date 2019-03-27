@@ -130,7 +130,17 @@ $(document).ready(function(){
     duration: '80%'
   })
   // .addIndicators({ name: 'banner second'})
-  .setClassToggle('#banner .box', 'fade-in')
+  .setClassToggle('#banner .box.oxford-dt', 'fade-in')
+  .addTo(controller);
+
+  // Second content banner ----------------------------------------- //
+  var animateContentBanner = new ScrollMagic.Scene({
+    triggerElement: '#banner',
+    triggerHook: 0,
+    duration: '80%'
+  })
+  // .addIndicators({ name: 'banner second'})
+  .setClassToggle('#banner .box.oxford-mb .box-content', 'fade-in')
   .addTo(controller);
 
   // What we do - img ----------------------------------------- //
@@ -546,4 +556,5 @@ $(document).ready(function(){
       $('.carouselBlogDetail-dot li').removeClass('active').eq(currentItem).addClass('active');
   });
 
+    setInterval(function(){$('#banner .oxford-mb .box-content').toggleClass('fade-in')}, 4000);
 });
