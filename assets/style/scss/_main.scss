@@ -302,31 +302,25 @@ h3 {
     height: 100%;
 
     .content {
-      min-height: 880px;
       text-align: center;
-      padding: 60% 0 14%;
       @include transition(all 2s ease 1.4s);
       opacity: 0;
-      @include transform(translateY(200%));
+      @include transform(translateY(300%));
 
       &.fade-in {
-        @include transform(translateY(-50%));
+        @include transform(translateY(90%));
         opacity: 1;
       }
 
       .box {
         width: 100%;
-        height: 100%;
+        height: 350px;
         position: relative;
         cursor: pointer;
         @include transition(transform 1s);
         @include transform-style(preserve-3d);
 
         .box-content {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          margin: 0 auto;
           backface-visibility: hidden;
 
           p {
@@ -2365,7 +2359,62 @@ $breadcrumb-divider: quote(">");
 
 
 /* Responsive *****************************************************************/
-@media (max-width: 374.98px) {
+@media (max-width: 320px) {
+  nav {
+
+    .navbar-collapse {
+
+      &.show {
+
+        .nav {
+
+          li {
+
+            &.nav-item {
+
+              a {
+
+                &.nav-link {
+
+                  &:after {
+                    right: 26%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #banner {
+
+    .container {
+
+      .content {
+
+        .box {
+          height: 270px;
+
+          &.oxford-mb {
+
+            .box-content {
+
+              p {
+                font-size: 0.7rem;
+
+                span {
+                  font-size: 1.3rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   #hospitality {
 
     .figcaption.fade-in {
@@ -2376,6 +2425,36 @@ $breadcrumb-divider: quote(">");
 
       p {
         margin-top: 4%;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  nav {
+
+    .navbar-collapse {
+
+      &.show {
+
+        .nav {
+
+          li {
+
+            &.nav-item {
+
+              a {
+
+                &.nav-link {
+
+                  &:after {
+                    right: 29%;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -2404,7 +2483,11 @@ $breadcrumb-divider: quote(">");
 
   .buttonNone, .buttonBlue, .buttonWhite, .buttonPink {
     border-width: 1px;
-    padding: 10px;
+    padding: 0;
+    width: 140px;
+    height: 40px;
+    line-height: 2.4;
+    font-size: 16px;
   }
 
   nav {
@@ -2554,7 +2637,7 @@ $breadcrumb-divider: quote(">");
     .container {
 
       .logo {
-        top: 56%;
+        top: 52%;
 
         .brain {
           right: 24px;
@@ -2573,7 +2656,7 @@ $breadcrumb-divider: quote(">");
       &.cloud {
 
         &.fade-in {
-              animation-duration: 200s;
+              animation-duration: 100s;
         }
       }
     }
@@ -2586,13 +2669,23 @@ $breadcrumb-divider: quote(">");
 
         .box {
 
+          &.oxford-mb {
+
+            .box-content {
+
+              &._first, &._second {
+                @include transform(translateY(0));
+              }
+            }
+          }
+
           .box-content {
 
             p {
-              font-size: 22px;
+              font-size: 0.8rem;
 
               span {
-                font-size: 35px;
+                font-size: 1.6rem;
               }
             }
           }
@@ -2615,6 +2708,7 @@ $breadcrumb-divider: quote(">");
       .content {
 
         p {
+          font-size: 16px;
           margin: 86% 0 5%;
           width: 88%;
           padding-left: 5%;
@@ -2654,7 +2748,7 @@ $breadcrumb-divider: quote(">");
     }
 
     .container {
-      padding-top: 120px;
+      padding-top: 160px;
 
       .content {
         margin-left: 0;
@@ -2677,14 +2771,16 @@ $breadcrumb-divider: quote(">");
     }
 
     .figcaption {
-      padding: 0 5% 0 20%;
+      padding: 0 0 0 20%;
 
       h1 {
         font-size: 36px;
-        margin-bottom: 99%;
+        margin-bottom: 92%;
         float: right;
+        padding-right: 5%;
 
         &.number {
+          padding-right: 0;
           font-size: 75px;
 
           span {
@@ -2697,23 +2793,26 @@ $breadcrumb-divider: quote(">");
         }
 
         &.h-oneline {
-          margin-bottom: 114%;
+          margin-bottom: 108%;
           clear: both;
         }
       }
 
       p {
+        font-size: 16px;
         float: right;
+        padding-right: 5%;
         margin-bottom: 5%;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
       }
 
       button {
         float: right;
+        margin-right: 10%;
       }
     }
 
@@ -2741,11 +2840,18 @@ $breadcrumb-divider: quote(">");
   #locations {
     background: #1b1b1b url('../../images/home/oxf_bg_locations_m.jpg') no-repeat;
     background-size: contain;
+
     #accordionLocation-mb {
+
+      .item {
+        margin-bottom: 20px;
+      }
+
       button[data-toggle="collapse"][aria-expanded="false"] {
         position: relative;
         padding-right: 20px;
         color: $white;
+        width: auto;
 
         &:after {
           content: '';
@@ -2766,6 +2872,7 @@ $breadcrumb-divider: quote(">");
         position: relative;
         color: $pink;
         padding-right: 20px;
+        width: auto;
 
         &:after {
           content: '';
@@ -2793,6 +2900,7 @@ $breadcrumb-divider: quote(">");
         }
       }
     }
+
     .row {
 
       .modal-list {
@@ -3063,15 +3171,15 @@ $breadcrumb-divider: quote(">");
           display: -webkit-box;
           -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
-        }
 
-        .date {
-          font-size: 14px;
-          margin: 0;
-        }
+          &.date {
+            font-size: 14px;
+            margin: 0;
+          }
 
-        .button-readmore {
-          font-size: 16px;
+          &.button-readmore {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -3116,7 +3224,7 @@ $breadcrumb-divider: quote(">");
     }
 
     .row {
-      width: 900px;
+      width: 980px;
       padding-bottom: 20px;
 
       &:last-child {
@@ -3134,6 +3242,37 @@ $breadcrumb-divider: quote(">");
 
         p {
           font-size: 16px;
+        }
+      }
+    }
+
+    .related {
+
+      .figure {
+
+        .figcaption {
+          padding: 24px;
+
+          h3 {
+            font-size: 22px;
+          }
+
+          p {
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+
+            &.date {
+              font-size: 14px;
+            }
+
+            &.button-readmore {
+              font-size: 16px;
+            }
+          }
         }
       }
     }
@@ -3162,7 +3301,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-/* Breadcrumb ********************/
+  /* Breadcrumb ********************/
   .breadcrumb {
 
     .breadcrumb-item {

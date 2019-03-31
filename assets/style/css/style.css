@@ -492,25 +492,23 @@ h3 {
     position: relative;
     height: 100%; }
     #banner .container .content {
-      min-height: 880px;
       text-align: center;
-      padding: 60% 0 14%;
       -webkit-transition: all 2s ease 1.4s;
       -ms-transition: all 2s ease 1.4s;
       -o-transition: all 2s ease 1.4s;
       transition: all 2s ease 1.4s;
       opacity: 0;
-      -webkit-transform: translateY(200%);
-      -ms-transform: translateY(200%);
-      transform: translateY(200%); }
+      -webkit-transform: translateY(300%);
+      -ms-transform: translateY(300%);
+      transform: translateY(300%); }
       #banner .container .content.fade-in {
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        -webkit-transform: translateY(90%);
+        -ms-transform: translateY(90%);
+        transform: translateY(90%);
         opacity: 1; }
       #banner .container .content .box {
         width: 100%;
-        height: 100%;
+        height: 350px;
         position: relative;
         cursor: pointer;
         -webkit-transition: transform 1s;
@@ -524,10 +522,6 @@ h3 {
         -ms-transform-style: preserve-3d;
         transform-style: preserve-3d; }
         #banner .container .content .box .box-content {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          margin: 0 auto;
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
           #banner .container .content .box .box-content p {
@@ -2206,11 +2200,23 @@ h3 {
   animation-fill-mode: both; }
 
 /* Responsive *****************************************************************/
-@media (max-width: 374.98px) {
+@media (max-width: 320px) {
+  nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
+    right: 26%; }
+  #banner .container .content .box {
+    height: 270px; }
+    #banner .container .content .box.oxford-mb .box-content p {
+      font-size: 0.7rem; }
+      #banner .container .content .box.oxford-mb .box-content p span {
+        font-size: 1.3rem; }
   #hospitality .figcaption.fade-in h1 {
     font-size: 31px; }
   #hospitality .figcaption.fade-in p {
     margin-top: 4%; } }
+
+@media (min-width: 375px) {
+  nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
+    right: 29%; } }
 
 @media (max-width: 575.98px) {
   body {
@@ -2225,7 +2231,11 @@ h3 {
     display: block !important; }
   .buttonNone, .buttonBlue, .buttonWhite, .buttonPink {
     border-width: 1px;
-    padding: 10px; }
+    padding: 0;
+    width: 140px;
+    height: 40px;
+    line-height: 2.4;
+    font-size: 16px; }
   nav.navbar {
     top: 0;
     height: 64px;
@@ -2317,7 +2327,7 @@ h3 {
         display: inline-block; }
   /* Home page *******************/
   #intro .container .logo {
-    top: 56%; }
+    top: 52%; }
     #intro .container .logo .brain {
       right: 24px;
       top: -64%;
@@ -2325,20 +2335,25 @@ h3 {
   #banner {
     height: 100vh; }
     #banner .obj.cloud.fade-in {
-      -webkit-animation-duration: 200s;
-      animation-duration: 200s; }
+      -webkit-animation-duration: 100s;
+      animation-duration: 100s; }
     #banner .container .content {
       margin-top: 0%;
       min-height: 0; }
+      #banner .container .content .box.oxford-mb .box-content._first, #banner .container .content .box.oxford-mb .box-content._second {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
       #banner .container .content .box .box-content p {
-        font-size: 22px; }
+        font-size: 0.8rem; }
         #banner .container .content .box .box-content p span {
-          font-size: 35px; }
+          font-size: 1.6rem; }
   #whatwedo .container {
     overflow: hidden; }
   #whatwedo .row {
     margin: 0 0 5%; }
   #whatwedo .figcaption .content p {
+    font-size: 16px;
     margin: 86% 0 5%;
     width: 88%;
     padding-left: 5%;
@@ -2361,7 +2376,7 @@ h3 {
     background-size: 200%;
     background-position: -88px 0; }
   #practics .container {
-    padding-top: 120px; }
+    padding-top: 160px; }
     #practics .container .content {
       margin-left: 0;
       width: 100%; }
@@ -2372,31 +2387,36 @@ h3 {
   #hospitality .row {
     margin-bottom: 5%; }
   #hospitality .figcaption {
-    padding: 0 5% 0 20%; }
+    padding: 0 0 0 20%; }
     #hospitality .figcaption h1 {
       font-size: 36px;
-      margin-bottom: 99%;
-      float: right; }
+      margin-bottom: 92%;
+      float: right;
+      padding-right: 5%; }
       #hospitality .figcaption h1.number {
+        padding-right: 0;
         font-size: 75px; }
         #hospitality .figcaption h1.number span {
           font-size: 40px; }
         #hospitality .figcaption h1.number.oxford-mb {
           margin-right: 0; }
       #hospitality .figcaption h1.h-oneline {
-        margin-bottom: 114%;
+        margin-bottom: 108%;
         clear: both; }
     #hospitality .figcaption p {
+      font-size: 16px;
       float: right;
+      padding-right: 5%;
       margin-bottom: 5%;
       overflow: hidden;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; }
     #hospitality .figcaption button {
-      float: right; }
+      float: right;
+      margin-right: 10%; }
   #hospitality .figure img.oxford-mb {
     width: 95%;
     margin-top: 170px;
@@ -2407,10 +2427,13 @@ h3 {
   #locations {
     background: #1b1b1b url("../../images/home/oxf_bg_locations_m.jpg") no-repeat;
     background-size: contain; }
+    #locations #accordionLocation-mb .item {
+      margin-bottom: 20px; }
     #locations #accordionLocation-mb button[data-toggle="collapse"][aria-expanded="false"] {
       position: relative;
       padding-right: 20px;
-      color: #fff; }
+      color: #fff;
+      width: auto; }
       #locations #accordionLocation-mb button[data-toggle="collapse"][aria-expanded="false"]:after {
         content: '';
         position: absolute;
@@ -2426,7 +2449,8 @@ h3 {
     #locations #accordionLocation-mb button[data-toggle="collapse"][aria-expanded="true"] {
       position: relative;
       color: #f7d0cb;
-      padding-right: 20px; }
+      padding-right: 20px;
+      width: auto; }
       #locations #accordionLocation-mb button[data-toggle="collapse"][aria-expanded="true"]:after {
         content: '';
         position: absolute;
@@ -2585,11 +2609,11 @@ h3 {
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical; }
-      #blogs-page .figure .figcaption .date {
-        font-size: 14px;
-        margin: 0; }
-      #blogs-page .figure .figcaption .button-readmore {
-        font-size: 16px; }
+        #blogs-page .figure .figcaption p.date {
+          font-size: 14px;
+          margin: 0; }
+        #blogs-page .figure .figcaption p.button-readmore {
+          font-size: 16px; }
   /* Blog detail page ************/
   #blogsdetail-page {
     margin-top: 64px; }
@@ -2611,7 +2635,7 @@ h3 {
       overflow-x: auto;
       overflow-y: hidden; }
     #blogsdetail-page .row {
-      width: 900px;
+      width: 980px;
       padding-bottom: 20px; }
       #blogsdetail-page .row:last-child {
         margin: 0 -5px; }
@@ -2622,6 +2646,22 @@ h3 {
         display: inline-block;
         width: 33%; }
         #blogsdetail-page .row .col-md-4 p {
+          font-size: 16px; }
+    #blogsdetail-page .related .figure .figcaption {
+      padding: 24px; }
+      #blogsdetail-page .related .figure .figcaption h3 {
+        font-size: 22px; }
+      #blogsdetail-page .related .figure .figcaption p {
+        font-size: 16px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical; }
+        #blogsdetail-page .related .figure .figcaption p.date {
+          font-size: 14px; }
+        #blogsdetail-page .related .figure .figcaption p.button-readmore {
           font-size: 16px; }
     #blogsdetail-page.fade-in .content .header h2 {
       font-size: 28px;
