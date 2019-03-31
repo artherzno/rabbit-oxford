@@ -22,7 +22,7 @@
   transition: $property;
 }
 
-@mixin button($color) {
+@mixin button($color, $colorhover, $bghover) {
   border: 2px solid $color;
   color: $color;
   padding: 10px 30px;
@@ -36,14 +36,14 @@
   text-align: center;
   line-height: 1.6;
 
-  background: linear-gradient(to right, $blue 50%, transparent 50%);
+  background: linear-gradient(to right, $bghover 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   @include transition(all 0.2s ease-out);
 
   &:hover {
-    color: $white;
-    border: 2px solid $blue;
+    color: $colorhover;
+    border: 2px solid $bghover;
     background-position: left bottom;
   }
   // border: 2px solid $color;

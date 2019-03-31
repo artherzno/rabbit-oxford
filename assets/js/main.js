@@ -24,21 +24,21 @@ $(document).ready(function(){
 
     mouseX = (e.pageX - elementX - halfW)/halfW;
     mouseY = (e.pageY - elementY - halfH)/halfH;
-    mouseX = Math.round(mouseX * 100)/180;
-    mouseY = Math.round(mouseY * 100)/200;
+    mouseX = Math.round(mouseX * 100)/120;
+    mouseY = Math.round(mouseY * 100)/120;
 
-    // brain.css("transform", "rotateX("+mouseY*-10+"deg) rotateY("+mouseX*10+"deg)");
-    brain.css("transform", "rotateY("+mouseX*10+"deg)");
+    brain.css("transform", "rotateX("+mouseY*-10+"deg) rotateY("+mouseX*10+"deg)");
+    // brain.css("transform", "rotateY("+mouseX*10+"deg)");
   });
 
 
 
   // Config Modal //////////////////////////////////////////////////////////////
-  var locattionBtn = $('#locations .buttonNone');
+  var locattionBtn = $('#locations .button-modal');
   locattionBtn.on('click', function(event) {
     $('.close').trigger('click');
     $('body').removeAttr('style');
-    $('#locations button').removeClass('active');
+    $('#locations .button-modal').removeClass('active');
     $(this).addClass('active');
   });
 
@@ -47,6 +47,7 @@ $(document).ready(function(){
   // Remove modal //////////////////////////////////////////////////////////////
   $('.modal .close').on('click', function() {
       $('#locations .button-modal').removeClass('active');
+      $('#locations .button-head').removeClass('sub-active');
 
   });
   // var closeModal = function() {
@@ -79,482 +80,205 @@ $(document).ready(function(){
     }
   });
 
+  // Initial ///////////////////////////////////////////////////////////////////
+  // Intro logo
+  $('#intro .logo').addClass('fade-in');
+
+  // Nav dropdown
+  $('#navbar-practics-dt').hover(function() {
+    $('.dropdown-menu').toggleClass('hover');
+  });
+
+  // Locatios accordion - desktop
+  $('#accordionLocation-dt .button-modal').on('click', function() {
+    var $thisAttr = $(this).attr('aria-expanded');
+    var $collapseBoxButtonParent = $(this).parent('.collapse').prev('.button-head');
+    //
+    if($thisAttr == 'true') {
+    console.log($thisAttr);
+      $collapseBoxButtonParent.removeClass('sub-active');
+    } else {
+    console.log($thisAttr);
+      $collapseBoxButtonParent.addClass('sub-active');
+    }
+  });
+
+  // Locations accordion - mobile
+  $('.collapse-box button').on('click', function() {
+    var $thisAttr = $(this).attr('aria-expanded');
+    var $collapseBoxButtonParent = $(this).parent('.collapse').prev('.button-head');
+    //
+    if($thisAttr == 'true') {
+    console.log($thisAttr);
+      $collapseBoxButtonParent.removeAttr('style', 'color: #fff').removeClass('sub-active');
+    } else {
+    console.log($thisAttr);
+      $collapseBoxButtonParent.attr('style', 'color: #fff').addClass('sub-active');
+    }
+  });
+
+  // Banner content animation
+  setInterval(function(){$('#banner .oxford-mb .box-content').toggleClass('fade-in')}, 4000);
+
 
 
   // ScrollMagic ///////////////////////////////////////////////////////////////
   var controller = new ScrollMagic.Controller();
 
-  // Pin intro ----------------------------------------- //
-  // var pinIntro = new ScrollMagic.Scene({
-  //   triggerElement: '#intro',
-  //   triggerHook: 0,
-  //   duration: '100'
-  // })
-  // .setPin('#intro', { pushFollowers: false })
-  // .addTo(controller);
+  function classToggle($triggerElement, $triggerHook, $duration, $classtarget, $classname) {
+    var scrollToggleClass = new ScrollMagic.Scene({
+      triggerElement: $triggerElement,
+      triggerHook: $triggerHook,
+      duration: $duration
+    })
+    // .addIndicators({ name: 'debug indicators'})
+    .setClassToggle($classtarget, $classname)
+    .addTo(controller);
+  }
 
-  // Cloud banner ----------------------------------------- //
-  // var pinIntro = new ScrollMagic.Scene({
-  //   triggerElement: '#banner',
-  //   triggerHook: 0.9,
-  //   duration: '300'
-  // })
-  // .addIndicators({ name: 'cloud banner'})
-  // .setClassToggle('#banner .cloud', 'fade-in')
-  // .addTo(controller);
-
-  // City banner ----------------------------------------- //
-  // var pinIntro = new ScrollMagic.Scene({
-  //   triggerElement: '#banner',
-  //   triggerHook: 0.9,
-  //   duration: '300'
-  // })
-  // .addIndicators({ name: 'city banner'})
-  // .setClassToggle('#banner .city', 'fade-in')
-  // .addTo(controller);
+  function pin($triggerElement, $triggerHook, $duration, $classtarget) {
+    var scrollPin = new ScrollMagic.Scene({
+      triggerElement: $triggerElement,
+      triggerHook: $triggerHook,
+      duration: $duration
+    })
+    // .addIndicators({ name: 'debug indicators'})
+    .setPin($classtarget)
+    .addTo(controller);
+  }
 
   // Pin banner ----------------------------------------- //
-  var pinBanner = new ScrollMagic.Scene({
-    triggerElement: '#banner',
-    triggerHook: 0,
-    duration: '120%'
-  })
-  // .addIndicators({ name: 'banner'})
-  .setPin('#banner')
-  .addTo(controller);
+  pin('#banner', 0, '120%', '#banner')
 
   // Second content banner ----------------------------------------- //
-  var secondContentBanner = new ScrollMagic.Scene({
-    triggerElement: '#banner',
-    triggerHook: 0,
-    duration: '80%'
-  })
-  // .addIndicators({ name: 'banner second'})
-  .setClassToggle('#banner .box.oxford-dt', 'fade-in')
-  .addTo(controller);
+  classToggle('#banner', 0, '80%', '#banner .box.oxford-dt', 'fade-in');
 
   // Second content banner ----------------------------------------- //
-  var animateContentBanner = new ScrollMagic.Scene({
-    triggerElement: '#banner',
-    triggerHook: 0,
-    duration: '80%'
-  })
-  // .addIndicators({ name: 'banner second'})
-  .setClassToggle('#banner .box.oxford-mb .box-content', 'fade-in')
-  .addTo(controller);
+  classToggle('#banner', 0, '80%', '#banner .box.oxford-mb .box-content', 'fade-in');
 
   // What we do - img ----------------------------------------- //
-  var imgWhatwedo = new ScrollMagic.Scene({
-    triggerElement: '#whatwedo',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'whatwedo img'})
-  .setClassToggle('#whatwedo img', 'fade-in')
-  .addTo(controller);
+  classToggle('#whatwedo', 0.8, '', '#whatwedo img', 'fade-in');
 
   // What we do - content ----------------------------------------- //
-  var contentWhatwedo = new ScrollMagic.Scene({
-    triggerElement: '#whatwedo',
-    triggerHook: 0.75,
-  })
-  // .addIndicators({ name: 'whatwedo content'})
-  .setClassToggle('#whatwedo .content', 'fade-in')
-  .addTo(controller);
+  classToggle('#whatwedo', 0.75, '', '#whatwedo .content', 'fade-in');
 
   // practics - city ----------------------------------------- //
-  var practicsCity = new ScrollMagic.Scene({
-    triggerElement: '#practics',
-    triggerHook: 0.75,
-  })
-  // .addIndicators({ name: 'practics city'})
-  .setClassToggle('#practics .city', 'fade-in')
-  .addTo(controller);
+  classToggle('#practics', 0.75, '', '#practics .city', 'fade-in');
 
   // practics - content ----------------------------------------- //
-  var practicsContent = new ScrollMagic.Scene({
-    triggerElement: '#practics',
-    triggerHook: 0.3,
-  })
-  // .addIndicators({ name: 'practics content'})
-  .setClassToggle('#practics .content', 'fade-in')
-  .addTo(controller);
+  classToggle('#practics', 0.3, '', '#practics .content', 'fade-in');
 
   // Hospitality - img ----------------------------------------- //
-  var imgHospitality = new ScrollMagic.Scene({
-    triggerElement: '#hospitality',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'hospitality img'})
-  .setClassToggle('#hospitality img', 'fade-in')
-  .addTo(controller);
+  classToggle('#hospitality', 0.8, '', '#hospitality img', 'fade-in');
 
   // Hospitality - content ----------------------------------------- //
-  var contentHospitality = new ScrollMagic.Scene({
-    triggerElement: '#hospitality',
-    triggerHook: 0.7,
-  })
-  // .addIndicators({ name: 'hospitality content'})
-  .setClassToggle('#hospitality .figcaption', 'fade-in')
-  .addTo(controller);
+  classToggle('#hospitality', 0.7, '', '#hospitality .figcaption', 'fade-in');
 
   // Hospitality - nav ----------------------------------------- //
-  var menuHospitality = new ScrollMagic.Scene({
-    triggerElement: '#hospitality',
-    triggerHook: 0.35,
-  })
-  // .addIndicators({ name: 'hospitality tab-nav'})
-  .setClassToggle('#hospitality .carouselHospitality-indicators', 'fade-in')
-  .addTo(controller);
+  classToggle('#hospitality', 0.35, '', '#hospitality .carouselHospitality-indicators', 'fade-in');
 
   // locations - bg  ----------------------------------------- //
-  var bgLocations = new ScrollMagic.Scene({
-    triggerElement: '#locations',
-    triggerHook: 0.85,
-  })
-  // .addIndicators({ name: 'locations'})
-  .setClassToggle('#locations', 'fade-in')
-  .addTo(controller);
+  classToggle('#locations', 0.85, '', '#locations', 'fade-in');
 
   // locations - content  ----------------------------------------- //
-  var contentLocations = new ScrollMagic.Scene({
-    triggerElement: '#locations',
-    triggerHook: 0.45,
-  })
-  // .addIndicators({ name: 'locations content'})
-  .setClassToggle('#locations .content', 'fade-in')
-  .addTo(controller);
+  classToggle('#locations', 0.45, '', '#locations .content', 'fade-in');
 
   // Blog ----------------------------------------- //
-  var contentBlog = new ScrollMagic.Scene({
-    triggerElement: '#blog',
-    triggerHook: 0.70,
-  })
-  // .addIndicators({ name: 'blog'})
-  .setClassToggle('#blog', 'fade-in')
-  .addTo(controller);
+  classToggle('#blog', 0.70, '', '#blog', 'fade-in');
 
   // Get in touch ----------------------------------------- //
-  var getintouch = new ScrollMagic.Scene({
-    triggerElement: '#getintouch',
-    triggerHook: 0.75,
-  })
-  // .addIndicators({ name: 'getintouch'})
-  .setClassToggle('#getintouch', 'fade-in')
-  .addTo(controller);
+  classToggle('#getintouch', 0.75, '', '#getintouch', 'fade-in');
 
-  // Blogs - header ----------------------------------------- //
-  var blogsHeader = new ScrollMagic.Scene({
-    triggerElement: '#blogs-page',
-    triggerHook: 0.5,
-  })
-  // .addIndicators({ name: 'blogsHeader'})
-  .setClassToggle('#blogs-page', 'fade-in')
-  .addTo(controller);
 
-  // Blogs - row ----------------------------------------- //
-  var blogsRow1 = new ScrollMagic.Scene({
-    triggerElement: '#blogs-page .row_1',
-    triggerHook: 0.75,
-  })
-  // .addIndicators({ name: 'blogs-page items1'})
-  .setClassToggle('#blogs-page .row_1 .column', 'fade-in')
-  .addTo(controller);
+  // Blogs page - header ----------------------------------------- //
+  classToggle('#blogs-page', 0.5, '', '#blogs-page', 'fade-in');
 
-  var blogsRow2 = new ScrollMagic.Scene({
-    triggerElement: '#blogs-page .row_2',
-    triggerHook: 0.75,
-  })
-  // .addIndicators({ name: 'blogs-page items2'})
-  .setClassToggle('#blogs-page .row_2 .column', 'fade-in')
-  .addTo(controller);
+  // Blogs page - row ----------------------------------------- //
+  classToggle('#blogs-page .row_1', 0.75, '', '#blogs-page .row_1', 'fade-in');
 
-  var blogsRow3 = new ScrollMagic.Scene({
-    triggerElement: '#blogs-page .row_3',
-    triggerHook: 0.75,
-  })
-  // .addIndicators({ name: 'blogs-page items3'})
-  .setClassToggle('#blogs-page .row_3 .column', 'fade-in')
-  .addTo(controller);
+  classToggle('#blogs-page .row_2', 0.75, '', '#blogs-page .row_2', 'fade-in');
+
+  classToggle('#blogs-page .row_3', 0.75, '', '#blogs-page .row_3', 'fade-in');
+
+  // Blogs page - pagination ----------------------------------------- //
+  classToggle('#blogs-page .pagi', 0.75, '', '#blogs-page .pagi', 'fade-in');
+
 
   // Blogs detail - header ----------------------------------------- //
-  var headerBlogdetail = new ScrollMagic.Scene({
-    triggerElement: '#blogsdetail-page',
-    triggerHook: 0.5,
-  })
-  // .addIndicators({ name: 'blogs-page items3'})
-  .setClassToggle('#blogsdetail-page', 'fade-in')
-  .addTo(controller);
+  classToggle('#blogsdetail-page', 0.5, '', '#blogsdetail-page', 'fade-in');
 
   // Blogs detail - content ----------------------------------------- //
-  var contentBlogdetail = new ScrollMagic.Scene({
-    triggerElement: '#blogsdetail-page .detail',
-    triggerHook: 0.7,
-  })
-  // .addIndicators({ name: 'blogsdetail-page detail'})
-  .setClassToggle('#blogsdetail-page .detail', 'fade-in')
-  .addTo(controller);
+  classToggle('#blogsdetail-page .detail', 0.7, '', '#blogsdetail-page .detail', 'fade-in');
 
   // Blogs detail - related ----------------------------------------- //
-  var relatedBlogdetail = new ScrollMagic.Scene({
-    triggerElement: '#blogsdetail-page .related',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'blogsdetail-page related'})
-  .setClassToggle('#blogsdetail-page .related', 'fade-in')
-  .addTo(controller);
+  classToggle('#blogsdetail-page .related', 0.8, '', '#blogsdetail-page .related', 'fade-in');
+
 
   // Team - banner ----------------------------------------- //
-  var bannerTeam = new ScrollMagic.Scene({
-    triggerElement: '#team-page',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'team-page'})
-  .setClassToggle('#team-page .banner', 'fade-in')
-  .addTo(controller);
+  classToggle('#team-page', 0.8, '', '#team-page .banner', 'fade-in');
 
   // Team - header ----------------------------------------- //
-  var headerTeam = new ScrollMagic.Scene({
-    triggerElement: '#team-page .content',
-    triggerHook: 0.7,
-  })
-  // .addIndicators({ name: 'team-page'})
-  .setClassToggle('#team-page .content', 'fade-in')
-  .addTo(controller);
+  classToggle('#team-page .content', 0.7, '', '#team-page .content', 'fade-in');
 
   // Team - row ----------------------------------------- //
-  var rowTeam1 = new ScrollMagic.Scene({
-    triggerElement: '#team-page .row_1',
-    triggerHook: 0.9,
-  })
-  // .addIndicators({ name: 'team-page'})
-  .setClassToggle('#team-page .row_1', 'fade-in')
-  .addTo(controller);
+  classToggle('#team-page .row_1', 0.9, '', '#team-page .row_1', 'fade-in');
 
-  var rowTeam2 = new ScrollMagic.Scene({
-    triggerElement: '#team-page .row_2',
-    triggerHook: 0.9,
-  })
-  // .addIndicators({ name: 'team-page'})
-  .setClassToggle('#team-page .row_2', 'fade-in')
-  .addTo(controller);
+  classToggle('#team-page .row_2', 0.9, '', '#team-page .row_2', 'fade-in');
+
 
   // Team detail - banner ----------------------------------------- //
-  var bannerTeamdetail = new ScrollMagic.Scene({
-    triggerElement: '#teamdetail-page',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'teamdetail-page'})
-  .setClassToggle('#teamdetail-page .banner', 'fade-in')
-  .addTo(controller);
+  classToggle('#teamdetail-page', 0.8, '', '#teamdetail-page .banner', 'fade-in');
 
   // Team detail - content ----------------------------------------- //
-  var contentTeamdetail = new ScrollMagic.Scene({
-    triggerElement: '#teamdetail-page .detail',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'teamdetail-page'})
-  .setClassToggle('#teamdetail-page .detail', 'fade-in')
-  .addTo(controller);
+  classToggle('#teamdetail-page .detail', 0.8, '', '#teamdetail-page .detail', 'fade-in');
 
   // Team detail - paragrah ----------------------------------------- //
-  var paragrahTeamdetail1 = new ScrollMagic.Scene({
-    triggerElement: '#teamdetail-page .paragraph._1',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'teamdetail-page'})
-  .setClassToggle('#teamdetail-page .detail .paragraph', 'fade-in')
-  .addTo(controller);
+  classToggle('#teamdetail-page .paragraph._1', 0.8, '', '#teamdetail-page .detail .paragraph', 'fade-in');
+
 
   // Locations - banner ----------------------------------------- //
-  var bannerTeam = new ScrollMagic.Scene({
-    triggerElement: '#locations-page',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'locations-page'})
-  .setClassToggle('#locations-page .banner', 'fade-in')
-  .addTo(controller);
+  classToggle('#locations-page', 0.8, '', '#locations-page .banner', 'fade-in');
 
   // Locations - header ----------------------------------------- //
-  var headerTeam = new ScrollMagic.Scene({
-    triggerElement: '#locations-page .content',
-    triggerHook: 0.7,
-  })
-  // .addIndicators({ name: 'locations-page'})
-  .setClassToggle('#locations-page .content', 'fade-in')
-  .addTo(controller);
+  classToggle('#locations-page .content', 0.7, '', '#locations-page .content', 'fade-in');
 
   // Locations - row ----------------------------------------- //
-  var rowLocations1 = new ScrollMagic.Scene({
-    triggerElement: '#locations-page .row_1',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'locations-page'})
-  .setClassToggle('#locations-page .row_1 .column', 'fade-in')
-  .addTo(controller);
+  classToggle('#locations-page .row_1', 0.8, '', '#locations-page .row_1 .column', 'fade-in');
 
-  var rowLocations2 = new ScrollMagic.Scene({
-    triggerElement: '#locations-page .row_2',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'locations-page'})
-  .setClassToggle('#locations-page .row_2 .column', 'fade-in')
-  .addTo(controller);
+  classToggle('#locations-page .row_2', 0.8, '', '#locations-page .row_2 .column', 'fade-in');
 
-  var rowLocations3 = new ScrollMagic.Scene({
-    triggerElement: '#locations-page .row_3',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'locations-page'})
-  .setClassToggle('#locations-page .row_3 .column', 'fade-in')
-  .addTo(controller);
+  classToggle('#locations-page .row_3', 0.8, '', '#locations-page .row_3 .column', 'fade-in');
 
-  var rowLocations4 = new ScrollMagic.Scene({
-    triggerElement: '#locations-page .row_4',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'locations-page'})
-  .setClassToggle('#locations-page .row_4 .column', 'fade-in')
-  .addTo(controller);
+  classToggle('#locations-page .row_4', 0.8, '', '#locations-page .row_4 .column', 'fade-in');
+
 
   // Demandfulfillment - banner ----------------------------------------- //
-  var bannerDemandfulfillment = new ScrollMagic.Scene({
-    triggerElement: '#demandfulfillment-page',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'demandfulfillment-page'})
-  .setClassToggle('#demandfulfillment-page .banner', 'fade-in')
-  .addTo(controller);
+  classToggle('#demandfulfillment-page', 0.8, '', '#demandfulfillment-page .banner', 'fade-in');
 
   // Demandfulfillment - header ----------------------------------------- //
-  var headerDemandfulfillment = new ScrollMagic.Scene({
-    triggerElement: '#demandfulfillment-page .content',
-    triggerHook: 0.7,
-  })
-  // .addIndicators({ name: 'demandfulfillment-page'})
-  .setClassToggle('#demandfulfillment-page .content', 'fade-in')
-  .addTo(controller);
+  classToggle('#demandfulfillment-page .content', 0.7, '', '#demandfulfillment-page .content', 'fade-in');
 
   // Demandfulfillment - carousel ----------------------------------------- //
-  var carouselDemandfulfillment = new ScrollMagic.Scene({
-    triggerElement: '#demandfulfillment-page .carousel-section',
-    triggerHook: 0.7,
-  })
-  // .addIndicators({ name: 'demandfulfillment-page'})
-  .setClassToggle('#demandfulfillment-page .carousel-section', 'fade-in')
-  .addTo(controller);
+  classToggle('#demandfulfillment-page .carousel-section', 0.7, '', '#demandfulfillment-page .carousel-section', 'fade-in');
+
 
   // Strategy - banner ----------------------------------------- //
-  var bannerStrategy = new ScrollMagic.Scene({
-    triggerElement: '#strategy-page',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'strategy-page'})
-  .setClassToggle('#strategy-page .banner', 'fade-in')
-  .addTo(controller);
+  classToggle('#strategy-page', 0.8, '', '#strategy-page .banner', 'fade-in');
 
   // Strategy - header ----------------------------------------- //
-  var headerStrategy = new ScrollMagic.Scene({
-    triggerElement: '#strategy-page .content',
-    triggerHook: 0.7,
-  })
-  // .addIndicators({ name: 'strategy-page'})
-  .setClassToggle('#strategy-page .content', 'fade-in')
-  .addTo(controller);
+  classToggle('#strategy-page .content', 0.7, '', '#strategy-page .content', 'fade-in');
 
   // Strategy - carousel ----------------------------------------- //
-  var carouselStrategy = new ScrollMagic.Scene({
-    triggerElement: '#strategy-page .carousel-section',
-    triggerHook: 0.7,
-  })
-  // .addIndicators({ name: 'strategy-page'})
-  .setClassToggle('#strategy-page .carousel-section', 'fade-in')
-  .addTo(controller);
+  classToggle('#strategy-page .carousel-section', 0.7, '', '#strategy-page .carousel-section', 'fade-in');
+
 
   // Financial Transformation - banner ----------------------------------------- //
-  var bannerFinancialtransformation = new ScrollMagic.Scene({
-    triggerElement: '#financialtransformation-page',
-    triggerHook: 0.8,
-  })
-  // .addIndicators({ name: 'financialtransformation-page'})
-  .setClassToggle('#financialtransformation-page .banner', 'fade-in')
-  .addTo(controller);
+  classToggle('#financialtransformation-page', 0.8, '', '#financialtransformation-page .banner', 'fade-in');
 
   // Financial Transformation - header ----------------------------------------- //
-  var headerFinancialtransformation = new ScrollMagic.Scene({
-    triggerElement: '#financialtransformation-page .content',
-    triggerHook: 0.7,
-  })
-  // .addIndicators({ name: 'financialtransformation-page'})
-  .setClassToggle('#financialtransformation-page .content', 'fade-in')
-  .addTo(controller);
+  classToggle('#financialtransformation-page .content', 0.7, '', '#financialtransformation-page .content', 'fade-in');
 
   // Financial Transformation - carousel ----------------------------------------- //
-  var carouselFinancialtransformation = new ScrollMagic.Scene({
-    triggerElement: '#financialtransformation-page .carousel-section',
-    triggerHook: 0.7,
-  })
-  // .addIndicators({ name: 'financialtransformation-page'})
-  .setClassToggle('#financialtransformation-page .carousel-section', 'fade-in')
-  .addTo(controller);
+  classToggle('#financialtransformation-page .carousel-section', 0.7, '', '#financialtransformation-page .carousel-section', 'fade-in');
 
-
-
-  // Initial ///////////////////////////////////////////////////////////////////
-  $('#intro .logo').addClass('fade-in');
-
-  $('#navbar-practics-dt').hover(function() {
-    $('.dropdown-menu').toggleClass('hover');
-  });
-
-  // Carousel //////////////////////////////////////////////////////////////////
-  $('#carouselHospitality').owlCarousel({
-    items: 1,
-    dots: 0,
-    responsive: {
-      0: {
-        stagePadding: 40,
-        margin: 10,
-        items: 1
-      },
-      768: {
-        stagePadding: 0,
-        margin: 0,
-      }
-    }
-  });
-
-  $('.carouselHospitality-indicators li').on('click', function() {
-      var $this = $(this);
-      var slideNum = $(this).data('slide-to');
-
-      $('.carouselHospitality-indicators li').removeClass('active');
-      $this.addClass('active');
-      $("#carouselHospitality").trigger('to.owl.carousel', [slideNum, 300]);
-  });
-
-  $('#carouselHospitality').on('changed.owl.carousel', function(event) {
-      var currentItem = event.item.index;
-      $('.carouselHospitality-indicators li').removeClass('active').eq(currentItem).addClass('active');
-  });
-
-  $('#carouselBlogDetail').owlCarousel({
-    items: 1,
-    dots: false
-  });
-
-  $('.carouselBlogDetail-dot li').on('click', function() {
-      var $this = $(this);
-      var slideNum = $(this).data('slide-to');
-
-      $('.carouselBlogDetail-dot li').removeClass('active');
-      $this.addClass('active');
-      $("#carouselBlogDetail").trigger('to.owl.carousel', [slideNum, 300]);
-  });
-
-  $('#carouselBlogDetail').on('changed.owl.carousel', function(event) {
-      var currentItem = event.item.index;
-      $('.carouselBlogDetail-dot li').removeClass('active').eq(currentItem).addClass('active');
-  });
-
-    setInterval(function(){$('#banner .oxford-mb .box-content').toggleClass('fade-in')}, 4000);
 });

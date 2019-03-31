@@ -28,6 +28,16 @@ nav {
     }
   }
 
+  &.show-logo {
+
+    .navbar-brand {
+
+      .logo {
+        opacity: 1;
+      }
+    }
+  }
+
   .navbar-brand {
     width: 20%;
 
@@ -122,7 +132,7 @@ nav {
       &:after {
         position: absolute;
         right: -15px;
-        top: 20%;
+        top: 34%;
       }
     }
 
@@ -135,7 +145,7 @@ nav {
 
   hr {
     border-top: 3px solid $pink;
-    margin: 15px 0;
+    margin: 8px 0;
     @include transform(scaleX(0));
     @include transform-origin(100% 50%);
     @include transition(transform 0.3s ease-in-out);
@@ -169,7 +179,7 @@ nav {
 
         &:after {
           right: -15px;
-          top: 20%;
+          top: 34%;
         }
 
         &.dropdown {
@@ -237,7 +247,7 @@ nav {
             padding: 10px;
 
             &:after {
-              right: 26%;
+              right: 31%;
               top: 38%;
             }
 

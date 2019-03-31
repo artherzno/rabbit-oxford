@@ -70,10 +70,10 @@
               <a href="" class="nav-link">WHY US<hr></a>
             </li>
             <li class="nav-item">
-              <a href="locations.html" class="nav-link active">LOCATIONS<hr></a>
+              <a href="locations.html" class="nav-link">LOCATIONS<hr></a>
             </li>
             <li class="nav-item">
-              <a href="blogs.html" class="nav-link">BLOGS<hr></a>
+              <a href="blogs.html" class="nav-link active">BLOGS<hr></a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link">CAREERS<hr></a>
@@ -463,37 +463,37 @@
             <div class="overflow-x-auto">
               <div class="row">
               <div class="col-sm-6 col-md-4">
-                <div class="column col_1 figure">
+                <a href="blogsdetail.html" class="column col_1 figure">
                   <img src="assets/images/blogs/oxf_blog_img7.jpg" alt="Oxford Acuity">
                   <div class="figcaption">
                     <h3>10 Reasons I'm Thankful For Thailand Hospitality Industry On Thanksgiving</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut arcu id sapien auctor facilisis id vel ipsum. Ut egestas quam sed urna malesuada malesuada.</p>
                     <p class="date float-left">Nov 17, 2018</p>
-                    <a href="" class="float-right">READ MORE</a>
+                    <p class="button-readmore float-right">READ MORE</p>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-sm-6 col-md-4">
-                <div class="column col_2 figure">
+                <a href="blogsdetail.html" class="column col_2 figure">
                   <img src="assets/images/blogs/oxf_blog_img8.jpg" alt="Oxford Acuity">
                   <div class="figcaption">
                     <h3>10 Reasons I'm Thankful For Thailand Hospitality Industry On Thanksgiving</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut arcu id sapien auctor facilisis id vel ipsum. Ut egestas quam sed urna malesuada malesuada.</p>
                     <p class="date float-left">Nov 17, 2018</p>
-                    <a href="" class="float-right">READ MORE</a>
+                    <p class="button-readmore float-right">READ MORE</p>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-sm-6 col-md-4">
-                <div class="column col_3 figure">
+                <a href="blogsdetail.html" class="column col_3 figure">
                   <img src="assets/images/blogs/oxf_blog_img9.jpg" alt="Oxford Acuity">
                   <div class="figcaption">
                     <h3>10 Reasons I'm Thankful For Thailand Hospitality Industry On Thanksgiving</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut arcu id sapien auctor facilisis id vel ipsum. Ut egestas quam sed urna malesuada malesuada.</p>
                     <p class="date float-left">Nov 17, 2018</p>
-                    <a href="" class="float-right">READ MORE</a>
+                    <p class="button-readmore float-right">READ MORE</p>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             </div>
@@ -573,5 +573,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        $('#carouselBlogDetail').owlCarousel({
+          items: 1,
+          dots: false
+        });
+
+        $('.carouselBlogDetail-dot li').on('click', function() {
+            var $this = $(this);
+            var slideNum = $(this).data('slide-to');
+
+            $('.carouselBlogDetail-dot li').removeClass('active');
+            $this.addClass('active');
+            $("#carouselBlogDetail").trigger('to.owl.carousel', [slideNum, 300]);
+        });
+
+        $('#carouselBlogDetail').on('changed.owl.carousel', function(event) {
+            var currentItem = event.item.index;
+            $('.carouselBlogDetail-dot li').removeClass('active').eq(currentItem).addClass('active');
+        });
+
+      });
+    </script>
   </body>
 </html>
