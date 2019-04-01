@@ -314,4 +314,14 @@ $(document).ready(function(){
   // Financial Transformation - carousel ----------------------------------------- //
   classToggle('#financialtransformation-page .carousel-section', 0.7, '', '#financialtransformation-page .carousel-section', 'fade-in');
 
+
+  // Organisational Optimisation - banner ----------------------------------------- //
+  classToggle('#organisationaloptimisation-page', 0.8, '', '#organisationaloptimisation-page .banner', 'fade-in');
+
+  // Organisational Optimisation - header ----------------------------------------- //
+  classToggle('#organisationaloptimisation-page .content', 0.7, '', '#organisationaloptimisation-page .content', 'fade-in');
+
+  // Organisational Optimisation - carousel ----------------------------------------- //
+  classToggle('#organisationaloptimisation-page .carousel-section', 0.7, '', '#organisationaloptimisation-page .carousel-section', 'fade-in');
+
 });

@@ -2000,13 +2000,19 @@ h3 {
   }
 }
 
+#organisationaloptimisation-page {
+  .banner {
+    background: url('../../images/organisationaloptimisation/oxf_bg_banner.jpg') no-repeat;
+  }
+}
+
 #financialtransformation-page {
   .banner {
     background: url('../../images/financialtransformation/oxf_bg_banner.jpg') no-repeat;
   }
 }
 
-#demandfulfillment-page, #strategy-page, #financialtransformation-page {
+#demandfulfillment-page, #strategy-page, #financialtransformation-page, #organisationaloptimisation-page {
   .banner {
     width: 100%;
     height: 890px;
@@ -2454,7 +2460,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #strategy-page, #demandfulfillment-page, #financialtransformation-page {
+  #strategy-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
 
     &.h-one-line {
 
@@ -3515,7 +3521,7 @@ $breadcrumb-divider: quote(">");
   }
 
   /* Practices all *******************/
-  #strategy-page, #demandfulfillment-page, #financialtransformation-page {
+  #strategy-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
 
     &.h-one-line {
 
