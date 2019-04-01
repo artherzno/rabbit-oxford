@@ -2759,6 +2759,33 @@ h3 {
     #blogsdetail-page.fade-in .content .header .date {
       font-size: 18px;
       margin: 0 0 40px; }
+  /* Locatios page ********************/
+  #locations-page .banner {
+    height: 44vh;
+    background-position: center top;
+    background-size: cover; }
+    #locations-page .banner .container h1 {
+      font-size: 50px;
+      right: 5%;
+      bottom: 5%; }
+  #locations-page .content {
+    padding: 40px 0;
+    background-repeat: repeat-y;
+    background-size: 300%;
+    background-position: center top; }
+    #locations-page .content .breadcrumb {
+      margin-bottom: 40px; }
+    #locations-page .content .row {
+      margin: 0 0 40px; }
+      #locations-page .content .row .column {
+        padding: 0; }
+        #locations-page .content .row .column .address {
+          font-size: 18px;
+          margin-bottom: 60px; }
+    #locations-page .content h1 {
+      margin-bottom: 70px; }
+    #locations-page .content h3 {
+      margin-bottom: 30px; }
   /* Breadcrumb ********************/
   .breadcrumb .breadcrumb-item {
     font-size: 20px; }
