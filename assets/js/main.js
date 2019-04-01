@@ -99,6 +99,11 @@ $(document).ready(function(){
     $('.navbar-toggler-logo').toggleClass('hide-dot');
   });
 
+  // Carousel stop autoplay
+  $('#carouselCaptions.carousel').carousel({
+    interval: false
+  });
+
   // Locatios accordion - desktop
   $('#accordionLocation-dt .button-modal').on('click', function() {
     var $thisAttr = $(this).attr('aria-expanded');

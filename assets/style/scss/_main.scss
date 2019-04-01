@@ -2453,6 +2453,86 @@ $breadcrumb-divider: quote(">");
       }
     }
   }
+
+  #strategy-page, #demandfulfillment-page, #financialtransformation-page {
+
+    &.h-one-line {
+
+      .content {
+        padding-bottom: 6%;
+
+        .row {
+
+          .column {
+
+            img {
+              padding-top: 58%;
+            }
+          }
+        }
+      }
+
+      .carousel-section {
+
+        &.fade-in {
+          .carousel {
+            padding-top: 25%;
+          }
+        }
+      }
+    }
+
+    .banner {
+
+      &.fade-in {
+
+        .container {
+
+          h1 {
+            font-size: 38px;
+          }
+        }
+      }
+    }
+
+    .content {
+
+      &.fade-in {
+        padding-bottom: 14%;
+      }
+
+      .column {
+
+        &._left {
+
+          h1 {
+            font-size: 38px;
+
+            &.number {
+              font-size: 100px;
+            }
+          }
+        }
+
+        &._right {
+
+          img {
+            padding-top: 74%;
+          }
+        }
+      }
+    }
+
+    .carousel-section {
+
+      &.fade-in {
+
+        .carousel {
+          padding-top: 40%;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 375px) {
@@ -3394,7 +3474,7 @@ $breadcrumb-divider: quote(">");
       .container {
 
         h1 {
-          font-size: 50px;
+          font-size: 46px;
           right: 5%;
           bottom: 5%;
         }
@@ -3430,6 +3510,117 @@ $breadcrumb-divider: quote(">");
 
       h3 {
         margin-bottom: 30px;
+      }
+    }
+  }
+
+  /* Practices all *******************/
+  #strategy-page, #demandfulfillment-page, #financialtransformation-page {
+
+    &.h-one-line {
+
+      .content {
+
+        .column {
+
+          img {
+            padding-top: 48%;
+          }
+        }
+      }
+
+      .carousel-section {
+
+        .carousel {
+          padding-top: 35%;
+        }
+      }
+    }
+
+    .banner {
+      height: 44vh;
+      background-position: center top;
+      background-size: cover;
+
+      .container {
+
+        h1 {
+          font-size: 46px;
+          right: 5%;
+          bottom: 5%;
+        }
+      }
+    }
+
+    .breadcrumb {
+      margin: 40px 0;
+    }
+
+    .content {
+      padding-bottom: 26%;
+
+      .row {
+
+        .column {
+
+          &._left {
+            padding: 0 15px 14%;
+
+            .number {
+              line-height: 0.8;
+            }
+          }
+        }
+      }
+
+      .column {
+
+        h1 {
+          font-size: 46px;
+          right: 5%;
+          bottom: 5%;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        img {
+          padding-top: 60%;
+          width: 86%;
+          display: block;
+          margin: 0 auto;
+          padding-left: 4%;
+        }
+      }
+    }
+
+    .carousel-section {
+
+      .carousel {
+        padding-top: 45%;
+
+        .carousel-item {
+
+          .row {
+
+            &:last-child {
+              margin-top: 80px;
+            }
+
+            h1 {
+              margin-bottom: 45px;
+            }
+
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .carousel-control-next, .carousel-control-prev {
+        display: none;
       }
     }
   }
@@ -3553,6 +3744,28 @@ $breadcrumb-divider: quote(">");
       position: relative;
       overflow: auto;
       margin-top: 20%;
+    }
+
+    .navbar-collapse {
+
+      &.show {
+
+        .nav {
+
+          li {
+
+            &.nav-item {
+
+              a.nav-link {
+
+                &:after {
+                  right: 40%;
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     #collapsibleNavbar {
@@ -3993,6 +4206,7 @@ $breadcrumb-divider: quote(">");
 
     .row {
       margin-right: 0;
+      margin-left: 0;
     }
 
     .figure {
@@ -4012,6 +4226,48 @@ $breadcrumb-divider: quote(">");
           color: $black;
           font: 600 20px/1.2 oswald, arial;
           float: left !important;
+        }
+      }
+    }
+  }
+
+  #blogs-page {
+
+    .figure {
+
+      .figcaption {
+        padding: 24px;
+
+        h3 {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+
+  #blogsdetail-page {
+
+    .related {
+
+      .container {
+        padding-right: 0;
+        max-width: 100%;
+
+        .owl-carousel {
+          margin-left: 0;
+          margin-right: 0;
         }
       }
     }

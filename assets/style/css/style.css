@@ -2280,7 +2280,25 @@ h3 {
   #hospitality .figcaption.fade-in h1 {
     font-size: 31px; }
   #hospitality .figcaption.fade-in p {
-    margin-top: 4%; } }
+    margin-top: 4%; }
+  #strategy-page.h-one-line .content, #demandfulfillment-page.h-one-line .content, #financialtransformation-page.h-one-line .content {
+    padding-bottom: 6%; }
+    #strategy-page.h-one-line .content .row .column img, #demandfulfillment-page.h-one-line .content .row .column img, #financialtransformation-page.h-one-line .content .row .column img {
+      padding-top: 58%; }
+  #strategy-page.h-one-line .carousel-section.fade-in .carousel, #demandfulfillment-page.h-one-line .carousel-section.fade-in .carousel, #financialtransformation-page.h-one-line .carousel-section.fade-in .carousel {
+    padding-top: 25%; }
+  #strategy-page .banner.fade-in .container h1, #demandfulfillment-page .banner.fade-in .container h1, #financialtransformation-page .banner.fade-in .container h1 {
+    font-size: 38px; }
+  #strategy-page .content.fade-in, #demandfulfillment-page .content.fade-in, #financialtransformation-page .content.fade-in {
+    padding-bottom: 14%; }
+  #strategy-page .content .column._left h1, #demandfulfillment-page .content .column._left h1, #financialtransformation-page .content .column._left h1 {
+    font-size: 38px; }
+    #strategy-page .content .column._left h1.number, #demandfulfillment-page .content .column._left h1.number, #financialtransformation-page .content .column._left h1.number {
+      font-size: 100px; }
+  #strategy-page .content .column._right img, #demandfulfillment-page .content .column._right img, #financialtransformation-page .content .column._right img {
+    padding-top: 74%; }
+  #strategy-page .carousel-section.fade-in .carousel, #demandfulfillment-page .carousel-section.fade-in .carousel, #financialtransformation-page .carousel-section.fade-in .carousel {
+    padding-top: 40%; } }
 
 @media (min-width: 375px) {
   nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
@@ -2765,7 +2783,7 @@ h3 {
     background-position: center top;
     background-size: cover; }
     #locations-page .banner .container h1 {
-      font-size: 50px;
+      font-size: 46px;
       right: 5%;
       bottom: 5%; }
   #locations-page .content {
@@ -2786,6 +2804,49 @@ h3 {
       margin-bottom: 70px; }
     #locations-page .content h3 {
       margin-bottom: 30px; }
+  /* Practices all *******************/
+  #strategy-page.h-one-line .content .column img, #demandfulfillment-page.h-one-line .content .column img, #financialtransformation-page.h-one-line .content .column img {
+    padding-top: 48%; }
+  #strategy-page.h-one-line .carousel-section .carousel, #demandfulfillment-page.h-one-line .carousel-section .carousel, #financialtransformation-page.h-one-line .carousel-section .carousel {
+    padding-top: 35%; }
+  #strategy-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner {
+    height: 44vh;
+    background-position: center top;
+    background-size: cover; }
+    #strategy-page .banner .container h1, #demandfulfillment-page .banner .container h1, #financialtransformation-page .banner .container h1 {
+      font-size: 46px;
+      right: 5%;
+      bottom: 5%; }
+  #strategy-page .breadcrumb, #demandfulfillment-page .breadcrumb, #financialtransformation-page .breadcrumb {
+    margin: 40px 0; }
+  #strategy-page .content, #demandfulfillment-page .content, #financialtransformation-page .content {
+    padding-bottom: 26%; }
+    #strategy-page .content .row .column._left, #demandfulfillment-page .content .row .column._left, #financialtransformation-page .content .row .column._left {
+      padding: 0 15px 14%; }
+      #strategy-page .content .row .column._left .number, #demandfulfillment-page .content .row .column._left .number, #financialtransformation-page .content .row .column._left .number {
+        line-height: 0.8; }
+    #strategy-page .content .column h1, #demandfulfillment-page .content .column h1, #financialtransformation-page .content .column h1 {
+      font-size: 46px;
+      right: 5%;
+      bottom: 5%; }
+    #strategy-page .content .column p, #demandfulfillment-page .content .column p, #financialtransformation-page .content .column p {
+      font-size: 16px; }
+    #strategy-page .content .column img, #demandfulfillment-page .content .column img, #financialtransformation-page .content .column img {
+      padding-top: 60%;
+      width: 86%;
+      display: block;
+      margin: 0 auto;
+      padding-left: 4%; }
+  #strategy-page .carousel-section .carousel, #demandfulfillment-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel {
+    padding-top: 45%; }
+    #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child {
+      margin-top: 80px; }
+    #strategy-page .carousel-section .carousel .carousel-item .row h1, #demandfulfillment-page .carousel-section .carousel .carousel-item .row h1, #financialtransformation-page .carousel-section .carousel .carousel-item .row h1 {
+      margin-bottom: 45px; }
+    #strategy-page .carousel-section .carousel .carousel-item .row p, #demandfulfillment-page .carousel-section .carousel .carousel-item .row p, #financialtransformation-page .carousel-section .carousel .carousel-item .row p {
+      font-size: 16px; }
+  #strategy-page .carousel-section .carousel-control-next, #strategy-page .carousel-section .carousel-control-prev, #demandfulfillment-page .carousel-section .carousel-control-next, #demandfulfillment-page .carousel-section .carousel-control-prev, #financialtransformation-page .carousel-section .carousel-control-next, #financialtransformation-page .carousel-section .carousel-control-prev {
+    display: none; }
   /* Breadcrumb ********************/
   .breadcrumb .breadcrumb-item {
     font-size: 20px; }
@@ -2841,6 +2902,8 @@ h3 {
     position: relative;
     overflow: auto;
     margin-top: 20%; }
+  nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
+    right: 40%; }
   nav #collapsibleNavbar {
     background-color: #1f3052; }
     nav #collapsibleNavbar.show, nav #collapsibleNavbar.collapsing {
@@ -3085,7 +3148,8 @@ h3 {
     max-width: 100%;
     padding-right: 0; }
   #blog .row {
-    margin-right: 0; }
+    margin-right: 0;
+    margin-left: 0; }
   #blog .figure .figcaption {
     padding: 24px; }
     #blog .figure .figcaption p {
@@ -3098,7 +3162,29 @@ h3 {
     #blog .figure .figcaption a {
       color: #000;
       font: 600 20px/1.2 oswald, arial;
-      float: left !important; } }
+      float: left !important; }
+  #blogs-page .figure .figcaption {
+    padding: 24px; }
+    #blogs-page .figure .figcaption h3 {
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical; }
+    #blogs-page .figure .figcaption p {
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical; }
+  #blogsdetail-page .related .container {
+    padding-right: 0;
+    max-width: 100%; }
+    #blogsdetail-page .related .container .owl-carousel {
+      margin-left: 0;
+      margin-right: 0; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   nav.navbar .navbar-collapse .navbar-brand {
