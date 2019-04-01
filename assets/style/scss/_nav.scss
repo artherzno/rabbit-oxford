@@ -2,7 +2,7 @@ nav {
   @include transition(all 0.2s ease);
   &.nav-blogsdetail {
     .navbar-toggler-logo {
-      top: 14%;
+      top: 20%;
 
       .logo {
         width: 80%;
@@ -291,6 +291,84 @@ nav {
           margin: 0;
           padding: 10px;
           margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+
+  .nav {
+
+    .nav-item {
+
+      .nav-link {
+
+        &:hover {
+          color: $pink;
+        }
+      }
+
+      &.dropdown {
+
+        .dropdown-menu {
+
+          &.hover {
+            display: block;
+            border: 1px solid $gray-soft;
+          }
+
+          padding-top: 10px;
+          background: transparent;
+          border: none;
+          top: 90%;
+          background-color: $white;
+          border-radius: 0;
+          padding: 0;
+
+          .dropdown-item {
+            text-align: left;
+            color: $white;
+            // margin-bottom: 15px;
+            // padding-bottom: 10px;
+            color: $black;
+            font-weight: bold;
+            border-bottom: 1px solid $gray-soft;
+            padding: 0.5rem 22px;
+
+            &:hover {
+              background-color: transparent;
+              color: $pink;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .oxford-mb {
+
+      #ft-navbar-practics-mb {
+
+
+        &+.dropdown-menu {
+          position: static !important;
+          transform: none !important;
+          border-radius: 0;
+          background-color: transparent;
+          border: none;
+          width: 100%;
+          text-align: center;
+          padding-bottom: 0;
+
+          .dropdown-item {
+            border: none;
+            font-weight: 400;
+            margin: 0;
+            padding: 10px;
+            margin-bottom: 10px;
+          }
         }
       }
     }

@@ -86,7 +86,17 @@ $(document).ready(function(){
 
   // Nav dropdown
   $('#navbar-practics-dt').hover(function() {
-    $('.dropdown-menu').toggleClass('hover');
+    $('#navbar-practics-dt .dropdown-menu').toggleClass('hover');
+  });
+
+  $('#ft-navbar-practics-dt').hover(function() {
+    $('#ft-navbar-practics-dt .dropdown-menu').toggleClass('hover');
+  });
+
+  // Carousel hidden on blogsdetail page - mobile
+  $('.navbar-toggler').on('click', function() {
+    $('#blogsdetail-page .carouselBlogDetail-dot').toggleClass('hide-dot');
+    $('.navbar-toggler-logo').toggleClass('hide-dot');
   });
 
   // Locatios accordion - desktop
@@ -115,6 +125,16 @@ $(document).ready(function(){
     console.log($thisAttr);
       $collapseBoxButtonParent.attr('style', 'color: #fff').addClass('sub-active');
     }
+  });
+
+  $('#accordionLocation-mb .button-head').on('click', function(){
+    var $this = $(this);
+    var $buttonNon = $this.next('.collapse-box').children('.buttonNone');
+    var $collaspe = $buttonNon.next('.collapse');
+
+    $this.removeAttr('style').removeClass('sub-active');
+    $buttonNon.attr('aria-expanded', 'false');
+    $collaspe.removeClass('show');
   });
 
   // Banner content animation
@@ -194,11 +214,11 @@ $(document).ready(function(){
   classToggle('#blogs-page', 0.5, '', '#blogs-page', 'fade-in');
 
   // Blogs page - row ----------------------------------------- //
-  classToggle('#blogs-page .row_1', 0.75, '', '#blogs-page .row_1', 'fade-in');
+  classToggle('#blogs-page .row_1', 1, '', '#blogs-page .row_1', 'fade-in');
 
-  classToggle('#blogs-page .row_2', 0.75, '', '#blogs-page .row_2', 'fade-in');
+  classToggle('#blogs-page .row_2', 0.9, '', '#blogs-page .row_2', 'fade-in');
 
-  classToggle('#blogs-page .row_3', 0.75, '', '#blogs-page .row_3', 'fade-in');
+  classToggle('#blogs-page .row_3', 0.9, '', '#blogs-page .row_3', 'fade-in');
 
   // Blogs page - pagination ----------------------------------------- //
   classToggle('#blogs-page .pagi', 0.75, '', '#blogs-page .pagi', 'fade-in');
@@ -221,9 +241,17 @@ $(document).ready(function(){
   classToggle('#team-page .content', 0.7, '', '#team-page .content', 'fade-in');
 
   // Team - row ----------------------------------------- //
-  classToggle('#team-page .row_1', 0.9, '', '#team-page .row_1', 'fade-in');
+  classToggle('#team-page .oxford-dt .row_1', 0.9, '', '#team-page .oxford-dt .row_1', 'fade-in');
 
-  classToggle('#team-page .row_2', 0.9, '', '#team-page .row_2', 'fade-in');
+  classToggle('#team-page .oxford-dt .row_2', 0.9, '', '#team-page .oxford-dt .row_2', 'fade-in');
+
+  classToggle('#team-page .oxford-mb .row_1', 0.9, '', '#team-page .oxford-mb .row_1', 'fade-in');
+
+  classToggle('#team-page .oxford-mb .row_2', 0.9, '', '#team-page .oxford-mb .row_2', 'fade-in');
+
+  classToggle('#team-page .oxford-mb .row_3', 0.9, '', '#team-page .oxford-mb .row_3', 'fade-in');
+
+  classToggle('#team-page .oxford-mb .row_4', 0.9, '', '#team-page .oxford-mb .row_4', 'fade-in');
 
 
   // Team detail - banner ----------------------------------------- //
