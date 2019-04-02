@@ -2230,10 +2230,21 @@ small {
     background: url('../../images/career/oxf_bg_content.jpg') no-repeat;
     background-size: cover;
     background-position: center bottom;
+    padding: 70px 0;
+
+    .row {
+      margin-bottom: 0;
+    }
+
+    form {
+      opacity: 0;
+      @include transform(translateY(20%));
+      @include transition(all 0.8s ease-out);
+    }
 
     &.fade-in {
 
-      .row {
+      form, .row, h3 {
         @include transform(translateY(0));
         opacity: 1;
       }
@@ -2249,6 +2260,9 @@ small {
     h3 {
       font-weight: 400;
       margin-bottom: 40px;
+      opacity: 0;
+      @include transform(translateY(200%));
+      @include transition(all 0.8s ease-out);
     }
 
     label {

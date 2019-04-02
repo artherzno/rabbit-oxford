@@ -2215,8 +2215,20 @@ small {
   height: auto;
   background: url("../../images/career/oxf_bg_content.jpg") no-repeat;
   background-size: cover;
-  background-position: center bottom; }
-  #careers-page .section-apply.fade-in .row {
+  background-position: center bottom;
+  padding: 70px 0; }
+  #careers-page .section-apply .row {
+    margin-bottom: 0; }
+  #careers-page .section-apply form {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #careers-page .section-apply.fade-in form, #careers-page .section-apply.fade-in .row, #careers-page .section-apply.fade-in h3 {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
@@ -2225,7 +2237,15 @@ small {
     margin: 30px 0; }
   #careers-page .section-apply h3 {
     font-weight: 400;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    opacity: 0;
+    -webkit-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    transform: translateY(200%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
   #careers-page .section-apply label {
     font: 400 18px/1 oswald, arial; }
     #careers-page .section-apply label.custom-file-upload {

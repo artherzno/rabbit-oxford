@@ -315,6 +315,8 @@ $(document).ready(function(){
 
   classToggle('#careers-page .row_0', 0.8, '', '#careers-page .row_0', 'fade-in');
 
+  classToggle('#careers-page .section-apply', 0.8, '', '#careers-page .section-apply', 'fade-in');
+
 
   // Demandfulfillment - banner ----------------------------------------- //
   classToggle('#demandfulfillment-page', 0.8, '', '#demandfulfillment-page .banner', 'fade-in');
