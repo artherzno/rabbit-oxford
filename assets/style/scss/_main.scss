@@ -32,6 +32,48 @@ h3 {
   font: 600 24px/1.2 oswald, arial;
 }
 
+textarea, input[type="text"], input[type="password"], input[type="email"], select, .form-control {
+  border-radius: 0;
+  resize: none;
+  border: none;
+  margin-bottom: 0;
+}
+
+.form-control, label, .form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  padding: 30px 20px;
+}
+
+small {
+  color: $gray;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.file-upload {
+  position: relative;
+
+  .custom-file-upload {
+    width: 180px;
+    height: 52px;
+    padding: 10px 30px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  input[type="file"] {
+    position: relative;
+    z-index: 1;
+    width: 180px;
+    height: 52px;
+  }
+}
+
 .buttonWhite {
   @include button($white, $blue, $blue);
 }
@@ -42,6 +84,14 @@ h3 {
 
 .buttonBlue {
   @include button($blue, $white, $blue);
+}
+
+.buttonBlueFull {
+  @include buttonFull($white, $blue, $black, $pink);
+}
+
+.buttonWhiteFull {
+  @include buttonFull($blue, $white, $black, $pink);
 }
 
 .buttonNone {
@@ -2109,6 +2159,7 @@ h3 {
     @include transform(translateY(20%));
 
     &.row_0 {
+      margin-bottom: 0;
 
       .column {
         h3 {
@@ -2173,6 +2224,42 @@ h3 {
     }
   }
 
+  .section-apply {
+    width: 100%;
+    height: auto;
+    background: url('../../images/career/oxf_bg_content.jpg') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    &.fade-in {
+
+      .row {
+        @include transform(translateY(0));
+        opacity: 1;
+      }
+    }
+
+    .form-group {
+
+      h3 {
+        margin: 30px 0;
+      }
+    }
+
+    h3 {
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+
+    label {
+      font: 400 18px/1 oswald, arial;
+
+      &.custom-file-upload {
+        font-weight: 600;
+        line-height: 1.6;
+      }
+    }
+  }
 }
 
 /* Strategy page ******************************************************************/
@@ -3960,6 +4047,10 @@ $breadcrumb-divider: quote(">");
     .list {
       padding: 0 15px;
       margin-top: 40px;
+    }
+
+    .section-apply {
+      background-position: 86% bottom;
     }
   }
 

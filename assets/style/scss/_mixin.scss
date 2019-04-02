@@ -81,6 +81,32 @@
   // }
 }
 
+@mixin buttonFull($color, $bg, $colorhover, $bghover) {
+  border: 2px solid $bg;
+  color: $color;
+  padding: 10px 30px;
+  background-color: $bg;
+  font: 600 18px/1 oswald, arial;
+  width: 180px;
+  height: 52px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.6;
+
+  background: linear-gradient(to right, $bghover 50%, $bg 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  @include transition(all 0.2s ease-out);
+
+  &:hover {
+    color: $colorhover;
+    border: 2px solid $bghover;
+    background-position: left bottom;
+  }
+}
+
 @mixin keyframe ($animation_name) {
     @-webkit-keyframes $animation_name {
         @content;

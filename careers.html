@@ -184,6 +184,54 @@
         </div>
       </div>
 
+      <div class="content section-apply">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Apply</h3>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputName">NAME</label>
+                    <input type="text" class="form-control" id="inputName">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputSurname">SURNAME</label>
+                    <input type="text" class="form-control" id="inputSurname">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail">EMAIL</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">LOCATION</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPosition">POSITIONS OF INTEREST</label>
+                  <input type="text" class="form-control" id="inputPosition">
+                </div>
+                <div class="form-group">
+                  <label for="inputMessage">YOUR MESSAGE</label>
+                  <textarea class="form-control" id="inputMessage" rows="5"></textarea>
+                </div>
+                <div class="form-group file-upload">
+                  <h3 for="inputUpload">Upload your Resume</h3>
+                  <!-- <input type="file" class="form-control-file" id="inputUpload"> -->
+                  <label for="filetoupload" class="custom-file-upload buttonWhiteFull">UPLOAD</label>
+      						<input type="file" class="col-md-12 col-sm-12 col-xs-12" id="filetoupload" name="filetoupload" ng-model="filetoupload" accept=".jpg, .png, .gif">
+                </div>
+                <small>*You can upload Files that are .JPEG, .PNG, .PDF Under 20MB</small>
+                <button type="submit" class="buttonBlueFull">SUBMIT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="overlay oxford-mb"></div>
     </div>
 

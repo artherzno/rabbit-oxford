@@ -235,6 +235,39 @@ h2 {
 h3 {
   font: 600 24px/1.2 oswald, arial; }
 
+textarea, input[type="text"], input[type="password"], input[type="email"], select, .form-control {
+  border-radius: 0;
+  resize: none;
+  border: none;
+  margin-bottom: 0; }
+
+.form-control, label, .form-group {
+  margin-bottom: 20px; }
+
+.form-control {
+  padding: 30px 20px; }
+
+small {
+  color: #999;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: block; }
+
+.file-upload {
+  position: relative; }
+  .file-upload .custom-file-upload {
+    width: 180px;
+    height: 52px;
+    padding: 10px 30px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer; }
+  .file-upload input[type="file"] {
+    position: relative;
+    z-index: 1;
+    width: 180px;
+    height: 52px; }
+
 .buttonWhite {
   border: 2px solid #fff;
   color: #fff;
@@ -317,6 +350,62 @@ h3 {
   .buttonBlue:hover {
     color: #fff;
     border: 2px solid #1f3052;
+    background-position: left bottom; }
+
+.buttonBlueFull {
+  border: 2px solid #1f3052;
+  color: #fff;
+  padding: 10px 30px;
+  background-color: #1f3052;
+  font: 600 18px/1 oswald, arial;
+  width: 180px;
+  height: 52px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.6;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f7d0cb), color-stop(50%, #1f3052));
+  background: -webkit-linear-gradient(left, #f7d0cb 50%, #1f3052 50%);
+  background: -o-linear-gradient(left, #f7d0cb 50%, #1f3052 50%);
+  background: linear-gradient(to right, #f7d0cb 50%, #1f3052 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+  .buttonBlueFull:hover {
+    color: #000;
+    border: 2px solid #f7d0cb;
+    background-position: left bottom; }
+
+.buttonWhiteFull {
+  border: 2px solid #fff;
+  color: #1f3052;
+  padding: 10px 30px;
+  background-color: #fff;
+  font: 600 18px/1 oswald, arial;
+  width: 180px;
+  height: 52px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.6;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f7d0cb), color-stop(50%, #fff));
+  background: -webkit-linear-gradient(left, #f7d0cb 50%, #fff 50%);
+  background: -o-linear-gradient(left, #f7d0cb 50%, #fff 50%);
+  background: linear-gradient(to right, #f7d0cb 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+  .buttonWhiteFull:hover {
+    color: #000;
+    border: 2px solid #f7d0cb;
     background-position: left bottom; }
 
 .buttonNone {
@@ -2065,8 +2154,10 @@ h3 {
   -webkit-transform: translateY(20%);
   -ms-transform: translateY(20%);
   transform: translateY(20%); }
-  #careers-page .row.row_0 .column h3 {
-    margin-bottom: 30px; }
+  #careers-page .row.row_0 {
+    margin-bottom: 0; }
+    #careers-page .row.row_0 .column h3 {
+      margin-bottom: 30px; }
   #careers-page .row.fade-in.row_1, #careers-page .row.fade-in.row_2, #careers-page .row.fade-in.row_3, #careers-page .row.fade-in.row_4, #careers-page .row.fade-in.row_0 {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -2118,6 +2209,28 @@ h3 {
       float: left;
       margin: 15px 0;
       border-top-color: #020202; }
+
+#careers-page .section-apply {
+  width: 100%;
+  height: auto;
+  background: url("../../images/career/oxf_bg_content.jpg") no-repeat;
+  background-size: cover;
+  background-position: center bottom; }
+  #careers-page .section-apply.fade-in .row {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+  #careers-page .section-apply .form-group h3 {
+    margin: 30px 0; }
+  #careers-page .section-apply h3 {
+    font-weight: 400;
+    margin-bottom: 40px; }
+  #careers-page .section-apply label {
+    font: 400 18px/1 oswald, arial; }
+    #careers-page .section-apply label.custom-file-upload {
+      font-weight: 600;
+      line-height: 1.6; }
 
 /* Strategy page ******************************************************************/
 #strategy-page .banner {
@@ -3100,6 +3213,8 @@ h3 {
   #careers-page .list {
     padding: 0 15px;
     margin-top: 40px; }
+  #careers-page .section-apply {
+    background-position: 86% bottom; }
   /* Breadcrumb ********************/
   .breadcrumb .breadcrumb-item {
     font-size: 20px; }
