@@ -337,6 +337,17 @@ h3 {
 .txt-white {
   color: #fff !important; }
 
+.overlay {
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .overlay.show {
+    width: 100%; }
+
 /* Footer ******************************************************************/
 #footer {
   background-color: #1f3052; }
@@ -1837,7 +1848,7 @@ h3 {
     -ms-transform: translateY(0);
     transform: translateY(0); }
 
-/* Locatios page ******************************************************************/
+/* Locations page ******************************************************************/
 #locations-page .banner {
   width: 100%;
   height: 890px;
@@ -1953,7 +1964,162 @@ h3 {
 #locations-page .row {
   margin-bottom: 40px; }
 
-/* Locatios page ******************************************************************/
+/* Careers page ******************************************************************/
+#careers-page .banner {
+  width: 100%;
+  height: 890px;
+  background: url("../../images/career/oxf_bg_banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  #careers-page .banner .container {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #careers-page .banner .container h1 {
+      font: 700 140px/1.2 oswald, arial;
+      color: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      bottom: 110px;
+      right: 0;
+      margin: auto;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+  #careers-page .banner.fade-in h1 {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+#careers-page .content {
+  padding: 70px 0; }
+  #careers-page .content.fade-in .breadcrumb, #careers-page .content.fade-in h1 {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  #careers-page .content.fade-in .dropdown {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+#careers-page .breadcrumb {
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out; }
+
+#careers-page h1 {
+  color: #1f3052;
+  margin-bottom: 55px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.8s ease-out 0.2s;
+  -ms-transition: all 0.8s ease-out 0.2s;
+  -o-transition: all 0.8s ease-out 0.2s;
+  transition: all 0.8s ease-out 0.2s; }
+
+#careers-page .header h1 {
+  display: inline-block; }
+
+#careers-page .header .dropdown {
+  display: inline-block;
+  float: right;
+  margin: 10px 0;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out; }
+
+#careers-page .list {
+  padding: 0; }
+  #careers-page .list .column {
+    padding: 30px; }
+    #careers-page .list .column:hover {
+      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      background-color: #f4f4f4; }
+      #careers-page .list .column:hover .button-readmore {
+        color: #f7d0cb; }
+
+#careers-page .row {
+  margin-bottom: 40px;
+  opacity: 0;
+  -webkit-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%); }
+  #careers-page .row.row_0 .column h3 {
+    margin-bottom: 30px; }
+  #careers-page .row.fade-in.row_1, #careers-page .row.fade-in.row_2, #careers-page .row.fade-in.row_3, #careers-page .row.fade-in.row_4, #careers-page .row.fade-in.row_0 {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+  #careers-page .row.fade-in.row_1 {
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #careers-page .row.fade-in.row_2 {
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #careers-page .row.fade-in.row_3 {
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #careers-page .row.fade-in.row_4 {
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #careers-page .row.fade-in.row_0 {
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #careers-page .row .column {
+    color: #000;
+    font-family: oswald, arial; }
+    #careers-page .row .column h3 {
+      font-size: 30px;
+      margin: 0 0 15px; }
+    #careers-page .row .column p {
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      color: #333; }
+    #careers-page .row .column .button-readmore {
+      color: #1f3052;
+      clear: both;
+      font: 600 16px/1 oswald, arial; }
+    #careers-page .row .column hr {
+      width: 50%;
+      text-align: left;
+      float: left;
+      margin: 15px 0;
+      border-top-color: #020202; }
+
+/* Strategy page ******************************************************************/
 #strategy-page .banner {
   background: url("../../images/strategy/oxf_bg_banner.jpg") no-repeat; }
 
@@ -2171,6 +2337,41 @@ h3 {
     opacity: 1; }
   100% {
     opacity: 0; } }
+
+/* dropdown *******************************************************************/
+.dropdown.dropdown-list .dropdown-toggle {
+  border-radius: 0;
+  border: 1px solid #999;
+  padding: 20px;
+  background-color: #fff;
+  min-width: 300px;
+  width: 100%;
+  text-align: left;
+  background: #fff url("../../images/icon/oxf_arrow_down.svg") no-repeat;
+  background-position: 94% center;
+  background-size: 18px;
+  font: 700 20px/1 oswald, arial;
+  color: #1f3052; }
+  .dropdown.dropdown-list .dropdown-toggle:after {
+    content: '';
+    border: none;
+    font-size: 20px; }
+
+.dropdown.dropdown-list .dropdown-menu {
+  width: 100%;
+  max-width: 300px;
+  margin: -1px 0 0;
+  padding: 0;
+  border-radius: 0;
+  border: 1px solid #999; }
+  .dropdown.dropdown-list .dropdown-menu .dropdown-item {
+    font: 700 20px/1 oswald, arial;
+    color: #1f3052;
+    margin: 30px 0;
+    padding: 0 20px; }
+    .dropdown.dropdown-list .dropdown-menu .dropdown-item:hover {
+      background-color: transparent;
+      color: #f7d0cb; }
 
 /* Breadcrumb *****************************************************************/
 .breadcrumb {
@@ -2780,7 +2981,7 @@ h3 {
     #blogsdetail-page.fade-in .content .header .date {
       font-size: 18px;
       margin: 0 0 40px; }
-  /* Locatios page ********************/
+  /* Locations page ********************/
   #locations-page .banner {
     height: 44vh;
     background-position: center top;
@@ -2850,6 +3051,55 @@ h3 {
       font-size: 16px; }
   #strategy-page .carousel-section .carousel-control-next, #strategy-page .carousel-section .carousel-control-prev, #demandfulfillment-page .carousel-section .carousel-control-next, #demandfulfillment-page .carousel-section .carousel-control-prev, #financialtransformation-page .carousel-section .carousel-control-next, #financialtransformation-page .carousel-section .carousel-control-prev, #organisationaloptimisation-page .carousel-section .carousel-control-next, #organisationaloptimisation-page .carousel-section .carousel-control-prev {
     display: none; }
+  /* Careers page ********************/
+  #careers-page .banner {
+    height: 44vh;
+    background-position: center top;
+    background-size: cover; }
+    #careers-page .banner .container h1 {
+      font-size: 46px;
+      right: 5%;
+      bottom: 5%; }
+  #careers-page .content {
+    padding: 40px 0;
+    background-repeat: repeat-y;
+    background-size: 300%;
+    background-position: center top; }
+    #careers-page .content .breadcrumb {
+      margin-bottom: 40px; }
+    #careers-page .content .header .dropdown {
+      float: none;
+      display: block;
+      margin: 0; }
+      #careers-page .content .header .dropdown .dropdown-toggle {
+        max-width: none;
+        font-size: 16px;
+        padding: 11px 20px; }
+      #careers-page .content .header .dropdown .dropdown-menu {
+        max-width: none; }
+    #careers-page .content .row {
+      margin: 0 0 40px; }
+      #careers-page .content .row.row_0 {
+        margin: 0; }
+        #careers-page .content .row.row_0 .column.col_1 {
+          margin: 0; }
+      #careers-page .content .row .column {
+        padding: 0; }
+        #careers-page .content .row .column:hover {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          background-color: transparent; }
+        #careers-page .content .row .column.col_1 {
+          margin-bottom: 40px; }
+      #careers-page .content .row .buttonBlue {
+        width: 100%; }
+    #careers-page .content h1 {
+      margin-bottom: 40px; }
+    #careers-page .content h3 {
+      margin-bottom: 30px; }
+  #careers-page .list {
+    padding: 0 15px;
+    margin-top: 40px; }
   /* Breadcrumb ********************/
   .breadcrumb .breadcrumb-item {
     font-size: 20px; }

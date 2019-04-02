@@ -70,6 +70,20 @@ h3 {
   color: $white !important;
 }
 
+.overlay {
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+
+  &.show {
+    width: 100%;
+  }
+}
+
 /* Footer ******************************************************************/
 #footer {
   background-color: $blue;
@@ -1851,7 +1865,7 @@ h3 {
   }
 }
 
-/* Locatios page ******************************************************************/
+/* Locations page ******************************************************************/
 #locations-page {
   .banner {
     width: 100%;
@@ -1987,7 +2001,181 @@ h3 {
 
 }
 
-/* Locatios page ******************************************************************/
+/* Careers page ******************************************************************/
+#careers-page {
+  .banner {
+    width: 100%;
+    height: 890px;
+    background: url('../../images/career/oxf_bg_banner.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      h1 {
+        font: 700 140px/1.2 oswald, arial;
+        color: rgba(255,255,255,0.2);
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+        @include transform(translateY(50%));
+        @include transition(all 0.8s ease-out);
+      }
+    }
+
+    &.fade-in {
+
+      h1 {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+
+  }
+
+  .content {
+    padding: 70px 0;
+
+    &.fade-in {
+
+      .breadcrumb, h1 {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+
+      .dropdown {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+  }
+
+  .breadcrumb {
+    opacity: 0;
+    @include transform(translateY(50%));
+    @include transition(all 0.8s ease-out);
+  }
+
+  h1 {
+    color: $blue;
+    margin-bottom: 55px;
+    opacity: 0;
+    @include transform(translateY(50%));
+    @include transition(all 0.8s ease-out 0.2s);
+  }
+
+  .header {
+
+    h1 {
+      display: inline-block;
+    }
+
+    .dropdown {
+      display: inline-block;
+      float: right;
+      margin: 10px 0;
+      z-index: 1;
+      opacity: 0;
+      @include transform(translateY(50%));
+      @include transition(all 0.8s ease-out);
+    }
+  }
+
+  .list {
+    padding: 0;
+
+    .column {
+      padding: 30px;
+
+      &:hover {
+        box-shadow: 0px 5px 14px rgba(0,0,0,0.3);
+        background-color: $gray-soft;
+
+        .button-readmore {
+          color: $pink;
+        }
+      }
+    }
+  }
+
+  .row {
+    margin-bottom: 40px;
+    opacity: 0;
+    @include transform(translateY(20%));
+
+    &.row_0 {
+
+      .column {
+        h3 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &.fade-in {
+
+      &.row_1, &.row_2, &.row_3, &.row_4, &.row_0 {
+        @include transform(translateY(0));
+        opacity: 1;
+      }
+
+      &.row_1 {
+        @include transition(all 0.8s ease-out);
+      }
+      &.row_2 {
+        @include transition(all 0.8s ease-out );
+      }
+      &.row_3{
+        @include transition(all 0.8s ease-out );
+      }
+      &.row_4 {
+        @include transition(all 0.8s ease-out );
+      }
+      &.row_0 {
+        @include transition(all 0.8s ease-out );
+      }
+    }
+
+    .column {
+      color: $black;
+      font-family: oswald, arial;
+
+      h3 {
+        font-size: 30px;
+        margin: 0 0 15px;
+      }
+
+      p {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #333;
+      }
+
+      .button-readmore {
+        color: $blue;
+        clear: both;
+        font: 600 16px/1 oswald, arial;
+      }
+
+      hr {
+        width: 50%;
+        text-align: left;
+        float: left;
+        margin: 15px 0;
+        border-top-color: #020202;
+      }
+    }
+  }
+
+}
+
+/* Strategy page ******************************************************************/
 #strategy-page {
   .banner {
     background: url('../../images/strategy/oxf_bg_banner.jpg') no-repeat;
@@ -2244,6 +2432,56 @@ h3 {
 @keyframes animateContentBanner {
   0%   { opacity: 1; }
   100% { opacity: 0; }
+}
+
+/* dropdown *******************************************************************/
+.dropdown {
+
+  &.dropdown-list {
+
+    .dropdown-toggle {
+      border-radius: 0;
+      border: 1px solid $gray;
+      padding: 20px;
+      background-color: $white;
+      min-width: 300px;
+      width: 100%;
+      text-align: left;
+      background: #fff url("../../images/icon/oxf_arrow_down.svg") no-repeat;
+      background-position: 94% center;
+      background-size: 18px;
+      font: 700 20px/1 oswald, arial;
+      color: $blue;
+
+      &:after {
+        content: '';
+        border: none;
+        font-size: 20px;
+      }
+    }
+
+    .dropdown-menu {
+      width: 100%;
+      max-width: 300px;
+      margin: -1px 0 0;
+      padding: 0;
+      border-radius: 0;
+      border: 1px solid $gray;
+
+      .dropdown-item {
+
+        &:hover {
+          background-color: transparent;
+          color: $pink;
+        }
+
+        font: 700 20px/1 oswald, arial;
+        color: $blue;
+        margin: 30px 0;
+        padding: 0 20px;
+      }
+    }
+  }
 }
 
 /* Breadcrumb *****************************************************************/
@@ -3469,7 +3707,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  /* Locatios page ********************/
+  /* Locations page ********************/
   #locations-page {
 
     .banner {
@@ -3628,6 +3866,100 @@ $breadcrumb-divider: quote(">");
       .carousel-control-next, .carousel-control-prev {
         display: none;
       }
+    }
+  }
+
+  /* Careers page ********************/
+  #careers-page {
+
+    .banner {
+      height: 44vh;
+      background-position: center top;
+      background-size: cover;
+
+      .container {
+
+        h1 {
+          font-size: 46px;
+          right: 5%;
+          bottom: 5%;
+        }
+      }
+    }
+
+    .content {
+      padding: 40px 0;
+      background-repeat: repeat-y;
+      background-size: 300%;
+      background-position: center top;
+
+      .breadcrumb {
+        margin-bottom: 40px;
+      }
+
+      .header {
+
+        .dropdown {
+          float: none;
+          display: block;
+          margin: 0;
+
+          .dropdown-toggle {
+            max-width: none;
+            font-size: 16px;
+            padding: 11px 20px;
+          }
+
+          .dropdown-menu {
+            max-width: none;
+          }
+        }
+      }
+
+      .row {
+        margin: 0 0 40px;
+
+        &.row_0 {
+          margin: 0;
+
+          .column {
+
+            &.col_1 {
+              margin: 0;
+            }
+          }
+        }
+
+        .column {
+          padding: 0;
+
+          &:hover {
+            box-shadow: none;
+            background-color: transparent;
+          }
+
+          &.col_1 {
+            margin-bottom: 40px;
+          }
+        }
+
+        .buttonBlue {
+          width: 100%;
+        }
+      }
+
+      h1 {
+        margin-bottom: 40px;
+      }
+
+      h3 {
+        margin-bottom: 30px;
+      }
+    }
+
+    .list {
+      padding: 0 15px;
+      margin-top: 40px;
     }
   }
 

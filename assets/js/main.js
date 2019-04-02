@@ -93,6 +93,19 @@ $(document).ready(function(){
     $('#ft-navbar-practics-dt .dropdown-menu').toggleClass('hover');
   });
 
+  // Careers dropdown
+  $('#careers-page .dropdown-list .dropdown-toggle').on('click', function() {
+    $('#careers-page .overlay').toggleClass('show');
+  });
+
+  $('#careers-page .dropdown-list .dropdown-item').on('click', function() {
+    $('.overlay').removeClass('show');
+  });
+
+  $('.overlay').on('click', function() {
+    $(this).removeClass('show')
+  });
+
   // Carousel hidden on blogsdetail page - mobile
   $('.navbar-toggler').on('click', function() {
     $('#blogsdetail-page .carouselBlogDetail-dot').toggleClass('hide-dot');
@@ -283,6 +296,24 @@ $(document).ready(function(){
   classToggle('#locations-page .row_3', 0.8, '', '#locations-page .row_3 .column', 'fade-in');
 
   classToggle('#locations-page .row_4', 0.8, '', '#locations-page .row_4 .column', 'fade-in');
+
+
+  // Careers - banner ----------------------------------------- //
+  classToggle('#careers-page', 0.8, '', '#careers-page .banner', 'fade-in');
+
+  // Careers - header ----------------------------------------- //
+  classToggle('#careers-page .content', 0.7, '', '#careers-page .content', 'fade-in');
+
+  // Careers - row ----------------------------------------- //
+  classToggle('#careers-page .row_1', 0.8, '', '#careers-page .row_1', 'fade-in');
+
+  classToggle('#careers-page .row_2', 0.8, '', '#careers-page .row_2', 'fade-in');
+
+  classToggle('#careers-page .row_3', 0.8, '', '#careers-page .row_3', 'fade-in');
+
+  classToggle('#careers-page .row_4', 0.8, '', '#careers-page .row_4', 'fade-in');
+
+  classToggle('#careers-page .row_0', 0.8, '', '#careers-page .row_0', 'fade-in');
 
 
   // Demandfulfillment - banner ----------------------------------------- //
