@@ -986,6 +986,9 @@ small {
   }
 
   .row {
+    opacity: 0;
+    @include transform(translateY(20%));
+    @include transition(all 0.5s ease-out 0.2s);
 
     &:last-child {
       margin-top: 60px;
@@ -1011,25 +1014,25 @@ small {
       }
     }
 
-    &._1, &._2, &._3 {
-      opacity: 0;
-      @include transform(translateY(20%));
-    }
-
-    &._1 {
-      @include transition(opacity 0.8s ease-out 0.2s);
-      @include transition(transform 0.8s ease-out 0.2s);
-    }
-
-    &._2 {
-      @include transition(opacity 0.8s ease-out 0.4s);
-      @include transition(transform 0.8s ease-out 0.4s);
-    }
-
-    &._3 {
-      @include transition(opacity 0.8s ease-out 0.6s);
-      @include transition(transform 0.8s ease-out 0.6s);
-    }
+    // &._1, &._2, &._3 {
+    //   opacity: 0;
+    //   @include transform(translateY(20%));
+    // }
+    //
+    // &._1 {
+    //   @include transition(opacity 0.8s ease-out 0.2s);
+    //   @include transition(transform 0.8s ease-out 0.2s);
+    // }
+    //
+    // &._2 {
+    //   @include transition(opacity 0.8s ease-out 0.4s);
+    //   @include transition(transform 0.8s ease-out 0.4s);
+    // }
+    //
+    // &._3 {
+    //   @include transition(opacity 0.8s ease-out 0.6s);
+    //   @include transition(transform 0.8s ease-out 0.6s);
+    // }
 
     img {
       width: 100%;
@@ -1083,23 +1086,18 @@ small {
 
   &.fade-in {
 
-    h1 {
+    h1 , .row, .buttonRow {
       opacity: 1;
       @include transform(translateY(0));
     }
 
-    .figure {
-
-      &._1, &._2, &._3 {
-        opacity: 1;
-        @include transform(translateY(0));
-      }
-    }
-
-    .buttonRow {
-      opacity: 1;
-      @include transform(translateY(0));
-    }
+    // .figure {
+    //
+    //   &._1, &._2, &._3 {
+    //     opacity: 1;
+    //     @include transform(translateY(0));
+    //   }
+    // }
   }
 }
 
@@ -1248,7 +1246,7 @@ small {
     }
 
     .figcaption {
-      padding: 30px 15px;
+      padding: 24px;
       overflow: hidden;
 
       .fullname {
@@ -1260,7 +1258,7 @@ small {
       .position {
         color: #666;
         font: 400 18px/1.2 oswald, arial;
-        margin-bottom: 30px;
+        margin-bottom: 0;
 
         &.date {
           color: $gray;
@@ -1396,50 +1394,49 @@ small {
       @include transition(all 0.8s ease-out);
     }
 
+    .paragraph {
+      opacity: 0;
+      @include transform(translateY(20%));
+
+      &._1 {
+        @include transition(all 0.8s ease-out);
+      }
+
+      // &._2 {
+      //   @include transition(all 0.8s ease-out 0.2s);
+      // }
+      //
+      // &._3 {
+      //   @include transition(all 0.8s ease-out 0.4s);
+      // }
+      //
+      // &._4 {
+      //   @include transition(all 0.8s ease-out 0.6s);
+      // }
+      //
+      // &._5 {
+      //   @include transition(all 0.8s ease-out 0.8s);
+      // }
+      //
+      // &._6 {
+      //   @include transition(all 0.8s ease-out 1s);
+      // }
+      //
+      // &._7 {
+      //   @include transition(all 0.8s ease-out 1.2s);
+      // }
+
+      &.fade-in {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+
     p {
       font-size: 18px;
       line-height: 1.2;
       color: $gray;
       margin-bottom: 40px;
-
-      &.paragraph {
-        opacity: 0;
-        @include transform(translateY(50%));
-
-        &._1 {
-          @include transition(all 0.8s ease-out);
-        }
-
-        &._2 {
-          @include transition(all 0.8s ease-out 0.2s);
-        }
-
-        &._3 {
-          @include transition(all 0.8s ease-out 0.4s);
-        }
-
-        &._4 {
-          @include transition(all 0.8s ease-out 0.6s);
-        }
-
-        &._5 {
-          @include transition(all 0.8s ease-out 0.8s);
-        }
-
-        &._6 {
-          @include transition(all 0.8s ease-out 1s);
-        }
-
-        &._7 {
-          @include transition(all 0.8s ease-out 1.2s);
-        }
-
-        &.fade-in {
-          opacity: 1;
-          @include transform(translateY(0));
-        }
-
-      }
     }
 
     .row {
@@ -1483,9 +1480,13 @@ small {
     opacity: 0;
     @include transform(translateY(20%));
 
+    &.pagi {
+      opacity: 1;
+    }
+
     &.fade-in {
 
-      &.row_1, &.row_2, &.row_3, &.pagi {
+      &.row_1, &.row_2, &.row_3/*, &.pagi*/ {
         @include transform(translateY(0));
         opacity: 1;
       }
@@ -1499,9 +1500,9 @@ small {
       &.row_3 {
         @include transition(all 0.8s ease-out 0.6s);
       }
-      &.pagi {
-        @include transition(all 0.8s ease-out 0.8s);
-      }
+      // &.pagi {
+      //   @include transition(all 0.8s ease-out 0.8s);
+      // }
     }
 
     &:last-child {
@@ -1531,7 +1532,7 @@ small {
         &.active, &:hover {
 
           .page-link {
-            color: $black;
+            color: $blue;
             // text-decoration: underline;
             background-color: transparent;
           }
@@ -1711,7 +1712,7 @@ small {
       .text-detail {
         color: $black;
         padding: 0 14%;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
 
         img {
           width: 100%;
@@ -2394,7 +2395,8 @@ small {
       }
 
       img {
-        width: 82%;
+        width: 80%;
+        margin: 10px 50px 0 0;
         opacity: 0;
         @include transform(translateY(20%));
         @include transition(all 0.8s ease-out 0.9s);
@@ -2463,10 +2465,12 @@ small {
 
           h1 {
             font-size: 45px;
+            line-height: 1.2;
           }
 
           p {
             font-size: 20px;
+            line-height: 1;
           }
         }
       }

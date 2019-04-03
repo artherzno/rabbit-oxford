@@ -121,7 +121,7 @@ $(document).ready(function(){
 
   // Carousel stop autoplay
   $('#carouselCaptions.carousel').carousel({
-    interval: false
+    // interval: false
   });
 
   // Locatios accordion - desktop
@@ -246,7 +246,7 @@ $(document).ready(function(){
   classToggle('#blogs-page .row_3', 0.9, '', '#blogs-page .row_3', 'fade-in');
 
   // Blogs page - pagination ----------------------------------------- //
-  classToggle('#blogs-page .pagi', 0.75, '', '#blogs-page .pagi', 'fade-in');
+  // classToggle('#blogs-page .pagi', 0.75, '', '#blogs-page .pagi', 'fade-in');
 
 
   // Blogs detail - header ----------------------------------------- //

@@ -116,7 +116,7 @@ nav {
     display: block;
     border: 1px solid #f4f4f4; }
     nav .navbar-collapse .nav.navbar-nav li.nav-item.dropdown:hover .dropdown-menu hr {
-      margin: 0;
+      margin: -1px 0 0;
       padding: 0; }
     nav .navbar-collapse .nav.navbar-nav li.nav-item.dropdown:hover .dropdown-menu.hover hr {
       -webkit-transform: scaleX(1);
@@ -129,18 +129,21 @@ nav {
     padding-top: 0;
     background: transparent;
     border: none;
-    top: 66%;
+    top: 52%;
     background-color: #fff;
     border-radius: 0;
-    padding: 0; }
+    padding: 0;
+    -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3); }
     nav .navbar-collapse .nav.navbar-nav li.nav-item .dropdown-menu .dropdown-item {
       text-align: left;
       color: #fff;
       color: #000;
       font-weight: bold;
       border-bottom: 1px solid #f4f4f4;
-      padding: 1rem 22px; }
-      nav .navbar-collapse .nav.navbar-nav li.nav-item .dropdown-menu .dropdown-item:hover {
+      padding: 1rem 22px;
+      font-size: 14px; }
+      nav .navbar-collapse .nav.navbar-nav li.nav-item .dropdown-menu .dropdown-item:hover, nav .navbar-collapse .nav.navbar-nav li.nav-item .dropdown-menu .dropdown-item.active {
         background-color: transparent;
         color: #f7d0cb;
         font-weight: bold; }
@@ -1201,10 +1204,19 @@ small {
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
 
-#blog .row:last-child {
-  margin-top: 60px; }
-  #blog .row:last-child button, #blog .row:last-child a {
-    margin: 0 auto; }
+#blog .row {
+  opacity: 0;
+  -webkit-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
+  -webkit-transition: all 0.5s ease-out 0.2s;
+  -ms-transition: all 0.5s ease-out 0.2s;
+  -o-transition: all 0.5s ease-out 0.2s;
+  transition: all 0.5s ease-out 0.2s; }
+  #blog .row:last-child {
+    margin-top: 60px; }
+    #blog .row:last-child button, #blog .row:last-child a {
+      margin: 0 auto; }
 
 #blog .figure {
   -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
@@ -1215,47 +1227,6 @@ small {
     background-color: #f4f4f4; }
     #blog .figure:hover .figcaption .button-readmore {
       color: #f7d0cb; }
-  #blog .figure._1, #blog .figure._2, #blog .figure._3 {
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-    -ms-transform: translateY(20%);
-    transform: translateY(20%); }
-  #blog .figure._1 {
-    -webkit-transition: opacity 0.8s ease-out 0.2s;
-    -ms-transition: opacity 0.8s ease-out 0.2s;
-    -o-transition: opacity 0.8s ease-out 0.2s;
-    transition: opacity 0.8s ease-out 0.2s;
-    -webkit-transition: transform 0.8s ease-out 0.2s;
-    -ms-transition: transform 0.8s ease-out 0.2s;
-    -webkit-transition: -webkit-transform 0.8s ease-out 0.2s;
-    transition: -webkit-transform 0.8s ease-out 0.2s;
-    -o-transition: transform 0.8s ease-out 0.2s;
-    transition: transform 0.8s ease-out 0.2s;
-    transition: transform 0.8s ease-out 0.2s, -webkit-transform 0.8s ease-out 0.2s; }
-  #blog .figure._2 {
-    -webkit-transition: opacity 0.8s ease-out 0.4s;
-    -ms-transition: opacity 0.8s ease-out 0.4s;
-    -o-transition: opacity 0.8s ease-out 0.4s;
-    transition: opacity 0.8s ease-out 0.4s;
-    -webkit-transition: transform 0.8s ease-out 0.4s;
-    -ms-transition: transform 0.8s ease-out 0.4s;
-    -webkit-transition: -webkit-transform 0.8s ease-out 0.4s;
-    transition: -webkit-transform 0.8s ease-out 0.4s;
-    -o-transition: transform 0.8s ease-out 0.4s;
-    transition: transform 0.8s ease-out 0.4s;
-    transition: transform 0.8s ease-out 0.4s, -webkit-transform 0.8s ease-out 0.4s; }
-  #blog .figure._3 {
-    -webkit-transition: opacity 0.8s ease-out 0.6s;
-    -ms-transition: opacity 0.8s ease-out 0.6s;
-    -o-transition: opacity 0.8s ease-out 0.6s;
-    transition: opacity 0.8s ease-out 0.6s;
-    -webkit-transition: transform 0.8s ease-out 0.6s;
-    -ms-transition: transform 0.8s ease-out 0.6s;
-    -webkit-transition: -webkit-transform 0.8s ease-out 0.6s;
-    transition: -webkit-transform 0.8s ease-out 0.6s;
-    -o-transition: transform 0.8s ease-out 0.6s;
-    transition: transform 0.8s ease-out 0.6s;
-    transition: transform 0.8s ease-out 0.6s, -webkit-transform 0.8s ease-out 0.6s; }
   #blog .figure img {
     width: 100%; }
   #blog .figure .figcaption {
@@ -1299,19 +1270,7 @@ small {
   transition: transform 0.8s ease-out 1.2s;
   transition: transform 0.8s ease-out 1.2s, -webkit-transform 0.8s ease-out 1.2s; }
 
-#blog.fade-in h1 {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0); }
-
-#blog.fade-in .figure._1, #blog.fade-in .figure._2, #blog.fade-in .figure._3 {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0); }
-
-#blog.fade-in .buttonRow {
+#blog.fade-in h1, #blog.fade-in .row, #blog.fade-in .buttonRow {
   opacity: 1;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -1475,7 +1434,7 @@ small {
   #team-page .figure img {
     width: 100%; }
   #team-page .figure .figcaption {
-    padding: 30px 15px;
+    padding: 24px;
     overflow: hidden; }
     #team-page .figure .figcaption .fullname {
       color: #1f3052;
@@ -1484,7 +1443,7 @@ small {
     #team-page .figure .figcaption .position {
       color: #666;
       font: 400 18px/1.2 oswald, arial;
-      margin-bottom: 30px; }
+      margin-bottom: 0; }
       #team-page .figure .figcaption .position.date {
         color: #999;
         margin-bottom: 0; }
@@ -1580,56 +1539,26 @@ small {
       -ms-transition: all 0.8s ease-out;
       -o-transition: all 0.8s ease-out;
       transition: all 0.8s ease-out; }
+    #teamdetail-page .detail .paragraph {
+      opacity: 0;
+      -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+      transform: translateY(20%); }
+      #teamdetail-page .detail .paragraph._1 {
+        -webkit-transition: all 0.8s ease-out;
+        -ms-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out; }
+      #teamdetail-page .detail .paragraph.fade-in {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
     #teamdetail-page .detail p {
       font-size: 18px;
       line-height: 1.2;
       color: #999;
       margin-bottom: 40px; }
-      #teamdetail-page .detail p.paragraph {
-        opacity: 0;
-        -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-        transform: translateY(50%); }
-        #teamdetail-page .detail p.paragraph._1 {
-          -webkit-transition: all 0.8s ease-out;
-          -ms-transition: all 0.8s ease-out;
-          -o-transition: all 0.8s ease-out;
-          transition: all 0.8s ease-out; }
-        #teamdetail-page .detail p.paragraph._2 {
-          -webkit-transition: all 0.8s ease-out 0.2s;
-          -ms-transition: all 0.8s ease-out 0.2s;
-          -o-transition: all 0.8s ease-out 0.2s;
-          transition: all 0.8s ease-out 0.2s; }
-        #teamdetail-page .detail p.paragraph._3 {
-          -webkit-transition: all 0.8s ease-out 0.4s;
-          -ms-transition: all 0.8s ease-out 0.4s;
-          -o-transition: all 0.8s ease-out 0.4s;
-          transition: all 0.8s ease-out 0.4s; }
-        #teamdetail-page .detail p.paragraph._4 {
-          -webkit-transition: all 0.8s ease-out 0.6s;
-          -ms-transition: all 0.8s ease-out 0.6s;
-          -o-transition: all 0.8s ease-out 0.6s;
-          transition: all 0.8s ease-out 0.6s; }
-        #teamdetail-page .detail p.paragraph._5 {
-          -webkit-transition: all 0.8s ease-out 0.8s;
-          -ms-transition: all 0.8s ease-out 0.8s;
-          -o-transition: all 0.8s ease-out 0.8s;
-          transition: all 0.8s ease-out 0.8s; }
-        #teamdetail-page .detail p.paragraph._6 {
-          -webkit-transition: all 0.8s ease-out 1s;
-          -ms-transition: all 0.8s ease-out 1s;
-          -o-transition: all 0.8s ease-out 1s;
-          transition: all 0.8s ease-out 1s; }
-        #teamdetail-page .detail p.paragraph._7 {
-          -webkit-transition: all 0.8s ease-out 1.2s;
-          -ms-transition: all 0.8s ease-out 1.2s;
-          -o-transition: all 0.8s ease-out 1.2s;
-          transition: all 0.8s ease-out 1.2s; }
-        #teamdetail-page .detail p.paragraph.fade-in {
-          opacity: 1;
-          -webkit-transform: translateY(0);
-          -ms-transform: translateY(0);
-          transform: translateY(0); }
     #teamdetail-page .detail .row a {
       margin: 50px auto 100px; }
 
@@ -1661,7 +1590,9 @@ small {
     -webkit-transform: translateY(20%);
     -ms-transform: translateY(20%);
     transform: translateY(20%); }
-    #blogs-page .row.fade-in.row_1, #blogs-page .row.fade-in.row_2, #blogs-page .row.fade-in.row_3, #blogs-page .row.fade-in.pagi {
+    #blogs-page .row.pagi {
+      opacity: 1; }
+    #blogs-page .row.fade-in.row_1, #blogs-page .row.fade-in.row_2, #blogs-page .row.fade-in.row_3 {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0);
@@ -1681,11 +1612,6 @@ small {
       -ms-transition: all 0.8s ease-out 0.6s;
       -o-transition: all 0.8s ease-out 0.6s;
       transition: all 0.8s ease-out 0.6s; }
-    #blogs-page .row.fade-in.pagi {
-      -webkit-transition: all 0.8s ease-out 0.8s;
-      -ms-transition: all 0.8s ease-out 0.8s;
-      -o-transition: all 0.8s ease-out 0.8s;
-      transition: all 0.8s ease-out 0.8s; }
     #blogs-page .row:last-child {
       margin-top: 100px; }
       #blogs-page .row:last-child button, #blogs-page .row:last-child a {
@@ -1700,7 +1626,7 @@ small {
         #blogs-page .row nav .page-item .page-link.arrow {
           font: 400 30px/0.5 oswald, arial; }
       #blogs-page .row nav .page-item.active .page-link, #blogs-page .row nav .page-item:hover .page-link {
-        color: #000;
+        color: #1f3052;
         background-color: transparent; }
       #blogs-page .row nav .page-item.disabled:hover .page-link {
         text-decoration: none; }
@@ -1813,7 +1739,7 @@ small {
     #blogsdetail-page .content .detail .text-detail {
       color: #000;
       padding: 0 14%;
-      margin-bottom: 60px; }
+      margin-bottom: 70px; }
       #blogsdetail-page .content .detail .text-detail img {
         width: 100%;
         margin-bottom: 60px;
@@ -2350,7 +2276,8 @@ small {
       -o-transition: all 0.8s ease-out 0.6s;
       transition: all 0.8s ease-out 0.6s; }
     #demandfulfillment-page .content .row img, #strategy-page .content .row img, #financialtransformation-page .content .row img, #organisationaloptimisation-page .content .row img {
-      width: 82%;
+      width: 80%;
+      margin: 10px 50px 0 0;
       opacity: 0;
       -webkit-transform: translateY(20%);
       -ms-transform: translateY(20%);
@@ -2418,9 +2345,11 @@ small {
       #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child {
         margin-top: 160px; }
       #demandfulfillment-page .carousel-section .carousel .carousel-item .row h1, #strategy-page .carousel-section .carousel .carousel-item .row h1, #financialtransformation-page .carousel-section .carousel .carousel-item .row h1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row h1 {
-        font-size: 45px; }
+        font-size: 45px;
+        line-height: 1.2; }
       #demandfulfillment-page .carousel-section .carousel .carousel-item .row p, #strategy-page .carousel-section .carousel .carousel-item .row p, #financialtransformation-page .carousel-section .carousel .carousel-item .row p, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row p {
-        font-size: 20px; }
+        font-size: 20px;
+        line-height: 1; }
     #demandfulfillment-page .carousel-section .carousel .carouselHospitality-indicators li, #strategy-page .carousel-section .carousel .carouselHospitality-indicators li, #financialtransformation-page .carousel-section .carousel .carouselHospitality-indicators li, #organisationaloptimisation-page .carousel-section .carousel .carouselHospitality-indicators li {
       width: 10px;
       height: 10px;

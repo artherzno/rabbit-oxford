@@ -191,7 +191,7 @@ nav {
               border: 1px solid $gray-soft;
 
               hr {
-                margin: 0;
+                margin: -1px 0 0;
                 padding: 0;
               }
 
@@ -209,10 +209,11 @@ nav {
           padding-top: 0;
           background: transparent;
           border: none;
-          top: 66%;
+          top: 52%;
           background-color: $white;
           border-radius: 0;
           padding: 0;
+          box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
 
           .dropdown-item {
             text-align: left;
@@ -223,8 +224,9 @@ nav {
             font-weight: bold;
             border-bottom: 1px solid $gray-soft;
             padding: 1rem 22px;
+            font-size: 14px;
 
-            &:hover {
+            &:hover, &.active {
               background-color: transparent;
               color: $pink;
               font-weight: bold;
