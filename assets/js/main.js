@@ -24,11 +24,18 @@ $(document).ready(function(){
 
     mouseX = (e.pageX - elementX - halfW)/halfW;
     mouseY = (e.pageY - elementY - halfH)/halfH;
-    mouseX = Math.round(mouseX * 100)/120;
+    mouseX = Math.round(mouseX * 100)/100;
     mouseY = Math.round(mouseY * 100)/120;
 
-    brain.css("transform", "rotateX("+mouseY*-10+"deg) rotateY("+mouseX*10+"deg)");
-    // brain.css("transform", "rotateY("+mouseX*10+"deg)");
+    // console.log(mouseX);
+
+    if(mouseX < -3) {
+      // console.log('max : '+mouseX);
+      mouseX = -3;
+    }
+
+    // brain.css("transform", "rotateX("+mouseY*-10+"deg) rotateY("+mouseX*10+"deg)");
+    brain.css("transform", "rotateY("+mouseX*10+"deg)");
   });
 
 

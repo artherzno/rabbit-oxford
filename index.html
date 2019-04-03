@@ -565,16 +565,15 @@
                   <div class="collapse collapse-box" id="collapse-asia-mb" aria-labelledby="headingMbOne" data-parent="#accordionLocation-mb">
                     <button type="button" class="buttonNone bu" data-toggle="collapse" data-target="#collapse-bkk" aria-expanded="false" aria-controls="collapse-bkk">BANGKOK</button>
                     <div class="collapse" id="collapse-bkk" aria-labelledby="headingMbSubOne" data-parent="#collapse-asia-mb">
-                      239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330
+                      239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330<br><br>
                     </div>
-                    <br>
                     <button type="button" class="buttonNone" data-toggle="collapse" data-target="#collapse-sgp-mb" aria-expanded="false" aria-controls="collapse-sgp-mb">SINGAPORE</button>
                     <div class="collapse" id="collapse-sgp-mb" aria-labelledby="headingMbSubTwo" data-parent="#collapse-asia-mb">
-                      239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330
+                      239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330<br><br>
                     </div>
-                    <br>
                   </div>
                 </div>
+
                 <div class="item africa">
                   <button type="button" class="buttonNone button-head" data-toggle="collapse" data-target="#collapse-africa-mb" aria-expanded="false" aria-controls="collapse-africa-mb">
                     <h2>AFRICA</h2>
@@ -586,6 +585,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="item europe">
                   <button type="button" class="buttonNone button-head" data-toggle="collapse" data-target="#collapse-europe-mb" aria-expanded="false" aria-controls="collapse-europe-mb">
                     <h2>EUROPE</h2>
@@ -593,16 +593,15 @@
                   <div class="collapse collapse-box" id="collapse-europe-mb" aria-labelledby="headingMbThree" data-parent="#accordionLocation-mb">
                     <button type="button" class="buttonNone" data-toggle="collapse" data-target="#collapse-bcr" aria-expanded="false" aria-controls="collapse-bcr">BUCHAREST</button>
                     <div class="collapse" id="collapse-bcr" aria-labelledby="headingMbSubThree" data-parent="#collapse-europe-mb">
-                      239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330
+                      239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330<br><br>
                     </div>
-                    <br>
                     <button type="button" class="buttonNone" data-toggle="collapse" data-target="#collapse-dmk" aria-expanded="false" aria-controls="collapse-dmk">DENMARK</button>
                     <div class="collapse" id="collapse-dmk" aria-labelledby="headingMbSubThree" data-parent="#collapse-europe-mb">
-                      239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330
+                      239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330<br><br>
                     </div>
-                    <br>
                   </div>
                 </div>
+
                 <div class="item latin">
                   <button type="button" class="buttonNone button-head" data-toggle="collapse" data-target="#collapse-latin-mb" aria-expanded="false" aria-controls="collapse-latin">
                     <h2>LATIN AMERICA</h2>
@@ -786,7 +785,7 @@
           dots: 0,
           animateOut: 'slideOutLeft',
           animateIn: 'slideInRight',
-          smartSpeed: 450,
+          smartSpeed: 0,
           responsive: {
             0: {
               stagePadding: 20,
@@ -802,7 +801,14 @@
               stagePadding: 0,
               margin: 0,
             }
-          }
+          },
+          // loop: true,
+          // onTranslate: function (event) {
+          // 	$('.owl-item').removeClass('owl-animated-out');
+          // 	$('.owl-item').removeClass('fadeOut');
+          // 	$('.owl-item').removeClass('animated');
+          //   console.log(event);
+          // }
         });
 
         $('.carouselHospitality-indicators li').on('click', function() {
@@ -814,9 +820,14 @@
             $("#carouselHospitality").trigger('to.owl.carousel', [slideNum, 300]);
         });
 
-        $('#carouselHospitality').on('changed.owl.carousel', function(event) {
+        $('#carouselHospitality').on('change.owl.carousel', function(event) {
+          $('.carouselHospitality-indicators li').addClass('disable');
+        }).on('changed.owl.carousel', function(event) {
             var currentItem = event.item.index;
             $('.carouselHospitality-indicators li').removeClass('active').eq(currentItem).addClass('active');
+            setTimeout(function () {
+              $('.carouselHospitality-indicators li').removeClass('disable');
+            }, 1100);
         });
 
         $('#carouselBlog').owlCarousel({
@@ -825,7 +836,7 @@
           dots: 0,
           animateOut: 'slideOutLeft',
           animateIn: 'slideInRight',
-          smartSpeed: 450,
+          smartSpeed: 0,
           responsive: {
             0: {
               stagePadding: 20,

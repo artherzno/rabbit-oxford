@@ -21,7 +21,7 @@ a {
 }
 
 h1 {
-  font: 700 60px/1 oswald, arial;
+  font: 600 60px/1 oswald, arial;
 }
 
 h2 {
@@ -482,7 +482,7 @@ small {
   // background-color: $white;
 
   .row {
-    margin: 0 0 15%;
+    margin: 0 0 17%;
     position: relative;
   }
 
@@ -547,9 +547,9 @@ small {
       right: 0;
       top: 18%;
       width: 130%;
-      @include transition(all 2s ease-out);
+      @include transition(all 1s ease-out);
       opacity: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(30%));
 
       &.fade-in {
         opacity: 1;
@@ -749,7 +749,7 @@ small {
 
     .carouselHospitality-indicators {
       display: block;
-      margin-top: 20px;
+      margin-top: 30px;
       margin-bottom: 85px;
       margin-left: auto;
       margin-right: 0;
@@ -774,7 +774,12 @@ small {
 
         &.active, &:hover {
           color: $pink;
-          font-weight: 600;
+          font-weight: 500;
+        }
+
+        &.disable {
+          pointer-events:none; //This makes it not clickable
+          opacity:0.6;
         }
       }
 
@@ -848,7 +853,7 @@ small {
     }
 
     button {
-      font: 600 24px/1 oswald, arial;
+      font: 400 24px/1 oswald, arial;
       color: $white;
       padding-right: 20px;
 
@@ -1158,7 +1163,7 @@ small {
       height: 100%;
 
       h1 {
-        font: 700 140px/1.2 oswald, arial;
+        font: 600 140px/1.2 oswald, arial;
         color: rgba(255,255,255,0.2);
         position: absolute;
         bottom: 110px;
@@ -1550,7 +1555,7 @@ small {
   }
 
   .figure {
-    box-shadow: 0px 4px 14px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
 
     img {
       width: 100%;
@@ -1609,6 +1614,8 @@ small {
     // }
 
     &:hover {
+      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+
       .figcaption {
         background-color: $gray-soft;
 
@@ -1823,7 +1830,7 @@ small {
     }
 
     .figure {
-      box-shadow: 0px 4px 14px rgba(0,0,0,0.3);
+      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
 
       img {
         width: 100%;
@@ -1866,6 +1873,8 @@ small {
       }
 
       &:hover {
+        box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+
         .figcaption {
           background-color: $gray-soft;
 
@@ -1930,7 +1939,7 @@ small {
       height: 100%;
 
       h1 {
-        font: 700 140px/1.2 oswald, arial;
+        font: 600 140px/1.2 oswald, arial;
         color: rgba(255,255,255,0.2);
         position: absolute;
         bottom: 110px;
@@ -1971,7 +1980,7 @@ small {
     }
 
     h3 {
-      font-size: 30px;
+      font: 500 30px/1 oswald, arial;
       margin-bottom: 50px;
     }
 
@@ -2066,7 +2075,7 @@ small {
       height: 100%;
 
       h1 {
-        font: 700 140px/1.2 oswald, arial;
+        font: 600 140px/1.2 oswald, arial;
         color: rgba(255,255,255,0.2);
         position: absolute;
         bottom: 110px;
@@ -2314,7 +2323,7 @@ small {
       height: 100%;
 
       h1 {
-        font: 700 140px/1.2 oswald, arial;
+        font: 600 140px/1.2 oswald, arial;
         color: rgba(255,255,255,0.2);
         position: absolute;
         bottom: 110px;
@@ -2715,6 +2724,15 @@ $breadcrumb-divider: quote(">");
 
 /* OWL Carousel ***************************************************************/
 .owl-carousel {
+  .owl-item {
+    pointer-events: none;
+
+    &.animated {
+      // position: static;
+    }
+    // position: static;
+    background-color: $white;
+  }
 
   .owl-stage  {
     padding-left: 0 !important;
@@ -3544,7 +3562,7 @@ $breadcrumb-divider: quote(">");
       }
 
       .figure {
-        box-shadow: 0px 4px 14px rgba(0,0,0,0.3);
+        box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
         margin-bottom: 20px;
 
         .figcaption {

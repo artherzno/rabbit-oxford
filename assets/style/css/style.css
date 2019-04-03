@@ -227,7 +227,7 @@ a {
     text-decoration: none; }
 
 h1 {
-  font: 700 60px/1 oswald, arial; }
+  font: 600 60px/1 oswald, arial; }
 
 h2 {
   font: 600 40px/1.2 oswald, arial; }
@@ -731,7 +731,7 @@ small {
           opacity: 1; }
 
 #whatwedo .row {
-  margin: 0 0 15%;
+  margin: 0 0 17%;
   position: relative; }
 
 #whatwedo .figcaption {
@@ -805,14 +805,14 @@ small {
     right: 0;
     top: 18%;
     width: 130%;
-    -webkit-transition: all 2s ease-out;
-    -ms-transition: all 2s ease-out;
-    -o-transition: all 2s ease-out;
-    transition: all 2s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
     opacity: 0;
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%); }
+    -webkit-transform: translateY(30%);
+    -ms-transform: translateY(30%);
+    transform: translateY(30%); }
     #whatwedo .figure img.fade-in {
       opacity: 1;
       -webkit-transform: translateY(0);
@@ -1014,7 +1014,7 @@ small {
     min-height: 500px; }
   #hospitality .carousel .carouselHospitality-indicators {
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 85px;
     margin-left: auto;
     margin-right: 0;
@@ -1042,7 +1042,10 @@ small {
       cursor: pointer; }
       #hospitality .carousel .carouselHospitality-indicators li.active, #hospitality .carousel .carouselHospitality-indicators li:hover {
         color: #f7d0cb;
-        font-weight: 600; }
+        font-weight: 500; }
+      #hospitality .carousel .carouselHospitality-indicators li.disable {
+        pointer-events: none;
+        opacity: 0.6; }
     #hospitality .carousel .carouselHospitality-indicators.fade-in {
       opacity: 1;
       -webkit-transform: translateY(0);
@@ -1097,7 +1100,7 @@ small {
       #locations .content button:active, #locations .content button:hover {
         color: #f7d0cb; }
     #locations .content button {
-      font: 600 24px/1 oswald, arial;
+      font: 400 24px/1 oswald, arial;
       color: #fff;
       padding-right: 20px; }
       #locations .content button.button-head {
@@ -1383,7 +1386,7 @@ small {
     width: 100%;
     height: 100%; }
     #team-page .banner .container h1 {
-      font: 700 140px/1.2 oswald, arial;
+      font: 600 140px/1.2 oswald, arial;
       color: rgba(255, 255, 255, 0.2);
       position: absolute;
       bottom: 110px;
@@ -1704,8 +1707,8 @@ small {
       #blogs-page .row nav .page-item.disabled .page-link {
         color: #cfcfcf; }
   #blogs-page .figure {
-    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1); }
     #blogs-page .figure img {
       width: 100%; }
     #blogs-page .figure .figcaption {
@@ -1730,10 +1733,13 @@ small {
         font: 600 18px/1 oswald, arial; }
         #blogs-page .figure .figcaption a:hover {
           color: #f7d0cb; }
-    #blogs-page .figure:hover .figcaption {
-      background-color: #f4f4f4; }
-      #blogs-page .figure:hover .figcaption .button-readmore {
-        color: #f7d0cb; }
+    #blogs-page .figure:hover {
+      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3); }
+      #blogs-page .figure:hover .figcaption {
+        background-color: #f4f4f4; }
+        #blogs-page .figure:hover .figcaption .button-readmore {
+          color: #f7d0cb; }
     #blogs-page .figure.fade-in.column.col_1, #blogs-page .figure.fade-in.column.col_2, #blogs-page .figure.fade-in.column.col_3 {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
@@ -1876,8 +1882,8 @@ small {
     #blogsdetail-page .related .row .owl-stage-outer {
       padding-bottom: 40px; }
   #blogsdetail-page .related .figure {
-    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1); }
     #blogsdetail-page .related .figure img {
       width: 100%; }
     #blogsdetail-page .related .figure .figcaption {
@@ -1902,10 +1908,13 @@ small {
         font: 600 18px/1 oswald, arial; }
         #blogsdetail-page .related .figure .figcaption a:hover {
           color: #f7d0cb; }
-    #blogsdetail-page .related .figure:hover .figcaption {
-      background-color: #f4f4f4; }
-      #blogsdetail-page .related .figure:hover .figcaption .button-readmore {
-        color: #f7d0cb; }
+    #blogsdetail-page .related .figure:hover {
+      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3); }
+      #blogsdetail-page .related .figure:hover .figcaption {
+        background-color: #f4f4f4; }
+        #blogsdetail-page .related .figure:hover .figcaption .button-readmore {
+          color: #f7d0cb; }
     #blogsdetail-page .related .figure.column {
       opacity: 0;
       -webkit-transform: translateY(50%);
@@ -1949,7 +1958,7 @@ small {
     width: 100%;
     height: 100%; }
     #locations-page .banner .container h1 {
-      font: 700 140px/1.2 oswald, arial;
+      font: 600 140px/1.2 oswald, arial;
       color: rgba(255, 255, 255, 0.2);
       position: absolute;
       bottom: 110px;
@@ -1985,7 +1994,7 @@ small {
   #locations-page .content h2 {
     font-size: 40px; }
   #locations-page .content h3 {
-    font-size: 30px;
+    font: 500 30px/1 oswald, arial;
     margin-bottom: 50px; }
   #locations-page .content p {
     margin: 0;
@@ -2065,7 +2074,7 @@ small {
     width: 100%;
     height: 100%; }
     #careers-page .banner .container h1 {
-      font: 700 140px/1.2 oswald, arial;
+      font: 600 140px/1.2 oswald, arial;
       color: rgba(255, 255, 255, 0.2);
       position: absolute;
       bottom: 110px;
@@ -2275,7 +2284,7 @@ small {
     width: 100%;
     height: 100%; }
     #demandfulfillment-page .banner .container h1, #strategy-page .banner .container h1, #financialtransformation-page .banner .container h1, #organisationaloptimisation-page .banner .container h1 {
-      font: 700 140px/1.2 oswald, arial;
+      font: 600 140px/1.2 oswald, arial;
       color: rgba(255, 255, 255, 0.2);
       position: absolute;
       bottom: 110px;
@@ -2593,6 +2602,10 @@ small {
   margin: 0 9px; }
 
 /* OWL Carousel ***************************************************************/
+.owl-carousel .owl-item {
+  pointer-events: none;
+  background-color: #fff; }
+
 .owl-carousel .owl-stage {
   padding-left: 0 !important; }
 
@@ -2987,8 +3000,8 @@ small {
         padding-left: 8px;
         padding-right: 0; }
     #team-page .content .figure {
-      -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
-      box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
       margin-bottom: 20px; }
       #team-page .content .figure .figcaption {
         padding: 15px; }
