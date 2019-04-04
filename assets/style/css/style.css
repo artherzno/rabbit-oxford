@@ -1751,7 +1751,7 @@ small {
   #blogsdetail-page .carouselBlogDetail-dot {
     position: fixed;
     top: 36px;
-    left: 2%;
+    left: 0;
     z-index: 1099;
     width: 100%;
     text-align: center;
@@ -2935,7 +2935,7 @@ small {
     background-position: -76px top;
     background-size: cover; }
     #team-page .banner .container h1 {
-      font-size: 80px;
+      font-size: 46px;
       right: 5%;
       bottom: 5%; }
   #team-page .content {
@@ -2982,6 +2982,8 @@ small {
     #teamdetail-page .detail .position {
       margin-bottom: 40px;
       font-size: 22px; }
+    #teamdetail-page .detail p {
+      font-size: 16px; }
     #teamdetail-page .detail .row a {
       margin: 28px auto 78px; }
   /* Blog page *******************/
@@ -3104,12 +3106,14 @@ small {
       #locations-page .content .row .column {
         padding: 0; }
         #locations-page .content .row .column .address {
-          font-size: 18px;
+          font-size: 16px;
           margin-bottom: 60px; }
     #locations-page .content h1 {
-      margin-bottom: 70px; }
+      margin-bottom: 70px;
+      font-size: 45px; }
     #locations-page .content h3 {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      font-size: 28px; }
   /* Practices all *******************/
   #strategy-page.h-one-line .content .column img, #demandfulfillment-page.h-one-line .content .column img, #financialtransformation-page.h-one-line .content .column img, #organisationaloptimisation-page.h-one-line .content .column img {
     padding-top: 48%; }
@@ -3130,6 +3134,7 @@ small {
     #strategy-page .content .row .column._left, #demandfulfillment-page .content .row .column._left, #financialtransformation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left {
       padding: 0 15px 14%; }
       #strategy-page .content .row .column._left .number, #demandfulfillment-page .content .row .column._left .number, #financialtransformation-page .content .row .column._left .number, #organisationaloptimisation-page .content .row .column._left .number {
+        font-size: 90px;
         line-height: 0.8; }
     #strategy-page .content .column h1, #demandfulfillment-page .content .column h1, #financialtransformation-page .content .column h1, #organisationaloptimisation-page .content .column h1 {
       font-size: 46px;
@@ -3148,6 +3153,7 @@ small {
     #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child {
       margin-top: 80px; }
     #strategy-page .carousel-section .carousel .carousel-item .row h1, #demandfulfillment-page .carousel-section .carousel .carousel-item .row h1, #financialtransformation-page .carousel-section .carousel .carousel-item .row h1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row h1 {
+      font-size: 40px;
       margin-bottom: 45px; }
     #strategy-page .carousel-section .carousel .carousel-item .row p, #demandfulfillment-page .carousel-section .carousel .carousel-item .row p, #financialtransformation-page .carousel-section .carousel .carousel-item .row p, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row p {
       font-size: 16px; }

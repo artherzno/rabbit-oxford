@@ -1737,7 +1737,7 @@ small {
   .carouselBlogDetail-dot {
     position: fixed;
     top: 36px;
-    left: 2%;
+    left: 0;
     z-index: 1099;
     width: 100%;
     text-align: center;
@@ -3588,7 +3588,7 @@ $breadcrumb-divider: quote(">");
       .container {
 
         h1 {
-          font-size: 80px;
+          font-size: 46px;
           right: 5%;
           bottom: 5%;
         }
@@ -3675,6 +3675,10 @@ $breadcrumb-divider: quote(">");
       .position {
         margin-bottom: 40px;
         font-size: 22px;
+      }
+
+      p {
+        font-size: 16px;
       }
 
       .row {
@@ -3925,7 +3929,7 @@ $breadcrumb-divider: quote(">");
           padding: 0;
 
           .address {
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 60px;
           }
         }
@@ -3933,10 +3937,16 @@ $breadcrumb-divider: quote(">");
 
       h1 {
         margin-bottom: 70px;
+        font-size: 45px;
+      }
+
+      h2 {
+
       }
 
       h3 {
         margin-bottom: 30px;
+        font-size: 28px;
       }
     }
   }
@@ -3994,6 +4004,7 @@ $breadcrumb-divider: quote(">");
             padding: 0 15px 14%;
 
             .number {
+              font-size: 90px;
               line-height: 0.8;
             }
           }
@@ -4036,6 +4047,7 @@ $breadcrumb-divider: quote(">");
             }
 
             h1 {
+              font-size: 40px;
               margin-bottom: 45px;
             }
 
