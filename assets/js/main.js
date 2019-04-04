@@ -232,6 +232,9 @@ $(document).ready(function(){
   pin('#banner', 0, '120%', '#banner')
 
   // Second content banner ----------------------------------------- //
+  classToggle('#banner', 0, '80%', '#banner', 'fade-in');
+
+  // Second content banner ----------------------------------------- //
   classToggle('#banner', 0, '80%', '#banner .box.oxford-dt', 'fade-in');
 
   // Second content banner ----------------------------------------- //
@@ -281,6 +284,8 @@ $(document).ready(function(){
 
   classToggle('#blogs-page .row_3', 0.9, '', '#blogs-page .row_3', 'fade-in');
 
+  classToggle('#blogs-page .row_4', 0.9, '', '#blogs-page .row_4', 'fade-in');
+
   // Blogs page - pagination ----------------------------------------- //
   // classToggle('#blogs-page .pagi', 0.75, '', '#blogs-page .pagi', 'fade-in');
 
@@ -305,6 +310,12 @@ $(document).ready(function(){
   classToggle('#team-page .oxford-dt .row_1', 0.9, '', '#team-page .oxford-dt .row_1', 'fade-in');
 
   classToggle('#team-page .oxford-dt .row_2', 0.9, '', '#team-page .oxford-dt .row_2', 'fade-in');
+
+  classToggle('#team-page .oxford-tl .row_1', 0.9, '', '#team-page .oxford-tl .row_1', 'fade-in');
+
+  classToggle('#team-page .oxford-tl .row_2', 0.9, '', '#team-page .oxford-tl .row_2', 'fade-in');
+
+  classToggle('#team-page .oxford-tl .row_3', 0.9, '', '#team-page .oxford-tl .row_3', 'fade-in');
 
   classToggle('#team-page .oxford-mb .row_1', 0.9, '', '#team-page .oxford-mb .row_1', 'fade-in');
 

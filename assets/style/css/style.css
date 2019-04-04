@@ -250,6 +250,10 @@ textarea, input[type="text"], input[type="password"], input[type="email"], selec
 .form-control {
   padding: 25px 20px; }
 
+.form-row {
+  margin-right: 0;
+  margin-left: 0; }
+
 small {
   color: #999;
   font-size: 18px;
@@ -423,7 +427,7 @@ small {
 .oxford-dt {
   display: block !important; }
 
-.oxford-mb {
+.oxford-mb, .oxford-tl {
   display: none !important; }
 
 .txt-white {
@@ -573,10 +577,10 @@ small {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: #090909;
+  background-color: #fff;
   overflow: hidden; }
   #banner.fade-in {
-    background-color: #fff; }
+    background-color: #090909; }
   #banner .obj {
     position: absolute;
     width: 100%;
@@ -1592,7 +1596,7 @@ small {
     transform: translateY(20%); }
     #blogs-page .row.pagi {
       opacity: 1; }
-    #blogs-page .row.fade-in.row_1, #blogs-page .row.fade-in.row_2, #blogs-page .row.fade-in.row_3 {
+    #blogs-page .row.fade-in.row_1, #blogs-page .row.fade-in.row_2, #blogs-page .row.fade-in.row_3, #blogs-page .row.fade-in.row_4 {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0);
@@ -1612,10 +1616,13 @@ small {
       -ms-transition: all 0.8s ease-out 0.6s;
       -o-transition: all 0.8s ease-out 0.6s;
       transition: all 0.8s ease-out 0.6s; }
-    #blogs-page .row:last-child {
-      margin-top: 100px; }
-      #blogs-page .row:last-child button, #blogs-page .row:last-child a {
-        margin: 0 auto; }
+    #blogs-page .row.fade-in.row_4 {
+      -webkit-transition: all 0.8s ease-out 0.8s;
+      -ms-transition: all 0.8s ease-out 0.8s;
+      -o-transition: all 0.8s ease-out 0.8s;
+      transition: all 0.8s ease-out 0.8s; }
+    #blogs-page .row:last-child button, #blogs-page .row:last-child a {
+      margin: 0 auto; }
     #blogs-page .row nav {
       position: static;
       width: 100%; }
@@ -1666,7 +1673,7 @@ small {
         background-color: #f4f4f4; }
         #blogs-page .figure:hover .figcaption .button-readmore {
           color: #f7d0cb; }
-    #blogs-page .figure.fade-in.column.col_1, #blogs-page .figure.fade-in.column.col_2, #blogs-page .figure.fade-in.column.col_3 {
+    #blogs-page .figure.fade-in.column.col_1, #blogs-page .figure.fade-in.column.col_2, #blogs-page .figure.fade-in.column.col_3, #blogs-page .figure.fade-in.column.col_4 {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0);
@@ -2061,7 +2068,6 @@ small {
 #careers-page .header .dropdown {
   display: inline-block;
   float: right;
-  margin: 10px 0;
   z-index: 1;
   opacity: 0;
   -webkit-transform: translateY(50%);
@@ -2434,7 +2440,7 @@ small {
   background-color: #fff;
   min-width: 300px;
   width: 100%;
-  height: 80px;
+  height: 70px;
   text-align: left;
   background-color: #fff;
   background-repeat: no-repeat;
@@ -2461,7 +2467,7 @@ small {
   .dropdown.dropdown-list .dropdown-menu .dropdown-item {
     font: 700 20px/1 oswald, arial;
     color: #1f3052;
-    margin: 30px 0;
+    margin: 27px 0;
     padding: 0 20px; }
     .dropdown.dropdown-list .dropdown-menu .dropdown-item:hover {
       background-color: transparent;
@@ -2615,7 +2621,9 @@ small {
     font-size: 45px; }
   h2 {
     font-size: 36px; }
-  .oxford-dt {
+  small {
+    font-size: 16px; }
+  .oxford-dt, .oxford-tl {
     display: none !important; }
   .oxford-mb {
     display: block !important; }
@@ -3185,7 +3193,7 @@ small {
       margin: 0; }
       #careers-page .content .header .dropdown .dropdown-toggle {
         max-width: none;
-        font-size: 16px;
+        font-size: 20px;
         padding: 11px 20px; }
       #careers-page .content .header .dropdown .dropdown-menu {
         max-width: none; }
@@ -3195,8 +3203,55 @@ small {
         margin: 0; }
         #careers-page .content .row.row_0 .column.col_1 {
           margin: 0; }
+      #careers-page .content .row.fade-in .column {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-transition: all 0.8s ease-out;
+        -ms-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out; }
+      #careers-page .content .row.fade-in.row_1 {
+        -webkit-transition: all 0 ease-out;
+        -ms-transition: all 0 ease-out;
+        -o-transition: all 0 ease-out;
+        transition: all 0 ease-out; }
+      #careers-page .content .row.fade-in.row_2 {
+        -webkit-transition: all 0 ease-out;
+        -ms-transition: all 0 ease-out;
+        -o-transition: all 0 ease-out;
+        transition: all 0 ease-out; }
+      #careers-page .content .row.fade-in.row_3 {
+        -webkit-transition: all 0 ease-out;
+        -ms-transition: all 0 ease-out;
+        -o-transition: all 0 ease-out;
+        transition: all 0 ease-out; }
+      #careers-page .content .row.fade-in.row_4 {
+        -webkit-transition: all 0 ease-out;
+        -ms-transition: all 0 ease-out;
+        -o-transition: all 0 ease-out;
+        transition: all 0 ease-out; }
+      #careers-page .content .row.fade-in.row_0 {
+        -webkit-transition: all 0 ease-out;
+        -ms-transition: all 0 ease-out;
+        -o-transition: all 0 ease-out;
+        transition: all 0 ease-out; }
       #careers-page .content .row .column {
-        padding: 0; }
+        padding: 0;
+        -webkit-transform: translateY(20%);
+        -ms-transform: translateY(20%);
+        transform: translateY(20%);
+        opacity: 0;
+        -webkit-transition: all 0.8s ease-out;
+        -ms-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out; }
+        #careers-page .content .row .column.column:last-child {
+          -webkit-transition: all 0.8s ease-out 0.6s;
+          -ms-transition: all 0.8s ease-out 0.6s;
+          -o-transition: all 0.8s ease-out 0.6s;
+          transition: all 0.8s ease-out 0.6s; }
         #careers-page .content .row .column:hover {
           -webkit-box-shadow: none;
           box-shadow: none;
@@ -3204,7 +3259,8 @@ small {
         #careers-page .content .row .column.col_1 {
           margin-bottom: 40px; }
       #careers-page .content .row .buttonBlue {
-        width: 100%; }
+        width: 100%;
+        height: 50px; }
     #careers-page .content h1 {
       margin-bottom: 40px; }
     #careers-page .content h3 {
@@ -3213,17 +3269,22 @@ small {
     padding: 0 15px;
     margin-top: 40px; }
   #careers-page #careers-apply-form .section-apply {
-    background-position: 76% bottom; }
+    background-position: 90% 110%;
+    background-size: 320%;
+    background-color: #131313; }
     #careers-page #careers-apply-form .section-apply .form-row .form-group {
       padding: 0; }
       #careers-page #careers-apply-form .section-apply .form-row .form-group:last-child {
         padding: 0; }
     #careers-page #careers-apply-form .section-apply label.custom-file-upload {
-      width: 100%; }
+      width: 100%;
+      height: 50px; }
     #careers-page #careers-apply-form .section-apply #filetouploadname {
-      width: 100%; }
+      width: 100%;
+      height: 50px; }
   #careers-page #careers-apply-form button[type="submit"] {
-    width: 100%; }
+    width: 100%;
+    height: 50px; }
   /* Breadcrumb ********************/
   .breadcrumb .breadcrumb-item {
     font-size: 20px; }
@@ -3242,15 +3303,16 @@ small {
       #banner .container .content .box .box-content p {
         font-size: 22px; }
         #banner .container .content .box .box-content p span {
-          font-size: 40px; } }
-
-#hospitality .container {
-  padding: 0; }
+          font-size: 40px; }
+  #hospitality .container {
+    padding: 0; }
+  #blogs-page .oxford-dt {
+    display: block !important; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   nav .oxford-dt {
     display: none !important; }
-  nav .oxford-mb {
+  nav .oxford-mb, nav .oxford-tl {
     display: block !important; }
   nav.navbar {
     top: 0;
@@ -3281,6 +3343,9 @@ small {
     margin-top: 20%; }
   nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
     right: 40%; }
+  nav .navbar-collapse.show .nav li.nav-item .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
   nav #collapsibleNavbar {
     background-color: #1f3052; }
     nav #collapsibleNavbar.show, nav #collapsibleNavbar.collapsing {
@@ -3345,10 +3410,12 @@ small {
     #banner .obj.cloud.fade-in {
       -webkit-animation-duration: 200s;
       animation-duration: 200s; }
-    #banner .container .content .box .box-content p {
-      font-size: 22px; }
-      #banner .container .content .box .box-content p span {
-        font-size: 50px; }
+    #banner .container .content .box {
+      height: 475px; }
+      #banner .container .content .box .box-content p {
+        font-size: 22px; }
+        #banner .container .content .box .box-content p span {
+          font-size: 50px; }
   #whatwedo .container {
     overflow: hidden; }
   #whatwedo .row {
@@ -3540,6 +3607,10 @@ small {
       color: #000;
       font: 600 20px/1.2 oswald, arial;
       float: left !important; }
+  #blogs-page .oxford-dt {
+    display: none !important; }
+  #blogs-page .oxford-tl {
+    display: block !important; }
   #blogs-page .figure .figcaption {
     padding: 24px; }
     #blogs-page .figure .figcaption h3 {
@@ -3561,7 +3632,60 @@ small {
     max-width: 100%; }
     #blogsdetail-page .related .container .owl-carousel {
       margin-left: 0;
-      margin-right: 0; } }
+      margin-right: 0; }
+  #team-page .banner, #strategy-page .banner, #demandfulfillment-page .banner, #organisationaloptimisation-page .banner, #financialtransformation-page .banner, #locations-page .banner, #careers-page .banner {
+    height: 100vh; }
+    #team-page .banner .container h1, #strategy-page .banner .container h1, #demandfulfillment-page .banner .container h1, #organisationaloptimisation-page .banner .container h1, #financialtransformation-page .banner .container h1, #locations-page .banner .container h1, #careers-page .banner .container h1 {
+      font-size: 90px; }
+  #strategy-page .col-md-4, #strategy-page .col-md-8, #demandfulfillment-page .col-md-4, #demandfulfillment-page .col-md-8, #organisationaloptimisation-page .col-md-4, #organisationaloptimisation-page .col-md-8, #financialtransformation-page .col-md-4, #financialtransformation-page .col-md-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  #strategy-page .content, #demandfulfillment-page .content, #organisationaloptimisation-page .content, #financialtransformation-page .content {
+    padding-bottom: 60%; }
+    #strategy-page .content .row .column._left, #strategy-page .content .row .column._right, #demandfulfillment-page .content .row .column._left, #demandfulfillment-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._right, #financialtransformation-page .content .row .column._left, #financialtransformation-page .content .row .column._right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+    #strategy-page .content .row .column._right, #demandfulfillment-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right, #financialtransformation-page .content .row .column._right {
+      padding-top: 34%;
+      text-align: center; }
+      #strategy-page .content .row .column._right .oxford-dt, #demandfulfillment-page .content .row .column._right .oxford-dt, #organisationaloptimisation-page .content .row .column._right .oxford-dt, #financialtransformation-page .content .row .column._right .oxford-dt {
+        display: none !important; }
+      #strategy-page .content .row .column._right .oxford-mb, #demandfulfillment-page .content .row .column._right .oxford-mb, #organisationaloptimisation-page .content .row .column._right .oxford-mb, #financialtransformation-page .content .row .column._right .oxford-mb {
+        display: block !important; }
+  #strategy-page .carousel-section .carousel, #demandfulfillment-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel {
+    height: auto; }
+    #strategy-page .carousel-section .carousel .carousel-item, #demandfulfillment-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item {
+      padding: 18% 0 14%; }
+      #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child {
+        margin-top: 70px; }
+    #strategy-page .carousel-section .carousel h1, #demandfulfillment-page .carousel-section .carousel h1, #organisationaloptimisation-page .carousel-section .carousel h1, #financialtransformation-page .carousel-section .carousel h1 {
+      font-size: 40px;
+      margin-bottom: 45px; }
+  #team-page .banner {
+    background-position: 18% center; }
+  #team-page .oxford-dt, #team-page .oxford-mb {
+    display: none !important; }
+  #team-page .oxford-tl {
+    display: block !important; }
+  #organisationaloptimisation-page .banner {
+    background-position: 86% center; }
+  #careers-page .banner {
+    background-position: 22% center; }
+  #careers-page #careers-apply-form .section-apply.fade-in {
+    background-position: 82% bottom; }
+  #careers-page #careers-apply-form .section-apply .col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  #careers-page #careers-apply-form .section-apply .form-row .form-group {
+    padding: 0; }
+    #careers-page #careers-apply-form .section-apply .form-row .form-group:last-child {
+      padding: 0; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   nav.navbar .navbar-collapse .navbar-brand {

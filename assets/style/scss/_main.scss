@@ -47,6 +47,11 @@ textarea, input[type="text"], input[type="password"], input[type="email"], selec
   padding: 25px 20px;
 }
 
+.form-row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 small {
   color: $gray;
   font-size: 18px;
@@ -112,7 +117,7 @@ small {
   display: block !important;
 }
 
-.oxford-mb {
+.oxford-mb, .oxford-tl {
   display: none !important;
 }
 
@@ -317,11 +322,11 @@ small {
   height: 100vh;
   // height: 100vh;
   position: relative;
-  background-color: #090909;
+  background-color: $white;
   overflow: hidden;
 
   &.fade-in {
-    background-color: $white;
+    background-color: #090909;
   }
 
   .obj {
@@ -1486,7 +1491,7 @@ small {
 
     &.fade-in {
 
-      &.row_1, &.row_2, &.row_3/*, &.pagi*/ {
+      &.row_1, &.row_2, &.row_3, &.row_4 /*, &.pagi*/ {
         @include transform(translateY(0));
         opacity: 1;
       }
@@ -1500,13 +1505,16 @@ small {
       &.row_3 {
         @include transition(all 0.8s ease-out 0.6s);
       }
+      &.row_4 {
+        @include transition(all 0.8s ease-out 0.8s);
+      }
       // &.pagi {
       //   @include transition(all 0.8s ease-out 0.8s);
       // }
     }
 
     &:last-child {
-      margin-top: 100px;
+      // margin-top: 100px;
 
       button, a {
         margin: 0 auto;
@@ -1630,7 +1638,7 @@ small {
 
       &.column {
 
-        &.col_1, &.col_2, &.col_3 {
+        &.col_1, &.col_2, &.col_3 , &.col_4 {
           @include transform(translateY(0));
             opacity: 1;
         }
@@ -2138,7 +2146,6 @@ small {
     .dropdown {
       display: inline-block;
       float: right;
-      margin: 10px 0;
       z-index: 1;
       opacity: 0;
       @include transform(translateY(50%));
@@ -2584,7 +2591,7 @@ small {
       background-color: $white;
       min-width: 300px;
       width: 100%;
-      height: 80px;
+      height: 70px;
       text-align: left;
       background-color: #fff;
       background-repeat: no-repeat;
@@ -2625,7 +2632,7 @@ small {
 
         font: 700 20px/1 oswald, arial;
         color: $blue;
-        margin: 30px 0;
+        margin: 27px 0;
         padding: 0 20px;
       }
     }
@@ -2990,7 +2997,11 @@ $breadcrumb-divider: quote(">");
     font-size: 36px;
   }
 
-  .oxford-dt {
+  small {
+    font-size: 16px;
+  }
+
+  .oxford-dt, .oxford-tl {
     display: none !important;
   }
 
@@ -4113,7 +4124,7 @@ $breadcrumb-divider: quote(">");
 
           .dropdown-toggle {
             max-width: none;
-            font-size: 16px;
+            font-size: 20px;
             padding: 11px 20px;
           }
 
@@ -4137,8 +4148,42 @@ $breadcrumb-divider: quote(">");
           }
         }
 
+        &.fade-in {
+
+          .column {
+            @include transform(translateY(0));
+            opacity: 1;
+            @include transition(all 0.8s ease-out);
+          }
+
+          &.row_1 {
+            @include transition(all 0 ease-out);
+          }
+          &.row_2 {
+            @include transition(all 0 ease-out );
+          }
+          &.row_3{
+            @include transition(all 0 ease-out );
+          }
+          &.row_4 {
+            @include transition(all 0 ease-out );
+          }
+          &.row_0 {
+            @include transition(all 0 ease-out );
+          }
+        }
+
         .column {
           padding: 0;
+          @include transform(translateY(20%));
+          opacity: 0;
+          @include transition(all 0.8s ease-out);
+
+
+
+          &.column:last-child {
+            @include transition(all 0.8s ease-out 0.6s);
+          }
 
           &:hover {
             box-shadow: none;
@@ -4152,6 +4197,7 @@ $breadcrumb-divider: quote(">");
 
         .buttonBlue {
           width: 100%;
+          height: 50px;
         }
       }
 
@@ -4172,7 +4218,9 @@ $breadcrumb-divider: quote(">");
     #careers-apply-form {
 
       .section-apply {
-        background-position: 76% bottom;
+        background-position: 90% 110%;
+        background-size: 320%;
+        background-color: #131313;
 
         .form-row {
 
@@ -4189,16 +4237,19 @@ $breadcrumb-divider: quote(">");
 
           &.custom-file-upload {
             width: 100%;
+            height: 50px;
           }
         }
 
         #filetouploadname {
           width: 100%;
+          height: 50px;
         }
       }
 
       button[type="submit"] {
         width: 100%;
+        height: 50px;
       }
     }
   }
@@ -4256,12 +4307,19 @@ $breadcrumb-divider: quote(">");
       }
     }
   }
-}
 
-#hospitality {
+  #hospitality {
 
-  .container {
-    padding: 0;
+    .container {
+      padding: 0;
+    }
+  }
+
+  #blogs-page {
+
+    .oxford-dt {
+      display: block !important;
+    }
   }
 }
 
@@ -4272,7 +4330,7 @@ $breadcrumb-divider: quote(">");
       display: none !important;
     }
 
-    .oxford-mb {
+    .oxford-mb, .oxford-tl {
       display: block !important;
     }
 
@@ -4339,6 +4397,10 @@ $breadcrumb-divider: quote(">");
                 &:after {
                   right: 40%;
                 }
+              }
+
+              .dropdown-menu {
+                box-shadow: none;
               }
             }
           }
@@ -4476,6 +4538,7 @@ $breadcrumb-divider: quote(">");
         // margin-top: 60%;
 
         .box {
+          height: 475px;
 
           .box-content {
 
@@ -4811,6 +4874,14 @@ $breadcrumb-divider: quote(">");
 
   #blogs-page {
 
+    .oxford-dt {
+      display: none !important;
+    }
+
+    .oxford-tl {
+      display: block !important;
+    }
+
     .figure {
 
       .figcaption {
@@ -4846,6 +4917,133 @@ $breadcrumb-divider: quote(">");
         .owl-carousel {
           margin-left: 0;
           margin-right: 0;
+        }
+      }
+    }
+  }
+
+  #team-page, #strategy-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page, #locations-page, #careers-page  {
+
+    .banner {
+      height: 100vh;
+
+      .container {
+
+        h1 {
+          font-size: 90px;
+        }
+      }
+    }
+  }
+
+  #strategy-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page {
+
+    .col-md-4, .col-md-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .content {
+      padding-bottom: 60%;
+
+      .row {
+
+        .column {
+
+          &._left, &._right {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+
+          &._right {
+            padding-top: 34%;
+            text-align: center;
+
+            .oxford-dt {
+              display: none !important;
+            }
+
+            .oxford-mb {
+              display: block !important;
+            }
+          }
+        }
+      }
+    }
+
+    .carousel-section {
+
+      .carousel {
+        height: auto;
+
+        .carousel-item {
+          padding: 18% 0 14%;
+
+          .row:last-child {
+            margin-top: 70px;
+          }
+        }
+
+        h1 {
+          font-size: 40px;
+          margin-bottom: 45px
+        }
+      }
+    }
+
+  }
+
+  #team-page {
+
+    .banner {
+      background-position: 18% center;
+    }
+
+    .oxford-dt, .oxford-mb {
+      display: none !important;
+    }
+
+    .oxford-tl {
+      display: block !important;
+    }
+  }
+
+  #organisationaloptimisation-page {
+
+    .banner {
+      background-position: 86% center;
+    }
+  }
+
+  #careers-page {
+
+    .banner {
+      background-position: 22% center;
+    }
+
+    #careers-apply-form {
+
+      .section-apply {
+
+        &.fade-in {
+          background-position: 82% bottom;
+        }
+
+        .col-md-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        .form-row {
+
+          .form-group {
+            padding: 0;
+
+            &:last-child {
+              padding: 0;
+            }
+          }
+
         }
       }
     }
