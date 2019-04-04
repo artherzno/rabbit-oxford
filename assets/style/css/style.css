@@ -2200,6 +2200,8 @@ small {
         font-weight: 600;
         line-height: 1.6; }
     #careers-page #careers-apply-form .section-apply #filetouploadname {
+      font: 400 20px/1 oswald, arial;
+      display: none;
       width: auto; }
 
 /* Strategy page ******************************************************************/

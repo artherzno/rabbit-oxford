@@ -91,6 +91,7 @@ $(document).ready(function(){
   // Intro logo
   $('#intro .logo').addClass('fade-in');
 
+
   // Nav dropdown
   $('#navbar-practics-dt').hover(function() {
     $('#navbar-practics-dt .dropdown-menu').toggleClass('hover');
@@ -99,6 +100,7 @@ $(document).ready(function(){
   $('#ft-navbar-practics-dt').hover(function() {
     $('#ft-navbar-practics-dt .dropdown-menu').toggleClass('hover');
   });
+
 
   // Careers dropdown
   $('#careers-page .dropdown-list .dropdown-toggle').on('click', function() {
@@ -132,21 +134,19 @@ $(document).ready(function(){
   // Careers file upload name
   var input = $('#filetoupload');
   var infoArea = $('#filetouploadname');
-
   input.on( 'change', showFileName );
-
   function showFileName( event ) {
-
-    console.log(event);
-    console.log(event.currentTarget.value);
-
+    // console.log(event);
+    // console.log(event.currentTarget.value);
     var input = event.currentTarget.value;
     var fileName = input.match(/[^\\/]*$/)[0];
-    console.log(fileName);
+    // console.log(fileName);
+    infoArea.show().val(fileName);
 
-    // use fileName however fits your app best, i.e. add it into a div
-    infoArea.val(fileName);
+    // Dynamic input
+    infoArea.attr('size', (infoArea.val().length));
   }
+
 
   // Carousel hidden on blogsdetail page - mobile
   $('.navbar-toggler').on('click', function() {
@@ -158,6 +158,7 @@ $(document).ready(function(){
   $('#carouselCaptions.carousel').carousel({
     // interval: false
   });
+
 
   // Locatios accordion - desktop
   $('#accordionLocation-dt .button-modal').on('click', function() {
