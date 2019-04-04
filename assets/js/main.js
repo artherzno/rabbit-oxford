@@ -156,7 +156,7 @@ $(document).ready(function(){
 
   // Carousel stop autoplay
   $('#carouselCaptions.carousel').carousel({
-    // interval: false
+    interval: false
   });
 
 

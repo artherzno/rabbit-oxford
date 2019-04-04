@@ -2548,10 +2548,10 @@ small {
 
 /* BS4 arousel ***************************************************************/
 .carousel-indicators li {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  margin: 0 9px; }
+  margin: 0 7px; }
 
 /* OWL Carousel ***************************************************************/
 .owl-carousel .owl-item {
@@ -2587,7 +2587,7 @@ small {
     #strategy-page.h-one-line .content .row .column img, #demandfulfillment-page.h-one-line .content .row .column img, #financialtransformation-page.h-one-line .content .row .column img, #organisationaloptimisation-page.h-one-line .content .row .column img {
       padding-top: 58%; }
   #strategy-page.h-one-line .carousel-section.fade-in .carousel, #demandfulfillment-page.h-one-line .carousel-section.fade-in .carousel, #financialtransformation-page.h-one-line .carousel-section.fade-in .carousel, #organisationaloptimisation-page.h-one-line .carousel-section.fade-in .carousel {
-    padding-top: 25%; }
+    padding-top: 15%; }
   #strategy-page .banner.fade-in .container h1, #demandfulfillment-page .banner.fade-in .container h1, #financialtransformation-page .banner.fade-in .container h1, #organisationaloptimisation-page .banner.fade-in .container h1 {
     font-size: 38px; }
   #strategy-page .content.fade-in, #demandfulfillment-page .content.fade-in, #financialtransformation-page .content.fade-in, #organisationaloptimisation-page .content.fade-in {
@@ -2599,7 +2599,10 @@ small {
   #strategy-page .content .column._right img, #demandfulfillment-page .content .column._right img, #financialtransformation-page .content .column._right img, #organisationaloptimisation-page .content .column._right img {
     padding-top: 74%; }
   #strategy-page .carousel-section.fade-in .carousel, #demandfulfillment-page .carousel-section.fade-in .carousel, #financialtransformation-page .carousel-section.fade-in .carousel, #organisationaloptimisation-page .carousel-section.fade-in .carousel {
-    padding-top: 40%; } }
+    padding-top: 40%;
+    height: auto; }
+    #strategy-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section.fade-in .carousel .carousel-item .row:last-child {
+      margin: 15% -15px; } }
 
 @media (min-width: 375px) {
   nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
@@ -2699,7 +2702,8 @@ small {
       text-align: center;
       margin-top: 1rem; }
       #footer .row._first .nav .nav-item .nav-link {
-        font-size: 18px; }
+        font-size: 18px;
+        padding-right: 0.5rem; }
   #footer .row._second {
     padding: 40px 0 55px; }
     #footer .row._second .copyright {

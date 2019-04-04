@@ -2753,10 +2753,10 @@ $breadcrumb-divider: quote(">");
 .carousel-indicators {
 
   li {
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    margin: 0 9px;
+    margin: 0 7px;
   }
 }
 
@@ -2877,7 +2877,7 @@ $breadcrumb-divider: quote(">");
 
         &.fade-in {
           .carousel {
-            padding-top: 25%;
+            padding-top: 15%;
           }
         }
       }
@@ -2930,6 +2930,17 @@ $breadcrumb-divider: quote(">");
 
         .carousel {
           padding-top: 40%;
+          height: auto;
+
+          .carousel-item {
+
+            .row {
+
+              &:last-child {
+                margin: 15% -15px;
+              }
+            }
+          }
         }
       }
     }
@@ -3124,6 +3135,7 @@ $breadcrumb-divider: quote(">");
 
             .nav-link {
               font-size: 18px;
+              padding-right: 0.5rem;
             }
           }
         }
