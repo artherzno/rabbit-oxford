@@ -44,7 +44,7 @@ textarea, input[type="text"], input[type="password"], input[type="email"], selec
 }
 
 .form-control {
-  padding: 30px 20px;
+  padding: 25px 20px;
 }
 
 small {
@@ -2146,7 +2146,7 @@ small {
     }
   }
 
-  .list {
+  .careers-list {
     padding: 0;
 
     .column {
@@ -2234,53 +2234,75 @@ small {
     }
   }
 
-  .section-apply {
+  #careers-apply-form {
     width: 100%;
     height: auto;
-    background: url('../../images/career/oxf_bg_content.jpg') no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    padding: 70px 0;
+    background-color: $black;
+    display: none;
 
-    .row {
-      margin-bottom: 0;
-    }
+    .section-apply {
+      width: 100%;
+      height: auto;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+      padding: 70px 0;
 
-    form {
-      opacity: 0;
-      @include transform(translateY(20%));
-      @include transition(all 0.8s ease-out);
-    }
-
-    &.fade-in {
-
-      form, .row, h3 {
-        @include transform(translateY(0));
-        opacity: 1;
+      .row {
+        margin-bottom: 0;
       }
-    }
 
-    .form-group {
+      form {
+        opacity: 0;
+        @include transform(translateY(20%));
+        @include transition(all 0.8s ease-out 0.2s);
+      }
+
+      &.fade-in {
+        background-image: url('../../images/career/oxf_bg_content.jpg');
+
+        form, .row, h3 {
+          @include transform(translateY(0));
+          opacity: 1;
+        }
+      }
+
+      .form-row {
+
+        .form-group {
+          padding: 0 22px 0 0;
+
+          &:last-child {
+            padding: 0 0 0 22px;
+          }
+
+          h3 {
+            margin: 30px 0;
+          }
+        }
+      }
 
       h3 {
-        margin: 30px 0;
-      }
-    }
-
-    h3 {
-      font-weight: 400;
-      margin-bottom: 40px;
-      opacity: 0;
-      @include transform(translateY(200%));
-      @include transition(all 0.8s ease-out);
-    }
-
-    label {
-      font: 400 18px/1 oswald, arial;
-
-      &.custom-file-upload {
+        font-size: 30px;
         font-weight: 600;
-        line-height: 1.6;
+        margin-bottom: 40px;
+        opacity: 0;
+        @include transform(translateY(200%));
+        @include transition(all 0.8s ease-out 0.2s);
+      }
+
+      label {
+        font: 400 18px/1 oswald, arial;
+
+        &.custom-file-upload {
+          font-weight: 600;
+          line-height: 1.6;
+        }
+      }
+
+      #filetouploadname {
+        width: auto;
       }
     }
   }
@@ -2560,12 +2582,22 @@ small {
       background-color: $white;
       min-width: 300px;
       width: 100%;
+      height: 80px;
       text-align: left;
-      background: #fff url("../../images/icon/oxf_arrow_down.svg") no-repeat;
+      background-color: #fff;
+      background-repeat: no-repeat;
       background-position: 94% center;
       background-size: 18px;
       font: 700 20px/1 oswald, arial;
       color: $blue;
+
+      &[aria-expanded="false"] {
+        background-image: url("../../images/icon/oxf_arrow_down.svg");
+      }
+
+      &[aria-expanded="true"] {
+        background-image: url("../../images/icon/oxf_arrow_up.svg");
+      }
 
       &:after {
         content: '';
@@ -4080,13 +4112,16 @@ $breadcrumb-divider: quote(">");
       }
     }
 
-    .list {
+    .careers-list {
       padding: 0 15px;
       margin-top: 40px;
     }
 
-    .section-apply {
-      background-position: 86% bottom;
+    #careers-apply-form {
+
+      .section-apply {
+        background-position: 76% bottom;
+      }
     }
   }
 

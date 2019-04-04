@@ -67,14 +67,14 @@
             <li class="nav-item">
               <a href="" class="nav-link">WHY US<hr></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="locations.html" class="nav-link">LOCATIONS<hr></a>
             </li>
             <li class="nav-item">
               <a href="blogs.html" class="nav-link">BLOGS<hr></a>
             </li>
             <li class="nav-item">
-              <a href="careers.html" class="nav-link">CAREERS<hr></a>
+              <a href="careers.html" class="nav-link active">CAREERS<hr></a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link">CONTACT US<hr></a>
@@ -108,23 +108,23 @@
                 ALL LOCATION
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">ASIA</a>
-                <a class="dropdown-item" href="#">AFRICA</a>
-                <a class="dropdown-item" href="#">EUROPE</a>
-                <a class="dropdown-item" href="#">LATIN AMERICA</a>
+                <a class="dropdown-item" href="javascript:void(0)" id="zone-asia">ASIA</a>
+                <a class="dropdown-item" href="javascript:void(0)" id="zone-africa">AFRICA</a>
+                <a class="dropdown-item" href="javascript:void(0)" id="zone-europe">EUROPE</a>
+                <a class="dropdown-item" href="javascript:void(0)" id="zone-latin">LATIN AMERICA</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="container list">
+        <div class="container careers-list">
           <div class="row row_1">
-            <a class="column col_1 col-sm-12 col-md-6">
+            <a href="" data-zone="asia" class="column col_1 col-sm-12 col-md-6">
               <h3>BUSINESS CONSULTANT</h3>
               <p>BANGKOK</p>
               <hr>
               <p class="buttonNon button-readmore">READ MORE</p>
             </a>
-            <a class="column col_2 col-sm-12 col-md-6">
+            <a href="" data-zone="asia" class="column col_2 col-sm-12 col-md-6">
               <h3>SENIOR BUSINESS CONSULTANT</h3>
               <p>SINGAPORE</p>
               <hr>
@@ -132,13 +132,13 @@
             </a>
           </div>
           <div class="row row_2">
-            <a class="column col_1 col-sm-12 col-md-6">
+            <a href="" data-zone="asia" class="column col_1 col-sm-12 col-md-6">
               <h3>BUSINESS PROCESS ANALYST CONSULTANT</h3>
               <p>BANGKOK</p>
               <hr>
               <p class="buttonNon button-readmore">READ MORE</p>
             </a>
-            <a class="column col_2 col-sm-12 col-md-6">
+            <a href="" data-zone="asia" class="column col_2 col-sm-12 col-md-6">
               <h3>BUSINESS CONSULTANT</h3>
               <p>SINGAPORE</p>
               <hr>
@@ -146,13 +146,13 @@
             </a>
           </div>
           <div class="row row_3">
-            <a class="column col_1 col-sm-12 col-md-6">
+            <a href="" data-zone="asia" class="column col_1 col-sm-12 col-md-6">
               <h3>RISK MANAGEMENT CONSULTANT</h3>
               <p>BANGKOK</p>
               <hr>
               <p class="buttonNon button-readmore">READ MORE</p>
             </a>
-            <a class="column col_2 col-sm-12 col-md-6">
+            <a href="" data-zone="europe" class="column col_2 col-sm-12 col-md-6">
               <h3>BUSINESS PROCESS ANALYST CONSULTANT</h3>
               <p>BUCHAREST</p>
               <hr>
@@ -160,13 +160,13 @@
             </a>
           </div>
           <div class="row row_4">
-            <a class="column col_1 col-sm-12 col-md-6">
+            <a href="" data-zone="asia" class="column col_1 col-sm-12 col-md-6">
               <h3>ENTERPRISE BUSINESS TRANSFORMATION CONSULTANT</h3>
               <p>BANGKOK</p>
               <hr>
               <p class="buttonNon button-readmore">READ MORE</p>
             </a>
-            <a class="column col_2 col-sm-12 col-md-6">
+            <a href="" data-zone="africa" class="column col_2 col-sm-12 col-md-6">
               <h3>RISK MANAGEMENT CONSULTANT</h3>
               <p>JOHANNESBURG</p>
               <hr>
@@ -177,56 +177,61 @@
         <div class="container">
           <div class="row row_0">
             <div class="column col_1 col-sm-12 col-md-6">
-              <h3>RISK MANAGEMENT CONSULTANT</h3>
-              <button type="button" class="buttonBlue">APPLY</button>
+              <h3>FOR FUTURE POSITIONS</h3>
+              <button type="button" class="buttonBlue" id="careers-apply">APPLY</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="section-apply">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Apply</h3>
-              <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputName">NAME</label>
-                    <input type="text" class="form-control" id="inputName">
+      <div id="careers-apply-form">
+        <div class="section-apply">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>APPLY</h3>
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputName">NAME</label>
+                      <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputSurname">SURNAME</label>
+                      <input type="text" class="form-control" id="inputSurname">
+                    </div>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputSurname">SURNAME</label>
-                    <input type="text" class="form-control" id="inputSurname">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail">EMAIL</label>
+                      <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputLocation">LOCATION</label>
+                      <input type="text" class="form-control" id="inputLocation">
+                    </div>
                   </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail">EMAIL</label>
-                    <input type="email" class="form-control" id="inputEmail">
+                  <div class="form-group">
+                    <label for="inputPosition">POSITIONS OF INTEREST</label>
+                    <input type="text" class="form-control" id="inputPosition">
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4">LOCATION</label>
-                    <input type="text" class="form-control" id="inputPassword4">
+                  <div class="form-group">
+                    <label for="inputMessage">YOUR MESSAGE</label>
+                    <textarea class="form-control" id="inputMessage" rows="5"></textarea>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputPosition">POSITIONS OF INTEREST</label>
-                  <input type="text" class="form-control" id="inputPosition">
-                </div>
-                <div class="form-group">
-                  <label for="inputMessage">YOUR MESSAGE</label>
-                  <textarea class="form-control" id="inputMessage" rows="5"></textarea>
-                </div>
-                <div class="form-group file-upload">
-                  <h3 for="inputUpload">Upload your Resume</h3>
-                  <!-- <input type="file" class="form-control-file" id="inputUpload"> -->
-                  <label for="filetoupload" class="custom-file-upload buttonWhiteFull">UPLOAD</label>
-      						<input type="file" class="col-md-12 col-sm-12 col-xs-12" id="filetoupload" name="filetoupload" ng-model="filetoupload" accept=".jpg, .png, .gif">
-                </div>
-                <small>*You can upload Files that are .JPEG, .PNG, .PDF Under 20MB</small>
-                <button type="submit" class="buttonBlueFull">SUBMIT</button>
-              </form>
+                  <div class="form-group file-upload">
+                    <label for="inputUpload">Upload your Resume</label><br>
+                    <!-- <input type="file" class="form-control-file" id="inputUpload"> -->
+                    <label for="filetoupload" class="custom-file-upload buttonWhiteFull">UPLOAD</label>
+        						<input type="file" class="col-md-12 col-sm-12 col-xs-12" id="filetoupload" name="filetoupload" ng-model="filetoupload" accept=".jpg, .png, .gif">
+                  </div>
+                  <small>*You can upload Files that are .JPEG, .PNG, .PDF Under 20MB</small>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="filetouploadname">
+                  </div>
+                  <button type="submit" class="buttonBlueFull">SUBMIT</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>

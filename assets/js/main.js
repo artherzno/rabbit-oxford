@@ -105,13 +105,48 @@ $(document).ready(function(){
     $('#careers-page .overlay').toggleClass('show');
   });
 
-  $('#careers-page .dropdown-list .dropdown-item').on('click', function() {
+  $('#careers-page .dropdown-list .dropdown-item').on('click', function(event) {
     $('.overlay').removeClass('show');
+
+    var zoneName = $(this).attr('id').replace('zone-','');
+    $('.careers-list .column').hide();
+    $('.careers-list .column[data-zone="'+zoneName+'"]').show();
+
+    console.log(zoneName);
+  });
+
+  // Careers apply
+  $('#careers-apply').on('click', function() {
+    var duration = 500;
+    $('#careers-apply-form').slideToggle(duration, function(){
+      duration = $(this).is(":visible") ? 800 : 500;
+    });
+
+    $('.section-apply').toggleClass('fade-in');
   });
 
   $('.overlay').on('click', function() {
-    $(this).removeClass('show')
+    $(this).removeClass('show');
   });
+
+  // Careers file upload name
+  var input = $('#filetoupload');
+  var infoArea = $('#filetouploadname');
+
+  input.on( 'change', showFileName );
+
+  function showFileName( event ) {
+
+    console.log(event);
+    console.log(event.currentTarget.value);
+
+    var input = event.currentTarget.value;
+    var fileName = input.match(/[^\\/]*$/)[0];
+    console.log(fileName);
+
+    // use fileName however fits your app best, i.e. add it into a div
+    infoArea.val(fileName);
+  }
 
   // Carousel hidden on blogsdetail page - mobile
   $('.navbar-toggler').on('click', function() {
@@ -322,7 +357,7 @@ $(document).ready(function(){
 
   classToggle('#careers-page .row_0', 0.8, '', '#careers-page .row_0', 'fade-in');
 
-  classToggle('#careers-page .section-apply', 0.8, '', '#careers-page .section-apply', 'fade-in');
+  // classToggle('#careers-page .section-apply', 0.8, '', '#careers-page .section-apply', 'fade-in');
 
 
   // Demandfulfillment - banner ----------------------------------------- //
