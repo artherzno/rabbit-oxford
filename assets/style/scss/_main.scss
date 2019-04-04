@@ -2763,7 +2763,7 @@ $breadcrumb-divider: quote(">");
 /* OWL Carousel ***************************************************************/
 .owl-carousel {
   .owl-item {
-    pointer-events: none;
+    // pointer-events: none;
 
     &.animated {
       // position: static;
@@ -3050,6 +3050,22 @@ $breadcrumb-divider: quote(">");
       @include transition(all 0.2s ease-in 0.2s);
     }
 
+    .navbar-collapse {
+
+      &.show {
+
+        .nav {
+
+          li.nav-item {
+
+            .dropdown-menu {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+
     .navbar-nav-list {
       height: 88%;
       position: relative;
@@ -3126,7 +3142,7 @@ $breadcrumb-divider: quote(">");
           margin-top: 35px;
 
           p {
-            font-size: 16px;
+            font-size: 14px;
             margin: 0;
           }
         }
@@ -3174,7 +3190,7 @@ $breadcrumb-divider: quote(">");
       &.cloud {
 
         &.fade-in {
-              animation-duration: 100s;
+              animation-duration: 200s;
         }
       }
     }
@@ -3295,7 +3311,7 @@ $breadcrumb-divider: quote(">");
         font-size: 36px;
         margin-bottom: 92%;
         float: right;
-        padding-right: 5%;
+        padding-right: 7%;
 
         &.number {
           padding-right: 0;
@@ -3306,7 +3322,7 @@ $breadcrumb-divider: quote(">");
           }
 
           &.oxford-mb {
-            margin-right: 0;
+            margin-right: 7px;
           }
         }
 
@@ -3436,7 +3452,7 @@ $breadcrumb-divider: quote(">");
     }
 
     .content {
-      padding: 10% 0;
+      padding: 10% 0 30%;
       min-height: auto;
       float: none;
 
@@ -3488,6 +3504,16 @@ $breadcrumb-divider: quote(">");
       .overflow-x-auto {
         overflow-x: auto;
         overflow-y: hidden;
+      }
+
+      #carouselBlog {
+
+        .owl-item {
+
+          &:last-child {
+            margin-right: 0 !important;
+          }
+        }
       }
 
       .row {
@@ -4368,7 +4394,7 @@ $breadcrumb-divider: quote(">");
           margin-top: 35px;
 
           p {
-            font-size: 16px;
+            font-size: 1px;
             margin: 0;
           }
         }

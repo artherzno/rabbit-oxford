@@ -2555,7 +2555,6 @@ small {
 
 /* OWL Carousel ***************************************************************/
 .owl-carousel .owl-item {
-  pointer-events: none;
   background-color: #fff; }
 
 .owl-carousel .owl-stage {
@@ -2657,6 +2656,9 @@ small {
     -ms-transition: all 0.2s ease-in 0.2s;
     -o-transition: all 0.2s ease-in 0.2s;
     transition: all 0.2s ease-in 0.2s; }
+  nav .navbar-collapse.show .nav li.nav-item .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
   nav .navbar-nav-list {
     height: 88%;
     position: relative;
@@ -2707,7 +2709,7 @@ small {
       text-align: center;
       margin-top: 35px; }
       #footer .row._second .copyright-m p {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0; }
     #footer .row._second .social {
       text-align: center; }
@@ -2728,8 +2730,8 @@ small {
   #banner {
     height: 100vh; }
     #banner .obj.cloud.fade-in {
-      -webkit-animation-duration: 100s;
-      animation-duration: 100s; }
+      -webkit-animation-duration: 200s;
+      animation-duration: 200s; }
     #banner .container .content {
       margin-top: 0%;
       min-height: 0; }
@@ -2785,14 +2787,14 @@ small {
       font-size: 36px;
       margin-bottom: 92%;
       float: right;
-      padding-right: 5%; }
+      padding-right: 7%; }
       #hospitality .figcaption h1.number {
         padding-right: 0;
         font-size: 75px; }
         #hospitality .figcaption h1.number span {
           font-size: 40px; }
         #hospitality .figcaption h1.number.oxford-mb {
-          margin-right: 0; }
+          margin-right: 7px; }
       #hospitality .figcaption h1.h-oneline {
         margin-bottom: 108%;
         clear: both; }
@@ -2872,7 +2874,7 @@ small {
       position: static;
       padding: 0 15px; }
     #locations .content {
-      padding: 10% 0;
+      padding: 10% 0 30%;
       min-height: auto;
       float: none; }
       #locations .content .oxford-mb .button-head + .collapse, #locations .content .oxford-mb .button-head + .collapsing {
@@ -2897,6 +2899,8 @@ small {
     #blog .content .overflow-x-auto {
       overflow-x: auto;
       overflow-y: hidden; }
+    #blog .content #carouselBlog .owl-item:last-child {
+      margin-right: 0 !important; }
     #blog .content .row:last-child {
       margin: 0; }
     #blog .content .row.text-center {
@@ -3309,7 +3313,7 @@ small {
       text-align: center;
       margin-top: 35px; }
       #footer .row._second .copyright-m p {
-        font-size: 16px;
+        font-size: 1px;
         margin: 0; }
     #footer .row._second .social {
       text-align: center; }
