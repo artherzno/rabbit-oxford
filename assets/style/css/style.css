@@ -3200,6 +3200,16 @@ small {
     margin-top: 40px; }
   #careers-page #careers-apply-form .section-apply {
     background-position: 76% bottom; }
+    #careers-page #careers-apply-form .section-apply .form-row .form-group {
+      padding: 0; }
+      #careers-page #careers-apply-form .section-apply .form-row .form-group:last-child {
+        padding: 0; }
+    #careers-page #careers-apply-form .section-apply label.custom-file-upload {
+      width: 100%; }
+    #careers-page #careers-apply-form .section-apply #filetouploadname {
+      width: 100%; }
+  #careers-page #careers-apply-form button[type="submit"] {
+    width: 100%; }
   /* Breadcrumb ********************/
   .breadcrumb .breadcrumb-item {
     font-size: 20px; }

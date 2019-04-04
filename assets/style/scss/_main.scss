@@ -4123,6 +4123,32 @@ $breadcrumb-divider: quote(">");
 
       .section-apply {
         background-position: 76% bottom;
+
+        .form-row {
+
+          .form-group {
+            padding: 0;
+
+            &:last-child {
+              padding: 0;
+            }
+          }
+        }
+
+        label {
+
+          &.custom-file-upload {
+            width: 100%;
+          }
+        }
+
+        #filetouploadname {
+          width: 100%;
+        }
+      }
+
+      button[type="submit"] {
+        width: 100%;
       }
     }
   }
