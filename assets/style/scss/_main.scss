@@ -280,7 +280,7 @@ small {
       text-align: center;
       @include transform(translateY(-50%));
       opacity: 0;
-      @include transition(all 0.8s ease-in-out 0.8s);
+      @include transition(all 0.8s ease-in-out 0.4s);
 
       &.fade-in {
         opacity: 1;

@@ -538,10 +538,10 @@ small {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       opacity: 0;
-      -webkit-transition: all 0.8s ease-in-out 0.8s;
-      -ms-transition: all 0.8s ease-in-out 0.8s;
-      -o-transition: all 0.8s ease-in-out 0.8s;
-      transition: all 0.8s ease-in-out 0.8s; }
+      -webkit-transition: all 0.8s ease-in-out 0.4s;
+      -ms-transition: all 0.8s ease-in-out 0.4s;
+      -o-transition: all 0.8s ease-in-out 0.4s;
+      transition: all 0.8s ease-in-out 0.4s; }
       #intro .container .logo.fade-in {
         opacity: 1; }
       #intro .container .logo .content {

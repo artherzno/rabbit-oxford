@@ -208,7 +208,7 @@ $(document).ready(function(){
   });
 
   // Banner content animation
-  setInterval(function(){$('#banner .oxford-mb .box-content').toggleClass('fade-in')}, 4000);
+  // setInterval(function(){$('#banner .oxford-mb .box-content').toggleClass('fade-in')}, 4000);
 
 
 
