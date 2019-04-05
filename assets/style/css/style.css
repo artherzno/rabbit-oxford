@@ -456,6 +456,9 @@ small {
       font-size: 14px;
       font-weight: bold;
       color: #b4bed4; }
+      #footer .row._first .nav li a.dropdown-item.active {
+        color: #f7d0cb;
+        background-color: transparent; }
     #footer .row._first .nav li:last-child a {
       padding-right: 0; }
   #footer .row._second {
@@ -510,7 +513,7 @@ small {
     -ms-transform: translateY(-100%);
     transform: translateY(-100%); }
   #intro #introVideo {
-    position: fixed;
+    position: absolute;
     left: -500%;
     top: 0;
     right: -500%;
@@ -535,10 +538,10 @@ small {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       opacity: 0;
-      -webkit-transition: all 2s ease-in-out;
-      -ms-transition: all 2s ease-in-out;
-      -o-transition: all 2s ease-in-out;
-      transition: all 2s ease-in-out; }
+      -webkit-transition: all 0.8s ease-in-out 0.8s;
+      -ms-transition: all 0.8s ease-in-out 0.8s;
+      -o-transition: all 0.8s ease-in-out 0.8s;
+      transition: all 0.8s ease-in-out 0.8s; }
       #intro .container .logo.fade-in {
         opacity: 1; }
       #intro .container .logo .content {
@@ -702,29 +705,19 @@ small {
             -ms-transition: all 1.8s ease;
             -o-transition: all 1.8s ease;
             transition: all 1.8s ease;
-            opacity: 0;
-            -webkit-transform: translateY(100px);
-            -ms-transform: translateY(100px);
-            transform: translateY(100px); }
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0); }
           #banner .container .content .box .box-content._second {
             -webkit-transition: all 1.8s ease;
             -ms-transition: all 1.8s ease;
             -o-transition: all 1.8s ease;
             transition: all 1.8s ease;
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-            transform: translateY(0); }
-        #banner .container .content .box.fade-in .box-content._first {
-          opacity: 1;
-          -webkit-transform: translateY(0);
-          -ms-transform: translateY(0);
-          transform: translateY(0); }
-        #banner .container .content .box.fade-in .box-content._second {
-          opacity: 0;
-          -webkit-transform: translateY(100px);
-          -ms-transform: translateY(100px);
-          transform: translateY(100px); }
+            opacity: 0;
+            -webkit-transform: translateY(100px);
+            -ms-transform: translateY(100px);
+            transform: translateY(100px); }
         #banner .container .content .box.oxford-mb .box-content._first {
           opacity: 1; }
         #banner .container .content .box.oxford-mb .box-content._second {
@@ -3741,3 +3734,24 @@ small {
     width: auto; }
   .owl-carousel .owl-stage {
     height: 470px; } }
+
+/***************************************************************************************************/
+/* For IE ******************************************************************************************/
+/***************************************************************************************************/
+.ie textarea.form-control {
+  padding: 10px 20px; }
+
+.ie .form-control {
+  padding: 0 20px; }
+
+.ie #banner .container .content .box .box-content p {
+  background: none;
+  color: #f4f4f4; }
+
+.ie #hospitality .owl-carousel .owl-item {
+  opacity: 0; }
+  .ie #hospitality .owl-carousel .owl-item.active {
+    opacity: 1; }
+
+.ie #locations .modal .modal-dialog {
+  width: 600px; }

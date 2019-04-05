@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/style/css/style.css">
 
     <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/checkIE.js"></script>
 
     <title>Oxford Acuity</title>
   </head>
@@ -51,7 +52,7 @@
                   <a class="dropdown-item" href="#">DEMAND GENERATION
                   <a class="dropdown-item" href="demandfulfillment.html">DEMAND FULFILLMENT</a>
                   <a class="dropdown-item" href="organisationaloptimisation.html">ORGANISATIONAL OPTIMISATION</a>
-                  <a class="dropdown-item" href="financialtransformation.html">FINANCIAL TRANSFORMATION</a>
+                  <a class="dropdown-item" href="financialexcellence.html">FINANCIAL EXCELLENCE</a>
                 </div>
               </div>
             </li>
@@ -64,7 +65,7 @@
                 <a class="dropdown-item" href="#">DEMAND GENERATION
                 <a class="dropdown-item" href="demandfulfillment.html">DEMAND FULFILLMENT</a>
                 <a class="dropdown-item" href="organisationaloptimisation.html">ORGANISATIONAL OPTIMISATION</a>
-                <a class="dropdown-item" href="financialtransformation.html">FINANCIAL TRANSFORMATION</a>
+                <a class="dropdown-item" href="financialexcellence.html">FINANCIAL EXCELLENCE</a>
               </div>
             </li>
             <li class="nav-item">
@@ -91,6 +92,7 @@
     <!-- Intro -->
     <div id="intro" class="section">
       <video autoplay muted loop id="introVideo" poster="assets/images/home/oxf_bg_intro.jpg">
+        <source src="assets/images/vdo/oxf_vdo_intro_ios.mp4" type="video/mp4">
         <source src="assets/images/vdo/oxf_vdo_intro.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
@@ -708,7 +710,7 @@
                     <a class="dropdown-item" href="#">DEMAND GENERATION
                     <a class="dropdown-item" href="demandfulfillment.html">DEMAND FULFILLMENT</a>
                     <a class="dropdown-item" href="organisationaloptimisation.html">ORGANISATIONAL OPTIMISATION</a>
-                    <a class="dropdown-item" href="financialtransformation.html">FINANCIAL TRANSFORMATION</a>
+                    <a class="dropdown-item" href="financialexcellence.html">FINANCIAL EXCELLENCE</a>
                   </div>
                 </div>
               </li>
@@ -720,7 +722,7 @@
                   <a class="dropdown-item" href="#">DEMAND GENERATION
                   <a class="dropdown-item" href="demandfulfillment.html">DEMAND FULFILLMENT</a>
                   <a class="dropdown-item" href="organisationaloptimisation.html">ORGANISATIONAL OPTIMISATION</a>
-                  <a class="dropdown-item" href="financialtransformation.html">FINANCIAL TRANSFORMATION</a>
+                  <a class="dropdown-item" href="financialexcellence.html">FINANCIAL EXCELLENCE</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -750,10 +752,10 @@
           <div class="social col-sm-12 col-md-6">
             <ul class="nav">
               <li>
-                <a class="fb"></a>
+                <a href="#" class="fb"></a>
               </li>
               <li>
-                <a class="tw"></a>
+                <a href="#" class="tw"></a>
               </li>
             </ul>
           </div>
@@ -778,33 +780,52 @@
     <script src="assets/js/main.js"></script>
 
     <script type="text/javascript">
-      $(function(){
-        $('#carouselHospitality').owlCarousel({
-          slideTransition: 'ease-in-out',
-          items: 1,
-          dots: 0,
-          animateOut: 'slideOutLeft',
-          animateIn: 'slideInRight',
-          smartSpeed: 0,
-          responsive: {
-            0: {
-              stagePadding: 20,
-              margin: 8,
-              smartSpeed: 100,
-              items: 1
-            },
-            768: {
-              stagePadding: 80,
-              margin: 20,
-              items: 1
-            },
-            1024: {
-              stagePadding: 0,
-              margin: 0,
-            }
-          },
-        });
+      $(document).ready(function(){
 
+        if (isIE()){
+          // Carousel Hospitality
+          $('#carouselHospitality').owlCarousel({
+            slideTransition: 'ease-in-out',
+            items: 1,
+            dots: 0,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            smartSpeed: 0,
+          });
+
+          $('#locations').mouseleave(function(event) {
+              $('.modal-dialog .close').trigger('click');
+          });
+        } else {
+          // Carousel Hospitality
+          $('#carouselHospitality').owlCarousel({
+            slideTransition: 'ease-in-out',
+            items: 1,
+            dots: 0,
+            animateOut: 'slideOutLeft',
+            animateIn: 'slideInRight',
+            smartSpeed: 0,
+            responsive: {
+              0: {
+                stagePadding: 20,
+                margin: 8,
+                smartSpeed: 100,
+                items: 1
+              },
+              768: {
+                stagePadding: 80,
+                margin: 20,
+                items: 1
+              },
+              1024: {
+                stagePadding: 0,
+                margin: 0,
+              }
+            },
+          });
+        }
+
+        // Carousel Hospitality indicators
         $('.carouselHospitality-indicators li').on('click', function() {
             var $this = $(this);
             var slideNum = $(this).data('slide-to');
@@ -814,6 +835,7 @@
             $("#carouselHospitality").trigger('to.owl.carousel', [slideNum, 300]);
         });
 
+        // Carousel Hospitality Event
         $('#carouselHospitality').on('change.owl.carousel', function(event) {
           $('.carouselHospitality-indicators li').addClass('disable');
         }).on('changed.owl.carousel', function(event) {
@@ -824,6 +846,8 @@
             }, 1100);
         });
 
+
+        // Carousel Blog
         $('#carouselBlog').owlCarousel({
           slideTransition: 'ease-in-out',
           items: 3,

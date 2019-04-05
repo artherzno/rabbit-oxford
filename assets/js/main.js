@@ -1,5 +1,14 @@
 $(document).ready(function(){
+  if (isIE()){
+    console.log('It is InternetExplorer');
+    $('body').addClass('ie');
+    $('body').removeClass('not-ie');
 
+  }else{
+    console.log('It is NOT InternetExplorer');
+    $('body').removeClass('ie');
+    $('body').addClass('not-ie');
+  }
 
   // Animate Brain /////////////////////////////////////////////////////////////
   var brain = $(".brain"),
@@ -89,7 +98,7 @@ $(document).ready(function(){
 
   // Initial ///////////////////////////////////////////////////////////////////
   // Intro logo
-  $('#intro .logo').addClass('fade-in');
+  // $('#intro .logo').addClass('fade-in');
 
 
   // Nav dropdown
@@ -156,7 +165,7 @@ $(document).ready(function(){
 
   // Carousel stop autoplay
   $('#carouselCaptions.carousel').carousel({
-    interval: false
+    // interval: false
   });
 
 
@@ -228,17 +237,28 @@ $(document).ready(function(){
     .addTo(controller);
   }
 
+
+  // Intro  -------------------------------------------------- //
+  var scrollToggleClass = new ScrollMagic.Scene({
+    triggerElement: '#intro',
+    triggerHook: 0,
+    duration: 0
+  })
+  // .addIndicators({ name: 'debug indicators'})
+  .setClassToggle('#intro .logo', 'fade-in')
+  .addTo(controller);
+
   // Pin banner ----------------------------------------- //
-  pin('#banner', 0, '120%', '#banner')
+  pin('#banner', 0, '80%', '#banner');
 
   // Second content banner ----------------------------------------- //
   classToggle('#banner', 0, '80%', '#banner', 'fade-in');
 
   // Second content banner ----------------------------------------- //
-  classToggle('#banner', 0, '80%', '#banner .box.oxford-dt', 'fade-in');
+  // classToggle('#banner', 0, '80%', '#banner .box.oxford-dt', 'fade-in');
 
   // Second content banner ----------------------------------------- //
-  classToggle('#banner', 0, '80%', '#banner .box.oxford-mb .box-content', 'fade-in');
+  // classToggle('#banner', 0, '80%', '#banner .box.oxford-mb .box-content', 'fade-in');
 
   // What we do - img ----------------------------------------- //
   classToggle('#whatwedo', 0.8, '', '#whatwedo img', 'fade-in');

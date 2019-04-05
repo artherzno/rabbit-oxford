@@ -163,6 +163,14 @@ small {
             font-size: 14px;
             font-weight: bold;
             color: #b4bed4;
+
+
+            &.dropdown-item {
+              &.active {
+                color: $pink;
+                background-color: transparent;
+              }
+            }
           }
 
           &:last-child {
@@ -246,7 +254,7 @@ small {
   }
 
   #introVideo {
-    position: fixed;
+    position: absolute;
     left: -500%;
     top: 0;
     right: -500%;
@@ -272,7 +280,7 @@ small {
       text-align: center;
       @include transform(translateY(-50%));
       opacity: 0;
-      @include transition(all 2s ease-in-out);
+      @include transition(all 0.8s ease-in-out 0.8s);
 
       &.fade-in {
         opacity: 1;
@@ -422,14 +430,20 @@ small {
 
           &._first {
             @include transition(all 1.8s ease);
-            opacity: 0;
-            @include transform(translateY(100px));
+            opacity: 1;
+            @include transform(translateY(0));
+            // @include transition(all 1.8s ease);
+            // opacity: 0;
+            // @include transform(translateY(100px));
           }
 
           &._second {
             @include transition(all 1.8s ease);
-            opacity: 1;
-            @include transform(translateY(0));
+            opacity: 0;
+            @include transform(translateY(100px));
+            // @include transition(all 1.8s ease);
+            // opacity: 1;
+            // @include transform(translateY(0));
 
             p {
               // width: 56%;
@@ -441,15 +455,15 @@ small {
 
           .box-content {
 
-            &._first {
-              opacity: 1;
-              @include transform(translateY(0));
-            }
-
-            &._second {
-              opacity: 0;
-              @include transform(translateY(100px));
-            }
+            // &._first {
+            //   opacity: 1;
+            //   @include transform(translateY(0));
+            // }
+            //
+            // &._second {
+            //   opacity: 0;
+            //   @include transform(translateY(100px));
+            // }
           }
         }
 
@@ -5225,6 +5239,69 @@ $breadcrumb-divider: quote(">");
 
     .owl-stage  {
       height: 470px;
+    }
+  }
+}
+
+
+
+/***************************************************************************************************/
+/* For IE ******************************************************************************************/
+/***************************************************************************************************/
+.ie {
+
+  textarea {
+
+    &.form-control {
+      padding: 10px 20px;
+    }
+  }
+
+  .form-control {
+    padding: 0 20px;
+  }
+
+  #banner {
+
+    .container {
+
+      .content {
+
+        .box {
+
+          .box-content {
+
+            p {
+              background: none;
+              color: $gray-soft;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #hospitality {
+
+    .owl-carousel {
+
+      .owl-item {
+        opacity: 0;
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  #locations {
+
+    .modal {
+
+      .modal-dialog {
+        width: 600px;
+      }
     }
   }
 }
