@@ -2996,6 +2996,8 @@ small {
     margin-top: 60px; }
     #blogs-page .content {
       padding: 40px 0; }
+      #blogs-page .content .oxford-tl {
+        display: block !important; }
     #blogs-page .breadcrumb {
       margin-bottom: 40px; }
     #blogs-page h1 {
