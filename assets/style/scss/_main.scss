@@ -1756,13 +1756,18 @@ small {
     }
   }
 
-  .carouselBlogDetail-dot {
+  .carouselBlogDetail-dot-container {
     position: fixed;
     top: 36px;
     left: 0;
+    right: 0;
     z-index: 1099;
-    width: 100%;
+    width: 112px;
+    height: 20px;
+    overflow: auto;
+    margin: auto;
     text-align: center;
+    overflow: hidden;
     opacity: 1;
     @include transition(all 0.2s ease-out 0.2s);
 
@@ -1770,10 +1775,15 @@ small {
       opacity: 0;
     }
 
+    .carouselBlogDetail-dot {
+      // width: 280px;
+      @include transition(all 0.2s ease-out);
+    }
+
     li {
       display: inline-block;
 
-      span {
+      span{
         width: 6px;
         height: 6px;
         margin: 5px 4px;
@@ -1789,6 +1799,27 @@ small {
           background: $white;
           opacity: 1;
         }
+      }
+    }
+
+    .owl-dot {
+      width: 6px;
+      height: 6px;
+      margin: 5px 4px;
+      background: #D6D6D6;
+      opacity: 0.4;
+      border-radius: 100%;
+      border: none;
+      padding: 0;
+
+      &.active {
+          background: $white;
+          opacity: 1;
+      }
+
+      &.before {
+          background: $pink;
+          opacity: 1;
       }
     }
   }

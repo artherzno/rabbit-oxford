@@ -1748,23 +1748,33 @@ small {
         font-size: 18px; }
     #blogsdetail-page .content .carousel-dot li {
       color: #000; }
-  #blogsdetail-page .carouselBlogDetail-dot {
+  #blogsdetail-page .carouselBlogDetail-dot-container {
     position: fixed;
     top: 36px;
     left: 0;
+    right: 0;
     z-index: 1099;
-    width: 100%;
+    width: 112px;
+    height: 20px;
+    overflow: auto;
+    margin: auto;
     text-align: center;
+    overflow: hidden;
     opacity: 1;
     -webkit-transition: all 0.2s ease-out 0.2s;
     -ms-transition: all 0.2s ease-out 0.2s;
     -o-transition: all 0.2s ease-out 0.2s;
     transition: all 0.2s ease-out 0.2s; }
-    #blogsdetail-page .carouselBlogDetail-dot.hide-dot {
+    #blogsdetail-page .carouselBlogDetail-dot-container.hide-dot {
       opacity: 0; }
-    #blogsdetail-page .carouselBlogDetail-dot li {
+    #blogsdetail-page .carouselBlogDetail-dot-container .carouselBlogDetail-dot {
+      -webkit-transition: all 0.2s ease-out;
+      -ms-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    #blogsdetail-page .carouselBlogDetail-dot-container li {
       display: inline-block; }
-      #blogsdetail-page .carouselBlogDetail-dot li span {
+      #blogsdetail-page .carouselBlogDetail-dot-container li span {
         width: 6px;
         height: 6px;
         margin: 5px 4px;
@@ -1772,8 +1782,23 @@ small {
         display: block;
         opacity: 0.4;
         border-radius: 30px; }
-      #blogsdetail-page .carouselBlogDetail-dot li.active span {
+      #blogsdetail-page .carouselBlogDetail-dot-container li.active span {
         background: #fff;
+        opacity: 1; }
+    #blogsdetail-page .carouselBlogDetail-dot-container .owl-dot {
+      width: 6px;
+      height: 6px;
+      margin: 5px 4px;
+      background: #D6D6D6;
+      opacity: 0.4;
+      border-radius: 100%;
+      border: none;
+      padding: 0; }
+      #blogsdetail-page .carouselBlogDetail-dot-container .owl-dot.active {
+        background: #fff;
+        opacity: 1; }
+      #blogsdetail-page .carouselBlogDetail-dot-container .owl-dot.before {
+        background: #f7d0cb;
         opacity: 1; }
   #blogsdetail-page .related h2 {
     color: #000;
