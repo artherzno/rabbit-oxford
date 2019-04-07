@@ -159,7 +159,7 @@ $(document).ready(function(){
 
   // Carousel hidden on blogsdetail page - mobile
   $('.navbar-toggler').on('click', function() {
-    $('#blogsdetail-page .carouselBlogDetail-dot').toggleClass('hide-dot');
+    $('#blogsdetail-page .carouselBlogDetail-dot-container').toggleClass('hide-dot');
     $('.navbar-toggler-logo').toggleClass('hide-dot');
   });
 
