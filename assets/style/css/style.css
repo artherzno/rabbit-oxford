@@ -61,7 +61,8 @@ nav {
     margin: 0 15px 15px;
     padding: 0;
     font-weight: bold;
-    position: relative; }
+    position: relative;
+    text-transform: uppercase; }
     nav li.nav-item a.nav-link.dropdown-toggle {
       margin-right: 30px; }
     nav li.nav-item a.nav-link.active {
@@ -142,7 +143,8 @@ nav {
       font-weight: bold;
       border-bottom: 1px solid #f4f4f4;
       padding: 1rem 22px;
-      font-size: 14px; }
+      font-size: 14px;
+      text-transform: uppercase; }
       nav .navbar-collapse .nav.navbar-nav li.nav-item .dropdown-menu .dropdown-item:hover, nav .navbar-collapse .nav.navbar-nav li.nav-item .dropdown-menu .dropdown-item.active {
         background-color: transparent;
         color: #f7d0cb;
@@ -164,16 +166,20 @@ nav {
       text-align: center;
       color: #b4bed4;
       margin-bottom: 15px;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      text-transform: uppercase; }
   nav .oxford-mb #navbar-practics-mb + .dropdown-menu .dropdown-item {
     border: none;
     font-weight: 400;
     margin: 0;
     padding: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-transform: uppercase; }
 
-#footer .nav .nav-item .nav-link:hover {
-  color: #f7d0cb; }
+#footer .nav .nav-item .nav-link {
+  text-transform: uppercase; }
+  #footer .nav .nav-item .nav-link:hover {
+    color: #f7d0cb; }
 
 #footer .nav .nav-item.dropdown .dropdown-menu {
   padding-top: 10px;
@@ -192,7 +198,8 @@ nav {
     color: #000;
     font-weight: bold;
     border-bottom: 1px solid #f4f4f4;
-    padding: 0.5rem 22px; }
+    padding: 0.5rem 22px;
+    text-transform: uppercase; }
     #footer .nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
       background-color: transparent;
       color: #f7d0cb;
@@ -214,7 +221,8 @@ nav {
     font-weight: 400;
     margin: 0;
     padding: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-transform: uppercase; }
 
 body {
   color: #fff;
@@ -230,7 +238,8 @@ a {
     text-decoration: none; }
 
 h1 {
-  font: 600 60px/1 oswald, arial; }
+  font: 600 60px/1 oswald, arial;
+  text-transform: uppercase; }
 
 h2 {
   font: 600 40px/1.2 oswald, arial; }
@@ -288,6 +297,7 @@ small {
   display: inline-block;
   text-align: center;
   line-height: 1.6;
+  text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #1f3052), color-stop(50%, transparent));
   background: -webkit-linear-gradient(left, #1f3052 50%, transparent 50%);
   background: -o-linear-gradient(left, #1f3052 50%, transparent 50%);
@@ -316,6 +326,7 @@ small {
   display: inline-block;
   text-align: center;
   line-height: 1.6;
+  text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f7d0cb), color-stop(50%, transparent));
   background: -webkit-linear-gradient(left, #f7d0cb 50%, transparent 50%);
   background: -o-linear-gradient(left, #f7d0cb 50%, transparent 50%);
@@ -344,6 +355,7 @@ small {
   display: inline-block;
   text-align: center;
   line-height: 1.6;
+  text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #1f3052), color-stop(50%, transparent));
   background: -webkit-linear-gradient(left, #1f3052 50%, transparent 50%);
   background: -o-linear-gradient(left, #1f3052 50%, transparent 50%);
@@ -372,6 +384,7 @@ small {
   display: inline-block;
   text-align: center;
   line-height: 1.6;
+  text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f7d0cb), color-stop(50%, #1f3052));
   background: -webkit-linear-gradient(left, #f7d0cb 50%, #1f3052 50%);
   background: -o-linear-gradient(left, #f7d0cb 50%, #1f3052 50%);
@@ -400,6 +413,7 @@ small {
   display: inline-block;
   text-align: center;
   line-height: 1.6;
+  text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f7d0cb), color-stop(50%, #fff));
   background: -webkit-linear-gradient(left, #f7d0cb 50%, #fff 50%);
   background: -o-linear-gradient(left, #f7d0cb 50%, #fff 50%);
@@ -421,8 +435,10 @@ small {
   padding: 0;
   margin: 0; }
 
-.button-readmore:hover {
-  color: #f7d0cb !important; }
+.button-readmore {
+  text-transform: uppercase; }
+  .button-readmore:hover {
+    color: #f7d0cb !important; }
 
 .oxford-dt {
   display: block !important; }
@@ -570,7 +586,8 @@ small {
       left: 0;
       right: 0;
       margin: auto;
-      text-align: center; }
+      text-align: center;
+      text-transform: uppercase; }
       #intro .container .scroll-down p {
         font-size: 12px;
         margin-bottom: 15px;
@@ -1036,7 +1053,12 @@ small {
       transition: initial; }
       #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools a {
         background-position: 0;
-        opacity: 0.2; }
+        opacity: 0.2;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; }
+        #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools a.disabled {
+          display: none !important; }
       #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools .mCSB_buttonUp {
         background-image: url("../../images/icon/oxf_arrow_scroll_up.svg");
         top: 6px; }
@@ -1111,9 +1133,11 @@ small {
       transform: translateY(20%); }
     #locations .content h2 {
       margin: 0;
-      text-align: right; }
+      text-align: right;
+      text-transform: uppercase; }
     #locations .content button {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      text-transform: uppercase; }
       #locations .content button:active, #locations .content button:hover {
         color: #f7d0cb; }
     #locations .content button {
@@ -1312,6 +1336,7 @@ small {
     padding: 100px 0; }
     #getintouch .content h2 {
       font: 600 60px/1.2 oswald, arial;
+      text-transform: uppercase;
       margin-bottom: 30px;
       opacity: 0;
       -webkit-transform: translateY(50%);
@@ -1464,7 +1489,8 @@ small {
     #team-page .figure .figcaption .fullname {
       color: #1f3052;
       font: 600 22px/1.2 oswald, arial;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      text-transform: uppercase; }
     #team-page .figure .figcaption .position {
       color: #666;
       font: 400 18px/1.2 oswald, arial;
@@ -1972,7 +1998,8 @@ small {
     -ms-transform: translateY(50%);
     transform: translateY(50%); }
   #locations-page .content h2 {
-    font-size: 40px; }
+    font-size: 40px;
+    text-transform: uppercase; }
   #locations-page .content h3 {
     font: 500 30px/1 oswald, arial;
     margin-bottom: 50px; }
@@ -2145,7 +2172,8 @@ small {
   #careers-page .row.row_0 {
     margin-bottom: 0; }
     #careers-page .row.row_0 .column h3 {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      text-transform: uppercase; }
   #careers-page .row.fade-in.row_1, #careers-page .row.fade-in.row_2, #careers-page .row.fade-in.row_3, #careers-page .row.fade-in.row_4, #careers-page .row.fade-in.row_0 {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -2181,12 +2209,14 @@ small {
     font-family: oswald, arial; }
     #careers-page .row .column h3 {
       font-size: 30px;
-      margin: 0 0 15px; }
+      margin: 0 0 15px;
+      text-transform: uppercase; }
     #careers-page .row .column p {
       font-size: 20px;
       padding: 0;
       margin: 0;
-      color: #333; }
+      color: #333;
+      text-transform: uppercase; }
     #careers-page .row .column .button-readmore {
       color: #1f3052;
       clear: both;
@@ -2248,7 +2278,8 @@ small {
       -o-transition: all 0.8s ease-out 0.2s;
       transition: all 0.8s ease-out 0.2s; }
     #careers-page #careers-apply-form .section-apply label {
-      font: 400 18px/1 oswald, arial; }
+      font: 400 18px/1 oswald, arial;
+      text-transform: uppercase; }
       #careers-page #careers-apply-form .section-apply label.custom-file-upload {
         font-weight: 600;
         line-height: 1.6; }
@@ -2513,6 +2544,7 @@ small {
   border: 1px solid #999; }
   .dropdown.dropdown-list .dropdown-menu .dropdown-item {
     font: 700 20px/1 oswald, arial;
+    text-transform: uppercase;
     color: #1f3052;
     margin: 27px 0;
     padding: 0 20px; }
@@ -2589,7 +2621,8 @@ small {
       .modal .modal-dialog .modal-content .modal-body {
         padding: 0 75px 75px; }
         .modal .modal-dialog .modal-content .modal-body h2 {
-          margin-bottom: 50px; }
+          margin-bottom: 50px;
+          text-transform: uppercase; }
         .modal .modal-dialog .modal-content .modal-body p {
           margin: 0; }
 

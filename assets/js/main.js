@@ -58,7 +58,9 @@ $(document).ready(function(){
     $(this).addClass('active');
   });
 
-
+$('.nav-item a').on('click', function(event){
+  event.stopPropagation();
+});
 
   // Remove modal //////////////////////////////////////////////////////////////
   $('.modal .close').on('click', function() {
@@ -71,7 +73,7 @@ $(document).ready(function(){
   //   $('#locations .button-modal').removeClass('active');
   // }
   // $('#locations').on('mouseleave', function(){
-  //   closeModal();
+  //   $('.close').trigger('click');
   // });
 
 

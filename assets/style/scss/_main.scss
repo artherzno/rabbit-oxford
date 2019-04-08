@@ -22,6 +22,7 @@ a {
 
 h1 {
   font: 600 60px/1 oswald, arial;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -107,6 +108,7 @@ small {
 }
 
 .button-readmore {
+  text-transform: uppercase;
 
   &:hover {
     color: $pink !important;
@@ -314,6 +316,7 @@ small {
       right: 0;
       margin: auto;
       text-align: center;
+      text-transform: uppercase;
 
       p {
         font-size: 12px;
@@ -787,6 +790,11 @@ small {
           a {
             background-position: 0;
             opacity: 0.2;
+            transition: none;
+
+            &.disabled {
+              display: none !important;
+            }
           }
 
           .mCSB_buttonUp {
@@ -891,10 +899,12 @@ small {
     h2 {
       margin: 0;
       text-align: right;
+      text-transform: uppercase;
     }
 
     button {
       margin-bottom: 20px;
+      text-transform: uppercase;
 
       &:active, &:hover {
         color: $pink;
@@ -1183,7 +1193,8 @@ small {
     padding: 100px 0;
 
     h2 {
-      font: 600 60px/1.2 oswald, arial;;
+      font: 600 60px/1.2 oswald, arial;
+      text-transform: uppercase;
       margin-bottom: 30px;
       opacity: 0;
       @include transform(translateY(50%));
@@ -1326,6 +1337,7 @@ small {
         color: $blue;
         font: 600 22px/1.2 oswald, arial;
         margin-bottom: 10px;
+        text-transform: uppercase;
       }
 
       .position {
@@ -2086,6 +2098,7 @@ small {
 
     h2 {
       font-size: 40px;
+      text-transform: uppercase;
     }
 
     h3 {
@@ -2279,8 +2292,10 @@ small {
       margin-bottom: 0;
 
       .column {
+
         h3 {
           margin-bottom: 30px;
+          text-transform: uppercase;
         }
       }
     }
@@ -2316,6 +2331,7 @@ small {
       h3 {
         font-size: 30px;
         margin: 0 0 15px;
+        text-transform: uppercase;
       }
 
       p {
@@ -2323,6 +2339,7 @@ small {
         padding: 0;
         margin: 0;
         color: #333;
+        text-transform: uppercase;
       }
 
       .button-readmore {
@@ -2401,6 +2418,7 @@ small {
 
       label {
         font: 400 18px/1 oswald, arial;
+        text-transform: uppercase;
 
         &.custom-file-upload {
           font-weight: 600;
@@ -2724,16 +2742,16 @@ small {
       border: 1px solid $gray;
 
       .dropdown-item {
+        font: 700 20px/1 oswald, arial;
+        text-transform: uppercase;
+        color: $blue;
+        margin: 27px 0;
+        padding: 0 20px;
 
         &:hover {
           background-color: transparent;
           color: $pink;
         }
-
-        font: 700 20px/1 oswald, arial;
-        color: $blue;
-        margin: 27px 0;
-        padding: 0 20px;
       }
     }
   }
@@ -2828,6 +2846,7 @@ $breadcrumb-divider: quote(">");
 
         h2 {
           margin-bottom: 50px;
+          text-transform: uppercase;
         }
 
         p {

@@ -861,22 +861,27 @@
 					scrollbarPosition:"outside",
           callbacks:{
               onInit: function(){
-
-                    $('.mCSB_buttonUp').css('opacity', 0);
+                console.log('onInit');
+                $('.mCSB_buttonUp').addClass('disabled');
               },
               onScroll: function(){
-                  var $scrollPos = this.mcs.top;
-                  if($scrollPos < 0) {
-                    $('.mCSB_buttonUp').css('opacity', 1);
-                  } else {
-                    $('.mCSB_buttonUp').css('opacity', 0);
-                  }
+                var $scrollPos = this.mcs.top;
+                if($scrollPos != 0) {
+                $('.mCSB_buttonUp').removeClass('disabled');
+                $('.mCSB_buttonDown').removeClass('disabled');
+                  console.log('onScroll > '+$scrollPos);
+                } else {
+                  $('.mCSB_buttonUp').show();
+                  $('.mCSB_buttonUp').addClass('disabled');
+                  $('.mCSB_buttonDown').removeClass('disabled');
+                  console.log('onScroll > '+$scrollPos);
+                }
 
-                  $('.mCSB_buttonDown').css('opacity', 1);
               },
 
               onTotalScroll: function(){
-                  $('.mCSB_buttonDown').css('opacity', 0);
+                console.log('onTotalScroll');
+                $('.mCSB_buttonDown').addClass('disabled');
               }
           }
         });
