@@ -736,8 +736,10 @@
         <div class="container">
           <hr>
           <h2>Related Post</h2>
-          <div class="">
-            <div id="carouselRelated" class="owl-carousel owl-theme row">
+        </div>
+        <div class="container">
+          <div class="row">
+            <div id="carouselRelated" class="owl-carousel owl-theme">
               <div class="item col-md-12">
                 <a href="blogsdetail.html" class="figure _1">
                   <img src="assets/images/blogs/oxf_blog_img7.jpg" alt="Oxford Acuity">
@@ -874,27 +876,28 @@
       $(function(){
         $('#carouselRelated').owlCarousel({
           slideTransition: 'ease-in-out',
-          items: 3,
-          dots: 0,
+          dots: false,
+          nav: false,
+          center: true,
           animateOut: 'slideOutLeft',
           animateIn: 'slideInRight',
           smartSpeed: 0,
-          responsive: {
-            0: {
-              stagePadding: 12,
-              margin: 6,
-              smartSpeed: 100,
-              items: 1,
-            },
+          items: 3,
+          responsive:{
+            0:{
+                items:1,
+                stagePadding: 40,
+                margin: 20,
+              },
             768: {
-              stagePadding: 15,
-              margin: 5,
-              center:true,
-              items: 1,
+              stagePadding: 60,
+              margin: 30,
+              items: 1
             },
             1024: {
               stagePadding: 0,
               margin: 0,
+              center: false
             }
           }
         });
@@ -947,7 +950,6 @@
             if($indexCurrent > 2) {
               // Check result positon dot index end to 0
               if($indexCurrent < ($dotItemLength - 5)) {
-                console.log('AA');
                 var $resultPos = -(($indexCurrent*$dotWidth)-($dotWidth*3));
               }
 
@@ -990,12 +992,12 @@
           // $dot.css('transform', 'translateX('+ $itemPos +'px)');
 
           // console.log('$amountItembefore : '+ ($indexCurrent-5) );
-          console.log('$dotItemLength: '+$dotItemLength);
-          console.log('$indexCurrent: '+$indexCurrent);
-          console.log('$itemPos: '+$itemPos+'px');
+          // console.log('$dotItemLength: '+$dotItemLength);
+          // console.log('$indexCurrent: '+$indexCurrent);
+          // console.log('$itemPos: '+$itemPos+'px');
+          // // console.log('------------------------------');
+          // console.log('event : ',event.relatedTarget['_drag']['direction'])
           // console.log('------------------------------');
-          console.log('event : ',event.relatedTarget['_drag']['direction'])
-          console.log('------------------------------');
         });;
 
       });

@@ -229,7 +229,9 @@ body {
   font: 24px/1.2 arial; }
 
 *:focus {
-  outline: none !important; }
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
 
 a {
   color: #fff; }
@@ -491,7 +493,11 @@ small {
         margin: 0 10px;
         width: 26px;
         height: 26px;
-        display: inline-block; }
+        display: inline-block;
+        -webkit-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
         #footer .row._second .nav a.fb {
           background: url("../../images/icon/oxf_icon_fb.svg") no-repeat; }
           #footer .row._second .nav a.fb:hover {
@@ -629,6 +635,24 @@ small {
     #banner .obj.cloud {
       background-image: url("../../images/home/oxf_bg_banner_cloud.png");
       background-repeat: repeat-x;
+      -webkit-animation-name: animateCloud;
+      -webkit-animation-duration: 20s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-delay: 0;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: none;
+      -moz-animation-name: animateCloud;
+      -moz-animation-duration: 20s;
+      -moz-animation-timing-function: linear;
+      -moz-animation-delay: 0;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-direction: none;
+      animation-name: animateCloud;
+      animation-duration: 20s;
+      animation-timing-function: linear;
+      animation-delay: 0;
+      animation-iteration-count: infinite;
+      animation-direction: none;
       -webkit-transition: all 1s ease-out 0.6s;
       -ms-transition: all 1s ease-out 0.6s;
       -o-transition: all 1s ease-out 0.6s;
@@ -641,25 +665,7 @@ small {
         opacity: 1;
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-name: animateCloud;
-        -webkit-animation-duration: 14s;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-delay: 0.1s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
-        -moz-animation-name: animateCloud;
-        -moz-animation-duration: 14s;
-        -moz-animation-timing-function: linear;
-        -moz-animation-delay: 0.1s;
-        -moz-animation-iteration-count: infinite;
-        -moz-animation-direction: alternate;
-        animation-name: animateCloud;
-        animation-duration: 14s;
-        animation-timing-function: linear;
-        animation-delay: 0.1s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate; }
+        transform: translateY(0); }
   #banner .container {
     position: relative;
     height: 100%; }
@@ -868,24 +874,25 @@ small {
         transform: translateY(0); }
     #practics .obj.cloud {
       background-image: url("../../images/home/oxf_bg_practice_cloud.png");
+      background-repeat: repeat-x;
       -webkit-animation-name: animateCloud;
       -webkit-animation-duration: 20s;
       -webkit-animation-timing-function: linear;
-      -webkit-animation-delay: 0.1s;
+      -webkit-animation-delay: 0;
       -webkit-animation-iteration-count: infinite;
-      -webkit-animation-direction: alternate;
+      -webkit-animation-direction: none;
       -moz-animation-name: animateCloud;
       -moz-animation-duration: 20s;
       -moz-animation-timing-function: linear;
-      -moz-animation-delay: 0.1s;
+      -moz-animation-delay: 0;
       -moz-animation-iteration-count: infinite;
-      -moz-animation-direction: alternate;
+      -moz-animation-direction: none;
       animation-name: animateCloud;
       animation-duration: 20s;
       animation-timing-function: linear;
-      animation-delay: 0.1s;
+      animation-delay: 0;
       animation-iteration-count: infinite;
-      animation-direction: alternate; }
+      animation-direction: none; }
   #practics .container {
     position: relative;
     height: 100%;
@@ -940,6 +947,7 @@ small {
       color: #1f3052;
       margin-bottom: 30px;
       text-transform: uppercase;
+      font-weight: 500;
       float: right;
       clear: both;
       -webkit-transition: all 0.5s ease-out 0.3s;
@@ -956,7 +964,8 @@ small {
         font-size: 100px;
         margin-bottom: 30px;
         color: #f7d0cb;
-        line-height: 0.78; }
+        line-height: 0.78;
+        font-weight: 600; }
         #hospitality .figcaption h1.number.oxford-mb {
           margin-right: -20px; }
     #hospitality .figcaption p {
@@ -1031,7 +1040,7 @@ small {
     min-height: 500px; }
   #hospitality .carousel .carouselHospitality-indicators {
     display: block;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 85px;
     margin-left: auto;
     margin-right: 0;
@@ -1121,8 +1130,11 @@ small {
     padding: 120px 0;
     min-height: 800px;
     float: right; }
+    #locations .content #accordionLocation-dt {
+      margin-right: 20px; }
     #locations .content h1 {
       margin-bottom: 70px;
+      margin-right: 20px;
       -webkit-transition: all 0.5s ease-out;
       -ms-transition: all 0.5s ease-out;
       -o-transition: all 0.5s ease-out;
@@ -1134,7 +1146,8 @@ small {
     #locations .content h2 {
       margin: 0;
       text-align: right;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 400; }
     #locations .content button {
       margin-bottom: 20px;
       text-transform: uppercase; }
@@ -1223,17 +1236,21 @@ small {
       transform: translateY(0); }
     #locations .content #accordionLocation-mb button {
       float: none; }
-  #locations .mCSB_scrollTools {
-    right: -34px; }
-    #locations .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-      background-color: rgba(255, 255, 255, 0.25); }
-    #locations .mCSB_scrollTools .mCSB_draggerRail {
-      background-color: rgba(255, 255, 255, 0.1);
-      width: 4px; }
+  #locations .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: rgba(255, 255, 255, 0.25); }
+  #locations .mCSB_scrollTools .mCSB_draggerRail {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 4px; }
   #locations #accordionLocation-mb {
     padding-right: 23px; }
     #locations #accordionLocation-mb .mCSB_scrollTools {
       right: -4px; }
+
+#blog .container:first-child .content {
+  padding-bottom: 0; }
+
+#blog .container:last-child .content {
+  padding-top: 0; }
 
 #blog .content {
   padding: 100px 0; }
@@ -2154,6 +2171,16 @@ small {
 
 #careers-page .careers-list {
   padding: 0; }
+  #careers-page .careers-list .notice-nojob {
+    display: none;
+    width: 100%;
+    margin-bottom: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #999;
+    text-align: center;
+    font: 400 20px/1 arial; }
   #careers-page .careers-list .column {
     padding: 30px; }
     #careers-page .careers-list .column:hover {
@@ -2164,7 +2191,9 @@ small {
         color: #f7d0cb; }
 
 #careers-page .row {
-  margin-bottom: 40px;
+  position: relative;
+  margin: 0 0 40px;
+  background-color: #fff;
   opacity: 0;
   -webkit-transform: translateY(20%);
   -ms-transform: translateY(20%);
@@ -2242,7 +2271,8 @@ small {
     background-position: center bottom;
     padding: 70px 0; }
     #careers-page #careers-apply-form .section-apply .row {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      background-color: transparent; }
     #careers-page #careers-apply-form .section-apply form {
       opacity: 0;
       -webkit-transform: translateY(20%);
@@ -2283,10 +2313,26 @@ small {
       #careers-page #careers-apply-form .section-apply label.custom-file-upload {
         font-weight: 600;
         line-height: 1.6; }
-    #careers-page #careers-apply-form .section-apply #filetouploadname {
-      font: 400 20px/1 oswald, arial;
-      display: none;
-      width: auto; }
+    #careers-page #careers-apply-form .section-apply .uploadname {
+      overflow: hidden;
+      display: none; }
+      #careers-page #careers-apply-form .section-apply .uploadname #filetouploadname {
+        font: 400 20px/1 oswald, arial;
+        width: auto;
+        color: #1f3052;
+        text-transform: uppercase;
+        vertical-align: middle;
+        background-color: #fff;
+        float: left; }
+      #careers-page #careers-apply-form .section-apply .uploadname #deluploadname {
+        text-transform: uppercase;
+        vertical-align: middle;
+        width: 50px;
+        display: inline-block;
+        float: left;
+        padding: 4px 0;
+        height: 50px;
+        font-size: 30px; }
 
 /* Strategy page ******************************************************************/
 #strategy-page .banner {
@@ -2345,7 +2391,7 @@ small {
       position: absolute; }
       #demandfulfillment-page .content .row .column._left, #strategy-page .content .row .column._left, #financialtransformation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left {
         left: 0;
-        padding: 6% 4% 14% 6%;
+        padding: 6% 1% 14% 6%;
         z-index: 1; }
       #demandfulfillment-page .content .row .column._right, #strategy-page .content .row .column._right, #financialtransformation-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right {
         text-align: right;
@@ -2424,7 +2470,7 @@ small {
     width: 100%;
     height: 912px; }
     #demandfulfillment-page .carousel-section .carousel .carousel-item, #strategy-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item {
-      padding: 12% 0; }
+      padding: 15% 0 12%; }
       #demandfulfillment-page .carousel-section .carousel .carousel-item .row.row_1, #strategy-page .carousel-section .carousel .carousel-item .row.row_1, #financialtransformation-page .carousel-section .carousel .carousel-item .row.row_1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row.row_1 {
         opacity: 0;
         -webkit-transform: translateY(50%);
@@ -2488,15 +2534,15 @@ small {
 
 /* Keyframes ******************************************************************/
 @-webkit-keyframes animateCloud {
-  from {
+  0% {
     background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
+  100% {
+    background-position: -1920px 0; } }
 @keyframes animateCloud {
-  from {
+  0% {
     background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
+  100% {
+    background-position: -1920px 0; } }
 
 @-webkit-keyframes animateContentBanner {
   0% {
@@ -2642,9 +2688,6 @@ small {
 /* OWL Carousel ***************************************************************/
 .owl-carousel .owl-item {
   background-color: #fff; }
-
-.owl-carousel .owl-stage {
-  padding-left: 0 !important; }
 
 .owl-carousel .animated {
   -webkit-animation-duration: 1.2s;
@@ -2822,8 +2865,8 @@ small {
   #banner {
     height: 100vh; }
     #banner .obj.cloud.fade-in {
-      -webkit-animation-duration: 200s;
-      animation-duration: 200s; }
+      -webkit-animation-duration: 80s;
+      animation-duration: 80s; }
     #banner .container .content {
       margin-top: 0%;
       min-height: 0; }
@@ -2859,9 +2902,15 @@ small {
       width: 104%;
       margin-top: 60px;
       left: 0; }
-  #practics .obj.city, #practics .obj.cloud {
+  #practics .obj.city {
     background-size: 200%;
     background-position: -88px 0; }
+  #practics .obj.cloud {
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    -webkit-animation-duration: 80s;
+    animation-duration: 80s; }
   #practics .container {
     padding-top: 160px; }
     #practics .container .content {
@@ -2871,13 +2920,15 @@ small {
         margin-bottom: 30px; }
       #practics .container .content p {
         margin-bottom: 0; }
+  #hospitality .container {
+    padding: 0; }
   #hospitality .row {
     margin-bottom: 5%; }
   #hospitality .figcaption {
     padding: 0 0 0 20%; }
     #hospitality .figcaption h1 {
       font-size: 36px;
-      margin-bottom: 92%;
+      margin-bottom: 100%;
       float: right;
       padding-right: 7%; }
       #hospitality .figcaption h1.number {
@@ -2888,7 +2939,7 @@ small {
         #hospitality .figcaption h1.number.oxford-mb {
           margin-right: 7px; }
       #hospitality .figcaption h1.h-oneline {
-        margin-bottom: 108%;
+        margin-bottom: 114%;
         clear: both; }
     #hospitality .figcaption p {
       font-size: 16px;
@@ -2905,12 +2956,14 @@ small {
       float: right;
       margin-right: 10%; }
   #hospitality .figure img.oxford-mb {
-    width: 95%;
+    width: 100%;
     margin-top: 170px;
     right: 0;
     left: auto; }
-  #hospitality .carousel .carousel-inner .carousel-item {
-    min-height: 0; }
+  #hospitality .carousel {
+    padding: 0; }
+    #hospitality .carousel .carousel-inner .carousel-item {
+      min-height: 0; }
   #locations {
     background: #1b1b1b url("../../images/home/oxf_bg_locations_m.jpg") no-repeat;
     background-size: 100%; }
@@ -2991,13 +3044,16 @@ small {
     #blog .content .overflow-x-auto {
       overflow-x: auto;
       overflow-y: hidden; }
-    #blog .content #carouselBlog .owl-item:last-child {
-      margin-right: 0 !important; }
+    #blog .content #carouselBlog.owl-carousel .owl-stage {
+      padding-left: 34px !important; }
+    #blog .content #carouselBlog.owl-carousel .owl-item .item {
+      padding-left: 0;
+      padding-right: 0; }
     #blog .content .row:last-child {
       margin: 0; }
     #blog .content .row.text-center {
       width: 100%;
-      margin-top: 40px; }
+      margin-top: 10px; }
     #blog .content .row .col-md-12 {
       display: inline-block;
       width: 100%;
@@ -3157,6 +3213,11 @@ small {
           font-size: 16px; }
     #blogsdetail-page .related .container {
       padding-right: 0; }
+      #blogsdetail-page .related .container:last-child {
+        padding-left: 0; }
+    #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item {
+      padding-left: 0;
+      padding-right: 0; }
     #blogsdetail-page .related .figure .figcaption {
       padding: 24px; }
       #blogsdetail-page .related .figure .figcaption h3 {
@@ -3212,7 +3273,7 @@ small {
   #strategy-page.h-one-line .content .column img, #demandfulfillment-page.h-one-line .content .column img, #financialtransformation-page.h-one-line .content .column img, #organisationaloptimisation-page.h-one-line .content .column img {
     padding-top: 48%; }
   #strategy-page.h-one-line .carousel-section .carousel, #demandfulfillment-page.h-one-line .carousel-section .carousel, #financialtransformation-page.h-one-line .carousel-section .carousel, #organisationaloptimisation-page.h-one-line .carousel-section .carousel {
-    padding-top: 35%; }
+    padding-top: 15%; }
   #strategy-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
     height: 44vh;
     background-position: center top;
@@ -3245,10 +3306,10 @@ small {
   #strategy-page .carousel-section .carousel, #demandfulfillment-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel {
     padding-top: 45%; }
     #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child {
-      margin-top: 80px; }
+      margin-top: 15%; }
     #strategy-page .carousel-section .carousel .carousel-item .row h1, #demandfulfillment-page .carousel-section .carousel .carousel-item .row h1, #financialtransformation-page .carousel-section .carousel .carousel-item .row h1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row h1 {
       font-size: 40px;
-      margin-bottom: 45px; }
+      margin-bottom: 25px; }
     #strategy-page .carousel-section .carousel .carousel-item .row p, #demandfulfillment-page .carousel-section .carousel .carousel-item .row p, #financialtransformation-page .carousel-section .carousel .carousel-item .row p, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row p {
       font-size: 16px; }
   #strategy-page .carousel-section .carousel-control-next, #strategy-page .carousel-section .carousel-control-prev, #demandfulfillment-page .carousel-section .carousel-control-next, #demandfulfillment-page .carousel-section .carousel-control-prev, #financialtransformation-page .carousel-section .carousel-control-next, #financialtransformation-page .carousel-section .carousel-control-prev, #organisationaloptimisation-page .carousel-section .carousel-control-next, #organisationaloptimisation-page .carousel-section .carousel-control-prev {
@@ -3371,7 +3432,11 @@ small {
   .breadcrumb .breadcrumb-item {
     font-size: 20px; }
     .breadcrumb .breadcrumb-item a {
-      font-size: 20px; } }
+      font-size: 20px; }
+  /* Carousel *********************/
+  .owl-carousel .owl-stage .row {
+    margin-left: 0;
+    margin-right: 0; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #intro .container .logo .brain {
@@ -3490,8 +3555,8 @@ small {
   #banner {
     height: 100vh; }
     #banner .obj.cloud.fade-in {
-      -webkit-animation-duration: 200s;
-      animation-duration: 200s; }
+      -webkit-animation-duration: 80s;
+      animation-duration: 80s; }
     #banner .container .content .box {
       height: 475px; }
       #banner .container .content .box .box-content p {
@@ -3538,9 +3603,15 @@ small {
     #whatwedo .figure img.oxford-dt {
       display: none !important; }
   #hospitality .container {
-    max-width: 100%; }
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0; }
   #hospitality .row {
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    margin-left: 0;
+    margin-right: 0; }
   #hospitality .figcaption {
     padding: 0 0 0 20%; }
     #hospitality .figcaption.col-md-5 {
@@ -3552,8 +3623,7 @@ small {
     #hospitality .figcaption h1 {
       font-size: 36px;
       margin-bottom: 100%;
-      float: right;
-      padding-right: 5%; }
+      float: right; }
       #hospitality .figcaption h1.number {
         padding-right: 0;
         font-size: 75px; }
@@ -3583,8 +3653,8 @@ small {
     max-width: 100%; }
   #hospitality .figure img.oxford-mb {
     display: block !important;
-    width: 95%;
-    margin-top: 170px;
+    width: 100%;
+    margin-top: 150px;
     right: 0;
     left: auto; }
   #hospitality .figure img.oxford-dt {
@@ -3671,11 +3741,20 @@ small {
       #locations .content button {
         margin-bottom: 10px; }
   #blog .container {
-    max-width: 100%;
-    padding-right: 0; }
+    max-width: 100%; }
+    #blog .container:last-child {
+      padding-right: 0;
+      padding-left: 0; }
   #blog .row {
     margin-right: 0;
     margin-left: 0; }
+    #blog .row:last-child {
+      margin-top: 40px; }
+  #blog #carouselBlog.owl-carousel .owl-stage {
+    padding-left: 50px !important; }
+  #blog #carouselBlog.owl-carousel .owl-item .item {
+    padding-left: 0;
+    padding-right: 0; }
   #blog .figure .figcaption {
     padding: 24px; }
     #blog .figure .figcaption p {
@@ -3709,6 +3788,11 @@ small {
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; }
+  #blogsdetail-page #carouselRelated.owl-carousel .owl-stage {
+    padding-left: 50px !important; }
+  #blogsdetail-page #carouselRelated.owl-carousel .owl-item .item {
+    padding-left: 0;
+    padding-right: 0; }
   #blogsdetail-page .related .container {
     padding-right: 0;
     max-width: 100%; }

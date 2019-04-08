@@ -109,6 +109,7 @@
                 ALL LOCATION
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="javascript:void(0)" id="zone-all">ALL LOCATION</a>
                 <a class="dropdown-item" href="javascript:void(0)" id="zone-asia">ASIA</a>
                 <a class="dropdown-item" href="javascript:void(0)" id="zone-africa">AFRICA</a>
                 <a class="dropdown-item" href="javascript:void(0)" id="zone-europe">EUROPE</a>
@@ -119,6 +120,7 @@
         </div>
         <div class="container careers-list">
           <div class="row row_1">
+            <p class="notice-nojob">No jobs in this location</p>
             <a href="" data-zone="asia" class="column col_1 col-sm-12 col-md-6">
               <h3>BUSINESS CONSULTANT</h3>
               <p>BANGKOK</p>
@@ -131,8 +133,6 @@
               <hr>
               <p class="buttonNon button-readmore">READ MORE</p>
             </a>
-          </div>
-          <div class="row row_2">
             <a href="" data-zone="asia" class="column col_1 col-sm-12 col-md-6">
               <h3>BUSINESS PROCESS ANALYST CONSULTANT</h3>
               <p>BANGKOK</p>
@@ -145,8 +145,6 @@
               <hr>
               <p class="buttonNon button-readmore">READ MORE</p>
             </a>
-          </div>
-          <div class="row row_3">
             <a href="" data-zone="asia" class="column col_1 col-sm-12 col-md-6">
               <h3>RISK MANAGEMENT CONSULTANT</h3>
               <p>BANGKOK</p>
@@ -159,8 +157,6 @@
               <hr>
               <p class="buttonNon button-readmore">READ MORE</p>
             </a>
-          </div>
-          <div class="row row_4">
             <a href="" data-zone="asia" class="column col_1 col-sm-12 col-md-6">
               <h3>ENTERPRISE BUSINESS TRANSFORMATION CONSULTANT</h3>
               <p>BANGKOK</p>
@@ -228,7 +224,10 @@
                   </div>
                   <small>*You can upload Files that are .JPEG, .PNG, .PDF Under 20MB</small>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="filetouploadname" value="">
+                    <div class="uploadname">
+                      <input type="text" class="form-control" id="filetouploadname" value="" disabled>
+                      <input type="button" class="form-control" id="deluploadname" value="X">
+                    </div>
                   </div>
                   <button type="submit" class="buttonBlueFull">SUBMIT</button>
                 </form>

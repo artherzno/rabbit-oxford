@@ -49,35 +49,6 @@ $(document).ready(function(){
 
 
 
-  // Config Modal //////////////////////////////////////////////////////////////
-  var locattionBtn = $('#locations .button-modal');
-  locattionBtn.on('click', function(event) {
-    $('.close').trigger('click');
-    $('body').removeAttr('style');
-    $('#locations .button-modal').removeClass('active');
-    $(this).addClass('active');
-  });
-
-$('.nav-item a').on('click', function(event){
-  event.stopPropagation();
-});
-
-  // Remove modal //////////////////////////////////////////////////////////////
-  $('.modal .close').on('click', function() {
-      $('#locations .button-modal').removeClass('active');
-      $('#locations .button-head').removeClass('sub-active');
-
-  });
-  // var closeModal = function() {
-  //   $('.close').trigger('click');
-  //   $('#locations .button-modal').removeClass('active');
-  // }
-  // $('#locations').on('mouseleave', function(){
-  //   $('.close').trigger('click');
-  // });
-
-
-
  // Window scroll //////////////////////////////////////////////////////////////
   $( window ).scroll(function() {
     // Animate nav
@@ -122,10 +93,31 @@ $('.nav-item a').on('click', function(event){
     $('.overlay').removeClass('show');
 
     var zoneName = $(this).attr('id').replace('zone-','');
-    $('.careers-list .column').hide();
-    $('.careers-list .column[data-zone="'+zoneName+'"]').show();
 
-    console.log(zoneName);
+    if(zoneName == 'all') {
+      $('.careers-list .column').removeClass('disabled').fadeIn(300);
+    } else {
+      $('.careers-list .column').addClass('disabled').fadeOut(200);
+      $('.careers-list .column[data-zone="'+zoneName+'"]').removeClass('disabled').fadeIn(300);
+    }
+
+    var jobItem = $('.careers-list .row .column');
+    var jobItemDisabled = $('.careers-list .row .column.disabled');
+    var jobItemAmount = jobItem.length;
+    var jobItemDisabledAmount = jobItemDisabled.length;
+
+    if(jobItemDisabledAmount == jobItemAmount) {
+      $('.notice-nojob').fadeIn(300);
+      $('.row_0').fadeOut(200);
+    } else {
+      $('.notice-nojob').fadeOut(200);
+      $('.row_0').fadeIn(300);
+    }
+
+
+    $('#dropdownMenuButton').text($(this).text());
+
+    // console.log(zoneName);
   });
 
   // Careers apply
@@ -144,18 +136,26 @@ $('.nav-item a').on('click', function(event){
 
   // Careers file upload name
   var input = $('#filetoupload');
-  var infoArea = $('#filetouploadname');
+  var infoArea = $('.uploadname');
+  var infoName = $('#filetouploadname');
+  var delName = $('#deluploadname');
   input.on( 'change', showFileName );
+
+  delName.on('click', function(){
+      infoName.val('');
+  });
+
   function showFileName( event ) {
     // console.log(event);
     // console.log(event.currentTarget.value);
     var input = event.currentTarget.value;
     var fileName = input.match(/[^\\/]*$/)[0];
     // console.log(fileName);
-    infoArea.show().val(fileName);
+    infoName.val(fileName);
+    infoArea.show();
 
     // Dynamic input
-    infoArea.attr('size', (infoArea.val().length));
+    infoName.attr('size', (infoName.val().length));
   }
 
 
@@ -167,11 +167,20 @@ $('.nav-item a').on('click', function(event){
 
   // Carousel stop autoplay
   $('#carouselCaptions.carousel').carousel({
-    // interval: false
+    interval: false
   });
 
 
   // Locatios accordion - desktop
+  $('#accordionLocation-dt .button-head').on('click', function() {
+    $('html, body').animate({
+        scrollTop: $("#locations").offset().top
+    }, 400);
+    $('.modal-dialog .close').trigger('click');
+    $('#locations .button-modal').removeClass('active');
+
+  });
+
   $('#accordionLocation-dt .button-modal').on('click', function() {
     var $thisAttr = $(this).attr('aria-expanded');
     var $collapseBoxButtonParent = $(this).parent('.collapse').prev('.button-head');
@@ -184,6 +193,29 @@ $('.nav-item a').on('click', function(event){
       $collapseBoxButtonParent.addClass('sub-active');
     }
   });
+
+  // Locations Config Modal //////////////////////////////////////////////////////////////
+    var locattionBtn = $('#locations .button-modal');
+    locattionBtn.on('click', function(event) {
+      $('.modal-dialog .close').trigger('click');
+      $('body').removeAttr('style');
+      $('#locations .button-modal').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    // Locations Remove modal //////////////////////////////////////////////////////////////
+    $('.modal .close').on('click', function() {
+        $('#locations .button-modal').removeClass('active');
+        $('#locations .button-head').removeClass('sub-active');
+
+    });
+    // var closeModal = function() {
+    //   $('.modal-dialog .close').trigger('click');
+    //   $('#locations .button-modal').removeClass('active');
+    // }
+    // $('#locations').on('mouseleave', function(){
+    //   $('.modal-dialog .close').trigger('click');
+    // });
 
   // Locations accordion - mobile
   $('.collapse-box button').on('click', function() {
@@ -208,6 +240,8 @@ $('.nav-item a').on('click', function(event){
     $buttonNon.attr('aria-expanded', 'false');
     $collaspe.removeClass('show');
   });
+
+
 
   // Banner content animation
   // setInterval(function(){$('#banner .oxford-mb .box-content').toggleClass('fade-in')}, 4000);
@@ -383,12 +417,12 @@ $('.nav-item a').on('click', function(event){
   // Careers - row ----------------------------------------- //
   classToggle('#careers-page .row_1', 0.8, '', '#careers-page .row_1', 'fade-in');
 
-  classToggle('#careers-page .row_2', 0.8, '', '#careers-page .row_2', 'fade-in');
-
-  classToggle('#careers-page .row_3', 0.8, '', '#careers-page .row_3', 'fade-in');
-
-  classToggle('#careers-page .row_4', 0.8, '', '#careers-page .row_4', 'fade-in');
-
+  // classToggle('#careers-page .row_2', 0.8, '', '#careers-page .row_2', 'fade-in');
+  //
+  // classToggle('#careers-page .row_3', 0.8, '', '#careers-page .row_3', 'fade-in');
+  //
+  // classToggle('#careers-page .row_4', 0.8, '', '#careers-page .row_4', 'fade-in');
+  //
   classToggle('#careers-page .row_0', 0.8, '', '#careers-page .row_0', 'fade-in');
 
   // classToggle('#careers-page .section-apply', 0.8, '', '#careers-page .section-apply', 'fade-in');
