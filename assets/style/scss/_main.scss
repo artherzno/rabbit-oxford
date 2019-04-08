@@ -778,6 +778,36 @@ small {
       opacity: 0;
       @include transform(translateY(20%));
 
+      .mCSB_outside {
+
+        +.mCSB_scrollTools {
+          left: -16px;
+          @include transition(initial);
+
+          a {
+            background-position: 0;
+            opacity: 0.2;
+          }
+
+          .mCSB_buttonUp {
+            background-image: url('../../images/icon/oxf_arrow_scroll_up.svg');
+            top: 6px;
+          }
+
+          .mCSB_buttonDown {
+            background-image: url('../../images/icon/oxf_arrow_scroll_down.svg');
+            bottom: 6px;
+          }
+
+          a {
+
+            +.mCSB_draggerContainer {
+              opacity: 0;
+            }
+          }
+        }
+      }
+
       li {
         text-indent: 0;
         color: $black;
@@ -979,6 +1009,30 @@ small {
       button {
         float: none;
       }
+    }
+  }
+
+  .mCSB_scrollTools {
+    right: -34px;
+
+    .mCSB_dragger {
+
+      .mCSB_dragger_bar {
+        background-color: rgba(255,255,255,0.25);
+      }
+    }
+
+    .mCSB_draggerRail {
+      background-color: rgba(255,255,255,0.1);
+      width: 4px;
+    }
+  }
+
+  #accordionLocation-mb {
+    padding-right: 23px;
+
+    .mCSB_scrollTools {
+      right: -4px;
     }
   }
 }
@@ -1811,6 +1865,7 @@ small {
       border-radius: 100%;
       border: none;
       padding: 0;
+      pointer-events: none;
 
       &.active {
           background: $white;

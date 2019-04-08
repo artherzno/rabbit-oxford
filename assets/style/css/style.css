@@ -1028,6 +1028,23 @@ small {
     -webkit-transform: translateY(20%);
     -ms-transform: translateY(20%);
     transform: translateY(20%); }
+    #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools {
+      left: -16px;
+      -webkit-transition: initial;
+      -ms-transition: initial;
+      -o-transition: initial;
+      transition: initial; }
+      #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools a {
+        background-position: 0;
+        opacity: 0.2; }
+      #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools .mCSB_buttonUp {
+        background-image: url("../../images/icon/oxf_arrow_scroll_up.svg");
+        top: 6px; }
+      #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools .mCSB_buttonDown {
+        background-image: url("../../images/icon/oxf_arrow_scroll_down.svg");
+        bottom: 6px; }
+      #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools a + .mCSB_draggerContainer {
+        opacity: 0; }
     #hospitality .carousel .carouselHospitality-indicators li {
       text-indent: 0;
       color: #000;
@@ -1182,6 +1199,17 @@ small {
       transform: translateY(0); }
     #locations .content #accordionLocation-mb button {
       float: none; }
+  #locations .mCSB_scrollTools {
+    right: -34px; }
+    #locations .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+      background-color: rgba(255, 255, 255, 0.25); }
+    #locations .mCSB_scrollTools .mCSB_draggerRail {
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 4px; }
+  #locations #accordionLocation-mb {
+    padding-right: 23px; }
+    #locations #accordionLocation-mb .mCSB_scrollTools {
+      right: -4px; }
 
 #blog .content {
   padding: 100px 0; }
@@ -1793,7 +1821,8 @@ small {
       opacity: 0.4;
       border-radius: 100%;
       border: none;
-      padding: 0; }
+      padding: 0;
+      pointer-events: none; }
       #blogsdetail-page .carouselBlogDetail-dot-container .owl-dot.active {
         background: #fff;
         opacity: 1; }
