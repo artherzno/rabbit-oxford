@@ -242,7 +242,7 @@ small {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url('../../images/home/oxf_bg_intro.jpg') no-repeat;
+  background: #000 url('../../images/home/oxf_bg_intro.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
   @include transform-style(preserve-3d);
@@ -1450,7 +1450,7 @@ small {
     background-position: center bottom;
 
     img {
-      width: 50%;
+      width: 100%;
       display: inline-block;
       margin-top: 4%;
       opacity: 0;
@@ -3883,7 +3883,7 @@ $breadcrumb-divider: quote(">");
 
       img {
         margin-top: 14%;
-        width: 60%;
+        width: 100%;
       }
 
       .wording {
@@ -4232,6 +4232,7 @@ $breadcrumb-divider: quote(">");
 
         .carousel {
           padding-top: 15%;
+          height: 745px;
         }
       }
     }
@@ -4734,7 +4735,7 @@ $breadcrumb-divider: quote(">");
           margin-top: 35px;
 
           p {
-            font-size: 1px;
+            font-size: 14px;
             margin: 0;
           }
         }
@@ -5204,7 +5205,7 @@ $breadcrumb-divider: quote(">");
       &.owl-carousel {
 
         .owl-stage {
-          padding-left: 50px !important;
+          // padding-left: 50px !important;
         }
 
         .owl-item {
@@ -5558,6 +5559,13 @@ $breadcrumb-divider: quote(">");
 
   .form-control {
     padding: 0 20px;
+  }
+
+  .dropdown.dropdown-list {
+
+    .dropdown-toggle {
+      background-size: 58px;
+    }
   }
 
   #banner {

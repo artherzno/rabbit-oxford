@@ -515,7 +515,7 @@ small {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url("../../images/home/oxf_bg_intro.jpg") no-repeat;
+  background: #000 url("../../images/home/oxf_bg_intro.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   -webkit-transform-style: preserve-3d;
@@ -1545,7 +1545,7 @@ small {
     background-size: cover;
     background-position: center bottom; }
     #teamdetail-page .banner img {
-      width: 50%;
+      width: 100%;
       display: inline-block;
       margin-top: 4%;
       opacity: 0;
@@ -3116,7 +3116,7 @@ small {
   /* Team detail page ************/
   #teamdetail-page .banner img {
     margin-top: 14%;
-    width: 60%; }
+    width: 100%; }
   #teamdetail-page .banner .wording {
     width: 38%;
     font-size: 16px;
@@ -3273,7 +3273,8 @@ small {
   #strategy-page.h-one-line .content .column img, #demandfulfillment-page.h-one-line .content .column img, #financialtransformation-page.h-one-line .content .column img, #organisationaloptimisation-page.h-one-line .content .column img {
     padding-top: 48%; }
   #strategy-page.h-one-line .carousel-section .carousel, #demandfulfillment-page.h-one-line .carousel-section .carousel, #financialtransformation-page.h-one-line .carousel-section .carousel, #organisationaloptimisation-page.h-one-line .carousel-section .carousel {
-    padding-top: 15%; }
+    padding-top: 15%;
+    height: 745px; }
   #strategy-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
     height: 44vh;
     background-position: center top;
@@ -3535,7 +3536,7 @@ small {
       text-align: center;
       margin-top: 35px; }
       #footer .row._second .copyright-m p {
-        font-size: 1px;
+        font-size: 14px;
         margin: 0; }
     #footer .row._second .social {
       text-align: center; }
@@ -3788,8 +3789,6 @@ small {
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; }
-  #blogsdetail-page #carouselRelated.owl-carousel .owl-stage {
-    padding-left: 50px !important; }
   #blogsdetail-page #carouselRelated.owl-carousel .owl-item .item {
     padding-left: 0;
     padding-right: 0; }
@@ -3916,6 +3915,9 @@ small {
 
 .ie .form-control {
   padding: 0 20px; }
+
+.ie .dropdown.dropdown-list .dropdown-toggle {
+  background-size: 58px; }
 
 .ie #banner .container .content .box .box-content p {
   background: none;

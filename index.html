@@ -83,7 +83,7 @@
               <a href="careers.html" class="nav-link">CAREERS<hr></a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">CONTACT US<hr></a>
+              <a href="" class="nav-link">CONTACT US&nbsp;&nbsp;&nbsp;<hr></a>
             </li>
           </ul>
           </div>
@@ -305,10 +305,6 @@
               <li data-target="#carouselHospitality" data-slide-to="3">04 Demand Fulfillment</li>
               <li data-target="#carouselHospitality" data-slide-to="4">05 OrganiSational OptimiSation</li>
               <li data-target="#carouselHospitality" data-slide-to="5">06 Financial Transformation</li>
-              <li data-target="#carouselHospitality" data-slide-to="">07 Menu</li>
-              <li data-target="#carouselHospitality" data-slide-to="">08 Menu</li>
-              <li data-target="#carouselHospitality" data-slide-to="">09 Menu</li>
-              <li data-target="#carouselHospitality" data-slide-to="">10 Menu</li>
             </ol>
           </div>
 
@@ -703,23 +699,25 @@
               dots: false,
               nav: false,
               center: true,
+              smartSpeed: 0,
               animateOut: 'slideOutLeft',
               animateIn: 'slideInRight',
-              smartSpeed: 0,
               responsive:{
                 0:{
                     items:1,
                     stagePadding: 50,
+                    smartSpeed: 200,
                     margin: 0,
                   },
                 768: {
                   stagePadding: 60,
                   margin: 0,
+                  smartSpeed: 200,
                   items: 1
                 },
                 1024: {
-                  stagePadding: 0,
-                  margin: 0,
+                  mouseDrag: false,
+                  touchDrag: false,
                   items: 1
                 }
               }
@@ -739,12 +737,21 @@
         // Carousel Hospitality Event
         $('#carouselHospitality').on('change.owl.carousel', function(event) {
           $('.carouselHospitality-indicators li').addClass('disable');
+
         }).on('changed.owl.carousel', function(event) {
+
+            // Delay for animate error
             var currentItem = event.item.index;
             $('.carouselHospitality-indicators li').removeClass('active').eq(currentItem).addClass('active');
             setTimeout(function () {
               $('.carouselHospitality-indicators li').removeClass('disable');
             }, 1100);
+
+            // Delay for animate error
+            $('#carouselHospitality .owl-stage').css('pointer-events', 'none');
+            setTimeout(function () {
+              $('#carouselHospitality .owl-stage').css('pointer-events', 'auto');
+            }, 400);
         });
 
         // M scroll Hospitality
@@ -782,7 +789,7 @@
 
         // M scroll Location
         $('#accordionLocation-dt').mCustomScrollbar({
-          setHeight: '300px',
+          setHeight: '580px',
           theme:"light",
           scrollbarPosition:"outside"
         });
@@ -807,20 +814,34 @@
           responsive:{
             0:{
                 items:1,
+                smartSpeed: 200,
                 stagePadding: 40,
                 margin: 20,
               },
             768: {
               stagePadding: 60,
               margin: 30,
-              items: 1
+              smartSpeed: 200,
+              items: 2,
+              center: true,
+              loop: true
             },
             1024: {
               stagePadding: 0,
               margin: 0,
+              mouseDrag: false,
+              touchDrag: false,
               center: false,
             }
           }
+        });
+
+        $('#carouselBlog').on('changed.owl.carousel', function(event) {
+            // Delay for animate error
+            $('#carouselBlog .owl-stage').css('pointer-events', 'none');
+            setTimeout(function () {
+              $('#carouselBlog .owl-stage').css('pointer-events', 'auto');
+            }, 400);
         });
 
       });
