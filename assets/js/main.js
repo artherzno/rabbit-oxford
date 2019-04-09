@@ -429,6 +429,26 @@ $(document).ready(function(){
   // classToggle('#careers-page .section-apply', 0.8, '', '#careers-page .section-apply', 'fade-in');
 
 
+  // Contact us - banner ----------------------------------------- //
+  classToggle('#contactus-page', 0.8, '', '#contactus-page .banner', 'fade-in');
+
+  // Careers - header ----------------------------------------- //
+  classToggle('#contactus-page .content', 0.7, '', '#contactus-page .content', 'fade-in');
+
+  // Careers - row ----------------------------------------- //
+  classToggle('#contactus-page  #contactus-form', 0.8, '', '#contactus-page .section-form', 'fade-in');
+
+  // classToggle('#contactus-page .row_2', 0.8, '', '#contactus-page .row_2', 'fade-in');
+  //
+  // classToggle('#contactus-page .row_3', 0.8, '', '#contactus-page .row_3', 'fade-in');
+  //
+  // classToggle('#contactus-page .row_4', 0.8, '', '#contactus-page .row_4', 'fade-in');
+  //
+  classToggle('#contactus-page .row_0', 0.8, '', '#contactus-page .row_0', 'fade-in');
+
+  // classToggle('#contactus-page .section-apply', 0.8, '', '#contactus-page .section-apply', 'fade-in');
+
+
   // Demandfulfillment - banner ----------------------------------------- //
   classToggle('#demandfulfillment-page', 0.8, '', '#demandfulfillment-page .banner', 'fade-in');
 

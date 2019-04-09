@@ -25,6 +25,13 @@ nav {
     .navbar-nav {
       margin-top: 30px;
       margin-left: auto;
+
+      .nav-item {
+
+        span {
+          display: inline-block !important;
+        }
+      }
     }
   }
 
