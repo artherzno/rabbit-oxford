@@ -429,6 +429,19 @@ $(document).ready(function(){
   // classToggle('#careers-page .section-apply', 0.8, '', '#careers-page .section-apply', 'fade-in');
 
 
+  // Careers Detail - banner ----------------------------------------- //
+  classToggle('#careersdetail-page', 0.8, '', '#careersdetail-page .banner', 'fade-in');
+
+  // Careers - header ----------------------------------------- //
+  classToggle('#careersdetail-page .content', 0.7, '', '#careersdetail-page .content', 'fade-in');
+
+  // Careers - row ----------------------------------------- //
+  classToggle('#careersdetail-page .content', 0.8, '', '#careersdetail-page .careers-detail', 'fade-in');
+
+  // Careers Apply form - row ----------------------------------------- //
+  classToggle('#careersdetail-page #careers-apply-form', 0.7, '', '#careersdetail-page #careers-apply-form .section-apply', 'fade-in');
+
+
   // Contact us - banner ----------------------------------------- //
   classToggle('#contactus-page', 0.8, '', '#contactus-page .banner', 'fade-in');
 

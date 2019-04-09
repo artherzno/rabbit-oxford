@@ -730,26 +730,26 @@ small {
             -ms-transition: all 1.8s ease;
             -o-transition: all 1.8s ease;
             transition: all 1.8s ease;
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-            transform: translateY(0); }
+            opacity: 0;
+            -webkit-transform: translateY(100px);
+            -ms-transform: translateY(100px);
+            transform: translateY(100px); }
           #banner .container .content .box .box-content._second {
             -webkit-transition: all 1.8s ease;
             -ms-transition: all 1.8s ease;
             -o-transition: all 1.8s ease;
             transition: all 1.8s ease;
-            opacity: 0;
-            -webkit-transform: translateY(100px);
-            -ms-transform: translateY(100px);
-            transform: translateY(100px); }
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0); }
         #banner .container .content .box.oxford-mb .box-content._first {
-          opacity: 1; }
+          opacity: 0; }
         #banner .container .content .box.oxford-mb .box-content._second {
           -webkit-transform: translateY(150px);
           -ms-transform: translateY(150px);
           transform: translateY(150px);
-          opacity: 0; }
+          opacity: 1; }
         #banner .container .content .box.oxford-mb .box-content.fade-in._first {
           opacity: 0; }
         #banner .container .content .box.oxford-mb .box-content.fade-in._second {
@@ -2336,6 +2336,148 @@ small {
         height: 50px;
         font-size: 30px; }
 
+/* Careers page ******************************************************************/
+#careersdetail-page {
+  background-image: url("../../images/career/oxf_bg_content.jpg");
+  background-color: #131212;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover; }
+  #careersdetail-page .content {
+    padding: 170px 0 70px; }
+    #careersdetail-page .content.fade-in .breadcrumb {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    #careersdetail-page .content.fade-in .dropdown {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  #careersdetail-page .breadcrumb {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+    #careersdetail-page .breadcrumb .breadcrumb-item.active {
+      color: #fff; }
+  #careersdetail-page .careers-detail {
+    padding: 90px 70px;
+    background-color: rgba(172, 172, 172, 0.2);
+    font-size: 20px;
+    line-height: 1.4;
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.8s ease-out 0.2s;
+    -ms-transition: all 0.8s ease-out 0.2s;
+    -o-transition: all 0.8s ease-out 0.2s;
+    transition: all 0.8s ease-out 0.2s; }
+    #careersdetail-page .careers-detail.fade-in {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    #careersdetail-page .careers-detail h1 {
+      color: #fff;
+      font-size: 50px;
+      font-weight: 500;
+      margin-bottom: 15px; }
+    #careersdetail-page .careers-detail h2 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 60px;
+      text-transform: uppercase; }
+    #careersdetail-page .careers-detail h3 {
+      font-weight: 500;
+      margin-bottom: 45px;
+      text-transform: uppercase; }
+    #careersdetail-page .careers-detail ul {
+      margin-bottom: 45px;
+      padding: 0 0 0 20px; }
+      #careersdetail-page .careers-detail ul:last-child {
+        margin: 0; }
+      #careersdetail-page .careers-detail ul li {
+        margin-bottom: 15px; }
+  #careersdetail-page #careers-apply-form {
+    width: 100%;
+    height: auto; }
+    #careersdetail-page #careers-apply-form .section-apply {
+      width: 100%;
+      height: auto;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+      padding: 70px 0; }
+      #careersdetail-page #careers-apply-form .section-apply .row {
+        margin-bottom: 0;
+        background-color: transparent; }
+      #careersdetail-page #careers-apply-form .section-apply form {
+        opacity: 0;
+        -webkit-transform: translateY(20%);
+        -ms-transform: translateY(20%);
+        transform: translateY(20%);
+        -webkit-transition: all 0.8s ease-out 0.2s;
+        -ms-transition: all 0.8s ease-out 0.2s;
+        -o-transition: all 0.8s ease-out 0.2s;
+        transition: all 0.8s ease-out 0.2s; }
+      #careersdetail-page #careers-apply-form .section-apply.fade-in form, #careersdetail-page #careers-apply-form .section-apply.fade-in .row, #careersdetail-page #careers-apply-form .section-apply.fade-in h3 {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1; }
+      #careersdetail-page #careers-apply-form .section-apply .form-row .form-group {
+        padding: 0 22px 0 0; }
+        #careersdetail-page #careers-apply-form .section-apply .form-row .form-group:last-child {
+          padding: 0 0 0 22px; }
+        #careersdetail-page #careers-apply-form .section-apply .form-row .form-group h3 {
+          margin: 30px 0; }
+      #careersdetail-page #careers-apply-form .section-apply h3 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        opacity: 0;
+        -webkit-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+        transform: translateY(200%);
+        -webkit-transition: all 0.8s ease-out 0.2s;
+        -ms-transition: all 0.8s ease-out 0.2s;
+        -o-transition: all 0.8s ease-out 0.2s;
+        transition: all 0.8s ease-out 0.2s; }
+      #careersdetail-page #careers-apply-form .section-apply label {
+        font: 400 18px/1 oswald, arial;
+        text-transform: uppercase; }
+        #careersdetail-page #careers-apply-form .section-apply label.custom-file-upload {
+          font-weight: 600;
+          line-height: 1.6; }
+      #careersdetail-page #careers-apply-form .section-apply .uploadname {
+        overflow: hidden;
+        display: none; }
+        #careersdetail-page #careers-apply-form .section-apply .uploadname #filetouploadname {
+          font: 400 20px/1 oswald, arial;
+          width: auto;
+          color: #1f3052;
+          text-transform: uppercase;
+          vertical-align: middle;
+          background-color: #fff;
+          float: left; }
+        #careersdetail-page #careers-apply-form .section-apply .uploadname #deluploadname {
+          text-transform: uppercase;
+          vertical-align: middle;
+          width: 50px;
+          display: inline-block;
+          float: left;
+          padding: 4px 0;
+          height: 50px;
+          font-size: 30px; }
+
 /* Contact us page ******************************************************************/
 #contactus-page .banner {
   width: 100%;
@@ -3081,7 +3223,7 @@ small {
     -ms-transition: all 0.2s ease-in 0.3s;
     -o-transition: all 0.2s ease-in 0.3s;
     transition: all 0.2s ease-in 0.3s; }
-    nav .navbar-nav-list .navbar-nav .nav-item .nav-item span {
+    nav .navbar-nav-list .navbar-nav .nav-item span {
       display: inline-block !important; }
   nav #collapsibleNavbar {
     background-color: #1f3052;
@@ -3693,8 +3835,8 @@ small {
     padding: 0 15px;
     margin-top: 40px; }
   #careers-page #careers-apply-form .section-apply {
-    background-position: 90% 110%;
-    background-size: 320%;
+    background-position: 92% 80%;
+    background-size: 290%;
     background-color: #131313; }
     #careers-page #careers-apply-form .section-apply .form-row .form-group {
       padding: 0; }
@@ -3709,6 +3851,34 @@ small {
   #careers-page #careers-apply-form button[type="submit"] {
     width: 100%;
     height: 50px; }
+  /* Careers Detail page ********************/
+  #careersdetail-page {
+    background-position: 92% 103%;
+    background-size: 290%; }
+    #careersdetail-page .content {
+      padding: 120px 0 70px; }
+    #careersdetail-page .careers-detail {
+      padding: 60px 20px;
+      font-size: 16px; }
+      #careersdetail-page .careers-detail h1 {
+        line-height: 1.2; }
+      #careersdetail-page .careers-detail h3 {
+        font-weight: 400; }
+      #careersdetail-page .careers-detail ul li {
+        margin-bottom: 10px; }
+    #careersdetail-page #careers-apply-form .section-apply .form-row .form-group {
+      padding: 0; }
+      #careersdetail-page #careers-apply-form .section-apply .form-row .form-group:last-child {
+        padding: 0; }
+    #careersdetail-page #careers-apply-form .section-apply label.custom-file-upload {
+      width: 100%;
+      height: 50px; }
+    #careersdetail-page #careers-apply-form .section-apply #filetouploadname {
+      width: 100%;
+      height: 50px; }
+    #careersdetail-page #careers-apply-form button[type="submit"] {
+      width: 100%;
+      height: 50px; }
   /* Contact us page ********************/
   #contactus-page .banner {
     height: 44vh;
@@ -4171,9 +4341,9 @@ small {
     #blogsdetail-page .related .container .owl-carousel {
       margin-left: 0;
       margin-right: 0; }
-  #team-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #organisationaloptimisation-page .banner, #financialtransformation-page .banner, #locations-page .banner, #careers-page .banner {
+  #team-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #organisationaloptimisation-page .banner, #financialtransformation-page .banner, #locations-page .banner, #careers-page .banner, #contactus-page .banner {
     height: 100vh; }
-    #team-page .banner .container h1, #strategy-page .banner .container h1, #demandgeneration-page .banner .container h1, #demandfulfillment-page .banner .container h1, #organisationaloptimisation-page .banner .container h1, #financialtransformation-page .banner .container h1, #locations-page .banner .container h1, #careers-page .banner .container h1 {
+    #team-page .banner .container h1, #strategy-page .banner .container h1, #demandgeneration-page .banner .container h1, #demandfulfillment-page .banner .container h1, #organisationaloptimisation-page .banner .container h1, #financialtransformation-page .banner .container h1, #locations-page .banner .container h1, #careers-page .banner .container h1, #contactus-page .banner .container h1 {
       font-size: 90px; }
   #strategy-page .col-md-4, #strategy-page .col-md-8, #demandgeneration-page .col-md-4, #demandgeneration-page .col-md-8, #demandfulfillment-page .col-md-4, #demandfulfillment-page .col-md-8, #organisationaloptimisation-page .col-md-4, #organisationaloptimisation-page .col-md-8, #financialtransformation-page .col-md-4, #financialtransformation-page .col-md-8 {
     -webkit-box-flex: 0;
@@ -4224,6 +4394,22 @@ small {
     padding: 0; }
     #careers-page #careers-apply-form .section-apply .form-row .form-group:last-child {
       padding: 0; }
+  #careersdetail-page {
+    background-position: 92% 102%;
+    background-size: 130%; }
+    #careersdetail-page .content {
+      padding: 120px 0 70px; }
+    #careersdetail-page #careers-apply-form .section-apply.fade-in {
+      background-position: 82% bottom; }
+    #careersdetail-page #careers-apply-form .section-apply .col-md-6 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+    #careersdetail-page #careers-apply-form .section-apply .form-row .form-group {
+      padding: 0; }
+      #careersdetail-page #careers-apply-form .section-apply .form-row .form-group:last-child {
+        padding: 0; }
   #contactus-page .banner {
     height: 44vh;
     background-position: center top;
