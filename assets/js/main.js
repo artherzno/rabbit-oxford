@@ -143,6 +143,7 @@ $(document).ready(function(){
 
   delName.on('click', function(){
       infoName.val('');
+      infoArea.hide();
   });
 
   function showFileName( event ) {
@@ -446,6 +447,16 @@ $(document).ready(function(){
 
   // Strategy - carousel ----------------------------------------- //
   classToggle('#strategy-page .carousel-section', 0.7, '', '#strategy-page .carousel-section', 'fade-in');
+
+
+  // Demand Generation - banner ----------------------------------------- //
+  classToggle('#demandgeneration-page', 0.8, '', '#demandgeneration-page .banner', 'fade-in');
+
+  // Demand Generation - header ----------------------------------------- //
+  classToggle('#demandgeneration-page .content', 0.7, '', '#demandgeneration-page .content', 'fade-in');
+
+  // Demand Generation - carousel ----------------------------------------- //
+  classToggle('#demandgeneration-page .carousel-section', 0.7, '', '#demandgeneration-page .carousel-section', 'fade-in');
 
 
   // Financial Transformation - banner ----------------------------------------- //

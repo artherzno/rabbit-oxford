@@ -2509,6 +2509,12 @@ small {
   }
 }
 
+#demandgeneration-page {
+  .banner {
+    background: url('../../images/demandgeneration/oxf_bg_banner.jpg') no-repeat;
+  }
+}
+
 #demandfulfillment-page {
   .banner {
     background: url('../../images/demandfulfillment/oxf_bg_banner.jpg') no-repeat;
@@ -2527,7 +2533,7 @@ small {
   }
 }
 
-#demandfulfillment-page, #strategy-page, #financialtransformation-page, #organisationaloptimisation-page {
+#demandfulfillment-page, #strategy-page, #demandgeneration-page, #financialtransformation-page, #organisationaloptimisation-page {
   .banner {
     width: 100%;
     height: 890px;
@@ -3049,7 +3055,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #strategy-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
 
     &.h-one-line {
 
@@ -4214,7 +4220,7 @@ $breadcrumb-divider: quote(">");
   }
 
   /* Practices all *******************/
-  #strategy-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
 
     &.h-one-line {
 
@@ -5236,7 +5242,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #team-page, #strategy-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page, #locations-page, #careers-page  {
+  #team-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page, #locations-page, #careers-page  {
 
     .banner {
       height: 100vh;
@@ -5250,7 +5256,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #strategy-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page {
+  #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page {
 
     .col-md-4, .col-md-8 {
       flex: 0 0 100%;
