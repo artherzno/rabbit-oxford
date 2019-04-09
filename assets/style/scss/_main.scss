@@ -2937,9 +2937,21 @@ small {
             }
           }
 
-          p {
-            font-size: 22px;
+          .figcaption {
+            a {
+              display: inline-block;
+
+              p {
+                font-size: 22px;
+              }
+            }
+
+            &.tel {
+              margin-top: -8px;
+            }
           }
+
+
         }
       }
 

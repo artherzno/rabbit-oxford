@@ -2694,8 +2694,12 @@ small {
         #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
           width: 42px;
           margin-right: 40px; }
-        #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail p {
-          font-size: 22px; }
+        #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption a {
+          display: inline-block; }
+          #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption a p {
+            font-size: 22px; }
+        #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption.tel {
+          margin-top: -8px; }
     #contactus-page #contactus-form .section-form form {
       padding: 60px 90px;
       -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
