@@ -23,8 +23,6 @@ nav {
     nav.navbar .navbar-nav {
       margin-top: 30px;
       margin-left: auto; }
-      nav.navbar .navbar-nav .nav-item span {
-        display: inline-block !important; }
   nav.show-logo .navbar-brand .logo {
     opacity: 1; }
   nav .navbar-brand {
@@ -3083,6 +3081,8 @@ small {
     -ms-transition: all 0.2s ease-in 0.3s;
     -o-transition: all 0.2s ease-in 0.3s;
     transition: all 0.2s ease-in 0.3s; }
+    nav .navbar-nav-list .navbar-nav .nav-item .nav-item span {
+      display: inline-block !important; }
   nav #collapsibleNavbar {
     background-color: #1f3052;
     opacity: 0;
@@ -3833,6 +3833,8 @@ small {
     display: none !important; }
   nav .oxford-mb, nav .oxford-tl {
     display: block !important; }
+  nav .navbar-nav .oxford-mb {
+    display: inline-block !important; }
   nav.navbar {
     top: 0;
     height: 58px; }

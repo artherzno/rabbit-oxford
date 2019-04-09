@@ -3643,6 +3643,20 @@ $breadcrumb-divider: quote(">");
       margin-top: 20%;
       opacity: 0;
       @include transition(all 0.2s ease-in 0.3s);
+
+      .navbar-nav {
+
+        .nav-item {
+
+
+          .nav-item {
+
+            span {
+              display: inline-block !important;
+            }
+          }
+        }
+      }
     }
 
     #collapsibleNavbar {
@@ -5115,6 +5129,13 @@ $breadcrumb-divider: quote(">");
 
     .oxford-mb, .oxford-tl {
       display: block !important;
+    }
+
+    .navbar-nav {
+
+      .oxford-mb {
+        display: inline-block !important;
+      }
     }
 
     &.navbar {
