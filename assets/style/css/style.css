@@ -3133,6 +3133,8 @@ small {
     height: 150px; }
     #contactus-page #contactus-form .section-form .row .contactus-detail-card .contactus-detail p {
       font-size: 14px; }
+    #contactus-page #contactus-form .section-form .row .contactus-detail-card .contactus-detail .figcaption a p {
+      font-size: 14px; }
   #contactus-page #contactus-form .section-form .row .contactus-detail-form form {
     padding-top: 80px; }
   #strategy-page.h-one-line .content, #demandgeneration-page.h-one-line .content, #demandfulfillment-page.h-one-line .content, #financialtransformation-page.h-one-line .content, #organisationaloptimisation-page.h-one-line .content {
@@ -3954,6 +3956,8 @@ small {
         margin-bottom: 30px; }
       #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail p {
         font-size: 16px; }
+      #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption a p {
+        font-size: 16px; }
       #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
         width: 36px;
         margin-right: 15px; }
@@ -4467,6 +4471,8 @@ small {
       #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .row {
         margin-bottom: 30px; }
       #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail p {
+        font-size: 16px; }
+      #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption a p {
         font-size: 16px; }
       #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
         width: 36px;

@@ -3590,6 +3590,16 @@ $breadcrumb-divider: quote(">");
               p {
                 font-size: 14px;
               }
+
+              .figcaption {
+
+                a {
+
+                  p {
+                    font-size: 14px;
+                  }
+                }
+              }
             }
           }
 
@@ -5243,6 +5253,16 @@ $breadcrumb-divider: quote(">");
               font-size: 16px;
             }
 
+            .figcaption {
+
+              a {
+
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+
             .figure {
               width: 36px;
               margin-right: 15px;
@@ -6297,6 +6317,16 @@ $breadcrumb-divider: quote(">");
 
             p {
               font-size: 16px;
+            }
+
+            .figcaption {
+
+              a {
+
+                p {
+                  font-size: 16px;
+                }
+              }
             }
 
             .figure {
