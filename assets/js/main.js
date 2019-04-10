@@ -451,15 +451,24 @@ $(document).ready(function(){
   // Careers - row ----------------------------------------- //
   classToggle('#contactus-page  #contactus-form', 0.8, '', '#contactus-page .section-form', 'fade-in');
 
-  // classToggle('#contactus-page .row_2', 0.8, '', '#contactus-page .row_2', 'fade-in');
-  //
-  // classToggle('#contactus-page .row_3', 0.8, '', '#contactus-page .row_3', 'fade-in');
-  //
-  // classToggle('#contactus-page .row_4', 0.8, '', '#contactus-page .row_4', 'fade-in');
-  //
   classToggle('#contactus-page .row_0', 0.8, '', '#contactus-page .row_0', 'fade-in');
 
-  // classToggle('#contactus-page .section-apply', 0.8, '', '#contactus-page .section-apply', 'fade-in');
+
+  // Why us - banner ----------------------------------------- //
+  classToggle('#whyus-page', 0.8, '', '#whyus-page .banner', 'fade-in');
+
+  // Why - header ----------------------------------------- //
+  classToggle('#whyus-page .content', 0.7, '', '#whyus-page .content', 'fade-in');
+
+  // Why - row ----------------------------------------- //
+  classToggle('#whyus-page .row_1', 0.8, '', '#whyus-page .row_1', 'fade-in');
+
+  classToggle('#whyus-page .row_2', 0.8, '', '#whyus-page .row_2', 'fade-in');
+
+  classToggle('#whyus-page .row_3', 0.8, '', '#whyus-page .row_3', 'fade-in');
+
+  classToggle('#whyus-page .row_4', 0.8, '', '#whyus-page .row_4', 'fade-in');
+
 
 
   // Demandfulfillment - banner ----------------------------------------- //

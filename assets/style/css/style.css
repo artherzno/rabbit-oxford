@@ -255,6 +255,13 @@ textarea, input[type="text"], input[type="password"], input[type="email"], selec
   border: none;
   margin-bottom: 0; }
 
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, .form-control {
+  outline: 0px !important;
+  -webkit-appearance: none !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important; }
+
 .form-control, label, .form-group {
   margin-bottom: 20px; }
 
@@ -730,30 +737,30 @@ small {
             -ms-transition: all 1.8s ease;
             -o-transition: all 1.8s ease;
             transition: all 1.8s ease;
-            opacity: 0;
-            -webkit-transform: translateY(100px);
-            -ms-transform: translateY(100px);
-            transform: translateY(100px); }
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0); }
           #banner .container .content .box .box-content._second {
             -webkit-transition: all 1.8s ease;
             -ms-transition: all 1.8s ease;
             -o-transition: all 1.8s ease;
             transition: all 1.8s ease;
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-            transform: translateY(0); }
+            opacity: 0;
+            -webkit-transform: translateY(100px);
+            -ms-transform: translateY(100px);
+            transform: translateY(100px); }
         #banner .container .content .box.oxford-mb .box-content._first {
-          opacity: 0; }
+          opacity: 1; }
         #banner .container .content .box.oxford-mb .box-content._second {
           -webkit-transform: translateY(150px);
           -ms-transform: translateY(150px);
           transform: translateY(150px);
-          opacity: 1; }
-        #banner .container .content .box.oxford-mb .box-content.fade-in._first {
           opacity: 0; }
-        #banner .container .content .box.oxford-mb .box-content.fade-in._second {
+        #banner .container .content .box.oxford-mb .box-content.fade-in._first {
           opacity: 1; }
+        #banner .container .content .box.oxford-mb .box-content.fade-in._second {
+          opacity: 0; }
 
 #whatwedo .row {
   margin: 0 0 17%;
@@ -1801,6 +1808,7 @@ small {
     #blogsdetail-page .content .detail .head-img {
       margin-bottom: 80px;
       width: 100%;
+      height: auto;
       opacity: 0;
       -webkit-transform: translateY(20%);
       -ms-transform: translateY(20%);
@@ -1815,6 +1823,7 @@ small {
       margin-bottom: 70px; }
       #blogsdetail-page .content .detail .text-detail img {
         width: 100%;
+        height: auto;
         margin-bottom: 60px;
         margin-top: 40px; }
       #blogsdetail-page .content .detail .text-detail p {
@@ -2748,7 +2757,145 @@ small {
     #contactus-page #contactus-form .section-form textarea {
       margin-bottom: 50px; }
 
-/* Strategy page ******************************************************************/
+/* Why us page ************************************************************************/
+#whyus-page .banner {
+  width: 100%;
+  height: 890px;
+  background: url("../../images/whyus/oxf_bg_banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  #whyus-page .banner .container {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #whyus-page .banner .container h1 {
+      font: 600 140px/1.2 oswald, arial;
+      color: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      bottom: 110px;
+      right: 0;
+      margin: auto;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+  #whyus-page .banner.fade-in h1 {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+#whyus-page .content {
+  padding: 70px 0 120px; }
+  #whyus-page .content.fade-in .breadcrumb, #whyus-page .content.fade-in h1, #whyus-page .content.fade-in p {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  #whyus-page .content.fade-in .dropdown {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+#whyus-page .breadcrumb {
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out; }
+
+#whyus-page .header h1 {
+  color: #1f3052;
+  margin-bottom: 85px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.8s ease-out 0.2s;
+  -ms-transition: all 0.8s ease-out 0.2s;
+  -o-transition: all 0.8s ease-out 0.2s;
+  transition: all 0.8s ease-out 0.2s; }
+
+#whyus-page .header p {
+  color: #000;
+  margin-bottom: 120px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out; }
+
+#whyus-page .row {
+  position: relative;
+  margin: 0 0 120px;
+  background-color: #fff; }
+  #whyus-page .row.fade-in .figure, #whyus-page .row.fade-in .figcaption {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  #whyus-page .row:nth-child(even) .figcaption {
+    right: 10%;
+    left: auto; }
+  #whyus-page .row:nth-child(odd) .figure img {
+    float: right; }
+  #whyus-page .row:last-child {
+    margin-bottom: 0; }
+    #whyus-page .row:last-child .figcaption {
+      top: 6%; }
+  #whyus-page .row h1 {
+    color: #000;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out 0.2s;
+    -ms-transition: all 0.8s ease-out 0.2s;
+    -o-transition: all 0.8s ease-out 0.2s;
+    transition: all 0.8s ease-out 0.2s; }
+  #whyus-page .row p {
+    font-size: 20px;
+    color: #000; }
+  #whyus-page .row .figure {
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #whyus-page .row .figcaption {
+    width: 36%;
+    position: absolute;
+    top: 16%;
+    bottom: 0;
+    left: 10%;
+    margin: auto;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out 0.2s;
+    -ms-transition: all 0.8s ease-out 0.2s;
+    -o-transition: all 0.8s ease-out 0.2s;
+    transition: all 0.8s ease-out 0.2s; }
+
+/* Practices all page ******************************************************************/
 #strategy-page .banner {
   background: url("../../images/strategy/oxf_bg_banner.jpg") no-repeat; }
 
@@ -3978,6 +4125,45 @@ small {
   #contactus-page #contactus-form button[type="submit"] {
     width: 100%;
     height: 50px; }
+  /* Why us page ************************/
+  #whyus-page .banner {
+    height: 44vh;
+    background: url("../../images/whyus/oxf_bg_banner_m.jpg") no-repeat;
+    background-position: -32px -60px;
+    background-size: 110%; }
+    #whyus-page .banner .container h1 {
+      font-size: 46px;
+      right: 5%;
+      bottom: 5%; }
+  #whyus-page .content {
+    padding: 40px 0;
+    background-repeat: repeat-y;
+    background-size: 300%;
+    background-position: center top; }
+    #whyus-page .content .breadcrumb {
+      margin-bottom: 40px; }
+    #whyus-page .content .header h1 {
+      margin-bottom: 50px; }
+  #whyus-page .row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 50px; }
+    #whyus-page .row .figure {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: auto; }
+      #whyus-page .row .figure img {
+        width: 100%; }
+    #whyus-page .row .figcaption {
+      width: 100%;
+      margin-top: 135%;
+      padding: 0 10% 0 5%;
+      position: static; }
+      #whyus-page .row .figcaption p {
+        font-size: 16px; }
+    #whyus-page .row h1 {
+      font-size: 35px; }
   /* Breadcrumb ********************/
   .breadcrumb .breadcrumb-item {
     font-size: 20px; }
@@ -4419,8 +4605,7 @@ small {
       #careersdetail-page #careers-apply-form .section-apply .form-row .form-group:last-child {
         padding: 0; }
   #contactus-page .banner {
-    height: 44vh;
-    background-position: center top;
+    background-position: 19% top;
     background-size: cover; }
     #contactus-page .banner .container h1 {
       font-size: 46px;
@@ -4493,7 +4678,57 @@ small {
       height: 50px; }
   #contactus-page #contactus-form button[type="submit"] {
     width: 100%;
-    height: 50px; } }
+    height: 50px; }
+  #whyus-page .banner {
+    background-position: 20% top;
+    background-size: cover; }
+    #whyus-page .banner .container h1 {
+      font-size: 46px;
+      right: 5%;
+      bottom: 5%; }
+  #whyus-page .content {
+    padding: 40px 0;
+    background-repeat: repeat-y;
+    background-size: 300%;
+    background-position: center top; }
+    #whyus-page .content .breadcrumb {
+      margin-bottom: 40px; }
+    #whyus-page .content .header h1 {
+      margin-bottom: 40px; }
+    #whyus-page .content .row {
+      margin: 0 0 40px; }
+      #whyus-page .content .row .col-sm-12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+      #whyus-page .content .row .buttonBlue {
+        width: 100%;
+        height: 50px; }
+    #whyus-page .content h1 {
+      margin-bottom: 40px; }
+    #whyus-page .content h3 {
+      margin-bottom: 30px; }
+  #whyus-page .row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 50px; }
+    #whyus-page .row .figure {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: auto; }
+      #whyus-page .row .figure img {
+        width: 100%; }
+    #whyus-page .row .figcaption {
+      width: 100%;
+      margin-top: 135%;
+      padding: 0 10% 0 5%;
+      position: static; }
+      #whyus-page .row .figcaption p {
+        font-size: 16px; }
+    #whyus-page .row h1 {
+      font-size: 35px; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   nav.navbar .navbar-collapse .navbar-brand {
