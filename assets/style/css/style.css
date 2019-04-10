@@ -29,7 +29,8 @@ nav {
     width: 20%; }
     nav .navbar-brand .logo {
       opacity: 0;
-      width: 100%; }
+      width: 100%;
+      max-width: 268px; }
   nav .navbar-nav-list {
     margin-left: auto; }
   nav .navbar-toggler-icon.icon-burger {
@@ -42,7 +43,7 @@ nav {
     width: 80%; }
     nav .navbar-toggler-logo img {
       width: 80%;
-      max-width: 312px;
+      max-width: 268px;
       opacity: 1; }
   nav .navbar-toggler {
     position: absolute;
@@ -476,7 +477,7 @@ small {
     padding: 70px 0 0; }
     #footer .row._first .logo img {
       width: 100%;
-      max-width: 340px; }
+      max-width: 268px; }
     #footer .row._first .nav li a {
       font-size: 14px;
       font-weight: bold;

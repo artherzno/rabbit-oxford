@@ -1,5 +1,6 @@
 nav {
   @include transition(all 0.2s ease);
+
   &.nav-blogsdetail {
     .navbar-toggler-logo {
       top: 20%;
@@ -44,6 +45,7 @@ nav {
     .logo {
       opacity: 0;
       width: 100%;
+      max-width: 268px;
     }
   }
 
@@ -69,7 +71,7 @@ nav {
 
     img {
       width: 80%;
-      max-width: 312px;
+      max-width: 268px;
       opacity: 1;
     }
   }
