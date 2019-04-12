@@ -644,19 +644,19 @@ small {
       background-image: url("../../images/home/oxf_bg_banner_cloud.png");
       background-repeat: repeat-x;
       -webkit-animation-name: animateCloud;
-      -webkit-animation-duration: 100s;
+      -webkit-animation-duration: 80s;
       -webkit-animation-timing-function: linear;
       -webkit-animation-delay: 0;
       -webkit-animation-iteration-count: infinite;
       -webkit-animation-direction: none;
       -moz-animation-name: animateCloud;
-      -moz-animation-duration: 100s;
+      -moz-animation-duration: 80s;
       -moz-animation-timing-function: linear;
       -moz-animation-delay: 0;
       -moz-animation-iteration-count: infinite;
       -moz-animation-direction: none;
       animation-name: animateCloud;
-      animation-duration: 100s;
+      animation-duration: 80s;
       animation-timing-function: linear;
       animation-delay: 0;
       animation-iteration-count: infinite;
@@ -671,9 +671,9 @@ small {
       opacity: 0; }
       #banner .obj.cloud.fade-in {
         opacity: 1;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0); }
+        -webkit-transform: translateY(30%);
+        -ms-transform: translateY(30%);
+        transform: translateY(30%); }
   #banner .container {
     position: relative;
     height: 100%; }
@@ -885,20 +885,21 @@ small {
     #practics .obj.cloud {
       background-image: url("../../images/home/oxf_bg_practice_cloud.png");
       background-repeat: repeat-x;
+      background-size: contain;
       -webkit-animation-name: animateCloud;
-      -webkit-animation-duration: 100s;
+      -webkit-animation-duration: 80s;
       -webkit-animation-timing-function: linear;
       -webkit-animation-delay: 0;
       -webkit-animation-iteration-count: infinite;
       -webkit-animation-direction: none;
       -moz-animation-name: animateCloud;
-      -moz-animation-duration: 100s;
+      -moz-animation-duration: 80s;
       -moz-animation-timing-function: linear;
       -moz-animation-delay: 0;
       -moz-animation-iteration-count: infinite;
       -moz-animation-direction: none;
       animation-name: animateCloud;
-      animation-duration: 100s;
+      animation-duration: 80s;
       animation-timing-function: linear;
       animation-delay: 0;
       animation-iteration-count: infinite;
@@ -3438,8 +3439,11 @@ small {
   #banner {
     height: 100vh; }
     #banner .obj.cloud.fade-in {
-      -webkit-animation-duration: 150s;
-      animation-duration: 150s; }
+      -webkit-transform: translateY(5%);
+      -ms-transform: translateY(5%);
+      transform: translateY(5%);
+      animation-duration: 120s;
+      -webkit-animation-duration: 120s; }
     #banner .container .content {
       margin-top: 0%;
       min-height: 0; }
@@ -3481,9 +3485,11 @@ small {
     background-size: 200%;
     background-position: -88px 0; }
   #practics .obj.cloud {
-    -webkit-transform: translateY(-100px);
-    -ms-transform: translateY(-100px);
-    transform: translateY(-100px); }
+    -webkit-transform: translateY(15%);
+    -ms-transform: translateY(15%);
+    transform: translateY(15%);
+    animation-duration: 120s;
+    -webkit-animation-duration: 120s; }
   #practics .container {
     padding-top: 160px; }
     #practics .container .content {
@@ -4342,6 +4348,10 @@ small {
       width: 28%; }
   #banner {
     height: 100vh; }
+    #banner .obj.cloud.fade-in {
+      -webkit-transform: translateY(10%);
+      -ms-transform: translateY(10%);
+      transform: translateY(10%); }
     #banner .container .content .box {
       height: 475px; }
       #banner .container .content .box .box-content p {
@@ -4387,6 +4397,10 @@ small {
       position: static; }
     #whatwedo .figure img.oxford-dt {
       display: none !important; }
+  #practics .obj.cloud {
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%); }
   #hospitality .container {
     max-width: 100%;
     margin-left: 0;
@@ -4879,6 +4893,10 @@ small {
     width: auto; }
   .owl-carousel .owl-stage {
     height: 470px; }
+  #banner .obj.cloud.fade-in {
+    -webkit-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    transform: translateY(10%); }
   #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
     width: 510px;
     height: 420px;

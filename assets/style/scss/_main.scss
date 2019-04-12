@@ -380,7 +380,7 @@ small {
     &.cloud {
       background-image: url('../../images/home/oxf_bg_banner_cloud.png');
       background-repeat: repeat-x;
-      @include animation(animateCloud, 100s, linear, 0, infinite, none);
+      @include animation(animateCloud, 80s, linear, 0, infinite, none);
 
       @include transition(all 1s ease-out 0.6s);
       @include transform(translateY(100%));
@@ -388,7 +388,7 @@ small {
 
       &.fade-in {
         opacity: 1;
-        @include transform(translateY(0));
+        @include transform(translateY(30%));
         // -webkit-animation: animateCloud 20s linear infinite;
         // animation: animateCloud 20s linear infinite;
       }
@@ -633,7 +633,8 @@ small {
       background-image: url('../../images/home/oxf_bg_practice_cloud.png');
       // background-image: url('../../images/home/oxf_bg_practice.jpg');
       background-repeat:  repeat-x;
-      @include animation(animateCloud, 100s, linear, 0, infinite, none);
+      background-size: contain;
+      @include animation(animateCloud, 80s, linear, 0, infinite, none);
     }
     /*img {
       width: 100%;
@@ -4211,7 +4212,9 @@ $breadcrumb-divider: quote(">");
       &.cloud {
 
         &.fade-in {
-              animation-duration: 150s;
+          @include transform(translateY(5%));
+          animation-duration: 120s;
+          -webkit-animation-duration: 120s;
         }
       }
     }
@@ -4304,8 +4307,9 @@ $breadcrumb-divider: quote(">");
       }
 
       &.cloud {
-        @include transform(translateY(-100px));
-        // animation-duration: 80s;
+        @include transform(translateY(15%));
+        animation-duration: 120s;
+        -webkit-animation-duration: 120s;
       }
     }
 
@@ -5993,6 +5997,7 @@ $breadcrumb-divider: quote(">");
 
         &.fade-in {
               // animation-duration: 80s;
+          @include transform(translateY(10%));
         }
       }
     }
@@ -6076,6 +6081,16 @@ $breadcrumb-divider: quote(">");
 
       img.oxford-dt{
         display: none !important;
+      }
+    }
+  }
+
+  #practics {
+
+    .obj {
+
+      &.cloud {
+        @include transform(translateY(20%));
       }
     }
   }
@@ -7127,6 +7142,19 @@ $breadcrumb-divider: quote(">");
 
     .owl-stage  {
       height: 470px;
+    }
+  }
+
+  #banner {
+
+    .obj {
+      &.cloud {
+
+        &.fade-in {
+
+          @include transform(translateY(10%));
+        }
+      }
     }
   }
 
