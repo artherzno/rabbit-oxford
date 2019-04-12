@@ -633,7 +633,7 @@ small {
       background-image: url('../../images/home/oxf_bg_practice_cloud.png');
       // background-image: url('../../images/home/oxf_bg_practice.jpg');
       background-repeat:  repeat-x;
-      @include animation(animateCloud, 20s, linear, 0, infinite, none);
+      @include animation(animateCloud, 100s, linear, 0, infinite, none);
     }
     /*img {
       width: 100%;
