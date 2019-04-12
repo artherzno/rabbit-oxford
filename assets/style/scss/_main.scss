@@ -36,6 +36,10 @@ h3 {
   font: 600 24px/1.2 oswald, arial;
 }
 
+h1, h2, h3, p {
+  word-break: break-word;
+}
+
 textarea, input[type="text"], input[type="password"], input[type="email"], select, .form-control {
   border-radius: 0;
   resize: none;
