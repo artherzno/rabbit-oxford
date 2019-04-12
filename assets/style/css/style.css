@@ -83,7 +83,6 @@ nav {
         transform-origin: 0 50%; }
     nav li.nav-item a.nav-link:after {
       position: absolute;
-      right: -15px;
       top: 34%; }
   nav li.nav-item:last-child a.nav-link {
     margin-right: 0; }
@@ -112,7 +111,6 @@ nav {
       background: none;
       background-color: #1f3052; }
   nav .navbar-collapse .nav.navbar-nav li.nav-item:after {
-    right: -15px;
     top: 34%; }
   nav .navbar-collapse .nav.navbar-nav li.nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -155,7 +153,6 @@ nav {
     font-size: 18px;
     padding: 10px; }
     nav .navbar-collapse.show .nav li.nav-item a.nav-link:after, nav .navbar-collapse.collapsing .nav li.nav-item a.nav-link:after {
-      right: 31%;
       top: 38%; }
     nav .navbar-collapse.show .nav li.nav-item a.nav-link hr, nav .navbar-collapse.collapsing .nav li.nav-item a.nav-link hr {
       display: none; }
@@ -226,8 +223,9 @@ nav {
     text-transform: uppercase; }
 
 body {
+  background-color: #000;
   color: #fff;
-  font: 24px/1.2 arial; }
+  font: 20px/1.2 arial; }
 
 *:focus {
   outline: none !important;
@@ -267,7 +265,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   margin-bottom: 20px; }
 
 .form-control {
-  padding: 25px 20px; }
+  padding: 25px 20px;
+  background-clip: initial; }
 
 .form-row {
   margin-right: 0;
@@ -504,10 +503,10 @@ small {
         width: 26px;
         height: 26px;
         display: inline-block;
-        -webkit-transition: all 0.2s ease;
-        -ms-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        transition: all 0.2s ease; }
+        -webkit-transition: all 0.05s ease;
+        -ms-transition: all 0.05s ease;
+        -o-transition: all 0.05s ease;
+        transition: all 0.05s ease; }
         #footer .row._second .nav a.fb {
           background: url("../../images/icon/oxf_icon_fb.svg") no-repeat; }
           #footer .row._second .nav a.fb:hover {
@@ -646,19 +645,19 @@ small {
       background-image: url("../../images/home/oxf_bg_banner_cloud.png");
       background-repeat: repeat-x;
       -webkit-animation-name: animateCloud;
-      -webkit-animation-duration: 20s;
+      -webkit-animation-duration: 100s;
       -webkit-animation-timing-function: linear;
       -webkit-animation-delay: 0;
       -webkit-animation-iteration-count: infinite;
       -webkit-animation-direction: none;
       -moz-animation-name: animateCloud;
-      -moz-animation-duration: 20s;
+      -moz-animation-duration: 100s;
       -moz-animation-timing-function: linear;
       -moz-animation-delay: 0;
       -moz-animation-iteration-count: infinite;
       -moz-animation-direction: none;
       animation-name: animateCloud;
-      animation-duration: 20s;
+      animation-duration: 100s;
       animation-timing-function: linear;
       animation-delay: 0;
       animation-iteration-count: infinite;
@@ -763,94 +762,96 @@ small {
         #banner .container .content .box.oxford-mb .box-content.fade-in._second {
           opacity: 0; }
 
-#whatwedo .row {
-  margin: 0 0 17%;
-  position: relative; }
-
-#whatwedo .figcaption {
-  position: relative;
-  padding: 0; }
-  #whatwedo .figcaption .content h1 {
-    color: #000;
-    margin-bottom: 60px;
-    -webkit-transition: all 1s ease-out 1s;
-    -ms-transition: all 1s ease-out 1s;
-    -o-transition: all 1s ease-out 1s;
-    transition: all 1s ease-out 1s;
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%); }
-  #whatwedo .figcaption .content p {
-    font-size: 20px;
-    color: #000;
-    margin-bottom: 55px;
-    -webkit-transition: all 1s ease-out 1.2s;
-    -ms-transition: all 1s ease-out 1.2s;
-    -o-transition: all 1s ease-out 1.2s;
-    transition: all 1s ease-out 1.2s;
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%); }
-  #whatwedo .figcaption .content .buttonRow {
-    opacity: 0;
-    -webkit-transform: translateY(200%);
-    -ms-transform: translateY(200%);
-    transform: translateY(200%);
-    -webkit-transition: transform 0.8s ease-out 1.6s;
-    -ms-transition: transform 0.8s ease-out 1.6s;
-    -webkit-transition: -webkit-transform 0.8s ease-out 1.6s;
-    transition: -webkit-transform 0.8s ease-out 1.6s;
-    -o-transition: transform 0.8s ease-out 1.6s;
-    transition: transform 0.8s ease-out 1.6s;
-    transition: transform 0.8s ease-out 1.6s, -webkit-transform 0.8s ease-out 1.6s;
-    -webkit-transition: opacity 1s ease-out 1.6s;
-    -ms-transition: opacity 1s ease-out 1.6s;
-    -o-transition: opacity 1s ease-out 1.6s;
-    transition: opacity 1s ease-out 1.6s; }
-  #whatwedo .figcaption .content.fade-in {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-    #whatwedo .figcaption .content.fade-in h1 {
+#whatwedo {
+  background-color: #fff;
+  height: 100%; }
+  #whatwedo .row {
+    margin: 0 0 17%;
+    position: relative; }
+  #whatwedo .figcaption {
+    position: relative;
+    padding: 0;
+    z-index: 1; }
+    #whatwedo .figcaption .content h1 {
+      color: #000;
+      margin-bottom: 60px;
+      -webkit-transition: all 1s ease-out 1s;
+      -ms-transition: all 1s ease-out 1s;
+      -o-transition: all 1s ease-out 1s;
+      transition: all 1s ease-out 1s;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%); }
+    #whatwedo .figcaption .content p {
+      font-size: 20px;
+      color: #000;
+      margin-bottom: 55px;
+      -webkit-transition: all 1s ease-out 1.2s;
+      -ms-transition: all 1s ease-out 1.2s;
+      -o-transition: all 1s ease-out 1.2s;
+      transition: all 1s ease-out 1.2s;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%); }
+    #whatwedo .figcaption .content .buttonRow {
+      opacity: 0;
+      -webkit-transform: translateY(200%);
+      -ms-transform: translateY(200%);
+      transform: translateY(200%);
+      -webkit-transition: transform 0.8s ease-out 1.6s;
+      -ms-transition: transform 0.8s ease-out 1.6s;
+      -webkit-transition: -webkit-transform 0.8s ease-out 1.6s;
+      transition: -webkit-transform 0.8s ease-out 1.6s;
+      -o-transition: transform 0.8s ease-out 1.6s;
+      transition: transform 0.8s ease-out 1.6s;
+      transition: transform 0.8s ease-out 1.6s, -webkit-transform 0.8s ease-out 1.6s;
+      -webkit-transition: opacity 1s ease-out 1.6s;
+      -ms-transition: opacity 1s ease-out 1.6s;
+      -o-transition: opacity 1s ease-out 1.6s;
+      transition: opacity 1s ease-out 1.6s; }
+    #whatwedo .figcaption .content.fade-in {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-    #whatwedo .figcaption .content.fade-in p {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0); }
-    #whatwedo .figcaption .content.fade-in .buttonRow {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0); }
-
-#whatwedo .figure {
-  position: relative;
-  z-index: -1; }
-  #whatwedo .figure img {
-    position: absolute;
-    right: 0;
-    top: 18%;
-    width: 130%;
-    -webkit-transition: all 1s ease-out;
-    -ms-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
-    opacity: 0;
-    -webkit-transform: translateY(30%);
-    -ms-transform: translateY(30%);
-    transform: translateY(30%); }
-    #whatwedo .figure img.fade-in {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0); }
+      #whatwedo .figcaption .content.fade-in h1 {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
+      #whatwedo .figcaption .content.fade-in p {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
+      #whatwedo .figcaption .content.fade-in .buttonRow {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
+  #whatwedo .figure {
+    position: relative;
+    z-index: 0; }
+    #whatwedo .figure img {
+      position: absolute;
+      right: 0;
+      top: 18%;
+      width: 130%;
+      -webkit-transition: all 1s ease-out;
+      -ms-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      transition: all 1s ease-out;
+      opacity: 0;
+      -webkit-transform: translateY(30%);
+      -ms-transform: translateY(30%);
+      transform: translateY(30%); }
+      #whatwedo .figure img.fade-in {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
 
 #practics {
   width: 100%;
@@ -957,7 +958,6 @@ small {
       color: #1f3052;
       margin-bottom: 30px;
       text-transform: uppercase;
-      font-weight: 500;
       float: right;
       clear: both;
       -webkit-transition: all 0.5s ease-out 0.3s;
@@ -1050,7 +1050,7 @@ small {
     min-height: 500px; }
   #hospitality .carousel .carouselHospitality-indicators {
     display: block;
-    margin-top: 10px;
+    margin-top: -10px;
     margin-bottom: 85px;
     margin-left: auto;
     margin-right: 0;
@@ -1072,7 +1072,7 @@ small {
       transition: initial; }
       #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools a {
         background-position: 0;
-        opacity: 0.2;
+        opacity: 1;
         -webkit-transition: none;
         -o-transition: none;
         transition: none; }
@@ -1113,14 +1113,17 @@ small {
     display: none; }
 
 #locations {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
   background: url("../../images/home/oxf_bg_locations.jpg") no-repeat;
-  background-position: center 200px;
+  background-position: center 0;
   background-size: cover;
   opacity: 0;
-  -webkit-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out; }
+  -webkit-transition: all 1s ease-out 0.4s;
+  -ms-transition: all 1s ease-out 0.4s;
+  -o-transition: all 1s ease-out 0.4s;
+  transition: all 1s ease-out 0.4s; }
   #locations.fade-in {
     opacity: 1;
     background-position: center 0; }
@@ -1137,7 +1140,7 @@ small {
       top: 0;
       right: 15px; }
   #locations .content {
-    padding: 120px 0;
+    padding: 66% 0 0;
     min-height: 800px;
     float: right; }
     #locations .content #accordionLocation-dt {
@@ -1157,7 +1160,7 @@ small {
       margin: 0;
       text-align: right;
       text-transform: uppercase;
-      font-weight: 400; }
+      font-weight: 500; }
     #locations .content button {
       margin-bottom: 20px;
       text-transform: uppercase; }
@@ -1256,101 +1259,95 @@ small {
     #locations #accordionLocation-mb .mCSB_scrollTools {
       right: -4px; }
 
-#blog .container:first-child .content {
-  padding-bottom: 0; }
-
-#blog .container:last-child .content {
-  padding-top: 0; }
-
-#blog .content {
-  padding: 100px 0; }
-
-#blog .owl-carousel .owl-stage-outer {
-  padding-bottom: 30px; }
-
-#blog h1 {
-  color: #000;
-  margin-bottom: 85px;
-  opacity: 0;
-  -webkit-transform: translateY(20%);
-  -ms-transform: translateY(20%);
-  transform: translateY(20%);
-  -webkit-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
-
-#blog .row {
-  opacity: 0;
-  -webkit-transform: translateY(20%);
-  -ms-transform: translateY(20%);
-  transform: translateY(20%);
-  -webkit-transition: all 0.5s ease-out 0.2s;
-  -ms-transition: all 0.5s ease-out 0.2s;
-  -o-transition: all 0.5s ease-out 0.2s;
-  transition: all 0.5s ease-out 0.2s; }
-  #blog .row:last-child {
-    margin-top: 60px; }
-    #blog .row:last-child button, #blog .row:last-child a {
-      margin: 0 auto; }
-
-#blog .figure {
-  -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1); }
-  #blog .figure:hover {
-    -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-    background-color: #f4f4f4; }
-    #blog .figure:hover .figcaption .button-readmore {
-      color: #f7d0cb; }
-  #blog .figure img {
-    width: 100%; }
-  #blog .figure .figcaption {
-    padding: 35px;
-    overflow: hidden; }
-    #blog .figure .figcaption h3 {
-      color: #000;
-      margin-bottom: 30px; }
-    #blog .figure .figcaption p {
-      color: #000;
-      font: 18px/1.2 arial; }
-      #blog .figure .figcaption p.date {
-        color: #999;
-        margin: 0; }
-      #blog .figure .figcaption p.button-readmore {
-        color: #000;
-        font: 600 18px/1 oswald, arial;
-        margin: 0; }
-    #blog .figure .figcaption a {
-      font: 600 18px/1.2 oswald, arial;
-      color: #000; }
-      #blog .figure .figcaption a:hover {
+#blog {
+  background-color: #fff; }
+  #blog .container:first-child .content {
+    padding-bottom: 0; }
+  #blog .container:last-child .content {
+    padding-top: 0; }
+  #blog .content {
+    padding: 100px 0; }
+  #blog .owl-carousel .owl-stage-outer {
+    padding-bottom: 30px; }
+  #blog h1 {
+    color: #000;
+    margin-bottom: 85px;
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+  #blog .row {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.5s ease-out 0.2s;
+    -ms-transition: all 0.5s ease-out 0.2s;
+    -o-transition: all 0.5s ease-out 0.2s;
+    transition: all 0.5s ease-out 0.2s; }
+    #blog .row:last-child {
+      margin-top: 60px; }
+      #blog .row:last-child button, #blog .row:last-child a {
+        margin: 0 auto; }
+  #blog .figure {
+    -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1); }
+    #blog .figure:hover {
+      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      background-color: #f4f4f4; }
+      #blog .figure:hover .figcaption .button-readmore {
         color: #f7d0cb; }
-
-#blog .buttonRow {
-  display: block;
-  margin: 0 auto;
-  opacity: 0;
-  -webkit-transform: translateY(20%);
-  -ms-transform: translateY(20%);
-  transform: translateY(20%);
-  -webkit-transition: opacity 0.8s ease-out 1.2s;
-  -ms-transition: opacity 0.8s ease-out 1.2s;
-  -o-transition: opacity 0.8s ease-out 1.2s;
-  transition: opacity 0.8s ease-out 1.2s;
-  -webkit-transition: transform 0.8s ease-out 1.2s;
-  -ms-transition: transform 0.8s ease-out 1.2s;
-  -webkit-transition: -webkit-transform 0.8s ease-out 1.2s;
-  transition: -webkit-transform 0.8s ease-out 1.2s;
-  -o-transition: transform 0.8s ease-out 1.2s;
-  transition: transform 0.8s ease-out 1.2s;
-  transition: transform 0.8s ease-out 1.2s, -webkit-transform 0.8s ease-out 1.2s; }
-
-#blog.fade-in h1, #blog.fade-in .row, #blog.fade-in .buttonRow {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0); }
+    #blog .figure img {
+      width: 100%; }
+    #blog .figure .figcaption {
+      padding: 35px;
+      overflow: hidden; }
+      #blog .figure .figcaption h3 {
+        color: #000;
+        margin-bottom: 30px; }
+      #blog .figure .figcaption p {
+        color: #000;
+        font: 18px/1.2 arial; }
+        #blog .figure .figcaption p.date {
+          color: #999;
+          margin: 0; }
+        #blog .figure .figcaption p.button-readmore {
+          color: #000;
+          font: 600 18px/1 oswald, arial;
+          margin: 0; }
+      #blog .figure .figcaption a {
+        font: 600 18px/1.2 oswald, arial;
+        color: #000; }
+        #blog .figure .figcaption a:hover {
+          color: #f7d0cb; }
+  #blog .buttonRow {
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: opacity 0.8s ease-out 1.2s;
+    -ms-transition: opacity 0.8s ease-out 1.2s;
+    -o-transition: opacity 0.8s ease-out 1.2s;
+    transition: opacity 0.8s ease-out 1.2s;
+    -webkit-transition: transform 0.8s ease-out 1.2s;
+    -ms-transition: transform 0.8s ease-out 1.2s;
+    -webkit-transition: -webkit-transform 0.8s ease-out 1.2s;
+    transition: -webkit-transform 0.8s ease-out 1.2s;
+    -o-transition: transform 0.8s ease-out 1.2s;
+    transition: transform 0.8s ease-out 1.2s;
+    transition: transform 0.8s ease-out 1.2s, -webkit-transform 0.8s ease-out 1.2s; }
+  #blog.fade-in h1, #blog.fade-in .row, #blog.fade-in .buttonRow {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
 
 #getintouch {
   background-color: #000;
@@ -1411,127 +1408,124 @@ small {
       transform: translateY(0); }
 
 /* Team page ******************************************************************/
-#team-page .banner {
-  width: 100%;
-  height: 890px;
-  background: url("../../images/team/oxf_team_banner.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center; }
-  #team-page .banner .container {
-    position: relative;
+#team-page {
+  background-color: #fff; }
+  #team-page .banner {
     width: 100%;
-    height: 100%; }
-    #team-page .banner .container h1 {
-      font: 600 140px/1.2 oswald, arial;
-      color: rgba(255, 255, 255, 0.2);
-      position: absolute;
-      bottom: 110px;
-      right: 0;
-      margin: auto;
-      opacity: 0;
-      -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      transform: translateY(50%);
-      -webkit-transition: all 0.8s ease-out;
-      -ms-transition: all 0.8s ease-out;
-      -o-transition: all 0.8s ease-out;
-      transition: all 0.8s ease-out; }
-  #team-page .banner.fade-in h1 {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-#team-page .content {
-  padding: 70px 0; }
-  #team-page .content.fade-in .breadcrumb, #team-page .content.fade-in h1 {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-#team-page .breadcrumb {
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out; }
-
-#team-page h1 {
-  color: #1f3052;
-  margin-bottom: 85px;
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out 0.2s;
-  -ms-transition: all 0.8s ease-out 0.2s;
-  -o-transition: all 0.8s ease-out 0.2s;
-  transition: all 0.8s ease-out 0.2s; }
-
-#team-page .row {
-  margin-bottom: 40px;
-  opacity: 0;
-  -webkit-transform: translateY(20%);
-  -ms-transform: translateY(20%);
-  transform: translateY(20%); }
-  #team-page .row.fade-in.row_1, #team-page .row.fade-in.row_2, #team-page .row.fade-in.row_3, #team-page .row.fade-in.row_4 {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1; }
-  #team-page .row.fade-in.row_1 {
+    height: 890px;
+    background: url("../../images/team/oxf_team_banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    #team-page .banner .container {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      #team-page .banner .container h1 {
+        font: 600 140px/1.2 oswald, arial;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+        -webkit-transition: all 0.8s ease-out;
+        -ms-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out; }
+    #team-page .banner.fade-in h1 {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  #team-page .content {
+    padding: 70px 0; }
+    #team-page .content.fade-in .breadcrumb, #team-page .content.fade-in h1 {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  #team-page .breadcrumb {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #team-page h1 {
+    color: #1f3052;
+    margin-bottom: 85px;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
     -webkit-transition: all 0.8s ease-out 0.2s;
     -ms-transition: all 0.8s ease-out 0.2s;
     -o-transition: all 0.8s ease-out 0.2s;
     transition: all 0.8s ease-out 0.2s; }
-  #team-page .row.fade-in.row_2 {
-    -webkit-transition: all 0.8s ease-out 0.4s;
-    -ms-transition: all 0.8s ease-out 0.4s;
-    -o-transition: all 0.8s ease-out 0.4s;
-    transition: all 0.8s ease-out 0.4s; }
-  #team-page .row.fade-in.row_3 {
-    -webkit-transition: all 0.8s ease-out 0.6s;
-    -ms-transition: all 0.8s ease-out 0.6s;
-    -o-transition: all 0.8s ease-out 0.6s;
-    transition: all 0.8s ease-out 0.6s; }
-  #team-page .row.fade-in.row_4 {
-    -webkit-transition: all 0.8s ease-out 0.8s;
-    -ms-transition: all 0.8s ease-out 0.8s;
-    -o-transition: all 0.8s ease-out 0.8s;
-    transition: all 0.8s ease-out 0.8s; }
-
-#team-page .figure {
-  display: block;
-  height: 100%;
-  max-width: 554px; }
-  #team-page .figure img {
-    width: 100%; }
-  #team-page .figure .figcaption {
-    padding: 24px;
-    overflow: hidden; }
-    #team-page .figure .figcaption .fullname {
-      color: #1f3052;
-      font: 600 22px/1.2 oswald, arial;
-      margin-bottom: 10px;
-      text-transform: uppercase; }
-    #team-page .figure .figcaption .position {
-      color: #666;
-      font: 400 18px/1.2 oswald, arial;
-      margin-bottom: 0; }
-      #team-page .figure .figcaption .position.date {
-        color: #999;
+  #team-page .row {
+    margin-bottom: 40px;
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%); }
+    #team-page .row.fade-in.row_1, #team-page .row.fade-in.row_2, #team-page .row.fade-in.row_3, #team-page .row.fade-in.row_4 {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1; }
+    #team-page .row.fade-in.row_1 {
+      -webkit-transition: all 0.8s ease-out 0.2s;
+      -ms-transition: all 0.8s ease-out 0.2s;
+      -o-transition: all 0.8s ease-out 0.2s;
+      transition: all 0.8s ease-out 0.2s; }
+    #team-page .row.fade-in.row_2 {
+      -webkit-transition: all 0.8s ease-out 0.4s;
+      -ms-transition: all 0.8s ease-out 0.4s;
+      -o-transition: all 0.8s ease-out 0.4s;
+      transition: all 0.8s ease-out 0.4s; }
+    #team-page .row.fade-in.row_3 {
+      -webkit-transition: all 0.8s ease-out 0.6s;
+      -ms-transition: all 0.8s ease-out 0.6s;
+      -o-transition: all 0.8s ease-out 0.6s;
+      transition: all 0.8s ease-out 0.6s; }
+    #team-page .row.fade-in.row_4 {
+      -webkit-transition: all 0.8s ease-out 0.8s;
+      -ms-transition: all 0.8s ease-out 0.8s;
+      -o-transition: all 0.8s ease-out 0.8s;
+      transition: all 0.8s ease-out 0.8s; }
+  #team-page .figure {
+    display: block;
+    height: 100%;
+    max-width: 554px; }
+    #team-page .figure img {
+      width: 100%; }
+    #team-page .figure .figcaption {
+      padding: 24px;
+      overflow: hidden; }
+      #team-page .figure .figcaption .fullname {
+        color: #1f3052;
+        font: 600 22px/1.2 oswald, arial;
+        margin-bottom: 10px;
+        text-transform: uppercase; }
+      #team-page .figure .figcaption .position {
+        color: #666;
+        font: 400 18px/1.2 oswald, arial;
         margin-bottom: 0; }
-    #team-page .figure .figcaption a {
-      color: #000;
-      font: 600 18px/1 oswald, arial; }
-  #team-page .figure:hover {
-    -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-    background-color: #f4f4f4; }
+        #team-page .figure .figcaption .position.date {
+          color: #999;
+          margin-bottom: 0; }
+      #team-page .figure .figcaption a {
+        color: #000;
+        font: 600 18px/1 oswald, arial; }
+    #team-page .figure:hover {
+      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      background-color: #f4f4f4; }
 
 /* Team detail page ***********************************************************/
 #teamdetail-page {
@@ -1642,6 +1636,7 @@ small {
 
 /* Blog page ******************************************************************/
 #blogs-page {
+  background-color: #fff;
   margin-top: 80px; }
   #blogs-page.fade-in .breadcrumb, #blogs-page.fade-in h1 {
     opacity: 1;
@@ -1667,36 +1662,20 @@ small {
     opacity: 0;
     -webkit-transform: translateY(20%);
     -ms-transform: translateY(20%);
-    transform: translateY(20%); }
+    transform: translateY(20%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
     #blogs-page .row.pagi {
       opacity: 1; }
-    #blogs-page .row.fade-in.row_1, #blogs-page .row.fade-in.row_2, #blogs-page .row.fade-in.row_3, #blogs-page .row.fade-in.row_4 {
+    #blogs-page .row.fade-in {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0);
       opacity: 1; }
-    #blogs-page .row.fade-in.row_1 {
-      -webkit-transition: all 0.8s ease-out 0.2s;
-      -ms-transition: all 0.8s ease-out 0.2s;
-      -o-transition: all 0.8s ease-out 0.2s;
-      transition: all 0.8s ease-out 0.2s; }
-    #blogs-page .row.fade-in.row_2 {
-      -webkit-transition: all 0.8s ease-out 0.4s;
-      -ms-transition: all 0.8s ease-out 0.4s;
-      -o-transition: all 0.8s ease-out 0.4s;
-      transition: all 0.8s ease-out 0.4s; }
-    #blogs-page .row.fade-in.row_3 {
-      -webkit-transition: all 0.8s ease-out 0.6s;
-      -ms-transition: all 0.8s ease-out 0.6s;
-      -o-transition: all 0.8s ease-out 0.6s;
-      transition: all 0.8s ease-out 0.6s; }
-    #blogs-page .row.fade-in.row_4 {
-      -webkit-transition: all 0.8s ease-out 0.8s;
-      -ms-transition: all 0.8s ease-out 0.8s;
-      -o-transition: all 0.8s ease-out 0.8s;
-      transition: all 0.8s ease-out 0.8s; }
     #blogs-page .row:last-child button, #blogs-page .row:last-child a {
-      margin: 0 auto; }
+      margin: 0 auto 30px; }
     #blogs-page .row nav {
       position: static;
       width: 100%; }
@@ -1716,8 +1695,19 @@ small {
   #blogs-page .figure {
     -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1); }
-    #blogs-page .figure img {
-      width: 100%; }
+    #blogs-page .figure .figure-img {
+      width: 100%;
+      height: 330px;
+      position: relative;
+      overflow: hidden; }
+      #blogs-page .figure .figure-img img {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        width: auto; }
     #blogs-page .figure .figcaption {
       padding: 35px;
       overflow: hidden; }
@@ -1755,6 +1745,7 @@ small {
 
 /* Blog Detail page ***********************************************************/
 #blogsdetail-page {
+  background-color: #fff;
   margin-top: 80px;
   overflow: hidden; }
   #blogsdetail-page.fade-in .content .breadcrumb {
@@ -1919,8 +1910,19 @@ small {
   #blogsdetail-page .related .figure {
     -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1); }
-    #blogsdetail-page .related .figure img {
-      width: 100%; }
+    #blogsdetail-page .related .figure .figure-img {
+      width: 100%;
+      height: 330px;
+      position: relative;
+      overflow: hidden; }
+      #blogsdetail-page .related .figure .figure-img img {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        width: auto; }
     #blogsdetail-page .related .figure .figcaption {
       padding: 35px;
       overflow: hidden; }
@@ -2036,7 +2038,7 @@ small {
     margin: 0;
     font-size: 20px; }
   #locations-page .content .row {
-    margin-bottom: 130px; }
+    margin-bottom: 60px; }
     #locations-page .content .row .column {
       opacity: 0;
       -webkit-transform: translateY(100%);
@@ -2048,11 +2050,13 @@ small {
         -o-transition: all 0.8s ease-out 0.2s;
         transition: all 0.8s ease-out 0.2s; }
       #locations-page .content .row .column.col_2 {
+        margin-bottom: 70px;
         -webkit-transition: all 0.8s ease-out 0.4s;
         -ms-transition: all 0.8s ease-out 0.4s;
         -o-transition: all 0.8s ease-out 0.4s;
         transition: all 0.8s ease-out 0.4s; }
       #locations-page .content .row .column.col_3 {
+        margin-bottom: 70px;
         -webkit-transition: all 0.8s ease-out 0.6s;
         -ms-transition: all 0.8s ease-out 0.6s;
         -o-transition: all 0.8s ease-out 0.6s;
@@ -2099,252 +2103,256 @@ small {
   margin-bottom: 40px; }
 
 /* Careers page ******************************************************************/
-#careers-page .banner {
-  width: 100%;
-  height: 890px;
-  background: url("../../images/career/oxf_bg_banner.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center; }
-  #careers-page .banner .container {
-    position: relative;
+#careers-page {
+  background-color: #fff; }
+  #careers-page .banner {
     width: 100%;
-    height: 100%; }
-    #careers-page .banner .container h1 {
-      font: 600 140px/1.2 oswald, arial;
-      color: rgba(255, 255, 255, 0.2);
-      position: absolute;
-      bottom: 110px;
-      right: 0;
-      margin: auto;
-      opacity: 0;
-      -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      transform: translateY(50%);
+    height: 890px;
+    background: url("../../images/career/oxf_bg_banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    #careers-page .banner .container {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      #careers-page .banner .container h1 {
+        font: 600 140px/1.2 oswald, arial;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+        -webkit-transition: all 0.8s ease-out;
+        -ms-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out; }
+    #careers-page .banner.fade-in h1 {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  #careers-page .content {
+    padding: 70px 0; }
+    #careers-page .content.fade-in .breadcrumb, #careers-page .content.fade-in h1 {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    #careers-page .content.fade-in .dropdown {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  #careers-page .breadcrumb {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #careers-page h1 {
+    color: #1f3052;
+    margin-bottom: 55px;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out 0.2s;
+    -ms-transition: all 0.8s ease-out 0.2s;
+    -o-transition: all 0.8s ease-out 0.2s;
+    transition: all 0.8s ease-out 0.2s; }
+  #careers-page .header h1 {
+    display: inline-block; }
+  #careers-page .header .dropdown {
+    display: inline-block;
+    float: right;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #careers-page .careers-list {
+    padding: 0; }
+    #careers-page .careers-list .notice-nojob {
+      display: none;
+      width: 100%;
+      margin: 60px 30px 60px;
+      color: #999;
+      font: 400 20px/1 arial; }
+    #careers-page .careers-list .column {
+      padding: 30px; }
+      #careers-page .careers-list .column:hover {
+        -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+        background-color: #f4f4f4; }
+        #careers-page .careers-list .column:hover .button-readmore {
+          color: #f7d0cb; }
+  #careers-page .row {
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%); }
+    #careers-page .row.row_0 {
+      margin-bottom: 0; }
+      #careers-page .row.row_0 .column h3 {
+        margin-bottom: 30px;
+        text-transform: uppercase; }
+    #careers-page .row.fade-in.row_1, #careers-page .row.fade-in.row_2, #careers-page .row.fade-in.row_3, #careers-page .row.fade-in.row_4, #careers-page .row.fade-in.row_0 {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1; }
+    #careers-page .row.fade-in.row_1 {
       -webkit-transition: all 0.8s ease-out;
       -ms-transition: all 0.8s ease-out;
       -o-transition: all 0.8s ease-out;
       transition: all 0.8s ease-out; }
-  #careers-page .banner.fade-in h1 {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-#careers-page .content {
-  padding: 70px 0; }
-  #careers-page .content.fade-in .breadcrumb, #careers-page .content.fade-in h1 {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-  #careers-page .content.fade-in .dropdown {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-#careers-page .breadcrumb {
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out; }
-
-#careers-page h1 {
-  color: #1f3052;
-  margin-bottom: 55px;
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out 0.2s;
-  -ms-transition: all 0.8s ease-out 0.2s;
-  -o-transition: all 0.8s ease-out 0.2s;
-  transition: all 0.8s ease-out 0.2s; }
-
-#careers-page .header h1 {
-  display: inline-block; }
-
-#careers-page .header .dropdown {
-  display: inline-block;
-  float: right;
-  z-index: 1;
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out; }
-
-#careers-page .careers-list {
-  padding: 0; }
-  #careers-page .careers-list .notice-nojob {
-    display: none;
-    width: 100%;
-    margin-bottom: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #999;
-    text-align: center;
-    font: 400 20px/1 arial; }
-  #careers-page .careers-list .column {
-    padding: 30px; }
-    #careers-page .careers-list .column:hover {
-      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-      background-color: #f4f4f4; }
-      #careers-page .careers-list .column:hover .button-readmore {
-        color: #f7d0cb; }
-
-#careers-page .row {
-  position: relative;
-  margin: 0 0 40px;
-  background-color: #fff;
-  opacity: 0;
-  -webkit-transform: translateY(20%);
-  -ms-transform: translateY(20%);
-  transform: translateY(20%); }
-  #careers-page .row.row_0 {
-    margin-bottom: 0; }
-    #careers-page .row.row_0 .column h3 {
-      margin-bottom: 30px;
-      text-transform: uppercase; }
-  #careers-page .row.fade-in.row_1, #careers-page .row.fade-in.row_2, #careers-page .row.fade-in.row_3, #careers-page .row.fade-in.row_4, #careers-page .row.fade-in.row_0 {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1; }
-  #careers-page .row.fade-in.row_1 {
-    -webkit-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out; }
-  #careers-page .row.fade-in.row_2 {
-    -webkit-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out; }
-  #careers-page .row.fade-in.row_3 {
-    -webkit-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out; }
-  #careers-page .row.fade-in.row_4 {
-    -webkit-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out; }
-  #careers-page .row.fade-in.row_0 {
-    -webkit-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out; }
-  #careers-page .row .column {
-    color: #000;
-    font-family: oswald, arial; }
-    #careers-page .row .column h3 {
-      font-size: 30px;
-      margin: 0 0 15px;
-      text-transform: uppercase; }
-    #careers-page .row .column p {
-      font-size: 20px;
-      padding: 0;
-      margin: 0;
-      color: #333;
-      text-transform: uppercase; }
-    #careers-page .row .column .button-readmore {
-      color: #1f3052;
-      clear: both;
-      font: 600 16px/1 oswald, arial; }
-    #careers-page .row .column hr {
-      width: 50%;
-      text-align: left;
-      float: left;
-      margin: 15px 0;
-      border-top-color: #020202; }
-
-#careers-page #careers-apply-form {
-  width: 100%;
-  height: auto;
-  background-color: #000;
-  display: none; }
-  #careers-page #careers-apply-form .section-apply {
+    #careers-page .row.fade-in.row_2 {
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+    #careers-page .row.fade-in.row_3 {
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+    #careers-page .row.fade-in.row_4 {
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+    #careers-page .row.fade-in.row_0 {
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+    #careers-page .row .column {
+      color: #000;
+      font-family: oswald, arial; }
+      #careers-page .row .column h3 {
+        font-size: 30px;
+        margin: 0 0 15px;
+        text-transform: uppercase; }
+      #careers-page .row .column p {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #333;
+        text-transform: uppercase; }
+      #careers-page .row .column .button-readmore {
+        color: #1f3052;
+        clear: both;
+        font: 600 16px/1 oswald, arial; }
+      #careers-page .row .column hr {
+        width: 50%;
+        text-align: left;
+        float: left;
+        margin: 15px 0;
+        border-top-color: #020202; }
+  #careers-page #careers-apply-form {
     width: 100%;
     height: auto;
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    padding: 70px 0; }
-    #careers-page #careers-apply-form .section-apply .row {
-      margin-bottom: 0;
-      background-color: transparent; }
-    #careers-page #careers-apply-form .section-apply form {
-      opacity: 0;
-      -webkit-transform: translateY(20%);
-      -ms-transform: translateY(20%);
-      transform: translateY(20%);
-      -webkit-transition: all 0.8s ease-out 0.2s;
-      -ms-transition: all 0.8s ease-out 0.2s;
-      -o-transition: all 0.8s ease-out 0.2s;
-      transition: all 0.8s ease-out 0.2s; }
-    #careers-page #careers-apply-form .section-apply.fade-in {
-      background-image: url("../../images/career/oxf_bg_content.jpg"); }
-      #careers-page #careers-apply-form .section-apply.fade-in form, #careers-page #careers-apply-form .section-apply.fade-in .row, #careers-page #careers-apply-form .section-apply.fade-in h3 {
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1; }
-    #careers-page #careers-apply-form .section-apply .form-row .form-group {
-      padding: 0 22px 0 0; }
-      #careers-page #careers-apply-form .section-apply .form-row .form-group:last-child {
-        padding: 0 0 0 22px; }
-      #careers-page #careers-apply-form .section-apply .form-row .form-group h3 {
-        margin: 30px 0; }
-    #careers-page #careers-apply-form .section-apply h3 {
-      font-size: 30px;
-      font-weight: 600;
-      margin-bottom: 40px;
-      opacity: 0;
-      -webkit-transform: translateY(200%);
-      -ms-transform: translateY(200%);
-      transform: translateY(200%);
-      -webkit-transition: all 0.8s ease-out 0.2s;
-      -ms-transition: all 0.8s ease-out 0.2s;
-      -o-transition: all 0.8s ease-out 0.2s;
-      transition: all 0.8s ease-out 0.2s; }
-    #careers-page #careers-apply-form .section-apply label {
-      font: 400 18px/1 oswald, arial;
-      text-transform: uppercase; }
-      #careers-page #careers-apply-form .section-apply label.custom-file-upload {
+    background-color: #000;
+    display: none; }
+    #careers-page #careers-apply-form .section-apply {
+      width: 100%;
+      height: auto;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+      padding: 70px 0; }
+      #careers-page #careers-apply-form .section-apply .row {
+        margin-bottom: 0;
+        background-color: transparent; }
+      #careers-page #careers-apply-form .section-apply form {
+        opacity: 0;
+        -webkit-transform: translateY(20%);
+        -ms-transform: translateY(20%);
+        transform: translateY(20%);
+        -webkit-transition: all 0.8s ease-out 0.2s;
+        -ms-transition: all 0.8s ease-out 0.2s;
+        -o-transition: all 0.8s ease-out 0.2s;
+        transition: all 0.8s ease-out 0.2s; }
+      #careers-page #careers-apply-form .section-apply.fade-in {
+        background-image: url("../../images/career/oxf_bg_content.jpg"); }
+        #careers-page #careers-apply-form .section-apply.fade-in form, #careers-page #careers-apply-form .section-apply.fade-in .row, #careers-page #careers-apply-form .section-apply.fade-in h3 {
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1; }
+      #careers-page #careers-apply-form .section-apply .form-row .form-group {
+        padding: 0 22px 0 0; }
+        #careers-page #careers-apply-form .section-apply .form-row .form-group:last-child {
+          padding: 0 0 0 22px; }
+        #careers-page #careers-apply-form .section-apply .form-row .form-group h3 {
+          margin: 30px 0; }
+      #careers-page #careers-apply-form .section-apply h3 {
+        font-size: 30px;
         font-weight: 600;
-        line-height: 1.6; }
-    #careers-page #careers-apply-form .section-apply .uploadname {
-      overflow: hidden;
-      display: none; }
-      #careers-page #careers-apply-form .section-apply .uploadname #filetouploadname {
-        font: 400 20px/1 oswald, arial;
-        width: auto;
-        color: #1f3052;
-        text-transform: uppercase;
-        vertical-align: middle;
-        background-color: #fff;
-        float: left; }
-      #careers-page #careers-apply-form .section-apply .uploadname #deluploadname {
-        text-transform: uppercase;
-        vertical-align: middle;
-        width: 50px;
-        display: inline-block;
-        float: left;
-        padding: 4px 0;
-        height: 50px;
-        font-size: 30px; }
+        margin-bottom: 40px;
+        opacity: 0;
+        -webkit-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+        transform: translateY(200%);
+        -webkit-transition: all 0.8s ease-out 0.2s;
+        -ms-transition: all 0.8s ease-out 0.2s;
+        -o-transition: all 0.8s ease-out 0.2s;
+        transition: all 0.8s ease-out 0.2s; }
+      #careers-page #careers-apply-form .section-apply label {
+        font: 400 18px/1 oswald, arial;
+        text-transform: uppercase; }
+        #careers-page #careers-apply-form .section-apply label.custom-file-upload {
+          font-weight: 600;
+          line-height: 1.6; }
+      #careers-page #careers-apply-form .section-apply .uploadname {
+        overflow: hidden;
+        display: none; }
+        #careers-page #careers-apply-form .section-apply .uploadname #filetouploadname {
+          font: 400 20px/1 oswald, arial;
+          width: auto;
+          color: #1f3052;
+          text-transform: uppercase;
+          vertical-align: middle;
+          background-color: #fff;
+          float: left; }
+        #careers-page #careers-apply-form .section-apply .uploadname #deluploadname {
+          text-transform: uppercase;
+          vertical-align: middle;
+          width: 50px;
+          display: inline-block;
+          float: left;
+          padding: 4px 0;
+          height: 50px;
+          font-size: 30px; }
+      #careers-page #careers-apply-form .section-apply .cantUpload {
+        display: none;
+        padding: 15px; }
+        #careers-page #careers-apply-form .section-apply .cantUpload #delcantUpload {
+          text-transform: uppercase;
+          vertical-align: middle;
+          width: 50px;
+          display: inline-block;
+          float: left;
+          padding: 4px 0;
+          height: 50px;
+          font-size: 30px; }
 
 /* Careers page ******************************************************************/
 #careersdetail-page {
@@ -2489,203 +2497,225 @@ small {
           font-size: 30px; }
 
 /* Contact us page ******************************************************************/
-#contactus-page .banner {
-  width: 100%;
-  height: 890px;
-  background: url("../../images/contactus/oxf_bg_banner.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center; }
-  #contactus-page .banner .container {
-    position: relative;
+#contactus-page {
+  background-color: #fff; }
+  #contactus-page .banner {
     width: 100%;
-    height: 100%; }
-    #contactus-page .banner .container h1 {
-      font: 600 140px/1.2 oswald, arial;
-      color: rgba(255, 255, 255, 0.2);
+    height: 890px;
+    background: url("../../images/contactus/oxf_bg_banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    #contactus-page .banner .container {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      #contactus-page .banner .container h1 {
+        font: 600 140px/1.2 oswald, arial;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+        -webkit-transition: all 0.8s ease-out;
+        -ms-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out; }
+    #contactus-page .banner.fade-in h1 {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  #contactus-page .content {
+    padding: 70px 0 170px; }
+    #contactus-page .content.fade-in .breadcrumb, #contactus-page .content.fade-in h1, #contactus-page .content.fade-in p {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    #contactus-page .content.fade-in .dropdown {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  #contactus-page .breadcrumb {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #contactus-page h1 {
+    color: #1f3052;
+    margin-bottom: 55px;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out 0.2s;
+    -ms-transition: all 0.8s ease-out 0.2s;
+    -o-transition: all 0.8s ease-out 0.2s;
+    transition: all 0.8s ease-out 0.2s; }
+  #contactus-page .header h1 {
+    display: inline-block; }
+  #contactus-page .header p {
+    color: #000;
+    margin-bottom: 120px;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #contactus-page .careers-list {
+    padding: 0; }
+    #contactus-page .careers-list .notice-nojob {
+      display: none;
+      width: 100%;
+      margin-bottom: 60px;
       position: absolute;
-      bottom: 110px;
-      right: 0;
-      margin: auto;
-      opacity: 0;
-      -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      transform: translateY(50%);
+      top: 0;
+      left: 0;
+      color: #999;
+      text-align: center;
+      font: 400 20px/1 arial; }
+    #contactus-page .careers-list .column {
+      padding: 30px; }
+      #contactus-page .careers-list .column:hover {
+        -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+        background-color: #f4f4f4; }
+        #contactus-page .careers-list .column:hover .button-readmore {
+          color: #f7d0cb; }
+  #contactus-page .row {
+    position: relative;
+    margin: 0 0 40px;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%); }
+    #contactus-page .row.row_0 {
+      margin-bottom: 0; }
+      #contactus-page .row.row_0 .column h3 {
+        margin-bottom: 30px;
+        text-transform: uppercase; }
+    #contactus-page .row.fade-in.row_1, #contactus-page .row.fade-in.row_2, #contactus-page .row.fade-in.row_3, #contactus-page .row.fade-in.row_4, #contactus-page .row.fade-in.row_0 {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1; }
+    #contactus-page .row.fade-in.row_1 {
       -webkit-transition: all 0.8s ease-out;
       -ms-transition: all 0.8s ease-out;
       -o-transition: all 0.8s ease-out;
       transition: all 0.8s ease-out; }
-  #contactus-page .banner.fade-in h1 {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-#contactus-page .content {
-  padding: 70px 0 170px; }
-  #contactus-page .content.fade-in .breadcrumb, #contactus-page .content.fade-in h1, #contactus-page .content.fade-in p {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-  #contactus-page .content.fade-in .dropdown {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-#contactus-page .breadcrumb {
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out; }
-
-#contactus-page h1 {
-  color: #1f3052;
-  margin-bottom: 55px;
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out 0.2s;
-  -ms-transition: all 0.8s ease-out 0.2s;
-  -o-transition: all 0.8s ease-out 0.2s;
-  transition: all 0.8s ease-out 0.2s; }
-
-#contactus-page .header h1 {
-  display: inline-block; }
-
-#contactus-page .header p {
-  color: #000;
-  margin-bottom: 120px;
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out; }
-
-#contactus-page .careers-list {
-  padding: 0; }
-  #contactus-page .careers-list .notice-nojob {
-    display: none;
+    #contactus-page .row.fade-in.row_2 {
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+    #contactus-page .row.fade-in.row_3 {
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+    #contactus-page .row.fade-in.row_4 {
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+    #contactus-page .row.fade-in.row_0 {
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+    #contactus-page .row .column {
+      color: #000;
+      font-family: oswald, arial; }
+      #contactus-page .row .column h3 {
+        font-size: 30px;
+        margin: 0 0 15px;
+        text-transform: uppercase; }
+      #contactus-page .row .column p {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #333;
+        text-transform: uppercase; }
+      #contactus-page .row .column .button-readmore {
+        color: #1f3052;
+        clear: both;
+        font: 600 16px/1 oswald, arial; }
+      #contactus-page .row .column hr {
+        width: 50%;
+        text-align: left;
+        float: left;
+        margin: 15px 0;
+        border-top-color: #020202; }
+  #contactus-page #contactus-form {
     width: 100%;
-    margin-bottom: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #999;
-    text-align: center;
-    font: 400 20px/1 arial; }
-  #contactus-page .careers-list .column {
-    padding: 30px; }
-    #contactus-page .careers-list .column:hover {
-      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-      background-color: #f4f4f4; }
-      #contactus-page .careers-list .column:hover .button-readmore {
-        color: #f7d0cb; }
-
-#contactus-page .row {
-  position: relative;
-  margin: 0 0 40px;
-  background-color: #fff;
-  opacity: 0;
-  -webkit-transform: translateY(20%);
-  -ms-transform: translateY(20%);
-  transform: translateY(20%); }
-  #contactus-page .row.row_0 {
-    margin-bottom: 0; }
-    #contactus-page .row.row_0 .column h3 {
-      margin-bottom: 30px;
-      text-transform: uppercase; }
-  #contactus-page .row.fade-in.row_1, #contactus-page .row.fade-in.row_2, #contactus-page .row.fade-in.row_3, #contactus-page .row.fade-in.row_4, #contactus-page .row.fade-in.row_0 {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1; }
-  #contactus-page .row.fade-in.row_1 {
-    -webkit-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out; }
-  #contactus-page .row.fade-in.row_2 {
-    -webkit-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out; }
-  #contactus-page .row.fade-in.row_3 {
-    -webkit-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out; }
-  #contactus-page .row.fade-in.row_4 {
-    -webkit-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out; }
-  #contactus-page .row.fade-in.row_0 {
-    -webkit-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out; }
-  #contactus-page .row .column {
-    color: #000;
-    font-family: oswald, arial; }
-    #contactus-page .row .column h3 {
-      font-size: 30px;
-      margin: 0 0 15px;
-      text-transform: uppercase; }
-    #contactus-page .row .column p {
-      font-size: 20px;
-      padding: 0;
-      margin: 0;
-      color: #333;
-      text-transform: uppercase; }
-    #contactus-page .row .column .button-readmore {
-      color: #1f3052;
-      clear: both;
-      font: 600 16px/1 oswald, arial; }
-    #contactus-page .row .column hr {
-      width: 50%;
-      text-align: left;
-      float: left;
-      margin: 15px 0;
-      border-top-color: #020202; }
-
-#contactus-page #contactus-form {
-  width: 100%;
-  height: auto; }
-  #contactus-page #contactus-form .section-form {
-    width: 100%;
-    height: auto;
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom; }
-    #contactus-page #contactus-form .section-form .row {
-      margin-bottom: 0;
-      background-color: transparent; }
-    #contactus-page #contactus-form .section-form .contactus-detail-card {
-      position: relative; }
-      #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
-        background-color: #1f3052;
-        padding: 140px 70px;
-        width: 510px;
-        height: 420px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
+    height: auto; }
+    #contactus-page #contactus-form .section-form {
+      width: 100%;
+      height: auto;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center bottom; }
+      #contactus-page #contactus-form .section-form .row {
+        margin-bottom: 0;
+        background-color: transparent; }
+      #contactus-page #contactus-form .section-form .contactus-detail-card {
+        position: relative; }
+        #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
+          background-color: #1f3052;
+          padding: 140px 70px;
+          width: 510px;
+          height: 420px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+          z-index: 2;
+          opacity: 0;
+          -webkit-transform: translateY(20%);
+          -ms-transform: translateY(20%);
+          transform: translateY(20%);
+          -webkit-transition: all 0.8s ease-out 0.2s;
+          -ms-transition: all 0.8s ease-out 0.2s;
+          -o-transition: all 0.8s ease-out 0.2s;
+          transition: all 0.8s ease-out 0.2s; }
+          #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .row {
+            margin-bottom: 50px; }
+            #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .row:last-child {
+              margin-bottom: 0; }
+              #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .row:last-child p {
+                line-height: 1.2;
+                margin: -8px 0 0; }
+          #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
+            width: 42px;
+            margin-right: 40px; }
+          #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption a {
+            display: inline-block; }
+            #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption a p {
+              font-size: 22px; }
+          #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption.tel {
+            margin-top: -8px; }
+      #contactus-page #contactus-form .section-form form {
+        padding: 60px 90px;
         -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
         box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-        z-index: 2;
         opacity: 0;
         -webkit-transform: translateY(20%);
         -ms-transform: translateY(20%);
@@ -2694,184 +2724,88 @@ small {
         -ms-transition: all 0.8s ease-out 0.2s;
         -o-transition: all 0.8s ease-out 0.2s;
         transition: all 0.8s ease-out 0.2s; }
-        #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .row {
-          margin-bottom: 50px; }
-          #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .row:last-child {
-            margin-bottom: 0; }
-            #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .row:last-child p {
-              line-height: 1.2;
-              margin: -8px 0 0; }
-        #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
-          width: 42px;
-          margin-right: 40px; }
-        #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption a {
-          display: inline-block; }
-          #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption a p {
-            font-size: 22px; }
-        #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figcaption.tel {
-          margin-top: -8px; }
-    #contactus-page #contactus-form .section-form form {
-      padding: 60px 90px;
-      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-      opacity: 0;
-      -webkit-transform: translateY(20%);
-      -ms-transform: translateY(20%);
-      transform: translateY(20%);
-      -webkit-transition: all 0.8s ease-out 0.2s;
-      -ms-transition: all 0.8s ease-out 0.2s;
-      -o-transition: all 0.8s ease-out 0.2s;
-      transition: all 0.8s ease-out 0.2s; }
-    #contactus-page #contactus-form .section-form.fade-in form, #contactus-page #contactus-form .section-form.fade-in .row, #contactus-page #contactus-form .section-form.fade-in h3, #contactus-page #contactus-form .section-form.fade-in .contactus-detail {
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-      opacity: 1; }
-    #contactus-page #contactus-form .section-form .form-row .form-group {
-      padding: 0 22px 0 0; }
-      #contactus-page #contactus-form .section-form .form-row .form-group:last-child {
-        padding: 0 0 0 22px; }
-      #contactus-page #contactus-form .section-form .form-row .form-group h3 {
-        margin: 30px 0; }
-    #contactus-page #contactus-form .section-form h3 {
-      font-size: 30px;
-      font-weight: 600;
-      margin-bottom: 40px;
-      color: #000;
-      opacity: 0;
-      -webkit-transform: translateY(200%);
-      -ms-transform: translateY(200%);
-      transform: translateY(200%);
-      -webkit-transition: all 0.8s ease-out 0.2s;
-      -ms-transition: all 0.8s ease-out 0.2s;
-      -o-transition: all 0.8s ease-out 0.2s;
-      transition: all 0.8s ease-out 0.2s; }
-    #contactus-page #contactus-form .section-form label {
-      font: 400 18px/1 oswald, arial;
-      text-transform: uppercase;
-      color: #000; }
-      #contactus-page #contactus-form .section-form label.custom-file-upload {
+      #contactus-page #contactus-form .section-form.fade-in form, #contactus-page #contactus-form .section-form.fade-in .row, #contactus-page #contactus-form .section-form.fade-in h3, #contactus-page #contactus-form .section-form.fade-in .contactus-detail {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1; }
+      #contactus-page #contactus-form .section-form .form-row .form-group {
+        padding: 0 22px 0 0; }
+        #contactus-page #contactus-form .section-form .form-row .form-group:last-child {
+          padding: 0 0 0 22px; }
+        #contactus-page #contactus-form .section-form .form-row .form-group h3 {
+          margin: 30px 0; }
+      #contactus-page #contactus-form .section-form h3 {
+        font-size: 30px;
         font-weight: 600;
-        line-height: 1.6; }
-    #contactus-page #contactus-form .section-form input[type="text"], #contactus-page #contactus-form .section-form input[type="email"], #contactus-page #contactus-form .section-form textarea {
-      border: 1px solid #ccc; }
-    #contactus-page #contactus-form .section-form textarea {
-      margin-bottom: 50px; }
+        margin-bottom: 40px;
+        color: #000;
+        opacity: 0;
+        -webkit-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+        transform: translateY(200%);
+        -webkit-transition: all 0.8s ease-out 0.2s;
+        -ms-transition: all 0.8s ease-out 0.2s;
+        -o-transition: all 0.8s ease-out 0.2s;
+        transition: all 0.8s ease-out 0.2s; }
+      #contactus-page #contactus-form .section-form label {
+        font: 400 18px/1 oswald, arial;
+        text-transform: uppercase;
+        color: #000; }
+        #contactus-page #contactus-form .section-form label.custom-file-upload {
+          font-weight: 600;
+          line-height: 1.6; }
+      #contactus-page #contactus-form .section-form input[type="text"], #contactus-page #contactus-form .section-form input[type="email"], #contactus-page #contactus-form .section-form textarea {
+        border: 1px solid #ccc; }
+      #contactus-page #contactus-form .section-form textarea {
+        margin-bottom: 50px; }
 
 /* Why us page ************************************************************************/
-#whyus-page .banner {
-  width: 100%;
-  height: 890px;
-  background: url("../../images/whyus/oxf_bg_banner.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center; }
-  #whyus-page .banner .container {
-    position: relative;
-    width: 100%;
-    height: 100%; }
-    #whyus-page .banner .container h1 {
-      font: 600 140px/1.2 oswald, arial;
-      color: rgba(255, 255, 255, 0.2);
-      position: absolute;
-      bottom: 110px;
-      right: 0;
-      margin: auto;
-      opacity: 0;
-      -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      transform: translateY(50%);
-      -webkit-transition: all 0.8s ease-out;
-      -ms-transition: all 0.8s ease-out;
-      -o-transition: all 0.8s ease-out;
-      transition: all 0.8s ease-out; }
-  #whyus-page .banner.fade-in h1 {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-#whyus-page .content {
-  padding: 70px 0 120px; }
-  #whyus-page .content.fade-in .breadcrumb, #whyus-page .content.fade-in h1, #whyus-page .content.fade-in p {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-  #whyus-page .content.fade-in .dropdown {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-#whyus-page .breadcrumb {
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out; }
-
-#whyus-page .header h1 {
-  color: #1f3052;
-  margin-bottom: 85px;
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out 0.2s;
-  -ms-transition: all 0.8s ease-out 0.2s;
-  -o-transition: all 0.8s ease-out 0.2s;
-  transition: all 0.8s ease-out 0.2s; }
-
-#whyus-page .header p {
-  color: #000;
-  margin-bottom: 120px;
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out; }
-
-#whyus-page .row {
-  position: relative;
-  margin: 0 0 120px;
+#whyus-page {
   background-color: #fff; }
-  #whyus-page .row.fade-in .figure, #whyus-page .row.fade-in .figcaption {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-  #whyus-page .row:nth-child(even) .figcaption {
-    right: 10%;
-    left: auto; }
-  #whyus-page .row:nth-child(odd) .figure img {
-    float: right; }
-  #whyus-page .row:last-child {
-    margin-bottom: 0; }
-    #whyus-page .row:last-child .figcaption {
-      top: 6%; }
-  #whyus-page .row h1 {
-    color: #000;
-    margin-bottom: 40px;
-    line-height: 1.2;
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%);
-    -webkit-transition: all 0.8s ease-out 0.2s;
-    -ms-transition: all 0.8s ease-out 0.2s;
-    -o-transition: all 0.8s ease-out 0.2s;
-    transition: all 0.8s ease-out 0.2s; }
-  #whyus-page .row p {
-    font-size: 20px;
-    color: #000; }
-  #whyus-page .row .figure {
+  #whyus-page .banner {
     width: 100%;
+    height: 890px;
+    background: url("../../images/whyus/oxf_bg_banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    #whyus-page .banner .container {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      #whyus-page .banner .container h1 {
+        font: 600 140px/1.2 oswald, arial;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+        -webkit-transition: all 0.8s ease-out;
+        -ms-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out; }
+    #whyus-page .banner.fade-in h1 {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  #whyus-page .content {
+    padding: 70px 0 120px; }
+    #whyus-page .content.fade-in .breadcrumb, #whyus-page .content.fade-in h1, #whyus-page .content.fade-in p {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    #whyus-page .content.fade-in .dropdown {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  #whyus-page .breadcrumb {
     opacity: 0;
     -webkit-transform: translateY(50%);
     -ms-transform: translateY(50%);
@@ -2880,13 +2814,9 @@ small {
     -ms-transition: all 0.8s ease-out;
     -o-transition: all 0.8s ease-out;
     transition: all 0.8s ease-out; }
-  #whyus-page .row .figcaption {
-    width: 36%;
-    position: absolute;
-    top: 16%;
-    bottom: 0;
-    left: 10%;
-    margin: auto;
+  #whyus-page .header h1 {
+    color: #1f3052;
+    margin-bottom: 85px;
     opacity: 0;
     -webkit-transform: translateY(50%);
     -ms-transform: translateY(50%);
@@ -2895,6 +2825,75 @@ small {
     -ms-transition: all 0.8s ease-out 0.2s;
     -o-transition: all 0.8s ease-out 0.2s;
     transition: all 0.8s ease-out 0.2s; }
+  #whyus-page .header p {
+    color: #000;
+    margin-bottom: 120px;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+  #whyus-page .row {
+    position: relative;
+    margin: 0 0 120px;
+    background-color: #fff; }
+    #whyus-page .row.fade-in .figure, #whyus-page .row.fade-in .figcaption {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    #whyus-page .row:nth-child(even) .figcaption {
+      right: 10%;
+      left: auto; }
+    #whyus-page .row:nth-child(odd) .figure img {
+      float: right; }
+    #whyus-page .row:last-child {
+      margin-bottom: 0; }
+      #whyus-page .row:last-child .figcaption {
+        top: 6%; }
+    #whyus-page .row h1 {
+      color: #000;
+      margin-bottom: 40px;
+      line-height: 1.2;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      -webkit-transition: all 0.8s ease-out 0.2s;
+      -ms-transition: all 0.8s ease-out 0.2s;
+      -o-transition: all 0.8s ease-out 0.2s;
+      transition: all 0.8s ease-out 0.2s; }
+    #whyus-page .row p {
+      font-size: 20px;
+      color: #000; }
+    #whyus-page .row .figure {
+      width: 100%;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      -webkit-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+    #whyus-page .row .figcaption {
+      width: 36%;
+      position: absolute;
+      top: 16%;
+      bottom: 0;
+      left: 10%;
+      margin: auto;
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      -webkit-transition: all 0.8s ease-out 0.2s;
+      -ms-transition: all 0.8s ease-out 0.2s;
+      -o-transition: all 0.8s ease-out 0.2s;
+      transition: all 0.8s ease-out 0.2s; }
 
 /* Practices all page ******************************************************************/
 #strategy-page .banner {
@@ -2912,131 +2911,60 @@ small {
 #financialtransformation-page .banner {
   background: url("../../images/financialtransformation/oxf_bg_banner.jpg") no-repeat; }
 
-#demandfulfillment-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
-  width: 100%;
-  height: 890px;
-  background-size: cover;
-  background-position: center center; }
-  #demandfulfillment-page .banner .container, #strategy-page .banner .container, #demandgeneration-page .banner .container, #financialtransformation-page .banner .container, #organisationaloptimisation-page .banner .container {
-    position: relative;
+#demandfulfillment-page, #strategy-page, #demandgeneration-page, #financialtransformation-page, #organisationaloptimisation-page {
+  background-color: #fff; }
+  #demandfulfillment-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
     width: 100%;
-    height: 100%; }
-    #demandfulfillment-page .banner .container h1, #strategy-page .banner .container h1, #demandgeneration-page .banner .container h1, #financialtransformation-page .banner .container h1, #organisationaloptimisation-page .banner .container h1 {
-      font: 600 140px/1.2 oswald, arial;
-      color: rgba(255, 255, 255, 0.2);
-      position: absolute;
-      bottom: 110px;
-      right: 0;
-      margin: auto;
-      text-align: right;
-      font-size: 120px;
-      line-height: 1;
-      opacity: 0;
-      -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      transform: translateY(50%);
-      -webkit-transition: all 0.8s ease-out;
-      -ms-transition: all 0.8s ease-out;
-      -o-transition: all 0.8s ease-out;
-      transition: all 0.8s ease-out; }
-  #demandfulfillment-page .banner.fade-in h1, #strategy-page .banner.fade-in h1, #demandgeneration-page .banner.fade-in h1, #financialtransformation-page .banner.fade-in h1, #organisationaloptimisation-page .banner.fade-in h1 {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-#demandfulfillment-page .content, #strategy-page .content, #demandgeneration-page .content, #financialtransformation-page .content, #organisationaloptimisation-page .content {
-  position: relative;
-  z-index: 2; }
-  #demandfulfillment-page .content .row, #strategy-page .content .row, #demandgeneration-page .content .row, #financialtransformation-page .content .row, #organisationaloptimisation-page .content .row {
-    height: 100%;
-    position: relative;
-    min-height: 520px; }
-    #demandfulfillment-page .content .row .column, #strategy-page .content .row .column, #demandgeneration-page .content .row .column, #financialtransformation-page .content .row .column, #organisationaloptimisation-page .content .row .column {
-      position: absolute; }
-      #demandfulfillment-page .content .row .column._left, #strategy-page .content .row .column._left, #demandgeneration-page .content .row .column._left, #financialtransformation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left {
-        left: 0;
-        padding: 6% 1% 14% 6%;
-        z-index: 1; }
-      #demandfulfillment-page .content .row .column._right, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._right, #financialtransformation-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right {
+    height: 890px;
+    background-size: cover;
+    background-position: center center; }
+    #demandfulfillment-page .banner .container, #strategy-page .banner .container, #demandgeneration-page .banner .container, #financialtransformation-page .banner .container, #organisationaloptimisation-page .banner .container {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      #demandfulfillment-page .banner .container h1, #strategy-page .banner .container h1, #demandgeneration-page .banner .container h1, #financialtransformation-page .banner .container h1, #organisationaloptimisation-page .banner .container h1 {
+        font: 600 140px/1.2 oswald, arial;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+        margin: auto;
         text-align: right;
-        right: 0; }
-    #demandfulfillment-page .content .row h1, #strategy-page .content .row h1, #demandgeneration-page .content .row h1, #financialtransformation-page .content .row h1, #organisationaloptimisation-page .content .row h1 {
-      color: #1f3052;
-      margin-bottom: 47px;
-      opacity: 0;
-      -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      transform: translateY(50%);
-      -webkit-transition: all 0.8s ease-out 0.3s;
-      -ms-transition: all 0.8s ease-out 0.3s;
-      -o-transition: all 0.8s ease-out 0.3s;
-      transition: all 0.8s ease-out 0.3s; }
-      #demandfulfillment-page .content .row h1.number, #strategy-page .content .row h1.number, #demandgeneration-page .content .row h1.number, #financialtransformation-page .content .row h1.number, #organisationaloptimisation-page .content .row h1.number {
-        font-size: 100px;
-        margin-bottom: 14px;
-        color: #f7d0cb; }
-    #demandfulfillment-page .content .row p, #strategy-page .content .row p, #demandgeneration-page .content .row p, #financialtransformation-page .content .row p, #organisationaloptimisation-page .content .row p {
-      font-size: 20px;
-      color: #000;
-      opacity: 0;
-      -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      transform: translateY(50%);
-      -webkit-transition: all 0.8s ease-out 0.6s;
-      -ms-transition: all 0.8s ease-out 0.6s;
-      -o-transition: all 0.8s ease-out 0.6s;
-      transition: all 0.8s ease-out 0.6s; }
-    #demandfulfillment-page .content .row img, #strategy-page .content .row img, #demandgeneration-page .content .row img, #financialtransformation-page .content .row img, #organisationaloptimisation-page .content .row img {
-      width: 80%;
-      margin: 10px 50px 0 0;
-      opacity: 0;
-      -webkit-transform: translateY(20%);
-      -ms-transform: translateY(20%);
-      transform: translateY(20%);
-      -webkit-transition: all 0.8s ease-out 0.9s;
-      -ms-transition: all 0.8s ease-out 0.9s;
-      -o-transition: all 0.8s ease-out 0.9s;
-      transition: all 0.8s ease-out 0.9s; }
-  #demandfulfillment-page .content.fade-in .breadcrumb, #demandfulfillment-page .content.fade-in h1, #demandfulfillment-page .content.fade-in p, #demandfulfillment-page .content.fade-in img, #strategy-page .content.fade-in .breadcrumb, #strategy-page .content.fade-in h1, #strategy-page .content.fade-in p, #strategy-page .content.fade-in img, #demandgeneration-page .content.fade-in .breadcrumb, #demandgeneration-page .content.fade-in h1, #demandgeneration-page .content.fade-in p, #demandgeneration-page .content.fade-in img, #financialtransformation-page .content.fade-in .breadcrumb, #financialtransformation-page .content.fade-in h1, #financialtransformation-page .content.fade-in p, #financialtransformation-page .content.fade-in img, #organisationaloptimisation-page .content.fade-in .breadcrumb, #organisationaloptimisation-page .content.fade-in h1, #organisationaloptimisation-page .content.fade-in p, #organisationaloptimisation-page .content.fade-in img {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-#demandfulfillment-page .breadcrumb, #strategy-page .breadcrumb, #demandgeneration-page .breadcrumb, #financialtransformation-page .breadcrumb, #organisationaloptimisation-page .breadcrumb {
-  margin: 70px 0 60px;
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out; }
-  #demandfulfillment-page .breadcrumb .breadcrumb-item.active, #strategy-page .breadcrumb .breadcrumb-item.active, #demandgeneration-page .breadcrumb .breadcrumb-item.active, #financialtransformation-page .breadcrumb .breadcrumb-item.active, #organisationaloptimisation-page .breadcrumb .breadcrumb-item.active {
-    color: #1f3052; }
-
-#demandfulfillment-page .carousel-section, #strategy-page .carousel-section, #demandgeneration-page .carousel-section, #financialtransformation-page .carousel-section, #organisationaloptimisation-page .carousel-section {
-  width: 100%;
-  background: url("../../images/demandfulfillment/oxf_bg_content.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0;
-  z-index: 0;
-  -webkit-transform: translateY(20%);
-  -ms-transform: translateY(20%);
-  transform: translateY(20%);
-  -webkit-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out; }
-  #demandfulfillment-page .carousel-section .carousel, #strategy-page .carousel-section .carousel, #demandgeneration-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel {
-    width: 100%;
-    height: 912px; }
-    #demandfulfillment-page .carousel-section .carousel .carousel-item, #strategy-page .carousel-section .carousel .carousel-item, #demandgeneration-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item {
-      padding: 15% 0 12%; }
-      #demandfulfillment-page .carousel-section .carousel .carousel-item .row.row_1, #strategy-page .carousel-section .carousel .carousel-item .row.row_1, #demandgeneration-page .carousel-section .carousel .carousel-item .row.row_1, #financialtransformation-page .carousel-section .carousel .carousel-item .row.row_1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row.row_1 {
+        font-size: 120px;
+        line-height: 1;
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+        -webkit-transition: all 0.8s ease-out;
+        -ms-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out; }
+    #demandfulfillment-page .banner.fade-in h1, #strategy-page .banner.fade-in h1, #demandgeneration-page .banner.fade-in h1, #financialtransformation-page .banner.fade-in h1, #organisationaloptimisation-page .banner.fade-in h1 {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+  #demandfulfillment-page .content, #strategy-page .content, #demandgeneration-page .content, #financialtransformation-page .content, #organisationaloptimisation-page .content {
+    position: relative;
+    z-index: 2; }
+    #demandfulfillment-page .content .row, #strategy-page .content .row, #demandgeneration-page .content .row, #financialtransformation-page .content .row, #organisationaloptimisation-page .content .row {
+      height: 100%;
+      position: relative;
+      min-height: 520px; }
+      #demandfulfillment-page .content .row .column, #strategy-page .content .row .column, #demandgeneration-page .content .row .column, #financialtransformation-page .content .row .column, #organisationaloptimisation-page .content .row .column {
+        position: absolute; }
+        #demandfulfillment-page .content .row .column._left, #strategy-page .content .row .column._left, #demandgeneration-page .content .row .column._left, #financialtransformation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left {
+          left: 0;
+          padding: 6% 1% 14% 6%;
+          z-index: 1;
+          position: static; }
+        #demandfulfillment-page .content .row .column._right, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._right, #financialtransformation-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right {
+          text-align: right;
+          right: 0; }
+      #demandfulfillment-page .content .row h1, #strategy-page .content .row h1, #demandgeneration-page .content .row h1, #financialtransformation-page .content .row h1, #organisationaloptimisation-page .content .row h1 {
+        color: #1f3052;
+        margin-bottom: 47px;
         opacity: 0;
         -webkit-transform: translateY(50%);
         -ms-transform: translateY(50%);
@@ -3045,7 +2973,13 @@ small {
         -ms-transition: all 0.8s ease-out 0.3s;
         -o-transition: all 0.8s ease-out 0.3s;
         transition: all 0.8s ease-out 0.3s; }
-      #demandfulfillment-page .carousel-section .carousel .carousel-item .row.row_2, #strategy-page .carousel-section .carousel .carousel-item .row.row_2, #demandgeneration-page .carousel-section .carousel .carousel-item .row.row_2, #financialtransformation-page .carousel-section .carousel .carousel-item .row.row_2, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row.row_2 {
+        #demandfulfillment-page .content .row h1.number, #strategy-page .content .row h1.number, #demandgeneration-page .content .row h1.number, #financialtransformation-page .content .row h1.number, #organisationaloptimisation-page .content .row h1.number {
+          font-size: 100px;
+          margin-bottom: 14px;
+          color: #f7d0cb; }
+      #demandfulfillment-page .content .row p, #strategy-page .content .row p, #demandgeneration-page .content .row p, #financialtransformation-page .content .row p, #organisationaloptimisation-page .content .row p {
+        font-size: 20px;
+        color: #000;
         opacity: 0;
         -webkit-transform: translateY(50%);
         -ms-transform: translateY(50%);
@@ -3054,48 +2988,115 @@ small {
         -ms-transition: all 0.8s ease-out 0.6s;
         -o-transition: all 0.8s ease-out 0.6s;
         transition: all 0.8s ease-out 0.6s; }
-      #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child {
-        margin-top: 160px; }
-      #demandfulfillment-page .carousel-section .carousel .carousel-item .row h1, #strategy-page .carousel-section .carousel .carousel-item .row h1, #demandgeneration-page .carousel-section .carousel .carousel-item .row h1, #financialtransformation-page .carousel-section .carousel .carousel-item .row h1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row h1 {
-        font-size: 45px;
-        line-height: 1.2; }
-      #demandfulfillment-page .carousel-section .carousel .carousel-item .row p, #strategy-page .carousel-section .carousel .carousel-item .row p, #demandgeneration-page .carousel-section .carousel .carousel-item .row p, #financialtransformation-page .carousel-section .carousel .carousel-item .row p, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row p {
-        font-size: 20px;
-        line-height: 1; }
-    #demandfulfillment-page .carousel-section .carousel .carouselHospitality-indicators li, #strategy-page .carousel-section .carousel .carouselHospitality-indicators li, #demandgeneration-page .carousel-section .carousel .carouselHospitality-indicators li, #financialtransformation-page .carousel-section .carousel .carouselHospitality-indicators li, #organisationaloptimisation-page .carousel-section .carousel .carouselHospitality-indicators li {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      margin: 0 8px;
-      opacity: 0.3; }
-      #demandfulfillment-page .carousel-section .carousel .carouselHospitality-indicators li.active, #strategy-page .carousel-section .carousel .carouselHospitality-indicators li.active, #demandgeneration-page .carousel-section .carousel .carouselHospitality-indicators li.active, #financialtransformation-page .carousel-section .carousel .carouselHospitality-indicators li.active, #organisationaloptimisation-page .carousel-section .carousel .carouselHospitality-indicators li.active {
-        opacity: 1; }
-  #demandfulfillment-page .carousel-section .carouselHospitality-indicators, #strategy-page .carousel-section .carouselHospitality-indicators, #demandgeneration-page .carousel-section .carouselHospitality-indicators, #financialtransformation-page .carousel-section .carouselHospitality-indicators, #organisationaloptimisation-page .carousel-section .carouselHospitality-indicators {
-    bottom: 68px; }
-  #demandfulfillment-page .carousel-section .carousel-control-prev, #strategy-page .carousel-section .carousel-control-prev, #demandgeneration-page .carousel-section .carousel-control-prev, #financialtransformation-page .carousel-section .carousel-control-prev, #organisationaloptimisation-page .carousel-section .carousel-control-prev {
-    left: 0%;
-    width: 5%; }
-    #demandfulfillment-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #strategy-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #demandgeneration-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #financialtransformation-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #organisationaloptimisation-page .carousel-section .carousel-control-prev .carousel-control-prev-icon {
-      background-image: url("../../images/icon/oxf_arrow_l.png");
-      width: 43px;
-      height: 81px; }
-  #demandfulfillment-page .carousel-section .carousel-control-next, #strategy-page .carousel-section .carousel-control-next, #demandgeneration-page .carousel-section .carousel-control-next, #financialtransformation-page .carousel-section .carousel-control-next, #organisationaloptimisation-page .carousel-section .carousel-control-next {
-    right: 0%;
-    width: 5%; }
-    #demandfulfillment-page .carousel-section .carousel-control-next .carousel-control-next-icon, #strategy-page .carousel-section .carousel-control-next .carousel-control-next-icon, #demandgeneration-page .carousel-section .carousel-control-next .carousel-control-next-icon, #financialtransformation-page .carousel-section .carousel-control-next .carousel-control-next-icon, #organisationaloptimisation-page .carousel-section .carousel-control-next .carousel-control-next-icon {
-      background-image: url("../../images/icon/oxf_arrow_r.png");
-      width: 43px;
-      height: 81px; }
-  #demandfulfillment-page .carousel-section.fade-in, #strategy-page .carousel-section.fade-in, #demandgeneration-page .carousel-section.fade-in, #financialtransformation-page .carousel-section.fade-in, #organisationaloptimisation-page .carousel-section.fade-in {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-    #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row_1, #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row_2, #strategy-page .carousel-section.fade-in .carousel .carousel-item .row_1, #strategy-page .carousel-section.fade-in .carousel .carousel-item .row_2, #demandgeneration-page .carousel-section.fade-in .carousel .carousel-item .row_1, #demandgeneration-page .carousel-section.fade-in .carousel .carousel-item .row_2, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row_1, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row_2, #organisationaloptimisation-page .carousel-section.fade-in .carousel .carousel-item .row_1, #organisationaloptimisation-page .carousel-section.fade-in .carousel .carousel-item .row_2 {
+      #demandfulfillment-page .content .row img, #strategy-page .content .row img, #demandgeneration-page .content .row img, #financialtransformation-page .content .row img, #organisationaloptimisation-page .content .row img {
+        width: 80%;
+        margin: 10px 50px 0 0;
+        opacity: 0;
+        -webkit-transform: translateY(20%);
+        -ms-transform: translateY(20%);
+        transform: translateY(20%);
+        -webkit-transition: all 0.8s ease-out 0.9s;
+        -ms-transition: all 0.8s ease-out 0.9s;
+        -o-transition: all 0.8s ease-out 0.9s;
+        transition: all 0.8s ease-out 0.9s; }
+    #demandfulfillment-page .content.fade-in .breadcrumb, #demandfulfillment-page .content.fade-in h1, #demandfulfillment-page .content.fade-in p, #demandfulfillment-page .content.fade-in img, #strategy-page .content.fade-in .breadcrumb, #strategy-page .content.fade-in h1, #strategy-page .content.fade-in p, #strategy-page .content.fade-in img, #demandgeneration-page .content.fade-in .breadcrumb, #demandgeneration-page .content.fade-in h1, #demandgeneration-page .content.fade-in p, #demandgeneration-page .content.fade-in img, #financialtransformation-page .content.fade-in .breadcrumb, #financialtransformation-page .content.fade-in h1, #financialtransformation-page .content.fade-in p, #financialtransformation-page .content.fade-in img, #organisationaloptimisation-page .content.fade-in .breadcrumb, #organisationaloptimisation-page .content.fade-in h1, #organisationaloptimisation-page .content.fade-in p, #organisationaloptimisation-page .content.fade-in img {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
+  #demandfulfillment-page .breadcrumb, #strategy-page .breadcrumb, #demandgeneration-page .breadcrumb, #financialtransformation-page .breadcrumb, #organisationaloptimisation-page .breadcrumb {
+    margin: 70px 0 60px;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+    #demandfulfillment-page .breadcrumb .breadcrumb-item.active, #strategy-page .breadcrumb .breadcrumb-item.active, #demandgeneration-page .breadcrumb .breadcrumb-item.active, #financialtransformation-page .breadcrumb .breadcrumb-item.active, #organisationaloptimisation-page .breadcrumb .breadcrumb-item.active {
+      color: #1f3052; }
+  #demandfulfillment-page .carousel-section, #strategy-page .carousel-section, #demandgeneration-page .carousel-section, #financialtransformation-page .carousel-section, #organisationaloptimisation-page .carousel-section {
+    width: 100%;
+    background: url("../../images/demandfulfillment/oxf_bg_content.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    z-index: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+    #demandfulfillment-page .carousel-section .carousel, #strategy-page .carousel-section .carousel, #demandgeneration-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel {
+      width: 100%;
+      height: auto; }
+      #demandfulfillment-page .carousel-section .carousel .carousel-item, #strategy-page .carousel-section .carousel .carousel-item, #demandgeneration-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item {
+        padding: 15% 0 12%; }
+        #demandfulfillment-page .carousel-section .carousel .carousel-item .row.row_1, #strategy-page .carousel-section .carousel .carousel-item .row.row_1, #demandgeneration-page .carousel-section .carousel .carousel-item .row.row_1, #financialtransformation-page .carousel-section .carousel .carousel-item .row.row_1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row.row_1 {
+          opacity: 0;
+          -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+          transform: translateY(50%);
+          -webkit-transition: all 0.8s ease-out 0.3s;
+          -ms-transition: all 0.8s ease-out 0.3s;
+          -o-transition: all 0.8s ease-out 0.3s;
+          transition: all 0.8s ease-out 0.3s; }
+        #demandfulfillment-page .carousel-section .carousel .carousel-item .row.row_2, #strategy-page .carousel-section .carousel .carousel-item .row.row_2, #demandgeneration-page .carousel-section .carousel .carousel-item .row.row_2, #financialtransformation-page .carousel-section .carousel .carousel-item .row.row_2, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row.row_2 {
+          opacity: 0;
+          -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+          transform: translateY(50%);
+          -webkit-transition: all 0.8s ease-out 0.6s;
+          -ms-transition: all 0.8s ease-out 0.6s;
+          -o-transition: all 0.8s ease-out 0.6s;
+          transition: all 0.8s ease-out 0.6s; }
+        #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child {
+          margin-top: 160px; }
+        #demandfulfillment-page .carousel-section .carousel .carousel-item .row h1, #strategy-page .carousel-section .carousel .carousel-item .row h1, #demandgeneration-page .carousel-section .carousel .carousel-item .row h1, #financialtransformation-page .carousel-section .carousel .carousel-item .row h1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row h1 {
+          font-size: 45px;
+          line-height: 1.2; }
+        #demandfulfillment-page .carousel-section .carousel .carousel-item .row p, #strategy-page .carousel-section .carousel .carousel-item .row p, #demandgeneration-page .carousel-section .carousel .carousel-item .row p, #financialtransformation-page .carousel-section .carousel .carousel-item .row p, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row p {
+          font-size: 20px;
+          line-height: 1; }
+      #demandfulfillment-page .carousel-section .carousel .carouselHospitality-indicators li, #strategy-page .carousel-section .carousel .carouselHospitality-indicators li, #demandgeneration-page .carousel-section .carousel .carouselHospitality-indicators li, #financialtransformation-page .carousel-section .carousel .carouselHospitality-indicators li, #organisationaloptimisation-page .carousel-section .carousel .carouselHospitality-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 8px;
+        opacity: 0.3; }
+        #demandfulfillment-page .carousel-section .carousel .carouselHospitality-indicators li.active, #strategy-page .carousel-section .carousel .carouselHospitality-indicators li.active, #demandgeneration-page .carousel-section .carousel .carouselHospitality-indicators li.active, #financialtransformation-page .carousel-section .carousel .carouselHospitality-indicators li.active, #organisationaloptimisation-page .carousel-section .carousel .carouselHospitality-indicators li.active {
+          opacity: 1; }
+    #demandfulfillment-page .carousel-section .carouselHospitality-indicators, #strategy-page .carousel-section .carouselHospitality-indicators, #demandgeneration-page .carousel-section .carouselHospitality-indicators, #financialtransformation-page .carousel-section .carouselHospitality-indicators, #organisationaloptimisation-page .carousel-section .carouselHospitality-indicators {
+      bottom: 68px; }
+    #demandfulfillment-page .carousel-section .carousel-indicators, #strategy-page .carousel-section .carousel-indicators, #demandgeneration-page .carousel-section .carousel-indicators, #financialtransformation-page .carousel-section .carousel-indicators, #organisationaloptimisation-page .carousel-section .carousel-indicators {
+      bottom: 2rem; }
+    #demandfulfillment-page .carousel-section .carousel-control-prev, #strategy-page .carousel-section .carousel-control-prev, #demandgeneration-page .carousel-section .carousel-control-prev, #financialtransformation-page .carousel-section .carousel-control-prev, #organisationaloptimisation-page .carousel-section .carousel-control-prev {
+      left: 0%;
+      width: 5%; }
+      #demandfulfillment-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #strategy-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #demandgeneration-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #financialtransformation-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #organisationaloptimisation-page .carousel-section .carousel-control-prev .carousel-control-prev-icon {
+        background-image: url("../../images/icon/oxf_arrow_l.png");
+        width: 43px;
+        height: 81px; }
+    #demandfulfillment-page .carousel-section .carousel-control-next, #strategy-page .carousel-section .carousel-control-next, #demandgeneration-page .carousel-section .carousel-control-next, #financialtransformation-page .carousel-section .carousel-control-next, #organisationaloptimisation-page .carousel-section .carousel-control-next {
+      right: 0%;
+      width: 5%; }
+      #demandfulfillment-page .carousel-section .carousel-control-next .carousel-control-next-icon, #strategy-page .carousel-section .carousel-control-next .carousel-control-next-icon, #demandgeneration-page .carousel-section .carousel-control-next .carousel-control-next-icon, #financialtransformation-page .carousel-section .carousel-control-next .carousel-control-next-icon, #organisationaloptimisation-page .carousel-section .carousel-control-next .carousel-control-next-icon {
+        background-image: url("../../images/icon/oxf_arrow_r.png");
+        width: 43px;
+        height: 81px; }
+    #demandfulfillment-page .carousel-section.fade-in, #strategy-page .carousel-section.fade-in, #demandgeneration-page .carousel-section.fade-in, #financialtransformation-page .carousel-section.fade-in, #organisationaloptimisation-page .carousel-section.fade-in {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+      #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row_1, #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row_2, #strategy-page .carousel-section.fade-in .carousel .carousel-item .row_1, #strategy-page .carousel-section.fade-in .carousel .carousel-item .row_2, #demandgeneration-page .carousel-section.fade-in .carousel .carousel-item .row_1, #demandgeneration-page .carousel-section.fade-in .carousel .carousel-item .row_2, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row_1, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row_2, #organisationaloptimisation-page .carousel-section.fade-in .carousel .carousel-item .row_1, #organisationaloptimisation-page .carousel-section.fade-in .carousel .carousel-item .row_2 {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
 
 /* Keyframes ******************************************************************/
 @-webkit-keyframes animateCloud {
@@ -3129,12 +3130,13 @@ small {
   background-color: #fff;
   min-width: 300px;
   width: 100%;
-  height: 70px;
+  height: 60px;
   text-align: left;
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: 94% center;
   background-size: 18px;
+  text-transform: uppercase;
   font: 700 20px/1 oswald, arial;
   color: #1f3052; }
   .dropdown.dropdown-list .dropdown-toggle[aria-expanded="false"] {
@@ -3157,7 +3159,7 @@ small {
     font: 700 20px/1 oswald, arial;
     text-transform: uppercase;
     color: #1f3052;
-    margin: 27px 0;
+    margin: 20px 0;
     padding: 0 20px; }
     .dropdown.dropdown-list .dropdown-menu .dropdown-item:hover {
       background-color: transparent;
@@ -3307,10 +3309,6 @@ small {
     #strategy-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section.fade-in .carousel .carousel-item .row:last-child {
       margin: 15% -15px; } }
 
-@media (min-width: 375px) {
-  nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
-    right: 29%; } }
-
 @media (max-width: 575.98px) {
   body {
     font: 16px/1.2 arial; }
@@ -3441,8 +3439,8 @@ small {
   #banner {
     height: 100vh; }
     #banner .obj.cloud.fade-in {
-      -webkit-animation-duration: 80s;
-      animation-duration: 80s; }
+      -webkit-animation-duration: 150s;
+      animation-duration: 150s; }
     #banner .container .content {
       margin-top: 0%;
       min-height: 0; }
@@ -3473,20 +3471,20 @@ small {
     margin: 0 5%; }
   #whatwedo .figure {
     position: absolute;
-    padding-top: 40px; }
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0; }
     #whatwedo .figure img.oxford-mb {
       width: 104%;
-      margin-top: 60px;
-      left: 0; }
+      margin-top: 20px;
+      position: static; }
   #practics .obj.city {
     background-size: 200%;
     background-position: -88px 0; }
   #practics .obj.cloud {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
-    transform: translateY(-100px);
-    -webkit-animation-duration: 80s;
-    animation-duration: 80s; }
+    transform: translateY(-100px); }
   #practics .container {
     padding-top: 160px; }
     #practics .container .content {
@@ -3513,14 +3511,14 @@ small {
         #hospitality .figcaption h1.number span {
           font-size: 40px; }
         #hospitality .figcaption h1.number.oxford-mb {
-          margin-right: 7px; }
+          margin-right: 20px; }
       #hospitality .figcaption h1.h-oneline {
         margin-bottom: 114%;
         clear: both; }
     #hospitality .figcaption p {
       font-size: 16px;
       float: right;
-      padding-right: 5%;
+      padding-right: 7%;
       margin-bottom: 5%;
       overflow: hidden;
       -o-text-overflow: ellipsis;
@@ -3530,7 +3528,7 @@ small {
       -webkit-box-orient: vertical; }
     #hospitality .figcaption button {
       float: right;
-      margin-right: 10%; }
+      margin-right: 15%; }
   #hospitality .figure img.oxford-mb {
     width: 100%;
     margin-top: 170px;
@@ -3731,6 +3729,19 @@ small {
         padding: 0.5rem 0.5rem; }
     #blogs-page .figure.column {
       margin-bottom: 30px; }
+    #blogs-page .figure .figure-img {
+      width: 100%;
+      height: 330px;
+      position: relative;
+      overflow: hidden; }
+      #blogs-page .figure .figure-img img {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        width: auto; }
     #blogs-page .figure .figcaption {
       padding: 24px; }
       #blogs-page .figure .figcaption h3 {
@@ -3794,6 +3805,19 @@ small {
     #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item {
       padding-left: 0;
       padding-right: 0; }
+    #blogsdetail-page .related .figure .figure-img {
+      width: 100%;
+      height: 330px;
+      position: relative;
+      overflow: hidden; }
+      #blogsdetail-page .related .figure .figure-img img {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        width: auto; }
     #blogsdetail-page .related .figure .figcaption {
       padding: 24px; }
       #blogsdetail-page .related .figure .figcaption h3 {
@@ -3849,8 +3873,8 @@ small {
   #strategy-page.h-one-line .content .column img, #demandgeneration-page.h-one-line .content .column img, #demandfulfillment-page.h-one-line .content .column img, #financialtransformation-page.h-one-line .content .column img, #organisationaloptimisation-page.h-one-line .content .column img {
     padding-top: 48%; }
   #strategy-page.h-one-line .carousel-section .carousel, #demandgeneration-page.h-one-line .carousel-section .carousel, #demandfulfillment-page.h-one-line .carousel-section .carousel, #financialtransformation-page.h-one-line .carousel-section .carousel, #organisationaloptimisation-page.h-one-line .carousel-section .carousel {
-    padding-top: 15%;
-    height: 745px; }
+    padding-top: 30%;
+    height: auto; }
   #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
     height: 44vh;
     background-position: center top;
@@ -3863,11 +3887,20 @@ small {
     margin: 40px 0; }
   #strategy-page .content, #demandgeneration-page .content, #demandfulfillment-page .content, #financialtransformation-page .content, #organisationaloptimisation-page .content {
     padding-bottom: 26%; }
-    #strategy-page .content .row .column._left, #demandgeneration-page .content .row .column._left, #demandfulfillment-page .content .row .column._left, #financialtransformation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left {
-      padding: 0 15px 14%; }
-      #strategy-page .content .row .column._left .number, #demandgeneration-page .content .row .column._left .number, #demandfulfillment-page .content .row .column._left .number, #financialtransformation-page .content .row .column._left .number, #organisationaloptimisation-page .content .row .column._left .number {
-        font-size: 90px;
-        line-height: 0.8; }
+    #strategy-page .content .row, #demandgeneration-page .content .row, #demandfulfillment-page .content .row, #financialtransformation-page .content .row, #organisationaloptimisation-page .content .row {
+      position: relative; }
+      #strategy-page .content .row .column._left, #demandgeneration-page .content .row .column._left, #demandfulfillment-page .content .row .column._left, #financialtransformation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left {
+        position: static;
+        padding: 0 15px 60%; }
+        #strategy-page .content .row .column._left .number, #demandgeneration-page .content .row .column._left .number, #demandfulfillment-page .content .row .column._left .number, #financialtransformation-page .content .row .column._left .number, #organisationaloptimisation-page .content .row .column._left .number {
+          font-size: 90px;
+          line-height: 0.8; }
+      #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._right, #financialtransformation-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right {
+        width: 100%;
+        position: absolute;
+        bottom: -230px; }
+        #strategy-page .content .row .column._right img, #demandgeneration-page .content .row .column._right img, #demandfulfillment-page .content .row .column._right img, #financialtransformation-page .content .row .column._right img, #organisationaloptimisation-page .content .row .column._right img {
+          padding: 0; }
     #strategy-page .content .column h1, #demandgeneration-page .content .column h1, #demandfulfillment-page .content .column h1, #financialtransformation-page .content .column h1, #organisationaloptimisation-page .content .column h1 {
       font-size: 46px;
       right: 5%;
@@ -3882,13 +3915,15 @@ small {
       padding-left: 4%; }
   #strategy-page .carousel-section .carousel, #demandgeneration-page .carousel-section .carousel, #demandfulfillment-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel {
     padding-top: 45%; }
-    #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child {
-      margin-top: 15%; }
-    #strategy-page .carousel-section .carousel .carousel-item .row h1, #demandgeneration-page .carousel-section .carousel .carousel-item .row h1, #demandfulfillment-page .carousel-section .carousel .carousel-item .row h1, #financialtransformation-page .carousel-section .carousel .carousel-item .row h1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row h1 {
-      font-size: 40px;
-      margin-bottom: 25px; }
-    #strategy-page .carousel-section .carousel .carousel-item .row p, #demandgeneration-page .carousel-section .carousel .carousel-item .row p, #demandfulfillment-page .carousel-section .carousel .carousel-item .row p, #financialtransformation-page .carousel-section .carousel .carousel-item .row p, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row p {
-      font-size: 16px; }
+    #strategy-page .carousel-section .carousel .carousel-item, #demandgeneration-page .carousel-section .carousel .carousel-item, #demandfulfillment-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item {
+      padding: 15% 0 30%; }
+      #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child {
+        margin-top: 15%; }
+      #strategy-page .carousel-section .carousel .carousel-item .row h1, #demandgeneration-page .carousel-section .carousel .carousel-item .row h1, #demandfulfillment-page .carousel-section .carousel .carousel-item .row h1, #financialtransformation-page .carousel-section .carousel .carousel-item .row h1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row h1 {
+        font-size: 40px;
+        margin-bottom: 25px; }
+      #strategy-page .carousel-section .carousel .carousel-item .row p, #demandgeneration-page .carousel-section .carousel .carousel-item .row p, #demandfulfillment-page .carousel-section .carousel .carousel-item .row p, #financialtransformation-page .carousel-section .carousel .carousel-item .row p, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row p {
+        font-size: 16px; }
   #strategy-page .carousel-section .carousel-control-next, #strategy-page .carousel-section .carousel-control-prev, #demandgeneration-page .carousel-section .carousel-control-next, #demandgeneration-page .carousel-section .carousel-control-prev, #demandfulfillment-page .carousel-section .carousel-control-next, #demandfulfillment-page .carousel-section .carousel-control-prev, #financialtransformation-page .carousel-section .carousel-control-next, #financialtransformation-page .carousel-section .carousel-control-prev, #organisationaloptimisation-page .carousel-section .carousel-control-next, #organisationaloptimisation-page .carousel-section .carousel-control-prev {
     display: none; }
   /* Careers page ********************/
@@ -3976,7 +4011,7 @@ small {
           -webkit-box-shadow: none;
           box-shadow: none;
           background-color: transparent; }
-        #careers-page .content .row .column.col_1 {
+        #careers-page .content .row .column.col_1, #careers-page .content .row .column.col_2 {
           margin-bottom: 40px; }
       #careers-page .content .row .buttonBlue {
         width: 100%;
@@ -3999,8 +4034,8 @@ small {
     #careers-page #careers-apply-form .section-apply label.custom-file-upload {
       width: 100%;
       height: 50px; }
-    #careers-page #careers-apply-form .section-apply #filetouploadname {
-      width: 100%;
+    #careers-page #careers-apply-form .section-apply .uploadname #filetouploadname {
+      width: 84%;
       height: 50px; }
   #careers-page #careers-apply-form button[type="submit"] {
     width: 100%;
@@ -4036,7 +4071,7 @@ small {
   /* Contact us page ********************/
   #contactus-page .banner {
     height: 44vh;
-    background-position: center top;
+    background-position: 25% top;
     background-size: cover; }
     #contactus-page .banner .container h1 {
       font-size: 46px;
@@ -4130,8 +4165,8 @@ small {
   #whyus-page .banner {
     height: 44vh;
     background: url("../../images/whyus/oxf_bg_banner_m.jpg") no-repeat;
-    background-position: -32px -60px;
-    background-size: 110%; }
+    background-position: 0 -40px;
+    background-size: 100%; }
     #whyus-page .banner .container h1 {
       font-size: 46px;
       right: 5%;
@@ -4148,7 +4183,9 @@ small {
   #whyus-page .row {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    margin-left: 11px;
+    margin-right: 11px; }
     #whyus-page .row .figure {
       position: absolute;
       left: 0;
@@ -4191,7 +4228,20 @@ small {
   #hospitality .container {
     padding: 0; }
   #blogs-page .oxford-dt {
-    display: block !important; } }
+    display: block !important; }
+  #blogs-page .row .figure-img {
+    width: 100%;
+    height: 330px;
+    position: relative;
+    overflow: hidden; }
+    #blogs-page .row .figure-img img {
+      position: absolute;
+      top: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      right: -9999px;
+      margin: auto;
+      width: auto; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   nav .oxford-dt {
@@ -4293,9 +4343,6 @@ small {
       width: 28%; }
   #banner {
     height: 100vh; }
-    #banner .obj.cloud.fade-in {
-      -webkit-animation-duration: 80s;
-      animation-duration: 80s; }
     #banner .container .content .box {
       height: 475px; }
       #banner .container .content .box .box-content p {
@@ -4327,7 +4374,8 @@ small {
     margin: 0 5%; }
   #whatwedo .figure {
     position: absolute;
-    padding-top: 40px; }
+    left: 0;
+    top: 15%; }
     #whatwedo .figure.col-md-6 {
       width: 100%;
       -webkit-box-flex: 0;
@@ -4337,8 +4385,7 @@ small {
     #whatwedo .figure img.oxford-mb {
       display: block !important;
       width: 104%;
-      margin-top: 100px;
-      left: 0; }
+      position: static; }
     #whatwedo .figure img.oxford-dt {
       display: none !important; }
   #hospitality .container {
@@ -4507,58 +4554,91 @@ small {
       color: #000;
       font: 600 20px/1.2 oswald, arial;
       float: left !important; }
-  #blogs-page .oxford-dt {
-    display: none !important; }
-  #blogs-page .oxford-tl {
-    display: block !important; }
-  #blogs-page .figure .figcaption {
-    padding: 24px; }
-    #blogs-page .figure .figcaption h3 {
-      overflow: hidden;
-      -o-text-overflow: ellipsis;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical; }
-    #blogs-page .figure .figcaption p {
-      overflow: hidden;
-      -o-text-overflow: ellipsis;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical; }
-  #blogsdetail-page #carouselRelated.owl-carousel .owl-item .item {
-    padding-left: 0;
-    padding-right: 0; }
-  #blogsdetail-page .related .container {
-    padding-right: 0;
-    max-width: 100%; }
-    #blogsdetail-page .related .container .owl-carousel {
-      margin-left: 0;
-      margin-right: 0; }
-  #team-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #organisationaloptimisation-page .banner, #financialtransformation-page .banner, #locations-page .banner, #careers-page .banner, #contactus-page .banner {
-    height: 100vh; }
-    #team-page .banner .container h1, #strategy-page .banner .container h1, #demandgeneration-page .banner .container h1, #demandfulfillment-page .banner .container h1, #organisationaloptimisation-page .banner .container h1, #financialtransformation-page .banner .container h1, #locations-page .banner .container h1, #careers-page .banner .container h1, #contactus-page .banner .container h1 {
-      font-size: 90px; }
+  #blogs-page {
+    margin-top: 58px; }
+    #blogs-page .oxford-dt {
+      display: none !important; }
+    #blogs-page .oxford-tl {
+      display: block !important; }
+    #blogs-page .figure .figcaption {
+      padding: 24px; }
+      #blogs-page .figure .figcaption h3 {
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; }
+      #blogs-page .figure .figcaption p {
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; }
+  #blogsdetail-page {
+    margin-top: 58px; }
+    #blogsdetail-page #carouselRelated.owl-carousel .owl-stage {
+      padding-left: 34px !important; }
+    #blogsdetail-page #carouselRelated.owl-carousel .owl-item .item {
+      padding-left: 0;
+      padding-right: 0; }
+    #blogsdetail-page .related .container {
+      padding-right: 0;
+      max-width: 100%; }
+      #blogsdetail-page .related .container .owl-carousel {
+        margin-left: 0;
+        margin-right: 0; }
+      #blogsdetail-page .related .container .figure-img {
+        width: 100%;
+        height: 330px;
+        position: relative;
+        overflow: hidden; }
+        #blogsdetail-page .related .container .figure-img img {
+          position: absolute;
+          top: -9999px;
+          bottom: -9999px;
+          left: -9999px;
+          right: -9999px;
+          margin: auto;
+          width: auto; }
+  #team-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #organisationaloptimisation-page .banner, #financialtransformation-page .banner, #locations-page .banner, #careers-page .banner, #contactus-page .banner, #whyus-page .banner {
+    height: 35vh;
+    background-size: 100%; }
+    #team-page .banner .container h1, #strategy-page .banner .container h1, #demandgeneration-page .banner .container h1, #demandfulfillment-page .banner .container h1, #organisationaloptimisation-page .banner .container h1, #financialtransformation-page .banner .container h1, #locations-page .banner .container h1, #careers-page .banner .container h1, #contactus-page .banner .container h1, #whyus-page .banner .container h1 {
+      font-size: 90px;
+      right: 5%;
+      bottom: 5%; }
   #strategy-page .col-md-4, #strategy-page .col-md-8, #demandgeneration-page .col-md-4, #demandgeneration-page .col-md-8, #demandfulfillment-page .col-md-4, #demandfulfillment-page .col-md-8, #organisationaloptimisation-page .col-md-4, #organisationaloptimisation-page .col-md-8, #financialtransformation-page .col-md-4, #financialtransformation-page .col-md-8 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%; }
   #strategy-page .content, #demandgeneration-page .content, #demandfulfillment-page .content, #organisationaloptimisation-page .content, #financialtransformation-page .content {
-    padding-bottom: 60%; }
-    #strategy-page .content .row .column._left, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._left, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._left, #demandfulfillment-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._right, #financialtransformation-page .content .row .column._left, #financialtransformation-page .content .row .column._right {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%; }
-    #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right, #financialtransformation-page .content .row .column._right {
-      padding-top: 34%;
-      text-align: center; }
-      #strategy-page .content .row .column._right .oxford-dt, #demandgeneration-page .content .row .column._right .oxford-dt, #demandfulfillment-page .content .row .column._right .oxford-dt, #organisationaloptimisation-page .content .row .column._right .oxford-dt, #financialtransformation-page .content .row .column._right .oxford-dt {
-        display: none !important; }
-      #strategy-page .content .row .column._right .oxford-mb, #demandgeneration-page .content .row .column._right .oxford-mb, #demandfulfillment-page .content .row .column._right .oxford-mb, #organisationaloptimisation-page .content .row .column._right .oxford-mb, #financialtransformation-page .content .row .column._right .oxford-mb {
-        display: block !important; }
+    padding-bottom: 56%; }
+    #strategy-page .content .row, #demandgeneration-page .content .row, #demandfulfillment-page .content .row, #organisationaloptimisation-page .content .row, #financialtransformation-page .content .row {
+      position: relative; }
+      #strategy-page .content .row .column._left, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._left, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._left, #demandfulfillment-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._right, #financialtransformation-page .content .row .column._left, #financialtransformation-page .content .row .column._right {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+      #strategy-page .content .row .column._left, #demandgeneration-page .content .row .column._left, #demandfulfillment-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left, #financialtransformation-page .content .row .column._left {
+        position: static;
+        padding: 0 15px 30%; }
+        #strategy-page .content .row .column._left .number, #demandgeneration-page .content .row .column._left .number, #demandfulfillment-page .content .row .column._left .number, #organisationaloptimisation-page .content .row .column._left .number, #financialtransformation-page .content .row .column._left .number {
+          font-size: 90px;
+          line-height: 0.8; }
+      #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right, #financialtransformation-page .content .row .column._right {
+        width: 100%;
+        position: absolute;
+        bottom: -580px; }
+        #strategy-page .content .row .column._right .oxford-dt, #demandgeneration-page .content .row .column._right .oxford-dt, #demandfulfillment-page .content .row .column._right .oxford-dt, #organisationaloptimisation-page .content .row .column._right .oxford-dt, #financialtransformation-page .content .row .column._right .oxford-dt {
+          display: none !important; }
+        #strategy-page .content .row .column._right .oxford-mb, #demandgeneration-page .content .row .column._right .oxford-mb, #demandfulfillment-page .content .row .column._right .oxford-mb, #organisationaloptimisation-page .content .row .column._right .oxford-mb, #financialtransformation-page .content .row .column._right .oxford-mb {
+          display: block !important; }
+        #strategy-page .content .row .column._right img, #demandgeneration-page .content .row .column._right img, #demandfulfillment-page .content .row .column._right img, #organisationaloptimisation-page .content .row .column._right img, #financialtransformation-page .content .row .column._right img {
+          padding: 0; }
   #strategy-page .carousel-section .carousel, #demandgeneration-page .carousel-section .carousel, #demandfulfillment-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel {
     height: auto; }
     #strategy-page .carousel-section .carousel .carousel-item, #demandgeneration-page .carousel-section .carousel .carousel-item, #demandfulfillment-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item {
@@ -4568,16 +4648,10 @@ small {
     #strategy-page .carousel-section .carousel h1, #demandgeneration-page .carousel-section .carousel h1, #demandfulfillment-page .carousel-section .carousel h1, #organisationaloptimisation-page .carousel-section .carousel h1, #financialtransformation-page .carousel-section .carousel h1 {
       font-size: 40px;
       margin-bottom: 45px; }
-  #team-page .banner {
-    background-position: 18% center; }
   #team-page .oxford-dt, #team-page .oxford-mb {
     display: none !important; }
   #team-page .oxford-tl {
     display: block !important; }
-  #organisationaloptimisation-page .banner {
-    background-position: 86% center; }
-  #careers-page .banner {
-    background-position: 22% center; }
   #careers-page #careers-apply-form .section-apply.fade-in {
     background-position: 82% bottom; }
   #careers-page #careers-apply-form .section-apply .col-md-6 {
@@ -4605,13 +4679,10 @@ small {
       padding: 0; }
       #careersdetail-page #careers-apply-form .section-apply .form-row .form-group:last-child {
         padding: 0; }
-  #contactus-page .banner {
-    background-position: 19% top;
-    background-size: cover; }
-    #contactus-page .banner .container h1 {
-      font-size: 46px;
-      right: 5%;
-      bottom: 5%; }
+  #contactus-page .banner .container h1 {
+    font-size: 46px;
+    right: 5%;
+    bottom: 5%; }
   #contactus-page .content {
     padding: 40px 0;
     background-repeat: repeat-y;
@@ -4680,13 +4751,6 @@ small {
   #contactus-page #contactus-form button[type="submit"] {
     width: 100%;
     height: 50px; }
-  #whyus-page .banner {
-    background-position: 20% top;
-    background-size: cover; }
-    #whyus-page .banner .container h1 {
-      font-size: 46px;
-      right: 5%;
-      bottom: 5%; }
   #whyus-page .content {
     padding: 40px 0;
     background-repeat: repeat-y;
@@ -4697,7 +4761,7 @@ small {
     #whyus-page .content .header h1 {
       margin-bottom: 40px; }
     #whyus-page .content .row {
-      margin: 0 0 40px; }
+      margin: 0 0 60px; }
       #whyus-page .content .row .col-sm-12 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -4713,7 +4777,8 @@ small {
   #whyus-page .row {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    overflow: hidden; }
     #whyus-page .row .figure {
       position: absolute;
       left: 0;
@@ -4721,13 +4786,17 @@ small {
       margin: auto; }
       #whyus-page .row .figure img {
         width: 100%; }
+        #whyus-page .row .figure img.oxford-dt {
+          display: none !important; }
+        #whyus-page .row .figure img.oxford-mb {
+          display: block !important; }
     #whyus-page .row .figcaption {
       width: 100%;
       margin-top: 135%;
-      padding: 0 10% 0 5%;
+      padding: 0 10% 10% 5%;
       position: static; }
       #whyus-page .row .figcaption p {
-        font-size: 16px; }
+        font-size: 20px; }
     #whyus-page .row h1 {
       font-size: 35px; } }
 
@@ -4749,10 +4818,20 @@ small {
     height: 100%; }
     #banner .container .content {
       margin-top: 24%; }
+      #banner .container .content.fade-in {
+        -webkit-transform: translateY(20%);
+        -ms-transform: translateY(20%);
+        transform: translateY(20%); }
       #banner .container .content .box .box-content p {
-        font-size: 40px; }
+        font-size: 30px; }
         #banner .container .content .box .box-content p span {
-          font-size: 80px; } }
+          font-size: 60px; }
+  #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
+    width: 370px;
+    height: 270px;
+    padding: 70px 35px; }
+    #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
+      margin-right: 15px; } }
 
 @media (min-width: 1200px) {
   nav.navbar .navbar-nav li .nav-link {
@@ -4767,7 +4846,23 @@ small {
   #intro .container .logo .brain {
     right: 74px;
     top: -180%;
-    width: 28%; } }
+    width: 28%; }
+  #banner .container .content {
+    margin-top: 24%; }
+    #banner .container .content.fade-in {
+      -webkit-transform: translateY(15%);
+      -ms-transform: translateY(15%);
+      transform: translateY(15%); }
+    #banner .container .content .box .box-content p {
+      font-size: 30px; }
+      #banner .container .content .box .box-content p span {
+        font-size: 60px; }
+  #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
+    width: 420px;
+    height: 270px;
+    padding: 70px 35px; }
+    #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
+      margin-right: 20px; } }
 
 @media (min-width: 1400px) {
   nav.navbar .navbar-nav li .nav-link {
@@ -4784,7 +4879,13 @@ small {
     top: -220%;
     width: auto; }
   .owl-carousel .owl-stage {
-    height: 470px; } }
+    height: 470px; }
+  #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
+    width: 510px;
+    height: 420px;
+    padding: 140px 70px; }
+    #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
+      margin-right: 40px; } }
 
 /***************************************************************************************************/
 /* For IE ******************************************************************************************/
@@ -4809,3 +4910,7 @@ small {
 
 .ie #locations .modal .modal-dialog {
   width: 600px; }
+
+.ie #careers-page #careers-apply-form .section-apply .uploadname #deluploadname {
+  height: 44px;
+  font-size: 22px; }

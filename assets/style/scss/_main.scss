@@ -1,7 +1,9 @@
+
+
 body {
-  // background-color: $black;
+  background-color: $black;
   color: $white;
-  font: 24px/1.2 arial;
+  font: 20px/1.2 arial;
 }
 
 * {
@@ -55,6 +57,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 
 .form-control {
   padding: 25px 20px;
+  background-clip: initial;
 }
 
 .form-row {
@@ -221,7 +224,7 @@ small {
           width: 26px;
           height: 26px;
           display: inline-block;
-          @include transition(all 0.2s ease);
+          @include transition(all 0.05s ease);
 
           &.fb {
             background: url('../../images/icon/oxf_icon_fb.svg') no-repeat;
@@ -377,7 +380,7 @@ small {
     &.cloud {
       background-image: url('../../images/home/oxf_bg_banner_cloud.png');
       background-repeat: repeat-x;
-      @include animation(animateCloud, 20s, linear, 0, infinite, none);
+      @include animation(animateCloud, 100s, linear, 0, infinite, none);
 
       @include transition(all 1s ease-out 0.6s);
       @include transform(translateY(100%));
@@ -518,7 +521,8 @@ small {
 }
 
 #whatwedo {
-  // background-color: $white;
+  background-color: $white;
+  height: 100%;
 
   .row {
     margin: 0 0 17%;
@@ -528,6 +532,7 @@ small {
   .figcaption {
     position: relative;
     padding: 0;
+    z-index: 1;
 
     .content {
 
@@ -579,7 +584,7 @@ small {
 
   .figure {
     position: relative;
-    z-index: -1;
+    z-index: 0;
 
     img {
       position: absolute;
@@ -695,7 +700,7 @@ small {
       color: $blue;
       margin-bottom: 30px;
       text-transform: uppercase;
-      font-weight: 500;
+      // font-weight: 500;
       float: right;
       clear: both;
       @include transition(all 0.5s ease-out 0.3s);
@@ -792,7 +797,7 @@ small {
 
     .carouselHospitality-indicators {
       display: block;
-      margin-top: 10px;
+      margin-top: -10px;
       margin-bottom: 85px;
       margin-left: auto;
       margin-right: 0;
@@ -810,7 +815,7 @@ small {
 
           a {
             background-position: 0;
-            opacity: 0.2;
+            opacity:1;
             transition: none;
 
             &.disabled {
@@ -876,11 +881,14 @@ small {
 }
 
 #locations {
+  width: 100%;
+  height: 100%;
+  background-color: $white;
   background: url('../../images/home/oxf_bg_locations.jpg') no-repeat;
-  background-position: center 200px;
+  background-position: center 0;
   background-size: cover;
   opacity: 0;
-  @include transition(all 0.8s ease-out);
+  @include transition(all 1s ease-out 0.4s);
 
   &.fade-in {
     opacity: 1;
@@ -906,7 +914,7 @@ small {
   }
 
   .content {
-    padding: 120px 0;
+    padding: 66% 0 0;
     min-height: 800px;
     float: right;
 
@@ -926,7 +934,7 @@ small {
       margin: 0;
       text-align: right;
       text-transform: uppercase;
-      font-weight: 400;
+      font-weight: 500;
     }
 
     button {
@@ -1075,7 +1083,7 @@ small {
 }
 
 #blog {
-
+  background-color: $white;
   .container {
 
       &:first-child {
@@ -1276,6 +1284,8 @@ small {
 
 /* Team page ******************************************************************/
 #team-page {
+  background-color: $white;
+
   .banner {
     width: 100%;
     height: 890px;
@@ -1579,6 +1589,7 @@ small {
 
 /* Blog page ******************************************************************/
 #blogs-page {
+  background-color: $white;
   margin-top: 80px;
 
   &.fade-in {
@@ -1608,6 +1619,7 @@ small {
     margin-bottom: 40px;
     opacity: 0;
     @include transform(translateY(20%));
+    @include transition(all 0.8s ease-out);
 
     &.pagi {
       opacity: 1;
@@ -1615,23 +1627,21 @@ small {
 
     &.fade-in {
 
-      &.row_1, &.row_2, &.row_3, &.row_4 /*, &.pagi*/ {
-        @include transform(translateY(0));
-        opacity: 1;
-      }
+      @include transform(translateY(0));
+      opacity: 1;
 
-      &.row_1 {
-        @include transition(all 0.8s ease-out 0.2s);
-      }
-      &.row_2 {
-        @include transition(all 0.8s ease-out 0.4s);
-      }
-      &.row_3 {
-        @include transition(all 0.8s ease-out 0.6s);
-      }
-      &.row_4 {
-        @include transition(all 0.8s ease-out 0.8s);
-      }
+      // &.row_1 {
+      //   @include transition(all 0.8s ease-out 0.2s);
+      // }
+      // &.row_2 {
+      //   @include transition(all 0.8s ease-out 0.4s);
+      // }
+      // &.row_3 {
+      //   @include transition(all 0.8s ease-out 0.6s);
+      // }
+      // &.row_4 {
+      //   @include transition(all 0.8s ease-out 0.8s);
+      // }
       // &.pagi {
       //   @include transition(all 0.8s ease-out 0.8s);
       // }
@@ -1641,7 +1651,7 @@ small {
       // margin-top: 100px;
 
       button, a {
-        margin: 0 auto;
+        margin: 0 auto 30px;
       }
     }
 
@@ -1690,8 +1700,21 @@ small {
   .figure {
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
 
-    img {
+    .figure-img {
       width: 100%;
+      height: 330px;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        width: auto;
+      }
     }
 
     .figcaption {
@@ -1773,6 +1796,7 @@ small {
 
 /* Blog Detail page ***********************************************************/
 #blogsdetail-page {
+  background-color: $white;
   margin-top: 80px;
   overflow: hidden;
 
@@ -1999,8 +2023,21 @@ small {
     .figure {
       box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
 
-      img {
+      .figure-img {
         width: 100%;
+        height: 330px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: -9999px;
+          bottom: -9999px;
+          left: -9999px;
+          right: -9999px;
+          margin: auto;
+          width: auto;
+        }
       }
 
       .figcaption {
@@ -2158,7 +2195,7 @@ small {
     }
 
     .row {
-      margin-bottom: 130px;
+      margin-bottom: 60px;
 
       .column {
         opacity: 0;
@@ -2168,9 +2205,11 @@ small {
           @include transition(all 0.8s ease-out 0.2s);
         }
         &.col_2 {
+          margin-bottom: 70px;
           @include transition(all 0.8s ease-out 0.4s);
         }
         &.col_3 {
+          margin-bottom: 70px;
           @include transition(all 0.8s ease-out 0.6s);
         }
 
@@ -2230,6 +2269,8 @@ small {
 
 /* Careers page ******************************************************************/
 #careers-page {
+  background-color: $white;
+
   .banner {
     width: 100%;
     height: 890px;
@@ -2318,12 +2359,8 @@ small {
     .notice-nojob {
       display: none;
       width: 100%;
-      margin-bottom: 60px;
-      position: absolute;
-      top: 0;
-      left: 0;
+      margin: 60px 30px 60px;
       color: $gray;
-      text-align: center;
       font: 400 20px/1 arial;
     }
 
@@ -2343,7 +2380,9 @@ small {
 
   .row {
     position: relative;
-    margin: 0 0 40px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 40px;
     background-color: $white;
     opacity: 0;
     @include transform(translateY(20%));
@@ -2502,6 +2541,22 @@ small {
         }
 
         #deluploadname {
+          text-transform: uppercase;
+          vertical-align: middle;
+          width: 50px;
+          display: inline-block;
+          float: left;
+          padding: 4px 0;
+          height: 50px;
+          font-size: 30px;
+        }
+      }
+
+      .cantUpload {
+        display: none;
+        padding: 15px;
+
+        #delcantUpload {
           text-transform: uppercase;
           vertical-align: middle;
           width: 50px;
@@ -2701,6 +2756,8 @@ small {
 
 /* Contact us page ******************************************************************/
 #contactus-page {
+  background-color: $white;
+
   .banner {
     width: 100%;
     height: 890px;
@@ -3032,6 +3089,8 @@ small {
 
 /* Why us page ************************************************************************/
 #whyus-page {
+  background-color: $white;
+
   .banner {
     width: 100%;
     height: 890px;
@@ -3220,6 +3279,8 @@ small {
 }
 
 #demandfulfillment-page, #strategy-page, #demandgeneration-page, #financialtransformation-page, #organisationaloptimisation-page {
+  background-color: $white;
+
   .banner {
     width: 100%;
     height: 890px;
@@ -3272,6 +3333,7 @@ small {
           left: 0;
           padding: 6% 1% 14% 6%;
           z-index: 1;
+          position: static;
         }
 
         &._right {
@@ -3348,7 +3410,7 @@ small {
 
     .carousel {
       width: 100%;
-      height: 912px;
+      height: auto;
 
       .carousel-item {
         padding: 15% 0 12%;
@@ -3401,6 +3463,10 @@ small {
 
     .carouselHospitality-indicators {
       bottom: 68px;
+    }
+
+    .carousel-indicators {
+      bottom: 2rem;
     }
 
     .carousel-control-prev {
@@ -3468,12 +3534,13 @@ small {
       background-color: $white;
       min-width: 300px;
       width: 100%;
-      height: 70px;
+      height: 60px;
       text-align: left;
       background-color: #fff;
       background-repeat: no-repeat;
       background-position: 94% center;
       background-size: 18px;
+      text-transform: uppercase;
       font: 700 20px/1 oswald, arial;
       color: $blue;
 
@@ -3504,7 +3571,7 @@ small {
         font: 700 20px/1 oswald, arial;
         text-transform: uppercase;
         color: $blue;
-        margin: 27px 0;
+        margin: 20px 0;
         padding: 0 20px;
 
         &:hover {
@@ -3892,7 +3959,7 @@ $breadcrumb-divider: quote(">");
                 &.nav-link {
 
                   &:after {
-                    right: 29%;
+                    // right: 29%;
                   }
                 }
               }
@@ -4144,7 +4211,7 @@ $breadcrumb-divider: quote(">");
       &.cloud {
 
         &.fade-in {
-              animation-duration: 80s;
+              animation-duration: 150s;
         }
       }
     }
@@ -4216,11 +4283,13 @@ $breadcrumb-divider: quote(">");
     .figure {
       position: absolute;
       padding-top: 40px;
+      padding-left: 0;
+      padding-right: 0;
 
       img.oxford-mb {
         width: 104%;
-        margin-top: 60px;
-        left: 0;
+        margin-top: 20px;
+        position: static;
       }
     }
   }
@@ -4236,7 +4305,7 @@ $breadcrumb-divider: quote(">");
 
       &.cloud {
         @include transform(translateY(-100px));
-        animation-duration: 80s;
+        // animation-duration: 80s;
       }
     }
 
@@ -4285,7 +4354,7 @@ $breadcrumb-divider: quote(">");
           }
 
           &.oxford-mb {
-            margin-right: 7px;
+            margin-right: 20px;
           }
         }
 
@@ -4298,7 +4367,7 @@ $breadcrumb-divider: quote(">");
       p {
         font-size: 16px;
         float: right;
-        padding-right: 5%;
+        padding-right: 7%;
         margin-bottom: 5%;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -4309,7 +4378,7 @@ $breadcrumb-divider: quote(">");
 
       button {
         float: right;
-        margin-right: 10%;
+        margin-right: 15%;
       }
     }
 
@@ -4717,6 +4786,24 @@ $breadcrumb-divider: quote(">");
       &.column {
         margin-bottom: 30px;
       }
+
+      .figure-img {
+        width: 100%;
+        height: 330px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: -9999px;
+          bottom: -9999px;
+          left: -9999px;
+          right: -9999px;
+          margin: auto;
+          width: auto;
+        }
+      }
+
       .figcaption {
         padding: 24px;
 
@@ -4853,6 +4940,23 @@ $breadcrumb-divider: quote(">");
 
       .figure {
 
+        .figure-img {
+          width: 100%;
+          height: 330px;
+          position: relative;
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            top: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            right: -9999px;
+            margin: auto;
+            width: auto;
+          }
+        }
+
         .figcaption {
           padding: 24px;
 
@@ -4975,8 +5079,8 @@ $breadcrumb-divider: quote(">");
       .carousel-section {
 
         .carousel {
-          padding-top: 15%;
-          height: 745px;
+          padding-top: 30%;
+          height: auto;
         }
       }
     }
@@ -5004,15 +5108,27 @@ $breadcrumb-divider: quote(">");
       padding-bottom: 26%;
 
       .row {
+        position: relative;
 
         .column {
 
           &._left {
-            padding: 0 15px 14%;
+            position: static;
+            padding: 0 15px 60%;
 
             .number {
               font-size: 90px;
               line-height: 0.8;
+            }
+          }
+
+          &._right {
+            width: 100%;
+            position: absolute;
+            bottom: -230px;
+
+            img {
+              padding: 0;
             }
           }
         }
@@ -5046,6 +5162,7 @@ $breadcrumb-divider: quote(">");
         padding-top: 45%;
 
         .carousel-item {
+          padding: 15% 0 30%;
 
           .row {
 
@@ -5174,7 +5291,7 @@ $breadcrumb-divider: quote(">");
             background-color: transparent;
           }
 
-          &.col_1 {
+          &.col_1, &.col_2 {
             margin-bottom: 40px;
           }
         }
@@ -5225,9 +5342,12 @@ $breadcrumb-divider: quote(">");
           }
         }
 
-        #filetouploadname {
-          width: 100%;
-          height: 50px;
+        .uploadname {
+
+          #filetouploadname {
+            width: 84%;
+            height: 50px;
+          }
         }
       }
 
@@ -5307,7 +5427,7 @@ $breadcrumb-divider: quote(">");
 
     .banner {
       height: 44vh;
-      background-position: center top;
+      background-position: 25% top;
       background-size: cover;
 
       .container {
@@ -5484,8 +5604,8 @@ $breadcrumb-divider: quote(">");
     .banner {
       height: 44vh;
       background: url("../../images/whyus/oxf_bg_banner_m.jpg") no-repeat;
-      background-position: -32px -60px;
-      background-size: 110%;
+      background-position: 0 -40px;
+      background-size: 100%;
 
       .container {
 
@@ -5519,6 +5639,8 @@ $breadcrumb-divider: quote(">");
       padding-left: 0;
       padding-right: 0;
       margin-bottom: 50px;
+      margin-left: 11px;
+      margin-right: 11px;
 
       &:nth-child(even) {
 
@@ -5635,6 +5757,26 @@ $breadcrumb-divider: quote(">");
 
     .oxford-dt {
       display: block !important;
+    }
+
+    .row {
+
+      .figure-img {
+        width: 100%;
+        height: 330px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: -9999px;
+          bottom: -9999px;
+          left: -9999px;
+          right: -9999px;
+          margin: auto;
+          width: auto;
+        }
+      }
     }
   }
 }
@@ -5850,7 +5992,7 @@ $breadcrumb-divider: quote(">");
       &.cloud {
 
         &.fade-in {
-              animation-duration: 80s;
+              // animation-duration: 80s;
         }
       }
     }
@@ -5917,7 +6059,8 @@ $breadcrumb-divider: quote(">");
 
     .figure {
       position: absolute;
-      padding-top: 40px;
+      left: 0;
+      top: 15%;
 
       &.col-md-6 {
         width: 100%;
@@ -5928,8 +6071,7 @@ $breadcrumb-divider: quote(">");
       img.oxford-mb {
         display: block !important;
         width: 104%;
-        margin-top: 100px;
-        left: 0;
+        position: static;
       }
 
       img.oxford-dt{
@@ -6168,7 +6310,6 @@ $breadcrumb-divider: quote(">");
   }
 
   #blog {
-
     .container {
       max-width: 100%;
 
@@ -6233,6 +6374,7 @@ $breadcrumb-divider: quote(">");
   }
 
   #blogs-page {
+    margin-top: 58px;
 
     .oxford-dt {
       display: none !important;
@@ -6267,13 +6409,14 @@ $breadcrumb-divider: quote(">");
   }
 
   #blogsdetail-page {
+    margin-top: 58px;
 
     #carouselRelated {
 
       &.owl-carousel {
 
         .owl-stage {
-          // padding-left: 50px !important;
+          padding-left: 34px !important;
         }
 
         .owl-item {
@@ -6300,19 +6443,39 @@ $breadcrumb-divider: quote(">");
           margin-left: 0;
           margin-right: 0;
         }
+
+        .figure-img {
+          width: 100%;
+          height: 330px;
+          position: relative;
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            top: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            right: -9999px;
+            margin: auto;
+            width: auto;
+          }
+        }
       }
     }
   }
 
-  #team-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page, #locations-page, #careers-page, #contactus-page  {
+  #team-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page, #locations-page, #careers-page, #contactus-page, #whyus-page  {
 
     .banner {
-      height: 100vh;
+      height: 35vh;
+      background-size: 100%;
 
       .container {
 
         h1 {
           font-size: 90px;
+          right: 5%;
+          bottom: 5%;
         }
       }
     }
@@ -6326,9 +6489,10 @@ $breadcrumb-divider: quote(">");
     }
 
     .content {
-      padding-bottom: 60%;
+      padding-bottom: 56%;
 
       .row {
+        position: relative;
 
         .column {
 
@@ -6337,9 +6501,20 @@ $breadcrumb-divider: quote(">");
             max-width: 100%;
           }
 
+          &._left {
+            position: static;
+            padding: 0 15px 30%;
+
+            .number {
+              font-size: 90px;
+              line-height: 0.8;
+            }
+          }
+
           &._right {
-            padding-top: 34%;
-            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom: -580px;
 
             .oxford-dt {
               display: none !important;
@@ -6347,6 +6522,10 @@ $breadcrumb-divider: quote(">");
 
             .oxford-mb {
               display: block !important;
+            }
+
+            img {
+              padding: 0;
             }
           }
         }
@@ -6376,11 +6555,6 @@ $breadcrumb-divider: quote(">");
   }
 
   #team-page {
-
-    .banner {
-      background-position: 18% center;
-    }
-
     .oxford-dt, .oxford-mb {
       display: none !important;
     }
@@ -6392,16 +6566,9 @@ $breadcrumb-divider: quote(">");
 
   #organisationaloptimisation-page {
 
-    .banner {
-      background-position: 86% center;
-    }
   }
 
   #careers-page {
-
-    .banner {
-      background-position: 22% center;
-    }
 
     #careers-apply-form {
 
@@ -6470,8 +6637,6 @@ $breadcrumb-divider: quote(">");
   #contactus-page {
 
     .banner {
-      background-position: 19% top;
-      background-size: cover;
 
       .container {
 
@@ -6621,20 +6786,6 @@ $breadcrumb-divider: quote(">");
   }
 
   #whyus-page {
-    .banner {
-      background-position: 20% top;
-      background-size: cover;
-
-      .container {
-
-        h1 {
-          font-size: 46px;
-          right: 5%;
-          bottom: 5%;
-        }
-      }
-    }
-
     .content {
       padding: 40px 0;
       background-repeat: repeat-y;
@@ -6653,7 +6804,7 @@ $breadcrumb-divider: quote(">");
       }
 
       .row {
-        margin: 0 0 40px;
+        margin: 0 0 60px;
 
         .col-sm-12 {
           flex: 0 0 100%;
@@ -6679,6 +6830,7 @@ $breadcrumb-divider: quote(">");
       padding-left: 0;
       padding-right: 0;
       margin-bottom: 50px;
+      overflow: hidden;
 
       &:nth-child(even) {
 
@@ -6695,17 +6847,25 @@ $breadcrumb-divider: quote(">");
 
         img {
           width: 100%;
+
+          &.oxford-dt {
+            display: none !important;
+          }
+
+          &.oxford-mb {
+            display: block !important;
+          }
         }
       }
 
       .figcaption {
         width: 100%;
         margin-top: 135%;
-        padding: 0 10% 0 5%;
+        padding: 0 10% 10% 5%;
         position: static;
 
         p {
-          font-size: 16px;
+          font-size: 20px;
         }
       }
 
@@ -6774,16 +6934,42 @@ $breadcrumb-divider: quote(">");
       .content {
         margin-top: 24%;
 
+        &.fade-in {
+          @include transform(translateY(20%));
+        }
+
         .box {
 
           .box-content {
 
             p {
-              font-size: 40px;
+              font-size: 30px;
 
               span {
-                font-size: 80px;
+                font-size: 60px;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #contactus-page {
+
+    #contactus-form {
+
+      .section-form {
+
+        .contactus-detail-card {
+
+          .contactus-detail {
+            width: 370px;
+            height: 270px;
+            padding: 70px 35px;
+
+            .figure {
+              margin-right: 15px;
             }
           }
         }
@@ -6835,6 +7021,56 @@ $breadcrumb-divider: quote(">");
           right: 74px;
           top: -180%;
           width: 28%;
+        }
+      }
+    }
+  }
+
+  #banner {
+
+    .container {
+
+      .content {
+        margin-top: 24%;
+
+        &.fade-in {
+          @include transform(translateY(15%));
+        }
+
+        .box {
+
+          .box-content {
+
+            p {
+              font-size: 30px;
+
+              span {
+                font-size: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #contactus-page {
+
+    #contactus-form {
+
+      .section-form {
+
+        .contactus-detail-card {
+
+          .contactus-detail {
+            width: 420px;
+            height: 270px;
+            padding: 70px 35px;
+
+            .figure {
+              margin-right: 20px;
+            }
+          }
         }
       }
     }
@@ -6891,6 +7127,28 @@ $breadcrumb-divider: quote(">");
 
     .owl-stage  {
       height: 470px;
+    }
+  }
+
+  #contactus-page {
+
+    #contactus-form {
+
+      .section-form {
+
+        .contactus-detail-card {
+
+          .contactus-detail {
+            width: 510px;
+            height: 420px;
+            padding: 140px 70px;
+
+            .figure {
+              margin-right: 40px;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -6960,6 +7218,23 @@ $breadcrumb-divider: quote(">");
 
       .modal-dialog {
         width: 600px;
+      }
+    }
+  }
+
+  #careers-page {
+
+    #careers-apply-form {
+
+      .section-apply {
+
+        .uploadname {
+
+          #deluploadname {
+            height: 44px;
+            font-size: 22px;
+          }
+        }
       }
     }
   }

@@ -108,16 +108,13 @@ $(document).ready(function(){
 
     if(jobItemDisabledAmount == jobItemAmount) {
       $('.notice-nojob').fadeIn(300);
-      $('.row_0').fadeOut(200);
+      // $('.row_0').fadeOut(200);
     } else {
       $('.notice-nojob').fadeOut(200);
-      $('.row_0').fadeIn(300);
+      // $('.row_0').fadeIn(300);
     }
 
-
     $('#dropdownMenuButton').text($(this).text());
-
-    // console.log(zoneName);
   });
 
   // Careers apply
@@ -128,6 +125,12 @@ $(document).ready(function(){
     });
 
     $('.section-apply').toggleClass('fade-in');
+
+    // scroll to section apply
+    var navHeight = $('#nav-main').height();
+    $('html, body').animate({
+        scrollTop: $(".section-apply").offset().top + -navHeight
+    }, 400);
   });
 
   $('.overlay').on('click', function() {
@@ -147,12 +150,12 @@ $(document).ready(function(){
   });
 
   function showFileName( event ) {
-    // console.log(event);
-    // console.log(event.currentTarget.value);
     var input = event.currentTarget.value;
     var fileName = input.match(/[^\\/]*$/)[0];
-    // console.log(fileName);
-    infoName.val(fileName);
+    var lastDotIndex = fileName.lastIndexOf('.');
+    var fileNameOnly = fileName.slice(0, lastDotIndex);
+
+    infoName.val(fileNameOnly);
     infoArea.show();
 
     // Dynamic input
@@ -168,8 +171,26 @@ $(document).ready(function(){
 
   // Carousel stop autoplay
   $('#carouselCaptions.carousel').carousel({
-    // interval: false
+    interval: false
   });
+
+  // $('#carouselCaptions').viewportChecker({
+  //   offset: 650,
+  //
+  //   callbackFunction: function(elem, action){
+  //
+  //
+  //     // setTimeout(function(){
+  //       console.log(elem)
+  //       $('#carouselCaptions.carousel').carousel("dispose");
+  //       $('#carouselCaptions.carousel').carousel(
+  //         {
+  //           interval: 3000
+  //         }
+  //       );
+  //     // }, 500);
+  //   }
+  // });
 
 
   // Locatios accordion - desktop
@@ -335,13 +356,16 @@ $(document).ready(function(){
   classToggle('#blogs-page', 0.5, '', '#blogs-page', 'fade-in');
 
   // Blogs page - row ----------------------------------------- //
-  classToggle('#blogs-page .row_1', 1, '', '#blogs-page .row_1', 'fade-in');
 
-  classToggle('#blogs-page .row_2', 0.9, '', '#blogs-page .row_2', 'fade-in');
+  var blogsDesktopRowAmount = $('#blogs-page .oxford-dt.blogs-list .row').length;
+  for(i=1; i<=blogsDesktopRowAmount; i++) {
+    classToggle('#blogs-page .oxford-dt .row_'+i, 1, '', '#blogs-page .oxford-dt .row_'+i, 'fade-in');
+  }
 
-  classToggle('#blogs-page .row_3', 0.9, '', '#blogs-page .row_3', 'fade-in');
-
-  classToggle('#blogs-page .row_4', 0.9, '', '#blogs-page .row_4', 'fade-in');
+  var blogsTabletRowAmount = $('#blogs-page .oxford-tl.blogs-list .row').length;
+  for(i=1; i<=blogsTabletRowAmount; i++) {
+    classToggle('#blogs-page .oxford-tl .row_'+i, 1, '', '#blogs-page .oxford-tl .row_'+i, 'fade-in');
+  }
 
   // Blogs page - pagination ----------------------------------------- //
   // classToggle('#blogs-page .pagi', 0.75, '', '#blogs-page .pagi', 'fade-in');
@@ -489,6 +513,24 @@ $(document).ready(function(){
 
   // Strategy - carousel ----------------------------------------- //
   classToggle('#strategy-page .carousel-section', 0.7, '', '#strategy-page .carousel-section', 'fade-in');
+
+  // Strategy - carousel interval start autoplay ----------------------------------------- //
+  var scrollToggleClass = new ScrollMagic.Scene({
+    triggerElement: '#strategy-page .carousel-section',
+    triggerHook: 0.1,
+    duration: 0
+  })
+  // .addIndicators({ name: 'debug indicators'})
+  .setClassToggle('#strategy-page .carousel-section .carousel-inner', 'autoplay')
+  .on('start', function(){
+    $('#carouselCaptions.carousel').carousel("dispose");
+    $('#carouselCaptions.carousel').carousel(
+      {
+        interval: 4000
+      }
+    );
+  })
+  .addTo(controller);
 
 
   // Demand Generation - banner ----------------------------------------- //
