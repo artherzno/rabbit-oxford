@@ -69,6 +69,17 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   margin-left: 0;
 }
 
+.invalid-feedback {
+  font-size: 16px;
+  color: #ff3838;
+  margin-top: 10px;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid,
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-image: none;
+}
+
 small {
   color: $gray;
   font-size: 18px;

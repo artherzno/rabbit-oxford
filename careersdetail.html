@@ -138,29 +138,44 @@
             <div class="row">
               <div class="col-md-6">
                 <h3>Apply</h3>
-                <form>
+                <form class="needs-validation" novalidate>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputName">NAME</label>
-                      <input type="text" class="form-control" id="inputName">
+                      <input type="text" class="form-control" id="inputName" required>
+                      <div class="invalid-feedback">
+                        The field is required.
+                      </div>
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputSurname">SURNAME</label>
-                      <input type="text" class="form-control" id="inputSurname">
+                      <input type="text" class="form-control" id="inputSurname" required>
+                      <div class="invalid-feedback">
+                        The field is required.
+                      </div>
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputEmail">EMAIL</label>
-                      <input type="email" class="form-control" id="inputEmail">
+                      <input type="email" class="form-control" id="inputEmail" required>
+                      <div class="invalid-feedback">
+                        The field is required.
+                      </div>
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputLocation">LOCATION</label>
-                      <input type="text" class="form-control" id="inputLocation">
+                      <input type="text" class="form-control" id="inputLocation" required>
+                      <div class="invalid-feedback">
+                        The field is required.
+                      </div>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="inputOtherPosition">OTHER POSITIONS OF INTEREST</label>
+                    <label for="inputOtherPosition">OTHER POSITIONS OF INTEREST</label required>
+                    <div class="invalid-feedback">
+                      The field is required.
+                    </div>
                     <input type="text" class="form-control" id="inputOtherPosition">
                   </div>
                   <div class="form-group">
@@ -283,6 +298,22 @@
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
       isIE();
+
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          var forms = document.getElementsByClassName('needs-validation');
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
     </script>
   </body>
 </html>
