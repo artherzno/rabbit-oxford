@@ -256,6 +256,14 @@ small {
               background: url('../../images/icon/oxf_icon_tw_a.svg') no-repeat;
             }
           }
+
+          &.in {
+            background: url('../../images/icon/oxf_icon_in.svg') no-repeat;
+
+            &:hover {
+              background: url('../../images/icon/oxf_icon_in_a.svg') no-repeat;
+            }
+          }
         }
       }
     }
