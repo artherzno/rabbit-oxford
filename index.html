@@ -305,6 +305,9 @@
               <li data-target="#carouselHospitality" data-slide-to="3">04 Demand Fulfillment</li>
               <li data-target="#carouselHospitality" data-slide-to="4">05 OrganiSational OptimiSation</li>
               <li data-target="#carouselHospitality" data-slide-to="5">06 Financial Transformation</li>
+              <li data-target="#carouselHospitality" data-slide-to="5">06 Financial Transformation</li>
+              <li data-target="#carouselHospitality" data-slide-to="5">06 Financial Transformation</li>
+              <li data-target="#carouselHospitality" data-slide-to="5">06 Financial Transformation</li>
             </ol>
           </div>
 
@@ -705,14 +708,14 @@
               responsive:{
                 0:{
                     items:1,
-                    stagePadding: 55,
-                    smartSpeed: 200,
+                    stagePadding: 40,
+                    smartSpeed: 120,
                     margin: 0,
                   },
                 768: {
-                  stagePadding: 60,
-                  margin: 0,
-                  smartSpeed: 200,
+                  stagePadding: 70,
+                  margin: 20,
+                  smartSpeed: 120,
                   items: 1
                 },
                 1024: {
@@ -754,36 +757,35 @@
             }, 400);
         });
 
-        // M scroll Hospitality
+        // M Custom scroll Hospitality
         $(".carouselHospitality-indicators").mCustomScrollbar({
           setHeight: '240px',
-          scrollButtons:{enable:true},
-					theme:"dark-thick",
-					scrollbarPosition:"outside",
+          scrollButtons: {
+            enable: true
+          },
+          mouseWheel:{
+            enable: false
+          },
+          snapOffset: 40,
+          // snapAmount: 9,
+					theme: "dark-thick",
+					scrollbarPosition: "outside",
+          alwaysShowScrollbar: 0,
+          live: false,
           callbacks:{
-              onInit: function(){
-                console.log('onInit');
-                $('.mCSB_buttonUp').addClass('disabled');
-              },
-              onScroll: function(){
-                var $scrollPos = this.mcs.top;
-                if($scrollPos != 0) {
-                $('.mCSB_buttonUp').removeClass('disabled');
-                $('.mCSB_buttonDown').removeClass('disabled');
-                  console.log('onScroll > '+$scrollPos);
-                } else {
-                  $('.mCSB_buttonUp').show();
-                  $('.mCSB_buttonUp').addClass('disabled');
-                  $('.mCSB_buttonDown').removeClass('disabled');
-                  console.log('onScroll > '+$scrollPos);
-                }
-
-              },
-
-              onTotalScroll: function(){
-                console.log('onTotalScroll');
-                $('.mCSB_buttonDown').addClass('disabled');
-              }
+            onInit: function() {
+              $('.mCSB_buttonUp').addClass('disabled');
+            },
+            onScroll: function(){
+              $('.mCSB_buttonUp').removeClass('disabled');
+              $('.mCSB_buttonDown').removeClass('disabled');
+            },
+            onTotalScroll: function(){
+              $('.mCSB_buttonDown').addClass('disabled');
+            },
+            onTotalScrollBack: function(){
+              $('.mCSB_buttonUp').addClass('disabled');
+            }
           }
         });
 

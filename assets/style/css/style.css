@@ -247,7 +247,7 @@ h2 {
 h3 {
   font: 600 24px/1.2 oswald, arial; }
 
-h1, h2, h3, p {
+h2, h3, p {
   word-break: break-word; }
 
 textarea, input[type="text"], input[type="password"], input[type="email"], select, .form-control {
@@ -1078,7 +1078,11 @@ small {
         opacity: 1;
         -webkit-transition: none;
         -o-transition: none;
-        transition: none; }
+        transition: none;
+        -webkit-transition: opacity 0 ease;
+        -ms-transition: opacity 0 ease;
+        -o-transition: opacity 0 ease;
+        transition: opacity 0 ease; }
         #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools a.disabled {
           display: none !important; }
       #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools .mCSB_buttonUp {
@@ -1088,7 +1092,7 @@ small {
         background-image: url("../../images/icon/oxf_arrow_scroll_down.svg");
         bottom: 6px; }
       #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools a + .mCSB_draggerContainer {
-        opacity: 0; }
+        display: none; }
     #hospitality .carousel .carouselHospitality-indicators li {
       text-indent: 0;
       color: #000;
@@ -3507,10 +3511,10 @@ small {
   #hospitality .row {
     margin-bottom: 5%; }
   #hospitality .figcaption {
-    padding: 0 0 0 20%; }
+    padding: 0 3px 0 10px; }
     #hospitality .figcaption h1 {
       font-size: 36px;
-      margin-bottom: 100%;
+      margin-bottom: 84%;
       float: right;
       padding-right: 7%; }
       #hospitality .figcaption h1.number {
@@ -3521,12 +3525,13 @@ small {
         #hospitality .figcaption h1.number.oxford-mb {
           margin-right: 20px; }
       #hospitality .figcaption h1.h-oneline {
-        margin-bottom: 114%;
+        margin-bottom: 95.5%;
         clear: both; }
     #hospitality .figcaption p {
       font-size: 16px;
       float: right;
       padding-right: 7%;
+      padding-left: 15%;
       margin-bottom: 5%;
       overflow: hidden;
       -o-text-overflow: ellipsis;
@@ -3536,11 +3541,11 @@ small {
       -webkit-box-orient: vertical; }
     #hospitality .figcaption button {
       float: right;
-      margin-right: 15%; }
+      margin-right: 16%; }
   #hospitality .figure img.oxford-mb {
     width: 100%;
     margin-top: 170px;
-    right: 0;
+    right: 10px;
     left: auto; }
   #hospitality .carousel {
     padding: 0; }
@@ -4415,7 +4420,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
   #hospitality .figcaption {
-    padding: 0 0 0 20%; }
+    padding: 0 3px 0 10px; }
     #hospitality .figcaption.col-md-5 {
       width: 100%;
       -webkit-box-flex: 0;
@@ -4424,10 +4429,10 @@ small {
       max-width: 100%; }
     #hospitality .figcaption h1 {
       font-size: 36px;
-      margin-bottom: 100%;
-      float: right; }
+      margin-bottom: 84%;
+      float: right;
+      padding-right: 7.8%; }
       #hospitality .figcaption h1.number {
-        padding-right: 0;
         font-size: 75px; }
         #hospitality .figcaption h1.number span {
           font-size: 40px; }
@@ -4436,7 +4441,8 @@ small {
     #hospitality .figcaption p {
       font-size: 16px;
       float: right;
-      padding-right: 5%;
+      padding-right: 8%;
+      padding-left: 15%;
       margin-bottom: 5%;
       overflow: hidden;
       -o-text-overflow: ellipsis;
@@ -4446,7 +4452,7 @@ small {
       -webkit-box-orient: vertical; }
     #hospitality .figcaption button {
       float: right;
-      margin-right: 10%; }
+      margin-right: 27%; }
   #hospitality .figure.col-md-6 {
     width: 100%;
     -webkit-box-flex: 0;
@@ -4457,7 +4463,7 @@ small {
     display: block !important;
     width: 100%;
     margin-top: 150px;
-    right: 0;
+    right: 10px;
     left: auto; }
   #hospitality .figure img.oxford-dt {
     display: none !important; }

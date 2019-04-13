@@ -36,7 +36,7 @@ h3 {
   font: 600 24px/1.2 oswald, arial;
 }
 
-h1, h2, h3, p {
+h2, h3, p {
   word-break: break-word;
 }
 
@@ -822,6 +822,7 @@ small {
             background-position: 0;
             opacity:1;
             transition: none;
+            @include transition(opacity 0 ease);
 
             &.disabled {
               display: none !important;
@@ -841,7 +842,7 @@ small {
           a {
 
             +.mCSB_draggerContainer {
-              opacity: 0;
+              display: none;
             }
           }
         }
@@ -4345,11 +4346,11 @@ $breadcrumb-divider: quote(">");
     }
 
     .figcaption {
-      padding: 0 0 0 20%;
+      padding: 0 3px 0 10px;
 
       h1 {
         font-size: 36px;
-        margin-bottom: 100%;
+        margin-bottom: 84%;
         float: right;
         padding-right: 7%;
 
@@ -4367,7 +4368,7 @@ $breadcrumb-divider: quote(">");
         }
 
         &.h-oneline {
-          margin-bottom: 114%;
+          margin-bottom: 95.5%;
           clear: both;
         }
       }
@@ -4376,6 +4377,7 @@ $breadcrumb-divider: quote(">");
         font-size: 16px;
         float: right;
         padding-right: 7%;
+        padding-left: 15%;
         margin-bottom: 5%;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -4386,7 +4388,7 @@ $breadcrumb-divider: quote(">");
 
       button {
         float: right;
-        margin-right: 15%;
+        margin-right: 16%;
       }
     }
 
@@ -4395,7 +4397,7 @@ $breadcrumb-divider: quote(">");
       img.oxford-mb {
         width: 100%;
         margin-top: 170px;
-        right: 0;
+        right: 10px;
         left: auto;
       }
     }
@@ -4410,6 +4412,7 @@ $breadcrumb-divider: quote(">");
         }
       }
     }
+
   }
 
   #locations {
@@ -6116,7 +6119,7 @@ $breadcrumb-divider: quote(">");
     }
 
     .figcaption {
-      padding: 0 0 0 20%;
+      padding: 0 3px 0 10px;
 
       &.col-md-5 {
         width: 100%;
@@ -6126,12 +6129,12 @@ $breadcrumb-divider: quote(">");
 
       h1 {
         font-size: 36px;
-        margin-bottom: 100%;
+        margin-bottom: 84%;
         float: right;
-        // padding-right: 5%;
+        padding-right: 7.8%;
 
         &.number {
-          padding-right: 0;
+          // padding-right: 7.8%;
           font-size: 75px;
 
           span {
@@ -6148,7 +6151,8 @@ $breadcrumb-divider: quote(">");
       p {
         font-size: 16px;
         float: right;
-        padding-right: 5%;
+        padding-right: 8%;
+        padding-left: 15%;
         margin-bottom: 5%;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -6159,7 +6163,7 @@ $breadcrumb-divider: quote(">");
 
       button {
         float: right;
-        margin-right: 10%;
+        margin-right: 27%;
       }
     }
 
@@ -6175,7 +6179,7 @@ $breadcrumb-divider: quote(">");
         display: block !important;
         width: 100%;
         margin-top: 150px;
-        right: 0;
+        right: 10px;
         left: auto;
       }
 
