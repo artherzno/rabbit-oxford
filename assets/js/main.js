@@ -493,6 +493,42 @@ $(document).ready(function(){
 
   classToggle('#whyus-page .row_4', 0.8, '', '#whyus-page .row_4', 'fade-in');
 
+  // Demandfulfillment - banner ----------------------------------------- //
+  classToggle('#hospitality-page', 0.8, '', '#hospitality-page .banner', 'fade-in');
+
+  // Demandfulfillment - header ----------------------------------------- //
+  classToggle('#hospitality-page .content', 0.7, '', '#hospitality-page .content', 'fade-in');
+
+  // Demandfulfillment - section ----------------------------------------- //
+  classToggle('#hospitality-page .feasibility-section', 0.7, '', '#hospitality-page .feasibility-section', 'fade-in');
+
+  classToggle('#hospitality-page .development-section', 0.7, '', '#hospitality-page .development-section', 'fade-in');
+
+  classToggle('#hospitality-page .operational-section', 0.7, '', '#hospitality-page .operational-section', 'fade-in');
+
+  classToggle('#hospitality-page .discover-section', 0.2, '', '#hospitality-page .discover-section', 'fade-in');
+
+  classToggle('#hospitality-page .roles-section', 0.7, '', '#hospitality-page .roles-section', 'fade-in');
+
+  classToggle('#hospitality-page .getintouch-section', 0.7, '', '#hospitality-page .getintouch-section', 'fade-in');
+
+  // Hospitality - carousel interval start autoplay ----------------------------------------- //
+  var scrollToggleClass = new ScrollMagic.Scene({
+    triggerElement: '#hospitality-page .carousel-section',
+    triggerHook: 0.1,
+    duration: 0
+  })
+  // .addIndicators({ name: 'debug indicators'})
+  .setClassToggle('#hospitality-page .carousel-section .carousel-inner', 'autoplay')
+  .on('start', function(){
+    $('#carouselCaptions.carousel').carousel("dispose");
+    $('#carouselCaptions.carousel').carousel(
+      {
+        interval: 4000
+      }
+    );
+  })
+  .addTo(controller);
 
 
   // Demandfulfillment - banner ----------------------------------------- //
@@ -503,6 +539,24 @@ $(document).ready(function(){
 
   // Demandfulfillment - carousel ----------------------------------------- //
   classToggle('#demandfulfillment-page .carousel-section', 0.7, '', '#demandfulfillment-page .carousel-section', 'fade-in');
+
+  // Demandfulfillment - carousel interval start autoplay ----------------------------------------- //
+  var scrollToggleClass = new ScrollMagic.Scene({
+    triggerElement: '#demandfulfillment-page .carousel-section',
+    triggerHook: 0.1,
+    duration: 0
+  })
+  // .addIndicators({ name: 'debug indicators'})
+  .setClassToggle('#demandfulfillment-page .carousel-section .carousel-inner', 'autoplay')
+  .on('start', function(){
+    $('#carouselCaptions.carousel').carousel("dispose");
+    $('#carouselCaptions.carousel').carousel(
+      {
+        interval: 4000
+      }
+    );
+  })
+  .addTo(controller);
 
 
   // Strategy - banner ----------------------------------------- //
@@ -542,6 +596,24 @@ $(document).ready(function(){
   // Demand Generation - carousel ----------------------------------------- //
   classToggle('#demandgeneration-page .carousel-section', 0.7, '', '#demandgeneration-page .carousel-section', 'fade-in');
 
+  // Demand Generation - carousel interval start autoplay ----------------------------------------- //
+  var scrollToggleClass = new ScrollMagic.Scene({
+    triggerElement: '#demandgeneration-page .carousel-section',
+    triggerHook: 0.1,
+    duration: 0
+  })
+  // .addIndicators({ name: 'debug indicators'})
+  .setClassToggle('#demandgeneration-page .carousel-section .carousel-inner', 'autoplay')
+  .on('start', function(){
+    $('#carouselCaptions.carousel').carousel("dispose");
+    $('#carouselCaptions.carousel').carousel(
+      {
+        interval: 4000
+      }
+    );
+  })
+  .addTo(controller);
+
 
   // Financial Transformation - banner ----------------------------------------- //
   classToggle('#financialtransformation-page', 0.8, '', '#financialtransformation-page .banner', 'fade-in');
@@ -552,6 +624,24 @@ $(document).ready(function(){
   // Financial Transformation - carousel ----------------------------------------- //
   classToggle('#financialtransformation-page .carousel-section', 0.7, '', '#financialtransformation-page .carousel-section', 'fade-in');
 
+  // Financial Transformation - carousel interval start autoplay ----------------------------------------- //
+  var scrollToggleClass = new ScrollMagic.Scene({
+    triggerElement: '#financialtransformation-page .carousel-section',
+    triggerHook: 0.1,
+    duration: 0
+  })
+  // .addIndicators({ name: 'debug indicators'})
+  .setClassToggle('#financialtransformation-page .carousel-section .carousel-inner', 'autoplay')
+  .on('start', function(){
+    $('#carouselCaptions.carousel').carousel("dispose");
+    $('#carouselCaptions.carousel').carousel(
+      {
+        interval: 4000
+      }
+    );
+  })
+  .addTo(controller);
+
 
   // Organisational Optimisation - banner ----------------------------------------- //
   classToggle('#organisationaloptimisation-page', 0.8, '', '#organisationaloptimisation-page .banner', 'fade-in');
@@ -561,5 +651,23 @@ $(document).ready(function(){
 
   // Organisational Optimisation - carousel ----------------------------------------- //
   classToggle('#organisationaloptimisation-page .carousel-section', 0.7, '', '#organisationaloptimisation-page .carousel-section', 'fade-in');
+
+  // Organisational Optimisation - carousel interval start autoplay ----------------------------------------- //
+  var scrollToggleClass = new ScrollMagic.Scene({
+    triggerElement: '#organisationaloptimisation-page .carousel-section',
+    triggerHook: 0.1,
+    duration: 0
+  })
+  // .addIndicators({ name: 'debug indicators'})
+  .setClassToggle('#organisationaloptimisation-page .carousel-section .carousel-inner', 'autoplay')
+  .on('start', function(){
+    $('#carouselCaptions.carousel').carousel("dispose");
+    $('#carouselCaptions.carousel').carousel(
+      {
+        interval: 4000
+      }
+    );
+  })
+  .addTo(controller);
 
 });

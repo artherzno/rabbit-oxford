@@ -3327,6 +3327,186 @@ small {
 }
 
 /* Practices all page ******************************************************************/
+#hospitality-page {
+  .banner {
+    background: url('../../images/hospitality/oxf_bg_banner.jpg') no-repeat;
+  }
+
+  .development-section {
+    background: url('../../images/hospitality/oxf_bg_content1.jpg') no-repeat;
+  }
+
+  .operational-section {
+    background: url('../../images/hospitality/oxf_bg_content2.jpg') no-repeat;
+  }
+
+  .roles-section {
+    background: url('../../images/hospitality/oxf_bg_content3.jpg') no-repeat;
+  }
+
+  .feasibility-section, .development-section, .operational-section, .operational-section, .discover-section , .roles-section, .getintouch-section {
+    h1 {
+      opacity: 0;
+      @include transform(translateY(20%));
+      @include transition(all 0.8s ease-out 0.2s);
+    }
+
+    h2, h3 {
+      opacity: 0;
+      @include transform(translateY(20%));
+      @include transition(all 0.8s ease-out 0.4s);
+    }
+
+    .row {
+      opacity: 0;
+      @include transform(translateY(20%));
+      @include transition(all 0.8s ease-out 0.6s);
+    }
+
+    &.fade-in {
+
+      h1, h2, h3, .row {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+  }
+
+  .feasibility-section, .development-section, .operational-section {
+
+    .column {
+      flex: 0 0 23%;
+      max-width: 23%;
+    }
+  }
+
+  .feasibility-section, .development-section, .operational-section {
+    background-color: $blue;
+    background-size: cover;
+    background-position: center center;
+    padding: 180px 0;
+
+    h1 {
+      text-align: center;
+      padding: 0 0 120px;
+    }
+
+    h3 {
+      font-size: 28px;
+      color: $gray;
+      margin-bottom: 30px;
+      padding-left: 30px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      width: 80%;
+    }
+
+    .paragrah {
+      padding-left: 30px;
+      border-left: 1px solid $gray;
+    }
+  }
+
+  .discover-section {
+    background-color: #1d1d1d;
+    padding: 35% 0;
+    height: 100vh;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .roles-section {
+    background-color: #1d1d1d;
+    background-position: center bottom;
+    padding-bottom: 190px;
+
+    h1 {
+      text-align: center;
+      margin: 0 0 40px;
+    }
+
+    h3 {
+      font-size: 35px;
+      color: $gray;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    .row {
+
+      &.oxford-dt {
+        display: flex !important;
+      }
+    }
+
+    .column {
+      flex: 0 0 25%;
+      max-width: 25%;
+      margin: 0 15px;
+      padding: 60px 32px;
+      background-color: rgba(255,255,255,0.15);
+
+      &.col_1, &.col_3 {
+        max-height: 550px;
+        margin-top: 8%;
+      }
+
+      &.col_2 {
+        flex: 0 0 30%;
+        max-width: 30%;
+        background-color: rgba(31,48,82,0.5);
+      }
+
+      img {
+         display: block;
+         margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 0 0 120px;
+      }
+
+      h2 {
+         text-align: center;
+         margin-bottom: 30px;
+      }
+
+      p {
+        margin-bottom: 20px;
+        width: 90%;
+      }
+
+      .paragrah {
+        padding-left: 30px;
+        border-left: 1px solid $gray;
+      }
+    }
+  }
+
+  #getintouch {
+    opacity: 1;
+
+    &.fade-in {
+
+      p {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+
+    p {
+      opacity: 0;
+      @include transform(translateY(20%));
+      @include transition(all 0.8s ease-out 0.6s);
+    }
+  }
+}
+
 #strategy-page {
   .banner {
     background: url('../../images/strategy/oxf_bg_banner.jpg') no-repeat;
@@ -3357,7 +3537,7 @@ small {
   }
 }
 
-#demandfulfillment-page, #strategy-page, #demandgeneration-page, #financialtransformation-page, #organisationaloptimisation-page {
+#hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page,  #financialtransformation-page, #organisationaloptimisation-page {
   background-color: $white;
 
   .banner {
@@ -3410,7 +3590,7 @@ small {
 
         &._left {
           left: 0;
-          padding: 6% 1% 14% 6%;
+          padding: 6% 1% 9% 6%;
           z-index: 1;
           position: static;
         }
@@ -3965,7 +4145,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
 
     &.h-one-line {
 
@@ -4086,6 +4266,20 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  #hospitality-page {
+    .feasibility-section, .development-section, .operational-section {
+
+    .row {
+
+      .column {
+
+          h3 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -5205,7 +5399,7 @@ $breadcrumb-divider: quote(">");
   }
 
   /* Practices all *******************/
-  #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
 
     &.h-one-line {
 
@@ -5327,6 +5521,68 @@ $breadcrumb-divider: quote(">");
 
       .carousel-control-next, .carousel-control-prev {
         display: none;
+      }
+    }
+  }
+
+  #hospitality-page {
+
+    .feasibility-section, .development-section, .operational-section {
+      padding: 100px 0 60px;
+
+      .column {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 40px;
+
+        h3 {
+          font-size: 26px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .discover-section {
+      height: auto;
+      padding: 85% 0;
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+
+    .roles-section {
+
+      .row {
+
+        &.oxford-dt {
+          display: none !important;
+        }
+
+        &.oxford-mb {
+          display: block !important
+        }
+
+        .column {
+          flex: 0 0 80%;
+          max-width: 80%;
+          margin: 0 auto 40px;
+
+          &.col_2 {
+            flex: 0 0 90%;
+            max-width: 90%;
+          }
+        }
+      }
+    }
+
+    #getintouch {
+
+      .content {
+        padding-bottom: 100px;
       }
     }
   }
@@ -6664,7 +6920,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #team-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page, #locations-page, #careers-page, #contactus-page, #whyus-page  {
+  #team-page, #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page, #locations-page, #careers-page, #contactus-page, #whyus-page  {
 
     .banner {
       height: 35vh;
@@ -6681,7 +6937,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page {
+  #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page {
 
     .col-md-4, .col-md-8 {
       flex: 0 0 100%;
@@ -6752,6 +7008,65 @@ $breadcrumb-divider: quote(">");
       }
     }
 
+  }
+
+  #hospitality-page {
+
+    .feasibility-section, .development-section, .operational-section {
+
+    .row {
+
+      .column {
+          flex: 0 0 50%;
+          max-width: 50%;
+          margin-bottom: 40px;
+
+          h3 {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
+    .discover-section {
+      height: auto;
+
+      h1 {
+        margin: 190px 0;
+      }
+    }
+
+    .roles-section {
+
+      .row {
+
+        &.oxford-dt {
+          display: none !important;
+        }
+
+        &.oxford-mb {
+          display: block !important
+        }
+
+        .column {
+          flex: 0 0 80%;
+          max-width: 80%;
+          margin: 0 auto 40px;
+
+          &.col_2 {
+            flex: 0 0 90%;
+            max-width: 90%;
+          }
+        }
+      }
+    }
+
+    #getintouch {
+
+      .content {
+        padding-bottom: 100px;
+      }
+    }
   }
 
   #team-page {
