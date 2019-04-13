@@ -86,7 +86,7 @@ $(document).ready(function(){
 
   // Careers dropdown
   $('#careers-page .dropdown-list .dropdown-toggle').on('click', function() {
-    $('#careers-page .overlay').toggleClass('show');
+    $('#careers-page .overlay.oxford-mb').toggleClass('show');
   });
 
   $('#careers-page .dropdown-list .dropdown-item').on('click', function(event) {

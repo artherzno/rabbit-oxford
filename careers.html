@@ -229,7 +229,7 @@
                   </div>
                   <div class="form-group">
                     <label for="inputMessage">YOUR MESSAGE</label>
-                    <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+                    <textarea class="form-control" id="inputMessage" rows="5"></textarea>
                   </div>
                   <div class="form-group file-upload">
                     <label for="inputUpload">Upload your Resume</label><br>
@@ -250,9 +250,26 @@
             </div>
           </div>
         </div>
+
+        <div class="modal fade confirmModal" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-confirm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <img src="assets/images/icon/oxf_icon_close_gray.png" alt="Oxford Acuity">
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Submission received.<br>Thank you.</p>
+                <button type="button" class="buttonBlueFull" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="overlay oxford-mb"></div>
+      <div class="overlay"></div>
     </div>
 
     <!-- Footer -->
@@ -355,11 +372,26 @@
           var forms = document.getElementsByClassName('needs-validation');
           var validation = Array.prototype.filter.call(forms, function(form) {
             form.addEventListener('submit', function(event) {
+              $('html, body').animate({
+                  scrollTop: $("#careers-apply-form").offset().top - 40
+              }, 400);
+
               if (form.checkValidity() === false) {
                 event.preventDefault();
                 event.stopPropagation();
+              } else {
+                event.preventDefault();
+                event.stopPropagation();
+
+                $('#confirmModal').modal('show').on('shown.bs.modal', function (event) {
+                  $('.overlay').css('width', '100%');
+                }).on('hidden.bs.modal', function (event) {
+                  $('.overlay').css('width', 0);
+                });
               }
+
               form.classList.add('was-validated');
+
             }, false);
           });
         }, false);

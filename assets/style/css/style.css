@@ -474,9 +474,9 @@ small {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1052;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.7); }
   .overlay.show {
     width: 100%; }
 
@@ -2685,7 +2685,8 @@ small {
         border-top-color: #020202; }
   #contactus-page #contactus-form {
     width: 100%;
-    height: auto; }
+    height: auto;
+    position: relative; }
     #contactus-page #contactus-form .section-form {
       width: 100%;
       height: auto;
@@ -3222,7 +3223,7 @@ small {
 .modal {
   display: block !important;
   position: absolute;
-  z-index: 0;
+  z-index: 1053;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -3235,6 +3236,27 @@ small {
     -ms-transform: scale(1);
     transform: scale(1);
     padding: 0 !important; }
+  .modal.confirmModal {
+    z-index: 1053;
+    position: fixed; }
+    .modal.confirmModal .modal-dialog {
+      padding: 0 10px; }
+      .modal.confirmModal .modal-dialog .modal-content {
+        background-color: #fff;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none; }
+        .modal.confirmModal .modal-dialog .modal-content .modal-header .close {
+          opacity: 1; }
+          .modal.confirmModal .modal-dialog .modal-content .modal-header .close:hover {
+            opacity: 0.5; }
+        .modal.confirmModal .modal-dialog .modal-content .modal-body {
+          padding: 54px 0 100px;
+          text-align: center;
+          font: 600 30px/1.2 oswald, arial;
+          color: #000; }
+          .modal.confirmModal .modal-dialog .modal-content .modal-body p {
+            margin-bottom: 35px; }
   .modal .modal-dialog {
     position: absolute;
     margin: auto;
@@ -3355,7 +3377,8 @@ small {
   nav.navbar {
     top: 0;
     height: 60px;
-    padding: 15px; }
+    padding: 15px;
+    z-index: 1057; }
     nav.navbar .navbar-nav {
       margin-top: 0; }
   nav.active._bg {
@@ -3984,7 +4007,8 @@ small {
     #careers-page .content .header .dropdown {
       float: none;
       display: block;
-      margin: 0; }
+      margin: 0;
+      z-index: 1053; }
       #careers-page .content .header .dropdown .dropdown-toggle {
         max-width: none;
         font-size: 20px;
@@ -4079,6 +4103,8 @@ small {
   #careers-page #careers-apply-form button[type="submit"] {
     width: 100%;
     height: 50px; }
+  #careers-page .overlay.oxford-mb.show {
+    width: 100% !important; }
   /* Careers Detail page ********************/
   #careersdetail-page {
     background-position: 92% 103%;
@@ -4249,7 +4275,10 @@ small {
   /* Carousel *********************/
   .owl-carousel .owl-stage .row {
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  /* Modal *************************/
+  .modal.confirmModal.show .modal-content .modal-body {
+    padding: 30px 0 70px; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #intro .container .logo .brain {
