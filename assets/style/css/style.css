@@ -844,25 +844,22 @@ small {
         transform: translateY(0); }
   #whatwedo .figure {
     position: relative;
-    z-index: 0; }
-    #whatwedo .figure img {
+    z-index: 0;
+    /* For crop image */ }
+    #whatwedo .figure .figure-img {
+      width: 130%;
+      height: 472px;
       position: absolute;
       right: 0;
-      top: 18%;
-      width: 130%;
-      -webkit-transition: all 1s ease-out;
-      -ms-transition: all 1s ease-out;
-      -o-transition: all 1s ease-out;
-      transition: all 1s ease-out;
-      opacity: 0;
-      -webkit-transform: translateY(30%);
-      -ms-transform: translateY(30%);
-      transform: translateY(30%); }
-      #whatwedo .figure img.fade-in {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0); }
+      overflow: hidden; }
+      #whatwedo .figure .figure-img img {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        width: auto; }
 
 #practics {
   width: 100%;
@@ -1038,25 +1035,21 @@ small {
       -ms-transform: translateY(0);
       transform: translateY(0); }
   #hospitality .figure {
-    position: relative; }
-    #hospitality .figure img {
-      position: absolute;
-      left: 3.8%;
-      top: 0;
+    position: relative;
+    /* For crop image */ }
+    #hospitality .figure .figure-img {
       width: 130%;
-      -webkit-transition: all 1s ease-out;
-      -ms-transition: all 1s ease-out;
-      -o-transition: all 1s ease-out;
-      transition: all 1s ease-out;
-      opacity: 0;
-      -webkit-transform: translateY(20%);
-      -ms-transform: translateY(20%);
-      transform: translateY(20%); }
-      #hospitality .figure img.fade-in {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0); }
+      height: 463px;
+      position: relative;
+      overflow: hidden; }
+      #hospitality .figure .figure-img img {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        width: auto; }
   #hospitality .carousel .carousel-inner .carousel-item {
     height: 100%;
     min-height: 500px; }
@@ -1311,15 +1304,27 @@ small {
         margin: 0 auto; }
   #blog .figure {
     -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
+    /* For crop image */ }
     #blog .figure:hover {
       -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
       box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
       background-color: #f4f4f4; }
       #blog .figure:hover .figcaption .button-readmore {
         color: #f7d0cb; }
-    #blog .figure img {
-      width: 100%; }
+    #blog .figure .figure-img {
+      width: 100%;
+      height: 330px;
+      position: relative;
+      overflow: hidden; }
+      #blog .figure .figure-img img {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        width: auto; }
     #blog .figure .figcaption {
       padding: 35px;
       overflow: hidden; }
@@ -1710,7 +1715,8 @@ small {
         color: #cfcfcf; }
   #blogs-page .figure {
     -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
+    /* For crop image */ }
     #blogs-page .figure .figure-img {
       width: 100%;
       height: 330px;
@@ -1925,7 +1931,8 @@ small {
       padding-bottom: 40px; }
   #blogsdetail-page .related .figure {
     -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
+    /* For crop image */ }
     #blogsdetail-page .related .figure .figure-img {
       width: 100%;
       height: 330px;
@@ -3492,11 +3499,14 @@ small {
     position: absolute;
     padding-top: 40px;
     padding-left: 0;
-    padding-right: 0; }
-    #whatwedo .figure img.oxford-mb {
-      width: 104%;
-      margin-top: 20px;
-      position: static; }
+    padding-right: 0;
+    /* For crop image */ }
+    #whatwedo .figure .figure-img {
+      left: 0;
+      margin: auto;
+      width: 100%;
+      height: 430px;
+      margin-top: 20px; }
   #practics .obj.city {
     background-size: 200%;
     background-position: -88px 0; }
@@ -3551,11 +3561,14 @@ small {
     #hospitality .figcaption button {
       float: right;
       margin-right: 16%; }
-  #hospitality .figure img.oxford-mb {
-    width: 100%;
-    margin-top: 170px;
-    right: 10px;
-    left: auto; }
+  #hospitality .figure {
+    /* For crop image */ }
+    #hospitality .figure .figure-img {
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      height: 380px;
+      margin-top: 170px; }
   #hospitality .carousel {
     padding: 0; }
     #hospitality .carousel .carousel-inner .carousel-item {
@@ -3749,38 +3762,40 @@ small {
         padding: 0; }
       #blogs-page .row nav .pagination .page-item .page-link {
         padding: 0.5rem 0.5rem; }
-    #blogs-page .figure.column {
-      margin-bottom: 30px; }
-    #blogs-page .figure .figure-img {
-      width: 100%;
-      height: 330px;
-      position: relative;
-      overflow: hidden; }
-      #blogs-page .figure .figure-img img {
-        position: absolute;
-        top: -9999px;
-        bottom: -9999px;
-        left: -9999px;
-        right: -9999px;
-        margin: auto;
-        width: auto; }
-    #blogs-page .figure .figcaption {
-      padding: 24px; }
-      #blogs-page .figure .figcaption h3 {
-        font-size: 22px; }
-      #blogs-page .figure .figcaption p {
-        font-size: 16px;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical; }
-        #blogs-page .figure .figcaption p.date {
-          font-size: 14px;
-          margin: 0; }
-        #blogs-page .figure .figcaption p.button-readmore {
-          font-size: 16px; }
+    #blogs-page .figure {
+      /* For crop image */ }
+      #blogs-page .figure.column {
+        margin-bottom: 30px; }
+      #blogs-page .figure .figure-img {
+        width: 100%;
+        height: 330px;
+        position: relative;
+        overflow: hidden; }
+        #blogs-page .figure .figure-img img {
+          position: absolute;
+          top: -9999px;
+          bottom: -9999px;
+          left: -9999px;
+          right: -9999px;
+          margin: auto;
+          width: auto; }
+      #blogs-page .figure .figcaption {
+        padding: 24px; }
+        #blogs-page .figure .figcaption h3 {
+          font-size: 22px; }
+        #blogs-page .figure .figcaption p {
+          font-size: 16px;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical; }
+          #blogs-page .figure .figcaption p.date {
+            font-size: 14px;
+            margin: 0; }
+          #blogs-page .figure .figcaption p.button-readmore {
+            font-size: 16px; }
   /* Blog detail page ************/
   #blogsdetail-page {
     margin-top: 60px; }
@@ -3827,35 +3842,37 @@ small {
     #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item {
       padding-left: 0;
       padding-right: 0; }
-    #blogsdetail-page .related .figure .figure-img {
-      width: 100%;
-      height: 330px;
-      position: relative;
-      overflow: hidden; }
-      #blogsdetail-page .related .figure .figure-img img {
-        position: absolute;
-        top: -9999px;
-        bottom: -9999px;
-        left: -9999px;
-        right: -9999px;
-        margin: auto;
-        width: auto; }
-    #blogsdetail-page .related .figure .figcaption {
-      padding: 24px; }
-      #blogsdetail-page .related .figure .figcaption h3 {
-        font-size: 22px; }
-      #blogsdetail-page .related .figure .figcaption p {
-        font-size: 16px;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical; }
-        #blogsdetail-page .related .figure .figcaption p.date {
-          font-size: 14px; }
-        #blogsdetail-page .related .figure .figcaption p.button-readmore {
-          font-size: 16px; }
+    #blogsdetail-page .related .figure {
+      /* For crop image */ }
+      #blogsdetail-page .related .figure .figure-img {
+        width: 100%;
+        height: 330px;
+        position: relative;
+        overflow: hidden; }
+        #blogsdetail-page .related .figure .figure-img img {
+          position: absolute;
+          top: -9999px;
+          bottom: -9999px;
+          left: -9999px;
+          right: -9999px;
+          margin: auto;
+          width: auto; }
+      #blogsdetail-page .related .figure .figcaption {
+        padding: 24px; }
+        #blogsdetail-page .related .figure .figcaption h3 {
+          font-size: 22px; }
+        #blogsdetail-page .related .figure .figcaption p {
+          font-size: 16px;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical; }
+          #blogsdetail-page .related .figure .figcaption p.date {
+            font-size: 14px; }
+          #blogsdetail-page .related .figure .figcaption p.button-readmore {
+            font-size: 16px; }
     #blogsdetail-page.fade-in .content .header h2 {
       font-size: 28px;
       margin: 0 0 40px; }
@@ -4251,19 +4268,21 @@ small {
     padding: 0; }
   #blogs-page .oxford-dt {
     display: block !important; }
-  #blogs-page .row .figure-img {
-    width: 100%;
-    height: 330px;
-    position: relative;
-    overflow: hidden; }
-    #blogs-page .row .figure-img img {
-      position: absolute;
-      top: -9999px;
-      bottom: -9999px;
-      left: -9999px;
-      right: -9999px;
-      margin: auto;
-      width: auto; } }
+  #blogs-page .row {
+    /* For crop image */ }
+    #blogs-page .row .figure-img {
+      width: 100%;
+      height: 330px;
+      position: relative;
+      overflow: hidden; }
+      #blogs-page .row .figure-img img {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        width: auto; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   nav .oxford-dt {
@@ -4408,10 +4427,12 @@ small {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
       max-width: 100%; }
+    #whatwedo .figure .figure-img {
+      width: 100%;
+      height: 760px;
+      left: 0; }
     #whatwedo .figure img.oxford-mb {
-      display: block !important;
-      width: 104%;
-      position: static; }
+      display: block !important; }
     #whatwedo .figure img.oxford-dt {
       display: none !important; }
   #practics .obj.cloud {
@@ -4462,20 +4483,24 @@ small {
     #hospitality .figcaption button {
       float: right;
       margin-right: 27%; }
-  #hospitality .figure.col-md-6 {
-    width: 100%;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%; }
-  #hospitality .figure img.oxford-mb {
-    display: block !important;
-    width: 100%;
-    margin-top: 150px;
-    right: 10px;
-    left: auto; }
-  #hospitality .figure img.oxford-dt {
-    display: none !important; }
+  #hospitality .figure {
+    /* For crop image */ }
+    #hospitality .figure.col-md-6 {
+      width: 100%;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+    #hospitality .figure .figure-img {
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      height: 620px;
+      margin-top: 170px; }
+    #hospitality .figure img.oxford-mb {
+      display: block !important; }
+    #hospitality .figure img.oxford-dt {
+      display: none !important; }
   #hospitality .carousel.col-md-12 {
     padding: 0; }
   #hospitality .carousel .carouselHospitality-indicators.fade-in {
@@ -4616,7 +4641,8 @@ small {
       padding-right: 0; }
     #blogsdetail-page .related .container {
       padding-right: 0;
-      max-width: 100%; }
+      max-width: 100%;
+      /* For crop image */ }
       #blogsdetail-page .related .container .owl-carousel {
         margin-left: 0;
         margin-right: 0; }
