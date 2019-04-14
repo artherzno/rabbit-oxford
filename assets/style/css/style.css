@@ -864,20 +864,24 @@ small {
     position: relative;
     z-index: 0;
     /* For crop image */ }
-    #whatwedo .figure .figure-img {
-      width: 130%;
-      height: 472px;
+    #whatwedo .figure img {
       position: absolute;
       right: 0;
-      overflow: hidden; }
-      #whatwedo .figure .figure-img img {
-        position: absolute;
-        top: -9999px;
-        bottom: -9999px;
-        left: -9999px;
-        right: -9999px;
-        margin: auto;
-        width: auto; }
+      top: 18%;
+      width: 130%;
+      -webkit-transition: all 1s ease-out;
+      -ms-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      transition: all 1s ease-out;
+      opacity: 0;
+      -webkit-transform: translateY(30%);
+      -ms-transform: translateY(30%);
+      transform: translateY(30%); }
+      #whatwedo .figure img.fade-in {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
 
 #practics {
   width: 100%;
@@ -1055,19 +1059,24 @@ small {
   #hospitality .figure {
     position: relative;
     /* For crop image */ }
-    #hospitality .figure .figure-img {
+    #hospitality .figure img {
+      position: absolute;
+      left: 3.8%;
+      top: 0;
       width: 130%;
-      height: 463px;
-      position: relative;
-      overflow: hidden; }
-      #hospitality .figure .figure-img img {
-        position: absolute;
-        top: -9999px;
-        bottom: -9999px;
-        left: -9999px;
-        right: -9999px;
-        margin: auto;
-        width: auto; }
+      -webkit-transition: all 1s ease-out;
+      -ms-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      transition: all 1s ease-out;
+      opacity: 0;
+      -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+      transform: translateY(20%); }
+      #hospitality .figure img.fade-in {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
   #hospitality .carousel .carousel-inner .carousel-item {
     height: 100%;
     min-height: 500px; }
@@ -3693,12 +3702,10 @@ small {
     padding-left: 0;
     padding-right: 0;
     /* For crop image */ }
-    #whatwedo .figure .figure-img {
-      left: 0;
-      margin: auto;
-      width: 100%;
-      height: 430px;
-      margin-top: 20px; }
+    #whatwedo .figure img.oxford-mb {
+      width: 104%;
+      margin-top: 20px;
+      position: static; }
   #practics .obj.city {
     background-size: 200%;
     background-position: -88px 0; }
@@ -3755,12 +3762,11 @@ small {
       margin-right: 16%; }
   #hospitality .figure {
     /* For crop image */ }
-    #hospitality .figure .figure-img {
-      position: absolute;
-      overflow: hidden;
+    #hospitality .figure img.oxford-mb {
       width: 100%;
-      height: 380px;
-      margin-top: 170px; }
+      margin-top: 170px;
+      right: 10px;
+      left: auto; }
   #hospitality .carousel {
     padding: 0; }
     #hospitality .carousel .carousel-inner .carousel-item {
@@ -4723,14 +4729,12 @@ small {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
       max-width: 100%; }
-    #hospitality .figure .figure-img {
-      position: absolute;
-      overflow: hidden;
-      width: 100%;
-      height: 620px;
-      margin-top: 170px; }
     #hospitality .figure img.oxford-mb {
-      display: block !important; }
+      display: block !important;
+      width: 100%;
+      margin-top: 150px;
+      right: 10px;
+      left: auto; }
     #hospitality .figure img.oxford-dt {
       display: none !important; }
   #hospitality .carousel.col-md-12 {

@@ -626,38 +626,38 @@ small {
     z-index: 0;
 
     /* For crop image */
-    .figure-img {
-      width: 130%;
-      height: 472px;
-      position: absolute;
-      right: 0;
-      overflow: hidden;
-
-      img {
-        position: absolute;
-        top: -9999px;
-        bottom: -9999px;
-        left: -9999px;
-        right: -9999px;
-        margin: auto;
-        width: auto;
-      }
-    }
-
-    // img {
+    // .figure-img {
+    //   width: 130%;
+    //   height: 472px;
     //   position: absolute;
     //   right: 0;
-    //   top: 18%;
-    //   width: 130%;
-    //   @include transition(all 1s ease-out);
-    //   opacity: 0;
-    //   @include transform(translateY(30%));
+    //   overflow: hidden;
     //
-    //   &.fade-in {
-    //     opacity: 1;
-    //     @include transform(translateY(0));
+    //   img {
+    //     position: absolute;
+    //     top: -9999px;
+    //     bottom: -9999px;
+    //     left: -9999px;
+    //     right: -9999px;
+    //     margin: auto;
+    //     width: auto;
     //   }
     // }
+
+    img {
+      position: absolute;
+      right: 0;
+      top: 18%;
+      width: 130%;
+      @include transition(all 1s ease-out);
+      opacity: 0;
+      @include transform(translateY(30%));
+
+      &.fade-in {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
   }
 }
 
@@ -828,38 +828,38 @@ small {
     // z-index: -1;
 
     /* For crop image */
-    .figure-img {
-      width: 130%;
-      height: 463px;
-      position: relative;
-      overflow: hidden;
-
-      img {
-        position: absolute;
-        top: -9999px;
-        bottom: -9999px;
-        left: -9999px;
-        right: -9999px;
-        margin: auto;
-        width: auto;
-      }
-    }
-
-    // img {
-    //   position: absolute;
-    //   left: 3.8%;
-    //   top: 0;
+    // .figure-img {
     //   width: 130%;
+    //   height: 463px;
+    //   position: relative;
+    //   overflow: hidden;
     //
-    //   @include transition(all 1s ease-out);
-    //   opacity: 0;
-    //   @include transform(translateY(20%));
-    //
-    //   &.fade-in {
-    //     opacity: 1;
-    //     @include transform(translateY(0));
+    //   img {
+    //     position: absolute;
+    //     top: -9999px;
+    //     bottom: -9999px;
+    //     left: -9999px;
+    //     right: -9999px;
+    //     margin: auto;
+    //     width: auto;
     //   }
     // }
+
+    img {
+      position: absolute;
+      left: 3.8%;
+      top: 0;
+      width: 130%;
+
+      @include transition(all 1s ease-out);
+      opacity: 0;
+      @include transform(translateY(20%));
+
+      &.fade-in {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
   }
 
   .carousel {
@@ -4616,18 +4616,18 @@ $breadcrumb-divider: quote(">");
       padding-right: 0;
 
       /* For crop image */
-      .figure-img {
-        left: 0;
-        margin: auto;
-        width: 100%;
-        height: 430px;
-        margin-top: 20px;
-      }
+      // .figure-img {
+      //   left: 0;
+      //   margin: auto;
+      //   width: 100%;
+      //   height: 430px;
+      //   margin-top: 20px;
+      // }
 
       img.oxford-mb {
-        // width: 104%;
-        // margin-top: 20px;
-        // position: static;
+        width: 104%;
+        margin-top: 20px;
+        position: static;
       }
     }
   }
@@ -4726,19 +4726,19 @@ $breadcrumb-divider: quote(">");
     .figure {
 
       /* For crop image */
-      .figure-img {
-        position: absolute;
-        overflow: hidden;
-        width: 100%;
-        height: 380px;
-        margin-top: 170px;
-      }
+      // .figure-img {
+      //   position: absolute;
+      //   overflow: hidden;
+      //   width: 100%;
+      //   height: 380px;
+      //   margin-top: 170px;
+      // }
 
       img.oxford-mb {
-        // width: 100%;
-        // margin-top: 170px;
-        // right: 10px;
-        // left: auto;
+        width: 100%;
+        margin-top: 170px;
+        right: 10px;
+        left: auto;
       }
     }
 
@@ -6615,20 +6615,20 @@ $breadcrumb-divider: quote(">");
       }
 
       /* For crop image */
-      .figure-img {
-        position: absolute;
-        overflow: hidden;
-        width: 100%;
-        height: 620px;
-        margin-top: 170px;
-      }
+      // .figure-img {
+      //   position: absolute;
+      //   overflow: hidden;
+      //   width: 100%;
+      //   height: 620px;
+      //   margin-top: 170px;
+      // }
 
       img.oxford-mb {
         display: block !important;
-        // width: 100%;
-        // margin-top: 150px;
-        // right: 10px;
-        // left: auto;
+        width: 100%;
+        margin-top: 150px;
+        right: 10px;
+        left: auto;
       }
 
       img.oxford-dt {
