@@ -5290,6 +5290,8 @@ small {
       margin-right: 40px; } }
 
 @media screen and (orientation: landscape) {
+  body {
+    overflow: hidden; }
   .dontOrientation {
     display: block; } }
 
