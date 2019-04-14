@@ -5289,6 +5289,10 @@ small {
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
       margin-right: 40px; } }
 
+@media screen and (orientation: landscape) {
+  .dontOrientation {
+    display: block; } }
+
 /***************************************************************************************************/
 /* For IE ******************************************************************************************/
 /***************************************************************************************************/

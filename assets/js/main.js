@@ -12,11 +12,11 @@ $(document).ready(function(){
   }
 
   // Detect Orientation change /////////////////////////////////////////////////
-  window.addEventListener("orientationchange", function() {
-    if(window.orientation >= 0) {
-      $('.dontOrientation').toggleClass('show');
-    }
-  }, false);
+  // window.addEventListener("orientationchange", function() {
+  //   if(window.orientation >= 0) {
+  //     $('.dontOrientation').toggleClass('show');
+  //   }
+  // }, false);
 
   // Animate Brain /////////////////////////////////////////////////////////////
   var brain = $(".brain"),
