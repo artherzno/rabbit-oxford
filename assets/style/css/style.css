@@ -3332,6 +3332,8 @@ small {
         transform: translateY(0); }
   #hospitality-page #getintouch, #strategy-page #getintouch, #demandgeneration-page #getintouch, #demandfulfillment-page #getintouch, #financialtransformation-page #getintouch, #organisationaloptimisation-page #getintouch {
     opacity: 1; }
+    #hospitality-page #getintouch .content, #strategy-page #getintouch .content, #demandgeneration-page #getintouch .content, #demandfulfillment-page #getintouch .content, #financialtransformation-page #getintouch .content, #organisationaloptimisation-page #getintouch .content {
+      padding-bottom: 14%; }
     #hospitality-page #getintouch.fade-in p, #strategy-page #getintouch.fade-in p, #demandgeneration-page #getintouch.fade-in p, #demandfulfillment-page #getintouch.fade-in p, #financialtransformation-page #getintouch.fade-in p, #organisationaloptimisation-page #getintouch.fade-in p {
       opacity: 1;
       -webkit-transform: translateY(0);
@@ -4202,7 +4204,7 @@ small {
       margin: 0 auto;
       padding-left: 4%; }
   #hospitality-page .carousel-section .carousel, #strategy-page .carousel-section .carousel, #demandgeneration-page .carousel-section .carousel, #demandfulfillment-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel {
-    padding-top: 45%; }
+    padding-top: 35%; }
     #hospitality-page .carousel-section .carousel .carousel-item, #strategy-page .carousel-section .carousel .carousel-item, #demandgeneration-page .carousel-section .carousel .carousel-item, #demandfulfillment-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item {
       padding: 15% 0 30%; }
       #hospitality-page .carousel-section .carousel .carousel-item .row:last-child, #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child {
@@ -4226,6 +4228,8 @@ small {
         font-size: 26px; }
       #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
         font-size: 18px; }
+  #hospitality-page .feasibility-section h1 {
+    padding: 60px 0; }
   #hospitality-page .discover-section {
     height: auto;
     padding: 85% 0; }
@@ -4247,7 +4251,7 @@ small {
       flex: 0 0 90%;
       max-width: 90%; }
   #hospitality-page #getintouch .content {
-    padding-bottom: 100px; }
+    padding-bottom: 14%; }
   /* Careers page ********************/
   #careers-page .banner {
     height: 44vh;
@@ -4959,7 +4963,7 @@ small {
     flex: 0 0 100%;
     max-width: 100%; }
   #hospitality-page .content, #strategy-page .content, #demandgeneration-page .content, #demandfulfillment-page .content, #organisationaloptimisation-page .content, #financialtransformation-page .content {
-    padding-bottom: 56%; }
+    padding-bottom: 52%; }
     #hospitality-page .content .row, #strategy-page .content .row, #demandgeneration-page .content .row, #demandfulfillment-page .content .row, #organisationaloptimisation-page .content .row, #financialtransformation-page .content .row {
       position: relative; }
       #hospitality-page .content .row .column._left, #hospitality-page .content .row .column._right, #strategy-page .content .row .column._left, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._left, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._left, #demandfulfillment-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._right, #financialtransformation-page .content .row .column._left, #financialtransformation-page .content .row .column._right {
@@ -4986,7 +4990,7 @@ small {
   #hospitality-page .carousel-section .carousel, #strategy-page .carousel-section .carousel, #demandgeneration-page .carousel-section .carousel, #demandfulfillment-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel {
     height: auto; }
     #hospitality-page .carousel-section .carousel .carousel-item, #strategy-page .carousel-section .carousel .carousel-item, #demandgeneration-page .carousel-section .carousel .carousel-item, #demandfulfillment-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item {
-      padding: 18% 0 14%; }
+      padding: 30% 0 14%; }
       #hospitality-page .carousel-section .carousel .carousel-item .row:last-child, #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child {
         margin-top: 70px; }
     #hospitality-page .carousel-section .carousel h1, #strategy-page .carousel-section .carousel h1, #demandgeneration-page .carousel-section .carousel h1, #demandfulfillment-page .carousel-section .carousel h1, #organisationaloptimisation-page .carousel-section .carousel h1, #financialtransformation-page .carousel-section .carousel h1 {
@@ -5000,10 +5004,8 @@ small {
     margin-bottom: 40px; }
     #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
       font-size: 28px; }
-  #hospitality-page .discover-section {
-    height: auto; }
-    #hospitality-page .discover-section h1 {
-      margin: 190px 0; }
+  #hospitality-page .discover-section h1 {
+    margin: 190px 0; }
   #hospitality-page .roles-section .row.oxford-dt {
     display: none !important; }
   #hospitality-page .roles-section .row.oxford-mb {

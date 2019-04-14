@@ -3824,6 +3824,10 @@ small {
   #getintouch {
     opacity: 1;
 
+    .content {
+      padding-bottom: 14%;
+    }
+
     &.fade-in {
 
       p {
@@ -5568,7 +5572,7 @@ $breadcrumb-divider: quote(">");
     .carousel-section {
 
       .carousel {
-        padding-top: 45%;
+        padding-top: 35%;
 
         .carousel-item {
           padding: 15% 0 30%;
@@ -5617,6 +5621,13 @@ $breadcrumb-divider: quote(">");
       }
     }
 
+    .feasibility-section {
+
+      h1 {
+        padding: 60px 0;
+      }
+    }
+
     .discover-section {
       height: auto;
       padding: 85% 0;
@@ -5654,7 +5665,7 @@ $breadcrumb-divider: quote(">");
     #getintouch {
 
       .content {
-        padding-bottom: 100px;
+        padding-bottom: 14%;
       }
     }
   }
@@ -7017,7 +7028,7 @@ $breadcrumb-divider: quote(">");
     }
 
     .content {
-      padding-bottom: 56%;
+      padding-bottom: 52%;
 
       .row {
         position: relative;
@@ -7066,7 +7077,7 @@ $breadcrumb-divider: quote(">");
         height: auto;
 
         .carousel-item {
-          padding: 18% 0 14%;
+          padding: 30% 0 14%;
 
           .row:last-child {
             margin-top: 70px;
@@ -7101,7 +7112,7 @@ $breadcrumb-divider: quote(">");
     }
 
     .discover-section {
-      height: auto;
+      // height: auto;
 
       h1 {
         margin: 190px 0;

@@ -10,6 +10,12 @@ $(document).ready(function(){
     $('body').addClass('not-ie');
   }
 
+  window.addEventListener("orientationchange", function() {
+    // Announce the new orientation number
+    console.log(window.orientation);
+    $('body').toggleClass('orientationchange');
+  }, false);
+
   // Animate Brain /////////////////////////////////////////////////////////////
   var brain = $(".brain"),
       intro = $("#intro"),
