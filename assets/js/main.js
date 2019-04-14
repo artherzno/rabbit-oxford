@@ -13,12 +13,10 @@ $(document).ready(function(){
 
   // Detect Orientation change /////////////////////////////////////////////////
   window.addEventListener("orientationchange", function() {
-    $('.dontOrientation').toggleClass('show');
+    if(window.orientation >= 0) {
+      $('.dontOrientation').toggleClass('show');
+    }
   }, false);
-
-  if(window.innerHeight > window.innerWidth){
-    $('.dontOrientation').toggleClass('show');
-  }
 
   // Animate Brain /////////////////////////////////////////////////////////////
   var brain = $(".brain"),
