@@ -16,6 +16,10 @@ $(document).ready(function(){
     $('.dontOrientation').toggleClass('show');
   }, false);
 
+  if(window.innerHeight > window.innerWidth){
+    $('.dontOrientation').toggleClass('show');
+  }
+
   // Animate Brain /////////////////////////////////////////////////////////////
   var brain = $(".brain"),
       intro = $("#intro"),
