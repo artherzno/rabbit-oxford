@@ -250,25 +250,39 @@ h3 {
 h2, h3, p {
   word-break: break-word; }
 
-textarea, input[type="text"], input[type="password"], input[type="email"], select, .form-control {
+textarea, input[type="text"], input[type="password"], input[type="email"], select, .form-control-field {
   border-radius: 0;
   resize: none;
   border: none;
   margin-bottom: 0; }
 
-textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, .form-control {
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, .form-control-field {
   outline: 0px !important;
   -webkit-appearance: none !important;
   box-shadow: none !important;
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important; }
 
-.form-control, label, .form-group {
+.form-control-field, label, .form-group {
   margin-bottom: 20px; }
 
-.form-control {
+.form-control-field {
   padding: 25px 20px;
-  background-clip: initial; }
+  background-clip: initial;
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff; }
+
+input.form-control-field {
+  height: 50px; }
+
+textarea.form-control-field {
+  height: 170px; }
 
 .form-row {
   margin-right: 0;
@@ -279,8 +293,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   color: #ff3838;
   margin-top: 10px; }
 
-.form-control.is-valid, .was-validated .form-control:valid,
-.form-control.is-invalid, .was-validated .form-control:invalid {
+.form-control-field.is-valid, .was-validated .form-control-field:valid,
+.form-control-field.is-invalid, .was-validated .form-control-field:invalid {
   background-image: none; }
 
 small {
@@ -5198,10 +5212,10 @@ small {
 /***************************************************************************************************/
 /* For IE ******************************************************************************************/
 /***************************************************************************************************/
-.ie textarea.form-control {
+.ie textarea.form-control-field {
   padding: 10px 20px; }
 
-.ie .form-control {
+.ie .form-control-field {
   padding: 0 20px; }
 
 .ie .dropdown.dropdown-list .dropdown-toggle {
