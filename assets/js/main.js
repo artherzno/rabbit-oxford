@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // Detect IE /////////////////////////////////////////////////////////////////
   if (isIE()){
     console.log('It is InternetExplorer');
     $('body').addClass('ie');
@@ -10,10 +11,9 @@ $(document).ready(function(){
     $('body').addClass('not-ie');
   }
 
+  // Detect Orientation change /////////////////////////////////////////////////
   window.addEventListener("orientationchange", function() {
-    // Announce the new orientation number
-    console.log(window.orientation);
-    $('body').toggleClass('orientationchange');
+    $('.dontOrientation').toggleClass('show');
   }, false);
 
   // Animate Brain /////////////////////////////////////////////////////////////
@@ -90,7 +90,7 @@ $(document).ready(function(){
   });
 
 
-  // Careers dropdown
+  // Careers dropdown //////////////////////////////////////////////////////////
   $('#careers-page .dropdown-list .dropdown-toggle').on('click', function() {
     $('#careers-page .overlay.oxford-mb').toggleClass('show');
   });
@@ -169,13 +169,13 @@ $(document).ready(function(){
   }
 
 
-  // Carousel hidden on blogsdetail page - mobile
+  // Carousel hidden on blogsdetail page - mobile //////////////////////////////
   $('.navbar-toggler').on('click', function() {
     $('#blogsdetail-page .carouselBlogDetail-dot-container').toggleClass('hide-dot');
     $('.navbar-toggler-logo').toggleClass('hide-dot');
   });
 
-  // Carousel stop autoplay
+  // Carousel stop autoplay ////////////////////////////////////////////////////
   $('#carouselCaptions.carousel').carousel({
     interval: false
   });
@@ -199,7 +199,7 @@ $(document).ready(function(){
   // });
 
 
-  // Locatios accordion - desktop
+  // Locatios accordion - desktop //////////////////////////////////////////////
   $('#accordionLocation-dt .button-head').on('click', function() {
     $('html, body').animate({
         scrollTop: $("#locations").offset().top
@@ -222,7 +222,7 @@ $(document).ready(function(){
     }
   });
 
-  // Locations Config Modal //////////////////////////////////////////////////////////////
+  // Locations Config Modal ////////////////////////////////////////////////////
     var locattionBtn = $('#locations .button-modal');
     locattionBtn.on('click', function(event) {
       $('.modal-dialog .close').trigger('click');
@@ -231,7 +231,7 @@ $(document).ready(function(){
       $(this).addClass('active');
     });
 
-    // Locations Remove modal //////////////////////////////////////////////////////////////
+    // Locations Remove modal //////////////////////////////////////////////////
     $('.modal .close').on('click', function() {
         $('#locations .button-modal').removeClass('active');
         $('#locations .button-head').removeClass('sub-active');
@@ -245,7 +245,7 @@ $(document).ready(function(){
     //   $('.modal-dialog .close').trigger('click');
     // });
 
-  // Locations accordion - mobile
+  // Locations accordion - mobile //////////////////////////////////////////////
   $('.collapse-box button').on('click', function() {
     var $thisAttr = $(this).attr('aria-expanded');
     var $collapseBoxButtonParent = $(this).parent('.collapse').prev('.button-head');
