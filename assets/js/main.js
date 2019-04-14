@@ -493,6 +493,8 @@ $(document).ready(function(){
 
   classToggle('#whyus-page .row_4', 0.8, '', '#whyus-page .row_4', 'fade-in');
 
+  classToggle('#whyus-page .getintouch-section', 0.7, '', '#whyus-page .getintouch-section', 'fade-in');
+
   // Demandfulfillment - banner ----------------------------------------- //
   classToggle('#hospitality-page', 0.8, '', '#hospitality-page .banner', 'fade-in');
 
@@ -540,6 +542,8 @@ $(document).ready(function(){
   // Demandfulfillment - carousel ----------------------------------------- //
   classToggle('#demandfulfillment-page .carousel-section', 0.7, '', '#demandfulfillment-page .carousel-section', 'fade-in');
 
+  classToggle('#demandfulfillment-page .getintouch-section', 0.7, '', '#demandfulfillment-page .getintouch-section', 'fade-in');
+
   // Demandfulfillment - carousel interval start autoplay ----------------------------------------- //
   var scrollToggleClass = new ScrollMagic.Scene({
     triggerElement: '#demandfulfillment-page .carousel-section',
@@ -567,6 +571,8 @@ $(document).ready(function(){
 
   // Strategy - carousel ----------------------------------------- //
   classToggle('#strategy-page .carousel-section', 0.7, '', '#strategy-page .carousel-section', 'fade-in');
+
+  classToggle('#strategy-page .getintouch-section', 0.7, '', '#strategy-page .getintouch-section', 'fade-in');
 
   // Strategy - carousel interval start autoplay ----------------------------------------- //
   var scrollToggleClass = new ScrollMagic.Scene({
@@ -596,6 +602,8 @@ $(document).ready(function(){
   // Demand Generation - carousel ----------------------------------------- //
   classToggle('#demandgeneration-page .carousel-section', 0.7, '', '#demandgeneration-page .carousel-section', 'fade-in');
 
+  classToggle('#demandgeneration-page .getintouch-section', 0.7, '', '#demandgeneration-page .getintouch-section', 'fade-in');
+
   // Demand Generation - carousel interval start autoplay ----------------------------------------- //
   var scrollToggleClass = new ScrollMagic.Scene({
     triggerElement: '#demandgeneration-page .carousel-section',
@@ -624,6 +632,8 @@ $(document).ready(function(){
   // Financial Transformation - carousel ----------------------------------------- //
   classToggle('#financialtransformation-page .carousel-section', 0.7, '', '#financialtransformation-page .carousel-section', 'fade-in');
 
+  classToggle('#financialtransformation-page .getintouch-section', 0.7, '', '#financialtransformation-page .getintouch-section', 'fade-in');
+
   // Financial Transformation - carousel interval start autoplay ----------------------------------------- //
   var scrollToggleClass = new ScrollMagic.Scene({
     triggerElement: '#financialtransformation-page .carousel-section',
@@ -651,6 +661,8 @@ $(document).ready(function(){
 
   // Organisational Optimisation - carousel ----------------------------------------- //
   classToggle('#organisationaloptimisation-page .carousel-section', 0.7, '', '#organisationaloptimisation-page .carousel-section', 'fade-in');
+
+  classToggle('#organisationaloptimisation-page .getintouch-section', 0.7, '', '#organisationaloptimisation-page .getintouch-section', 'fade-in');
 
   // Organisational Optimisation - carousel interval start autoplay ----------------------------------------- //
   var scrollToggleClass = new ScrollMagic.Scene({

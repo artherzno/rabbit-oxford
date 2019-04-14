@@ -1406,6 +1406,8 @@ small {
   transition: all 0.8s ease-out; }
   #getintouch .content {
     padding: 100px 0; }
+    #getintouch .content.text-center {
+      background: none; }
     #getintouch .content h2 {
       font: 600 60px/1.2 oswald, arial;
       text-transform: uppercase;
@@ -2151,6 +2153,24 @@ small {
 
 #locations-page .row {
   margin-bottom: 40px; }
+
+#locations-page #getintouch {
+  opacity: 1; }
+  #locations-page #getintouch.fade-in p {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  #locations-page #getintouch p {
+    margin-bottom: 50px;
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.8s ease-out 0.6s;
+    -ms-transition: all 0.8s ease-out 0.6s;
+    -o-transition: all 0.8s ease-out 0.6s;
+    transition: all 0.8s ease-out 0.6s; }
 
 /* Careers page ******************************************************************/
 #careers-page {
@@ -2945,6 +2965,22 @@ small {
       -ms-transition: all 0.8s ease-out 0.2s;
       -o-transition: all 0.8s ease-out 0.2s;
       transition: all 0.8s ease-out 0.2s; }
+  #whyus-page #getintouch {
+    opacity: 1; }
+    #whyus-page #getintouch.fade-in p {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    #whyus-page #getintouch p {
+      opacity: 0;
+      -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+      transform: translateY(20%);
+      -webkit-transition: all 0.8s ease-out 0.6s;
+      -ms-transition: all 0.8s ease-out 0.6s;
+      -o-transition: all 0.8s ease-out 0.6s;
+      transition: all 0.8s ease-out 0.6s; }
 
 /* Practices all page ******************************************************************/
 #hospitality-page .banner {
@@ -3077,22 +3113,21 @@ small {
       padding-left: 30px;
       border-left: 1px solid #999; }
 
-#hospitality-page #getintouch {
-  opacity: 1; }
-  #hospitality-page #getintouch.fade-in p {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-  #hospitality-page #getintouch p {
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-    -ms-transform: translateY(20%);
-    transform: translateY(20%);
-    -webkit-transition: all 0.8s ease-out 0.6s;
-    -ms-transition: all 0.8s ease-out 0.6s;
-    -o-transition: all 0.8s ease-out 0.6s;
-    transition: all 0.8s ease-out 0.6s; }
+#hospitality-page #getintouch.fade-in p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }
+
+#hospitality-page #getintouch p {
+  opacity: 0;
+  -webkit-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
+  -webkit-transition: all 0.8s ease-out 0.6s;
+  -ms-transition: all 0.8s ease-out 0.6s;
+  -o-transition: all 0.8s ease-out 0.6s;
+  transition: all 0.8s ease-out 0.6s; }
 
 #strategy-page .banner {
   background: url("../../images/strategy/oxf_bg_banner.jpg") no-repeat; }
@@ -3154,7 +3189,7 @@ small {
         position: absolute; }
         #hospitality-page .content .row .column._left, #strategy-page .content .row .column._left, #demandgeneration-page .content .row .column._left, #demandfulfillment-page .content .row .column._left, #financialtransformation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left {
           left: 0;
-          padding: 6% 1% 9% 6%;
+          padding: 6% 1% 5% 6%;
           z-index: 1;
           position: static; }
         #hospitality-page .content .row .column._right, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._right, #financialtransformation-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right {
@@ -3295,6 +3330,22 @@ small {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0); }
+  #hospitality-page #getintouch, #strategy-page #getintouch, #demandgeneration-page #getintouch, #demandfulfillment-page #getintouch, #financialtransformation-page #getintouch, #organisationaloptimisation-page #getintouch {
+    opacity: 1; }
+    #hospitality-page #getintouch.fade-in p, #strategy-page #getintouch.fade-in p, #demandgeneration-page #getintouch.fade-in p, #demandfulfillment-page #getintouch.fade-in p, #financialtransformation-page #getintouch.fade-in p, #organisationaloptimisation-page #getintouch.fade-in p {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    #hospitality-page #getintouch p, #strategy-page #getintouch p, #demandgeneration-page #getintouch p, #demandfulfillment-page #getintouch p, #financialtransformation-page #getintouch p, #organisationaloptimisation-page #getintouch p {
+      opacity: 0;
+      -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+      transform: translateY(20%);
+      -webkit-transition: all 0.8s ease-out 0.6s;
+      -ms-transition: all 0.8s ease-out 0.6s;
+      -o-transition: all 0.8s ease-out 0.6s;
+      transition: all 0.8s ease-out 0.6s; }
 
 /* Keyframes ******************************************************************/
 @-webkit-keyframes animateCloud {

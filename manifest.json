@@ -1,0 +1,7 @@
+{
+  "short_name": "Oxford Acuity",
+  "name": "Oxford Acuity",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "landscape"
+}

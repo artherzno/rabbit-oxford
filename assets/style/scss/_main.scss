@@ -1336,6 +1336,10 @@ small {
   .content {
     padding: 100px 0;
 
+    &.text-center {
+      background: none;
+    }
+
     h2 {
       font: 600 60px/1.2 oswald, arial;
       text-transform: uppercase;
@@ -2359,6 +2363,25 @@ small {
     margin-bottom: 40px;
   }
 
+  #getintouch {
+    opacity: 1;
+
+    &.fade-in {
+
+      p {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+
+    p {
+      margin-bottom: 50px;
+      opacity: 0;
+      @include transform(translateY(20%));
+      @include transition(all 0.8s ease-out 0.6s);
+    }
+  }
+
 }
 
 /* Careers page ******************************************************************/
@@ -3244,8 +3267,6 @@ small {
     @include transition(all 0.8s ease-out);
   }
 
-
-
   .header {
 
     h1 {
@@ -3338,6 +3359,24 @@ small {
       opacity: 0;
       @include transform(translateY(50%));
       @include transition(all 0.8s ease-out 0.2s);
+    }
+  }
+
+  #getintouch {
+    opacity: 1;
+
+    &.fade-in {
+
+      p {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+
+    p {
+      opacity: 0;
+      @include transform(translateY(20%));
+      @include transition(all 0.8s ease-out 0.6s);
     }
   }
 }
@@ -3505,7 +3544,6 @@ small {
   }
 
   #getintouch {
-    opacity: 1;
 
     &.fade-in {
 
@@ -3606,7 +3644,7 @@ small {
 
         &._left {
           left: 0;
-          padding: 6% 1% 9% 6%;
+          padding: 6% 1% 5% 6%;
           z-index: 1;
           position: static;
         }
@@ -3780,6 +3818,24 @@ small {
           }
         }
       }
+    }
+  }
+
+  #getintouch {
+    opacity: 1;
+
+    &.fade-in {
+
+      p {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+
+    p {
+      opacity: 0;
+      @include transform(translateY(20%));
+      @include transition(all 0.8s ease-out 0.6s);
     }
   }
 }
