@@ -3806,7 +3806,7 @@ small {
       position: static;
       padding: 0 15px; }
     #locations .content {
-      padding: 10% 0 30%;
+      padding: 10% 0 10%;
       min-height: auto;
       float: none; }
       #locations .content .oxford-mb .button-head + .collapse, #locations .content .oxford-mb .button-head + .collapsing {
