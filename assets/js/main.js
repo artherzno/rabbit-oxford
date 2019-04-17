@@ -315,7 +315,7 @@ $(document).ready(function(){
   .addTo(controller);
 
   // Pin banner ----------------------------------------- //
-  pin('#banner', 0, '80%', '#banner');
+  pin('#banner', 0, '10%', '#banner');
 
   // Second content banner ----------------------------------------- //
   classToggle('#banner', 0, '80%', '#banner', 'fade-in');

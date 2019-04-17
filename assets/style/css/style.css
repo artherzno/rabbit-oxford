@@ -316,7 +316,8 @@ small {
     position: relative;
     z-index: 1;
     width: 180px;
-    height: 52px; }
+    height: 52px;
+    visibility: hidden; }
 
 .buttonWhite {
   border: 2px solid #fff;
@@ -1029,6 +1030,8 @@ small {
         font-weight: 600; }
         #hospitality .figcaption h1.number.oxford-mb {
           margin-right: -20px; }
+      #hospitality .figcaption h1.header {
+        width: 40%; }
     #hospitality .figcaption p {
       font-size: 20px;
       color: #000;
@@ -1076,6 +1079,14 @@ small {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
+  #hospitality .figcaption-body {
+    width: 40%;
+    clear: both;
+    float: right; }
+  #hospitality .figure-img img {
+    position: absolute;
+    z-index: -1;
+    width: 70%; }
   #hospitality .figure {
     position: relative;
     /* For crop image */ }
@@ -3375,7 +3386,7 @@ small {
   #hospitality-page #getintouch, #strategy-page #getintouch, #demandgeneration-page #getintouch, #demandfulfillment-page #getintouch, #financialtransformation-page #getintouch, #organisationaloptimisation-page #getintouch {
     opacity: 1; }
     #hospitality-page #getintouch .content, #strategy-page #getintouch .content, #demandgeneration-page #getintouch .content, #demandfulfillment-page #getintouch .content, #financialtransformation-page #getintouch .content, #organisationaloptimisation-page #getintouch .content {
-      padding-bottom: 100px; }
+      padding: 40px 0; }
     #hospitality-page #getintouch.fade-in p, #strategy-page #getintouch.fade-in p, #demandgeneration-page #getintouch.fade-in p, #demandfulfillment-page #getintouch.fade-in p, #financialtransformation-page #getintouch.fade-in p, #organisationaloptimisation-page #getintouch.fade-in p {
       opacity: 1;
       -webkit-transform: translateY(0);
@@ -3588,8 +3599,10 @@ small {
       font-size: 0.7rem; }
       #banner .container .content .box.oxford-mb .box-content p span {
         font-size: 1.3rem; }
-  #hospitality .figcaption.fade-in h1 {
-    font-size: 26px; }
+  #hospitality .figcaption.fade-in .figcaption-body {
+    position: absolute;
+    bottom: 3%;
+    right: 15px; }
   #contactus-page #contactus-form .section-form .row .contactus-detail-card .contactus-detail {
     padding: 25px 20px;
     height: 150px; }
@@ -3822,10 +3835,9 @@ small {
   #hospitality .row {
     margin-bottom: 5%; }
   #hospitality .figcaption {
-    padding: 0 3px 0 10px; }
+    padding: 0 15px 0 0; }
     #hospitality .figcaption h1 {
       font-size: 32px;
-      margin-bottom: 84%;
       float: right;
       padding-right: 7%; }
       #hospitality .figcaption h1.number {
@@ -3836,13 +3848,17 @@ small {
         #hospitality .figcaption h1.number.oxford-mb {
           margin-right: 20px; }
       #hospitality .figcaption h1.h-oneline {
-        margin-bottom: 95.5%;
         clear: both; }
+      #hospitality .figcaption h1.header {
+        height: 64px;
+        margin-bottom: 10px;
+        width: 90%; }
     #hospitality .figcaption p {
+      width: 100%;
       font-size: 16px;
       float: right;
       padding-right: 7%;
-      padding-left: 15%;
+      padding-left: 20%;
       margin-bottom: 5%;
       overflow: hidden;
       -o-text-overflow: ellipsis;
@@ -3853,6 +3869,14 @@ small {
     #hospitality .figcaption button {
       float: right;
       margin-right: 16%; }
+  #hospitality .figcaption-body {
+    position: absolute;
+    bottom: 5%;
+    right: 15px;
+    width: 100%; }
+  #hospitality .figure-img img {
+    position: static;
+    width: 100%; }
   #hospitality .figure {
     /* For crop image */ }
     #hospitality .figure img.oxford-mb {
@@ -4294,8 +4318,6 @@ small {
       -ms-flex: 0 0 90%;
       flex: 0 0 90%;
       max-width: 90%; }
-  #hospitality-page #getintouch .content {
-    padding-bottom: 14%; }
   /* Careers page ********************/
   #careers-page .banner {
     height: 44vh;
@@ -4788,16 +4810,19 @@ small {
     margin-left: 0;
     margin-right: 0; }
   #hospitality .figcaption {
-    padding: 0 3px 0 10px; }
+    padding: 0; }
     #hospitality .figcaption.col-md-5 {
       width: 100%;
       -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
       max-width: 100%; }
+    #hospitality .figcaption img.oxford-mb {
+      display: block !important; }
+    #hospitality .figcaption img.oxford-dt {
+      display: none !important; }
     #hospitality .figcaption h1 {
       font-size: 36px;
-      margin-bottom: 84%;
       float: right;
       padding-right: 7.8%; }
       #hospitality .figcaption h1.number {
@@ -4806,11 +4831,12 @@ small {
           font-size: 40px; }
         #hospitality .figcaption h1.number.oxford-mb {
           margin-right: 0; }
+      #hospitality .figcaption h1.header {
+        width: 100%; }
     #hospitality .figcaption p {
-      font-size: 16px;
       float: right;
-      padding-right: 8%;
-      padding-left: 15%;
+      padding-right: 4%;
+      padding-left: 19%;
       margin-bottom: 5%;
       overflow: hidden;
       -o-text-overflow: ellipsis;
@@ -4821,6 +4847,14 @@ small {
     #hospitality .figcaption button {
       float: right;
       margin-right: 27%; }
+  #hospitality .figcaption-body {
+    position: absolute;
+    bottom: 7%;
+    right: 15px;
+    width: 100%; }
+  #hospitality .figure-img img {
+    position: static;
+    width: 100%; }
   #hospitality .figure {
     /* For crop image */ }
     #hospitality .figure.col-md-6 {
@@ -5072,7 +5106,7 @@ small {
       flex: 0 0 90%;
       max-width: 90%; }
   #hospitality-page #getintouch .content {
-    padding-bottom: 100px; }
+    padding: 40px 0; }
   #team-page .oxford-dt, #team-page .oxford-mb {
     display: none !important; }
   #team-page .oxford-tl {
