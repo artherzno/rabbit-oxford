@@ -186,7 +186,10 @@
                     <label for="inputUpload">Upload your Resume</label><br>
                     <!-- <input type="file" class="form-control-file" id="inputUpload"> -->
                     <label for="filetoupload" class="custom-file-upload buttonWhiteFull">UPLOAD</label>
-        						<input type="file" class="col-md-12 col-sm-12 col-xs-12" id="filetoupload" name="filetoupload" ng-model="filetoupload" accept=".jpg, .png, .gif">
+        						<input type="file" class="col-md-12 col-sm-12 col-xs-12 form-control" id="filetoupload" name="filetoupload" ng-model="filetoupload" accept=".jpg, .png, .gif" required>
+                    <div class="invalid-feedback">
+                      The field is required.
+                    </div>
                   </div>
                   <small>*You can upload Files that are .JPEG, .PNG, .PDF Under 20MB</small>
                   <div class="form-group">
@@ -327,9 +330,9 @@
           var forms = document.getElementsByClassName('needs-validation');
           var validation = Array.prototype.filter.call(forms, function(form) {
             form.addEventListener('submit', function(event) {
-              $('html, body').animate({
-                  scrollTop: $("#careers-apply-form").offset().top - 40
-              }, 400);
+              // $('html, body').animate({
+              //     scrollTop: $("#careers-apply-form").offset().top - 40
+              // }, 400);
 
               if (form.checkValidity() === false) {
                 event.preventDefault();

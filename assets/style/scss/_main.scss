@@ -3522,7 +3522,8 @@ small {
 
     h1 {
       text-align: center;
-      padding: 0 0 120px;
+      padding: 0 0 100px;
+      margin: 0;
     }
 
     h3 {
@@ -3608,6 +3609,7 @@ small {
       h2 {
          text-align: center;
          margin-bottom: 30px;
+         margin-top: 30px;
       }
 
       p {
@@ -4051,10 +4053,12 @@ $breadcrumb-divider: quote(">");
   display: block !important;
   position: absolute;
   z-index: 1053;
+  opacity: 0;
   @include transform(scale(0));
-  @include transition(all 0.5s ease);
+  @include transition(all 1.2s ease);
 
   &.show {
+    opacity: 1;
     @include transform(scale(1));
     padding: 0 !important;
   }
@@ -4062,6 +4066,7 @@ $breadcrumb-divider: quote(">");
   &.confirmModal {
     z-index: 1053;
     position: fixed;
+    @include transition(all 0.6s ease);
 
     .modal-dialog {
       padding: 0 10px;
@@ -5730,6 +5735,7 @@ $breadcrumb-divider: quote(">");
 
         h3 {
           font-size: 26px;
+          height: 78px;
         }
 
         p {
@@ -5745,6 +5751,17 @@ $breadcrumb-divider: quote(">");
       }
     }
 
+    .development-section {
+      background: url("../../images/hospitality/oxf_bg_content1_m.jpg") no-repeat;
+      background-size: cover;
+    }
+
+    .operational-section {
+      background: url("../../images/hospitality/oxf_bg_content2_m.jpg") no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+    }
+
     .discover-section {
       height: auto;
       padding: 85% 0;
@@ -5755,6 +5772,10 @@ $breadcrumb-divider: quote(">");
     }
 
     .roles-section {
+
+      h3 {
+        font-size: 25px;
+      }
 
       .row {
 

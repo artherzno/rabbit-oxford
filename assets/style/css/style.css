@@ -3115,7 +3115,8 @@ small {
   padding: 180px 0; }
   #hospitality-page .feasibility-section h1, #hospitality-page .development-section h1, #hospitality-page .operational-section h1 {
     text-align: center;
-    padding: 0 0 120px; }
+    padding: 0 0 100px;
+    margin: 0; }
   #hospitality-page .feasibility-section h3, #hospitality-page .development-section h3, #hospitality-page .operational-section h3 {
     font-size: 28px;
     color: #999;
@@ -3176,7 +3177,8 @@ small {
       padding: 0 0 120px; }
     #hospitality-page .roles-section .column h2 {
       text-align: center;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-top: 30px; }
     #hospitality-page .roles-section .column p {
       margin-bottom: 20px;
       width: 90%; }
@@ -3522,21 +3524,27 @@ small {
   display: block !important;
   position: absolute;
   z-index: 1053;
+  opacity: 0;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  -webkit-transition: all 1.2s ease;
+  -ms-transition: all 1.2s ease;
+  -o-transition: all 1.2s ease;
+  transition: all 1.2s ease; }
   .modal.show {
+    opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
     padding: 0 !important; }
   .modal.confirmModal {
     z-index: 1053;
-    position: fixed; }
+    position: fixed;
+    -webkit-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease; }
     .modal.confirmModal .modal-dialog {
       padding: 0 10px; }
       .modal.confirmModal .modal-dialog .modal-content {
@@ -4311,16 +4319,26 @@ small {
       max-width: 50%;
       margin-bottom: 40px; }
       #hospitality-page .feasibility-section .column h3, #hospitality-page .development-section .column h3, #hospitality-page .operational-section .column h3 {
-        font-size: 26px; }
+        font-size: 26px;
+        height: 78px; }
       #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
         font-size: 18px; }
   #hospitality-page .feasibility-section h1 {
     padding: 60px 0; }
+  #hospitality-page .development-section {
+    background: url("../../images/hospitality/oxf_bg_content1_m.jpg") no-repeat;
+    background-size: cover; }
+  #hospitality-page .operational-section {
+    background: url("../../images/hospitality/oxf_bg_content2_m.jpg") no-repeat;
+    background-size: cover;
+    background-position: center bottom; }
   #hospitality-page .discover-section {
     height: auto;
     padding: 85% 0; }
     #hospitality-page .discover-section h1 {
       font-size: 36px; }
+  #hospitality-page .roles-section h3 {
+    font-size: 25px; }
   #hospitality-page .roles-section .row.oxford-dt {
     display: none !important; }
   #hospitality-page .roles-section .row.oxford-mb {

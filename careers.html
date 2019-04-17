@@ -380,9 +380,9 @@
           var forms = document.getElementsByClassName('needs-validation');
           var validation = Array.prototype.filter.call(forms, function(form) {
             form.addEventListener('submit', function(event) {
-              $('html, body').animate({
-                  scrollTop: $("#careers-apply-form").offset().top - 40
-              }, 400);
+              // $('html, body').animate({
+              //     scrollTop: $("#careers-apply-form").offset().top - 40
+              // }, 400);
 
               if (form.checkValidity() === false) {
                 event.preventDefault();

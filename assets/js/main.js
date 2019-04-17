@@ -212,16 +212,13 @@ $(document).ready(function(){
   });
 
   $('#accordionLocation-dt .button-modal').on('click', function() {
-    var $thisAttr = $(this).attr('aria-expanded');
+    var $thisAttr = $(this).hasClass('active');
     var $collapseBoxButtonParent = $(this).parent('.collapse').prev('.button-head');
-    //
-    if($thisAttr == 'true') {
-    console.log($thisAttr);
-      $collapseBoxButtonParent.removeClass('sub-active');
-    } else {
-    console.log($thisAttr);
+
+    setTimeout(function(){
       $collapseBoxButtonParent.addClass('sub-active');
-    }
+    },1);
+
   });
 
   // Locations Config Modal ////////////////////////////////////////////////////
@@ -237,6 +234,7 @@ $(document).ready(function(){
     $('.modal .close').on('click', function() {
         $('#locations .button-modal').removeClass('active');
         $('#locations .button-head').removeClass('sub-active');
+        $('.button-head').removeClass('sub-active');
 
     });
     // var closeModal = function() {
