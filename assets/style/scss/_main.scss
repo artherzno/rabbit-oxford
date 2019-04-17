@@ -5031,6 +5031,10 @@ $breadcrumb-divider: quote(">");
 
           .figure {
 
+            .figure-img {
+              height: 230px;
+            }
+
             .figcaption {
               padding: 24px;
 
@@ -5242,7 +5246,7 @@ $breadcrumb-divider: quote(">");
       /* For crop image */
       .figure-img {
         width: 100%;
-        height: 330px;
+        height: 230px;
         position: relative;
         overflow: hidden;
 
@@ -5396,7 +5400,7 @@ $breadcrumb-divider: quote(">");
         /* For crop image */
         .figure-img {
           width: 100%;
-          height: 330px;
+          height: 230px;
           position: relative;
           overflow: hidden;
 
@@ -6932,6 +6936,10 @@ $breadcrumb-divider: quote(">");
 
     .figure {
 
+      .figure-img {
+        height: 230px;
+      }
+
       .figcaption {
         padding: 24px;
 
@@ -6965,6 +6973,10 @@ $breadcrumb-divider: quote(">");
     }
 
     .figure {
+
+      .figure-img {
+        height: 230px;
+      }
 
       .figcaption {
         padding: 24px;
@@ -7027,7 +7039,7 @@ $breadcrumb-divider: quote(">");
         /* For crop image */
         .figure-img {
           width: 100%;
-          height: 330px;
+          height: 230px;
           position: relative;
           overflow: hidden;
 

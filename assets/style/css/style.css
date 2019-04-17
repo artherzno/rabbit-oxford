@@ -3956,6 +3956,8 @@ small {
       display: inline-block;
       width: 100%;
       padding: 0 0 0 10px; }
+      #blog .content .row .col-md-12 .figure .figure-img {
+        height: 230px; }
       #blog .content .row .col-md-12 .figure .figcaption {
         padding: 24px; }
         #blog .content .row .col-md-12 .figure .figcaption h3 {
@@ -4057,7 +4059,7 @@ small {
         margin-bottom: 30px; }
       #blogs-page .figure .figure-img {
         width: 100%;
-        height: 330px;
+        height: 230px;
         position: relative;
         overflow: hidden; }
         #blogs-page .figure .figure-img img {
@@ -4135,7 +4137,7 @@ small {
       /* For crop image */ }
       #blogsdetail-page .related .figure .figure-img {
         width: 100%;
-        height: 330px;
+        height: 230px;
         position: relative;
         overflow: hidden; }
         #blogsdetail-page .related .figure .figure-img img {
@@ -4924,6 +4926,8 @@ small {
   #blog #carouselBlog.owl-carousel .owl-item .item {
     padding-left: 0;
     padding-right: 0; }
+  #blog .figure .figure-img {
+    height: 230px; }
   #blog .figure .figcaption {
     padding: 24px; }
     #blog .figure .figcaption p {
@@ -4943,6 +4947,8 @@ small {
       display: none !important; }
     #blogs-page .oxford-tl {
       display: block !important; }
+    #blogs-page .figure .figure-img {
+      height: 230px; }
     #blogs-page .figure .figcaption {
       padding: 24px; }
       #blogs-page .figure .figcaption h3 {
@@ -4975,7 +4981,7 @@ small {
         margin-right: 0; }
       #blogsdetail-page .related .container .figure-img {
         width: 100%;
-        height: 330px;
+        height: 230px;
         position: relative;
         overflow: hidden; }
         #blogsdetail-page .related .container .figure-img img {
