@@ -2671,6 +2671,7 @@ small {
       .uploadname {
         overflow: hidden;
         display: none;
+        position: relative;
 
         #filetouploadname {
           font: 400 20px/1 oswald, arial;
@@ -2680,6 +2681,10 @@ small {
           vertical-align: middle;
           background-color: $white;
           float: left;
+          width: 100%;
+          padding-right: 50px;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         #deluploadname {
@@ -2691,6 +2696,9 @@ small {
           padding: 4px 0;
           height: 50px;
           font-size: 30px;
+          position: absolute;
+          right: 0;
+          top: 0;
         }
       }
 
@@ -2870,6 +2878,7 @@ small {
       .uploadname {
         overflow: hidden;
         display: none;
+        position: relative;
 
         #filetouploadname {
           font: 400 20px/1 oswald, arial;
@@ -2879,6 +2888,10 @@ small {
           vertical-align: middle;
           background-color: $white;
           float: left;
+          width: 100%;
+          padding-right: 50px;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         #deluploadname {
@@ -2890,6 +2903,9 @@ small {
           padding: 4px 0;
           height: 50px;
           font-size: 30px;
+          position: absolute;
+          right: 0;
+          top: 0;
         }
       }
     }
@@ -5853,7 +5869,7 @@ $breadcrumb-divider: quote(">");
         .uploadname {
 
           #filetouploadname {
-            width: 84%;
+            // width: 84%;
             height: 50px;
           }
         }

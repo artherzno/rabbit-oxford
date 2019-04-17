@@ -2413,7 +2413,8 @@ small {
           line-height: 1.6; }
       #careers-page #careers-apply-form .section-apply .uploadname {
         overflow: hidden;
-        display: none; }
+        display: none;
+        position: relative; }
         #careers-page #careers-apply-form .section-apply .uploadname #filetouploadname {
           font: 400 20px/1 oswald, arial;
           width: auto;
@@ -2421,7 +2422,12 @@ small {
           text-transform: uppercase;
           vertical-align: middle;
           background-color: #fff;
-          float: left; }
+          float: left;
+          width: 100%;
+          padding-right: 50px;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis; }
         #careers-page #careers-apply-form .section-apply .uploadname #deluploadname {
           text-transform: uppercase;
           vertical-align: middle;
@@ -2430,7 +2436,10 @@ small {
           float: left;
           padding: 4px 0;
           height: 50px;
-          font-size: 30px; }
+          font-size: 30px;
+          position: absolute;
+          right: 0;
+          top: 0; }
       #careers-page #careers-apply-form .section-apply .cantUpload {
         display: none;
         padding: 15px; }
@@ -2567,7 +2576,8 @@ small {
           line-height: 1.6; }
       #careersdetail-page #careers-apply-form .section-apply .uploadname {
         overflow: hidden;
-        display: none; }
+        display: none;
+        position: relative; }
         #careersdetail-page #careers-apply-form .section-apply .uploadname #filetouploadname {
           font: 400 20px/1 oswald, arial;
           width: auto;
@@ -2575,7 +2585,12 @@ small {
           text-transform: uppercase;
           vertical-align: middle;
           background-color: #fff;
-          float: left; }
+          float: left;
+          width: 100%;
+          padding-right: 50px;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis; }
         #careersdetail-page #careers-apply-form .section-apply .uploadname #deluploadname {
           text-transform: uppercase;
           vertical-align: middle;
@@ -2584,7 +2599,10 @@ small {
           float: left;
           padding: 4px 0;
           height: 50px;
-          font-size: 30px; }
+          font-size: 30px;
+          position: absolute;
+          right: 0;
+          top: 0; }
 
 /* Contact us page ******************************************************************/
 #contactus-page {
@@ -4382,7 +4400,6 @@ small {
       width: 100%;
       height: 50px; }
     #careers-page #careers-apply-form .section-apply .uploadname #filetouploadname {
-      width: 84%;
       height: 50px; }
   #careers-page #careers-apply-form button[type="submit"] {
     width: 100%;
