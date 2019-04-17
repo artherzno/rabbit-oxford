@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Parisienne");
 nav {
@@ -222,9 +223,13 @@ nav {
     margin-bottom: 10px;
     text-transform: uppercase; }
 
+้html, body {
+  -webkit-overflow-scrolling: touch; }
+
 body {
   color: #fff;
-  font: 20px/1.2 arial; }
+  font: 20px/1.2 arial;
+  -moz-osx-font-smoothing: grayscale; }
 
 *:focus {
   outline: none !important;

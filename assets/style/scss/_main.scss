@@ -1,9 +1,12 @@
-
+้html, body {
+   -webkit-overflow-scrolling: touch;
+}
 
 body {
   // background-color: $black;
   color: $white;
   font: 20px/1.2 arial;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
