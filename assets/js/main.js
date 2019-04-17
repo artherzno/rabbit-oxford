@@ -343,6 +343,7 @@ $(document).ready(function(){
 
   // Hospitality - content ----------------------------------------- //
   classToggle('#hospitality', 0.7, '', '#hospitality .figcaption', 'fade-in');
+  classToggle('#hospitality', 0.7, '', '#hospitality .figcaption .figure-img', 'fade-in');
 
   // Hospitality - nav ----------------------------------------- //
   classToggle('#hospitality', 0.35, '', '#hospitality .carouselHospitality-indicators', 'fade-in');

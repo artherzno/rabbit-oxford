@@ -1091,7 +1091,20 @@ small {
   #hospitality .figure-img img {
     position: absolute;
     z-index: -1;
-    width: 70%; }
+    width: 70%;
+    -webkit-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%); }
+    #hospitality .figure-img img.fade-in {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
   #hospitality .figure {
     position: relative;
     /* For crop image */ }
