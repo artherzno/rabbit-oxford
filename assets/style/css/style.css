@@ -2463,8 +2463,7 @@ small {
   background-image: url("../../images/career/oxf_bg_content.jpg");
   background-color: #131212;
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: cover; }
+  background-position: right bottom; }
   #careersdetail-page .content {
     padding: 170px 0 70px; }
     #careersdetail-page .content.fade-in .breadcrumb {
@@ -3580,7 +3579,7 @@ small {
   animation-fill-mode: both; }
 
 /* Responsive *****************************************************************/
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
     right: 26%; }
   #banner .container .content .box {
@@ -3590,9 +3589,7 @@ small {
       #banner .container .content .box.oxford-mb .box-content p span {
         font-size: 1.3rem; }
   #hospitality .figcaption.fade-in h1 {
-    font-size: 31px; }
-  #hospitality .figcaption.fade-in p {
-    margin-top: 4%; }
+    font-size: 26px; }
   #contactus-page #contactus-form .section-form .row .contactus-detail-card .contactus-detail {
     padding: 25px 20px;
     height: 150px; }

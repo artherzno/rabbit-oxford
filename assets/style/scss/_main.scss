@@ -2736,7 +2736,7 @@ small {
   background-color: #131212;
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: cover;
+  // background-size: cover;
 
   .content {
     padding: 170px 0 70px;
@@ -4160,7 +4160,7 @@ $breadcrumb-divider: quote(">");
 
 
 /* Responsive *****************************************************************/
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   nav {
 
     .navbar-collapse {
@@ -4221,11 +4221,7 @@ $breadcrumb-divider: quote(">");
     .figcaption.fade-in {
 
       h1 {
-        font-size: 31px;
-      }
-
-      p {
-        margin-top: 4%;
+        font-size: 26px;
       }
     }
   }
