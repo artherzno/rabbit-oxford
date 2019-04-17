@@ -1007,6 +1007,10 @@ small {
       width: 100%;
       height: 100vh;
       position: relative;
+
+      .modal {
+        z-index: 0;
+      }
     }
 
     .modal-list {
@@ -2818,10 +2822,9 @@ small {
     height: auto;
 
     .section-apply {
-      background-image: url('../../images/career/oxf_bg_content.jpg');
       width: 100%;
       height: auto;
-      // background-image: none;
+      background-image: none;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center bottom;
@@ -5908,7 +5911,7 @@ $breadcrumb-divider: quote(">");
 
   /* Careers Detail page ********************/
   #careersdetail-page {
-    background-position: 92% 103%;
+    background-position: 92% 97.5%;
     background-size: 290%;
 
     .content {
@@ -5936,7 +5939,7 @@ $breadcrumb-divider: quote(">");
     }
 
     #careers-apply-form {
-      
+
       .section-apply {
         background-image: none;
 
@@ -7267,7 +7270,7 @@ $breadcrumb-divider: quote(">");
   }
 
   #careersdetail-page {
-    background-position: 92% 102%;
+    background-position: 92% 97.5%;
     background-size: 130%;
 
     .content {
