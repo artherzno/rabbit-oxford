@@ -2818,9 +2818,10 @@ small {
     height: auto;
 
     .section-apply {
+      background-image: url('../../images/career/oxf_bg_content.jpg');
       width: 100%;
       height: auto;
-      background-image: none;
+      // background-image: none;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center bottom;
@@ -5935,7 +5936,9 @@ $breadcrumb-divider: quote(">");
     }
 
     #careers-apply-form {
+      
       .section-apply {
+        background-image: none;
 
         .form-row {
 
