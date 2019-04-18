@@ -3658,7 +3658,9 @@ small {
 
 @media (min-width: 375px) {
   #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
-    font-size: 22px; }
+    font-size: 22px; } }
+
+@media (min-width: 375px) and (max-width: 575.98px) {
   #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
     font-size: 16px; } }
 
@@ -4317,10 +4319,7 @@ small {
       max-width: 50%;
       margin-bottom: 40px; }
       #hospitality-page .feasibility-section .column h3, #hospitality-page .development-section .column h3, #hospitality-page .operational-section .column h3 {
-        font-size: 26px;
-        height: 78px; }
-      #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
-        font-size: 18px; }
+        font-size: 26px; }
   #hospitality-page .feasibility-section h1 {
     padding: 60px 0; }
   #hospitality-page .development-section {
@@ -5427,5 +5426,5 @@ small {
   width: 600px; }
 
 .ie #careers-page #careers-apply-form .section-apply .uploadname #deluploadname {
-  height: 44px;
+  height: 50px;
   font-size: 22px; }

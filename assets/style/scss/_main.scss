@@ -4451,6 +4451,15 @@ $breadcrumb-divider: quote(">");
           }
         }
       }
+    }
+  }
+
+
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #hospitality-page {
+    .feasibility-section, .development-section, .operational-section {
 
       .column {
 
@@ -4460,8 +4469,6 @@ $breadcrumb-divider: quote(">");
       }
     }
   }
-
-
 }
 
 @media (max-width: 575.98px) {
@@ -5750,11 +5757,11 @@ $breadcrumb-divider: quote(">");
 
         h3 {
           font-size: 26px;
-          height: 78px;
+          // height: 78px;
         }
 
         p {
-          font-size: 18px;
+        // font-size: 18px;
         }
       }
     }
@@ -8094,7 +8101,7 @@ and (max-device-width : 1024px) and (orientation: landscape) {
         .uploadname {
 
           #deluploadname {
-            height: 44px;
+            height: 50px;
             font-size: 22px;
           }
         }

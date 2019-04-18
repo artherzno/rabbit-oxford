@@ -165,7 +165,7 @@ $(document).ready(function(){
 
     infoName.val(fileNameOnly);
     infoArea.show();
-console.log(infoName.val().length);
+
     // Dynamic input
     infoName.attr('size', (infoName.val().length));
   }
@@ -273,6 +273,37 @@ console.log(infoName.val().length);
 
   // Banner content animation
   // setInterval(function(){$('#banner .oxford-mb .box-content').toggleClass('fade-in')}, 4000);
+
+
+
+ // Hospitality Page - Check Height ////////////////////////////////////////////
+ function checkHeightH3 (classSection) {
+   var col = $('.'+classSection+' .row .column');
+   var colLength = col.length;
+   var h3HeightArr = [];
+
+   // loop for find height value
+   for(var i=0; i<colLength; i++) {
+     var h3 = col.eq(i).children('h3');
+     var h3Height = h3.height();
+
+     h3HeightArr.push(h3Height);
+   }
+
+   // Max height value
+   var h3HeightMax = Math.max.apply(Math, h3HeightArr);
+
+   // loop for insert max height
+   setTimeout(function(){
+     for(var i=0; i<colLength; i++) {
+       var h3 = col.eq(i).children('h3');
+       h3.attr('style', 'height: '+h3HeightMax+'px');
+     }
+   },1);
+ }
+ checkHeightH3('feasibility-section');
+ checkHeightH3('development-section');
+ checkHeightH3('operational-section');
 
 
 
