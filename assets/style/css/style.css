@@ -554,22 +554,21 @@ small {
         width: 26px;
         height: 26px;
         display: inline-block;
-        -webkit-transition: all 0.05s ease;
-        -ms-transition: all 0.05s ease;
-        -o-transition: all 0.05s ease;
-        transition: all 0.05s ease; }
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover; }
         #footer .row._second .nav a.fb {
-          background: url("../../images/icon/oxf_icon_fb.svg") no-repeat; }
+          background-image: url("../../images/icon/oxf_icon_fb.png"); }
           #footer .row._second .nav a.fb:hover {
-            background: url("../../images/icon/oxf_icon_fb_a.svg") no-repeat; }
+            background-position: 0 -26px; }
         #footer .row._second .nav a.tw {
           background: url("../../images/icon/oxf_icon_tw.svg") no-repeat; }
           #footer .row._second .nav a.tw:hover {
             background: url("../../images/icon/oxf_icon_tw_a.svg") no-repeat; }
         #footer .row._second .nav a.in {
-          background: url("../../images/icon/oxf_icon_in.svg") no-repeat; }
+          background-image: url("../../images/icon/oxf_icon_in.png"); }
           #footer .row._second .nav a.in:hover {
-            background: url("../../images/icon/oxf_icon_in_a.svg") no-repeat; }
+            background-position: 0 -26px; }
   #footer hr {
     width: 100%;
     background-color: #636f86;
@@ -3131,8 +3130,7 @@ small {
 
 #hospitality-page .discover-section {
   background-color: #1d1d1d;
-  padding: 35% 0;
-  height: 100vh; }
+  padding: 20% 0; }
   #hospitality-page .discover-section h1 {
     text-align: center; }
 

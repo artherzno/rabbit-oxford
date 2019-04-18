@@ -284,13 +284,17 @@ small {
           width: 26px;
           height: 26px;
           display: inline-block;
-          @include transition(all 0.05s ease);
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: cover;
+          // @include transition(all 0.05s ease);
 
           &.fb {
-            background: url('../../images/icon/oxf_icon_fb.svg') no-repeat;
+            background-image: url('../../images/icon/oxf_icon_fb.png');
 
             &:hover {
-              background: url('../../images/icon/oxf_icon_fb_a.svg') no-repeat;
+              // background: url('../../images/icon/oxf_icon_fb_a.svg') no-repeat;
+              background-position: 0 -26px;
             }
           }
 
@@ -303,10 +307,11 @@ small {
           }
 
           &.in {
-            background: url('../../images/icon/oxf_icon_in.svg') no-repeat;
+            background-image: url('../../images/icon/oxf_icon_in.png');
 
             &:hover {
-              background: url('../../images/icon/oxf_icon_in_a.svg') no-repeat;
+              // background: url('../../images/icon/oxf_icon_in_a.svg') no-repeat;
+              background-position: 0 -26px;
             }
           }
         }
@@ -3546,8 +3551,8 @@ small {
 
   .discover-section {
     background-color: #1d1d1d;
-    padding: 35% 0;
-    height: 100vh;
+    padding: 20% 0;
+    // height: 100vh;
 
     h1 {
       text-align: center;
