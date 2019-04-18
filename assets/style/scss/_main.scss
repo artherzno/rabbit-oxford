@@ -4462,6 +4462,29 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  #hospitality-page {
+    .feasibility-section, .development-section, .operational-section {
+
+      .column {
+
+        h3.header {
+          font-size: 20px;
+          padding-left: 15px
+        }
+
+        .paragrah {
+
+          padding-left: 15px
+        }
+
+        p {
+          font-size: 16px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
   #strategy-page {
 
     .content.fade-in {
@@ -4531,6 +4554,10 @@ $breadcrumb-divider: quote(">");
     .feasibility-section, .development-section, .operational-section {
 
       .column {
+
+        h3 {
+          font-size: 20px;
+        }
 
         p {
           font-size: 16px;
@@ -4949,7 +4976,7 @@ $breadcrumb-divider: quote(">");
         }
 
         &.header {
-          height: 64px;
+          // height: 64px;
           margin-bottom: 10px;
           width: 90%;
         }

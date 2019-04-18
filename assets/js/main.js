@@ -283,33 +283,36 @@ $(document).ready(function(){
 
 
  // Hospitality Page - Check Height ////////////////////////////////////////////
- function checkHeightH3 (classSection) {
-   var col = $('.'+classSection+' .row .column');
-   var colLength = col.length;
-   var h3HeightArr = [];
-
-   // loop for find height value
-   for(var i=0; i<colLength; i++) {
-     var h3 = col.eq(i).children('h3');
-     var h3Height = h3.height();
-
-     h3HeightArr.push(h3Height);
-   }
-
-   // Max height value
-   var h3HeightMax = Math.max.apply(Math, h3HeightArr);
-
-   // loop for insert max height
+ function checkHeightHeader (classSection) {
    setTimeout(function(){
+     var col = $(classSection);
+     var colLength = col.length;
+     var headerHeightArr = [];
+     console.log(colLength);
+
+     // loop for find height value
      for(var i=0; i<colLength; i++) {
-       var h3 = col.eq(i).children('h3');
-       h3.attr('style', 'height: '+h3HeightMax+'px');
+       var header = col.eq(i).find('.header');
+       var headerHeight = header.height();
+
+       headerHeightArr.push(headerHeight);
+     }
+console.log(headerHeightArr);
+     // Max height value
+     var headerHeightMax = Math.max.apply(Math, headerHeightArr);
+
+     // loop for insert max height
+
+     for(var i=0; i<colLength; i++) {
+       var header = col.eq(i).find('.header');
+       header.attr('style', 'height: '+headerHeightMax+'px');
      }
    },1);
  }
- checkHeightH3('feasibility-section');
- checkHeightH3('development-section');
- checkHeightH3('operational-section');
+ checkHeightHeader('.feasibility-section .row .column');
+ checkHeightHeader('.development-section .row .column');
+ checkHeightHeader('.operational-section .row .column');
+ checkHeightHeader('#carouselHospitality .owl-item');
 
 
 
