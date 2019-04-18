@@ -3630,8 +3630,7 @@ small {
         font-size: 1.3rem; }
   #hospitality .figcaption.fade-in .figcaption-body {
     position: absolute;
-    bottom: 3%;
-    right: 15px; }
+    bottom: 3%; }
   #contactus-page #contactus-form .section-form .row .contactus-detail-card .contactus-detail {
     padding: 25px 20px;
     height: 150px; }
@@ -3872,9 +3871,12 @@ small {
   #hospitality .container {
     padding: 0; }
   #hospitality .row {
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px); }
   #hospitality .figcaption {
-    padding: 0 15px 0 0; }
+    padding: 0; }
     #hospitality .figcaption h1 {
       font-size: 32px;
       float: right;
@@ -3911,7 +3913,6 @@ small {
   #hospitality .figcaption-body {
     position: absolute;
     bottom: 5%;
-    right: 15px;
     width: 100%; }
   #hospitality .figure-img img {
     position: static;
@@ -4022,7 +4023,7 @@ small {
       width: 100%;
       padding: 0 0 0 10px; }
       #blog .content .row .col-md-12 .figure .figure-img {
-        height: 230px; }
+        height: 210px; }
       #blog .content .row .col-md-12 .figure .figcaption {
         padding: 24px; }
         #blog .content .row .col-md-12 .figure .figcaption h3 {
@@ -4203,7 +4204,7 @@ small {
       /* For crop image */ }
       #blogsdetail-page .related .figure .figure-img {
         width: 100%;
-        height: 230px;
+        height: 210px;
         position: relative;
         overflow: hidden;
         margin-bottom: 0; }
@@ -4896,7 +4897,6 @@ small {
   #hospitality .figcaption-body {
     position: absolute;
     bottom: 7%;
-    right: 15px;
     width: 100%; }
   #hospitality .figure-img img {
     position: static;

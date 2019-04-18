@@ -4308,7 +4308,7 @@ $breadcrumb-divider: quote(">");
       .figcaption-body{
         position: absolute;
         bottom: 3%;
-        right: 15px;
+        // right: 15px;
       }
     }
   }
@@ -4916,12 +4916,13 @@ $breadcrumb-divider: quote(">");
 
     .row {
       margin-bottom: 5%;
+      @include transform(translateX(-5px));
 
     }
 
     .figcaption {
       // padding: 0 3px 0 10px;
-      padding: 0 15px 0 0;
+      padding: 0;
 
       h1 {
         font-size: 32px;
@@ -4977,7 +4978,7 @@ $breadcrumb-divider: quote(">");
     .figcaption-body {
       position: absolute;
       bottom: 5%;
-      right: 15px;
+      // right: 15px;
       width: 100%;
     }
 
@@ -5198,7 +5199,7 @@ $breadcrumb-divider: quote(">");
           .figure {
 
             .figure-img {
-              height: 230px;
+              height: 210px;
             }
 
             .figcaption {
@@ -5567,7 +5568,7 @@ $breadcrumb-divider: quote(">");
         /* For crop image */
         .figure-img {
           width: 100%;
-          height: 230px;
+          height: 210px;
           position: relative;
           overflow: hidden;
           margin-bottom: 0;
@@ -6923,7 +6924,7 @@ $breadcrumb-divider: quote(">");
     .figcaption-body {
       position: absolute;
       bottom: 7%;
-      right: 15px;
+      // right: 15px;
       width: 100%;
     }
 
