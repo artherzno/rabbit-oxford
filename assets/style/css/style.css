@@ -2451,13 +2451,12 @@ small {
         #careers-page #careers-apply-form .section-apply .uploadname #filetouploadname {
           font: 400 20px/1 oswald, arial;
           width: auto;
+          max-width: 93%;
           color: #1f3052;
           text-transform: uppercase;
           vertical-align: middle;
           background-color: #fff;
           float: left;
-          width: 100%;
-          padding-right: 50px;
           overflow: hidden;
           -o-text-overflow: ellipsis;
           text-overflow: ellipsis; }
@@ -2471,7 +2470,6 @@ small {
           height: 50px;
           font-size: 30px;
           position: absolute;
-          right: 0;
           top: 0; }
       #careers-page #careers-apply-form .section-apply .cantUpload {
         display: none;
@@ -3234,7 +3232,7 @@ small {
         right: 0;
         margin: auto;
         text-align: right;
-        font-size: 120px;
+        font-size: 140px;
         line-height: 1;
         opacity: 0;
         -webkit-transform: translateY(50%);
@@ -3660,7 +3658,9 @@ small {
 
 @media (min-width: 375px) {
   #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
-    font-size: 22px; } }
+    font-size: 22px; }
+  #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
+    font-size: 16px; } }
 
 @media (max-width: 575.98px) {
   body {
@@ -5120,6 +5120,8 @@ small {
     #hospitality-page .carousel-section .carousel h1, #strategy-page .carousel-section .carousel h1, #demandgeneration-page .carousel-section .carousel h1, #demandfulfillment-page .carousel-section .carousel h1, #organisationaloptimisation-page .carousel-section .carousel h1, #financialtransformation-page .carousel-section .carousel h1 {
       font-size: 40px;
       margin-bottom: 45px; }
+  #hospitality-page #getintouch, #strategy-page #getintouch, #demandgeneration-page #getintouch, #demandfulfillment-page #getintouch, #organisationaloptimisation-page #getintouch, #financialtransformation-page #getintouch {
+    margin: -1px 0; }
   #demandgeneration-page .content .row .column._right {
     top: 240px; }
   #strategy-page .content .row .column._right {

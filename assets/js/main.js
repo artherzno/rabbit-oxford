@@ -165,7 +165,7 @@ $(document).ready(function(){
 
     infoName.val(fileNameOnly);
     infoArea.show();
-
+console.log(infoName.val().length);
     // Dynamic input
     infoName.attr('size', (infoName.val().length));
   }
