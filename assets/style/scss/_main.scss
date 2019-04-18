@@ -8023,16 +8023,6 @@ and (max-device-width : 1024px) and (max-width : 1024px) and (orientation: lands
   }
 }
 
-@media screen
- and (orientation: landscape) {
-  body {
-    overflow-y: hidden;
-  }
-
-  .dontOrientation {
-    display: block;
-  }
-}
 
 
 
