@@ -5395,7 +5395,7 @@ small {
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
       margin-right: 40px; } }
 
-@media screen and (min-device-width: 768px) and (min-width: 768px) and (max-device-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (min-device-width: 320px) and (min-width: 320px) and (max-device-width: 1024px) and (max-width: 1023.98px) and (orientation: landscape) {
   body {
     overflow-y: hidden; }
   .dontOrientation {
