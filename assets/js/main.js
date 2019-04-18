@@ -163,11 +163,14 @@ $(document).ready(function(){
     var lastDotIndex = fileName.lastIndexOf('.');
     var fileNameOnly = fileName.slice(0, lastDotIndex);
 
-    infoName.val(fileNameOnly);
+    // infoName.val(fileNameOnly);
+    infoName.val(fileName);
     infoArea.show();
 
     // Dynamic input
-    infoName.attr('size', (infoName.val().length));
+    setTimeout(function(){
+      infoName.attr('size', (infoName.val().length));
+    },1);
   }
 
 
@@ -316,7 +319,7 @@ $(document).ready(function(){
       triggerHook: $triggerHook,
       duration: $duration
     })
-    // .addIndicators({ name: 'debug indicators'})
+    // .addIndicators({ name: 'debug indicators:'+$classtarget})
     .setClassToggle($classtarget, $classname)
     .addTo(controller);
   }
@@ -344,10 +347,10 @@ $(document).ready(function(){
   .addTo(controller);
 
   // Pin banner ----------------------------------------- //
-  pin('#banner', 0, '10%', '#banner');
+  pin('#banner', 0, '50%', '#banner');
 
   // Second content banner ----------------------------------------- //
-  classToggle('#banner', 0, '80%', '#banner', 'fade-in');
+  classToggle('#banner', 0.5, '80%', '#banner', 'fade-in');
 
   // Second content banner ----------------------------------------- //
   // classToggle('#banner', 0, '80%', '#banner .box.oxford-dt', 'fade-in');

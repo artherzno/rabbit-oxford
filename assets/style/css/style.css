@@ -522,6 +522,7 @@ small {
 
 /* Footer ******************************************************************/
 #footer {
+  margin: -1px 0;
   background-color: #1f3052; }
   #footer .row._first {
     padding: 70px 0 0; }
@@ -3612,6 +3613,12 @@ small {
   animation-fill-mode: both; }
 
 /* Responsive *****************************************************************/
+@media (max-width: 320px) {
+  #hospitality-page .content.fade-in .row .column._right, #demandgeneration-page .content.fade-in .row .column._right, #demandfulfillment-page .content.fade-in .row .column._right, #financialtransformation-page .content.fade-in .row .column._right, #organisationaloptimisation-page .content.fade-in .row .column._right {
+    bottom: -180px; }
+  #strategy-page .content.fade-in .row .column._right {
+    bottom: -130px; } }
+
 @media (max-width: 360px) {
   nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
     right: 26%; }
@@ -3648,13 +3655,19 @@ small {
     font-size: 38px; }
     #hospitality-page .content .column._left h1.number, #strategy-page .content .column._left h1.number, #demandgeneration-page .content .column._left h1.number, #demandfulfillment-page .content .column._left h1.number, #financialtransformation-page .content .column._left h1.number, #organisationaloptimisation-page .content .column._left h1.number {
       font-size: 100px; }
-  #hospitality-page .content .column._right img, #strategy-page .content .column._right img, #demandgeneration-page .content .column._right img, #demandfulfillment-page .content .column._right img, #financialtransformation-page .content .column._right img, #organisationaloptimisation-page .content .column._right img {
-    padding-top: 74%; }
+  #hospitality-page .content .column._right, #strategy-page .content .column._right, #demandgeneration-page .content .column._right, #demandfulfillment-page .content .column._right, #financialtransformation-page .content .column._right, #organisationaloptimisation-page .content .column._right {
+    bottom: -170px; }
+    #hospitality-page .content .column._right img, #strategy-page .content .column._right img, #demandgeneration-page .content .column._right img, #demandfulfillment-page .content .column._right img, #financialtransformation-page .content .column._right img, #organisationaloptimisation-page .content .column._right img {
+      padding-top: 74%; }
   #hospitality-page .carousel-section.fade-in .carousel, #strategy-page .carousel-section.fade-in .carousel, #demandgeneration-page .carousel-section.fade-in .carousel, #demandfulfillment-page .carousel-section.fade-in .carousel, #financialtransformation-page .carousel-section.fade-in .carousel, #organisationaloptimisation-page .carousel-section.fade-in .carousel {
     padding-top: 40%;
     height: auto; }
     #hospitality-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #strategy-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section.fade-in .carousel .carousel-item .row:last-child {
-      margin: 15% -15px; } }
+      margin: 15% -15px; }
+  #hospitality-page .content.fade-in .row .column._right, #demandgeneration-page .content.fade-in .row .column._right, #demandfulfillment-page .content.fade-in .row .column._right, #financialtransformation-page .content.fade-in .row .column._right, #organisationaloptimisation-page .content.fade-in .row .column._right {
+    bottom: -210px; }
+  #strategy-page .content.fade-in .row .column._right {
+    bottom: -180px; } }
 
 @media (min-width: 375px) {
   #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
@@ -5135,21 +5148,23 @@ small {
       font-size: 28px; }
   #hospitality-page .discover-section h1 {
     margin: 190px 0; }
-  #hospitality-page .roles-section .row.oxford-dt {
-    display: none !important; }
-  #hospitality-page .roles-section .row.oxford-mb {
-    display: block !important; }
-  #hospitality-page .roles-section .row .column {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 80%;
-    flex: 0 0 80%;
-    max-width: 80%;
-    margin: 0 auto 40px; }
-    #hospitality-page .roles-section .row .column.col_2 {
+  #hospitality-page .roles-section {
+    margin: -1px 0; }
+    #hospitality-page .roles-section .row.oxford-dt {
+      display: none !important; }
+    #hospitality-page .roles-section .row.oxford-mb {
+      display: block !important; }
+    #hospitality-page .roles-section .row .column {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 90%;
-      flex: 0 0 90%;
-      max-width: 90%; }
+      -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+      max-width: 80%;
+      margin: 0 auto 40px; }
+      #hospitality-page .roles-section .row .column.col_2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90%; }
   #hospitality-page #getintouch .content {
     padding: 40px 0; }
   #team-page .oxford-dt, #team-page .oxford-mb {

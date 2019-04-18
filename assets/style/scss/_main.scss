@@ -215,7 +215,9 @@ small {
 
 /* Footer ******************************************************************/
 #footer {
+  margin: -1px 0;
   background-color: $blue;
+
   .row {
 
     &._first {
@@ -4200,6 +4202,40 @@ $breadcrumb-divider: quote(">");
 
 
 /* Responsive *****************************************************************/
+@media (max-width: 320px) {
+  #hospitality-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+
+    .content.fade-in {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -180px;
+          }
+        }
+      }
+    }
+  }
+
+  #strategy-page {
+
+    .content.fade-in {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -130px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 360px) {
   nav {
 
@@ -4379,6 +4415,7 @@ $breadcrumb-divider: quote(">");
         }
 
         &._right {
+          bottom: -170px;
 
           img {
             padding-top: 74%;
@@ -4403,6 +4440,38 @@ $breadcrumb-divider: quote(">");
                 margin: 15% -15px;
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  #hospitality-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+
+    .content.fade-in {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -210px;
+          }
+        }
+      }
+    }
+  }
+
+  #strategy-page {
+
+    .content.fade-in {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -180px;
           }
         }
       }
@@ -7366,6 +7435,7 @@ $breadcrumb-divider: quote(">");
     }
 
     .roles-section {
+      margin: -1px 0;
 
       .row {
 
