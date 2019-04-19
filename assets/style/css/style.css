@@ -3612,9 +3612,9 @@ small {
 
 /* Responsive *****************************************************************/
 @media (max-width: 320px) {
-  #hospitality-page .content.fade-in .row .column._right, #demandgeneration-page .content.fade-in .row .column._right, #demandfulfillment-page .content.fade-in .row .column._right, #financialtransformation-page .content.fade-in .row .column._right, #organisationaloptimisation-page .content.fade-in .row .column._right {
+  #hospitality-page .content.fade-in .container .row .column._right, #demandgeneration-page .content.fade-in .container .row .column._right, #demandfulfillment-page .content.fade-in .container .row .column._right, #financialtransformation-page .content.fade-in .container .row .column._right, #organisationaloptimisation-page .content.fade-in .container .row .column._right {
     bottom: -180px; }
-  #strategy-page .content.fade-in .row .column._right {
+  #strategy-page .content.fade-in .container .row .column._right {
     bottom: -130px; } }
 
 @media (max-width: 360px) {
