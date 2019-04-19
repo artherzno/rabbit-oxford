@@ -305,7 +305,6 @@ $(document).ready(function(){
      var headerHeightMax = Math.max.apply(Math, headerHeightArr);
 
      // loop for insert max height
-
      for(var i=0; i<colLength; i++) {
        var header = col.eq(i).find('.header');
        header.attr('style', 'height: '+headerHeightMax+'px');
@@ -315,7 +314,24 @@ $(document).ready(function(){
  checkHeightHeader('.feasibility-section .row .column');
  checkHeightHeader('.development-section .row .column');
  checkHeightHeader('.operational-section .row .column');
- checkHeightHeader('#carouselHospitality .owl-item');
+
+ function checkWindowWidth () {
+   var winWidth = $(window).width();
+
+   if(winWidth < 1024) {
+     checkHeightHeader('#carouselHospitality .owl-item');
+   }
+ }
+
+ checkWindowWidth();
+
+
+
+// Window Resize ///////////////////////////////////////////////////////////////
+ $(window).resize(function(event) {
+
+   checkWindowWidth();
+ });
 
 
 
