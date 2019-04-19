@@ -167,8 +167,13 @@ $(document).ready(function(){
     var fileNameOnly = fileName.slice(0, lastDotIndex);
 
     // infoName.val(fileNameOnly);
-    infoName.val(fileName);
-    infoArea.show();
+
+    if(fileName.length) {
+      infoName.val(fileName);
+      infoArea.show();
+    } else {
+      infoArea.hide();
+    }
 
     // Dynamic input
     setTimeout(function(){
