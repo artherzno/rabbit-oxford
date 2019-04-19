@@ -215,7 +215,7 @@ small {
 
 /* Footer ******************************************************************/
 #footer {
-  margin: -1px 0;
+  margin: -1px 0 0;
   background-color: $blue;
 
   .row {
@@ -4205,6 +4205,34 @@ $breadcrumb-divider: quote(">");
 /* Responsive *****************************************************************/
 @media (max-width: 320px) {
   #hospitality-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+    .carousel-section {
+
+      &.fade-in {
+
+        .carousel {
+          padding-top: 15%;
+        }
+      }
+    }
+
+    .content.fade-in {
+
+      .container {
+
+        .row {
+
+          .column {
+
+            &._right {
+              bottom: -180px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #hospitality-page {
 
     .content.fade-in {
 
@@ -4316,6 +4344,10 @@ $breadcrumb-divider: quote(">");
         position: absolute;
         bottom: 3%;
         // right: 15px;
+
+        p {
+          margin-bottom: 2%;
+        }
       }
     }
   }
@@ -4402,8 +4434,9 @@ $breadcrumb-divider: quote(">");
       .carousel-section {
 
         &.fade-in {
+
           .carousel {
-            padding-top: 15%;
+            // padding-top: 15%;
           }
         }
       }
@@ -7429,7 +7462,7 @@ $breadcrumb-divider: quote(">");
     }
 
     #getintouch {
-      margin: -1px 0;
+      margin: -1px 0 0;
     }
 
   }
@@ -7468,11 +7501,24 @@ $breadcrumb-divider: quote(">");
 
   #hospitality-page {
 
+    .content {
+
+      .row {
+
+        .column {
+
+          &._right {
+            top: 180px;
+          }
+        }
+      }
+    }
+
     .feasibility-section, .development-section, .operational-section {
 
-    .row {
+      .row {
 
-      .column {
+        .column {
           flex: 0 0 50%;
           max-width: 50%;
           margin-bottom: 40px;

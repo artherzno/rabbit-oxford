@@ -522,7 +522,7 @@ small {
 
 /* Footer ******************************************************************/
 #footer {
-  margin: -1px 0;
+  margin: -1px 0 0;
   background-color: #1f3052; }
   #footer .row._first {
     padding: 70px 0 0; }
@@ -3612,7 +3612,11 @@ small {
 
 /* Responsive *****************************************************************/
 @media (max-width: 320px) {
+  #hospitality-page .carousel-section.fade-in .carousel, #demandgeneration-page .carousel-section.fade-in .carousel, #demandfulfillment-page .carousel-section.fade-in .carousel, #financialtransformation-page .carousel-section.fade-in .carousel, #organisationaloptimisation-page .carousel-section.fade-in .carousel {
+    padding-top: 15%; }
   #hospitality-page .content.fade-in .container .row .column._right, #demandgeneration-page .content.fade-in .container .row .column._right, #demandfulfillment-page .content.fade-in .container .row .column._right, #financialtransformation-page .content.fade-in .container .row .column._right, #organisationaloptimisation-page .content.fade-in .container .row .column._right {
+    bottom: -180px; }
+  #hospitality-page .content.fade-in .container .row .column._right {
     bottom: -180px; }
   #strategy-page .content.fade-in .container .row .column._right {
     bottom: -130px; } }
@@ -3629,6 +3633,8 @@ small {
   #hospitality .figcaption.fade-in .figcaption-body {
     position: absolute;
     bottom: 3%; }
+    #hospitality .figcaption.fade-in .figcaption-body p {
+      margin-bottom: 2%; }
   #contactus-page #contactus-form .section-form .row .contactus-detail-card .contactus-detail {
     padding: 25px 20px;
     height: 150px; }
@@ -3646,8 +3652,6 @@ small {
     padding-bottom: 6%; }
     #hospitality-page.h-one-line .content .row .column img, #strategy-page.h-one-line .content .row .column img, #demandgeneration-page.h-one-line .content .row .column img, #demandfulfillment-page.h-one-line .content .row .column img, #financialtransformation-page.h-one-line .content .row .column img, #organisationaloptimisation-page.h-one-line .content .row .column img {
       padding-top: 58%; }
-  #hospitality-page.h-one-line .carousel-section.fade-in .carousel, #strategy-page.h-one-line .carousel-section.fade-in .carousel, #demandgeneration-page.h-one-line .carousel-section.fade-in .carousel, #demandfulfillment-page.h-one-line .carousel-section.fade-in .carousel, #financialtransformation-page.h-one-line .carousel-section.fade-in .carousel, #organisationaloptimisation-page.h-one-line .carousel-section.fade-in .carousel {
-    padding-top: 15%; }
   #hospitality-page .banner.fade-in .container h1, #strategy-page .banner.fade-in .container h1, #demandgeneration-page .banner.fade-in .container h1, #demandfulfillment-page .banner.fade-in .container h1, #financialtransformation-page .banner.fade-in .container h1, #organisationaloptimisation-page .banner.fade-in .container h1 {
     font-size: 38px; }
   #hospitality-page .content.fade-in, #strategy-page .content.fade-in, #demandgeneration-page .content.fade-in, #demandfulfillment-page .content.fade-in, #financialtransformation-page .content.fade-in, #organisationaloptimisation-page .content.fade-in {
@@ -5145,10 +5149,12 @@ small {
       font-size: 40px;
       margin-bottom: 45px; }
   #hospitality-page #getintouch, #strategy-page #getintouch, #demandgeneration-page #getintouch, #demandfulfillment-page #getintouch, #organisationaloptimisation-page #getintouch, #financialtransformation-page #getintouch {
-    margin: -1px 0; }
+    margin: -1px 0 0; }
   #demandgeneration-page .content .row .column._right {
     top: 240px; }
   #strategy-page .content .row .column._right {
+    top: 180px; }
+  #hospitality-page .content .row .column._right {
     top: 180px; }
   #hospitality-page .feasibility-section .row .column, #hospitality-page .development-section .row .column, #hospitality-page .operational-section .row .column {
     -webkit-box-flex: 0;
