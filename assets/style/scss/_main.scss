@@ -4523,6 +4523,14 @@ $breadcrumb-divider: quote(">");
   }
 
   #hospitality-page {
+
+    .content {
+
+      .row {
+        min-height: 480px;
+      }
+    }
+
     .feasibility-section, .development-section, .operational-section {
 
       .column {

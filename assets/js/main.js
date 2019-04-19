@@ -288,7 +288,6 @@ $(document).ready(function(){
      var col = $(classSection);
      var colLength = col.length;
      var headerHeightArr = [];
-     console.log(colLength);
 
      // loop for find height value
      for(var i=0; i<colLength; i++) {
@@ -297,7 +296,6 @@ $(document).ready(function(){
 
        headerHeightArr.push(headerHeight);
      }
-console.log(headerHeightArr);
      // Max height value
      var headerHeightMax = Math.max.apply(Math, headerHeightArr);
 

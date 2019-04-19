@@ -3671,6 +3671,8 @@ small {
       margin: 15% -15px; }
   #hospitality-page .content.fade-in .row .column._right, #demandgeneration-page .content.fade-in .row .column._right, #demandfulfillment-page .content.fade-in .row .column._right, #financialtransformation-page .content.fade-in .row .column._right, #organisationaloptimisation-page .content.fade-in .row .column._right {
     bottom: -210px; }
+  #hospitality-page .content .row {
+    min-height: 480px; }
   #hospitality-page .feasibility-section .column h3.header, #hospitality-page .development-section .column h3.header, #hospitality-page .operational-section .column h3.header {
     font-size: 20px;
     padding-left: 15px; }
