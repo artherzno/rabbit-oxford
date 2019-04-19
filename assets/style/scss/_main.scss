@@ -425,11 +425,12 @@ small {
   height: 100vh;
   // height: 100vh;
   position: relative;
+  // background-color: #090909;
   background-color: $white;
   overflow: hidden;
 
   &.fade-in {
-    background-color: #090909;
+    // background-color: #090909;
   }
 
   .obj {
@@ -443,7 +444,7 @@ small {
     &.city {
       background-image: url('../../images/home/oxf_bg_banner_city.jpg');
       @include transition(all 1s ease-out 0.8s);
-      @include transform(translateY(200%));
+      // @include transform(translateY(200%));
       opacity: 0;
 
       &.fade-in {
@@ -4203,6 +4204,7 @@ $breadcrumb-divider: quote(">");
 
 
 /* Responsive *****************************************************************/
+/*** Mobile - small ***/
 @media (max-width: 320px) {
   #hospitality-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
     .carousel-section {
@@ -4635,6 +4637,7 @@ $breadcrumb-divider: quote(">");
   }
 }
 
+/*** Mobile ***/
 @media (max-width: 575.98px) {
   body {
     font: 16px/1.2 arial;
@@ -6623,6 +6626,7 @@ $breadcrumb-divider: quote(">");
   }
 }
 
+/*** Tablet ***/
 @media (min-width: 768px) and (max-width: 991.98px) {
   nav {
 
@@ -8004,6 +8008,175 @@ $breadcrumb-divider: quote(">");
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1366px) {
+  #footer {
+
+    .row {
+
+      &._first {
+
+        .nav {
+
+          li {
+
+            a {
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #banner {
+    height: 82vh !important;
+
+    .container {
+
+      .content {
+        margin-top: 40%;
+      }
+    }
+  }
+
+  #hospitality {
+
+    .figcaption {
+
+      h1.header {
+        width: 50%;
+        font-size: 50px;
+      }
+    }
+
+    .figcaption-body {
+      width: 50%;
+    }
+
+    .carousel {
+
+      .carouselHospitality-indicators {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  #locations {
+    height: 60vh;
+    .modal {
+
+      .modal-dialog {
+        max-height: 62%;
+        max-width: 530px;
+        left: 10%;
+        right: auto;
+      }
+    }
+  }
+
+  #blog {
+
+    .figure {
+
+      .figure-img{
+        height: 230px;
+      }
+    }
+  }
+
+  #contactus-page {
+
+    #contactus-form {
+
+      .section-form {
+
+        form {
+          padding: 60px 50px 60px 80px;
+        }
+
+        label {
+          font-size: 16px;
+        }
+      }
+
+      .contactus-detail-form {
+        max-width: 66%;
+        flex: 0 0 66.66%;
+      }
+    }
+  }
+
+  #hospitality-page {
+    .roles-section {
+
+      .column {
+
+        &.col_1, &.col_3 {
+          max-height: none;
+          display: inline-table;
+        }
+      }
+    }
+  }
+
+  #team-page, #whyus-page, #careers-page, #contactus-page, #locations-page, #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+
+    .banner {
+      height: 479px;
+      background-size: contain;
+
+      &.fade-in {
+
+        h1 {
+          font-size: 120px;
+          bottom: 40px;
+        }
+      }
+    }
+  }
+
+  #locations-page {
+    background-color: $black;
+  }
+
+  #whyus-page {
+
+    .figure {
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .row {
+
+      &:nth-child(even) {
+
+        .figcaption {
+          right: 4%;
+        }
+      }
+
+      &:nth-child(odd) {
+
+        .figcaption {
+          left: 4%;
+        }
+      }
+
+      .figcaption {
+        top: 6%;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+
+}
+
+/*** Desktop ****/
 @media (min-width: 1200px) {
   nav {
 

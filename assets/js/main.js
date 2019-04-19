@@ -12,14 +12,17 @@ $(document).ready(function(){
   }
 
   // Detect Orientation change /////////////////////////////////////////////////
-  window.addEventListener("orientationchange", function() {
-    console.log(window.orientation);
-    if(window.orientation != 0) {
-      $('.dontOrientation').addClass('show');
-    } else {
-      $('.dontOrientation').removeClass('show');
-    }
-  }, false);
+  function orientationScreen() {
+    window.addEventListener("orientationchange", function() {
+      // console.log(window.orientation);
+      if(window.orientation == 0 || window.orientation == undefined) {
+        $('.dontOrientation').removeClass('show');
+      } else {
+        $('.dontOrientation').addClass('show');
+      }
+    }, false);
+  }
+  orientationScreen();
 
   // Animate Brain /////////////////////////////////////////////////////////////
   var brain = $(".brain"),
@@ -329,7 +332,7 @@ $(document).ready(function(){
 
 // Window Resize ///////////////////////////////////////////////////////////////
  $(window).resize(function(event) {
-
+   orientationScreen();
    checkWindowWidth();
  });
 
@@ -372,7 +375,7 @@ $(document).ready(function(){
   .addTo(controller);
 
   // Pin banner ----------------------------------------- //
-  pin('#banner', 0, '50%', '#banner');
+  pin('#banner', 0, '30%', '#banner');
 
   // Second content banner ----------------------------------------- //
   classToggle('#banner', 0.5, '80%', '#banner', 'fade-in');

@@ -669,8 +669,6 @@ small {
   position: relative;
   background-color: #fff;
   overflow: hidden; }
-  #banner.fade-in {
-    background-color: #090909; }
   #banner .obj {
     position: absolute;
     width: 100%;
@@ -687,9 +685,6 @@ small {
       -ms-transition: all 1s ease-out 0.8s;
       -o-transition: all 1s ease-out 0.8s;
       transition: all 1s ease-out 0.8s;
-      -webkit-transform: translateY(200%);
-      -ms-transform: translateY(200%);
-      transform: translateY(200%);
       opacity: 0; }
       #banner .obj.city.fade-in {
         opacity: 1;
@@ -3611,6 +3606,7 @@ small {
   animation-fill-mode: both; }
 
 /* Responsive *****************************************************************/
+/*** Mobile - small ***/
 @media (max-width: 320px) {
   #hospitality-page .carousel-section.fade-in .carousel, #demandgeneration-page .carousel-section.fade-in .carousel, #demandfulfillment-page .carousel-section.fade-in .carousel, #financialtransformation-page .carousel-section.fade-in .carousel, #organisationaloptimisation-page .carousel-section.fade-in .carousel {
     padding-top: 15%; }
@@ -3694,6 +3690,7 @@ small {
   #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
     font-size: 16px; } }
 
+/*** Mobile ***/
 @media (max-width: 575.98px) {
   body {
     font: 16px/1.2 arial; }
@@ -4710,6 +4707,7 @@ small {
         margin: auto;
         width: auto; } }
 
+/*** Tablet ***/
 @media (min-width: 768px) and (max-width: 991.98px) {
   nav .oxford-dt {
     display: none !important; }
@@ -5372,6 +5370,61 @@ small {
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
       margin-right: 15px; } }
 
+@media (min-width: 1024px) and (max-width: 1366px) {
+  #footer .row._first .nav li a {
+    padding: 0.5rem; }
+  #banner {
+    height: 82vh !important; }
+    #banner .container .content {
+      margin-top: 40%; }
+  #hospitality .figcaption h1.header {
+    width: 50%;
+    font-size: 50px; }
+  #hospitality .figcaption-body {
+    width: 50%; }
+  #hospitality .carousel .carouselHospitality-indicators {
+    margin-top: 10px; }
+  #locations {
+    height: 60vh; }
+    #locations .modal .modal-dialog {
+      max-height: 62%;
+      max-width: 530px;
+      left: 10%;
+      right: auto; }
+  #blog .figure .figure-img {
+    height: 230px; }
+  #contactus-page #contactus-form .section-form form {
+    padding: 60px 50px 60px 80px; }
+  #contactus-page #contactus-form .section-form label {
+    font-size: 16px; }
+  #contactus-page #contactus-form .contactus-detail-form {
+    max-width: 66%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.66%;
+    flex: 0 0 66.66%; }
+  #hospitality-page .roles-section .column.col_1, #hospitality-page .roles-section .column.col_3 {
+    max-height: none;
+    display: inline-table; }
+  #team-page .banner, #whyus-page .banner, #careers-page .banner, #contactus-page .banner, #locations-page .banner, #hospitality-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
+    height: 479px;
+    background-size: contain; }
+    #team-page .banner.fade-in h1, #whyus-page .banner.fade-in h1, #careers-page .banner.fade-in h1, #contactus-page .banner.fade-in h1, #locations-page .banner.fade-in h1, #hospitality-page .banner.fade-in h1, #strategy-page .banner.fade-in h1, #demandgeneration-page .banner.fade-in h1, #demandfulfillment-page .banner.fade-in h1, #financialtransformation-page .banner.fade-in h1, #organisationaloptimisation-page .banner.fade-in h1 {
+      font-size: 120px;
+      bottom: 40px; }
+  #locations-page {
+    background-color: #000; }
+  #whyus-page .figure img {
+    width: 100%; }
+  #whyus-page .row:nth-child(even) .figcaption {
+    right: 4%; }
+  #whyus-page .row:nth-child(odd) .figcaption {
+    left: 4%; }
+  #whyus-page .row .figcaption {
+    top: 6%; }
+  #whyus-page .row h1 {
+    font-size: 40px; } }
+
+/*** Desktop ****/
 @media (min-width: 1200px) {
   nav.navbar .navbar-nav li .nav-link {
     margin-left: 3px;
