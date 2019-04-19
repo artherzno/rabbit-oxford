@@ -2460,7 +2460,8 @@ small {
           float: left;
           overflow: hidden;
           -o-text-overflow: ellipsis;
-          text-overflow: ellipsis; }
+          text-overflow: ellipsis;
+          pointer-events: none; }
         #careers-page #careers-apply-form .section-apply .uploadname #deluploadname {
           text-transform: uppercase;
           vertical-align: middle;
@@ -2617,8 +2618,6 @@ small {
           vertical-align: middle;
           background-color: #fff;
           float: left;
-          width: 100%;
-          padding-right: 50px;
           overflow: hidden;
           -o-text-overflow: ellipsis;
           text-overflow: ellipsis; }
@@ -2632,7 +2631,6 @@ small {
           height: 50px;
           font-size: 30px;
           position: absolute;
-          right: 0;
           top: 0; }
 
 /* Contact us page ******************************************************************/
@@ -3640,6 +3638,10 @@ small {
       font-size: 14px; }
   #contactus-page #contactus-form .section-form .row .contactus-detail-form form {
     padding-top: 80px; }
+  #careers-page #careers-apply-form .section-apply .uploadname input#filetouploadname, #careersdetail-page #careers-apply-form .section-apply .uploadname input#filetouploadname {
+    width: 84%; }
+  #careers-page #careers-apply-form .section-apply .uploadname input#deluploadname, #careersdetail-page #careers-apply-form .section-apply .uploadname input#deluploadname {
+    right: auto; }
   #hospitality-page.h-one-line .content, #strategy-page.h-one-line .content, #demandgeneration-page.h-one-line .content, #demandfulfillment-page.h-one-line .content, #financialtransformation-page.h-one-line .content, #organisationaloptimisation-page.h-one-line .content {
     padding-bottom: 6%; }
     #hospitality-page.h-one-line .content .row .column img, #strategy-page.h-one-line .content .row .column img, #demandgeneration-page.h-one-line .content .row .column img, #demandfulfillment-page.h-one-line .content .row .column img, #financialtransformation-page.h-one-line .content .row .column img, #organisationaloptimisation-page.h-one-line .content .row .column img {
@@ -4473,7 +4475,7 @@ small {
     padding: 0 15px;
     margin-top: 40px; }
   #careers-page #careers-apply-form .section-apply {
-    background-position: 92% 80%;
+    background-position: 92% bottom;
     background-size: 290%;
     background-color: #131313; }
     #careers-page #careers-apply-form .section-apply .form-row .form-group {
@@ -4484,6 +4486,7 @@ small {
       width: 100%;
       height: 50px; }
     #careers-page #careers-apply-form .section-apply .uploadname #filetouploadname {
+      width: 86%;
       height: 50px; }
   #careers-page #careers-apply-form button[type="submit"] {
     width: 100%;
@@ -4514,8 +4517,8 @@ small {
       #careersdetail-page #careers-apply-form .section-apply label.custom-file-upload {
         width: 100%;
         height: 50px; }
-      #careersdetail-page #careers-apply-form .section-apply #filetouploadname {
-        width: 100%;
+      #careersdetail-page #careers-apply-form .section-apply .uploadname #filetouploadname {
+        width: 86%;
         height: 50px; }
     #careersdetail-page #careers-apply-form button[type="submit"] {
       width: 100%;
@@ -5443,6 +5446,11 @@ small {
 .ie #locations .modal .modal-dialog {
   width: 600px; }
 
+.ie #careers-page #careers-apply-form .section-apply .uploadname #filetouploadname {
+  width: 100%;
+  max-width: none; }
+
 .ie #careers-page #careers-apply-form .section-apply .uploadname #deluploadname {
+  right: 0;
   height: 50px;
   font-size: 22px; }

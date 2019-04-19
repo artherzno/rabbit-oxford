@@ -2731,6 +2731,7 @@ small {
           // padding-right: 50px;
           overflow: hidden;
           text-overflow: ellipsis;
+          pointer-events: none;
         }
 
         #deluploadname {
@@ -2934,8 +2935,8 @@ small {
           vertical-align: middle;
           background-color: $white;
           float: left;
-          width: 100%;
-          padding-right: 50px;
+          // width: 100%;
+          // padding-right: 50px;
           overflow: hidden;
           text-overflow: ellipsis;
         }
@@ -2950,7 +2951,7 @@ small {
           height: 50px;
           font-size: 30px;
           position: absolute;
-          right: 0;
+          // right: 0;
           top: 0;
         }
       }
@@ -4348,6 +4349,26 @@ $breadcrumb-divider: quote(">");
             form {
               padding-top: 80px;
             }
+          }
+        }
+      }
+    }
+  }
+
+  #careers-page, #careersdetail-page {
+
+    #careers-apply-form {
+
+      .section-apply {
+
+        .uploadname {
+
+          input#filetouploadname {
+            width: 84%;
+          }
+
+          input#deluploadname {
+            right: auto;
           }
         }
       }
@@ -6059,7 +6080,7 @@ $breadcrumb-divider: quote(">");
     #careers-apply-form {
 
       .section-apply {
-        background-position: 92% 80%;
+        background-position: 92% bottom;
         background-size: 290%;
         background-color: #131313;
 
@@ -6085,7 +6106,7 @@ $breadcrumb-divider: quote(">");
         .uploadname {
 
           #filetouploadname {
-            // width: 84%;
+            width: 86%;
             height: 50px;
           }
         }
@@ -6161,9 +6182,12 @@ $breadcrumb-divider: quote(">");
           }
         }
 
-        #filetouploadname {
-          width: 100%;
-          height: 50px;
+        .uploadname {
+
+          #filetouploadname {
+            width: 86%;
+            height: 50px;
+          }
         }
       }
 
@@ -8198,7 +8222,13 @@ $breadcrumb-divider: quote(">");
 
         .uploadname {
 
+          #filetouploadname {
+            width: 100%;
+            max-width: none;
+          }
+
           #deluploadname {
+            right: 0;
             height: 50px;
             font-size: 22px;
           }
