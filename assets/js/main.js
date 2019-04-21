@@ -222,6 +222,7 @@ $(document).ready(function(){
     }, 400);
     $('.modal-dialog .close').trigger('click');
     $('#locations .button-modal').removeClass('active');
+    $('.modal-locations').removeClass('show');
 
   });
 
@@ -236,6 +237,20 @@ $(document).ready(function(){
   });
 
   // Locations Config Modal ////////////////////////////////////////////////////
+
+    // Modal - locations show
+    $('.button-modal-dialog').on('click', function(){
+      var name = $(this).attr('data-link');
+      
+      $('.modal-locations').removeClass('show');
+      $('#'+name+'-dialog').addClass('show');
+    });
+
+    $('.modal-dialog .button-close').on('click', function(){
+      $('.modal-locations').removeClass('show');
+    });
+
+
     var locattionBtn = $('#locations .button-modal');
     locattionBtn.on('click', function(event) {
       $('.modal-dialog .close').trigger('click');
@@ -245,12 +260,12 @@ $(document).ready(function(){
     });
 
     // Locations Remove modal //////////////////////////////////////////////////
-    $('.modal .close').on('click', function() {
-        $('#locations .button-modal').removeClass('active');
-        $('#locations .button-head').removeClass('sub-active');
-        $('.button-head').removeClass('sub-active');
-
-    });
+    // $('.modal .close, .modal-locations .close').on('click', function() {
+    //     $('#locations .button-modal').removeClass('active');
+    //     $('#locations .button-head').removeClass('sub-active');
+    //     $('.button-head').removeClass('sub-active');
+    //
+    // });
     // var closeModal = function() {
     //   $('.modal-dialog .close').trigger('click');
     //   $('#locations .button-modal').removeClass('active');

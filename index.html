@@ -337,27 +337,26 @@
           <div class="modal-area" style="position: relative;">
 
             <!-- Modal -->
-            <div class="modal" id="modal-bkk" tabindex="-1" role="dialog" aria-labelledby="modal-bkk" aria-hidden="true">
-              <div class="modal-dialog" role="document">
+            <div id="modal-bkk-dialog" class="modal-locations">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="button-close">
                       <img src="assets/images/icon/oxf_icon_close.png" alt="Oxford Acuity">
                     </button>
                   </div>
                   <div class="modal-body">
-                    <h2>BANGKOK</h2>
+                    <h2>Bangkok</h2>
                     <p>239/81 Sarasin Road, Lumpini, Pathumwan, Bangkok, Thailand 10330</p>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="modal" id="modal-sgp" tabindex="-1" role="dialog" aria-labelledby="modal-sgp" aria-hidden="true">
-              <div class="modal-dialog" role="document">
+            <div id="modal-sgp-dialog" class="modal-locations">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="button-close">
                       <img src="assets/images/icon/oxf_icon_close.png" alt="Oxford Acuity">
                     </button>
                   </div>
@@ -368,12 +367,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="modal" id="modal-jbg" tabindex="-1" role="dialog" aria-labelledby="modal-jbg" aria-hidden="true">
-              <div class="modal-dialog" role="document">
+            <div id="modal-jbg-dialog" class="modal-locations">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="button-close">
                       <img src="assets/images/icon/oxf_icon_close.png" alt="Oxford Acuity">
                     </button>
                   </div>
@@ -384,12 +382,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="modal" id="modal-bcr" tabindex="-1" role="dialog" aria-labelledby="modal-bcr" aria-hidden="true">
-              <div class="modal-dialog" role="document">
+            <div id="modal-bcr-dialog" class="modal-locations">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="button-close">
                       <img src="assets/images/icon/oxf_icon_close.png" alt="Oxford Acuity">
                     </button>
                   </div>
@@ -400,12 +397,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="modal" id="modal-dmk" tabindex="-1" role="dialog" aria-labelledby="modal-dmk" aria-hidden="true">
-              <div class="modal-dialog" role="document">
+            <div id="modal-dmk-dialog" class="modal-locations">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="button-close">
                       <img src="assets/images/icon/oxf_icon_close.png" alt="Oxford Acuity">
                     </button>
                   </div>
@@ -416,12 +412,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="modal" id="modal-mxc" tabindex="-1" role="dialog" aria-labelledby="modal-mxc" aria-hidden="true">
-              <div class="modal-dialog" role="document">
+            <div id="modal-mxc-dialog" class="modal-locations">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="button-close">
                       <img src="assets/images/icon/oxf_icon_close.png" alt="Oxford Acuity">
                     </button>
                   </div>
@@ -442,30 +437,36 @@
                 <div class="asia">
                   <button class="buttonNone button-head" data-toggle="collapse" data-target="#collapse-asia-dt" aria-expanded="false" aria-controls="collapse-asia-dt"><h2>ASIA</h2></button>
                   <div id="collapse-asia-dt" class="collapse" aria-labelledby="headingOne" data-parent="#accordionLocation-dt">
-                    <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-bkk">BANGKOK</button><br>
-                    <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-sgp">SINGAPORE</button>
+                    <!-- <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-bkk">BANGKOK</button><br> -->
+                    <!-- <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-sgp">SINGAPORE</button> -->
+                    <button type="button" class="buttonNone button-modal button-modal-dialog" data-link="modal-bkk">BANGKOK</button><br>
+                    <button type="button" class="buttonNone button-modal button-modal-dialog" data-link="modal-sgp">SINGAPORE</button>
                   </div>
                   <!-- <hr> -->
                 </div>
                 <div class="africa">
                   <button class="buttonNone button-head" data-toggle="collapse" data-target="#collapse-africa-dt" aria-expanded="false" aria-controls="collapse-africa-dt"><h2>AFRICA</h2></button>
                   <div id="collapse-africa-dt" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLocation-dt">
-                    <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-jbg">JOHANNESBURG</button>
+                    <!-- <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-jbg">JOHANNESBURG</button> -->
+                    <button type="button" class="buttonNone button-modal button-modal-dialog" data-link="modal-jbg">JOHANNESBURG</button>
                   </div>
                   <!-- <hr> -->
                 </div>
                 <div class="europe">
                   <button class="buttonNone button-head" data-toggle="collapse" data-target="#collapse-europe-dt" aria-expanded="false" aria-controls="collapse-europe-dt"><h2>EUROPE</h2></button>
                   <div id="collapse-europe-dt" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLocation-dt">
-                    <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-bcr">BUCHAREST</button><br>
-                    <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-dmk">DENMARK</button>
+                    <!-- <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-bcr">BUCHAREST</button><br>
+                    <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-dmk">DENMARK</button> -->
+                    <button type="button" class="buttonNone button-modal button-modal-dialog" data-link="modal-bcr">BUCHAREST</button><br>
+                    <button type="button" class="buttonNone button-modal button-modal-dialog" data-link="modal-dmk">DENMARK</button>
                   </div>
                   <!-- <hr> -->
                 </div>
                 <div class="latin">
                   <button class="buttonNone button-head" data-toggle="collapse" data-target="#collapse-latin-dt" aria-expanded="false" aria-controls="collapse-latin-dt"><h2>LATIN AMERICA</h2></button>
                   <div id="collapse-latin-dt" class="collapse" aria-labelledby="headingFour" data-parent="#accordionLocation-dt">
-                    <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-mxc">MEXICO CITY</button>
+                    <!-- <button type="button" class="buttonNone button-modal" data-toggle="modal" data-target="#modal-mxc">MEXICO CITY</button> -->
+                    <button type="button" class="buttonNone button-modal button-modal-dialog" data-link="modal-mxc">MEXICO CITY</button>
                   </div>
                 </div>
               </div>
