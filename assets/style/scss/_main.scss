@@ -217,6 +217,8 @@ small {
 #footer {
   margin: -1px 0 0;
   background-color: $blue;
+  position: relative;
+  z-index: 1051;
 
   .row {
 
@@ -938,7 +940,7 @@ small {
 
     .carouselHospitality-indicators {
       display: block;
-      margin-top: -10px;
+      margin-top: 20px;
       margin-bottom: 85px;
       margin-left: auto;
       margin-right: 0;
@@ -1458,6 +1460,16 @@ small {
     //   }
     // }
   }
+
+  #carouselBlog {
+
+    .item {
+
+      a {
+        height: 612px;
+      }
+    }
+  }
 }
 
 #getintouch {
@@ -1925,6 +1937,16 @@ small {
     }
   }
 
+  .blogs-list {
+
+    .column {
+
+      a {
+        height: 612px;
+      }
+    }
+  }
+
   .figure {
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
 
@@ -2247,6 +2269,13 @@ small {
 
       .owl-stage-outer {
         padding-bottom: 40px;
+      }
+
+      .item {
+
+        a {
+          height: 612px;
+        }
       }
     }
 
@@ -3517,6 +3546,10 @@ small {
   #getintouch {
     opacity: 1;
 
+    .content {
+      padding: 100px 0;
+    }
+
     &.fade-in {
 
       p {
@@ -3976,10 +4009,11 @@ small {
   }
 
   #getintouch {
+    margin-top: -2px;
     opacity: 1;
 
     .content {
-      padding: 40px 0;
+      padding: 100px 0;
     }
 
     &.fade-in {
@@ -4082,6 +4116,7 @@ $breadcrumb-divider: quote(">");
 
   .breadcrumb-item {
     font: 400 24px/1.2 oswald, arial;
+    text-transform: capitalize;
 
     a {
       color: $gray;
@@ -5336,6 +5371,10 @@ $breadcrumb-divider: quote(">");
             .item {
               padding-left: 0;
               padding-right: 0;
+
+              a {
+                height: 485px;
+              }
             }
           }
         }
@@ -5539,6 +5578,13 @@ $breadcrumb-divider: quote(">");
       margin-bottom: 40px;
     }
 
+    .blogs-list {
+
+      .column {
+        height: auto;
+      }
+    }
+
     .row {
       margin: 0;
 
@@ -5719,6 +5765,10 @@ $breadcrumb-divider: quote(">");
             .item {
               padding-left: 0;
               padding-right: 0;
+
+              a {
+                height: 512px;
+              }
             }
           }
         }
@@ -7312,6 +7362,10 @@ $breadcrumb-divider: quote(">");
           .item {
             padding-left: 0;
             padding-right: 0;
+
+            a {
+              height: 512px;
+            }
           }
         }
       }
@@ -7642,7 +7696,7 @@ $breadcrumb-divider: quote(">");
     #getintouch {
 
       .content {
-        padding: 40px 0;
+        padding: 100px 0;
       }
     }
   }
@@ -8164,6 +8218,28 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  #blogs-page {
+
+    .figure {
+
+      .figure-img {
+        height: 210px;
+      }
+    }
+  }
+
+  #blogsdetail-page {
+    .related {
+
+      .figure {
+
+        .figure-img {
+          height: 210px;
+        }
+      }
+    }
+  }
+
   #contactus-page {
 
     #contactus-form {
@@ -8188,6 +8264,7 @@ $breadcrumb-divider: quote(">");
 
   #hospitality-page {
     .roles-section {
+      margin-top: -1px;
 
       .column {
 

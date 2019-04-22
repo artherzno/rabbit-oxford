@@ -171,11 +171,13 @@ $(document).ready(function(){
 
     // infoName.val(fileNameOnly);
 
-    if(fileName.length) {
+    console.log('info name: '+infoName.val());
+    console.log('file name: '+fileName.length);
+    if(fileName.length == 0 && infoName.length == 0) {
+        infoArea.hide();
+    } else {
       infoName.val(fileName);
       infoArea.show();
-    } else {
-      infoArea.hide();
     }
 
     // Dynamic input
@@ -241,7 +243,7 @@ $(document).ready(function(){
     // Modal - locations show
     $('.button-modal-dialog').on('click', function(){
       var name = $(this).attr('data-link');
-      
+
       $('.modal-locations').removeClass('show');
       $('#'+name+'-dialog').addClass('show');
     });

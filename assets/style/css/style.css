@@ -523,7 +523,9 @@ small {
 /* Footer ******************************************************************/
 #footer {
   margin: -1px 0 0;
-  background-color: #1f3052; }
+  background-color: #1f3052;
+  position: relative;
+  z-index: 1051; }
   #footer .row._first {
     padding: 70px 0 0; }
     #footer .row._first .logo img {
@@ -1126,7 +1128,7 @@ small {
     min-height: 500px; }
   #hospitality .carousel .carouselHospitality-indicators {
     display: block;
-    margin-top: -10px;
+    margin-top: 20px;
     margin-bottom: 85px;
     margin-left: auto;
     margin-right: 0;
@@ -1496,6 +1498,8 @@ small {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
+  #blog #carouselBlog .item a {
+    height: 612px; }
 
 #getintouch {
   background-color: #000;
@@ -1842,6 +1846,8 @@ small {
         text-decoration: none; }
       #blogs-page .row nav .page-item.disabled .page-link {
         color: #cfcfcf; }
+  #blogs-page .blogs-list .column a {
+    height: 612px; }
   #blogs-page .figure {
     -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
@@ -2059,6 +2065,8 @@ small {
         color: #cfcfcf; }
     #blogsdetail-page .related .row .owl-stage-outer {
       padding-bottom: 40px; }
+    #blogsdetail-page .related .row .item a {
+      height: 612px; }
   #blogsdetail-page .related .figure {
     -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
@@ -3082,6 +3090,8 @@ small {
       transition: all 0.8s ease-out 0.2s; }
   #whyus-page #getintouch {
     opacity: 1; }
+    #whyus-page #getintouch .content {
+      padding: 100px 0; }
     #whyus-page #getintouch.fade-in p {
       opacity: 1;
       -webkit-transform: translateY(0);
@@ -3447,9 +3457,10 @@ small {
         -ms-transform: translateY(0);
         transform: translateY(0); }
   #hospitality-page #getintouch, #strategy-page #getintouch, #demandgeneration-page #getintouch, #demandfulfillment-page #getintouch, #financialtransformation-page #getintouch, #organisationaloptimisation-page #getintouch {
+    margin-top: -2px;
     opacity: 1; }
     #hospitality-page #getintouch .content, #strategy-page #getintouch .content, #demandgeneration-page #getintouch .content, #demandfulfillment-page #getintouch .content, #financialtransformation-page #getintouch .content, #organisationaloptimisation-page #getintouch .content {
-      padding: 40px 0; }
+      padding: 100px 0; }
     #hospitality-page #getintouch.fade-in p, #strategy-page #getintouch.fade-in p, #demandgeneration-page #getintouch.fade-in p, #demandfulfillment-page #getintouch.fade-in p, #financialtransformation-page #getintouch.fade-in p, #organisationaloptimisation-page #getintouch.fade-in p {
       opacity: 1;
       -webkit-transform: translateY(0);
@@ -3539,7 +3550,8 @@ small {
   padding: 0;
   margin-bottom: 80px; }
   .breadcrumb .breadcrumb-item {
-    font: 400 24px/1.2 oswald, arial; }
+    font: 400 24px/1.2 oswald, arial;
+    text-transform: capitalize; }
     .breadcrumb .breadcrumb-item a {
       color: #999;
       font: 400 24px/1 oswald, arial; }
@@ -4080,6 +4092,8 @@ small {
     #blog .content #carouselBlog.owl-carousel .owl-item .item {
       padding-left: 0;
       padding-right: 0; }
+      #blog .content #carouselBlog.owl-carousel .owl-item .item a {
+        height: 485px; }
     #blog .content .row:last-child {
       margin: 0; }
     #blog .content .row.text-center {
@@ -4178,6 +4192,8 @@ small {
       margin-bottom: 40px; }
     #blogs-page h1 {
       margin-bottom: 40px; }
+    #blogs-page .blogs-list .column {
+      height: auto; }
     #blogs-page .row {
       margin: 0; }
       #blogs-page .row:last-child {
@@ -4267,6 +4283,8 @@ small {
     #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item {
       padding-left: 0;
       padding-right: 0; }
+      #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
+        height: 512px; }
     #blogsdetail-page .related .figure {
       /* For crop image */ }
       #blogsdetail-page .related .figure .figure-img {
@@ -5082,6 +5100,8 @@ small {
   #blog #carouselBlog.owl-carousel .owl-item .item {
     padding-left: 0;
     padding-right: 0; }
+    #blog #carouselBlog.owl-carousel .owl-item .item a {
+      height: 512px; }
   #blog .figure .figure-img {
     height: 230px; }
   #blog .figure .figcaption {
@@ -5237,7 +5257,7 @@ small {
         flex: 0 0 90%;
         max-width: 90%; }
   #hospitality-page #getintouch .content {
-    padding: 40px 0; }
+    padding: 100px 0; }
   #team-page .oxford-dt, #team-page .oxford-mb {
     display: none !important; }
   #team-page .oxford-tl {
@@ -5454,6 +5474,10 @@ small {
       right: auto; }
   #blog .figure .figure-img {
     height: 210px; }
+  #blogs-page .figure .figure-img {
+    height: 210px; }
+  #blogsdetail-page .related .figure .figure-img {
+    height: 210px; }
   #contactus-page #contactus-form .section-form form {
     padding: 60px 50px 60px 80px; }
   #contactus-page #contactus-form .section-form label {
@@ -5463,9 +5487,11 @@ small {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 66.66%;
     flex: 0 0 66.66%; }
-  #hospitality-page .roles-section .column.col_1, #hospitality-page .roles-section .column.col_3 {
-    max-height: none;
-    display: inline-table; }
+  #hospitality-page .roles-section {
+    margin-top: -1px; }
+    #hospitality-page .roles-section .column.col_1, #hospitality-page .roles-section .column.col_3 {
+      max-height: none;
+      display: inline-table; }
   #team-page .banner, #whyus-page .banner, #careers-page .banner, #contactus-page .banner, #locations-page .banner, #hospitality-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
     height: 479px;
     background-size: contain; }
