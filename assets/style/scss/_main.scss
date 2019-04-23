@@ -263,6 +263,24 @@ small {
           }
         }
       }
+
+      .dropdown-menu {
+        padding-top: 0;
+        // max-height: 198px;
+        // overflow: auto;
+
+        .mCSB_buttonUp {
+          background-image: url('../../images/icon/oxf_arrow_scroll_up.svg');
+          // top: 6px;
+          background-position: 0;
+        }
+
+        .mCSB_buttonDown {
+          background-image: url('../../images/icon/oxf_arrow_scroll_down.svg');
+          // bottom: 6px;
+          background-position: 0;
+        }
+      }
     }
 
     &._second {
@@ -8575,6 +8593,24 @@ $breadcrumb-divider: quote(">");
 
     .dropdown-toggle {
       background-size: 58px;
+    }
+  }
+
+  #footer {
+
+    .row {
+
+      &._first {
+
+        .dropdown-menu {
+          max-height: 198px;
+          overflow: auto;
+
+          .dropdown-item {
+            // padding: 5px;
+          }
+        }
+      }
     }
   }
 

@@ -627,7 +627,7 @@
                   <div class="dropdown-menu" aria-labelledby="ft-navbar-practics-mb">
                     <a class="dropdown-item" href="hospitality.html">HOSPITALITY</a>
                     <a class="dropdown-item" href="strategy.html">STRATEGY</a>
-                    <a class="dropdown-item" href="demandgeneration.html">DEMAND GENERATION
+                    <a class="dropdown-item" href="demandgeneration.html">DEMAND GENERATION</a>
                     <a class="dropdown-item" href="demandfulfillment.html">DEMAND FULFILLMENT</a>
                     <a class="dropdown-item" href="organisationaloptimisation.html">ORGANISATIONAL OPTIMISATION</a>
                     <a class="dropdown-item" href="financialexcellence.html">FINANCIAL EXCELLENCE</a>
@@ -636,10 +636,10 @@
               </li>
               <li class="nav-item dropdown oxford-dt" id="ft-navbar-practics-dt">
                 <a class="nav-link dropdown-toggle" id="ft-navbar-practics">PRACTICES<!--<hr>--></a>
-                <div class="dropdown-menu" aria-labelledby="ft-navbar-practics">
+                <div class="dropdown-menu mCustomScrollbar" aria-labelledby="ft-navbar-practics">
                   <a class="dropdown-item" href="hospitality.html">HOSPITALITY</a>
                   <a class="dropdown-item" href="strategy.html">STRATEGY</a>
-                  <a class="dropdown-item" href="demandgeneration.html">DEMAND GENERATION
+                  <a class="dropdown-item" href="demandgeneration.html">DEMAND GENERATION</a>
                   <a class="dropdown-item" href="demandfulfillment.html">DEMAND FULFILLMENT</a>
                   <a class="dropdown-item" href="organisationaloptimisation.html">ORGANISATIONAL OPTIMISATION</a>
                   <a class="dropdown-item" href="financialexcellence.html">FINANCIAL EXCELLENCE</a>
@@ -868,6 +868,17 @@
             setTimeout(function () {
               $('#carouselBlog .owl-stage').css('pointer-events', 'auto');
             }, 400);
+        });
+
+
+        // // Footer scrollbar
+        $('#footer .dropdown-menu').mCustomScrollbar({
+          setHeight: '200px',
+          scrollButtons: {
+            enable: true
+          },
+          theme:"dark",
+          moveDragger: true
         });
 
       });

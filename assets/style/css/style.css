@@ -542,6 +542,14 @@ small {
         background-color: transparent; }
     #footer .row._first .nav li:last-child a {
       padding-right: 0; }
+    #footer .row._first .dropdown-menu {
+      padding-top: 0; }
+      #footer .row._first .dropdown-menu .mCSB_buttonUp {
+        background-image: url("../../images/icon/oxf_arrow_scroll_up.svg");
+        background-position: 0; }
+      #footer .row._first .dropdown-menu .mCSB_buttonDown {
+        background-image: url("../../images/icon/oxf_arrow_scroll_down.svg");
+        background-position: 0; }
   #footer .row._second {
     padding: 60px 0; }
     #footer .row._second .copyright {
@@ -5591,6 +5599,10 @@ small {
 
 .ie .dropdown.dropdown-list .dropdown-toggle {
   background-size: 58px; }
+
+.ie #footer .row._first .dropdown-menu {
+  max-height: 198px;
+  overflow: auto; }
 
 .ie #banner .container .content .box .box-content p {
   background: none;
