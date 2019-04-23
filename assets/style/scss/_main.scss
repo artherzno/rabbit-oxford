@@ -1182,34 +1182,51 @@ small {
       margin: 0 0 20px auto;
       clear: both;
     }
-
-    .asia, .africa, .europe, .latin {
+    
+    .div-location{
       opacity: 0;
       @include transform(translateY(20%));
     }
 
-    .asia {
-      @include transition(all 0.5s ease-out 0.2s);
+    .div-location {
+      @for $i from 1 through 6{
+        &:nth-child(#{$i}){
+          transition: all 0.5s ease-out #{$i * .2}s;
+        }
+      }
     }
 
-    .africa {
-      @include transition(all 0.5s ease-out 0.4s);
-    }
+    // .asia, .africa, .europe, .latin {
+    //   opacity: 0;
+    //   @include transform(translateY(20%));
+    // }
 
-    .europe {
-      @include transition(all 0.5s ease-out 0.6s);
-    }
+    // .asia {
+    //   @include transition(all 0.5s ease-out 0.2s);
+    // }
 
-    .latin {
-      @include transition(all 0.5s ease-out 0.8s);
-    }
+    // .africa {
+    //   @include transition(all 0.5s ease-out 0.4s);
+    // }
+
+    // .europe {
+    //   @include transition(all 0.5s ease-out 0.6s);
+    // }
+
+    // .latin {
+    //   @include transition(all 0.5s ease-out 0.8s);
+    // }
 
     &.fade-in {
       h1 {
         opacity: 1;
         @include transform(translateY(0));
       }
-      .asia, .africa, .europe, .latin {
+      // .asia, .africa, .europe, .latin {
+      //   opacity: 1;
+      //   @include transform(translateY(0));
+      // }
+      .div-location{
         opacity: 1;
         @include transform(translateY(0));
       }

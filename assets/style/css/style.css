@@ -1304,37 +1304,41 @@ small {
       width: 24px;
       margin: 0 0 20px auto;
       clear: both; }
-    #locations .content .asia, #locations .content .africa, #locations .content .europe, #locations .content .latin {
+    #locations .content .div-location {
       opacity: 0;
       -webkit-transform: translateY(20%);
       -ms-transform: translateY(20%);
       transform: translateY(20%); }
-    #locations .content .asia {
+    #locations .content .div-location:nth-child(1) {
       -webkit-transition: all 0.5s ease-out 0.2s;
-      -ms-transition: all 0.5s ease-out 0.2s;
       -o-transition: all 0.5s ease-out 0.2s;
       transition: all 0.5s ease-out 0.2s; }
-    #locations .content .africa {
+    #locations .content .div-location:nth-child(2) {
       -webkit-transition: all 0.5s ease-out 0.4s;
-      -ms-transition: all 0.5s ease-out 0.4s;
       -o-transition: all 0.5s ease-out 0.4s;
       transition: all 0.5s ease-out 0.4s; }
-    #locations .content .europe {
+    #locations .content .div-location:nth-child(3) {
       -webkit-transition: all 0.5s ease-out 0.6s;
-      -ms-transition: all 0.5s ease-out 0.6s;
       -o-transition: all 0.5s ease-out 0.6s;
       transition: all 0.5s ease-out 0.6s; }
-    #locations .content .latin {
+    #locations .content .div-location:nth-child(4) {
       -webkit-transition: all 0.5s ease-out 0.8s;
-      -ms-transition: all 0.5s ease-out 0.8s;
       -o-transition: all 0.5s ease-out 0.8s;
       transition: all 0.5s ease-out 0.8s; }
+    #locations .content .div-location:nth-child(5) {
+      -webkit-transition: all 0.5s ease-out 1s;
+      -o-transition: all 0.5s ease-out 1s;
+      transition: all 0.5s ease-out 1s; }
+    #locations .content .div-location:nth-child(6) {
+      -webkit-transition: all 0.5s ease-out 1.2s;
+      -o-transition: all 0.5s ease-out 1.2s;
+      transition: all 0.5s ease-out 1.2s; }
     #locations .content.fade-in h1 {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-    #locations .content.fade-in .asia, #locations .content.fade-in .africa, #locations .content.fade-in .europe, #locations .content.fade-in .latin {
+    #locations .content.fade-in .div-location {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
