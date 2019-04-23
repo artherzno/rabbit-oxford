@@ -4410,17 +4410,27 @@ small {
   #hospitality-page .carousel-section .carousel-control-next, #hospitality-page .carousel-section .carousel-control-prev, #strategy-page .carousel-section .carousel-control-next, #strategy-page .carousel-section .carousel-control-prev, #demandgeneration-page .carousel-section .carousel-control-next, #demandgeneration-page .carousel-section .carousel-control-prev, #demandfulfillment-page .carousel-section .carousel-control-next, #demandfulfillment-page .carousel-section .carousel-control-prev, #financialtransformation-page .carousel-section .carousel-control-next, #financialtransformation-page .carousel-section .carousel-control-prev, #organisationaloptimisation-page .carousel-section .carousel-control-next, #organisationaloptimisation-page .carousel-section .carousel-control-prev {
     display: none; }
   #hospitality-page .feasibility-section, #hospitality-page .development-section, #hospitality-page .operational-section {
-    padding: 100px 0 60px; }
+    padding: 50px 0 60px; }
     #hospitality-page .feasibility-section .column, #hospitality-page .development-section .column, #hospitality-page .operational-section .column {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
-      margin-bottom: 40px; }
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 30px; }
+      #hospitality-page .feasibility-section .column .paragrah, #hospitality-page .development-section .column .paragrah, #hospitality-page .operational-section .column .paragrah {
+        padding-left: 15px; }
       #hospitality-page .feasibility-section .column h3, #hospitality-page .development-section .column h3, #hospitality-page .operational-section .column h3 {
-        font-size: 26px; }
+        font-size: 26px;
+        padding-left: 15px;
+        margin-bottom: 20px; }
+      #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
+        width: 100%; }
+        #hospitality-page .feasibility-section .column p:last-child, #hospitality-page .development-section .column p:last-child, #hospitality-page .operational-section .column p:last-child {
+          margin: 0; }
   #hospitality-page .feasibility-section h1 {
-    padding: 60px 0; }
+    padding: 90px 0 50px; }
+  #hospitality-page .development-section h1, #hospitality-page .operational-section h1 {
+    padding: 0 0 50px; }
   #hospitality-page .development-section {
     background: url("../../images/hospitality/oxf_bg_content1_m.jpg") no-repeat;
     background-size: cover; }
