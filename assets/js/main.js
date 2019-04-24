@@ -171,11 +171,8 @@ $(document).ready(function(){
 
     // infoName.val(fileNameOnly);
 
-    console.log('info name: '+infoName.val());
-    console.log('file name: '+fileName.length);
-    if(fileName.length == 0 && infoName.length == 0) {
-        infoArea.hide();
-    } else {
+    // Check file exist
+    if(fileName.length > 0 && infoName.length > 0) {
       infoName.val(fileName);
       infoArea.show();
     }
@@ -331,15 +328,19 @@ $(document).ready(function(){
      }
    },1);
  }
- checkHeightHeader('.feasibility-section .row .column');
- checkHeightHeader('.development-section .row .column');
- checkHeightHeader('.operational-section .row .column');
+
 
  function checkWindowWidth () {
    var winWidth = $(window).width();
 
    if(winWidth < 1024) {
      checkHeightHeader('#carouselHospitality .owl-item');
+   }
+
+   if(winWidth > 432) {
+     checkHeightHeader('.feasibility-section .row .column');
+     checkHeightHeader('.development-section .row .column');
+     checkHeightHeader('.operational-section .row .column');
    }
  }
 
@@ -510,13 +511,18 @@ $(document).ready(function(){
   classToggle('#locations-page .content', 0.7, '', '#locations-page .content', 'fade-in');
 
   // Locations - row ----------------------------------------- //
-  classToggle('#locations-page .row_1', 0.8, '', '#locations-page .row_1 .column', 'fade-in');
+  // classToggle('#locations-page .row_1', 0.8, '', '#locations-page .row_1 .column', 'fade-in');
+  //
+  // classToggle('#locations-page .row_2', 0.8, '', '#locations-page .row_2 .column', 'fade-in');
+  //
+  // classToggle('#locations-page .row_3', 0.8, '', '#locations-page .row_3 .column', 'fade-in');
+  //
+  // classToggle('#locations-page .row_4', 0.8, '', '#locations-page .row_4 .column', 'fade-in');
 
-  classToggle('#locations-page .row_2', 0.8, '', '#locations-page .row_2 .column', 'fade-in');
-
-  classToggle('#locations-page .row_3', 0.8, '', '#locations-page .row_3 .column', 'fade-in');
-
-  classToggle('#locations-page .row_4', 0.8, '', '#locations-page .row_4 .column', 'fade-in');
+  var locatiopsDesktopRowAmount = $('#locations-page .row').length;
+  for(i=1; i<=locatiopsDesktopRowAmount; i++) {
+    classToggle('#locations-page .row_'+i, 0.8, '', '#locations-page .row_'+i+' .column', 'fade-in');
+  }
 
 
   // Careers - banner ----------------------------------------- //

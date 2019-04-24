@@ -218,7 +218,7 @@ small {
   margin: -1px 0 0;
   background-color: $blue;
   position: relative;
-  z-index: 1051;
+  z-index: 1050;
 
   .row {
 
@@ -1424,21 +1424,37 @@ small {
       h3 {
         color: $black;
         margin-bottom: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
       }
 
       p {
         color: $black;
         font: 18px/1.2 arial;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
 
         &.date {
           color: $gray;
           margin: 0;
+          position: absolute;
+          bottom: 24px;
+          left: 34px;
         }
 
         &.button-readmore {
           color: $black;
-          font: 600 18px/1 oswald, arial;
+          font: 600 18px/1.4 oswald, arial;
           margin: 0;
+          position: absolute;
+          bottom: 24px;
+          right: 34px;
         }
       }
 
@@ -1485,6 +1501,8 @@ small {
 
       a {
         height: 612px;
+        width: 100%;
+        position: relative;
       }
     }
   }
@@ -1957,11 +1975,10 @@ small {
 
   .blogs-list {
 
-    .column {
-
-      a {
-        height: 612px;
-      }
+    a {
+      height: 612px;
+      width: 100%;
+      position: relative;
     }
   }
 
@@ -1994,23 +2011,39 @@ small {
       h3 {
         color: $black;
         margin-bottom: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
       }
 
       p {
         color: $black;
         font: 18px/1.2 arial;
         margin-bottom: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
 
         &.date {
           color: $gray;
           margin-bottom: 0;
+          position: absolute;
+          bottom: 24px;
+          left: 34px;
         }
 
 
         &.button-readmore {
           color: $black;
-          font: 600 18px/1 oswald, arial;
+          font: 600 18px/1.4 oswald, arial;
           margin: 0;
+          position: absolute;
+          bottom: 24px;
+          right: 34px;
         }
       }
 
@@ -2041,9 +2074,10 @@ small {
 
     &:hover {
       box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+        background-color: $gray-soft;
 
       .figcaption {
-        background-color: $gray-soft;
+        // background-color: $gray-soft;
 
         .button-readmore {
           color: $pink;
@@ -2293,6 +2327,8 @@ small {
 
         a {
           height: 612px;
+          width: 100%;
+          position: relative;
         }
       }
     }
@@ -2326,22 +2362,38 @@ small {
         h3 {
           color: $black;
           margin-bottom: 30px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
         }
 
         p {
           color: $black;
           font: 18px/1.2 arial;
           margin-bottom: 30px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
 
           &.date {
             color: $gray;
             margin-bottom: 0;
+            position: absolute;
+            bottom: 24px;
+            left: 34px;
           }
 
           &.button-readmore {
             color: $black;
-            font: 600 18px/1 oswald, arial;
+            font: 600 18px/1.4 oswald, arial;
             margin: 0;
+            position: absolute;
+            bottom: 24px;
+            right: 34px;
           }
         }
 
@@ -2357,9 +2409,10 @@ small {
 
       &:hover {
         box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+        background-color: $gray-soft;
 
         .figcaption {
-          background-color: $gray-soft;
+          // background-color: $gray-soft;
 
           .button-readmore {
             color: $pink;
@@ -4754,7 +4807,7 @@ $breadcrumb-divider: quote(">");
 }
 
 /*** Mobile ***/
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   body {
     font: 16px/1.2 arial;
   }
@@ -5391,7 +5444,7 @@ $breadcrumb-divider: quote(">");
               padding-right: 0;
 
               a {
-                height: 485px;
+                height: 512px;
               }
             }
           }
@@ -5439,10 +5492,12 @@ $breadcrumb-divider: quote(">");
               .date {
                 font-size: 14px;
                 margin: 0;
+                left: 24px;
               }
 
               .button-readmore {
                 font-size: 16px;
+                right: 24px;
               }
             }
           }
@@ -6056,6 +6111,7 @@ $breadcrumb-divider: quote(">");
 
         .paragrah {
           padding-left: 15px;
+          margin-left: 15px;
         }
 
         h3 {
@@ -6698,6 +6754,8 @@ $breadcrumb-divider: quote(">");
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  #footer {}
+
   #intro {
 
     .container {
@@ -7420,8 +7478,16 @@ $breadcrumb-divider: quote(">");
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 4;
+          -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
+
+          &.date {
+            left: 24px;
+          }
+
+          &.button-readmore {
+            right: 24px;
+          }
         }
 
         a {
@@ -7469,6 +7535,13 @@ $breadcrumb-divider: quote(">");
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
         }
+      }
+    }
+
+    .blogs-list {
+
+      a {
+        height: 512px;
       }
     }
   }
@@ -7525,6 +7598,16 @@ $breadcrumb-divider: quote(">");
             right: -9999px;
             margin: auto;
             width: auto;
+          }
+        }
+      }
+
+      .row {
+
+        .item {
+
+          a {
+            height: 512px;
           }
         }
       }
@@ -7627,7 +7710,7 @@ $breadcrumb-divider: quote(">");
     }
 
     #getintouch {
-      margin: -1px 0 0;
+      margin: -2px 0 0;
     }
 
   }
@@ -8252,9 +8335,26 @@ $breadcrumb-divider: quote(">");
         height: 210px;
       }
     }
+
+    #carouselBlog {
+
+      .item {
+
+        a {
+          height: 512px;
+        }
+      }
+    }
   }
 
   #blogs-page {
+
+    .blogs-list {
+
+      a {
+        height: 512px;
+      }
+    }
 
     .figure {
 
@@ -8266,6 +8366,24 @@ $breadcrumb-divider: quote(">");
 
   #blogsdetail-page {
     .related {
+
+      .row {
+
+        .item {
+
+          a {
+            height: 512px;
+
+            .date {
+              left: 34px;
+            }
+
+            .button-readmore {
+              right: 34px;
+            }
+          }
+        }
+      }
 
       .figure {
 

@@ -525,7 +525,7 @@ small {
   margin: -1px 0 0;
   background-color: #1f3052;
   position: relative;
-  z-index: 1051; }
+  z-index: 1050; }
   #footer .row._first {
     padding: 70px 0 0; }
     #footer .row._first .logo img {
@@ -1467,17 +1467,35 @@ small {
       overflow: hidden; }
       #blog .figure .figcaption h3 {
         color: #000;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; }
       #blog .figure .figcaption p {
         color: #000;
-        font: 18px/1.2 arial; }
+        font: 18px/1.2 arial;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; }
         #blog .figure .figcaption p.date {
           color: #999;
-          margin: 0; }
+          margin: 0;
+          position: absolute;
+          bottom: 24px;
+          left: 34px; }
         #blog .figure .figcaption p.button-readmore {
           color: #000;
-          font: 600 18px/1 oswald, arial;
-          margin: 0; }
+          font: 600 18px/1.4 oswald, arial;
+          margin: 0;
+          position: absolute;
+          bottom: 24px;
+          right: 34px; }
       #blog .figure .figcaption a {
         font: 600 18px/1.2 oswald, arial;
         color: #000; }
@@ -1507,7 +1525,9 @@ small {
     -ms-transform: translateY(0);
     transform: translateY(0); }
   #blog #carouselBlog .item a {
-    height: 612px; }
+    height: 612px;
+    width: 100%;
+    position: relative; }
 
 #getintouch {
   background-color: #000;
@@ -1854,8 +1874,10 @@ small {
         text-decoration: none; }
       #blogs-page .row nav .page-item.disabled .page-link {
         color: #cfcfcf; }
-  #blogs-page .blogs-list .column a {
-    height: 612px; }
+  #blogs-page .blogs-list a {
+    height: 612px;
+    width: 100%;
+    position: relative; }
   #blogs-page .figure {
     -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
@@ -1879,18 +1901,36 @@ small {
       overflow: hidden; }
       #blogs-page .figure .figcaption h3 {
         color: #000;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; }
       #blogs-page .figure .figcaption p {
         color: #000;
         font: 18px/1.2 arial;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; }
         #blogs-page .figure .figcaption p.date {
           color: #999;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          position: absolute;
+          bottom: 24px;
+          left: 34px; }
         #blogs-page .figure .figcaption p.button-readmore {
           color: #000;
-          font: 600 18px/1 oswald, arial;
-          margin: 0; }
+          font: 600 18px/1.4 oswald, arial;
+          margin: 0;
+          position: absolute;
+          bottom: 24px;
+          right: 34px; }
       #blogs-page .figure .figcaption a {
         color: #000;
         font: 600 18px/1 oswald, arial; }
@@ -1898,11 +1938,10 @@ small {
           color: #f7d0cb; }
     #blogs-page .figure:hover {
       -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3); }
-      #blogs-page .figure:hover .figcaption {
-        background-color: #f4f4f4; }
-        #blogs-page .figure:hover .figcaption .button-readmore {
-          color: #f7d0cb; }
+      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      background-color: #f4f4f4; }
+      #blogs-page .figure:hover .figcaption .button-readmore {
+        color: #f7d0cb; }
     #blogs-page .figure.fade-in.column.col_1, #blogs-page .figure.fade-in.column.col_2, #blogs-page .figure.fade-in.column.col_3, #blogs-page .figure.fade-in.column.col_4 {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
@@ -2074,7 +2113,9 @@ small {
     #blogsdetail-page .related .row .owl-stage-outer {
       padding-bottom: 40px; }
     #blogsdetail-page .related .row .item a {
-      height: 612px; }
+      height: 612px;
+      width: 100%;
+      position: relative; }
   #blogsdetail-page .related .figure {
     -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
@@ -2098,18 +2139,36 @@ small {
       overflow: hidden; }
       #blogsdetail-page .related .figure .figcaption h3 {
         color: #000;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; }
       #blogsdetail-page .related .figure .figcaption p {
         color: #000;
         font: 18px/1.2 arial;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; }
         #blogsdetail-page .related .figure .figcaption p.date {
           color: #999;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          position: absolute;
+          bottom: 24px;
+          left: 34px; }
         #blogsdetail-page .related .figure .figcaption p.button-readmore {
           color: #000;
-          font: 600 18px/1 oswald, arial;
-          margin: 0; }
+          font: 600 18px/1.4 oswald, arial;
+          margin: 0;
+          position: absolute;
+          bottom: 24px;
+          right: 34px; }
       #blogsdetail-page .related .figure .figcaption a {
         color: #000;
         font: 600 18px/1 oswald, arial; }
@@ -2117,11 +2176,10 @@ small {
           color: #f7d0cb; }
     #blogsdetail-page .related .figure:hover {
       -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3); }
-      #blogsdetail-page .related .figure:hover .figcaption {
-        background-color: #f4f4f4; }
-        #blogsdetail-page .related .figure:hover .figcaption .button-readmore {
-          color: #f7d0cb; }
+      box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+      background-color: #f4f4f4; }
+      #blogsdetail-page .related .figure:hover .figcaption .button-readmore {
+        color: #f7d0cb; }
     #blogsdetail-page .related .figure.column {
       opacity: 0;
       -webkit-transform: translateY(50%);
@@ -3764,7 +3822,7 @@ small {
     font-size: 16px; } }
 
 /*** Mobile ***/
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   body {
     font: 16px/1.2 arial; }
   h1 {
@@ -4101,7 +4159,7 @@ small {
       padding-left: 0;
       padding-right: 0; }
       #blog .content #carouselBlog.owl-carousel .owl-item .item a {
-        height: 485px; }
+        height: 512px; }
     #blog .content .row:last-child {
       margin: 0; }
     #blog .content .row.text-center {
@@ -4127,9 +4185,11 @@ small {
           -webkit-box-orient: vertical; }
         #blog .content .row .col-md-12 .figure .figcaption .date {
           font-size: 14px;
-          margin: 0; }
+          margin: 0;
+          left: 24px; }
         #blog .content .row .col-md-12 .figure .figcaption .button-readmore {
-          font-size: 16px; }
+          font-size: 16px;
+          right: 24px; }
   #getintouch .content h2 {
     font-size: 40px; }
   /* Team page *******************/
@@ -4426,7 +4486,8 @@ small {
       max-width: 100%;
       margin-bottom: 30px; }
       #hospitality-page .feasibility-section .column .paragrah, #hospitality-page .development-section .column .paragrah, #hospitality-page .operational-section .column .paragrah {
-        padding-left: 15px; }
+        padding-left: 15px;
+        margin-left: 15px; }
       #hospitality-page .feasibility-section .column h3, #hospitality-page .development-section .column h3, #hospitality-page .operational-section .column h3 {
         font-size: 26px;
         padding-left: 15px;
@@ -5129,8 +5190,12 @@ small {
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; }
+      #blog .figure .figcaption p.date {
+        left: 24px; }
+      #blog .figure .figcaption p.button-readmore {
+        right: 24px; }
     #blog .figure .figcaption a {
       color: #000;
       font: 600 20px/1.2 oswald, arial;
@@ -5159,6 +5224,8 @@ small {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
+    #blogs-page .blogs-list a {
+      height: 512px; }
   #blogsdetail-page {
     margin-top: 58px; }
     #blogsdetail-page #carouselRelated.owl-carousel .owl-stage {
@@ -5187,6 +5254,8 @@ small {
           right: -9999px;
           margin: auto;
           width: auto; }
+    #blogsdetail-page .related .row .item a {
+      height: 512px; }
   #team-page .banner, #hospitality-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #organisationaloptimisation-page .banner, #financialtransformation-page .banner, #locations-page .banner, #careers-page .banner, #contactus-page .banner, #whyus-page .banner {
     height: 35vh;
     background-size: 100%; }
@@ -5240,7 +5309,7 @@ small {
       font-size: 40px;
       margin-bottom: 45px; }
   #hospitality-page #getintouch, #strategy-page #getintouch, #demandgeneration-page #getintouch, #demandfulfillment-page #getintouch, #organisationaloptimisation-page #getintouch, #financialtransformation-page #getintouch {
-    margin: -1px 0 0; }
+    margin: -2px 0 0; }
   #demandgeneration-page .content .row .column._right {
     top: 240px; }
   #strategy-page .content .row .column._right {
@@ -5492,8 +5561,18 @@ small {
       right: auto; }
   #blog .figure .figure-img {
     height: 210px; }
+  #blog #carouselBlog .item a {
+    height: 512px; }
+  #blogs-page .blogs-list a {
+    height: 512px; }
   #blogs-page .figure .figure-img {
     height: 210px; }
+  #blogsdetail-page .related .row .item a {
+    height: 512px; }
+    #blogsdetail-page .related .row .item a .date {
+      left: 34px; }
+    #blogsdetail-page .related .row .item a .button-readmore {
+      right: 34px; }
   #blogsdetail-page .related .figure .figure-img {
     height: 210px; }
   #contactus-page #contactus-form .section-form form {
