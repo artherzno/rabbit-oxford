@@ -500,19 +500,31 @@ small {
 
     .content {
       text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
       @include transition(all 2s ease 1.4s);
       opacity: 0;
-      @include transform(translateY(300%));
+      @include transform(translateY(50%));
 
       &.fade-in {
-        @include transform(translateY(90%));
+        // @include transform(translateY(90%));
+        @include transform(translateY(0));
         opacity: 1;
       }
 
       .box {
         width: 100%;
         height: 350px;
-        position: relative;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
         cursor: pointer;
         @include transition(transform 1s);
         @include transform-style(preserve-3d);
@@ -987,12 +999,12 @@ small {
 
           .mCSB_buttonUp {
             background-image: url('../../images/icon/oxf_arrow_scroll_up.svg');
-            top: 6px;
+            // top: 6px;
           }
 
           .mCSB_buttonDown {
             background-image: url('../../images/icon/oxf_arrow_scroll_down.svg');
-            bottom: 6px;
+            // bottom: 6px;
           }
 
           a {
@@ -4478,7 +4490,7 @@ $breadcrumb-divider: quote(">");
       .content {
 
         .box {
-          height: 270px;
+          height: 70px;
 
           &.oxford-mb {
 
@@ -4806,6 +4818,7 @@ $breadcrumb-divider: quote(">");
   }
 }
 
+
 /*** Mobile ***/
 @media (max-width: 767.98px) {
   body {
@@ -5061,6 +5074,7 @@ $breadcrumb-divider: quote(">");
         min-height: 0;
 
         .box {
+          height: 100px;
 
           &.oxford-mb {
 
@@ -6833,6 +6847,7 @@ $breadcrumb-divider: quote(">");
   }
 }
 
+
 /*** Tablet ***/
 @media (min-width: 768px) and (max-width: 991.98px) {
   nav {
@@ -7057,7 +7072,7 @@ $breadcrumb-divider: quote(">");
         // margin-top: 60%;
 
         .box {
-          height: 475px;
+          height: 225px;
 
           .box-content {
 
@@ -8198,10 +8213,10 @@ $breadcrumb-divider: quote(">");
     .container {
 
       .content {
-        margin-top: 24%;
+        // margin-top: 24%;
 
         &.fade-in {
-          @include transform(translateY(20%));
+          // @include transform(translateY(20%));
         }
 
         .box {
@@ -8244,7 +8259,8 @@ $breadcrumb-divider: quote(">");
   }
 }
 
-// iPad Pro
+
+/*** iPad Pro ***/
 @media (min-width: 1024px) and (max-width: 1366px) {
   #footer {
 
@@ -8266,12 +8282,15 @@ $breadcrumb-divider: quote(">");
   }
 
   #banner {
-    height: 82vh !important;
+    height: 92vh !important;
 
     .container {
 
       .content {
-        margin-top: 40%;
+        // margin-top: 40%;
+        .box {
+          height: 280px;
+        }
       }
     }
   }
@@ -8487,8 +8506,18 @@ $breadcrumb-divider: quote(">");
 
 }
 
+
 /*** Desktop ****/
-@media (min-width: 1200px) {
+@media (width: 800px) and (height: 600px) {
+  nav {
+
+    .navbar-nav-list {
+      margin-top: 10%;
+    }
+  }
+}
+
+@media (min-width: 1152px) {
   nav {
 
     &.navbar {
@@ -8503,6 +8532,13 @@ $breadcrumb-divider: quote(">");
 
             &:after {
               right: -3px;
+            }
+
+            &.active {
+
+              &:after {
+                top: 20%;
+              }
             }
 
             &.dropdown-toggle {
@@ -8537,17 +8573,42 @@ $breadcrumb-divider: quote(">");
   }
 
   #banner {
+    height: 100vh !important;
+
+    .obj {
+
+      &.cloud {
+
+        &.fade-in {
+          @include transform(translateY(10%));
+        }
+      }
+    }
 
     .container {
 
       .content {
-        margin-top: 24%;
+        // margin-top: 24%;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
 
         &.fade-in {
-          @include transform(translateY(15%));
+          @include transform(translateY(0));
         }
 
         .box {
+          max-height: 250px;
+          height: auto;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
 
           .box-content {
 

@@ -740,23 +740,34 @@ small {
     height: 100%; }
     #banner .container .content {
       text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
       -webkit-transition: all 2s ease 1.4s;
       -ms-transition: all 2s ease 1.4s;
       -o-transition: all 2s ease 1.4s;
       transition: all 2s ease 1.4s;
       opacity: 0;
-      -webkit-transform: translateY(300%);
-      -ms-transform: translateY(300%);
-      transform: translateY(300%); }
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%); }
       #banner .container .content.fade-in {
-        -webkit-transform: translateY(90%);
-        -ms-transform: translateY(90%);
-        transform: translateY(90%);
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1; }
       #banner .container .content .box {
         width: 100%;
         height: 350px;
-        position: relative;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
         cursor: pointer;
         -webkit-transition: transform 1s;
         -ms-transition: transform 1s;
@@ -1169,11 +1180,9 @@ small {
         #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools a.disabled {
           display: none !important; }
       #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools .mCSB_buttonUp {
-        background-image: url("../../images/icon/oxf_arrow_scroll_up.svg");
-        top: 6px; }
+        background-image: url("../../images/icon/oxf_arrow_scroll_up.svg"); }
       #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools .mCSB_buttonDown {
-        background-image: url("../../images/icon/oxf_arrow_scroll_down.svg");
-        bottom: 6px; }
+        background-image: url("../../images/icon/oxf_arrow_scroll_down.svg"); }
       #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools a + .mCSB_draggerContainer {
         display: none; }
     #hospitality .carousel .carouselHospitality-indicators li {
@@ -3752,7 +3761,7 @@ small {
   nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
     right: 26%; }
   #banner .container .content .box {
-    height: 270px; }
+    height: 70px; }
     #banner .container .content .box.oxford-mb .box-content p {
       font-size: 0.7rem; }
       #banner .container .content .box.oxford-mb .box-content p span {
@@ -3961,14 +3970,16 @@ small {
     #banner .container .content {
       margin-top: 0%;
       min-height: 0; }
-      #banner .container .content .box.oxford-mb .box-content._first, #banner .container .content .box.oxford-mb .box-content._second {
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0); }
-      #banner .container .content .box .box-content p {
-        font-size: 0.8rem; }
-        #banner .container .content .box .box-content p span {
-          font-size: 1.6rem; }
+      #banner .container .content .box {
+        height: 100px; }
+        #banner .container .content .box.oxford-mb .box-content._first, #banner .container .content .box.oxford-mb .box-content._second {
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0); }
+        #banner .container .content .box .box-content p {
+          font-size: 0.8rem; }
+          #banner .container .content .box .box-content p span {
+            font-size: 1.6rem; }
   #whatwedo .container {
     overflow: hidden; }
   #whatwedo .row {
@@ -4963,7 +4974,7 @@ small {
       -ms-transform: translateY(10%);
       transform: translateY(10%); }
     #banner .container .content .box {
-      height: 475px; }
+      height: 225px; }
       #banner .container .content .box .box-content p {
         font-size: 22px; }
         #banner .container .content .box .box-content p span {
@@ -5513,16 +5524,10 @@ small {
     width: 28%; }
   #banner {
     height: 100%; }
-    #banner .container .content {
-      margin-top: 24%; }
-      #banner .container .content.fade-in {
-        -webkit-transform: translateY(20%);
-        -ms-transform: translateY(20%);
-        transform: translateY(20%); }
-      #banner .container .content .box .box-content p {
-        font-size: 30px; }
-        #banner .container .content .box .box-content p span {
-          font-size: 60px; }
+    #banner .container .content .box .box-content p {
+      font-size: 30px; }
+      #banner .container .content .box .box-content p span {
+        font-size: 60px; }
   #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
     width: 370px;
     height: 270px;
@@ -5530,13 +5535,14 @@ small {
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
       margin-right: 15px; } }
 
+/*** iPad Pro ***/
 @media (min-width: 1024px) and (max-width: 1366px) {
   #footer .row._first .nav li a {
     padding: 0.5rem; }
   #banner {
-    height: 82vh !important; }
-    #banner .container .content {
-      margin-top: 40%; }
+    height: 92vh !important; }
+    #banner .container .content .box {
+      height: 280px; }
   #hospitality .figcaption h1.header {
     width: 50%;
     font-size: 50px; }
@@ -5609,12 +5615,18 @@ small {
     font-size: 40px; } }
 
 /*** Desktop ****/
-@media (min-width: 1200px) {
+@media (width: 800px) and (height: 600px) {
+  nav .navbar-nav-list {
+    margin-top: 10%; } }
+
+@media (min-width: 1152px) {
   nav.navbar .navbar-nav li .nav-link {
     margin-left: 3px;
     margin-right: 3px; }
     nav.navbar .navbar-nav li .nav-link:after {
       right: -3px; }
+    nav.navbar .navbar-nav li .nav-link.active:after {
+      top: 20%; }
     nav.navbar .navbar-nav li .nav-link.dropdown-toggle {
       margin-right: 3px; }
   #footer .nav-link {
@@ -5623,16 +5635,36 @@ small {
     right: 74px;
     top: -180%;
     width: 28%; }
-  #banner .container .content {
-    margin-top: 24%; }
-    #banner .container .content.fade-in {
-      -webkit-transform: translateY(15%);
-      -ms-transform: translateY(15%);
-      transform: translateY(15%); }
-    #banner .container .content .box .box-content p {
-      font-size: 30px; }
-      #banner .container .content .box .box-content p span {
-        font-size: 60px; }
+  #banner {
+    height: 100vh !important; }
+    #banner .obj.cloud.fade-in {
+      -webkit-transform: translateY(10%);
+      -ms-transform: translateY(10%);
+      transform: translateY(10%); }
+    #banner .container .content {
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute; }
+      #banner .container .content.fade-in {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
+      #banner .container .content .box {
+        max-height: 250px;
+        height: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+        #banner .container .content .box .box-content p {
+          font-size: 30px; }
+          #banner .container .content .box .box-content p span {
+            font-size: 60px; }
   #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
     width: 420px;
     height: 270px;
