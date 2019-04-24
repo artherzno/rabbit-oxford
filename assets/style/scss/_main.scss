@@ -1007,6 +1007,13 @@ small {
             // bottom: 6px;
           }
 
+          .mCSB_scrollTools_onDrag {
+
+            a {
+              pointer-events: none;
+            }
+          }
+
           a {
 
             +.mCSB_draggerContainer {

@@ -1183,6 +1183,8 @@ small {
         background-image: url("../../images/icon/oxf_arrow_scroll_up.svg"); }
       #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools .mCSB_buttonDown {
         background-image: url("../../images/icon/oxf_arrow_scroll_down.svg"); }
+      #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools .mCSB_scrollTools_onDrag a {
+        pointer-events: none; }
       #hospitality .carousel .carouselHospitality-indicators .mCSB_outside + .mCSB_scrollTools a + .mCSB_draggerContainer {
         display: none; }
     #hospitality .carousel .carouselHospitality-indicators li {

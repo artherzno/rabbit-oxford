@@ -805,8 +805,14 @@
               $('.mCSB_buttonUp').addClass('disabled');
             },
             onScroll: function(){
-              $('.mCSB_buttonUp').removeClass('disabled');
-              $('.mCSB_buttonDown').removeClass('disabled');
+              console.log('SCROLLED...');
+              $('.mCSB_buttonUp').removeClass('disabled').attr('style', 'pointer-events: auto;');
+              $('.mCSB_buttonDown').removeClass('disabled').attr('style', 'pointer-events: auto;');
+            },
+            whileScrolling: function(){
+              console.log('SCROLLING...');
+              $('.mCSB_buttonUp').attr('style', 'pointer-events: none;');
+              $('.mCSB_buttonDown').attr('style', 'pointer-events: none;');
             },
             onTotalScroll: function(){
               $('.mCSB_buttonDown').addClass('disabled');
