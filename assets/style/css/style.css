@@ -4077,7 +4077,7 @@ small {
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; }
-    #hospitality .figcaption button {
+    #hospitality .figcaption button, #hospitality .figcaption a {
       float: right;
       margin-right: 16%; }
   #hospitality .figcaption-body {
