@@ -542,7 +542,8 @@ small {
     #footer .row._first .nav li:last-child a {
       padding-right: 0; }
     #footer .row._first .dropdown-menu {
-      padding-top: 0; }
+      padding-top: 0;
+      max-height: 200px; }
       #footer .row._first .dropdown-menu .mCSB_buttonUp {
         background-image: url("../../images/icon/oxf_arrow_scroll_up.svg");
         background-position: 0; }
