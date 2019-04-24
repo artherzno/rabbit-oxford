@@ -522,7 +522,6 @@ small {
 
 /* Footer ******************************************************************/
 #footer {
-  margin: -1px 0 0;
   background-color: #1f3052;
   position: relative;
   z-index: 1050; }
@@ -532,7 +531,7 @@ small {
       width: 100%;
       max-width: 268px; }
     #footer .row._first .nav li a {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
       color: #b4bed4; }
       #footer .row._first .nav li a.active {
@@ -3535,6 +3534,7 @@ small {
         transform: translateY(0); }
   #hospitality-page #getintouch, #strategy-page #getintouch, #demandgeneration-page #getintouch, #demandfulfillment-page #getintouch, #financialtransformation-page #getintouch, #organisationaloptimisation-page #getintouch {
     margin-top: -2px;
+    margin-bottom: -2px;
     opacity: 1; }
     #hospitality-page #getintouch .content, #strategy-page #getintouch .content, #demandgeneration-page #getintouch .content, #demandfulfillment-page #getintouch .content, #financialtransformation-page #getintouch .content, #organisationaloptimisation-page #getintouch .content {
       padding: 100px 0; }
