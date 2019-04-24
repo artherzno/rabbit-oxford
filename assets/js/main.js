@@ -524,6 +524,10 @@ $(document).ready(function(){
     classToggle('#locations-page .row_'+i, 0.8, '', '#locations-page .row_'+i+' .column', 'fade-in');
   }
 
+  classToggle('#locations-page .row_5', 0.8, '', '#locations-page .row_5 .column', 'fade-in');
+
+  classToggle('#locations-page .row_6', 0.8, '', '#locations-page .row_6 .column', 'fade-in');
+
 
   // Careers - banner ----------------------------------------- //
   classToggle('#careers-page', 0.8, '', '#careers-page .banner', 'fade-in');
