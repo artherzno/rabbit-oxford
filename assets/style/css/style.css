@@ -1190,12 +1190,12 @@ small {
       color: #000;
       width: auto;
       height: auto;
-      font: 400 20px/1 oswald, arial;
+      font: 400 20px/1.4 oswald, arial;
       display: block;
       text-transform: uppercase;
       background-color: transparent;
       opacity: 1;
-      padding: 10px 0;
+      padding: 5px 0;
       cursor: pointer; }
       #hospitality .carousel .carouselHospitality-indicators li.active, #hospitality .carousel .carouselHospitality-indicators li:hover {
         color: #f7d0cb;

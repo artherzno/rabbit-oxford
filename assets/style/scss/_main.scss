@@ -1021,12 +1021,12 @@ small {
         color: $black;
         width: auto;
         height: auto;
-        font: 400 20px/1 oswald, arial;
+        font: 400 20px/1.4 oswald, arial;
         display: block;
         text-transform: uppercase;
         background-color: transparent;
         opacity: 1;
-        padding: 10px 0;
+        padding: 5px 0;
         cursor: pointer;
 
         &.active, &:hover {
