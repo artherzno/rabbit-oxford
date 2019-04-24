@@ -1099,9 +1099,14 @@ small {
   }
 
   .content {
-    padding: 66% 0 0;
-    min-height: 800px;
+    // padding: 66% 0 0;
+    // min-height: 800px;
     float: right;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 580px;
 
     #accordionLocation-dt {
       margin-right: 20px;
@@ -1202,9 +1207,10 @@ small {
       clear: both;
     }
 
-    .div-location{
+    .div-location, .mCustomScrollbar {
       opacity: 0;
       @include transform(translateY(20%));
+      @include transition(all 0.5s ease-out);
     }
 
     .div-location {
@@ -1245,7 +1251,7 @@ small {
       //   opacity: 1;
       //   @include transform(translateY(0));
       // }
-      .div-location{
+      .div-location, .mCustomScrollbar {
         opacity: 1;
         @include transform(translateY(0));
       }
@@ -5410,9 +5416,10 @@ $breadcrumb-divider: quote(">");
     }
 
     .content {
-      padding: 10% 0 10%;
+      padding: 16% 0 10%;
       min-height: auto;
       float: none;
+      position: static;
 
       .oxford-mb {
         // margin-right: -10px;
@@ -7429,6 +7436,7 @@ $breadcrumb-divider: quote(">");
       padding: 10% 0 10% 10%;
       min-height: auto;
       float: none;
+      position: static;
 
       .oxford-mb {
         // margin-right: -10px;
@@ -8285,9 +8293,8 @@ $breadcrumb-divider: quote(">");
   }
 }
 
-
 /*** iPad Pro ***/
-@media (min-width: 1024px) and (max-width: 1366px) {
+@media (min-width: 1024px) and (min-height: 1366px) {
   #footer {
 
     .row {
@@ -8345,32 +8352,40 @@ $breadcrumb-divider: quote(">");
   }
 
   #locations {
-    height: 60vh;
 
-    .row {
+    &.fade-in {
+      height: 60vh;
 
-      .modal-area {
-        height: 60vh;
+      .row {
+
+        .modal-area {
+          height: 60vh;
+
+          .modal-dialog {
+            max-height: 62%;
+            max-width: 530px;
+            left: 10%;
+            right: auto;
+            top: 30%;
+          }
+        }
+
+        .modal-list {
+          height: 100%;
+        }
+      }
+
+      .modal {
 
         .modal-dialog {
           max-height: 62%;
           max-width: 530px;
           left: 10%;
           right: auto;
-          top: 30%;
         }
       }
     }
 
-    .modal {
-
-      .modal-dialog {
-        max-height: 62%;
-        max-width: 530px;
-        left: 10%;
-        right: auto;
-      }
-    }
   }
 
   #blog {
@@ -8389,6 +8404,16 @@ $breadcrumb-divider: quote(">");
         a {
           height: 512px;
         }
+      }
+    }
+  }
+
+  #getintouch {
+
+    .content {
+
+      p {
+        font-size: 23px;
       }
     }
   }
@@ -8533,7 +8558,6 @@ $breadcrumb-divider: quote(">");
 
 }
 
-
 /*** Desktop ****/
 @media (width: 800px) and (height: 600px) {
   nav {
@@ -8548,6 +8572,42 @@ $breadcrumb-divider: quote(">");
     .banner {
       height: 520px;
       background-size: cover;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #locations {
+    height: 100vh;
+
+    .row {
+
+      .modal-area {
+        height: 100vh;
+
+        .modal-dialog {
+          // left: 20%;
+          max-height: 42%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+  #locations {
+    height: 100vh;
+
+    .row {
+
+      .modal-area {
+        height: 100vh;
+
+        .modal-dialog {
+          // left: 20%;
+          // max-height: 68%;
+        }
+      }
     }
   }
 }
@@ -8660,6 +8720,26 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  #locations {
+    height: 100vh;
+
+    .content {
+      // padding-top: 50%;
+    }
+
+    .row {
+
+      .modal-area {
+        height: 100vh;
+
+        .modal-dialog {
+          // left: 20%;
+          max-height: 36%;
+        }
+      }
+    }
+  }
+
   #contactus-page {
 
     #contactus-form {
@@ -8677,6 +8757,29 @@ $breadcrumb-divider: quote(">");
               margin-right: 20px;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  #locations {
+    height: 100vh;
+
+    .content {
+      // padding-top: 50%;
+      height: 500px;
+    }
+
+    .row {
+
+      .modal-area {
+        height: 100vh;
+
+        .modal-dialog {
+          // left: 20%;
+          max-height: 28%;
         }
       }
     }
@@ -8744,6 +8847,19 @@ $breadcrumb-divider: quote(">");
         &.fade-in {
 
           @include transform(translateY(10%));
+        }
+      }
+    }
+  }
+
+  #locations {
+    .row {
+
+      .modal-area {
+
+        .modal-dialog {
+          left: 0;
+          max-height: 24%;
         }
       }
     }
