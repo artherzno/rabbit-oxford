@@ -238,7 +238,7 @@ small {
         li {
 
           a {
-            font-size: 13px;
+            font-size: 14px;
             font-weight: bold;
             color: #b4bed4;
 
@@ -1201,7 +1201,7 @@ small {
       margin: 0 0 20px auto;
       clear: both;
     }
-    
+
     .div-location{
       opacity: 0;
       @include transform(translateY(20%));
@@ -7004,6 +7004,7 @@ $breadcrumb-divider: quote(">");
         .nav {
 
           .nav-item {
+            font-size: 13px;
 
             &.oxford-mb {
               display: block !important;
@@ -8298,6 +8299,7 @@ $breadcrumb-divider: quote(">");
           li {
 
             a {
+              font-size: 13px;
               padding: 0.5rem;
             }
           }
@@ -8478,7 +8480,7 @@ $breadcrumb-divider: quote(">");
 
     .banner {
       height: 479px;
-      background-size: contain;
+      // background-size: contain;
 
       &.fade-in {
 
@@ -8538,6 +8540,14 @@ $breadcrumb-divider: quote(">");
 
     .navbar-nav-list {
       margin-top: 10%;
+    }
+  }
+
+  #team-page, #whyus-page, #careers-page, #contactus-page, #locations-page, #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+
+    .banner {
+      height: 520px;
+      background-size: cover;
     }
   }
 }

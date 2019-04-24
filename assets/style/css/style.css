@@ -531,7 +531,7 @@ small {
       width: 100%;
       max-width: 268px; }
     #footer .row._first .nav li a {
-      font-size: 13px;
+      font-size: 14px;
       font-weight: bold;
       color: #b4bed4; }
       #footer .row._first .nav li a.active {
@@ -4937,6 +4937,7 @@ small {
         width: 70%;
         margin: 0 auto; }
     #footer .row._first .nav .nav-item {
+      font-size: 13px;
       width: 100%;
       display: block;
       text-align: center;
@@ -5544,6 +5545,7 @@ small {
 /*** iPad Pro ***/
 @media (min-width: 1024px) and (max-width: 1366px) {
   #footer .row._first .nav li a {
+    font-size: 13px;
     padding: 0.5rem; }
   #banner {
     height: 92vh !important; }
@@ -5602,8 +5604,7 @@ small {
       max-height: none;
       display: inline-table; }
   #team-page .banner, #whyus-page .banner, #careers-page .banner, #contactus-page .banner, #locations-page .banner, #hospitality-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
-    height: 479px;
-    background-size: contain; }
+    height: 479px; }
     #team-page .banner.fade-in h1, #whyus-page .banner.fade-in h1, #careers-page .banner.fade-in h1, #contactus-page .banner.fade-in h1, #locations-page .banner.fade-in h1, #hospitality-page .banner.fade-in h1, #strategy-page .banner.fade-in h1, #demandgeneration-page .banner.fade-in h1, #demandfulfillment-page .banner.fade-in h1, #financialtransformation-page .banner.fade-in h1, #organisationaloptimisation-page .banner.fade-in h1 {
       font-size: 120px;
       bottom: 40px; }
@@ -5623,7 +5624,10 @@ small {
 /*** Desktop ****/
 @media (width: 800px) and (height: 600px) {
   nav .navbar-nav-list {
-    margin-top: 10%; } }
+    margin-top: 10%; }
+  #team-page .banner, #whyus-page .banner, #careers-page .banner, #contactus-page .banner, #locations-page .banner, #hospitality-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
+    height: 520px;
+    background-size: cover; } }
 
 @media (min-width: 1152px) {
   nav.navbar .navbar-nav li .nav-link {
