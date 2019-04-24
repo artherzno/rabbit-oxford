@@ -279,10 +279,10 @@ $(document).ready(function(){
     var $collapseBoxButtonParent = $(this).parent('.collapse').prev('.button-head');
     //
     if($thisAttr == 'true') {
-    console.log($thisAttr);
+    // console.log($thisAttr);
       $collapseBoxButtonParent.removeAttr('style', 'color: #fff').removeClass('sub-active');
     } else {
-    console.log($thisAttr);
+    // console.log($thisAttr);
       $collapseBoxButtonParent.attr('style', 'color: #fff').addClass('sub-active');
     }
   });
