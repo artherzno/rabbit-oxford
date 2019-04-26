@@ -430,7 +430,18 @@ $(document).ready(function(){
   classToggle('#locations', 0.85, '', '#locations', 'fade-in');
 
   // locations - content  ----------------------------------------- //
-  classToggle('#locations', 0.45, '', '#locations .content', 'fade-in');
+  classToggle('#locations', 0.7, '', '#locations .content', 'fade-in');
+
+  var locationsMobileRowAmount = $('#locations .content #accordionLocation-mb .item').length;
+  for(i=1; i<=locationsMobileRowAmount; i++) {
+    classToggle('#locations .content #accordionLocation-mb .item_'+i, 0.7, '', '#locations .content #accordionLocation-mb .item_'+i, 'fade-in');
+  }
+
+  var locationsDesktopRowAmount = $('#locations .content #accordionLocation-dt .item').length;
+  console.log(locationsDesktopRowAmount);
+  for(i=1; i<=locationsDesktopRowAmount; i++) {
+    classToggle('#locations .content #accordionLocation-dt .item_'+i, 0.7, '', '#locations .content #accordionLocation-dt .item_'+i, 'fade-in');
+  }
 
   // Blog ----------------------------------------- //
   classToggle('#blog', 0.70, '', '#blog', 'fade-in');

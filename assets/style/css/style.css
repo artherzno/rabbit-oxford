@@ -214,7 +214,8 @@ nav {
   border: none;
   width: 100%;
   text-align: center;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  max-height: none; }
   #footer .nav .oxford-mb #ft-navbar-practics-mb + .dropdown-menu .dropdown-item {
     border: none;
     font-weight: 400;
@@ -1318,7 +1319,7 @@ small {
       width: 24px;
       margin: 0 0 20px auto;
       clear: both; }
-    #locations .content .div-location, #locations .content .mCustomScrollbar {
+    #locations .content .div-location {
       opacity: 0;
       -webkit-transform: translateY(20%);
       -ms-transform: translateY(20%);
@@ -1356,13 +1357,27 @@ small {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-    #locations .content.fade-in .div-location, #locations .content.fade-in .mCustomScrollbar {
+    #locations .content.fade-in .div-location {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
     #locations .content #accordionLocation-mb button {
       float: none; }
+  #locations .item {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 1s ease-out 0.4s;
+    -ms-transition: all 1s ease-out 0.4s;
+    -o-transition: all 1s ease-out 0.4s;
+    transition: all 1s ease-out 0.4s; }
+    #locations .item.fade-in {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
   #locations .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     background-color: rgba(255, 255, 255, 0.25); }
   #locations .mCSB_scrollTools .mCSB_draggerRail {
@@ -4002,7 +4017,7 @@ small {
     font-size: 16px;
     margin: 86% 0 5%;
     width: 88%;
-    padding-left: 5%;
+    padding-left: 7%;
     overflow: hidden;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
@@ -4010,7 +4025,7 @@ small {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; }
   #whatwedo .figcaption .content button {
-    margin: 0 5%; }
+    margin: 0 7%; }
   #whatwedo .figure {
     position: absolute;
     padding-top: 40px;
@@ -4299,7 +4314,8 @@ small {
     #blogs-page .figure {
       /* For crop image */ }
       #blogs-page .figure.column {
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        height: 492px; }
       #blogs-page .figure .figure-img {
         width: 100%;
         height: 230px;
@@ -5075,7 +5091,7 @@ small {
         width: 100%; }
     #hospitality .figcaption p {
       float: right;
-      padding-right: 4%;
+      padding-right: 6%;
       padding-left: 19%;
       margin-bottom: 5%;
       overflow: hidden;
@@ -5086,7 +5102,7 @@ small {
       -webkit-box-orient: vertical; }
     #hospitality .figcaption button {
       float: right;
-      margin-right: 27%; }
+      margin-right: 20%; }
   #hospitality .figcaption-body {
     position: absolute;
     bottom: 7%;

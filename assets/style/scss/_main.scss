@@ -1207,7 +1207,7 @@ small {
       clear: both;
     }
 
-    .div-location, .mCustomScrollbar {
+    .div-location {
       opacity: 0;
       @include transform(translateY(20%));
       @include transition(all 0.5s ease-out);
@@ -1251,7 +1251,7 @@ small {
       //   opacity: 1;
       //   @include transform(translateY(0));
       // }
-      .div-location, .mCustomScrollbar {
+      .div-location {
         opacity: 1;
         @include transform(translateY(0));
       }
@@ -1262,6 +1262,17 @@ small {
       button {
         float: none;
       }
+    }
+  }
+
+  .item {
+    opacity: 0;
+    @include transform(translateY(50%));
+    @include transition(all 1s ease-out 0.4s);
+
+    &.fade-in {
+      opacity: 1;
+      @include transform(translateY(0));
     }
   }
 
@@ -5149,7 +5160,7 @@ $breadcrumb-divider: quote(">");
           font-size: 16px;
           margin: 86% 0 5%;
           width: 88%;
-          padding-left: 5%;
+          padding-left: 7%;
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
@@ -5158,7 +5169,7 @@ $breadcrumb-divider: quote(">");
         }
 
         button {
-          margin: 0 5%;
+          margin: 0 7%;
         }
       }
     }
@@ -5734,6 +5745,7 @@ $breadcrumb-divider: quote(">");
 
       &.column {
         margin-bottom: 30px;
+        height: 492px;
       }
 
       /* For crop image */
@@ -7262,7 +7274,7 @@ $breadcrumb-divider: quote(">");
       p {
         // font-size: 16px;
         float: right;
-        padding-right: 4%;
+        padding-right: 6%;
         padding-left: 19%;
         margin-bottom: 5%;
         overflow: hidden;
@@ -7274,7 +7286,7 @@ $breadcrumb-divider: quote(">");
 
       button {
         float: right;
-        margin-right: 27%;
+        margin-right: 20%;
       }
     }
 
