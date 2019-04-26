@@ -864,7 +864,7 @@ small {
       -webkit-transform: translateY(50%);
       -ms-transform: translateY(50%);
       transform: translateY(50%); }
-    #whatwedo .figcaption .content .buttonRow {
+    #whatwedo .figcaption .content .buttonRow, #whatwedo .figcaption .content a {
       opacity: 0;
       -webkit-transform: translateY(200%);
       -ms-transform: translateY(200%);
@@ -895,7 +895,7 @@ small {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0); }
-      #whatwedo .figcaption .content.fade-in .buttonRow {
+      #whatwedo .figcaption .content.fade-in .buttonRow, #whatwedo .figcaption .content.fade-in a {
         opacity: 1;
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -4021,7 +4021,7 @@ small {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; }
-  #whatwedo .figcaption .content button {
+  #whatwedo .figcaption .content button, #whatwedo .figcaption .content a {
     margin: 0 7%; }
   #whatwedo .figure {
     position: absolute;
@@ -5029,7 +5029,7 @@ small {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; }
-  #whatwedo .figcaption .content button {
+  #whatwedo .figcaption .content button, #whatwedo .figcaption .content a {
     margin: 0 9%; }
   #whatwedo .figure {
     position: absolute;

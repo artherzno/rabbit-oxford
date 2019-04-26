@@ -662,7 +662,7 @@ small {
         @include transform(translateY(50%));
       }
 
-      .buttonRow {
+      .buttonRow, a {
         opacity: 0;
         @include transform(translateY(200%));
         @include transition(transform 0.8s ease-out 1.6s);
@@ -680,7 +680,7 @@ small {
           @include transform(translateY(0));
         }
 
-        .buttonRow {
+        .buttonRow, a {
           opacity: 1;
           @include transform(translateY(0));
         }
@@ -5169,7 +5169,7 @@ $breadcrumb-divider: quote(">");
           -webkit-box-orient: vertical;
         }
 
-        button {
+        button, a {
           margin: 0 7%;
         }
       }
@@ -7166,7 +7166,7 @@ $breadcrumb-divider: quote(">");
           -webkit-box-orient: vertical;
         }
 
-        button {
+        button, a {
           margin: 0 9%;
         }
       }
