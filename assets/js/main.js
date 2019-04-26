@@ -13,6 +13,12 @@ $(document).ready(function(){
 
   // Detect Orientation change /////////////////////////////////////////////////
   function orientationScreen() {
+    if(window.orientation == 0 || window.orientation == undefined) {
+      $('.dontOrientation').removeClass('show');
+    } else {
+      $('.dontOrientation').addClass('show');
+    }
+
     window.addEventListener("orientationchange", function() {
       // console.log(window.orientation);
       if(window.orientation == 0 || window.orientation == undefined) {
@@ -22,7 +28,23 @@ $(document).ready(function(){
       }
     }, false);
   }
-  orientationScreen();
+  // orientationScreen();
+
+  function detectMobileTablet() {
+   if( navigator.userAgent.match(/Android/i)
+   || navigator.userAgent.match(/webOS/i)
+   || navigator.userAgent.match(/iPhone/i)
+   || navigator.userAgent.match(/iPad/i)
+   || navigator.userAgent.match(/iPod/i)
+   || navigator.userAgent.match(/BlackBerry/i)
+   || navigator.userAgent.match(/Windows Phone/i)
+   ){
+      // console.log('true');
+      // console.log(navigator.userAgent);
+      orientationScreen();
+    }
+  }
+  detectMobileTablet();
 
   // Animate Brain /////////////////////////////////////////////////////////////
   var brain = $(".brain"),
@@ -438,7 +460,6 @@ $(document).ready(function(){
   }
 
   var locationsDesktopRowAmount = $('#locations .content #accordionLocation-dt .item').length;
-  console.log(locationsDesktopRowAmount);
   for(i=1; i<=locationsDesktopRowAmount; i++) {
     classToggle('#locations .content #accordionLocation-dt .item_'+i, 0.7, '', '#locations .content #accordionLocation-dt .item_'+i, 'fade-in');
   }
