@@ -253,9 +253,6 @@ h2 {
 h3 {
   font: 600 24px/1.2 oswald, arial; }
 
-h2, h3, p {
-  word-break: break-word; }
-
 textarea, input[type="text"], input[type="password"], input[type="email"], select, .form-control-field {
   border-radius: 0;
   resize: none;
@@ -3418,7 +3415,7 @@ small {
         position: absolute; }
         #hospitality-page .content .row .column._left, #strategy-page .content .row .column._left, #demandgeneration-page .content .row .column._left, #demandfulfillment-page .content .row .column._left, #financialtransformation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left {
           left: 0;
-          padding: 6% 1% 5% 6%;
+          padding: 6% 1% 5% 4%;
           z-index: 1;
           position: static; }
         #hospitality-page .content .row .column._right, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._right, #financialtransformation-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right {
@@ -3452,7 +3449,7 @@ small {
         transition: all 0.8s ease-out 0.6s; }
       #hospitality-page .content .row img, #strategy-page .content .row img, #demandgeneration-page .content .row img, #demandfulfillment-page .content .row img, #financialtransformation-page .content .row img, #organisationaloptimisation-page .content .row img {
         width: 80%;
-        margin: 10px 50px 0 0;
+        margin: 10px 30px 0 0;
         opacity: 0;
         -webkit-transform: translateY(20%);
         -ms-transform: translateY(20%);
@@ -5571,7 +5568,7 @@ small {
 /*** iPad Pro ***/
 @media (min-width: 1024px) and (min-height: 1366px) {
   #footer .row._first .nav li a {
-    font-size: 13px;
+    font-size: 14px;
     padding: 0.5rem; }
   #banner {
     height: 92vh !important; }
@@ -5628,6 +5625,8 @@ small {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 66.66%;
     flex: 0 0 66.66%; }
+  #hospitality-page .feasibility-section, #hospitality-page .development-section, #hospitality-page .operational-section {
+    margin: -1px 0; }
   #hospitality-page .roles-section {
     margin-top: -1px; }
     #hospitality-page .roles-section .column.col_1, #hospitality-page .roles-section .column.col_3 {
@@ -5799,6 +5798,21 @@ small {
 
 .ie #locations .modal .modal-dialog {
   width: 600px; }
+
+.ie #blog #carouselBlog .item a {
+  height: 642px;
+  width: 100%;
+  position: relative; }
+
+.ie #blogs-page .blogs-list a {
+  height: 642px;
+  width: 100%;
+  position: relative; }
+
+.ie #blogsdetail-page .related .item a {
+  height: 642px;
+  width: 100%;
+  position: relative; }
 
 .ie #careers-page #careers-apply-form .section-apply .uploadname #filetouploadname {
   width: 100%;

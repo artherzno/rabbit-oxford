@@ -7,6 +7,7 @@ body {
   color: $white;
   font: 20px/1.2 arial;
   -moz-osx-font-smoothing: grayscale;
+  // word-spacing: normal;
 }
 
 * {
@@ -40,7 +41,7 @@ h3 {
 }
 
 h2, h3, p {
-  word-break: break-word;
+  // word-break: break-word;
 }
 
 textarea, input[type="text"], input[type="password"], input[type="email"], select, .form-control-field {
@@ -3955,7 +3956,7 @@ small {
 
         &._left {
           left: 0;
-          padding: 6% 1% 5% 6%;
+          padding: 6% 1% 5% 4%;
           z-index: 1;
           position: static;
         }
@@ -3990,7 +3991,7 @@ small {
 
       img {
         width: 80%;
-        margin: 10px 50px 0 0;
+        margin: 10px 30px 0 0;
         opacity: 0;
         @include transform(translateY(20%));
         @include transition(all 0.8s ease-out 0.9s);
@@ -8318,7 +8319,7 @@ $breadcrumb-divider: quote(">");
           li {
 
             a {
-              font-size: 13px;
+              font-size: 14px;
               padding: 0.5rem;
             }
           }
@@ -8500,6 +8501,10 @@ $breadcrumb-divider: quote(">");
   }
 
   #hospitality-page {
+    .feasibility-section, .development-section, .operational-section {
+      margin: -1px 0;
+    }
+
     .roles-section {
       margin-top: -1px;
 
@@ -8944,6 +8949,8 @@ $breadcrumb-divider: quote(">");
 
       &._first {
 
+        .nav-link {}
+
         .dropdown-menu {
           max-height: 198px;
           overflow: auto;
@@ -8996,6 +9003,48 @@ $breadcrumb-divider: quote(">");
 
       .modal-dialog {
         width: 600px;
+      }
+    }
+  }
+
+  #blog {
+
+    #carouselBlog {
+
+      .item {
+
+        a {
+          height: 642px;
+          width: 100%;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  #blogs-page {
+
+    .blogs-list {
+
+      a {
+        height: 642px;
+        width: 100%;
+        position: relative;
+      }
+    }
+  }
+
+  #blogsdetail-page {
+
+    .related {
+
+      .item {
+
+        a {
+          height: 642px;
+          width: 100%;
+          position: relative;
+        }
       }
     }
   }
