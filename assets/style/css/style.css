@@ -84,7 +84,7 @@ nav {
         transform-origin: 0 50%; }
     nav li.nav-item a.nav-link:after {
       position: absolute;
-      top: 34%; }
+      top: 6px; }
   nav li.nav-item:last-child a.nav-link {
     margin-right: 0; }
   nav hr {
@@ -112,7 +112,7 @@ nav {
       background: none;
       background-color: #1f3052; }
   nav .navbar-collapse .nav.navbar-nav li.nav-item:after {
-    top: 34%; }
+    top: 6px; }
   nav .navbar-collapse .nav.navbar-nav li.nav-item.dropdown:hover .dropdown-menu {
     display: block;
     border: 1px solid #f4f4f4; }
@@ -5678,8 +5678,6 @@ small {
     margin-right: 3px; }
     nav.navbar .navbar-nav li .nav-link:after {
       right: -3px; }
-    nav.navbar .navbar-nav li .nav-link.active:after {
-      top: 20%; }
     nav.navbar .navbar-nav li .nav-link.dropdown-toggle {
       margin-right: 3px; }
   #footer .nav-link {
