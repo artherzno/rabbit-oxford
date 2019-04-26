@@ -1065,7 +1065,7 @@ small {
       -webkit-transform: translateY(20%);
       -ms-transform: translateY(20%);
       transform: translateY(20%); }
-    #hospitality .figcaption .buttonRow {
+    #hospitality .figcaption .buttonRow, #hospitality .figcaption a {
       float: right;
       clear: both;
       opacity: 0;
@@ -1093,7 +1093,7 @@ small {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-    #hospitality .figcaption.fade-in .buttonRow {
+    #hospitality .figcaption.fade-in .buttonRow, #hospitality .figcaption.fade-in a {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
@@ -5097,7 +5097,7 @@ small {
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; }
-    #hospitality .figcaption button {
+    #hospitality .figcaption button, #hospitality .figcaption a {
       float: right;
       margin-right: 20%; }
   #hospitality .figcaption-body {
