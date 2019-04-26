@@ -5022,7 +5022,7 @@ small {
     font-size: 24px;
     margin: 86% 0 5%;
     width: 88%;
-    padding-left: 5%;
+    padding-left: 9%;
     overflow: hidden;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
@@ -5030,7 +5030,7 @@ small {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; }
   #whatwedo .figcaption .content button {
-    margin: 0 5%; }
+    margin: 0 9%; }
   #whatwedo .figure {
     position: absolute;
     left: 0;
