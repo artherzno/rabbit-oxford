@@ -253,6 +253,12 @@ h2 {
 h3 {
   font: 600 24px/1.2 oswald, arial; }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important; }
+
 textarea, input[type="text"], input[type="password"], input[type="email"], select, .form-control-field {
   border-radius: 0;
   resize: none;
@@ -279,7 +285,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff; }
+  background-color: #fff !important; }
 
 input.form-control-field {
   height: 50px; }
@@ -3356,32 +3362,33 @@ small {
   transition: all 0.8s ease-out 0.6s; }
 
 #strategy-page .banner {
-  background: url("../../images/strategy/oxf_bg_banner.jpg") no-repeat; }
+  background-image: url("../../images/strategy/oxf_bg_banner.jpg"); }
 
 #demandgeneration-page .banner {
-  background: url("../../images/demandgeneration/oxf_bg_banner.jpg") no-repeat; }
+  background-image: url("../../images/demandgeneration/oxf_bg_banner.jpg"); }
 
 #demandfulfillment-page .banner {
-  background: url("../../images/demandfulfillment/oxf_bg_banner.jpg") no-repeat; }
+  background-image: url("../../images/demandfulfillment/oxf_bg_banner.jpg"); }
 
 #organisationaloptimisation-page .banner {
-  background: url("../../images/organisationaloptimisation/oxf_bg_banner.jpg") no-repeat; }
+  background-image: url("../../images/organisationaloptimisation/oxf_bg_banner.jpg"); }
 
 #financialtransformation-page .banner {
-  background: url("../../images/financialtransformation/oxf_bg_banner.jpg") no-repeat; }
+  background-image: url("../../images/financialtransformation/oxf_bg_banner.jpg"); }
 
-#hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+.practics-page {
   background-color: #fff; }
-  #hospitality-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
+  .practics-page .banner {
     width: 100%;
     height: 890px;
     background-size: cover;
-    background-position: center center; }
-    #hospitality-page .banner .container, #strategy-page .banner .container, #demandgeneration-page .banner .container, #demandfulfillment-page .banner .container, #financialtransformation-page .banner .container, #organisationaloptimisation-page .banner .container {
+    background-position: center center;
+    background-repeat: no-repeat; }
+    .practics-page .banner .container {
       position: relative;
       width: 100%;
       height: 100%; }
-      #hospitality-page .banner .container h1, #strategy-page .banner .container h1, #demandgeneration-page .banner .container h1, #demandfulfillment-page .banner .container h1, #financialtransformation-page .banner .container h1, #organisationaloptimisation-page .banner .container h1 {
+      .practics-page .banner .container h1 {
         font: 600 140px/1.2 oswald, arial;
         color: rgba(255, 255, 255, 0.2);
         position: absolute;
@@ -3399,29 +3406,29 @@ small {
         -ms-transition: all 0.8s ease-out;
         -o-transition: all 0.8s ease-out;
         transition: all 0.8s ease-out; }
-    #hospitality-page .banner.fade-in h1, #strategy-page .banner.fade-in h1, #demandgeneration-page .banner.fade-in h1, #demandfulfillment-page .banner.fade-in h1, #financialtransformation-page .banner.fade-in h1, #organisationaloptimisation-page .banner.fade-in h1 {
+    .practics-page .banner.fade-in h1 {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-  #hospitality-page .content, #strategy-page .content, #demandgeneration-page .content, #demandfulfillment-page .content, #financialtransformation-page .content, #organisationaloptimisation-page .content {
+  .practics-page .content {
     position: relative;
     z-index: 2; }
-    #hospitality-page .content .row, #strategy-page .content .row, #demandgeneration-page .content .row, #demandfulfillment-page .content .row, #financialtransformation-page .content .row, #organisationaloptimisation-page .content .row {
+    .practics-page .content .row {
       height: 100%;
       position: relative;
       min-height: 520px; }
-      #hospitality-page .content .row .column, #strategy-page .content .row .column, #demandgeneration-page .content .row .column, #demandfulfillment-page .content .row .column, #financialtransformation-page .content .row .column, #organisationaloptimisation-page .content .row .column {
+      .practics-page .content .row .column {
         position: absolute; }
-        #hospitality-page .content .row .column._left, #strategy-page .content .row .column._left, #demandgeneration-page .content .row .column._left, #demandfulfillment-page .content .row .column._left, #financialtransformation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left {
+        .practics-page .content .row .column._left {
           left: 0;
           padding: 6% 1% 5% 4%;
           z-index: 1;
           position: static; }
-        #hospitality-page .content .row .column._right, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._right, #financialtransformation-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right {
+        .practics-page .content .row .column._right {
           text-align: right;
           right: 0; }
-      #hospitality-page .content .row h1, #strategy-page .content .row h1, #demandgeneration-page .content .row h1, #demandfulfillment-page .content .row h1, #financialtransformation-page .content .row h1, #organisationaloptimisation-page .content .row h1 {
+      .practics-page .content .row h1 {
         color: #1f3052;
         margin-bottom: 47px;
         opacity: 0;
@@ -3432,11 +3439,11 @@ small {
         -ms-transition: all 0.8s ease-out 0.3s;
         -o-transition: all 0.8s ease-out 0.3s;
         transition: all 0.8s ease-out 0.3s; }
-        #hospitality-page .content .row h1.number, #strategy-page .content .row h1.number, #demandgeneration-page .content .row h1.number, #demandfulfillment-page .content .row h1.number, #financialtransformation-page .content .row h1.number, #organisationaloptimisation-page .content .row h1.number {
+        .practics-page .content .row h1.number {
           font-size: 100px;
           margin-bottom: 14px;
           color: #f7d0cb; }
-      #hospitality-page .content .row p, #strategy-page .content .row p, #demandgeneration-page .content .row p, #demandfulfillment-page .content .row p, #financialtransformation-page .content .row p, #organisationaloptimisation-page .content .row p {
+      .practics-page .content .row p {
         font-size: 20px;
         color: #000;
         opacity: 0;
@@ -3447,7 +3454,7 @@ small {
         -ms-transition: all 0.8s ease-out 0.6s;
         -o-transition: all 0.8s ease-out 0.6s;
         transition: all 0.8s ease-out 0.6s; }
-      #hospitality-page .content .row img, #strategy-page .content .row img, #demandgeneration-page .content .row img, #demandfulfillment-page .content .row img, #financialtransformation-page .content .row img, #organisationaloptimisation-page .content .row img {
+      .practics-page .content .row img {
         width: 80%;
         margin: 10px 30px 0 0;
         opacity: 0;
@@ -3458,12 +3465,12 @@ small {
         -ms-transition: all 0.8s ease-out 0.9s;
         -o-transition: all 0.8s ease-out 0.9s;
         transition: all 0.8s ease-out 0.9s; }
-    #hospitality-page .content.fade-in .breadcrumb, #hospitality-page .content.fade-in h1, #hospitality-page .content.fade-in p, #hospitality-page .content.fade-in img, #strategy-page .content.fade-in .breadcrumb, #strategy-page .content.fade-in h1, #strategy-page .content.fade-in p, #strategy-page .content.fade-in img, #demandgeneration-page .content.fade-in .breadcrumb, #demandgeneration-page .content.fade-in h1, #demandgeneration-page .content.fade-in p, #demandgeneration-page .content.fade-in img, #demandfulfillment-page .content.fade-in .breadcrumb, #demandfulfillment-page .content.fade-in h1, #demandfulfillment-page .content.fade-in p, #demandfulfillment-page .content.fade-in img, #financialtransformation-page .content.fade-in .breadcrumb, #financialtransformation-page .content.fade-in h1, #financialtransformation-page .content.fade-in p, #financialtransformation-page .content.fade-in img, #organisationaloptimisation-page .content.fade-in .breadcrumb, #organisationaloptimisation-page .content.fade-in h1, #organisationaloptimisation-page .content.fade-in p, #organisationaloptimisation-page .content.fade-in img {
+    .practics-page .content.fade-in .breadcrumb, .practics-page .content.fade-in h1, .practics-page .content.fade-in p, .practics-page .content.fade-in img {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-  #hospitality-page .breadcrumb, #strategy-page .breadcrumb, #demandgeneration-page .breadcrumb, #demandfulfillment-page .breadcrumb, #financialtransformation-page .breadcrumb, #organisationaloptimisation-page .breadcrumb {
+  .practics-page .breadcrumb {
     margin: 70px 0 60px;
     opacity: 0;
     -webkit-transform: translateY(50%);
@@ -3473,9 +3480,9 @@ small {
     -ms-transition: all 0.8s ease-out;
     -o-transition: all 0.8s ease-out;
     transition: all 0.8s ease-out; }
-    #hospitality-page .breadcrumb .breadcrumb-item.active, #strategy-page .breadcrumb .breadcrumb-item.active, #demandgeneration-page .breadcrumb .breadcrumb-item.active, #demandfulfillment-page .breadcrumb .breadcrumb-item.active, #financialtransformation-page .breadcrumb .breadcrumb-item.active, #organisationaloptimisation-page .breadcrumb .breadcrumb-item.active {
+    .practics-page .breadcrumb .breadcrumb-item.active {
       color: #1f3052; }
-  #hospitality-page .carousel-section, #strategy-page .carousel-section, #demandgeneration-page .carousel-section, #demandfulfillment-page .carousel-section, #financialtransformation-page .carousel-section, #organisationaloptimisation-page .carousel-section {
+  .practics-page .carousel-section {
     width: 100%;
     background: url("../../images/demandfulfillment/oxf_bg_content.jpg") no-repeat;
     background-size: cover;
@@ -3489,12 +3496,12 @@ small {
     -ms-transition: all 0.8s ease-out;
     -o-transition: all 0.8s ease-out;
     transition: all 0.8s ease-out; }
-    #hospitality-page .carousel-section .carousel, #strategy-page .carousel-section .carousel, #demandgeneration-page .carousel-section .carousel, #demandfulfillment-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel {
+    .practics-page .carousel-section .carousel {
       width: 100%;
       height: auto; }
-      #hospitality-page .carousel-section .carousel .carousel-item, #strategy-page .carousel-section .carousel .carousel-item, #demandgeneration-page .carousel-section .carousel .carousel-item, #demandfulfillment-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item {
+      .practics-page .carousel-section .carousel .carousel-item {
         padding: 15% 0 12%; }
-        #hospitality-page .carousel-section .carousel .carousel-item .row.row_1, #strategy-page .carousel-section .carousel .carousel-item .row.row_1, #demandgeneration-page .carousel-section .carousel .carousel-item .row.row_1, #demandfulfillment-page .carousel-section .carousel .carousel-item .row.row_1, #financialtransformation-page .carousel-section .carousel .carousel-item .row.row_1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row.row_1 {
+        .practics-page .carousel-section .carousel .carousel-item .row.row_1 {
           opacity: 0;
           -webkit-transform: translateY(50%);
           -ms-transform: translateY(50%);
@@ -3503,7 +3510,7 @@ small {
           -ms-transition: all 0.8s ease-out 0.3s;
           -o-transition: all 0.8s ease-out 0.3s;
           transition: all 0.8s ease-out 0.3s; }
-        #hospitality-page .carousel-section .carousel .carousel-item .row.row_2, #strategy-page .carousel-section .carousel .carousel-item .row.row_2, #demandgeneration-page .carousel-section .carousel .carousel-item .row.row_2, #demandfulfillment-page .carousel-section .carousel .carousel-item .row.row_2, #financialtransformation-page .carousel-section .carousel .carousel-item .row.row_2, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row.row_2 {
+        .practics-page .carousel-section .carousel .carousel-item .row.row_2 {
           opacity: 0;
           -webkit-transform: translateY(50%);
           -ms-transform: translateY(50%);
@@ -3512,62 +3519,62 @@ small {
           -ms-transition: all 0.8s ease-out 0.6s;
           -o-transition: all 0.8s ease-out 0.6s;
           transition: all 0.8s ease-out 0.6s; }
-        #hospitality-page .carousel-section .carousel .carousel-item .row:last-child, #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child {
+        .practics-page .carousel-section .carousel .carousel-item .row:last-child {
           margin-top: 160px; }
-        #hospitality-page .carousel-section .carousel .carousel-item .row h1, #strategy-page .carousel-section .carousel .carousel-item .row h1, #demandgeneration-page .carousel-section .carousel .carousel-item .row h1, #demandfulfillment-page .carousel-section .carousel .carousel-item .row h1, #financialtransformation-page .carousel-section .carousel .carousel-item .row h1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row h1 {
+        .practics-page .carousel-section .carousel .carousel-item .row h1 {
           font-size: 45px;
           line-height: 1.2; }
-        #hospitality-page .carousel-section .carousel .carousel-item .row p, #strategy-page .carousel-section .carousel .carousel-item .row p, #demandgeneration-page .carousel-section .carousel .carousel-item .row p, #demandfulfillment-page .carousel-section .carousel .carousel-item .row p, #financialtransformation-page .carousel-section .carousel .carousel-item .row p, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row p {
+        .practics-page .carousel-section .carousel .carousel-item .row p {
           font-size: 20px;
           line-height: 1; }
-      #hospitality-page .carousel-section .carousel .carouselHospitality-indicators li, #strategy-page .carousel-section .carousel .carouselHospitality-indicators li, #demandgeneration-page .carousel-section .carousel .carouselHospitality-indicators li, #demandfulfillment-page .carousel-section .carousel .carouselHospitality-indicators li, #financialtransformation-page .carousel-section .carousel .carouselHospitality-indicators li, #organisationaloptimisation-page .carousel-section .carousel .carouselHospitality-indicators li {
+      .practics-page .carousel-section .carousel .carouselHospitality-indicators li {
         width: 10px;
         height: 10px;
         border-radius: 50%;
         margin: 0 8px;
         opacity: 0.3; }
-        #hospitality-page .carousel-section .carousel .carouselHospitality-indicators li.active, #strategy-page .carousel-section .carousel .carouselHospitality-indicators li.active, #demandgeneration-page .carousel-section .carousel .carouselHospitality-indicators li.active, #demandfulfillment-page .carousel-section .carousel .carouselHospitality-indicators li.active, #financialtransformation-page .carousel-section .carousel .carouselHospitality-indicators li.active, #organisationaloptimisation-page .carousel-section .carousel .carouselHospitality-indicators li.active {
+        .practics-page .carousel-section .carousel .carouselHospitality-indicators li.active {
           opacity: 1; }
-    #hospitality-page .carousel-section .carouselHospitality-indicators, #strategy-page .carousel-section .carouselHospitality-indicators, #demandgeneration-page .carousel-section .carouselHospitality-indicators, #demandfulfillment-page .carousel-section .carouselHospitality-indicators, #financialtransformation-page .carousel-section .carouselHospitality-indicators, #organisationaloptimisation-page .carousel-section .carouselHospitality-indicators {
+    .practics-page .carousel-section .carouselHospitality-indicators {
       bottom: 68px; }
-    #hospitality-page .carousel-section .carousel-indicators, #strategy-page .carousel-section .carousel-indicators, #demandgeneration-page .carousel-section .carousel-indicators, #demandfulfillment-page .carousel-section .carousel-indicators, #financialtransformation-page .carousel-section .carousel-indicators, #organisationaloptimisation-page .carousel-section .carousel-indicators {
+    .practics-page .carousel-section .carousel-indicators {
       bottom: 2rem; }
-    #hospitality-page .carousel-section .carousel-control-prev, #strategy-page .carousel-section .carousel-control-prev, #demandgeneration-page .carousel-section .carousel-control-prev, #demandfulfillment-page .carousel-section .carousel-control-prev, #financialtransformation-page .carousel-section .carousel-control-prev, #organisationaloptimisation-page .carousel-section .carousel-control-prev {
+    .practics-page .carousel-section .carousel-control-prev {
       left: 0%;
       width: 5%; }
-      #hospitality-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #strategy-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #demandgeneration-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #demandfulfillment-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #financialtransformation-page .carousel-section .carousel-control-prev .carousel-control-prev-icon, #organisationaloptimisation-page .carousel-section .carousel-control-prev .carousel-control-prev-icon {
+      .practics-page .carousel-section .carousel-control-prev .carousel-control-prev-icon {
         background-image: url("../../images/icon/oxf_arrow_l.png");
         width: 43px;
         height: 81px; }
-    #hospitality-page .carousel-section .carousel-control-next, #strategy-page .carousel-section .carousel-control-next, #demandgeneration-page .carousel-section .carousel-control-next, #demandfulfillment-page .carousel-section .carousel-control-next, #financialtransformation-page .carousel-section .carousel-control-next, #organisationaloptimisation-page .carousel-section .carousel-control-next {
+    .practics-page .carousel-section .carousel-control-next {
       right: 0%;
       width: 5%; }
-      #hospitality-page .carousel-section .carousel-control-next .carousel-control-next-icon, #strategy-page .carousel-section .carousel-control-next .carousel-control-next-icon, #demandgeneration-page .carousel-section .carousel-control-next .carousel-control-next-icon, #demandfulfillment-page .carousel-section .carousel-control-next .carousel-control-next-icon, #financialtransformation-page .carousel-section .carousel-control-next .carousel-control-next-icon, #organisationaloptimisation-page .carousel-section .carousel-control-next .carousel-control-next-icon {
+      .practics-page .carousel-section .carousel-control-next .carousel-control-next-icon {
         background-image: url("../../images/icon/oxf_arrow_r.png");
         width: 43px;
         height: 81px; }
-    #hospitality-page .carousel-section.fade-in, #strategy-page .carousel-section.fade-in, #demandgeneration-page .carousel-section.fade-in, #demandfulfillment-page .carousel-section.fade-in, #financialtransformation-page .carousel-section.fade-in, #organisationaloptimisation-page .carousel-section.fade-in {
+    .practics-page .carousel-section.fade-in {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-      #hospitality-page .carousel-section.fade-in .carousel .carousel-item .row_1, #hospitality-page .carousel-section.fade-in .carousel .carousel-item .row_2, #strategy-page .carousel-section.fade-in .carousel .carousel-item .row_1, #strategy-page .carousel-section.fade-in .carousel .carousel-item .row_2, #demandgeneration-page .carousel-section.fade-in .carousel .carousel-item .row_1, #demandgeneration-page .carousel-section.fade-in .carousel .carousel-item .row_2, #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row_1, #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row_2, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row_1, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row_2, #organisationaloptimisation-page .carousel-section.fade-in .carousel .carousel-item .row_1, #organisationaloptimisation-page .carousel-section.fade-in .carousel .carousel-item .row_2 {
+      .practics-page .carousel-section.fade-in .carousel .carousel-item .row_1, .practics-page .carousel-section.fade-in .carousel .carousel-item .row_2 {
         opacity: 1;
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0); }
-  #hospitality-page #getintouch, #strategy-page #getintouch, #demandgeneration-page #getintouch, #demandfulfillment-page #getintouch, #financialtransformation-page #getintouch, #organisationaloptimisation-page #getintouch {
+  .practics-page #getintouch {
     margin-top: -2px;
     margin-bottom: -2px;
     opacity: 1; }
-    #hospitality-page #getintouch .content, #strategy-page #getintouch .content, #demandgeneration-page #getintouch .content, #demandfulfillment-page #getintouch .content, #financialtransformation-page #getintouch .content, #organisationaloptimisation-page #getintouch .content {
+    .practics-page #getintouch .content {
       padding: 100px 0; }
-    #hospitality-page #getintouch.fade-in p, #strategy-page #getintouch.fade-in p, #demandgeneration-page #getintouch.fade-in p, #demandfulfillment-page #getintouch.fade-in p, #financialtransformation-page #getintouch.fade-in p, #organisationaloptimisation-page #getintouch.fade-in p {
+    .practics-page #getintouch.fade-in p {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-    #hospitality-page #getintouch p, #strategy-page #getintouch p, #demandgeneration-page #getintouch p, #demandfulfillment-page #getintouch p, #financialtransformation-page #getintouch p, #organisationaloptimisation-page #getintouch p {
+    .practics-page #getintouch p {
       opacity: 0;
       -webkit-transform: translateY(20%);
       -ms-transform: translateY(20%);
@@ -3774,14 +3781,10 @@ small {
 /* Responsive *****************************************************************/
 /*** Mobile - small ***/
 @media (max-width: 320px) {
-  #hospitality-page .carousel-section.fade-in .carousel, #demandgeneration-page .carousel-section.fade-in .carousel, #demandfulfillment-page .carousel-section.fade-in .carousel, #financialtransformation-page .carousel-section.fade-in .carousel, #organisationaloptimisation-page .carousel-section.fade-in .carousel {
+  .practics-page .carousel-section.fade-in .carousel {
     padding-top: 15%; }
-  #hospitality-page .content.fade-in .container .row .column._right, #demandgeneration-page .content.fade-in .container .row .column._right, #demandfulfillment-page .content.fade-in .container .row .column._right, #financialtransformation-page .content.fade-in .container .row .column._right, #organisationaloptimisation-page .content.fade-in .container .row .column._right {
-    bottom: -180px; }
-  #hospitality-page .content.fade-in .container .row .column._right {
-    bottom: -180px; }
-  #strategy-page .content.fade-in .container .row .column._right {
-    bottom: -130px; } }
+  .practics-page .content.fade-in .container .row .column._right {
+    bottom: -180px; } }
 
 @media (max-width: 360px) {
   nav .navbar-collapse.show .nav li.nav-item a.nav-link:after {
@@ -3810,28 +3813,28 @@ small {
     width: 84%; }
   #careers-page #careers-apply-form .section-apply .uploadname input#deluploadname, #careersdetail-page #careers-apply-form .section-apply .uploadname input#deluploadname {
     right: auto; }
-  #hospitality-page.h-one-line .content, #strategy-page.h-one-line .content, #demandgeneration-page.h-one-line .content, #demandfulfillment-page.h-one-line .content, #financialtransformation-page.h-one-line .content, #organisationaloptimisation-page.h-one-line .content {
+  .practics-page.h-one-line .content {
     padding-bottom: 6%; }
-    #hospitality-page.h-one-line .content .row .column img, #strategy-page.h-one-line .content .row .column img, #demandgeneration-page.h-one-line .content .row .column img, #demandfulfillment-page.h-one-line .content .row .column img, #financialtransformation-page.h-one-line .content .row .column img, #organisationaloptimisation-page.h-one-line .content .row .column img {
+    .practics-page.h-one-line .content .row .column img {
       padding-top: 58%; }
-  #hospitality-page .banner.fade-in .container h1, #strategy-page .banner.fade-in .container h1, #demandgeneration-page .banner.fade-in .container h1, #demandfulfillment-page .banner.fade-in .container h1, #financialtransformation-page .banner.fade-in .container h1, #organisationaloptimisation-page .banner.fade-in .container h1 {
+  .practics-page .banner.fade-in .container h1 {
     font-size: 38px; }
-  #hospitality-page .content.fade-in, #strategy-page .content.fade-in, #demandgeneration-page .content.fade-in, #demandfulfillment-page .content.fade-in, #financialtransformation-page .content.fade-in, #organisationaloptimisation-page .content.fade-in {
+  .practics-page .content.fade-in {
     padding-bottom: 14%; }
-  #hospitality-page .content .column._left h1, #strategy-page .content .column._left h1, #demandgeneration-page .content .column._left h1, #demandfulfillment-page .content .column._left h1, #financialtransformation-page .content .column._left h1, #organisationaloptimisation-page .content .column._left h1 {
+  .practics-page .content .column._left h1 {
     font-size: 38px; }
-    #hospitality-page .content .column._left h1.number, #strategy-page .content .column._left h1.number, #demandgeneration-page .content .column._left h1.number, #demandfulfillment-page .content .column._left h1.number, #financialtransformation-page .content .column._left h1.number, #organisationaloptimisation-page .content .column._left h1.number {
+    .practics-page .content .column._left h1.number {
       font-size: 100px; }
-  #hospitality-page .content .column._right, #strategy-page .content .column._right, #demandgeneration-page .content .column._right, #demandfulfillment-page .content .column._right, #financialtransformation-page .content .column._right, #organisationaloptimisation-page .content .column._right {
+  .practics-page .content .column._right {
     bottom: -170px; }
-    #hospitality-page .content .column._right img, #strategy-page .content .column._right img, #demandgeneration-page .content .column._right img, #demandfulfillment-page .content .column._right img, #financialtransformation-page .content .column._right img, #organisationaloptimisation-page .content .column._right img {
+    .practics-page .content .column._right img {
       padding-top: 74%; }
-  #hospitality-page .carousel-section.fade-in .carousel, #strategy-page .carousel-section.fade-in .carousel, #demandgeneration-page .carousel-section.fade-in .carousel, #demandfulfillment-page .carousel-section.fade-in .carousel, #financialtransformation-page .carousel-section.fade-in .carousel, #organisationaloptimisation-page .carousel-section.fade-in .carousel {
+  .practics-page .carousel-section.fade-in .carousel {
     padding-top: 40%;
     height: auto; }
-    #hospitality-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #strategy-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section.fade-in .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section.fade-in .carousel .carousel-item .row:last-child {
+    .practics-page .carousel-section.fade-in .carousel .carousel-item .row:last-child {
       margin: 15% -15px; }
-  #hospitality-page .content.fade-in .row .column._right, #demandgeneration-page .content.fade-in .row .column._right, #demandfulfillment-page .content.fade-in .row .column._right, #financialtransformation-page .content.fade-in .row .column._right, #organisationaloptimisation-page .content.fade-in .row .column._right {
+  .practics-page .content.fade-in .row .column._right {
     bottom: -210px; }
   #hospitality-page .content .row {
     min-height: 480px; }
@@ -3842,9 +3845,7 @@ small {
     padding-left: 15px; }
   #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
     font-size: 16px;
-    width: 100%; }
-  #strategy-page .content.fade-in .row .column._right {
-    bottom: -180px; } }
+    width: 100%; } }
 
 @media (min-width: 375px) {
   #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
@@ -4460,61 +4461,61 @@ small {
       margin-bottom: 30px;
       font-size: 28px; }
   /* Practices all *******************/
-  #hospitality-page.h-one-line .content .column img, #strategy-page.h-one-line .content .column img, #demandgeneration-page.h-one-line .content .column img, #demandfulfillment-page.h-one-line .content .column img, #financialtransformation-page.h-one-line .content .column img, #organisationaloptimisation-page.h-one-line .content .column img {
+  .practics-page.h-one-line .content .column img {
     padding-top: 48%; }
-  #hospitality-page.h-one-line .carousel-section .carousel, #strategy-page.h-one-line .carousel-section .carousel, #demandgeneration-page.h-one-line .carousel-section .carousel, #demandfulfillment-page.h-one-line .carousel-section .carousel, #financialtransformation-page.h-one-line .carousel-section .carousel, #organisationaloptimisation-page.h-one-line .carousel-section .carousel {
+  .practics-page.h-one-line .carousel-section .carousel {
     padding-top: 30%;
     height: auto; }
-  #hospitality-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
+  .practics-page .banner {
     height: 44vh;
     background-position: center top;
     background-size: cover; }
-    #hospitality-page .banner .container h1, #strategy-page .banner .container h1, #demandgeneration-page .banner .container h1, #demandfulfillment-page .banner .container h1, #financialtransformation-page .banner .container h1, #organisationaloptimisation-page .banner .container h1 {
+    .practics-page .banner .container h1 {
       font-size: 46px;
       right: 5%;
       bottom: 5%; }
-  #hospitality-page .breadcrumb, #strategy-page .breadcrumb, #demandgeneration-page .breadcrumb, #demandfulfillment-page .breadcrumb, #financialtransformation-page .breadcrumb, #organisationaloptimisation-page .breadcrumb {
+  .practics-page .breadcrumb {
     margin: 40px 0; }
-  #hospitality-page .content, #strategy-page .content, #demandgeneration-page .content, #demandfulfillment-page .content, #financialtransformation-page .content, #organisationaloptimisation-page .content {
+  .practics-page .content {
     padding-bottom: 26%; }
-    #hospitality-page .content .row, #strategy-page .content .row, #demandgeneration-page .content .row, #demandfulfillment-page .content .row, #financialtransformation-page .content .row, #organisationaloptimisation-page .content .row {
+    .practics-page .content .row {
       position: relative; }
-      #hospitality-page .content .row .column._left, #strategy-page .content .row .column._left, #demandgeneration-page .content .row .column._left, #demandfulfillment-page .content .row .column._left, #financialtransformation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left {
+      .practics-page .content .row .column._left {
         position: static;
         padding: 0 15px 60%; }
-        #hospitality-page .content .row .column._left .number, #strategy-page .content .row .column._left .number, #demandgeneration-page .content .row .column._left .number, #demandfulfillment-page .content .row .column._left .number, #financialtransformation-page .content .row .column._left .number, #organisationaloptimisation-page .content .row .column._left .number {
+        .practics-page .content .row .column._left .number {
           font-size: 90px;
           line-height: 0.8; }
-      #hospitality-page .content .row .column._right, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._right, #financialtransformation-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right {
+      .practics-page .content .row .column._right {
         width: 100%;
         position: absolute;
         bottom: -230px; }
-        #hospitality-page .content .row .column._right img, #strategy-page .content .row .column._right img, #demandgeneration-page .content .row .column._right img, #demandfulfillment-page .content .row .column._right img, #financialtransformation-page .content .row .column._right img, #organisationaloptimisation-page .content .row .column._right img {
+        .practics-page .content .row .column._right img {
           padding: 0; }
-    #hospitality-page .content .column h1, #strategy-page .content .column h1, #demandgeneration-page .content .column h1, #demandfulfillment-page .content .column h1, #financialtransformation-page .content .column h1, #organisationaloptimisation-page .content .column h1 {
+    .practics-page .content .column h1 {
       font-size: 46px;
       right: 5%;
       bottom: 5%; }
-    #hospitality-page .content .column p, #strategy-page .content .column p, #demandgeneration-page .content .column p, #demandfulfillment-page .content .column p, #financialtransformation-page .content .column p, #organisationaloptimisation-page .content .column p {
+    .practics-page .content .column p {
       font-size: 16px; }
-    #hospitality-page .content .column img, #strategy-page .content .column img, #demandgeneration-page .content .column img, #demandfulfillment-page .content .column img, #financialtransformation-page .content .column img, #organisationaloptimisation-page .content .column img {
+    .practics-page .content .column img {
       padding-top: 60%;
       width: 86%;
       display: block;
       margin: 0 auto;
       padding-left: 4%; }
-  #hospitality-page .carousel-section .carousel, #strategy-page .carousel-section .carousel, #demandgeneration-page .carousel-section .carousel, #demandfulfillment-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel {
+  .practics-page .carousel-section .carousel {
     padding-top: 35%; }
-    #hospitality-page .carousel-section .carousel .carousel-item, #strategy-page .carousel-section .carousel .carousel-item, #demandgeneration-page .carousel-section .carousel .carousel-item, #demandfulfillment-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item {
+    .practics-page .carousel-section .carousel .carousel-item {
       padding: 15% 0 30%; }
-      #hospitality-page .carousel-section .carousel .carousel-item .row:last-child, #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child {
+      .practics-page .carousel-section .carousel .carousel-item .row:last-child {
         margin-top: 15%; }
-      #hospitality-page .carousel-section .carousel .carousel-item .row h1, #strategy-page .carousel-section .carousel .carousel-item .row h1, #demandgeneration-page .carousel-section .carousel .carousel-item .row h1, #demandfulfillment-page .carousel-section .carousel .carousel-item .row h1, #financialtransformation-page .carousel-section .carousel .carousel-item .row h1, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row h1 {
+      .practics-page .carousel-section .carousel .carousel-item .row h1 {
         font-size: 40px;
         margin-bottom: 25px; }
-      #hospitality-page .carousel-section .carousel .carousel-item .row p, #strategy-page .carousel-section .carousel .carousel-item .row p, #demandgeneration-page .carousel-section .carousel .carousel-item .row p, #demandfulfillment-page .carousel-section .carousel .carousel-item .row p, #financialtransformation-page .carousel-section .carousel .carousel-item .row p, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row p {
+      .practics-page .carousel-section .carousel .carousel-item .row p {
         font-size: 16px; }
-  #hospitality-page .carousel-section .carousel-control-next, #hospitality-page .carousel-section .carousel-control-prev, #strategy-page .carousel-section .carousel-control-next, #strategy-page .carousel-section .carousel-control-prev, #demandgeneration-page .carousel-section .carousel-control-next, #demandgeneration-page .carousel-section .carousel-control-prev, #demandfulfillment-page .carousel-section .carousel-control-next, #demandfulfillment-page .carousel-section .carousel-control-prev, #financialtransformation-page .carousel-section .carousel-control-next, #financialtransformation-page .carousel-section .carousel-control-prev, #organisationaloptimisation-page .carousel-section .carousel-control-next, #organisationaloptimisation-page .carousel-section .carousel-control-prev {
+  .practics-page .carousel-section .carousel-control-next, .practics-page .carousel-section .carousel-control-prev {
     display: none; }
   #hospitality-page .feasibility-section, #hospitality-page .development-section, #hospitality-page .operational-section {
     padding: 50px 0 60px; }
@@ -5297,64 +5298,60 @@ small {
           width: auto; }
     #blogsdetail-page .related .row .item a {
       height: 512px; }
-  #team-page .banner, #hospitality-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #organisationaloptimisation-page .banner, #financialtransformation-page .banner, #locations-page .banner, #careers-page .banner, #contactus-page .banner, #whyus-page .banner {
+  #team-page .banner, #hospitality-page .banner, #locations-page .banner, #careers-page .banner, #contactus-page .banner, #whyus-page .banner, .practics-page .banner {
     height: 35vh;
     background-size: 100%; }
-    #team-page .banner .container h1, #hospitality-page .banner .container h1, #strategy-page .banner .container h1, #demandgeneration-page .banner .container h1, #demandfulfillment-page .banner .container h1, #organisationaloptimisation-page .banner .container h1, #financialtransformation-page .banner .container h1, #locations-page .banner .container h1, #careers-page .banner .container h1, #contactus-page .banner .container h1, #whyus-page .banner .container h1 {
+    #team-page .banner .container h1, #hospitality-page .banner .container h1, #locations-page .banner .container h1, #careers-page .banner .container h1, #contactus-page .banner .container h1, #whyus-page .banner .container h1, .practics-page .banner .container h1 {
       font-size: 90px;
       right: 5%;
       bottom: 5%; }
-  #hospitality-page .col-md-4, #hospitality-page .col-md-8, #strategy-page .col-md-4, #strategy-page .col-md-8, #demandgeneration-page .col-md-4, #demandgeneration-page .col-md-8, #demandfulfillment-page .col-md-4, #demandfulfillment-page .col-md-8, #organisationaloptimisation-page .col-md-4, #organisationaloptimisation-page .col-md-8, #financialtransformation-page .col-md-4, #financialtransformation-page .col-md-8 {
+  .practics-page .col-md-4, .practics-page .col-md-8 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%; }
-  #hospitality-page .content, #strategy-page .content, #demandgeneration-page .content, #demandfulfillment-page .content, #organisationaloptimisation-page .content, #financialtransformation-page .content {
+  .practics-page .content {
     padding-bottom: 52%; }
-    #hospitality-page .content .row, #strategy-page .content .row, #demandgeneration-page .content .row, #demandfulfillment-page .content .row, #organisationaloptimisation-page .content .row, #financialtransformation-page .content .row {
+    .practics-page .content .row {
       position: relative; }
-      #hospitality-page .content .row .column._left, #hospitality-page .content .row .column._right, #strategy-page .content .row .column._left, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._left, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._left, #demandfulfillment-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._right, #financialtransformation-page .content .row .column._left, #financialtransformation-page .content .row .column._right {
+      .practics-page .content .row .column._left, .practics-page .content .row .column._right {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%; }
-      #hospitality-page .content .row .column._left, #strategy-page .content .row .column._left, #demandgeneration-page .content .row .column._left, #demandfulfillment-page .content .row .column._left, #organisationaloptimisation-page .content .row .column._left, #financialtransformation-page .content .row .column._left {
+      .practics-page .content .row .column._left {
         position: static;
         padding: 0 15px 30%; }
-        #hospitality-page .content .row .column._left .number, #strategy-page .content .row .column._left .number, #demandgeneration-page .content .row .column._left .number, #demandfulfillment-page .content .row .column._left .number, #organisationaloptimisation-page .content .row .column._left .number, #financialtransformation-page .content .row .column._left .number {
+        .practics-page .content .row .column._left .number {
           font-size: 90px;
           line-height: 0.8; }
-      #hospitality-page .content .row .column._right, #strategy-page .content .row .column._right, #demandgeneration-page .content .row .column._right, #demandfulfillment-page .content .row .column._right, #organisationaloptimisation-page .content .row .column._right, #financialtransformation-page .content .row .column._right {
+      .practics-page .content .row .column._right {
         width: 100%;
         height: 900px;
         overflow: hidden;
         position: absolute;
         top: 220px; }
-        #hospitality-page .content .row .column._right .oxford-dt, #strategy-page .content .row .column._right .oxford-dt, #demandgeneration-page .content .row .column._right .oxford-dt, #demandfulfillment-page .content .row .column._right .oxford-dt, #organisationaloptimisation-page .content .row .column._right .oxford-dt, #financialtransformation-page .content .row .column._right .oxford-dt {
+        .practics-page .content .row .column._right .oxford-dt {
           display: none !important; }
-        #hospitality-page .content .row .column._right .oxford-mb, #strategy-page .content .row .column._right .oxford-mb, #demandgeneration-page .content .row .column._right .oxford-mb, #demandfulfillment-page .content .row .column._right .oxford-mb, #organisationaloptimisation-page .content .row .column._right .oxford-mb, #financialtransformation-page .content .row .column._right .oxford-mb {
+        .practics-page .content .row .column._right .oxford-mb {
           position: absolute;
           left: 0;
           bottom: 0;
           width: 100%;
           display: block !important; }
-        #hospitality-page .content .row .column._right img, #strategy-page .content .row .column._right img, #demandgeneration-page .content .row .column._right img, #demandfulfillment-page .content .row .column._right img, #organisationaloptimisation-page .content .row .column._right img, #financialtransformation-page .content .row .column._right img {
+        .practics-page .content .row .column._right img {
           padding: 0; }
-  #hospitality-page .carousel-section .carousel, #strategy-page .carousel-section .carousel, #demandgeneration-page .carousel-section .carousel, #demandfulfillment-page .carousel-section .carousel, #organisationaloptimisation-page .carousel-section .carousel, #financialtransformation-page .carousel-section .carousel {
+  .practics-page .carousel-section .carousel {
     height: auto; }
-    #hospitality-page .carousel-section .carousel .carousel-item, #strategy-page .carousel-section .carousel .carousel-item, #demandgeneration-page .carousel-section .carousel .carousel-item, #demandfulfillment-page .carousel-section .carousel .carousel-item, #organisationaloptimisation-page .carousel-section .carousel .carousel-item, #financialtransformation-page .carousel-section .carousel .carousel-item {
+    .practics-page .carousel-section .carousel .carousel-item {
       padding: 30% 0 14%; }
-      #hospitality-page .carousel-section .carousel .carousel-item .row:last-child, #strategy-page .carousel-section .carousel .carousel-item .row:last-child, #demandgeneration-page .carousel-section .carousel .carousel-item .row:last-child, #demandfulfillment-page .carousel-section .carousel .carousel-item .row:last-child, #organisationaloptimisation-page .carousel-section .carousel .carousel-item .row:last-child, #financialtransformation-page .carousel-section .carousel .carousel-item .row:last-child {
+      .practics-page .carousel-section .carousel .carousel-item .row:last-child {
         margin-top: 70px; }
-    #hospitality-page .carousel-section .carousel h1, #strategy-page .carousel-section .carousel h1, #demandgeneration-page .carousel-section .carousel h1, #demandfulfillment-page .carousel-section .carousel h1, #organisationaloptimisation-page .carousel-section .carousel h1, #financialtransformation-page .carousel-section .carousel h1 {
+    .practics-page .carousel-section .carousel h1 {
       font-size: 40px;
       margin-bottom: 45px; }
-  #hospitality-page #getintouch, #strategy-page #getintouch, #demandgeneration-page #getintouch, #demandfulfillment-page #getintouch, #organisationaloptimisation-page #getintouch, #financialtransformation-page #getintouch {
-    margin: -2px 0 0; }
-  #demandgeneration-page .content .row .column._right {
-    top: 240px; }
-  #strategy-page .content .row .column._right {
-    top: 180px; }
+  .practics-page #getintouch {
+    margin: -2px 0 -1px; }
   #hospitality-page .content .row .column._right {
     top: 180px; }
   #hospitality-page .feasibility-section .row .column, #hospitality-page .development-section .row .column, #hospitality-page .operational-section .row .column {
@@ -5632,9 +5629,9 @@ small {
     #hospitality-page .roles-section .column.col_1, #hospitality-page .roles-section .column.col_3 {
       max-height: none;
       display: inline-table; }
-  #team-page .banner, #whyus-page .banner, #careers-page .banner, #contactus-page .banner, #locations-page .banner, #hospitality-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
+  #team-page .banner, #whyus-page .banner, #careers-page .banner, #contactus-page .banner, #locations-page .banner, #hospitality-page .banner, .practics-page .banner {
     height: 479px; }
-    #team-page .banner.fade-in h1, #whyus-page .banner.fade-in h1, #careers-page .banner.fade-in h1, #contactus-page .banner.fade-in h1, #locations-page .banner.fade-in h1, #hospitality-page .banner.fade-in h1, #strategy-page .banner.fade-in h1, #demandgeneration-page .banner.fade-in h1, #demandfulfillment-page .banner.fade-in h1, #financialtransformation-page .banner.fade-in h1, #organisationaloptimisation-page .banner.fade-in h1 {
+    #team-page .banner.fade-in h1, #whyus-page .banner.fade-in h1, #careers-page .banner.fade-in h1, #contactus-page .banner.fade-in h1, #locations-page .banner.fade-in h1, #hospitality-page .banner.fade-in h1, .practics-page .banner.fade-in h1 {
       font-size: 120px;
       bottom: 40px; }
   #locations-page {
@@ -5654,11 +5651,13 @@ small {
 @media (width: 800px) and (height: 600px) {
   nav .navbar-nav-list {
     margin-top: 10%; }
-  #team-page .banner, #whyus-page .banner, #careers-page .banner, #contactus-page .banner, #locations-page .banner, #hospitality-page .banner, #strategy-page .banner, #demandgeneration-page .banner, #demandfulfillment-page .banner, #financialtransformation-page .banner, #organisationaloptimisation-page .banner {
+  #team-page .banner, #whyus-page .banner, #careers-page .banner, #contactus-page .banner, #locations-page .banner, #hospitality-page .banner, .practics-page .banner {
     height: 520px;
     background-size: cover; } }
 
 @media (min-width: 1024px) {
+  #footer .row._first .nav li a {
+    padding: .5rem; }
   #locations {
     height: 100vh; }
     #locations .row .modal-area {

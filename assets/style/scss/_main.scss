@@ -44,6 +44,13 @@ h2, h3, p {
   // word-break: break-word;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 textarea, input[type="text"], input[type="password"], input[type="email"], select, .form-control-field {
   border-radius: 0;
   resize: none;
@@ -73,7 +80,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 input.form-control-field {
@@ -3875,35 +3882,36 @@ small {
 
 #strategy-page {
   .banner {
-    background: url('../../images/strategy/oxf_bg_banner.jpg') no-repeat;
+    background-image: url('../../images/strategy/oxf_bg_banner.jpg');
   }
 }
 
 #demandgeneration-page {
   .banner {
-    background: url('../../images/demandgeneration/oxf_bg_banner.jpg') no-repeat;
+    background-image: url('../../images/demandgeneration/oxf_bg_banner.jpg');
   }
 }
 
 #demandfulfillment-page {
   .banner {
-    background: url('../../images/demandfulfillment/oxf_bg_banner.jpg') no-repeat;
+    background-image: url('../../images/demandfulfillment/oxf_bg_banner.jpg');
   }
 }
 
 #organisationaloptimisation-page {
   .banner {
-    background: url('../../images/organisationaloptimisation/oxf_bg_banner.jpg') no-repeat;
+    background-image: url('../../images/organisationaloptimisation/oxf_bg_banner.jpg');
   }
 }
 
 #financialtransformation-page {
   .banner {
-    background: url('../../images/financialtransformation/oxf_bg_banner.jpg') no-repeat;
+    background-image: url('../../images/financialtransformation/oxf_bg_banner.jpg');
   }
 }
 
-#hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page,  #financialtransformation-page, #organisationaloptimisation-page {
+// #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page,  #financialtransformation-page, #organisationaloptimisation-page {
+.practics-page {
   background-color: $white;
 
   .banner {
@@ -3911,6 +3919,7 @@ small {
     height: 890px;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
 
     .container {
       position: relative;
@@ -4430,7 +4439,8 @@ $breadcrumb-divider: quote(">");
 /* Responsive *****************************************************************/
 /*** Mobile - small ***/
 @media (max-width: 320px) {
-  #hospitality-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  // #hospitality-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  .practics-page  {
     .carousel-section {
 
       &.fade-in {
@@ -4458,43 +4468,43 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #hospitality-page {
+  // #hospitality-page {
+  //
+  //   .content.fade-in {
+  //
+  //     .container {
+  //
+  //       .row {
+  //
+  //         .column {
+  //
+  //           &._right {
+  //             bottom: -180px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
-    .content.fade-in {
-
-      .container {
-
-        .row {
-
-          .column {
-
-            &._right {
-              bottom: -180px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  #strategy-page {
-
-    .content.fade-in {
-
-      .container {
-
-        .row {
-
-          .column {
-
-            &._right {
-              bottom: -130px;
-            }
-          }
-        }
-      }
-    }
-  }
+  // #strategy-page {
+  //
+  //   .content.fade-in {
+  //
+  //     .container {
+  //
+  //       .row {
+  //
+  //         .column {
+  //
+  //           &._right {
+  //             bottom: -130px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 @media (max-width: 360px) {
@@ -4639,7 +4649,8 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  // #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  .practics-page {
 
     &.h-one-line {
 
@@ -4732,7 +4743,8 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #hospitality-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  // #hospitality-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  .practics-page {
 
     .content.fade-in {
 
@@ -4779,21 +4791,21 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #strategy-page {
-
-    .content.fade-in {
-
-      .row {
-
-        .column {
-
-          &._right {
-            bottom: -180px;
-          }
-        }
-      }
-    }
-  }
+  // #strategy-page {
+  //
+  //   .content.fade-in {
+  //
+  //     .row {
+  //
+  //       .column {
+  //
+  //         &._right {
+  //           bottom: -180px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 @media (min-width: 375px) {
@@ -6032,7 +6044,8 @@ $breadcrumb-divider: quote(">");
   }
 
   /* Practices all *******************/
-  #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  // #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  .practics-page  {
 
     &.h-one-line {
 
@@ -7676,7 +7689,8 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #team-page, #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page, #locations-page, #careers-page, #contactus-page, #whyus-page  {
+  // #team-page, #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page, #locations-page, #careers-page, #contactus-page, #whyus-page  {
+  #team-page, #hospitality-page, #locations-page, #careers-page, #contactus-page, #whyus-page, .practics-page   {
 
     .banner {
       height: 35vh;
@@ -7693,7 +7707,8 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page {
+  // #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #organisationaloptimisation-page, #financialtransformation-page {
+  .practics-page {
 
     .col-md-4, .col-md-8 {
       flex: 0 0 100%;
@@ -7772,42 +7787,42 @@ $breadcrumb-divider: quote(">");
     }
 
     #getintouch {
-      margin: -2px 0 0;
+      margin: -2px 0 -1px;
     }
 
   }
 
-  #demandgeneration-page {
-
-    .content {
-
-      .row {
-
-        .column {
-
-          &._right {
-            top: 240px;
-          }
-        }
-      }
-    }
-  }
-
-  #strategy-page {
-
-    .content {
-
-      .row {
-
-        .column {
-
-          &._right {
-            top: 180px;
-          }
-        }
-      }
-    }
-  }
+  // #demandgeneration-page {
+  //
+  //   .content {
+  //
+  //     .row {
+  //
+  //       .column {
+  //
+  //         &._right {
+  //           top: 240px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  //
+  // #strategy-page {
+  //
+  //   .content {
+  //
+  //     .row {
+  //
+  //       .column {
+  //
+  //         &._right {
+  //           top: 180px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
   #hospitality-page {
 
@@ -7892,9 +7907,9 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #organisationaloptimisation-page {
-
-  }
+  // #organisationaloptimisation-page {
+  //
+  // }
 
   #careers-page {
 
@@ -8518,7 +8533,8 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #team-page, #whyus-page, #careers-page, #contactus-page, #locations-page, #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  // #team-page, #whyus-page, #careers-page, #contactus-page, #locations-page, #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  #team-page, #whyus-page, #careers-page, #contactus-page, #locations-page, #hospitality-page, .practics-page {
 
     .banner {
       height: 479px;
@@ -8584,7 +8600,8 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  #team-page, #whyus-page, #careers-page, #contactus-page, #locations-page, #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  // #team-page, #whyus-page, #careers-page, #contactus-page, #locations-page, #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
+  #team-page, #whyus-page, #careers-page, #contactus-page, #locations-page, #hospitality-page, .practics-page {
 
     .banner {
       height: 520px;
@@ -8594,6 +8611,25 @@ $breadcrumb-divider: quote(">");
 }
 
 @media (min-width: 1024px) {
+  #footer {
+
+    .row {
+
+      &._first {
+
+        .nav {
+
+          li {
+
+            a {
+              padding: .5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
   #locations {
     height: 100vh;
 
