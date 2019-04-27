@@ -3700,6 +3700,7 @@ small {
 
 /* Practices all page ******************************************************************/
 #hospitality-page {
+
   .banner {
     background: url('../../images/hospitality/oxf_bg_banner.jpg') no-repeat;
   }
@@ -3817,20 +3818,27 @@ small {
     }
 
     .column {
-      flex: 0 0 25%;
-      max-width: 25%;
+      // flex: 0 0 25%;
+      // max-width: 25%;
+      // width: 30%;
+      flex: none;
+      max-width: none;
+      display: inline-table;
       margin: 0 15px;
+      width: 30%;
+      margin: 0 1%;
       padding: 60px 32px;
       background-color: rgba(255,255,255,0.15);
 
       &.col_1, &.col_3 {
-        max-height: 550px;
+        // max-height: 550px;
+        // max-height: max-content;
         margin-top: 8%;
       }
 
       &.col_2 {
-        flex: 0 0 30%;
-        max-width: 30%;
+        // flex: 0 0 30%;
+        // max-width: 30%;
         background-color: rgba(31,48,82,0.5);
       }
 
@@ -6255,13 +6263,16 @@ $breadcrumb-divider: quote(">");
         }
 
         .column {
-          flex: 0 0 80%;
-          max-width: 80%;
+          // flex: 0 0 80%;
+          // max-width: 80%;
+          width: 80%;
+          display: block;
           margin: 0 auto 40px;
 
           &.col_2 {
-            flex: 0 0 90%;
-            max-width: 90%;
+            // flex: 0 0 90%;
+            // max-width: 90%;
+            width: 90%;
           }
         }
       }
@@ -7877,13 +7888,16 @@ $breadcrumb-divider: quote(">");
         }
 
         .column {
-          flex: 0 0 80%;
-          max-width: 80%;
+          // flex: 0 0 80%;
+          // max-width: 80%;
+          width: 80%;
+          display: block;
           margin: 0 auto 40px;
 
           &.col_2 {
-            flex: 0 0 90%;
-            max-width: 90%;
+            // flex: 0 0 90%;
+            // max-width: 90%;
+            width: 90%;
           }
         }
       }
@@ -8639,10 +8653,32 @@ $breadcrumb-divider: quote(">");
         height: 100vh;
 
         .modal-dialog {
-          // left: 20%;
+          left: -20%;
           max-height: 42%;
         }
       }
+
+      .modal-list {
+        right: 25px;
+      }
+    }
+  }
+
+  #hospitality {
+
+    .figcaption {
+
+      h1 {
+
+        &.header {
+          width: 50%;
+          font-size: 50px;
+        }
+      }
+    }
+
+    .figcaption-body {
+      width: 50%;
     }
   }
 }
@@ -8915,6 +8951,24 @@ $breadcrumb-divider: quote(">");
           max-height: 24%;
         }
       }
+    }
+  }
+
+  #hospitality {
+
+    .figcaption {
+
+      h1 {
+
+        &.header {
+          width: 40%;
+          font-size: 60px;
+        }
+      }
+    }
+
+    .figcaption-body {
+      width: 40%;
     }
   }
 

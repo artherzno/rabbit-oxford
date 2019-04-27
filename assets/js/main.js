@@ -456,12 +456,12 @@ $(document).ready(function(){
 
   var locationsMobileRowAmount = $('#locations .content #accordionLocation-mb .item').length;
   for(i=1; i<=locationsMobileRowAmount; i++) {
-    classToggle('#locations .content #accordionLocation-mb .item_'+i, 0.7, '', '#locations .content #accordionLocation-mb .item_'+i, 'fade-in');
+    classToggle('#locations .content #accordionLocation-mb .item_'+i, 0.9, '', '#locations .content #accordionLocation-mb .item_'+i, 'fade-in');
   }
 
   var locationsDesktopRowAmount = $('#locations .content #accordionLocation-dt .item').length;
   for(i=1; i<=locationsDesktopRowAmount; i++) {
-    classToggle('#locations .content #accordionLocation-dt .item_'+i, 0.7, '', '#locations .content #accordionLocation-dt .item_'+i, 'fade-in');
+    classToggle('#locations .content #accordionLocation-dt .item_'+i, 0.9, '', '#locations .content #accordionLocation-dt .item_'+i, 'fade-in');
   }
 
   // Blog ----------------------------------------- //
