@@ -4860,10 +4860,34 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  .practics-page {
 
+    .content {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -230px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
+  #hospitality {
+
+    .figcaption {
+
+      .figure-img {
+        height: 690px;
+      }
+    }
+  }
+
   #hospitality-page {
     .feasibility-section, .development-section, .operational-section {
 
@@ -4881,6 +4905,53 @@ $breadcrumb-divider: quote(">");
   }
 }
 
+@media (min-width: 420px) {
+  .practics-page {
+
+    .content {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -260px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .practics-page {
+
+    .carousel-section {
+
+      .carousel{
+        padding-top: 20%;
+      }
+    }
+
+    .content {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -280px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 520px) {
+
+
+}
 
 /*** Mobile ***/
 @media (max-width: 767.98px) {
@@ -4898,6 +4969,10 @@ $breadcrumb-divider: quote(">");
 
   small {
     font-size: 14px;
+  }
+
+  .container {
+    max-width: 767px;
   }
 
   .oxford-dt, .oxford-tl {
@@ -5236,7 +5311,8 @@ $breadcrumb-divider: quote(">");
     }
 
     .container {
-      padding-top: 160px;
+      // padding-top: 160px;
+      padding-top: 45%;
 
       .content {
         margin-left: 0;
@@ -5631,7 +5707,7 @@ $breadcrumb-divider: quote(">");
 
       .col-6 {
         margin-bottom: 20px;
-        height: 350px;
+        min-height: 350px;
 
         &:nth-child(odd) {
           padding-right: 8px;
@@ -6070,7 +6146,7 @@ $breadcrumb-divider: quote(">");
       .carousel-section {
 
         .carousel {
-          padding-top: 30%;
+          // padding-top: 30%;
           height: auto;
         }
       }
@@ -6116,7 +6192,7 @@ $breadcrumb-divider: quote(">");
           &._right {
             width: 100%;
             position: absolute;
-            bottom: -230px;
+            // bottom: -230px;
 
             img {
               padding: 0;
@@ -6139,7 +6215,7 @@ $breadcrumb-divider: quote(">");
 
         img {
           padding-top: 60%;
-          width: 86%;
+          width: 82%;
           display: block;
           margin: 0 auto;
           padding-left: 4%;
@@ -6239,7 +6315,7 @@ $breadcrumb-divider: quote(">");
 
     .discover-section {
       height: auto;
-      padding: 85% 0;
+      padding: 45% 0;
 
       h1 {
         font-size: 36px;
@@ -6755,6 +6831,7 @@ $breadcrumb-divider: quote(">");
       margin-bottom: 50px;
       margin-left: 11px;
       margin-right: 11px;
+      overflow: hidden;
 
       &:nth-child(even) {
 
@@ -6836,6 +6913,74 @@ $breadcrumb-divider: quote(">");
   }
 }
 
+@media (min-width: 560px) {
+  .practics-page {
+    .carousel-section {
+
+      .carousel{
+        padding-top: 10%;
+      }
+    }
+
+    .content {
+
+      .column {
+
+        img {
+          width: 76%;
+        }
+      }
+    }
+  }
+
+  #blogs-page {
+    .row {
+
+      .figure {
+
+        &.column {
+          height: 512px;
+        }
+      }
+
+      /* For crop image */
+      .figure-img {
+        width: 100%;
+        height: 180px;
+      }
+    }
+  }
+
+  #blogsdetail-page {
+
+    .related {
+
+      #carouselRelated {
+
+        &.owl-carousel {
+
+          .owl-item {
+
+            .item {
+
+              a {
+                height: 462px;
+              }
+            }
+          }
+        }
+      }
+
+      .figure {
+
+        .figure-img {
+          height: 180px;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   #footer {}
 
@@ -6847,7 +6992,7 @@ $breadcrumb-divider: quote(">");
 
         .brain {
           right: 26px;
-          top: -70%;
+          top: -90%;
           width: 28%;
         }
       }
@@ -6860,7 +7005,7 @@ $breadcrumb-divider: quote(">");
     .container {
 
       .content {
-        margin-top: 30%;
+        // margin-top: 30%;
 
         .box {
 
@@ -6889,15 +7034,22 @@ $breadcrumb-divider: quote(">");
   #blogs-page {
 
     .oxford-dt {
-      display: block !important;
+      // display: block !important;
     }
 
     .row {
 
+      .figure {
+
+        &.column {
+          height: 512px;
+        }
+      }
+
       /* For crop image */
       .figure-img {
-        width: 100%;
-        height: 330px;
+        // width: 100%;
+        // height: 230px;
         position: relative;
         overflow: hidden;
         margin-bottom: 0;
@@ -6910,6 +7062,85 @@ $breadcrumb-divider: quote(">");
           right: -9999px;
           margin: auto;
           width: auto;
+        }
+      }
+    }
+  }
+
+  #team-page {
+
+    .banner {
+      background-position: center bottom;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  #intro {
+
+    .container {
+
+      .logo {
+
+        .brain {
+          right: 34px;
+          top: -100%;
+          width: 28%;
+        }
+      }
+    }
+  }
+
+  .practics-page {
+    .content {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -320px;
+          }
+
+          img {
+            width: 76%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  #intro {
+
+    .container {
+
+      .logo {
+
+        .brain {
+          right: 42px;
+          top: -110%;
+          width: 28%;
+        }
+      }
+    }
+  }
+
+  .practics-page {
+    .content {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -360px;
+          }
+
+          img {
+            width: 78%;
+          }
         }
       }
     }

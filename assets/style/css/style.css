@@ -3847,13 +3847,27 @@ small {
 
 @media (min-width: 375px) {
   #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .practics-page .content .row .column._right {
+    bottom: -230px; } }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
+  #hospitality .figcaption .figure-img {
+    height: 690px; }
   #hospitality-page .feasibility-section .column h3, #hospitality-page .development-section .column h3, #hospitality-page .operational-section .column h3 {
     font-size: 20px; }
   #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
     font-size: 16px; } }
+
+@media (min-width: 420px) {
+  .practics-page .content .row .column._right {
+    bottom: -260px; } }
+
+@media (min-width: 480px) {
+  .practics-page .carousel-section .carousel {
+    padding-top: 20%; }
+  .practics-page .content .row .column._right {
+    bottom: -280px; } }
 
 /*** Mobile ***/
 @media (max-width: 767.98px) {
@@ -3865,6 +3879,8 @@ small {
     font-size: 36px; }
   small {
     font-size: 14px; }
+  .container {
+    max-width: 767px; }
   .oxford-dt, .oxford-tl {
     display: none !important; }
   .oxford-mb {
@@ -4042,7 +4058,7 @@ small {
     animation-duration: 120s;
     -webkit-animation-duration: 120s; }
   #practics .container {
-    padding-top: 160px; }
+    padding-top: 45%; }
     #practics .container .content {
       margin-left: 0;
       width: 100%; }
@@ -4248,7 +4264,7 @@ small {
       margin: 0; }
     #team-page .content .col-6 {
       margin-bottom: 20px;
-      height: 350px; }
+      min-height: 350px; }
       #team-page .content .col-6:nth-child(odd) {
         padding-right: 8px;
         padding-left: 0; }
@@ -4462,7 +4478,6 @@ small {
   .practics-page.h-one-line .content .column img {
     padding-top: 48%; }
   .practics-page.h-one-line .carousel-section .carousel {
-    padding-top: 30%;
     height: auto; }
   .practics-page .banner {
     height: 44vh;
@@ -4486,8 +4501,7 @@ small {
           line-height: 0.8; }
       .practics-page .content .row .column._right {
         width: 100%;
-        position: absolute;
-        bottom: -230px; }
+        position: absolute; }
         .practics-page .content .row .column._right img {
           padding: 0; }
     .practics-page .content .column h1 {
@@ -4498,7 +4512,7 @@ small {
       font-size: 16px; }
     .practics-page .content .column img {
       padding-top: 60%;
-      width: 86%;
+      width: 82%;
       display: block;
       margin: 0 auto;
       padding-left: 4%; }
@@ -4547,7 +4561,7 @@ small {
     background-position: center bottom; }
   #hospitality-page .discover-section {
     height: auto;
-    padding: 85% 0; }
+    padding: 45% 0; }
     #hospitality-page .discover-section h1 {
       font-size: 36px; }
   #hospitality-page .roles-section h3 {
@@ -4826,7 +4840,8 @@ small {
     padding-right: 0;
     margin-bottom: 50px;
     margin-left: 11px;
-    margin-right: 11px; }
+    margin-right: 11px;
+    overflow: hidden; }
     #whyus-page .row .figure {
       position: absolute;
       left: 0;
@@ -4856,28 +4871,41 @@ small {
   .modal.confirmModal.show .modal-content .modal-body {
     padding: 30px 0 70px; } }
 
+@media (min-width: 560px) {
+  .practics-page .carousel-section .carousel {
+    padding-top: 10%; }
+  .practics-page .content .column img {
+    width: 76%; }
+  #blogs-page .row {
+    /* For crop image */ }
+    #blogs-page .row .figure.column {
+      height: 512px; }
+    #blogs-page .row .figure-img {
+      width: 100%;
+      height: 180px; }
+  #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
+    height: 462px; }
+  #blogsdetail-page .related .figure .figure-img {
+    height: 180px; } }
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   #intro .container .logo .brain {
     right: 26px;
-    top: -70%;
+    top: -90%;
     width: 28%; }
   #banner {
     height: 100vh; }
-    #banner .container .content {
-      margin-top: 30%; }
-      #banner .container .content .box .box-content p {
-        font-size: 22px; }
-        #banner .container .content .box .box-content p span {
-          font-size: 40px; }
+    #banner .container .content .box .box-content p {
+      font-size: 22px; }
+      #banner .container .content .box .box-content p span {
+        font-size: 40px; }
   #hospitality .container {
     padding: 0; }
-  #blogs-page .oxford-dt {
-    display: block !important; }
   #blogs-page .row {
     /* For crop image */ }
+    #blogs-page .row .figure.column {
+      height: 512px; }
     #blogs-page .row .figure-img {
-      width: 100%;
-      height: 330px;
       position: relative;
       overflow: hidden;
       margin-bottom: 0; }
@@ -4888,7 +4916,29 @@ small {
         left: -9999px;
         right: -9999px;
         margin: auto;
-        width: auto; } }
+        width: auto; }
+  #team-page .banner {
+    background-position: center bottom; } }
+
+@media (min-width: 640px) {
+  #intro .container .logo .brain {
+    right: 34px;
+    top: -100%;
+    width: 28%; }
+  .practics-page .content .row .column._right {
+    bottom: -320px; }
+  .practics-page .content .row .column img {
+    width: 76%; } }
+
+@media (min-width: 720px) {
+  #intro .container .logo .brain {
+    right: 42px;
+    top: -110%;
+    width: 28%; }
+  .practics-page .content .row .column._right {
+    bottom: -360px; }
+  .practics-page .content .row .column img {
+    width: 78%; } }
 
 /*** Tablet ***/
 @media (min-width: 768px) and (max-width: 991.98px) {
