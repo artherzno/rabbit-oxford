@@ -416,6 +416,11 @@ $(document).ready(function(){
   .addTo(controller);
 
   // Pin banner ----------------------------------------- //
+  var winWidth = $(window).width();
+
+  if(winWidth < 1024) {
+    
+  }
   pin('#banner', 0, '30%', '#banner');
 
   // Second content banner ----------------------------------------- //

@@ -5716,7 +5716,10 @@ small {
   #blogs-page .row .figure.column {
     height: 562px; }
   #blogs-page .row .figure-img {
-    height: 230px; } }
+    height: 230px; }
+  #team-page .banner, .practics-page .banner, #whyus-page .banner, #locations-page .banner, #blogs-page .banner, #careers-page .banner, #contactus-page .banner {
+    height: 100vh;
+    max-height: 890px; } }
 
 @media (min-width: 1024px) {
   #footer .row._first .nav li a {
@@ -5736,7 +5739,14 @@ small {
   #hospitality .figcaption-body {
     width: 50%; }
   .practics-page .content .row .column._right {
-    bottom: -120px; } }
+    bottom: -120px; }
+  #contactus-page #contactus-form .section-form label {
+    font-size: 16px; }
+  #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
+    height: 270px;
+    padding: 70px 35px; }
+    #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
+      margin-right: 20px; } }
 
 @media (min-width: 1120px) {
   #locations {
@@ -5798,8 +5808,10 @@ small {
         max-height: 36%; }
   #blogs-page .row .figure.column {
     height: 512px; }
+  #contactus-page #contactus-form .section-form label {
+    font-size: 16px; }
   #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
-    width: 420px;
+    width: 380px;
     height: 270px;
     padding: 70px 35px; }
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
@@ -5815,7 +5827,13 @@ small {
       #locations .row .modal-area .modal-dialog {
         max-height: 28%; }
   #blogs-page .row .figure-img {
-    height: 260px; } }
+    height: 260px; }
+  #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
+    width: 430px;
+    height: 270px;
+    padding: 70px 35px; }
+    #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
+      margin-right: 20px; } }
 
 @media (min-width: 1400px) {
   nav.navbar .navbar-nav li .nav-link {

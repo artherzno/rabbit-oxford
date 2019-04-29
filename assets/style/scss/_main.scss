@@ -8995,6 +8995,14 @@ $breadcrumb-divider: quote(">");
       }
     }
   }
+
+  #team-page, .practics-page, #whyus-page, #locations-page, #blogs-page, #careers-page, #contactus-page {
+
+    .banner {
+      height: 100vh;
+      max-height: 890px;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -9065,6 +9073,32 @@ $breadcrumb-divider: quote(">");
 
           &._right {
             bottom: -120px;
+          }
+        }
+      }
+    }
+  }
+
+  #contactus-page {
+
+    #contactus-form {
+
+      .section-form {
+
+        label {
+          font-size: 16px;
+        }
+
+        .contactus-detail-card {
+
+          .contactus-detail {
+            // width: 380px;
+            height: 270px;
+            padding: 70px 35px;
+
+            .figure {
+              margin-right: 20px;
+            }
           }
         }
       }
@@ -9256,10 +9290,14 @@ $breadcrumb-divider: quote(">");
 
       .section-form {
 
+        label {
+          font-size: 16px;
+        }
+
         .contactus-detail-card {
 
           .contactus-detail {
-            width: 420px;
+            width: 380px;
             height: 270px;
             padding: 70px 35px;
 
@@ -9300,6 +9338,28 @@ $breadcrumb-divider: quote(">");
 
       .figure-img {
         height: 260px;
+      }
+    }
+  }
+
+  #contactus-page {
+
+    #contactus-form {
+
+      .section-form {
+
+        .contactus-detail-card {
+
+          .contactus-detail {
+            width: 430px;
+            height: 270px;
+            padding: 70px 35px;
+
+            .figure {
+              margin-right: 20px;
+            }
+          }
+        }
       }
     }
   }
