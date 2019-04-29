@@ -2998,8 +2998,8 @@ small {
   background-image: url('../../images/career/oxf_bg_content.jpg');
   background-color: #131212;
   background-repeat: no-repeat;
-  background-position: right bottom;
-  // background-size: cover;
+  background-position: center bottom;
+  background-size: cover;
 
   .content {
     padding: 170px 0 70px;
@@ -5894,10 +5894,12 @@ $breadcrumb-divider: quote(">");
           &.date {
             font-size: 14px;
             margin: 0;
+            left: 24px;
           }
 
           &.button-readmore {
             font-size: 16px;
+            right: 24px;
           }
         }
       }
@@ -6052,10 +6054,12 @@ $breadcrumb-divider: quote(">");
 
             &.date {
               font-size: 14px;
+              left: 24px;
             }
 
             &.button-readmore {
               font-size: 16px;
+              right: 24px;
             }
           }
         }
@@ -8007,12 +8011,18 @@ $breadcrumb-divider: quote(">");
         }
       }
 
-      .row {
+      #carouselRelated {
 
-        .item {
+        &.owl-carousel {
 
-          a {
-            height: 512px;
+          .owl-item {
+
+            .item {
+
+              a {
+                height: 512px;
+              }
+            }
           }
         }
       }
@@ -8317,7 +8327,7 @@ $breadcrumb-divider: quote(">");
       .container {
 
         h1 {
-          font-size: 46px;
+          // font-size: 46px;
           right: 5%;
           bottom: 5%;
         }
@@ -8947,20 +8957,41 @@ $breadcrumb-divider: quote(">");
 }
 
 /*** Desktop ****/
+@media (max-width: 800px) {
+  .ie {
+
+    #hospitality {
+
+      .figcaption {
+
+        .figure-img {
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
 @media (width: 800px) and (height: 600px) {
   nav {
 
     .navbar-nav-list {
       margin-top: 10%;
+      height: auto;
     }
   }
 
   // #team-page, #whyus-page, #careers-page, #contactus-page, #locations-page, #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
-  #team-page, #whyus-page, #careers-page, #contactus-page, #locations-page, #hospitality-page, .practics-page {
+  #team-page, .practics-page, #whyus-page, #locations-page, #blogs-page, #careers-page, #contactus-page,
+  .ie #team-page, .ie .practics-page, .ie #whyus-page, .ie #locations-page, .ie #blogs-page, .ie #careers-page, .ie #contactus-page {
 
     .banner {
-      height: 520px;
-      background-size: cover;
+
+      &.fade-in {
+        height: 100vh !important;
+        max-height: 890px;
+        background-size: cover !important;
+      }
     }
   }
 }
@@ -8980,18 +9011,70 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  $cardHeight: 562px;
+  $imgHeight: 230px;
+
+  #blog {
+
+    #carouselBlog {
+
+      .item {
+
+        a {
+          height: $cardHeight;
+        }
+      }
+    }
+
+    .figure {
+
+      .figure-img {
+        height: $imgHeight;
+      }
+    }
+  }
+
   #blogs-page {
     .row {
 
       .figure {
 
         &.column {
-          height: 562px;
+          height: $cardHeight;
         }
       }
 
       .figure-img {
-        height: 230px;
+        height: $imgHeight;
+      }
+    }
+  }
+
+  #blogsdetail-page {
+
+    .related {
+
+      #carouselRelated {
+
+        &.owl-carousel {
+
+          .owl-item {
+
+            .item {
+
+              a {
+                height: $cardHeight;
+              }
+            }
+          }
+        }
+      }
+
+      .figure {
+
+        .figure-img {
+          height: $imgHeight;
+        }
       }
     }
   }
@@ -8999,10 +9082,23 @@ $breadcrumb-divider: quote(">");
   #team-page, .practics-page, #whyus-page, #locations-page, #blogs-page, #careers-page, #contactus-page {
 
     .banner {
-      height: 100vh;
-      max-height: 890px;
+
+      &.fade-in {
+        height: 100vh;
+        max-height: 890px;
+        background-size: cover;
+      }
     }
   }
+
+  #whyus-page {
+
+    .banner {
+
+      background-position: -80px center;
+    }
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -9063,6 +9159,74 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  $cardHeight: 512px;
+  $imgHeight: 210px;
+
+  #blog {
+
+    #carouselBlog {
+
+      .item {
+
+        a {
+          height: $cardHeight;
+        }
+      }
+    }
+
+    .figure {
+
+      .figure-img {
+        height: $imgHeight;
+      }
+    }
+  }
+
+  #blogs-page {
+    .row {
+
+      .figure {
+
+        &.column {
+          height: $cardHeight;
+        }
+      }
+
+      .figure-img {
+        height: $imgHeight;
+      }
+    }
+  }
+
+  #blogsdetail-page {
+
+    .related {
+
+      #carouselRelated {
+
+        &.owl-carousel {
+
+          .owl-item {
+
+            .item {
+
+              a {
+                height: $cardHeight;
+              }
+            }
+          }
+        }
+      }
+
+      .figure {
+
+        .figure-img {
+          height: $imgHeight;
+        }
+      }
+    }
+  }
+
   .practics-page {
 
     .content {
@@ -9104,6 +9268,29 @@ $breadcrumb-divider: quote(">");
       }
     }
   }
+
+  #whyus-page {
+
+    .content {
+
+      &.fade-in {
+
+        .figure {
+
+          img {
+            width: 80%;
+          }
+        }
+
+        .figcaption {
+
+          h1 {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1120px) {
@@ -9123,18 +9310,70 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  $cardHeight: 512px;
+  // $imgHeight: 230px;
+
+  #blog {
+
+    #carouselBlog {
+
+      .item {
+
+        a {
+          height: $cardHeight;
+        }
+      }
+    }
+
+    .figure {
+
+      .figure-img {
+        // height: $imgHeight;
+      }
+    }
+  }
+
   #blogs-page {
     .row {
 
       .figure {
 
         &.column {
-          height: 512px;
+          height: $cardHeight;
         }
       }
 
       .figure-img {
         // height: 300px;
+      }
+    }
+  }
+
+  #blogsdetail-page {
+
+    .related {
+
+      #carouselRelated {
+
+        &.owl-carousel {
+
+          .owl-item {
+
+            .item {
+
+              a {
+                height: $cardHeight;
+              }
+            }
+          }
+        }
+      }
+
+      .figure {
+
+        .figure-img {
+          // height: 330px;
+        }
       }
     }
   }
@@ -9268,18 +9507,70 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  $cardHeight: 512px;
+  // $imgHeight: 230px;
+
+  #blog {
+
+    #carouselBlog {
+
+      .item {
+
+        a {
+          height: $cardHeight;
+        }
+      }
+    }
+
+    .figure {
+
+      .figure-img {
+        // height: $imgHeight;
+      }
+    }
+  }
+
   #blogs-page {
     .row {
 
       .figure {
 
         &.column {
-          height: 512px;
+          height: $cardHeight;
         }
       }
 
       .figure-img {
         // height: 300px;
+      }
+    }
+  }
+
+  #blogsdetail-page {
+
+    .related {
+
+      #carouselRelated {
+
+        &.owl-carousel {
+
+          .owl-item {
+
+            .item {
+
+              a {
+                height: $cardHeight;
+              }
+            }
+          }
+        }
+      }
+
+      .figure {
+
+        .figure-img {
+          // height: 330px;
+        }
       }
     }
   }
@@ -9333,11 +9624,70 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  $cardHeight: 562px;
+  $imgHeight: 260px;
+
+  #blog {
+
+    #carouselBlog {
+
+      .item {
+
+        a {
+          height: $cardHeight;
+        }
+      }
+    }
+
+    .figure {
+
+      .figure-img {
+        height: $imgHeight;
+      }
+    }
+  }
+
   #blogs-page {
     .row {
 
+      .figure {
+
+        &.column {
+          height: $cardHeight;
+        }
+      }
+
       .figure-img {
-        height: 260px;
+        height: $imgHeight;
+      }
+    }
+  }
+
+  #blogsdetail-page {
+
+    .related {
+
+      #carouselRelated {
+
+        &.owl-carousel {
+
+          .owl-item {
+
+            .item {
+
+              a {
+                height: $cardHeight;
+              }
+            }
+          }
+        }
+      }
+
+      .figure {
+
+        .figure-img {
+          height: $imgHeight;
+        }
       }
     }
   }
@@ -9463,18 +9813,70 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  $cardHeight: 612px;
+  $imgHeight: 330px;
+
+  #blog {
+
+    #carouselBlog {
+
+      .item {
+
+        a {
+          height: $cardHeight;
+        }
+      }
+    }
+
+    .figure {
+
+      .figure-img {
+        height: $imgHeight;
+      }
+    }
+  }
+
   #blogs-page {
     .row {
 
       .figure {
 
         &.column {
-          height: 592px;
+          height: $cardHeight;
         }
       }
 
       .figure-img {
-        height: 300px;
+        height: $imgHeight;
+      }
+    }
+  }
+
+  #blogsdetail-page {
+
+    .related {
+
+      #carouselRelated {
+
+        &.owl-carousel {
+
+          .owl-item {
+
+            .item {
+
+              a {
+                height: $cardHeight;
+              }
+            }
+          }
+        }
+      }
+
+      .figure {
+
+        .figure-img {
+          height: $imgHeight;
+        }
       }
     }
   }
@@ -9498,6 +9900,24 @@ $breadcrumb-divider: quote(">");
           }
         }
       }
+    }
+  }
+
+  .practics-page {
+
+    .carousel-section {
+
+      .carousel {
+        padding-top: 0;
+      }
+    }
+  }
+
+  #whyus-page {
+
+    .banner {
+
+      background-position: center center;
     }
   }
 }
@@ -9537,6 +9957,13 @@ $breadcrumb-divider: quote(">");
 
     .dropdown-toggle {
       background-size: 58px;
+    }
+  }
+
+  .modal {
+
+    .modal-dialog {
+      width: 600px;
     }
   }
 
@@ -9596,7 +10023,7 @@ $breadcrumb-divider: quote(">");
 
   #locations {
 
-    .modal {
+    .modal-area {
 
       .modal-dialog {
         width: 600px;

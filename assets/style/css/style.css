@@ -2653,7 +2653,8 @@ small {
   background-image: url("../../images/career/oxf_bg_content.jpg");
   background-color: #131212;
   background-repeat: no-repeat;
-  background-position: right bottom; }
+  background-position: center bottom;
+  background-size: cover; }
   #careersdetail-page .content {
     padding: 170px 0 70px; }
     #careersdetail-page .content.fade-in .breadcrumb {
@@ -4358,9 +4359,11 @@ small {
           -webkit-box-orient: vertical; }
           #blogs-page .figure .figcaption p.date {
             font-size: 14px;
-            margin: 0; }
+            margin: 0;
+            left: 24px; }
           #blogs-page .figure .figcaption p.button-readmore {
-            font-size: 16px; }
+            font-size: 16px;
+            right: 24px; }
   /* Blog detail page ************/
   #blogsdetail-page {
     margin-top: 60px; }
@@ -4438,9 +4441,11 @@ small {
           -webkit-line-clamp: 4;
           -webkit-box-orient: vertical; }
           #blogsdetail-page .related .figure .figcaption p.date {
-            font-size: 14px; }
+            font-size: 14px;
+            left: 24px; }
           #blogsdetail-page .related .figure .figcaption p.button-readmore {
-            font-size: 16px; }
+            font-size: 16px;
+            right: 24px; }
     #blogsdetail-page.fade-in .content .header h2 {
       font-size: 28px;
       margin: 0 0 40px; }
@@ -5354,7 +5359,7 @@ small {
           right: -9999px;
           margin: auto;
           width: auto; }
-    #blogsdetail-page .related .row .item a {
+    #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
       height: 512px; }
   #team-page .banner, #hospitality-page .banner, #locations-page .banner, #careers-page .banner, #contactus-page .banner, #whyus-page .banner, .practics-page .banner {
     height: 35vh;
@@ -5468,7 +5473,6 @@ small {
       #careersdetail-page #careers-apply-form .section-apply .form-row .form-group:last-child {
         padding: 0; }
   #contactus-page .banner .container h1 {
-    font-size: 46px;
     right: 5%;
     bottom: 5%; }
   #contactus-page .content {
@@ -5703,23 +5707,41 @@ small {
     font-size: 40px; } }
 
 /*** Desktop ****/
+@media (max-width: 800px) {
+  .ie #hospitality .figcaption .figure-img {
+    height: auto; } }
+
 @media (width: 800px) and (height: 600px) {
   nav .navbar-nav-list {
-    margin-top: 10%; }
-  #team-page .banner, #whyus-page .banner, #careers-page .banner, #contactus-page .banner, #locations-page .banner, #hospitality-page .banner, .practics-page .banner {
-    height: 520px;
-    background-size: cover; } }
+    margin-top: 10%;
+    height: auto; }
+  #team-page .banner.fade-in, .practics-page .banner.fade-in, #whyus-page .banner.fade-in, #locations-page .banner.fade-in, #blogs-page .banner.fade-in, #careers-page .banner.fade-in, #contactus-page .banner.fade-in,
+  .ie #team-page .banner.fade-in, .ie .practics-page .banner.fade-in, .ie #whyus-page .banner.fade-in, .ie #locations-page .banner.fade-in, .ie #blogs-page .banner.fade-in, .ie #careers-page .banner.fade-in, .ie #contactus-page .banner.fade-in {
+    height: 100vh !important;
+    max-height: 890px;
+    background-size: cover !important; } }
 
 @media (min-width: 800px) {
   #hospitality .figcaption .figure-img {
     height: auto; }
+  #blog #carouselBlog .item a {
+    height: 562px; }
+  #blog .figure .figure-img {
+    height: 230px; }
   #blogs-page .row .figure.column {
     height: 562px; }
   #blogs-page .row .figure-img {
     height: 230px; }
-  #team-page .banner, .practics-page .banner, #whyus-page .banner, #locations-page .banner, #blogs-page .banner, #careers-page .banner, #contactus-page .banner {
+  #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
+    height: 562px; }
+  #blogsdetail-page .related .figure .figure-img {
+    height: 230px; }
+  #team-page .banner.fade-in, .practics-page .banner.fade-in, #whyus-page .banner.fade-in, #locations-page .banner.fade-in, #blogs-page .banner.fade-in, #careers-page .banner.fade-in, #contactus-page .banner.fade-in {
     height: 100vh;
-    max-height: 890px; } }
+    max-height: 890px;
+    background-size: cover; }
+  #whyus-page .banner {
+    background-position: -80px center; } }
 
 @media (min-width: 1024px) {
   #footer .row._first .nav li a {
@@ -5738,6 +5760,18 @@ small {
     font-size: 50px; }
   #hospitality .figcaption-body {
     width: 50%; }
+  #blog #carouselBlog .item a {
+    height: 512px; }
+  #blog .figure .figure-img {
+    height: 210px; }
+  #blogs-page .row .figure.column {
+    height: 512px; }
+  #blogs-page .row .figure-img {
+    height: 210px; }
+  #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
+    height: 512px; }
+  #blogsdetail-page .related .figure .figure-img {
+    height: 210px; }
   .practics-page .content .row .column._right {
     bottom: -120px; }
   #contactus-page #contactus-form .section-form label {
@@ -5746,14 +5780,22 @@ small {
     height: 270px;
     padding: 70px 35px; }
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
-      margin-right: 20px; } }
+      margin-right: 20px; }
+  #whyus-page .content.fade-in .figure img {
+    width: 80%; }
+  #whyus-page .content.fade-in .figcaption h1 {
+    font-size: 50px; } }
 
 @media (min-width: 1120px) {
   #locations {
     height: 100vh; }
     #locations .row .modal-area {
       height: 100vh; }
+  #blog #carouselBlog .item a {
+    height: 512px; }
   #blogs-page .row .figure.column {
+    height: 512px; }
+  #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
     height: 512px; } }
 
 @media (min-width: 1152px) {
@@ -5806,7 +5848,11 @@ small {
       height: 100vh; }
       #locations .row .modal-area .modal-dialog {
         max-height: 36%; }
+  #blog #carouselBlog .item a {
+    height: 512px; }
   #blogs-page .row .figure.column {
+    height: 512px; }
+  #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
     height: 512px; }
   #contactus-page #contactus-form .section-form label {
     font-size: 16px; }
@@ -5826,7 +5872,17 @@ small {
       height: 100vh; }
       #locations .row .modal-area .modal-dialog {
         max-height: 28%; }
+  #blog #carouselBlog .item a {
+    height: 562px; }
+  #blog .figure .figure-img {
+    height: 260px; }
+  #blogs-page .row .figure.column {
+    height: 562px; }
   #blogs-page .row .figure-img {
+    height: 260px; }
+  #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
+    height: 562px; }
+  #blogsdetail-page .related .figure .figure-img {
     height: 260px; }
   #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
     width: 430px;
@@ -5863,16 +5919,28 @@ small {
     font-size: 60px; }
   #hospitality .figcaption-body {
     width: 40%; }
+  #blog #carouselBlog .item a {
+    height: 612px; }
+  #blog .figure .figure-img {
+    height: 330px; }
   #blogs-page .row .figure.column {
-    height: 592px; }
+    height: 612px; }
   #blogs-page .row .figure-img {
-    height: 300px; }
+    height: 330px; }
+  #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
+    height: 612px; }
+  #blogsdetail-page .related .figure .figure-img {
+    height: 330px; }
   #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
     width: 510px;
     height: 420px;
     padding: 140px 70px; }
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
-      margin-right: 40px; } }
+      margin-right: 40px; }
+  .practics-page .carousel-section .carousel {
+    padding-top: 0; }
+  #whyus-page .banner {
+    background-position: center center; } }
 
 /***************************************************************************************************/
 /* For IE ******************************************************************************************/
@@ -5885,6 +5953,9 @@ small {
 
 .ie .dropdown.dropdown-list .dropdown-toggle {
   background-size: 58px; }
+
+.ie .modal .modal-dialog {
+  width: 600px; }
 
 .ie #footer .row._first .dropdown-menu {
   max-height: 198px;
@@ -5899,7 +5970,7 @@ small {
   .ie #hospitality .owl-carousel .owl-item.active {
     opacity: 1; }
 
-.ie #locations .modal .modal-dialog {
+.ie #locations .modal-area .modal-dialog {
   width: 600px; }
 
 .ie #blog #carouselBlog .item a {
