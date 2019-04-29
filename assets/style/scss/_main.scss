@@ -4883,7 +4883,7 @@ $breadcrumb-divider: quote(">");
     .figcaption {
 
       .figure-img {
-        height: 690px;
+        // height: 690px;
       }
     }
   }
@@ -4950,7 +4950,19 @@ $breadcrumb-divider: quote(">");
 
 @media (min-width: 520px) {
 
+  #hospitality {
 
+    .figcaption-body {
+      // bottom: 15%;
+    }
+
+    .figcaption {
+
+      .figure-img {
+        height: 640px;
+      }
+    }
+  }
 }
 
 /*** Mobile ***/
@@ -6914,6 +6926,20 @@ $breadcrumb-divider: quote(">");
 }
 
 @media (min-width: 560px) {
+  #hospitality {
+
+    .figcaption-body {
+      // bottom: 15%;
+    }
+
+    .figcaption {
+
+      .figure-img {
+        height: 690px;
+      }
+    }
+  }
+
   .practics-page {
     .carousel-section {
 
@@ -7075,6 +7101,22 @@ $breadcrumb-divider: quote(">");
   }
 }
 
+@media (min-width: 620px) {
+  #hospitality {
+
+    .figcaption-body {
+      // bottom: 15%;
+    }
+
+    .figcaption {
+
+      .figure-img {
+        height: 740px;
+      }
+    }
+  }
+}
+
 @media (min-width: 640px) {
   #intro {
 
@@ -7111,6 +7153,22 @@ $breadcrumb-divider: quote(">");
   }
 }
 
+@media (min-width: 680px) {
+  #hospitality {
+
+    .figcaption-body {
+      // bottom: 15%;
+    }
+
+    .figcaption {
+
+      .figure-img {
+        height: 780px;
+      }
+    }
+  }
+}
+
 @media (min-width: 720px) {
   #intro {
 
@@ -7123,6 +7181,20 @@ $breadcrumb-divider: quote(">");
           top: -110%;
           width: 28%;
         }
+      }
+    }
+  }
+
+  #hospitality {
+
+    .figcaption-body {
+      // bottom: 15%;
+    }
+
+    .figcaption {
+
+      .figure-img {
+        height: 820px;
       }
     }
   }
