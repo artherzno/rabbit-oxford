@@ -6972,7 +6972,7 @@ $breadcrumb-divider: quote(">");
       /* For crop image */
       .figure-img {
         width: 100%;
-        height: 180px;
+        height: 260px;
       }
     }
   }
@@ -7075,7 +7075,7 @@ $breadcrumb-divider: quote(">");
       /* For crop image */
       .figure-img {
         // width: 100%;
-        // height: 230px;
+        height: 230px;
         position: relative;
         overflow: hidden;
         margin-bottom: 0;
@@ -7214,6 +7214,22 @@ $breadcrumb-divider: quote(">");
             width: 78%;
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 760px) {
+  #hospitality {
+
+    .figcaption-body {
+      // bottom: 15%;
+    }
+
+    .figcaption {
+
+      .figure-img {
+        // height: 880px;
       }
     }
   }
@@ -8636,6 +8652,22 @@ $breadcrumb-divider: quote(">");
       }
     }
   }
+
+  .practics-page {
+
+    .content {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -120px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*** iPad Pro ***/
@@ -8768,7 +8800,13 @@ $breadcrumb-divider: quote(">");
     .blogs-list {
 
       a {
-        height: 512px;
+
+        &.figure {
+
+         &.column {
+           height: 512px;
+         }
+        }
       }
     }
 
@@ -8927,6 +8965,38 @@ $breadcrumb-divider: quote(">");
   }
 }
 
+@media (min-width: 800px) {
+  #hospitality {
+
+    .figcaption-body {
+      // bottom: 15%;
+    }
+
+    .figcaption {
+
+      .figure-img {
+        height: auto;
+      }
+    }
+  }
+
+  #blogs-page {
+    .row {
+
+      .figure {
+
+        &.column {
+          height: 562px;
+        }
+      }
+
+      .figure-img {
+        height: 230px;
+      }
+    }
+  }
+}
+
 @media (min-width: 1024px) {
   #footer {
 
@@ -8984,6 +9054,22 @@ $breadcrumb-divider: quote(">");
       width: 50%;
     }
   }
+
+  .practics-page {
+
+    .content {
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -120px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1120px) {
@@ -8999,6 +9085,22 @@ $breadcrumb-divider: quote(">");
           // left: 20%;
           // max-height: 68%;
         }
+      }
+    }
+  }
+
+  #blogs-page {
+    .row {
+
+      .figure {
+
+        &.column {
+          height: 512px;
+        }
+      }
+
+      .figure-img {
+        // height: 300px;
       }
     }
   }
@@ -9132,6 +9234,22 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  #blogs-page {
+    .row {
+
+      .figure {
+
+        &.column {
+          height: 512px;
+        }
+      }
+
+      .figure-img {
+        // height: 300px;
+      }
+    }
+  }
+
   #contactus-page {
 
     #contactus-form {
@@ -9173,6 +9291,15 @@ $breadcrumb-divider: quote(">");
           // left: 20%;
           max-height: 28%;
         }
+      }
+    }
+  }
+
+  #blogs-page {
+    .row {
+
+      .figure-img {
+        height: 260px;
       }
     }
   }
@@ -9257,6 +9384,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+
   #hospitality {
 
     .figcaption {
@@ -9272,6 +9400,22 @@ $breadcrumb-divider: quote(">");
 
     .figcaption-body {
       width: 40%;
+    }
+  }
+
+  #blogs-page {
+    .row {
+
+      .figure {
+
+        &.column {
+          height: 592px;
+        }
+      }
+
+      .figure-img {
+        height: 300px;
+      }
     }
   }
 

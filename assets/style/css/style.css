@@ -4886,7 +4886,7 @@ small {
       height: 512px; }
     #blogs-page .row .figure-img {
       width: 100%;
-      height: 180px; }
+      height: 260px; }
   #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
     height: 462px; }
   #blogsdetail-page .related .figure .figure-img {
@@ -4910,6 +4910,7 @@ small {
     #blogs-page .row .figure.column {
       height: 512px; }
     #blogs-page .row .figure-img {
+      height: 230px;
       position: relative;
       overflow: hidden;
       margin-bottom: 0; }
@@ -5612,7 +5613,9 @@ small {
     height: 270px;
     padding: 70px 35px; }
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
-      margin-right: 15px; } }
+      margin-right: 15px; }
+  .practics-page .content .row .column._right {
+    bottom: -120px; } }
 
 /*** iPad Pro ***/
 @media (min-width: 1024px) and (min-height: 1366px) {
@@ -5653,7 +5656,7 @@ small {
     height: 512px; }
   #getintouch .content p {
     font-size: 23px; }
-  #blogs-page .blogs-list a {
+  #blogs-page .blogs-list a.figure.column {
     height: 512px; }
   #blogs-page .figure .figure-img {
     height: 210px; }
@@ -5707,6 +5710,14 @@ small {
     height: 520px;
     background-size: cover; } }
 
+@media (min-width: 800px) {
+  #hospitality .figcaption .figure-img {
+    height: auto; }
+  #blogs-page .row .figure.column {
+    height: 562px; }
+  #blogs-page .row .figure-img {
+    height: 230px; } }
+
 @media (min-width: 1024px) {
   #footer .row._first .nav li a {
     padding: .5rem; }
@@ -5723,13 +5734,17 @@ small {
     width: 50%;
     font-size: 50px; }
   #hospitality .figcaption-body {
-    width: 50%; } }
+    width: 50%; }
+  .practics-page .content .row .column._right {
+    bottom: -120px; } }
 
 @media (min-width: 1120px) {
   #locations {
     height: 100vh; }
     #locations .row .modal-area {
-      height: 100vh; } }
+      height: 100vh; }
+  #blogs-page .row .figure.column {
+    height: 512px; } }
 
 @media (min-width: 1152px) {
   nav.navbar .navbar-nav li .nav-link {
@@ -5781,6 +5796,8 @@ small {
       height: 100vh; }
       #locations .row .modal-area .modal-dialog {
         max-height: 36%; }
+  #blogs-page .row .figure.column {
+    height: 512px; }
   #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
     width: 420px;
     height: 270px;
@@ -5796,7 +5813,9 @@ small {
     #locations .row .modal-area {
       height: 100vh; }
       #locations .row .modal-area .modal-dialog {
-        max-height: 28%; } }
+        max-height: 28%; }
+  #blogs-page .row .figure-img {
+    height: 260px; } }
 
 @media (min-width: 1400px) {
   nav.navbar .navbar-nav li .nav-link {
@@ -5826,6 +5845,10 @@ small {
     font-size: 60px; }
   #hospitality .figcaption-body {
     width: 40%; }
+  #blogs-page .row .figure.column {
+    height: 592px; }
+  #blogs-page .row .figure-img {
+    height: 300px; }
   #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
     width: 510px;
     height: 420px;

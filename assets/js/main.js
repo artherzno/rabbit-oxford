@@ -269,6 +269,7 @@ $(document).ready(function(){
 
     $('.modal-dialog .button-close').on('click', function(){
       $('.modal-locations').removeClass('show');
+      $('#locations .button-modal').removeClass('active');
     });
 
 
