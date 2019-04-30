@@ -760,10 +760,10 @@
 
         carouselHospitality();
 
-        $(window).resize(function(event) {
+        window.addEventListener("orientationchange", function(event) {
           $('#carouselHospitality').owlCarousel('destroy');
           carouselHospitality();
-
+          
           $('#carouselBlog').owlCarousel('destroy');
           carouselBlog();
         });

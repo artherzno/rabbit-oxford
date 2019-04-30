@@ -15,6 +15,15 @@ $(document).ready(function(){
   function orientationScreen() {
     if(window.orientation == 0 || window.orientation == undefined) {
       $('.dontOrientation').removeClass('show');
+
+      var winWidth = $(window).width();
+      setTimeout(function(){
+        if(winWidth < 1024) {
+          $('#carouselHospitality .owl-item h1').removeAttr('style');
+          checkHeightHeader('#carouselHospitality .owl-item');
+        }
+      },500);
+      
     } else {
       $('.dontOrientation').addClass('show');
     }
