@@ -710,6 +710,8 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
+
+        // Carousel Hospitality
         function carouselHospitality() {
           if (isIE()){
             // Carousel Hospitality
@@ -805,18 +807,23 @@
           mouseWheel:{
             enable: false
           },
-          snapOffset: 40,
+          snapOffset: 80,
           // snapAmount: 9,
 					theme: "dark-thick",
 					scrollbarPosition: "outside",
           alwaysShowScrollbar: 0,
+          autoDraggerLength: false,
+          scrollInertia: 1,
           live: false,
+          // scrollButtons:{
+          //   scrollType: "stepped"
+          // },
           callbacks:{
             onInit: function() {
               $('.mCSB_buttonUp').addClass('disabled');
             },
             onScroll: function(){
-              // console.log('SCROLLED...');
+              // console.log('SCROLLED...'+this.mcs.top);
               $('.mCSB_buttonUp').removeClass('disabled').attr('style', 'pointer-events: auto;');
               $('.mCSB_buttonDown').removeClass('disabled').attr('style', 'pointer-events: auto;');
             },
@@ -826,9 +833,11 @@
               $('.mCSB_buttonDown').attr('style', 'pointer-events: none;');
             },
             onTotalScroll: function(){
+              // console.log('BOTTOM...'+this.mcs.top);
               $('.mCSB_buttonDown').addClass('disabled');
             },
             onTotalScrollBack: function(){
+              // console.log('TOP...'+this.mcs.top);
               $('.mCSB_buttonUp').addClass('disabled');
             }
           }
