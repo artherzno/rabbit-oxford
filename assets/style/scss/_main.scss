@@ -516,7 +516,7 @@ small {
       margin: auto;
       @include transition(all 2s linear 1.4s);
       opacity: 0;
-      @include transform(translateY(20%));
+      @include transform(translateY(5%));
 
       &.fade-in {
         // @include transform(translateY(90%));
