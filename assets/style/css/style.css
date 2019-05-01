@@ -750,14 +750,14 @@ small {
       top: 0;
       bottom: 0;
       margin: auto;
-      -webkit-transition: all 2s linear 0.6s;
-      -ms-transition: all 2s linear 0.6s;
-      -o-transition: all 2s linear 0.6s;
-      transition: all 2s linear 0.6s;
+      -webkit-transition: all 2s ease 1.4s;
+      -ms-transition: all 2s ease 1.4s;
+      -o-transition: all 2s ease 1.4s;
+      transition: all 2s ease 1.4s;
       opacity: 0;
-      -webkit-transform: translateY(5%);
-      -ms-transform: translateY(5%);
-      transform: translateY(5%); }
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%); }
       #banner .container .content.fade-in {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
