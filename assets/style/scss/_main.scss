@@ -4703,7 +4703,7 @@ $breadcrumb-divider: quote(">");
     .content {
 
       &.fade-in {
-        padding-bottom: 14%;
+        // padding-bottom: 14%;
       }
 
       .column {
@@ -4752,21 +4752,7 @@ $breadcrumb-divider: quote(">");
   }
 
   // #hospitality-page, #demandgeneration-page, #demandfulfillment-page, #financialtransformation-page, #organisationaloptimisation-page {
-  .practics-page {
 
-    .content.fade-in {
-
-      .row {
-
-        .column {
-
-          &._right {
-            bottom: -210px;
-          }
-        }
-      }
-    }
-  }
 
   #hospitality-page {
 
@@ -4864,17 +4850,22 @@ $breadcrumb-divider: quote(">");
 
     .content {
 
+      &.fade-in {
+        padding-bottom: 14%;
+      }
+
       .row {
 
         .column {
 
           &._right {
-            bottom: -230px;
+            bottom: -190px;
           }
         }
       }
     }
   }
+
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
@@ -4899,6 +4890,28 @@ $breadcrumb-divider: quote(">");
 
         p {
           font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .practics-page {
+
+    .content {
+
+      &.fade-in {
+        padding-bottom: 14%;
+      }
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -210px;
+          }
         }
       }
     }
@@ -4960,6 +4973,26 @@ $breadcrumb-divider: quote(">");
 
       .figure-img {
         height: 640px;
+      }
+    }
+  }
+
+  .practics-page {
+
+    .content {
+
+      &.fade-in {
+        padding-bottom: 20%;
+      }
+
+      .row {
+
+        .column {
+
+          &._right {
+            bottom: -260px;
+          }
+        }
       }
     }
   }
@@ -7234,6 +7267,26 @@ $breadcrumb-divider: quote(">");
 
       .figure-img {
         // height: 880px;
+      }
+    }
+  }
+
+  .practics-page {
+
+    .content {
+
+      &.fade-in {
+        padding-bottom: 46%;
+      }
+
+      .row {
+
+        .column {
+
+          &._right {
+            // bottom: -190px;
+          }
+        }
       }
     }
   }

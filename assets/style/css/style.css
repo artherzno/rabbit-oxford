@@ -3818,8 +3818,6 @@ small {
       padding-top: 58%; }
   .practics-page .banner.fade-in .container h1 {
     font-size: 38px; }
-  .practics-page .content.fade-in {
-    padding-bottom: 14%; }
   .practics-page .content .column._left h1 {
     font-size: 38px; }
     .practics-page .content .column._left h1.number {
@@ -3833,8 +3831,6 @@ small {
     height: auto; }
     .practics-page .carousel-section.fade-in .carousel .carousel-item .row:last-child {
       margin: 15% -15px; }
-  .practics-page .content.fade-in .row .column._right {
-    bottom: -210px; }
   #hospitality-page .content .row {
     min-height: 480px; }
   #hospitality-page .feasibility-section .column h3.header, #hospitality-page .development-section .column h3.header, #hospitality-page .operational-section .column h3.header {
@@ -3849,14 +3845,22 @@ small {
 @media (min-width: 375px) {
   #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
     font-size: 22px; }
+  .practics-page .content.fade-in {
+    padding-bottom: 14%; }
   .practics-page .content .row .column._right {
-    bottom: -230px; } }
+    bottom: -190px; } }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #hospitality-page .feasibility-section .column h3, #hospitality-page .development-section .column h3, #hospitality-page .operational-section .column h3 {
     font-size: 20px; }
   #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
     font-size: 16px; } }
+
+@media (min-width: 400px) {
+  .practics-page .content.fade-in {
+    padding-bottom: 14%; }
+  .practics-page .content .row .column._right {
+    bottom: -210px; } }
 
 @media (min-width: 420px) {
   .practics-page .content .row .column._right {
@@ -3870,7 +3874,11 @@ small {
 
 @media (min-width: 520px) {
   #hospitality .figcaption .figure-img {
-    height: 640px; } }
+    height: 640px; }
+  .practics-page .content.fade-in {
+    padding-bottom: 20%; }
+  .practics-page .content .row .column._right {
+    bottom: -260px; } }
 
 /*** Mobile ***/
 @media (max-width: 767.98px) {
@@ -4959,6 +4967,10 @@ small {
     bottom: -360px; }
   .practics-page .content .row .column img {
     width: 78%; } }
+
+@media (min-width: 760px) {
+  .practics-page .content.fade-in {
+    padding-bottom: 46%; } }
 
 /*** Tablet ***/
 @media (min-width: 768px) and (max-width: 991.98px) {
