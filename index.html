@@ -763,7 +763,7 @@
         window.addEventListener("orientationchange", function(event) {
           $('#carouselHospitality').owlCarousel('destroy');
           carouselHospitality();
-          
+
           $('#carouselBlog').owlCarousel('destroy');
           carouselBlog();
         });
@@ -802,10 +802,12 @@
         $(".carouselHospitality-indicators").mCustomScrollbar({
           setHeight: '240px',
           scrollButtons: {
-            enable: true
+            enable: true,
+            scrollAmount: 5
           },
           mouseWheel:{
-            enable: false
+            enable: true,
+            preventDefault: true 
           },
           snapOffset: 80,
           // snapAmount: 9,
