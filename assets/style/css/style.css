@@ -870,7 +870,7 @@ small {
       -webkit-transform: translateY(50%);
       -ms-transform: translateY(50%);
       transform: translateY(50%); }
-    #whatwedo .figcaption .content .buttonRow, #whatwedo .figcaption .content a {
+    #whatwedo .figcaption .content .buttonRow {
       opacity: 0;
       -webkit-transform: translateY(200%);
       -ms-transform: translateY(200%);
@@ -901,7 +901,7 @@ small {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0); }
-      #whatwedo .figcaption .content.fade-in .buttonRow, #whatwedo .figcaption .content.fade-in a {
+      #whatwedo .figcaption .content.fade-in .buttonRow {
         opacity: 1;
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -1071,7 +1071,7 @@ small {
       -webkit-transform: translateY(20%);
       -ms-transform: translateY(20%);
       transform: translateY(20%); }
-    #hospitality .figcaption .buttonRow, #hospitality .figcaption a {
+    #hospitality .figcaption .buttonRow {
       float: right;
       clear: both;
       opacity: 0;
@@ -1099,7 +1099,7 @@ small {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0); }
-    #hospitality .figcaption.fade-in .buttonRow, #hospitality .figcaption.fade-in a {
+    #hospitality .figcaption.fade-in .buttonRow {
       opacity: 1;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);

@@ -669,7 +669,7 @@ small {
         @include transform(translateY(50%));
       }
 
-      .buttonRow, a {
+      .buttonRow  {
         opacity: 0;
         @include transform(translateY(200%));
         @include transition(transform 0.8s ease-out 1.6s);
@@ -687,7 +687,7 @@ small {
           @include transform(translateY(0));
         }
 
-        .buttonRow, a {
+        .buttonRow {
           opacity: 1;
           @include transform(translateY(0));
         }
@@ -876,7 +876,7 @@ small {
       @include transform(translateY(20%));
     }
 
-    .buttonRow, a {
+    .buttonRow {
       float: right;
       clear: both;
       opacity: 0;
@@ -896,7 +896,7 @@ small {
         @include transform(translateY(0));
       }
 
-      .buttonRow, a {
+      .buttonRow {
         opacity: 1;
         @include transform(translateY(0));
       }
