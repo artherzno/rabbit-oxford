@@ -1488,7 +1488,7 @@ small {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        // -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
       }
 
@@ -1498,7 +1498,7 @@ small {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        // -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
 
         &.date {
@@ -2075,7 +2075,7 @@ small {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        // -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
       }
 
@@ -2086,7 +2086,7 @@ small {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        // -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
 
         &.date {
@@ -2426,7 +2426,7 @@ small {
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 3;
+          // -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
         }
 
@@ -2437,7 +2437,7 @@ small {
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 3;
+          // -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
 
           &.date {
@@ -5305,7 +5305,7 @@ $breadcrumb-divider: quote(">");
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 3;
+          // -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
         }
 
@@ -5430,7 +5430,7 @@ $breadcrumb-divider: quote(">");
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        // -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
       }
 
@@ -5684,7 +5684,7 @@ $breadcrumb-divider: quote(">");
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
-                -webkit-line-clamp: 4;
+                // -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
               }
 
@@ -5921,7 +5921,7 @@ $breadcrumb-divider: quote(">");
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 4;
+          // -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
 
           &.date {
@@ -6082,7 +6082,7 @@ $breadcrumb-divider: quote(">");
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 4;
+            // -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
 
             &.date {
@@ -7562,7 +7562,7 @@ $breadcrumb-divider: quote(">");
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 3;
+          // -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
         }
 
@@ -7681,7 +7681,7 @@ $breadcrumb-divider: quote(">");
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        // -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
       }
 
@@ -7940,7 +7940,7 @@ $breadcrumb-divider: quote(">");
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 3;
+          // -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
 
           &.date {
@@ -7986,7 +7986,7 @@ $breadcrumb-divider: quote(">");
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 3;
+          // -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
         }
 
@@ -7994,7 +7994,7 @@ $breadcrumb-divider: quote(">");
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 3;
+          // -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
         }
       }

@@ -1512,7 +1512,6 @@ small {
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
       #blog .figure .figcaption p {
         color: #000;
@@ -1521,7 +1520,6 @@ small {
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
         #blog .figure .figcaption p.date {
           color: #999;
@@ -1946,7 +1944,6 @@ small {
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
       #blogs-page .figure .figcaption p {
         color: #000;
@@ -1956,7 +1953,6 @@ small {
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
         #blogs-page .figure .figcaption p.date {
           color: #999;
@@ -2184,7 +2180,6 @@ small {
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
       #blogsdetail-page .related .figure .figcaption p {
         color: #000;
@@ -2194,7 +2189,6 @@ small {
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
         #blogsdetail-page .related .figure .figcaption p.date {
           color: #999;
@@ -4045,7 +4039,6 @@ small {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; }
   #whatwedo .figcaption .content button, #whatwedo .figcaption .content a {
     margin: 0 7%; }
@@ -4113,7 +4106,6 @@ small {
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; }
     #hospitality .figcaption button, #hospitality .figcaption a {
       float: right;
@@ -4245,7 +4237,6 @@ small {
           -o-text-overflow: ellipsis;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 4;
           -webkit-box-orient: vertical; }
         #blog .content .row .col-md-12 .figure .figcaption .date {
           font-size: 14px;
@@ -4363,7 +4354,6 @@ small {
           -o-text-overflow: ellipsis;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 4;
           -webkit-box-orient: vertical; }
           #blogs-page .figure .figcaption p.date {
             font-size: 14px;
@@ -4446,7 +4436,6 @@ small {
           -o-text-overflow: ellipsis;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 4;
           -webkit-box-orient: vertical; }
           #blogsdetail-page .related .figure .figcaption p.date {
             font-size: 14px;
@@ -5103,7 +5092,6 @@ small {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; }
   #whatwedo .figcaption .content button, #whatwedo .figcaption .content a {
     margin: 0 9%; }
@@ -5171,7 +5159,6 @@ small {
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; }
     #hospitality .figcaption button, #hospitality .figcaption a {
       float: right;
@@ -5307,7 +5294,6 @@ small {
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; }
       #blog .figure .figcaption p.date {
         left: 24px; }
@@ -5332,14 +5318,12 @@ small {
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
       #blogs-page .figure .figcaption p {
         overflow: hidden;
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical; }
     #blogs-page .blogs-list a {
       height: 512px; }
