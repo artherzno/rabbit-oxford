@@ -1498,7 +1498,7 @@ small {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        // -webkit-line-clamp: 3;
+        // -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
 
         &.date {
@@ -2086,7 +2086,7 @@ small {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        // -webkit-line-clamp: 3;
+        // -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
 
         &.date {
@@ -2437,7 +2437,7 @@ small {
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          // -webkit-line-clamp: 3;
+          // -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
 
           &.date {
@@ -5643,7 +5643,7 @@ $breadcrumb-divider: quote(">");
               padding-right: 0;
 
               a {
-                height: 512px;
+                height: 492px;
               }
             }
           }
@@ -5893,7 +5893,7 @@ $breadcrumb-divider: quote(">");
       /* For crop image */
       .figure-img {
         width: 100%;
-        height: 230px;
+        height: 210px;
         position: relative;
         overflow: hidden;
         margin-bottom: 0;
@@ -6042,7 +6042,7 @@ $breadcrumb-divider: quote(">");
               padding-right: 0;
 
               a {
-                height: 512px;
+                height: 492px;
               }
             }
           }
@@ -7940,7 +7940,7 @@ $breadcrumb-divider: quote(">");
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          // -webkit-line-clamp: 3;
+          // -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
 
           &.date {
@@ -7994,8 +7994,16 @@ $breadcrumb-divider: quote(">");
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          // -webkit-line-clamp: 3;
+          // -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
+
+          &.date {
+            left: 24px;
+          }
+
+          &.button-readmore {
+            right: 24px;
+          }
         }
       }
     }
@@ -8074,6 +8082,21 @@ $breadcrumb-divider: quote(">");
 
               a {
                 height: 512px;
+
+                .figcaption {
+                  padding: 24px;
+
+                  p {
+
+                    &.date {
+                      left: 24px;
+                    }
+
+                    &.button-readmore {
+                      right: 24px;
+                    }
+                  }
+                }
               }
             }
           }
@@ -8873,10 +8896,27 @@ $breadcrumb-divider: quote(">");
       }
     }
 
-    .figure {
+    .row {
 
-      .figure-img {
-        height: 210px;
+      a.figure {
+
+        .figcaption {
+
+          p {
+
+            &.date {
+              left: 35px;
+            }
+
+            &.button-readmore {
+              right: 35px;
+            }
+          }
+        }
+
+        .figure-img {
+          height: 210px;
+        }
       }
     }
   }
@@ -8888,24 +8928,31 @@ $breadcrumb-divider: quote(">");
 
         .item {
 
+          .figure {
+
+            .figcaption {
+              padding: 35px;
+            }
+
+            .figure-img {
+              height: 210px;
+            }
+          }
+
           a {
             height: 512px;
 
-            .date {
-              left: 34px;
-            }
+            p {
 
-            .button-readmore {
-              right: 34px;
+              &.date {
+                left: 34px;
+              }
+
+              &.button-readmore {
+                right: 34px;
+              }
             }
           }
-        }
-      }
-
-      .figure {
-
-        .figure-img {
-          height: 210px;
         }
       }
     }
@@ -9064,7 +9111,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  $cardHeight: 562px;
+  $cardHeight: 512px;
   $imgHeight: 230px;
 
   #blog {
@@ -9095,6 +9142,20 @@ $breadcrumb-divider: quote(">");
         &.column {
           height: $cardHeight;
         }
+
+        .figcaption {
+
+          p {
+
+            &.date {
+              left: 24px;
+            }
+
+            &.button-readmore {
+              right: 24px;
+            }
+          }
+        }
       }
 
       .figure-img {
@@ -9124,6 +9185,21 @@ $breadcrumb-divider: quote(">");
       }
 
       .figure {
+
+        .figcaption {
+          padding: 24px;
+
+          p {
+
+            &.date {
+              left: 24px;
+            }
+
+            &.button-readmore {
+              right: 24px;
+            }
+          }
+        }
 
         .figure-img {
           height: $imgHeight;
@@ -9866,7 +9942,7 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  $cardHeight: 612px;
+  $cardHeight: 632px;
   $imgHeight: 330px;
 
   #blog {

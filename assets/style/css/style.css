@@ -4215,7 +4215,7 @@ small {
       padding-left: 0;
       padding-right: 0; }
       #blog .content #carouselBlog.owl-carousel .owl-item .item a {
-        height: 512px; }
+        height: 492px; }
     #blog .content .row:last-child {
       margin: 0; }
     #blog .content .row.text-center {
@@ -4332,7 +4332,7 @@ small {
         height: 492px; }
       #blogs-page .figure .figure-img {
         width: 100%;
-        height: 230px;
+        height: 210px;
         position: relative;
         overflow: hidden;
         margin-bottom: 0; }
@@ -4409,7 +4409,7 @@ small {
       padding-left: 0;
       padding-right: 0; }
       #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
-        height: 512px; }
+        height: 492px; }
     #blogsdetail-page .related .figure {
       /* For crop image */ }
       #blogsdetail-page .related .figure .figure-img {
@@ -5325,6 +5325,10 @@ small {
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-box-orient: vertical; }
+        #blogs-page .figure .figcaption p.date {
+          left: 24px; }
+        #blogs-page .figure .figcaption p.button-readmore {
+          right: 24px; }
     #blogs-page .blogs-list a {
       height: 512px; }
   #blogsdetail-page {
@@ -5357,6 +5361,12 @@ small {
           width: auto; }
     #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
       height: 512px; }
+      #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a .figcaption {
+        padding: 24px; }
+        #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a .figcaption p.date {
+          left: 24px; }
+        #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a .figcaption p.button-readmore {
+          right: 24px; }
   #team-page .banner, #hospitality-page .banner, #locations-page .banner, #careers-page .banner, #contactus-page .banner, #whyus-page .banner, .practics-page .banner {
     height: 35vh;
     background-size: 100%; }
@@ -5658,16 +5668,22 @@ small {
     font-size: 23px; }
   #blogs-page .blogs-list a.figure.column {
     height: 512px; }
-  #blogs-page .figure .figure-img {
+  #blogs-page .row a.figure .figcaption p.date {
+    left: 35px; }
+  #blogs-page .row a.figure .figcaption p.button-readmore {
+    right: 35px; }
+  #blogs-page .row a.figure .figure-img {
+    height: 210px; }
+  #blogsdetail-page .related .row .item .figure .figcaption {
+    padding: 35px; }
+  #blogsdetail-page .related .row .item .figure .figure-img {
     height: 210px; }
   #blogsdetail-page .related .row .item a {
     height: 512px; }
-    #blogsdetail-page .related .row .item a .date {
+    #blogsdetail-page .related .row .item a p.date {
       left: 34px; }
-    #blogsdetail-page .related .row .item a .button-readmore {
+    #blogsdetail-page .related .row .item a p.button-readmore {
       right: 34px; }
-  #blogsdetail-page .related .figure .figure-img {
-    height: 210px; }
   #contactus-page #contactus-form .section-form form {
     padding: 60px 50px 60px 80px; }
   #contactus-page #contactus-form .section-form label {
@@ -5721,15 +5737,25 @@ small {
   #hospitality .figcaption .figure-img {
     height: auto; }
   #blog #carouselBlog .item a {
-    height: 562px; }
+    height: 512px; }
   #blog .figure .figure-img {
     height: 230px; }
   #blogs-page .row .figure.column {
-    height: 562px; }
+    height: 512px; }
+  #blogs-page .row .figure .figcaption p.date {
+    left: 24px; }
+  #blogs-page .row .figure .figcaption p.button-readmore {
+    right: 24px; }
   #blogs-page .row .figure-img {
     height: 230px; }
   #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
-    height: 562px; }
+    height: 512px; }
+  #blogsdetail-page .related .figure .figcaption {
+    padding: 24px; }
+    #blogsdetail-page .related .figure .figcaption p.date {
+      left: 24px; }
+    #blogsdetail-page .related .figure .figcaption p.button-readmore {
+      right: 24px; }
   #blogsdetail-page .related .figure .figure-img {
     height: 230px; }
   #team-page .banner.fade-in, .practics-page .banner.fade-in, #whyus-page .banner.fade-in, #locations-page .banner.fade-in, #blogs-page .banner.fade-in, #careers-page .banner.fade-in, #contactus-page .banner.fade-in {
@@ -5916,15 +5942,15 @@ small {
   #hospitality .figcaption-body {
     width: 40%; }
   #blog #carouselBlog .item a {
-    height: 612px; }
+    height: 632px; }
   #blog .figure .figure-img {
     height: 330px; }
   #blogs-page .row .figure.column {
-    height: 612px; }
+    height: 632px; }
   #blogs-page .row .figure-img {
     height: 330px; }
   #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
-    height: 612px; }
+    height: 632px; }
   #blogsdetail-page .related .figure .figure-img {
     height: 330px; }
   #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail {
