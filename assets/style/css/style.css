@@ -5788,6 +5788,10 @@ small {
     height: 210px; }
   #blogs-page .row .figure.column {
     height: 512px; }
+  #blogs-page .row .figure .figcaption p.date {
+    left: 34px; }
+  #blogs-page .row .figure .figcaption p.button-readmore {
+    right: 34px; }
   #blogs-page .row .figure-img {
     height: 210px; }
   #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {

@@ -9319,6 +9319,21 @@ $breadcrumb-divider: quote(">");
         &.column {
           height: $cardHeight;
         }
+
+        
+        .figcaption {
+
+          p {
+
+            &.date {
+              left: 34px;
+            }
+
+            &.button-readmore {
+              right: 34px;
+            }
+          }
+        }
       }
 
       .figure-img {
