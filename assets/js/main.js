@@ -23,7 +23,7 @@ $(document).ready(function(){
           checkHeightHeader('#carouselHospitality .owl-item');
         }
       },500);
-      
+
     } else {
       $('.dontOrientation').addClass('show');
     }
@@ -377,6 +377,24 @@ $(document).ready(function(){
  }
 
  checkWindowWidth();
+
+
+
+ // Hospitality Page - Check Height ////////////////////////////////////////////
+ var idName = '';
+ $('.discover-section .box-link').on('click', function(){
+   var idNameCurr = $(this).attr('id').replace('btn-collapse-','');
+    console.log('idName : '+ idName);
+    console.log('clicked : '+ idNameCurr);
+    if(idNameCurr == idName) {
+      $('.discover-section .box-menu').removeClass('scale-small');
+      idName = '';
+    } else {
+
+      $('.discover-section .box-menu').addClass('scale-small');
+      idName = $(this).attr('id').replace('btn-collapse-','');
+    }
+ });
 
 
 

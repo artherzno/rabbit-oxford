@@ -976,7 +976,7 @@
           var $dotItem = $('.carouselBlogDetail-dot li');
           var $dotItemLength = $('#carouselBlogDetail .item').length;
           // $dotItem.removeClass('active').eq($indexCurrent).addClass('active');
-
+if($dotItemLength > 8) {
           if($event == 'left') {
             if($indexCurrent > 3) {
               // Check result positon dot index 0 to end
@@ -1001,7 +1001,7 @@
 
             $itemPos = $resultPos;
           }
-
+}
           $dot.css('transform', 'translateX('+ $itemPos +'px)');
           // var $event = event.relatedTarget['_drag']['direction'];
           // var $indexCurrent = event.item.index;

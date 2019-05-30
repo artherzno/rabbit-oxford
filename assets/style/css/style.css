@@ -2083,6 +2083,7 @@ small {
     #blogsdetail-page .carouselBlogDetail-dot-container.hide-dot {
       opacity: 0; }
     #blogsdetail-page .carouselBlogDetail-dot-container .carouselBlogDetail-dot {
+      margin: auto;
       -webkit-transition: all 0.2s ease-out;
       -ms-transition: all 0.2s ease-out;
       -o-transition: all 0.2s ease-out;
@@ -3241,7 +3242,7 @@ small {
   -o-transition: all 0.8s ease-out 0.4s;
   transition: all 0.8s ease-out 0.4s; }
 
-#hospitality-page .feasibility-section .row, #hospitality-page .development-section .row, #hospitality-page .operational-section .row, #hospitality-page .operational-section .row, #hospitality-page .discover-section .row, #hospitality-page .roles-section .row, #hospitality-page .getintouch-section .row {
+#hospitality-page .feasibility-section .row, #hospitality-page .feasibility-section .discover-accordion, #hospitality-page .development-section .row, #hospitality-page .development-section .discover-accordion, #hospitality-page .operational-section .row, #hospitality-page .operational-section .discover-accordion, #hospitality-page .operational-section .row, #hospitality-page .operational-section .discover-accordion, #hospitality-page .discover-section .row, #hospitality-page .discover-section .discover-accordion, #hospitality-page .roles-section .row, #hospitality-page .roles-section .discover-accordion, #hospitality-page .getintouch-section .row, #hospitality-page .getintouch-section .discover-accordion {
   opacity: 0;
   -webkit-transform: translateY(20%);
   -ms-transform: translateY(20%);
@@ -3251,7 +3252,7 @@ small {
   -o-transition: all 0.8s ease-out 0.6s;
   transition: all 0.8s ease-out 0.6s; }
 
-#hospitality-page .feasibility-section.fade-in h1, #hospitality-page .feasibility-section.fade-in h2, #hospitality-page .feasibility-section.fade-in h3, #hospitality-page .feasibility-section.fade-in .row, #hospitality-page .development-section.fade-in h1, #hospitality-page .development-section.fade-in h2, #hospitality-page .development-section.fade-in h3, #hospitality-page .development-section.fade-in .row, #hospitality-page .operational-section.fade-in h1, #hospitality-page .operational-section.fade-in h2, #hospitality-page .operational-section.fade-in h3, #hospitality-page .operational-section.fade-in .row, #hospitality-page .operational-section.fade-in h1, #hospitality-page .operational-section.fade-in h2, #hospitality-page .operational-section.fade-in h3, #hospitality-page .operational-section.fade-in .row, #hospitality-page .discover-section.fade-in h1, #hospitality-page .discover-section.fade-in h2, #hospitality-page .discover-section.fade-in h3, #hospitality-page .discover-section.fade-in .row, #hospitality-page .roles-section.fade-in h1, #hospitality-page .roles-section.fade-in h2, #hospitality-page .roles-section.fade-in h3, #hospitality-page .roles-section.fade-in .row, #hospitality-page .getintouch-section.fade-in h1, #hospitality-page .getintouch-section.fade-in h2, #hospitality-page .getintouch-section.fade-in h3, #hospitality-page .getintouch-section.fade-in .row {
+#hospitality-page .feasibility-section.fade-in h1, #hospitality-page .feasibility-section.fade-in h2, #hospitality-page .feasibility-section.fade-in h3, #hospitality-page .feasibility-section.fade-in .row, #hospitality-page .feasibility-section.fade-in .discover-accordion, #hospitality-page .development-section.fade-in h1, #hospitality-page .development-section.fade-in h2, #hospitality-page .development-section.fade-in h3, #hospitality-page .development-section.fade-in .row, #hospitality-page .development-section.fade-in .discover-accordion, #hospitality-page .operational-section.fade-in h1, #hospitality-page .operational-section.fade-in h2, #hospitality-page .operational-section.fade-in h3, #hospitality-page .operational-section.fade-in .row, #hospitality-page .operational-section.fade-in .discover-accordion, #hospitality-page .operational-section.fade-in h1, #hospitality-page .operational-section.fade-in h2, #hospitality-page .operational-section.fade-in h3, #hospitality-page .operational-section.fade-in .row, #hospitality-page .operational-section.fade-in .discover-accordion, #hospitality-page .discover-section.fade-in h1, #hospitality-page .discover-section.fade-in h2, #hospitality-page .discover-section.fade-in h3, #hospitality-page .discover-section.fade-in .row, #hospitality-page .discover-section.fade-in .discover-accordion, #hospitality-page .roles-section.fade-in h1, #hospitality-page .roles-section.fade-in h2, #hospitality-page .roles-section.fade-in h3, #hospitality-page .roles-section.fade-in .row, #hospitality-page .roles-section.fade-in .discover-accordion, #hospitality-page .getintouch-section.fade-in h1, #hospitality-page .getintouch-section.fade-in h2, #hospitality-page .getintouch-section.fade-in h3, #hospitality-page .getintouch-section.fade-in .row, #hospitality-page .getintouch-section.fade-in .discover-accordion {
   opacity: 1;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -3288,7 +3289,232 @@ small {
   background-color: #1d1d1d;
   padding: 20% 0; }
   #hospitality-page .discover-section h1 {
+    text-align: center;
+    padding: 0 0 100px;
+    margin: 0; }
+  #hospitality-page .discover-section h3 {
+    text-align: center;
+    font-size: 35px;
+    color: #f7d0cb;
+    margin-bottom: 60px;
+    font-weight: 400;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  #hospitality-page .discover-section #discover-accordion .box-item {
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+    width: 100%;
+    max-width: 320px; }
+    #hospitality-page .discover-section #discover-accordion .box-item .box-link {
+      padding: 60px;
+      background-color: #1f3052;
+      width: 100%;
+      height: 300px;
+      border-radius: 0;
+      border: 1px solid #1f3052;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+      #hospitality-page .discover-section #discover-accordion .box-item .box-link img {
+        margin: 0 auto 20px;
+        display: block;
+        width: 72px;
+        height: 72px;
+        display: block; }
+        #hospitality-page .discover-section #discover-accordion .box-item .box-link img.img-hover, #hospitality-page .discover-section #discover-accordion .box-item .box-link img.img-active {
+          display: none; }
+      #hospitality-page .discover-section #discover-accordion .box-item .box-link h3 {
+        margin-bottom: 0;
+        color: #fff;
+        text-transform: uppercase; }
+      #hospitality-page .discover-section #discover-accordion .box-item .box-link[aria-expanded="true"] {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+        border: 1px solid #D5F5FF;
+        background-color: #f7d0cb;
+        -webkit-box-shadow: 0 0 36px #5ba1f9;
+        box-shadow: 0 0 36px #5ba1f9; }
+        #hospitality-page .discover-section #discover-accordion .box-item .box-link[aria-expanded="true"] h3 {
+          color: #1f2638 !important; }
+        #hospitality-page .discover-section #discover-accordion .box-item .box-link[aria-expanded="true"] img.img-active {
+          display: block !important; }
+        #hospitality-page .discover-section #discover-accordion .box-item .box-link[aria-expanded="true"] img.img-normal, #hospitality-page .discover-section #discover-accordion .box-item .box-link[aria-expanded="true"] img.img-hover {
+          display: none !important; }
+    #hospitality-page .discover-section #discover-accordion .box-item:hover .box-link {
+      -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      transform: translateY(-30px);
+      border: 1px solid #D5F5FF;
+      -webkit-box-shadow: 0 0 36px #5ba1f9;
+      box-shadow: 0 0 36px #5ba1f9; }
+      #hospitality-page .discover-section #discover-accordion .box-item:hover .box-link h3 {
+        color: #f7d0cb; }
+      #hospitality-page .discover-section #discover-accordion .box-item:hover .box-link img.img-hover {
+        display: block; }
+      #hospitality-page .discover-section #discover-accordion .box-item:hover .box-link img.img-normal, #hospitality-page .discover-section #discover-accordion .box-item:hover .box-link img.img-active {
+        display: none; }
+  #hospitality-page .discover-section #discover-accordion .box-menu {
+    margin-bottom: 90px;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease; }
+    #hospitality-page .discover-section #discover-accordion .box-menu.scale-small {
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8); }
+  #hospitality-page .discover-section #discover-accordion .box-content .collapse {
     text-align: center; }
+    #hospitality-page .discover-section #discover-accordion .box-content .collapse.show .box-item, #hospitality-page .discover-section #discover-accordion .box-content .collapse.show .box-head {
+      -webkit-transition: opacity 0.6s ease;
+      -ms-transition: opacity 0.6s ease;
+      -o-transition: opacity 0.6s ease;
+      transition: opacity 0.6s ease;
+      opacity: 1; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-col._left, #hospitality-page .discover-section #discover-accordion .box-content .box-col._right {
+    width: 48%;
+    display: inline-block; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-col._left {
+    margin-right: 20px; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-col._right {
+    margin-left: 20px; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-col .box-item {
+    width: 48%;
+    margin: 0; }
+    #hospitality-page .discover-section #discover-accordion .box-content .box-col .box-item:last-child {
+      margin-left: 20px; }
+    #hospitality-page .discover-section #discover-accordion .box-content .box-col .box-item .box-link {
+      width: 100%; }
+  #hospitality-page .discover-section #discover-accordion .box-content fieldset {
+    border: 1px solid #f7d0cb;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px; }
+    #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
+      width: 40%;
+      color: #f7d0cb;
+      margin: 0;
+      padding: 0 20px;
+      font: 35px/1 oswald, arial; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-item, #hospitality-page .discover-section #discover-accordion .box-content .box-head {
+    opacity: 0; }
+    #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link {
+      padding: 0;
+      width: 325px;
+      height: 340px;
+      display: inline-block;
+      background-color: transparent;
+      border: none; }
+      #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link h3, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link h3 {
+        font-weight: bold;
+        line-height: 1.4; }
+      #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 340px;
+        -webkit-perspective: 1000px;
+        perspective: 1000px; }
+      #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-inner, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        -webkit-transition: -webkit-transform 0.6s;
+        transition: -webkit-transform 0.6s;
+        -o-transition: transform 0.6s;
+        transition: transform 0.6s;
+        transition: transform 0.6s, -webkit-transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        border: 1px solid #1f3052;
+        cursor: pointer; }
+      #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card:hover .flip-card-inner, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card:hover .flip-card-inner {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        border: 1px solid #D5F5FF;
+        -webkit-box-shadow: 0 0 36px #5ba1f9;
+        box-shadow: 0 0 36px #5ba1f9; }
+      #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background-color: #1f3052; }
+      #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-front h3, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-front h3 {
+        width: 85%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%); }
+      #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back {
+        background-color: #1f3052;
+        color: white;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
+        #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back .flip-card-back-content, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back .flip-card-back-content {
+          width: 85%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%); }
+          #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back .flip-card-back-content .flip-card-list, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back .flip-card-back-content .flip-card-list {
+            width: 100%;
+            overflow: hidden; }
+          #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back .flip-card-back-content._more img, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back .flip-card-back-content._more img {
+            width: 10%;
+            margin-right: 10px; }
+          #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back .flip-card-back-content._more h3, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back .flip-card-back-content._more h3 {
+            font-size: 20px;
+            margin-bottom: 20px; }
+        #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back img, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back img {
+          display: inline-block;
+          float: left;
+          width: 20%;
+          height: auto; }
+        #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back h3, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back h3 {
+          display: inline-block;
+          float: left;
+          width: 79%;
+          font-weight: 400;
+          text-align: left;
+          margin-bottom: 30px; }
+    #hospitality-page .discover-section #discover-accordion .box-content .box-item:hover .box-link, #hospitality-page .discover-section #discover-accordion .box-content .box-head:hover .box-link {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      border: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
 
 #hospitality-page .roles-section {
   background-color: #1d1d1d;
@@ -5762,6 +5988,12 @@ small {
     height: 100vh;
     max-height: 890px;
     background-size: cover; }
+  #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
+    width: 26%; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-col._left, #hospitality-page .discover-section #discover-accordion .box-content .box-col._right {
+    width: 100%; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-col._left {
+    margin-bottom: 60px; }
   #whyus-page .banner {
     background-position: -80px center; } }
 
@@ -5967,6 +6199,12 @@ small {
     padding-right: 15px; }
   .practics-page .carousel-section .carousel {
     padding-top: 0; }
+  #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
+    width: 48%; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-col._left, #hospitality-page .discover-section #discover-accordion .box-content .box-col._right {
+    width: 48%; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-col._left {
+    margin-bottom: 0; }
   #whyus-page .banner {
     background-position: center center; } }
 
