@@ -3459,6 +3459,8 @@ small {
         border: 1px solid #D5F5FF;
         -webkit-box-shadow: 0 0 36px #5ba1f9;
         box-shadow: 0 0 36px #5ba1f9; }
+        #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card:hover .flip-card-inner .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card:hover .flip-card-inner .flip-card-front {
+          z-index: -1; }
       #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back {
         position: absolute;
         width: 100%;
@@ -3719,7 +3721,8 @@ small {
       width: 100%;
       height: auto; }
       .practics-page .carousel-section .carousel .carousel-item {
-        padding: 15% 0 12%; }
+        padding: 15% 0 12%;
+        min-height: 830px; }
         .practics-page .carousel-section .carousel .carousel-item .row.row_1 {
           opacity: 0;
           -webkit-transform: translateY(50%);
@@ -3738,8 +3741,8 @@ small {
           -ms-transition: all 0.8s ease-out 0.6s;
           -o-transition: all 0.8s ease-out 0.6s;
           transition: all 0.8s ease-out 0.6s; }
-        .practics-page .carousel-section .carousel .carousel-item .row:last-child {
-          margin-top: 160px; }
+        .practics-page .carousel-section .carousel .carousel-item .row:first-child {
+          margin-bottom: 160px; }
         .practics-page .carousel-section .carousel .carousel-item .row h1 {
           font-size: 45px;
           line-height: 1.2; }
@@ -4065,6 +4068,14 @@ small {
 @media (min-width: 375px) {
   #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
     font-size: 22px; }
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col._left, #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col._right {
+    width: 100%; }
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .collapse.show .box-item {
+    width: 100%; }
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu {
+    display: block; }
+    #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu .box-item {
+      margin-bottom: 20px; }
   .practics-page .content.fade-in {
     padding-bottom: 14%; }
   .practics-page .content .row .column._right {
@@ -5850,6 +5861,8 @@ small {
     padding: 70px 35px; }
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
       margin-right: 15px; }
+  .practics-page .content.fade-in {
+    margin-bottom: 20%; }
   .practics-page .content .row .column._right {
     bottom: -120px; } }
 
@@ -5988,6 +6001,18 @@ small {
     height: 100vh;
     max-height: 890px;
     background-size: cover; }
+  .practics-page .content.fade-in {
+    padding-bottom: 0; }
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col._left, #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col._right {
+    width: 60%; }
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .collapse.show .box-item {
+    width: 48%; }
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu .box-item {
+      margin-bottom: 20px; }
   #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
     width: 26%; }
   #hospitality-page .discover-section #discover-accordion .box-content .box-col._left, #hospitality-page .discover-section #discover-accordion .box-content .box-col._right {
@@ -6199,9 +6224,17 @@ small {
     padding-right: 15px; }
   .practics-page .carousel-section .carousel {
     padding-top: 0; }
-  #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col._left, #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col._right {
     width: 48%; }
-  #hospitality-page .discover-section #discover-accordion .box-content .box-col._left, #hospitality-page .discover-section #discover-accordion .box-content .box-col._right {
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .collapse.show .box-item {
+    width: 48%; }
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu .box-item {
+      margin-bottom: 20px; }
+  #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
     width: 48%; }
   #hospitality-page .discover-section #discover-accordion .box-content .box-col._left {
     margin-bottom: 0; }

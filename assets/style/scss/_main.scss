@@ -4003,6 +4003,10 @@ small {
               transform: rotateY(180deg);
               border: 1px solid #D5F5FF;
               box-shadow: 0 0 36px #5ba1f9;
+
+              .flip-card-front {
+                z-index: -1;
+              }
             }
 
             .flip-card-front, .flip-card-back {
@@ -4364,6 +4368,7 @@ small {
 
       .carousel-item {
         padding: 15% 0 12%;
+        min-height: 830px;
 
         .row {
 
@@ -4379,8 +4384,8 @@ small {
             @include transition(all 0.8s ease-out 0.6s);
           }
 
-          &:last-child {
-            margin-top: 160px;
+          &:first-child {
+            margin-bottom: 160px;
           }
 
           h1 {
@@ -5152,6 +5157,43 @@ $breadcrumb-divider: quote(">");
         }
       }
     }
+
+    .discover-section {
+
+      #discover-accordion {
+
+        &.discover-accordion {
+
+          .box-content {
+
+            .box-col {
+
+              &._left, &._right {
+                width: 100%;
+              }
+            }
+
+            .collapse {
+
+              &.show {
+
+                .box-item {
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          .box-menu {
+            display: block;
+
+            .box-item {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+      }
   }
 
   .practics-page {
@@ -5173,7 +5215,6 @@ $breadcrumb-divider: quote(">");
       }
     }
   }
-
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
@@ -9051,6 +9092,10 @@ $breadcrumb-divider: quote(">");
 
     .content {
 
+      &.fade-in {
+        margin-bottom: 20%;
+      }
+
       .row {
 
         .column {
@@ -9528,11 +9573,52 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  .practics-page {
+
+    .content {
+
+      &.fade-in {
+        padding-bottom: 0;
+      }
+    }
+  }
+
   #hospitality-page {
 
     .discover-section {
 
       #discover-accordion {
+
+        &.discover-accordion {
+
+          .box-content {
+
+            .box-col {
+
+              &._left, &._right {
+                width: 60%;
+              }
+            }
+
+            .collapse {
+
+              &.show {
+
+                .box-item {
+                  width: 48%;
+                }
+              }
+            }
+          }
+
+          .box-menu {
+            display: flex;
+
+            .box-item {
+              margin-bottom: 20px;
+            }
+          }
+        }
 
         .box-content {
 
@@ -10410,6 +10496,37 @@ $breadcrumb-divider: quote(">");
 
       #discover-accordion {
 
+        &.discover-accordion {
+
+          .box-content {
+
+            .box-col {
+
+              &._left, &._right {
+                width: 48%;
+              }
+            }
+
+            .collapse {
+
+              &.show {
+
+                .box-item {
+                  width: 48%;
+                }
+              }
+            }
+          }
+
+          .box-menu {
+            display: flex;
+
+            .box-item {
+              margin-bottom: 20px;
+            }
+          }
+        }
+
         .box-content {
 
           fieldset {
@@ -10422,9 +10539,9 @@ $breadcrumb-divider: quote(">");
 
           .box-col {
 
-            &._left, &._right {
-              width: 48%;
-            }
+            // &._left, &._right {
+            //   width: 48%;
+            // }
 
             &._left {
               margin-bottom: 0;
