@@ -3812,9 +3812,11 @@ small {
       margin-bottom: 60px;
       font-weight: 400;
       @include transition(all 0.2s ease);
+      display: none;
     }
 
     #discover-accordion {
+      display: none;
 
       .box-item {
         display: inline-block;
