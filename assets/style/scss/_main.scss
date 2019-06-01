@@ -107,6 +107,12 @@ textarea.form-control-field  {
   background-image: none;
 }
 
+.star-input {
+  padding-left: 3px;
+  color: #999999;
+  font-weight: bold;
+}
+
 small {
   color: $gray;
   font-size: 18px;
@@ -2246,6 +2252,10 @@ small {
         p {
           font-size: 18px;
         }
+
+        li {
+          font-size: 18px;
+        }
       }
     }
 
@@ -4368,7 +4378,7 @@ small {
 
       .carousel-item {
         padding: 15% 0 12%;
-        min-height: 830px;
+        min-height: 740px;
 
         .row {
 
@@ -4385,7 +4395,7 @@ small {
           }
 
           &:first-child {
-            margin-bottom: 160px;
+            margin-bottom: 80px;
           }
 
           h1 {
@@ -6318,6 +6328,15 @@ $breadcrumb-divider: quote(">");
               margin: 0;
             }
           }
+
+          li {
+            font-size: 16px;
+
+            &:last-child {
+              padding: 0;
+              margin: 0;
+            }
+          }
         }
       }
     }
@@ -6628,6 +6647,7 @@ $breadcrumb-divider: quote(">");
 
         .carousel-item {
           padding: 15% 0 30%;
+          min-height: 800px;
 
           .row {
 
@@ -9364,6 +9384,19 @@ $breadcrumb-divider: quote(">");
         h1 {
           font-size: 120px;
           bottom: 40px;
+        }
+      }
+    }
+  }
+
+  .practics-page {
+
+    .carousel-section {
+
+      .carousel {
+
+        .carousel-item {
+          min-height: 700px;
         }
       }
     }

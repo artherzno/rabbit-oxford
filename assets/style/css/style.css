@@ -306,6 +306,11 @@ textarea.form-control-field {
 .form-control-field.is-invalid, .was-validated .form-control-field:invalid {
   background-image: none; }
 
+.star-input {
+  padding-left: 3px;
+  color: #999999;
+  font-weight: bold; }
+
 small {
   color: #999;
   font-size: 18px;
@@ -2061,6 +2066,8 @@ small {
         margin-top: 40px; }
       #blogsdetail-page .content .detail .text-detail p {
         font-size: 18px; }
+      #blogsdetail-page .content .detail .text-detail li {
+        font-size: 18px; }
     #blogsdetail-page .content .carousel-dot li {
       color: #000; }
   #blogsdetail-page .carouselBlogDetail-dot-container {
@@ -3722,7 +3729,7 @@ small {
       height: auto; }
       .practics-page .carousel-section .carousel .carousel-item {
         padding: 15% 0 12%;
-        min-height: 830px; }
+        min-height: 740px; }
         .practics-page .carousel-section .carousel .carousel-item .row.row_1 {
           opacity: 0;
           -webkit-transform: translateY(50%);
@@ -3742,7 +3749,7 @@ small {
           -o-transition: all 0.8s ease-out 0.6s;
           transition: all 0.8s ease-out 0.6s; }
         .practics-page .carousel-section .carousel .carousel-item .row:first-child {
-          margin-bottom: 160px; }
+          margin-bottom: 80px; }
         .practics-page .carousel-section .carousel .carousel-item .row h1 {
           font-size: 45px;
           line-height: 1.2; }
@@ -4616,6 +4623,11 @@ small {
           #blogsdetail-page .content .detail .text-detail p:last-child {
             padding: 0;
             margin: 0; }
+        #blogsdetail-page .content .detail .text-detail li {
+          font-size: 16px; }
+          #blogsdetail-page .content .detail .text-detail li:last-child {
+            padding: 0;
+            margin: 0; }
     #blogsdetail-page .breadcrumb {
       margin-bottom: 40px; }
     #blogsdetail-page h1 {
@@ -4760,7 +4772,8 @@ small {
   .practics-page .carousel-section .carousel {
     padding-top: 35%; }
     .practics-page .carousel-section .carousel .carousel-item {
-      padding: 15% 0 30%; }
+      padding: 15% 0 30%;
+      min-height: 800px; }
       .practics-page .carousel-section .carousel .carousel-item .row:last-child {
         margin-top: 15%; }
       .practics-page .carousel-section .carousel .carousel-item .row h1 {
@@ -5945,6 +5958,8 @@ small {
     #team-page .banner.fade-in h1, #whyus-page .banner.fade-in h1, #careers-page .banner.fade-in h1, #contactus-page .banner.fade-in h1, #locations-page .banner.fade-in h1, #hospitality-page .banner.fade-in h1, .practics-page .banner.fade-in h1 {
       font-size: 120px;
       bottom: 40px; }
+  .practics-page .carousel-section .carousel .carousel-item {
+    min-height: 700px; }
   #locations-page {
     background-color: #000; }
   #whyus-page .figure img {
