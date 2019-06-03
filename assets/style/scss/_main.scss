@@ -2242,6 +2242,15 @@ small {
         padding: 0 14%;
         margin-bottom: 70px;
 
+        a {
+          color: $black;
+          font-weight: bold;
+
+          &:hover {
+            color: $pink;
+          }
+        }
+
         img {
           max-width: 100%;
           height: auto;
