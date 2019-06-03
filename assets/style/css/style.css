@@ -2060,7 +2060,8 @@ small {
       padding: 0 14%;
       margin-bottom: 70px; }
       #blogsdetail-page .content .detail .text-detail img {
-        width: 100%; }
+        width: 100%;
+        height: auto; }
       #blogsdetail-page .content .detail .text-detail p {
         font-size: 18px; }
       #blogsdetail-page .content .detail .text-detail li {
