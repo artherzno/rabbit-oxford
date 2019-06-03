@@ -4614,13 +4614,9 @@ small {
     margin-top: 60px; }
     #blogsdetail-page .content {
       padding: 50px 0; }
-      #blogsdetail-page .content .detail .head-img {
-        margin: 0 0 40px; }
       #blogsdetail-page .content .detail .text-detail {
         padding: 0;
         margin-bottom: 0; }
-        #blogsdetail-page .content .detail .text-detail img {
-          margin-bottom: 40px; }
         #blogsdetail-page .content .detail .text-detail p {
           font-size: 16px; }
           #blogsdetail-page .content .detail .text-detail p:last-child {
