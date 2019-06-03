@@ -3795,6 +3795,7 @@ small {
   }
 
   .discover-section {
+    display: none;
     background-color: #1d1d1d;
     padding: 20% 0;
     // height: 100vh;
@@ -4120,6 +4121,7 @@ small {
   .roles-section {
     background-color: #1d1d1d;
     background-position: center bottom;
+    padding-top: 190px;
     padding-bottom: 190px;
 
     h1 {
@@ -6743,6 +6745,8 @@ $breadcrumb-divider: quote(">");
     }
 
     .roles-section {
+      /* hide role section */
+      padding-top: 50px;
 
       h3 {
         font-size: 25px;
@@ -8653,6 +8657,8 @@ $breadcrumb-divider: quote(">");
 
     .roles-section {
       margin: -1px 0;
+      /* hide role seciton */
+      padding-top: 100px;
 
       .row {
 

@@ -3293,6 +3293,7 @@ small {
     border-left: 1px solid #999; }
 
 #hospitality-page .discover-section {
+  display: none;
   background-color: #1d1d1d;
   padding: 20% 0; }
   #hospitality-page .discover-section h1 {
@@ -3531,6 +3532,7 @@ small {
 #hospitality-page .roles-section {
   background-color: #1d1d1d;
   background-position: center bottom;
+  padding-top: 190px;
   padding-bottom: 190px; }
   #hospitality-page .roles-section h1 {
     text-align: center;
@@ -4821,18 +4823,21 @@ small {
     padding: 45% 0; }
     #hospitality-page .discover-section h1 {
       font-size: 36px; }
-  #hospitality-page .roles-section h3 {
-    font-size: 25px; }
-  #hospitality-page .roles-section .row.oxford-dt {
-    display: none !important; }
-  #hospitality-page .roles-section .row.oxford-mb {
-    display: block !important; }
-  #hospitality-page .roles-section .row .column {
-    width: 80%;
-    display: block;
-    margin: 0 auto 40px; }
-    #hospitality-page .roles-section .row .column.col_2 {
-      width: 90%; }
+  #hospitality-page .roles-section {
+    /* hide role section */
+    padding-top: 50px; }
+    #hospitality-page .roles-section h3 {
+      font-size: 25px; }
+    #hospitality-page .roles-section .row.oxford-dt {
+      display: none !important; }
+    #hospitality-page .roles-section .row.oxford-mb {
+      display: block !important; }
+    #hospitality-page .roles-section .row .column {
+      width: 80%;
+      display: block;
+      margin: 0 auto 40px; }
+      #hospitality-page .roles-section .row .column.col_2 {
+        width: 90%; }
   /* Careers page ********************/
   #careers-page .banner {
     height: 44vh;
@@ -5688,7 +5693,9 @@ small {
   #hospitality-page .discover-section h1 {
     margin: 190px 0; }
   #hospitality-page .roles-section {
-    margin: -1px 0; }
+    margin: -1px 0;
+    /* hide role seciton */
+    padding-top: 100px; }
     #hospitality-page .roles-section .row.oxford-dt {
       display: none !important; }
     #hospitality-page .roles-section .row.oxford-mb {
