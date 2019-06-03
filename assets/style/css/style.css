@@ -4115,9 +4115,9 @@ small {
 @media (min-width: 520px) {
   #hospitality .figcaption .figure-img {
     height: 640px; }
-  .practics-page .content.fade-in {
+  .practics-page > .content.fade-in {
     padding-bottom: 20%; }
-  .practics-page .content .row .column._right {
+  .practics-page > .content .row .column._right {
     bottom: -260px; } }
 
 /*** Mobile ***/
@@ -4821,7 +4821,7 @@ small {
     #hospitality-page .discover-section h1 {
       font-size: 36px; }
   #hospitality-page .roles-section {
-    /* hide role section */
+    /* hide discover section */
     padding-top: 50px; }
     #hospitality-page .roles-section h3 {
       font-size: 25px; }
@@ -5213,7 +5213,7 @@ small {
     width: 78%; } }
 
 @media (min-width: 760px) {
-  .practics-page .content.fade-in {
+  .practics-page > .content.fade-in {
     padding-bottom: 46%; } }
 
 /*** Tablet ***/
@@ -5882,9 +5882,9 @@ small {
     padding: 70px 35px; }
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
       margin-right: 15px; }
-  .practics-page .content.fade-in {
-    margin-bottom: 20%; }
-  .practics-page .content .row .column._right {
+  .practics-page > .content.fade-in {
+    padding-bottom: 0; }
+  .practics-page > .content .row .column._right {
     bottom: -120px; } }
 
 /*** iPad Pro ***/
@@ -6024,8 +6024,6 @@ small {
     height: 100vh;
     max-height: 890px;
     background-size: cover; }
-  .practics-page .content.fade-in {
-    padding-bottom: 0; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col._left, #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col._right {
     width: 60%; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .collapse.show .box-item {
@@ -6167,7 +6165,9 @@ small {
     height: 270px;
     padding: 70px 35px; }
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
-      margin-right: 20px; } }
+      margin-right: 20px; }
+  .practics-page > .content.fade-in {
+    padding-bottom: 0; } }
 
 @media (min-width: 1280px) {
   #locations {

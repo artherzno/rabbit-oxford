@@ -108,7 +108,7 @@ textarea.form-control-field  {
 }
 
 .star-input {
-  padding-left: 3px !important; 
+  padding-left: 3px !important;
   color: #999999 !important;
   font-weight: bold !important;
 }
@@ -5342,7 +5342,7 @@ $breadcrumb-divider: quote(">");
 
   .practics-page {
 
-    .content {
+    > .content {
 
       &.fade-in {
         padding-bottom: 20%;
@@ -6745,7 +6745,7 @@ $breadcrumb-divider: quote(">");
     }
 
     .roles-section {
-      /* hide role section */
+      /* hide discover section */
       padding-top: 50px;
 
       h3 {
@@ -7648,7 +7648,7 @@ $breadcrumb-divider: quote(">");
 
   .practics-page {
 
-    .content {
+    > .content {
 
       &.fade-in {
         padding-bottom: 46%;
@@ -9119,10 +9119,10 @@ $breadcrumb-divider: quote(">");
 
   .practics-page {
 
-    .content {
+    > .content {
 
       &.fade-in {
-        margin-bottom: 20%;
+        padding-bottom: 0;
       }
 
       .row {
@@ -9617,10 +9617,10 @@ $breadcrumb-divider: quote(">");
 
   .practics-page {
 
-    .content {
+    > .content {
 
       &.fade-in {
-        padding-bottom: 0;
+        // padding-bottom: 0;
       }
     }
   }
@@ -10208,6 +10208,16 @@ $breadcrumb-divider: quote(">");
             }
           }
         }
+      }
+    }
+  }
+
+  .practics-page {
+
+    > .content {
+
+      &.fade-in {
+        padding-bottom: 0;
       }
     }
   }
