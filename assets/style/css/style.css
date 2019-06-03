@@ -2121,6 +2121,9 @@ small {
       #blogsdetail-page .carouselBlogDetail-dot-container .owl-dot.before {
         background: #f7d0cb;
         opacity: 1; }
+  #blogsdetail-page .buttonRow {
+    text-align: center;
+    margin-bottom: 70px; }
   #blogsdetail-page .related h2 {
     color: #000;
     margin: 60px 0 65px;
@@ -4612,10 +4615,9 @@ small {
   #blogsdetail-page {
     margin-top: 60px; }
     #blogsdetail-page .content {
-      padding: 50px 0; }
+      padding: 0; }
       #blogsdetail-page .content .detail .text-detail {
-        padding: 0;
-        margin-bottom: 0; }
+        padding: 0; }
         #blogsdetail-page .content .detail .text-detail p {
           font-size: 16px; }
           #blogsdetail-page .content .detail .text-detail p:last-child {

@@ -2337,6 +2337,11 @@ small {
     }
   }
 
+  .buttonRow {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
   .related {
 
     h2 {
@@ -6308,7 +6313,8 @@ $breadcrumb-divider: quote(">");
     margin-top: 60px;
 
     .content {
-      padding: 50px 0;
+      // padding: 50px 0;
+      padding: 0;
 
       .detail {
 
@@ -6318,7 +6324,7 @@ $breadcrumb-divider: quote(">");
 
         .text-detail {
           padding: 0;
-          margin-bottom: 0;
+          // margin-bottom: 0;
 
           img {
             // margin-bottom: 40px;
