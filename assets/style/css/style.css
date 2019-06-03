@@ -2044,8 +2044,7 @@ small {
       -ms-transform: translateY(0);
       transform: translateY(0); }
     #blogsdetail-page .content .detail .head-img {
-      margin-bottom: 80px;
-      width: 100%;
+      max-width: 100%;
       height: auto;
       opacity: 0;
       -webkit-transform: translateY(20%);
@@ -2060,7 +2059,7 @@ small {
       padding: 0 14%;
       margin-bottom: 70px; }
       #blogsdetail-page .content .detail .text-detail img {
-        width: 100%;
+        max-width: 100%;
         height: auto; }
       #blogsdetail-page .content .detail .text-detail p {
         font-size: 18px; }

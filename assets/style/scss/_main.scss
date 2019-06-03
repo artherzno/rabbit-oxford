@@ -2229,8 +2229,8 @@ small {
       }
 
       .head-img {
-        margin-bottom: 80px;
-        width: 100%;
+        // margin-bottom: 80px;
+        max-width: 100%;
         height: auto;
         opacity: 0;
         @include transform(translateY(20%));
@@ -2243,7 +2243,7 @@ small {
         margin-bottom: 70px;
 
         img {
-          width: 100%;
+          max-width: 100%;
           height: auto;
           // margin-bottom: 60px;
           // margin-top: 40px;
