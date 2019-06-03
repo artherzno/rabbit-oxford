@@ -307,9 +307,9 @@ textarea.form-control-field {
   background-image: none; }
 
 .star-input {
-  padding-left: 3px;
-  color: #999999;
-  font-weight: bold; }
+  padding-left: 3px !important;
+  color: #999999 !important;
+  font-weight: bold !important; }
 
 small {
   color: #999;
@@ -2060,10 +2060,7 @@ small {
       padding: 0 14%;
       margin-bottom: 70px; }
       #blogsdetail-page .content .detail .text-detail img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 60px;
-        margin-top: 40px; }
+        width: 100%; }
       #blogsdetail-page .content .detail .text-detail p {
         font-size: 18px; }
       #blogsdetail-page .content .detail .text-detail li {

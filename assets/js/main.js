@@ -1,12 +1,12 @@
 $(document).ready(function(){
   // Detect IE /////////////////////////////////////////////////////////////////
   if (isIE()){
-    console.log('It is InternetExplorer');
+    // console.log('It is InternetExplorer');
     $('body').addClass('ie');
     $('body').removeClass('not-ie');
 
   }else{
-    console.log('It is NOT InternetExplorer');
+    // console.log('It is NOT InternetExplorer');
     $('body').removeClass('ie');
     $('body').addClass('not-ie');
   }
@@ -384,8 +384,8 @@ $(document).ready(function(){
  var idName = '';
  $('.discover-section .box-link').on('click', function(){
    var idNameCurr = $(this).attr('id').replace('btn-collapse-','');
-    console.log('idName : '+ idName);
-    console.log('clicked : '+ idNameCurr);
+    // console.log('idName : '+ idName);
+    // console.log('clicked : '+ idNameCurr);
     if(idNameCurr == idName) {
       $('.discover-section .box-menu').removeClass('scale-small');
       idName = '';

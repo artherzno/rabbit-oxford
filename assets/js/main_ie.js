@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   /* Create an alert to show if the browser is IE or not */
   if (isIE()){
-    console.log('It is InternetExplorer');
+    // console.log('It is InternetExplorer');
     $('body').addClass('ie');
     $('body').removeClass('not-ie');
 
@@ -21,7 +21,7 @@ $(document).ready(function(){
     });
 
   }else{
-    console.log('It is NOT InternetExplorer');
+    // console.log('It is NOT InternetExplorer');
     $('body').removeClass('ie');
     $('body').addClass('not-ie');
   }

@@ -108,9 +108,9 @@ textarea.form-control-field  {
 }
 
 .star-input {
-  padding-left: 3px;
-  color: #999999;
-  font-weight: bold;
+  padding-left: 3px !important; 
+  color: #999999 !important;
+  font-weight: bold !important;
 }
 
 small {
@@ -2244,9 +2244,9 @@ small {
 
         img {
           width: 100%;
-          height: auto;
-          margin-bottom: 60px;
-          margin-top: 40px;
+          // height: auto;
+          // margin-bottom: 60px;
+          // margin-top: 40px;
         }
 
         p {
