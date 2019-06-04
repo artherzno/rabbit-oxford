@@ -2077,6 +2077,8 @@ small {
       #blogsdetail-page .content .detail .text-detail img {
         max-width: 100%;
         height: auto; }
+      #blogsdetail-page .content .detail .text-detail iframe {
+        max-width: 100%; }
       #blogsdetail-page .content .detail .text-detail p {
         font-size: 18px; }
       #blogsdetail-page .content .detail .text-detail li {
