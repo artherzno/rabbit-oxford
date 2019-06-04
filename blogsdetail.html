@@ -947,10 +947,14 @@
             }, 400);
         });
 
-
+        var winWidthOld = $(window).width();
         $(window).resize(function(event) {
-          $('#carouselRelated').owlCarousel('destroy');
-          carouselRelated();
+          var winWidthCurr = $(window).width();
+
+          if(winWidthOld != winWidthCurr) {
+            $('#carouselRelated').owlCarousel('destroy');
+            carouselRelated();
+          }
         });
 
 
