@@ -2044,7 +2044,7 @@ small {
       -ms-transform: translateY(0);
       transform: translateY(0); }
     #blogsdetail-page .content .detail .head-img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       opacity: 0;
       -webkit-transform: translateY(20%);
@@ -2058,9 +2058,20 @@ small {
       color: #000;
       padding: 0 14%;
       margin-bottom: 70px; }
+      #blogsdetail-page .content .detail .text-detail .alignright {
+        float: right;
+        margin: 0.5em 0 0.5em 1em; }
+      #blogsdetail-page .content .detail .text-detail .alignleft {
+        float: left;
+        margin: 0.5em 1em 0.5em 0; }
+      #blogsdetail-page .content .detail .text-detail .aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
       #blogsdetail-page .content .detail .text-detail a {
         color: #000;
-        font-weight: bold; }
+        font-weight: bold;
+        word-break: break-all; }
         #blogsdetail-page .content .detail .text-detail a:hover {
           color: #f7d0cb; }
       #blogsdetail-page .content .detail .text-detail img {
@@ -4619,6 +4630,8 @@ small {
   /* Blog detail page ************/
   #blogsdetail-page {
     margin-top: 60px; }
+    #blogsdetail-page .oxford-mb .content {
+      padding-top: 50px; }
     #blogsdetail-page .content {
       padding: 0; }
       #blogsdetail-page .content .detail .text-detail {

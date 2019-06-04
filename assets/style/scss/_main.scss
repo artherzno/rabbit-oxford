@@ -2230,7 +2230,7 @@ small {
 
       .head-img {
         // margin-bottom: 80px;
-        max-width: 100%;
+        width: 100%;
         height: auto;
         opacity: 0;
         @include transform(translateY(20%));
@@ -2242,9 +2242,26 @@ small {
         padding: 0 14%;
         margin-bottom: 70px;
 
+        .alignright {
+          float: right;
+          margin: 0.5em 0 0.5em 1em;
+        }
+
+        .alignleft {
+          float: left;
+          margin: 0.5em 1em 0.5em 0;
+        }
+
+        .aligncenter {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
         a {
           color: $black;
           font-weight: bold;
+          word-break: break-all;
 
           &:hover {
             color: $pink;
@@ -6320,6 +6337,13 @@ $breadcrumb-divider: quote(">");
   /* Blog detail page ************/
   #blogsdetail-page {
     margin-top: 60px;
+
+    .oxford-mb {
+
+      .content {
+        padding-top: 50px;
+      }
+    }
 
     .content {
       // padding: 50px 0;
