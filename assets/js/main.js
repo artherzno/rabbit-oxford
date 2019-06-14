@@ -381,20 +381,23 @@ $(document).ready(function(){
 
 
  // Hospitality Page - Check Height ////////////////////////////////////////////
- var idName = '';
- $('.discover-section .box-link').on('click', function(){
-   var idNameCurr = $(this).attr('id').replace('btn-collapse-','');
-    // console.log('idName : '+ idName);
-    // console.log('clicked : '+ idNameCurr);
-    if(idNameCurr == idName) {
-      $('.discover-section .box-menu').removeClass('scale-small');
-      idName = '';
-    } else {
+ if($(window).width() > 767) {
 
-      $('.discover-section .box-menu').addClass('scale-small');
-      idName = $(this).attr('id').replace('btn-collapse-','');
-    }
- });
+   var idName = '';
+   $('.discover-section .box-link').on('click', function(){
+     var idNameCurr = $(this).attr('id').replace('btn-collapse-','');
+      // console.log('idName : '+ idName);
+      // console.log('clicked : '+ idNameCurr);
+      if(idNameCurr == idName) {
+        $('.discover-section .box-menu').removeClass('scale-small');
+        idName = '';
+      } else {
+
+        $('.discover-section .box-menu').addClass('scale-small');
+        idName = $(this).attr('id').replace('btn-collapse-','');
+      }
+   });
+ }
 
 
 
