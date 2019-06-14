@@ -3353,6 +3353,8 @@ small {
         -ms-transition: all 0.2s ease;
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease; }
+        #hospitality-page .discover-section #discover-accordion .box-item .box-link a {
+          display: block; }
         #hospitality-page .discover-section #discover-accordion .box-item .box-link img {
           margin: 0 auto 20px;
           display: block;

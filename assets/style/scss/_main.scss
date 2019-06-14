@@ -3878,6 +3878,10 @@ small {
           @include transform(translateY(0));
           @include transition(all 0.2s ease);
 
+          a {
+            display: block;
+          }
+
           img {
             margin: 0 auto 20px;
             display: block;
