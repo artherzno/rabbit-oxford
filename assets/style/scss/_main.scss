@@ -11194,7 +11194,7 @@ $breadcrumb-divider: quote(">");
 
             .box-link {
               @include transform(none);
-              border: none;
+              border: 1px solid $blue;
               box-shadow: none;
             }
           }

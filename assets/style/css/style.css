@@ -6493,7 +6493,7 @@ small {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    border: none;
+    border: 1px solid #1f3052;
     -webkit-box-shadow: none;
     box-shadow: none; } }
 
