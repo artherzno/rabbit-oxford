@@ -11180,30 +11180,6 @@ $breadcrumb-divider: quote(">");
 //   }
 // }
 
-@media (hover:none),
-(hover:on-demand) {
-  #hospitality-page {
-
-    .discover-section {
-
-      #discover-accordion {
-
-        .box-item {
-
-          &:hover {
-
-            .box-link {
-              @include transform(none);
-              border: 1px solid $blue;
-              box-shadow: none;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 
 
 
