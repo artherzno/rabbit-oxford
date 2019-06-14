@@ -3877,6 +3877,7 @@ small {
           border: 1px solid $blue;
           @include transform(translateY(0));
           @include transition(all 0.2s ease);
+          display: block;
 
           a {
             display: block;
