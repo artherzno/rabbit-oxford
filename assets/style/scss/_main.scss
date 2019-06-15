@@ -7008,8 +7008,8 @@ $breadcrumb-divider: quote(">");
           fieldset {
 
             legend {
-              width: 44%;
-              font-size: 20px;
+              width: 82%;
+              // font-size: 20px;
             }
           }
         }
@@ -9091,6 +9091,33 @@ $breadcrumb-divider: quote(">");
 
           .box-menu {
             display: flex;
+            margin-bottom: 20px;
+
+            .oxford-dt {
+              display: none !important;
+            }
+
+            .oxford-mb {
+              display: block !important;
+              max-width: 460px;
+              width: 100%;
+
+              .box-item-mb {
+                width: 29%;
+
+                &:first-child {
+                  margin-left: 0;
+                }
+
+                &:last-child {
+                  margin-right: 0;
+                }
+
+                .box-link[aria-expanded="true"] {
+                  @include transform(translateY(-30px));
+                }
+              }
+            }
           }
         }
 
@@ -9140,8 +9167,15 @@ $breadcrumb-divider: quote(">");
           }
         }
 
+        .box-col {
+
+          .box-item {
+
+              max-width: 185px;
+          }
+        }
+
         .box-item {
-          max-width: 185px;
 
           .box-link {
             padding: 20px;
