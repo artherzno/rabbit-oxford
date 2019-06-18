@@ -381,23 +381,33 @@ $(document).ready(function(){
 
 
  // Hospitality Page - Check Height ////////////////////////////////////////////
- if($(window).width() > 767) {
+ // if($(window).width() > 767) {
 
    var idName = '';
    $('.discover-section .box-link').on('click', function(){
-     var idNameCurr = $(this).attr('id').replace('btn-collapse-','');
-      // console.log('idName : '+ idName);
-      // console.log('clicked : '+ idNameCurr);
-      if(idNameCurr == idName) {
-        $('.discover-section .box-menu').removeClass('scale-small');
-        idName = '';
-      } else {
+       $('html, body').animate({
+           scrollTop: $('.discover-section .container > h2').offset().top
+       }, 400);
+       if($(this).attr('id')) {
 
-        $('.discover-section .box-menu').addClass('scale-small');
-        idName = $(this).attr('id').replace('btn-collapse-','');
-      }
+        if($(window).width() > 767) {
+         var idNameCurr = $(this).attr('id').replace('btn-collapse-','');
+          // console.log('idName : '+ idName);
+          // console.log('clicked : '+ idNameCurr);
+          if(idNameCurr == idName) {
+            $('.discover-section .box-menu').removeClass('scale-small');
+            $('.discover-section .container > h3').removeClass('scale-small');
+            idName = '';
+          } else {
+
+            $('.discover-section .box-menu').addClass('scale-small');
+            $('.discover-section .container > h3').addClass('scale-small');
+            idName = $(this).attr('id').replace('btn-collapse-','');
+          }
+        }
+       }
    });
- }
+ // }
 
 
 

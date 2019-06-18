@@ -3833,7 +3833,7 @@ small {
   .discover-section {
     // display: none;
     background-color: #1d1d1d;
-    padding: 20% 0;
+    padding: 180px 0 0;
     // height: 100vh;
 
     h1 {
@@ -3851,10 +3851,17 @@ small {
 
     h3 {
       text-align: center;
-      font-size: 35px;
+      font-size: 54px;
       color: $pink;
       font-weight: 400;
-      @include transition(all 0.2s ease);
+      // @include transition(all 0.2s ease);
+      // @include transform(scale(1));
+      @include transition(font-size 0.4s ease);
+
+      &.scale-small {
+        font-size: 24px;
+        // @include transform(scale(0.7));
+      }
     }
 
     #discover-accordion {
@@ -4037,6 +4044,11 @@ small {
 
       .box-content {
 
+        .collapsing {
+          // @include transition(none);
+          height: 0 !important;
+        }
+
         .collapse {
           text-align: center;
 
@@ -4091,11 +4103,11 @@ small {
           margin-bottom: 40px;
 
           legend {
-            width: 40%;
+            width: 30%;
             color: $pink;
             margin: 0;
             padding: 0 20px;
-            font: 35px/1 oswald, arial;
+            font: 24px/1 oswald, arial;
           }
         }
 
@@ -4924,24 +4936,35 @@ $breadcrumb-divider: quote(">");
     }
   }
 
-  // #hospitality-page {
-  //
-  //   .content.fade-in {
-  //
-  //     .container {
-  //
-  //       .row {
-  //
-  //         .column {
-  //
-  //           &._right {
-  //             bottom: -180px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  #hospitality-page {
+
+    .discover-section {
+
+      .container > h2 {
+        margin-top: 25px;
+      }
+
+      .container > h3 {
+        margin-bottom: -1.5rem;
+      }
+    }
+
+    // .content.fade-in {
+    //
+    //   .container {
+    //
+    //     .row {
+    //
+    //       .column {
+    //
+    //         &._right {
+    //           bottom: -180px;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
 
   // #strategy-page {
   //
@@ -5255,6 +5278,10 @@ $breadcrumb-divider: quote(">");
     }
 
     .discover-section {
+
+      h3 {
+        // margin-bottom: -1.5rem;
+      }
 
       #discover-accordion {
 
@@ -6932,7 +6959,7 @@ $breadcrumb-divider: quote(">");
 
     .discover-section {
       height: auto;
-      padding: 45% 0;
+      // padding: 45% 0;
 
       h1 {
         font-size: 36px;
@@ -6955,7 +6982,7 @@ $breadcrumb-divider: quote(">");
 
             -webkit-flex-flow: row wrap;
             justify-content: space-around;
-            margin-bottom: 40px;
+            padding-bottom: 40px;
             // max-width: 48%;
 
             &.scale-small {
@@ -7141,7 +7168,7 @@ $breadcrumb-divider: quote(">");
 
     .roles-section {
       /* hide discover section */
-      padding-top: 50px;
+      padding-top: 120px;
 
       h3 {
         font-size: 25px;
@@ -9082,7 +9109,11 @@ $breadcrumb-divider: quote(">");
       // height: auto;
 
       h1 {
-        margin: 190px 0 0;
+        // margin: 190px 0 0;
+      }
+
+      .container > h3 {
+       font-size: 35px;
       }
 
       #discover-accordion {
@@ -9091,7 +9122,7 @@ $breadcrumb-divider: quote(">");
 
           .box-menu {
             display: flex;
-            margin-bottom: 20px;
+            padding-bottom: 20px;
 
             .oxford-dt {
               display: none !important;
@@ -9192,7 +9223,7 @@ $breadcrumb-divider: quote(">");
     .roles-section {
       margin: -1px 0;
       /* hide role seciton */
-      padding-top: 100px;
+      padding-top: 140px;
 
       .row {
 
@@ -9548,6 +9579,58 @@ $breadcrumb-divider: quote(">");
       }
     }
   }
+}
+
+@media (min-width: 800px) and (min-height: 1280px) {
+  #hospitality-page {
+
+  .discover-section {
+
+    #discover-accordion {
+
+      &.discover-accordion {
+
+        .box-menu {
+
+          .oxford-mb {
+
+            .box-item-mb {
+              width: 46%;
+              height: 200px;
+
+              .box-link {
+                height: 100%;
+
+                &[aria-expanded="true"] {
+                  @include transform(none);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .box-content {
+
+        #collapse-feasibility {
+          text-align: center;
+          border-top: 2px dashed $pink;
+          padding-top: 40px;
+        }
+
+        .box-head {
+
+          fieldset {
+
+            legend {
+              width: 38%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -9968,7 +10051,7 @@ $breadcrumb-divider: quote(">");
               fieldset {
 
                 legend {
-                  width: 50%;
+                  width: 32%;
                 }
               }
             }
@@ -10030,21 +10113,6 @@ $breadcrumb-divider: quote(">");
 }
 
 /*** Desktop ****/
-@media (max-width: 800px) {
-  .ie {
-
-    #hospitality {
-
-      .figcaption {
-
-        .figure-img {
-          height: auto;
-        }
-      }
-    }
-  }
-}
-
 @media (width: 800px) and (height: 600px) {
   nav {
 
@@ -10311,6 +10379,13 @@ $breadcrumb-divider: quote(">");
 
             .collapse {
 
+              &#collapse-feasibility {
+
+                .buttonPink {
+                  margin-top: 20px;
+                }
+              }
+
               &.show {
 
                 .box-item {
@@ -10335,6 +10410,7 @@ $breadcrumb-divider: quote(">");
 
           .oxford-dt {
             display: flex !important;
+            height: 290px;
           }
         }
 
@@ -10344,7 +10420,7 @@ $breadcrumb-divider: quote(">");
 
             legend {
               // font-size: 24px;
-              width: 50%;
+              width: 30%;
             }
           }
 
@@ -10379,6 +10455,55 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+}
+
+@media (max-width: 800px) {
+  .ie {
+
+    #hospitality {
+
+      .figcaption {
+
+        .figure-img {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  #hospitality-page {
+
+    .discover-section {
+
+      #discover-accordion {
+
+        &.discover-accordion {
+
+          .box-content {
+
+            .box-item {
+
+              .box-link {
+
+                .flip-card-back {
+
+                  .flip-card-back-content {
+
+                    &._more {
+
+                      h3 {
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -11293,7 +11418,7 @@ $breadcrumb-divider: quote(">");
 
             legend {
 
-              width: 48%;
+              width: 28%;
             }
           }
 
