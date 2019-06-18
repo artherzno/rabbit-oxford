@@ -6624,6 +6624,11 @@ small {
   .ie #hospitality .owl-carousel .owl-item.active {
     opacity: 1; }
 
+.ie #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg); }
+
 .ie #locations .modal-area .modal-dialog {
   width: 600px; }
 

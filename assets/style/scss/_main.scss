@@ -11546,6 +11546,28 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  #hospitality-page {
+
+    .discover-section {
+
+      #discover-accordion {
+
+        .box-content {
+
+          .box-item {
+
+            .box-link {
+
+              .flip-card-back {
+                @include transform(rotateY(0deg));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   #locations {
 
     .modal-area {
