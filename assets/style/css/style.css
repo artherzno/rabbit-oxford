@@ -3510,7 +3510,8 @@ small {
         color: #f7d0cb;
         margin: 0;
         padding: 0 20px;
-        font: 24px/1 oswald, arial; }
+        font: 24px/1 oswald, arial;
+        margin: 0 auto; }
     #hospitality-page .discover-section #discover-accordion .box-content .box-item, #hospitality-page .discover-section #discover-accordion .box-content .box-head {
       opacity: 0; }
       #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link {
