@@ -3508,7 +3508,7 @@ small {
       #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
         width: 30%;
         color: #f7d0cb;
-        margin: 0;
+        margin: 0 auto;
         padding: 0 20px;
         font: 24px/1 oswald, arial; }
     #hospitality-page .discover-section #discover-accordion .box-content .box-item, #hospitality-page .discover-section #discover-accordion .box-content .box-head {
@@ -6589,6 +6589,7 @@ small {
     #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu .box-item {
       margin-bottom: 20px; }
   #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
+    margin: 0 auto;
     width: 28%; }
   #hospitality-page .discover-section #discover-accordion .box-content .box-col._left {
     margin-bottom: 0; }
