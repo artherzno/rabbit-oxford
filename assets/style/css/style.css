@@ -3550,14 +3550,12 @@ small {
           border: 1px solid #D5F5FF;
           -webkit-box-shadow: 0 0 36px #5ba1f9;
           box-shadow: 0 0 36px #5ba1f9; }
-          #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card:hover .flip-card-inner .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card:hover .flip-card-inner .flip-card-front {
-            z-index: -1; }
         #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back {
           position: absolute;
           width: 100%;
           height: 100%;
-          -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+          -webkit-backface-visibility: visible;
+          backface-visibility: visible;
           background-color: #1f3052; }
         #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-front h3, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-front h3 {
           width: 85%;
