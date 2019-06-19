@@ -3552,6 +3552,8 @@ small {
           box-shadow: 0 0 36px #5ba1f9; }
           #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card:hover .flip-card-inner .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card:hover .flip-card-inner .flip-card-front {
             z-index: -1; }
+          #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card:hover .flip-card-inner .flip-card-back, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card:hover .flip-card-inner .flip-card-back {
+            z-index: 1; }
         #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-front, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back {
           position: absolute;
           width: 100%;
@@ -4917,6 +4919,8 @@ small {
       font-size: 36px; }
     #hospitality-page .discover-section h2 {
       font-size: 31px; }
+    #hospitality-page .discover-section h3 {
+      font-size: 24px; }
     #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu {
       display: -webkit-box;
       display: -moz-box;

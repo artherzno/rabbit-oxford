@@ -4154,6 +4154,10 @@ small {
               .flip-card-front {
                 z-index: -1;
               }
+
+              .flip-card-back {
+                z-index: 1;
+              }
             }
 
             .flip-card-front, .flip-card-back {
@@ -6975,6 +6979,10 @@ $breadcrumb-divider: quote(">");
 
       h2 {
         font-size: 31px;
+      }
+
+      h3 {
+        font-size: 24px;
       }
 
       #discover-accordion {
