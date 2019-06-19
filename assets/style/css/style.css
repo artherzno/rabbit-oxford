@@ -3556,8 +3556,8 @@ small {
           position: absolute;
           width: 100%;
           height: 100%;
-          -webkit-backface-visibility: visible;
-          backface-visibility: visible;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
           background-color: #1f3052; }
         #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-front h3, #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-front h3 {
           width: 85%;
