@@ -3312,7 +3312,7 @@ small {
 
 #hospitality-page .discover-section {
   background-color: #1d1d1d;
-  padding: 180px 0 0; }
+  padding: 100px 0 0; }
   #hospitality-page .discover-section h1 {
     text-align: center;
     padding: 0 0 10;
@@ -4164,6 +4164,8 @@ small {
     font-size: 20px; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu .box-item .box-link h3 {
     font-size: 13px; }
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content fieldset legend {
+    width: 70%; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .collapse.show .box-col .box-item {
     width: 45%; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col {
@@ -4928,8 +4930,7 @@ small {
       #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu.scale-small {
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
-        transform: scale(1);
-        margin-bottom: 30px; }
+        transform: scale(1); }
     #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content #collapse-feasibility {
       border-top: 1px dashed #f7d0cb;
       padding-top: 60px; }
@@ -4944,8 +4945,10 @@ small {
       margin-bottom: 30px; }
     #hospitality-page .discover-section #discover-accordion .box-content .box-col._right {
       margin-left: 0; }
-    #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
-      width: 82%; }
+    #hospitality-page .discover-section #discover-accordion .box-content fieldset {
+      margin-bottom: 65px; }
+      #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
+        width: 60%; }
     #hospitality-page .discover-section #discover-accordion .box-item {
       width: 43%;
       margin: 0 10px 20px; }
@@ -5047,7 +5050,7 @@ small {
               color: #f7d0cb; }
   #hospitality-page .roles-section {
     /* hide discover section */
-    padding-top: 120px; }
+    padding-top: 100px; }
     #hospitality-page .roles-section h3 {
       font-size: 25px; }
     #hospitality-page .roles-section .row.oxford-dt {
@@ -5921,7 +5924,7 @@ small {
     #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
       font-size: 28px; }
   #hospitality-page .discover-section .container > h3 {
-    font-size: 35px; }
+    font-size: 24px; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5944,7 +5947,7 @@ small {
           -ms-transform: translateY(-30px);
           transform: translateY(-30px); }
   #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
-    width: 62%; }
+    width: 46%; }
   #hospitality-page .discover-section #discover-accordion .box-content .collapse.show .box-item {
     width: 47% !important; }
   #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link {
@@ -6262,8 +6265,6 @@ small {
       width: 100%; }
     .practics-page#hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col._right {
       width: 100%; }
-  .practics-page#hospitality-page .discover-section #discover-accordion.discover-accordion .box-content fieldset legend {
-    width: 32%; }
   .practics-page#hospitality-page .discover-section #discover-accordion .box-item .box-link h3 {
     font-size: 28px; }
   #locations-page {
@@ -6290,7 +6291,7 @@ small {
     max-height: 890px;
     background-size: cover !important; }
   #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
-    width: 62% !important; }
+    width: 64% !important; }
   #hospitality-page .discover-section #discover-accordion .box-content .collapse.show .box-item {
     width: 47% !important; }
   #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back .flip-card-back-content._more h3 {
@@ -6329,6 +6330,12 @@ small {
     height: 100vh;
     max-height: 890px;
     background-size: cover; }
+  #hospitality-page .discover-section .container > h3 {
+    font-size: 53px; }
+    #hospitality-page .discover-section .container > h3.scale-small {
+      font-size: 36px; }
+  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content #collapse-feasibility {
+    margin-top: 20px; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-item .box-link .flip-card-back .flip-card-back-content._more h3 {
     font-size: 20px; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col {
@@ -6351,7 +6358,8 @@ small {
     display: flex !important;
     height: 290px; }
   #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
-    width: 30%; }
+    font-size: 36px;
+    width: 48%; }
   #hospitality-page .discover-section #discover-accordion .box-content .box-col {
     width: 100%; }
     #hospitality-page .discover-section #discover-accordion .box-content .box-col._left, #hospitality-page .discover-section #discover-accordion .box-content .box-col._right {
@@ -6524,6 +6532,8 @@ small {
       margin-right: 20px; }
   #hospitality-page .discover-section #discover-accordion .box-menu .oxford-dt {
     display: block !important; }
+  #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
+    width: 40%; }
   #hospitality-page .discover-section #discover-accordion .box-link h3 {
     font-size: 35px; } }
 
@@ -6590,8 +6600,7 @@ small {
     #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu .box-item {
       margin-bottom: 20px; }
   #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
-    margin: 0 auto;
-    width: 28%; }
+    margin: 0 auto; }
   #hospitality-page .discover-section #discover-accordion .box-content .box-col._left {
     margin-bottom: 0; }
   #whyus-page .banner {

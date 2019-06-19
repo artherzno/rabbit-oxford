@@ -384,7 +384,7 @@ $(document).ready(function(){
  // if($(window).width() > 767) {
 
    var idName = '';
-   $('.discover-section .box-link').on('click', function(){
+   $('.discover-section .box-menu .box-link').on('click', function(){
        $('html, body').animate({
            scrollTop: $('.discover-section .container > h2').offset().top
        }, 400);
