@@ -9685,7 +9685,7 @@ $breadcrumb-divider: quote(">");
   }
 }
 
-@media (min-width: 799.98px) and (min-height: 1280px) {
+@media (min-width: 799.98px) and (max-height: 1280px) {
   #hospitality-page {
 
   .discover-section {
@@ -9695,7 +9695,7 @@ $breadcrumb-divider: quote(">");
       .h3 {
 
         h3 {
-          font-size: 36px !important;
+          // font-size: 36px !important;
         }
       }
     }
@@ -10618,11 +10618,31 @@ $breadcrumb-divider: quote(">");
 
     .discover-section {
 
+      .container {
+
+        .h3 {
+
+          h3 {
+            font-size: 36px;
+          }
+        }
+      }
+
       #discover-accordion {
 
         &.discover-accordion {
 
           .box-content {
+
+            .box-head {
+
+              fieldset {
+
+                legend {
+                  width: 59%;
+                }
+              }
+            }
 
             .box-item {
 
