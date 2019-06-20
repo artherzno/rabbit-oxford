@@ -4143,6 +4143,7 @@ small {
             padding: 0;
             font: 24px/1 oswald, arial;
             margin: 0 auto;
+            background-color: #1d1d1d;
           }
         }
 
@@ -4192,7 +4193,7 @@ small {
               }
 
               .flip-card-back {
-                z-index: 1;
+                z-index: 99;
                 opacity: 1;
               }
             }
@@ -9682,7 +9683,7 @@ $breadcrumb-divider: quote(">");
   }
 }
 
-@media (min-width: 800px) and (min-height: 1280px) {
+@media (min-width: 799.98px) and (min-height: 1280px) {
   #hospitality-page {
 
   .discover-section {
