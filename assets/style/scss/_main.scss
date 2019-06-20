@@ -3785,7 +3785,7 @@ small {
 
     &.fade-in {
 
-      h1, h2, h3, .row, .discover-accordion {
+      h1, h2, h3, .row, .discover-accordion, .container .h3 {
         opacity: 1;
         @include transform(translateY(0));
       }
@@ -3856,33 +3856,47 @@ small {
       font-weight: 400;
       // @include transition(all 0.2s ease);
       // @include transform(scale(1));
-      @include transition(font-size 0.4s ease);
+      @include transition(all 0.4s ease);
 
-      &.scale-small {
-        font-size: 24px;
-        // @include transform(scale(0.7));
-      }
+      // &.scale-small {
+      //   font-size: 24px;
+      //   // @include transform(scale(0.7));
+      // }
     }
 
     .container {
 
-      > h3 {
+      .h3 {
         opacity: 0;
         @include transform(translateY(20%));
         @include transition(all 0.8s ease 0.6s);
-      }
-    }
-
-    &.fade-in {
-
-      .container {
-
-        > h3 {
-          opacity: 1;
-          @include transform(translateY(0));
+  
+        h3 {
+          @include transition(font-size 0.4s ease);
+        }
+  
+  
+        &.scale-small {
+  
+          h3 {
+            font-size: 36px;
+            // @include transform(scale(0.7));
+          }
         }
       }
     }
+
+
+    // &.fade-in {
+
+    //   .container {
+
+    //     > h3 {
+    //       opacity: 1;
+    //       @include transform(translateY(0));
+    //     }
+    //   }
+    // }
 
     #discover-accordion {
       // display: none;
@@ -4978,7 +4992,7 @@ $breadcrumb-divider: quote(">");
         margin-top: 25px;
       }
 
-      .container > h3 {
+      .container .h3 h3 {
         margin-bottom: -1.5rem;
       }
     }
@@ -9158,7 +9172,7 @@ $breadcrumb-divider: quote(">");
         // margin: 190px 0 0;
       }
 
-      .container > h3 {
+      .container .h3 h3 {
         font-size: 24px;
       }
 
@@ -9669,7 +9683,7 @@ $breadcrumb-divider: quote(">");
           fieldset {
 
             legend {
-              width: 38%;
+              // width: 38%;
             }
           }
         }
@@ -10392,11 +10406,14 @@ $breadcrumb-divider: quote(">");
 
       .container {
 
-        > h3 {
-          font-size: 53px;
+        .h3 {
 
-          &.scale-small {
-            font-size: 36px;
+          h3 {
+            font-size: 53px;
+  
+            &.scale-small {
+              font-size: 36px;
+            }
           }
         }
       }

@@ -396,12 +396,12 @@ $(document).ready(function(){
           // console.log('clicked : '+ idNameCurr);
           if(idNameCurr == idName) {
             $('.discover-section .box-menu').removeClass('scale-small');
-            $('.discover-section .container > h3').removeClass('scale-small');
+            $('.discover-section .container > .h3').removeClass('scale-small');
             idName = '';
           } else {
 
             $('.discover-section .box-menu').addClass('scale-small');
-            $('.discover-section .container > h3').addClass('scale-small');
+            $('.discover-section .container > .h3').addClass('scale-small');
             idName = $(this).attr('id').replace('btn-collapse-','');
           }
         }

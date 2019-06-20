@@ -3277,7 +3277,7 @@ small {
   -o-transition: all 0.8s ease-out 0.6s;
   transition: all 0.8s ease-out 0.6s; }
 
-#hospitality-page .feasibility-section.fade-in h1, #hospitality-page .feasibility-section.fade-in h2, #hospitality-page .feasibility-section.fade-in h3, #hospitality-page .feasibility-section.fade-in .row, #hospitality-page .feasibility-section.fade-in .discover-accordion, #hospitality-page .development-section.fade-in h1, #hospitality-page .development-section.fade-in h2, #hospitality-page .development-section.fade-in h3, #hospitality-page .development-section.fade-in .row, #hospitality-page .development-section.fade-in .discover-accordion, #hospitality-page .operational-section.fade-in h1, #hospitality-page .operational-section.fade-in h2, #hospitality-page .operational-section.fade-in h3, #hospitality-page .operational-section.fade-in .row, #hospitality-page .operational-section.fade-in .discover-accordion, #hospitality-page .operational-section.fade-in h1, #hospitality-page .operational-section.fade-in h2, #hospitality-page .operational-section.fade-in h3, #hospitality-page .operational-section.fade-in .row, #hospitality-page .operational-section.fade-in .discover-accordion, #hospitality-page .discover-section.fade-in h1, #hospitality-page .discover-section.fade-in h2, #hospitality-page .discover-section.fade-in h3, #hospitality-page .discover-section.fade-in .row, #hospitality-page .discover-section.fade-in .discover-accordion, #hospitality-page .roles-section.fade-in h1, #hospitality-page .roles-section.fade-in h2, #hospitality-page .roles-section.fade-in h3, #hospitality-page .roles-section.fade-in .row, #hospitality-page .roles-section.fade-in .discover-accordion, #hospitality-page .getintouch-section.fade-in h1, #hospitality-page .getintouch-section.fade-in h2, #hospitality-page .getintouch-section.fade-in h3, #hospitality-page .getintouch-section.fade-in .row, #hospitality-page .getintouch-section.fade-in .discover-accordion {
+#hospitality-page .feasibility-section.fade-in h1, #hospitality-page .feasibility-section.fade-in h2, #hospitality-page .feasibility-section.fade-in h3, #hospitality-page .feasibility-section.fade-in .row, #hospitality-page .feasibility-section.fade-in .discover-accordion, #hospitality-page .feasibility-section.fade-in .container .h3, #hospitality-page .development-section.fade-in h1, #hospitality-page .development-section.fade-in h2, #hospitality-page .development-section.fade-in h3, #hospitality-page .development-section.fade-in .row, #hospitality-page .development-section.fade-in .discover-accordion, #hospitality-page .development-section.fade-in .container .h3, #hospitality-page .operational-section.fade-in h1, #hospitality-page .operational-section.fade-in h2, #hospitality-page .operational-section.fade-in h3, #hospitality-page .operational-section.fade-in .row, #hospitality-page .operational-section.fade-in .discover-accordion, #hospitality-page .operational-section.fade-in .container .h3, #hospitality-page .operational-section.fade-in h1, #hospitality-page .operational-section.fade-in h2, #hospitality-page .operational-section.fade-in h3, #hospitality-page .operational-section.fade-in .row, #hospitality-page .operational-section.fade-in .discover-accordion, #hospitality-page .operational-section.fade-in .container .h3, #hospitality-page .discover-section.fade-in h1, #hospitality-page .discover-section.fade-in h2, #hospitality-page .discover-section.fade-in h3, #hospitality-page .discover-section.fade-in .row, #hospitality-page .discover-section.fade-in .discover-accordion, #hospitality-page .discover-section.fade-in .container .h3, #hospitality-page .roles-section.fade-in h1, #hospitality-page .roles-section.fade-in h2, #hospitality-page .roles-section.fade-in h3, #hospitality-page .roles-section.fade-in .row, #hospitality-page .roles-section.fade-in .discover-accordion, #hospitality-page .roles-section.fade-in .container .h3, #hospitality-page .getintouch-section.fade-in h1, #hospitality-page .getintouch-section.fade-in h2, #hospitality-page .getintouch-section.fade-in h3, #hospitality-page .getintouch-section.fade-in .row, #hospitality-page .getintouch-section.fade-in .discover-accordion, #hospitality-page .getintouch-section.fade-in .container .h3 {
   opacity: 1;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -3327,13 +3327,11 @@ small {
     font-size: 54px;
     color: #f7d0cb;
     font-weight: 400;
-    -webkit-transition: font-size 0.4s ease;
-    -ms-transition: font-size 0.4s ease;
-    -o-transition: font-size 0.4s ease;
-    transition: font-size 0.4s ease; }
-    #hospitality-page .discover-section h3.scale-small {
-      font-size: 24px; }
-  #hospitality-page .discover-section .container > h3 {
+    -webkit-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  #hospitality-page .discover-section .container .h3 {
     opacity: 0;
     -webkit-transform: translateY(20%);
     -ms-transform: translateY(20%);
@@ -3342,11 +3340,13 @@ small {
     -ms-transition: all 0.8s ease 0.6s;
     -o-transition: all 0.8s ease 0.6s;
     transition: all 0.8s ease 0.6s; }
-  #hospitality-page .discover-section.fade-in .container > h3 {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
+    #hospitality-page .discover-section .container .h3 h3 {
+      -webkit-transition: font-size 0.4s ease;
+      -ms-transition: font-size 0.4s ease;
+      -o-transition: font-size 0.4s ease;
+      transition: font-size 0.4s ease; }
+    #hospitality-page .discover-section .container .h3.scale-small h3 {
+      font-size: 36px; }
   #hospitality-page .discover-section #discover-accordion {
     margin-top: 60px; }
     #hospitality-page .discover-section #discover-accordion .box-item-mb {
@@ -4127,7 +4127,7 @@ small {
     bottom: -180px; }
   #hospitality-page .discover-section .container > h2 {
     margin-top: 25px; }
-  #hospitality-page .discover-section .container > h3 {
+  #hospitality-page .discover-section .container .h3 h3 {
     margin-bottom: -1.5rem; } }
 
 @media (max-width: 360px) {
@@ -5951,7 +5951,7 @@ small {
     margin-bottom: 40px; }
     #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
       font-size: 28px; }
-  #hospitality-page .discover-section .container > h3 {
+  #hospitality-page .discover-section .container .h3 h3 {
     font-size: 24px; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu {
     display: -webkit-box;
@@ -6172,9 +6172,7 @@ small {
   #hospitality-page .discover-section #discover-accordion .box-content #collapse-feasibility {
     text-align: center;
     border-top: 2px dashed #f7d0cb;
-    padding-top: 40px; }
-  #hospitality-page .discover-section #discover-accordion .box-content .box-head fieldset legend {
-    width: 38%; } }
+    padding-top: 40px; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   nav.navbar .navbar-collapse .navbar-brand {
@@ -6358,9 +6356,9 @@ small {
     height: 100vh;
     max-height: 890px;
     background-size: cover; }
-  #hospitality-page .discover-section .container > h3 {
+  #hospitality-page .discover-section .container .h3 h3 {
     font-size: 53px; }
-    #hospitality-page .discover-section .container > h3.scale-small {
+    #hospitality-page .discover-section .container .h3 h3.scale-small {
       font-size: 36px; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content #collapse-feasibility {
     margin-top: 20px; }
