@@ -3575,6 +3575,10 @@ small {
           position: absolute;
           width: 100%;
           height: 100%;
+          left: 0;
+          top: 0;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
           background-color: #1f3052;
           -webkit-transition: opacity 0.1s ease-in 0.3s;
           -ms-transition: opacity 0.1s ease-in 0.3s;
