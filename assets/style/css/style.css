@@ -4953,6 +4953,8 @@ small {
       font-size: 31px; }
     #hospitality-page .discover-section h3 {
       font-size: 24px; }
+    #hospitality-page .discover-section.fade-in .container .h3 h3 {
+      font-size: 24px; }
     #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu {
       display: -webkit-box;
       display: -moz-box;
@@ -5959,7 +5961,7 @@ small {
     margin-bottom: 40px; }
     #hospitality-page .feasibility-section .row .column h3, #hospitality-page .development-section .row .column h3, #hospitality-page .operational-section .row .column h3 {
       font-size: 28px; }
-  #hospitality-page .discover-section .container .h3 h3 {
+  #hospitality-page .discover-section.fade-in .container .h3 h3 {
     font-size: 24px; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu {
     display: -webkit-box;
@@ -6167,7 +6169,9 @@ small {
     #whyus-page .row h1 {
       font-size: 35px; } }
 
-@media (min-width: 799.98px) and (max-height: 1280px) {
+@media (min-width: 799.98px) and (min-height: 1280px) {
+  #hospitality-page .discover-section.fade-in .container .h3 h3 {
+    font-size: 36px; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu .oxford-mb .box-item-mb {
     width: 46%;
     height: 200px; }
@@ -6283,6 +6287,10 @@ small {
     flex: 0 0 66.66%; }
   #hospitality-page .feasibility-section, #hospitality-page .development-section, #hospitality-page .operational-section {
     margin: -1px 0; }
+  #hospitality-page .discover-section.fade-in .container .h3.scale-small h3 {
+    font-size: 36px; }
+  #hospitality-page .discover-section.fade-in .container .h3 h3 {
+    font-size: 53px; }
   #hospitality-page .roles-section {
     margin-top: -1px; }
     #hospitality-page .roles-section .column.col_1, #hospitality-page .roles-section .column.col_3 {
@@ -6412,8 +6420,6 @@ small {
     height: auto; }
   #hospitality-page .discover-section .container .h3 h3 {
     font-size: 36px; }
-  #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-head fieldset legend {
-    width: 59%; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-item .box-link .flip-card-back .flip-card-back-content._more h3 {
     font-size: 14px; } }
 
