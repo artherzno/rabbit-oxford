@@ -4185,7 +4185,7 @@ small {
               transform: rotateY(180deg);
               border: 1px solid #D5F5FF;
               box-shadow: 0 0 36px #5ba1f9;
-              background-color: $blue;
+              // background-color: $blue;
 
               .flip-card-front {
                 z-index: -1;
@@ -4193,7 +4193,7 @@ small {
               }
 
               .flip-card-back {
-                z-index: 99;
+                z-index: 1;
                 opacity: 1;
               }
             }
