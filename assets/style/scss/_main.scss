@@ -4061,7 +4061,7 @@ small {
         @include transition(transform 0.4s ease);
 
         &.scale-small {
-          @include transform(scale(0.7));
+          @include transform(scale(0.69));
         }
 
         .oxford-mb {
@@ -4140,7 +4140,7 @@ small {
             width: 30%;
             color: $pink;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0;
             font: 24px/1 oswald, arial;
             margin: 0 auto;
           }
@@ -5354,7 +5354,7 @@ $breadcrumb-divider: quote(">");
             fieldset {
 
               legend {
-                width: 70%;
+                width: 62%;
               }
             }
 
@@ -5522,6 +5522,44 @@ $breadcrumb-divider: quote(">");
 
         p {
           font-size: 16px;
+        }
+      }
+    }
+
+    .discover-section {
+
+      #discover-accordion {
+        
+        .box-content {
+
+          .box-head {
+
+            fieldset {
+  
+              legend {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+    } 
+
+    .modal {
+
+      &#development-modal1 {
+
+        .modal-dialog {
+
+          .modal-content {
+
+            .modal-body {
+
+              .flip-card-list {
+                top: 56%;
+              }
+            }
+          }
         }
       }
     }
@@ -7095,7 +7133,7 @@ $breadcrumb-divider: quote(">");
             margin-bottom: 65px;
 
             legend {
-              width: 60%;
+              width: 54%;
               // font-size: 20px;
             }
           }
@@ -9214,11 +9252,14 @@ $breadcrumb-divider: quote(">");
 
         .box-content {
 
-          fieldset {
+          .box-head {
 
-            legend {
-              // font-size: 20px;
-              width: 46%;
+            fieldset {
+
+              legend {
+                // font-size: 20px;
+                width: 46%;
+              }
             }
           }
 
@@ -9646,6 +9687,16 @@ $breadcrumb-divider: quote(">");
 
   .discover-section {
 
+    .container {
+
+      .h3 {
+
+        h3 {
+          font-size: 36px !important;
+        }
+      }
+    }
+
     #discover-accordion {
 
       &.discover-accordion {
@@ -9671,6 +9722,17 @@ $breadcrumb-divider: quote(">");
       }
 
       .box-content {
+
+        .box-head {
+
+          fieldset {
+
+            legend {
+              // font-size: 20px;
+              width: 59%;
+            }
+          }
+        }
 
         #collapse-feasibility {
           text-align: center;
@@ -11649,7 +11711,7 @@ $breadcrumb-divider: quote(">");
               }
   
               .flip-card-inner {
-                @include transition(transform .8s);
+                @include transition(transform 1.2s);
               }
   
               .flip-card:hover .flip-card-inner {
@@ -11672,13 +11734,13 @@ $breadcrumb-divider: quote(">");
   
               .flip-card-front {
                 opacity: 1;
-                @include transition(opacity .4s ease-in);
+                @include transition(opacity .6s ease-in);
               }
   
               .flip-card-back {
                 // transform: rotateY(0);
                 opacity: 0;
-                @include transition(opacity .4s ease-in);
+                @include transition(opacity .6s ease-in);
               }
             }
           }

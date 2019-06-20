@@ -3475,9 +3475,9 @@ small {
       transition: transform 0.4s ease;
       transition: transform 0.4s ease, -webkit-transform 0.4s ease; }
       #hospitality-page .discover-section #discover-accordion .box-menu.scale-small {
-        -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-        transform: scale(0.7); }
+        -webkit-transform: scale(0.69);
+        -ms-transform: scale(0.69);
+        transform: scale(0.69); }
       #hospitality-page .discover-section #discover-accordion .box-menu .oxford-mb {
         text-align: center; }
       #hospitality-page .discover-section #discover-accordion .box-menu .oxford-dt {
@@ -3523,7 +3523,7 @@ small {
         width: 30%;
         color: #f7d0cb;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0;
         font: 24px/1 oswald, arial;
         margin: 0 auto; }
     #hospitality-page .discover-section #discover-accordion .box-content .box-item, #hospitality-page .discover-section #discover-accordion .box-content .box-head {
@@ -4191,7 +4191,7 @@ small {
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu .box-item .box-link h3 {
     font-size: 13px; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content fieldset legend {
-    width: 70%; }
+    width: 62%; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .collapse.show .box-col .box-item {
     width: 45%; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-content .box-col {
@@ -4219,7 +4219,11 @@ small {
   #hospitality-page .feasibility-section .column h3, #hospitality-page .development-section .column h3, #hospitality-page .operational-section .column h3 {
     font-size: 20px; }
   #hospitality-page .feasibility-section .column p, #hospitality-page .development-section .column p, #hospitality-page .operational-section .column p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-head fieldset legend {
+    width: 50%; }
+  #hospitality-page .modal#development-modal1 .modal-dialog .modal-content .modal-body .flip-card-list {
+    top: 56%; } }
 
 @media (min-width: 400px) {
   .practics-page .content.fade-in {
@@ -4976,7 +4980,7 @@ small {
     #hospitality-page .discover-section #discover-accordion .box-content fieldset {
       margin-bottom: 65px; }
       #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
-        width: 60%; }
+        width: 54%; }
     #hospitality-page .discover-section #discover-accordion .box-item {
       width: 43%;
       margin: 0 10px 20px; }
@@ -5974,7 +5978,7 @@ small {
           -webkit-transform: translateY(-30px);
           -ms-transform: translateY(-30px);
           transform: translateY(-30px); }
-  #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
+  #hospitality-page .discover-section #discover-accordion .box-content .box-head fieldset legend {
     width: 46%; }
   #hospitality-page .discover-section #discover-accordion .box-content .collapse.show .box-item {
     width: 47% !important; }
@@ -6160,6 +6164,8 @@ small {
       font-size: 35px; } }
 
 @media (min-width: 800px) and (min-height: 1280px) {
+  #hospitality-page .discover-section .container .h3 h3 {
+    font-size: 36px !important; }
   #hospitality-page .discover-section #discover-accordion.discover-accordion .box-menu .oxford-mb .box-item-mb {
     width: 46%;
     height: 200px; }
@@ -6169,6 +6175,8 @@ small {
         -webkit-transform: none;
         -ms-transform: none;
         transform: none; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-head fieldset legend {
+    width: 59%; }
   #hospitality-page .discover-section #discover-accordion .box-content #collapse-feasibility {
     text-align: center;
     border-top: 2px dashed #f7d0cb;
@@ -6661,13 +6669,13 @@ small {
     opacity: 1; }
 
 .ie #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-inner, .ie #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-inner {
-  -webkit-transition: transform 0.8s;
-  -ms-transition: transform 0.8s;
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  -o-transition: transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s; }
+  -webkit-transition: transform 1.2s;
+  -ms-transition: transform 1.2s;
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: -webkit-transform 1.2s;
+  -o-transition: transform 1.2s;
+  transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s; }
 
 .ie #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card:hover .flip-card-inner .flip-card-front, .ie #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card:hover .flip-card-inner .flip-card-front {
   z-index: -1;
@@ -6683,17 +6691,17 @@ small {
 
 .ie #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-front, .ie #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-front {
   opacity: 1;
-  -webkit-transition: opacity 0.4s ease-in;
-  -ms-transition: opacity 0.4s ease-in;
-  -o-transition: opacity 0.4s ease-in;
-  transition: opacity 0.4s ease-in; }
+  -webkit-transition: opacity 0.6s ease-in;
+  -ms-transition: opacity 0.6s ease-in;
+  -o-transition: opacity 0.6s ease-in;
+  transition: opacity 0.6s ease-in; }
 
 .ie #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back, .ie #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back {
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease-in;
-  -ms-transition: opacity 0.4s ease-in;
-  -o-transition: opacity 0.4s ease-in;
-  transition: opacity 0.4s ease-in; }
+  -webkit-transition: opacity 0.6s ease-in;
+  -ms-transition: opacity 0.6s ease-in;
+  -o-transition: opacity 0.6s ease-in;
+  transition: opacity 0.6s ease-in; }
 
 .ie #locations .modal-area .modal-dialog {
   width: 600px; }
