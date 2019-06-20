@@ -3333,6 +3333,20 @@ small {
     transition: font-size 0.4s ease; }
     #hospitality-page .discover-section h3.scale-small {
       font-size: 24px; }
+  #hospitality-page .discover-section .container > h3 {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.8s ease 0.6s;
+    -ms-transition: all 0.8s ease 0.6s;
+    -o-transition: all 0.8s ease 0.6s;
+    transition: all 0.8s ease 0.6s; }
+  #hospitality-page .discover-section.fade-in .container > h3 {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
   #hospitality-page .discover-section #discover-accordion {
     margin-top: 60px; }
     #hospitality-page .discover-section #discover-accordion .box-item-mb {

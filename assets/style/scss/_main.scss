@@ -3864,6 +3864,26 @@ small {
       }
     }
 
+    .container {
+
+      > h3 {
+        opacity: 0;
+        @include transform(translateY(20%));
+        @include transition(all 0.8s ease 0.6s);
+      }
+    }
+
+    &.fade-in {
+
+      .container {
+
+        > h3 {
+          opacity: 1;
+          @include transform(translateY(0));
+        }
+      }
+    }
+
     #discover-accordion {
       // display: none;
       margin-top: 60px;
