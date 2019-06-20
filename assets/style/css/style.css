@@ -6685,10 +6685,6 @@ small {
   z-index: 1;
   opacity: 1; }
 
-.ie #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-front, .ie #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-back, .ie #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-front, .ie #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back {
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible; }
-
 .ie #hospitality-page .discover-section #discover-accordion .box-content .box-head .box-link .flip-card-front, .ie #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-front {
   opacity: 1;
   -webkit-transition: opacity 0.6s ease-in;
