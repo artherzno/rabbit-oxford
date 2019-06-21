@@ -10315,7 +10315,7 @@ $breadcrumb-divider: quote(">");
           fieldset {
 
             legend {
-              width: 64% !important;
+              // width: 64% !important;
             }
           }
 
@@ -10605,7 +10605,7 @@ $breadcrumb-divider: quote(">");
           fieldset {
 
             legend {
-              font-size: 36px;
+              // font-size: 36px;
               width: 48%;
             }
           }
@@ -10767,6 +10767,28 @@ $breadcrumb-divider: quote(">");
 
     .figcaption-body {
       width: 50%;
+    }
+  }
+
+  #hospitality-page {
+
+    .discover-section {
+
+      #discover-accordion {
+
+        .box-content {
+
+          .box-head {
+
+            fieldset {
+
+              legend {
+                font-size: 36px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 

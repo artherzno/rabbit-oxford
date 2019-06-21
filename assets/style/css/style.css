@@ -6334,8 +6334,6 @@ small {
     height: 100vh !important;
     max-height: 890px;
     background-size: cover !important; }
-  #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
-    width: 64% !important; }
   #hospitality-page .discover-section #discover-accordion .box-content .collapse.show .box-item {
     width: 47% !important; }
   #hospitality-page .discover-section #discover-accordion .box-content .box-item .box-link .flip-card-back .flip-card-back-content._more h3 {
@@ -6402,7 +6400,6 @@ small {
     display: flex !important;
     height: 290px; }
   #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
-    font-size: 36px;
     width: 48%; }
   #hospitality-page .discover-section #discover-accordion .box-content .box-col {
     width: 100%; }
@@ -6440,6 +6437,8 @@ small {
     font-size: 50px; }
   #hospitality .figcaption-body {
     width: 50%; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-head fieldset legend {
+    font-size: 36px; }
   #blog #carouselBlog .item a {
     height: 512px; }
   #blog .figure .figure-img {
