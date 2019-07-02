@@ -40,17 +40,21 @@ $(document).ready(function(){
   // orientationScreen();
 
   function detectMobileTablet() {
-   if( navigator.userAgent.match(/Android/i)
-   || navigator.userAgent.match(/webOS/i)
-   || navigator.userAgent.match(/iPhone/i)
-  //  || navigator.userAgent.match(/iPad/i)
-   || navigator.userAgent.match(/iPod/i)
-   || navigator.userAgent.match(/BlackBerry/i)
-   || navigator.userAgent.match(/Windows Phone/i)
-   ){
-      // console.log('true');
-      // console.log(navigator.userAgent);
-      orientationScreen();
+    var winW = $(window).width();
+    console.log(winW);
+    if(winW < 1024) {
+      if( navigator.userAgent.match(/Android/i)
+      || navigator.userAgent.match(/webOS/i)
+      || navigator.userAgent.match(/iPhone/i)
+      || navigator.userAgent.match(/iPad/i)
+      || navigator.userAgent.match(/iPod/i)
+      || navigator.userAgent.match(/BlackBerry/i)
+      || navigator.userAgent.match(/Windows Phone/i)
+      ){
+        // console.log('true');
+        // console.log(navigator.userAgent);
+        orientationScreen();
+      }
     }
   }
   detectMobileTablet();
