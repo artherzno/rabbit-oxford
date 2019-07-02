@@ -6439,8 +6439,89 @@ small {
     font-size: 50px; }
   #hospitality .figcaption-body {
     width: 50%; }
+  #hospitality-page .discover-section #discover-accordion .box-menu .oxford-mb {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 67%;
+    margin-bottom: 15px; }
+  #hospitality-page .discover-section #discover-accordion .box-menu .oxford-dt {
+    display: none !important; }
   #hospitality-page .discover-section #discover-accordion .box-content .box-head fieldset legend {
     font-size: 36px; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-item .oxford-mb {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
+    #hospitality-page .discover-section #discover-accordion .box-content .box-item .oxford-mb .box-modal-button {
+      width: 100%;
+      height: 100%;
+      background-color: #1f3052;
+      display: block;
+      padding: 120px 0; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-item .oxford-dt {
+    display: none !important; }
+  #hospitality-page .hospitality-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1058;
+    -webkit-transition: opacity 0.6s ease;
+    -ms-transition: opacity 0.6s ease;
+    -o-transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease; }
+    #hospitality-page .hospitality-modal .modal-dialog {
+      max-width: none;
+      max-height: none;
+      width: 100%;
+      height: 100%; }
+      #hospitality-page .hospitality-modal .modal-dialog .modal-content {
+        width: 100%;
+        height: 100%;
+        background-color: #1f3052;
+        position: relative;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none; }
+        #hospitality-page .hospitality-modal .modal-dialog .modal-content .modal-header {
+          width: 100%;
+          height: 63px;
+          overflow: hidden; }
+          #hospitality-page .hospitality-modal .modal-dialog .modal-content .modal-header button {
+            position: absolute;
+            right: 10px;
+            background: none;
+            border: none; }
+        #hospitality-page .hospitality-modal .modal-dialog .modal-content .modal-body {
+          padding: 0; }
+          #hospitality-page .hospitality-modal .modal-dialog .modal-content .modal-body .flip-card-list {
+            text-align: center;
+            width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-60%);
+            -ms-transform: translateX(-50%) translateY(-60%);
+            transform: translateX(-50%) translateY(-60%); }
+            #hospitality-page .hospitality-modal .modal-dialog .modal-content .modal-body .flip-card-list > div {
+              overflow: hidden;
+              margin-bottom: 20px; }
+            #hospitality-page .hospitality-modal .modal-dialog .modal-content .modal-body .flip-card-list img {
+              display: inline-block;
+              width: 20%;
+              height: auto;
+              max-width: 40px;
+              max-height: 60px; }
+            #hospitality-page .hospitality-modal .modal-dialog .modal-content .modal-body .flip-card-list h3 {
+              display: initial;
+              vertical-align: middle;
+              width: 79%;
+              font-weight: 400;
+              text-align: left;
+              margin-bottom: 30px;
+              font-size: 36px;
+              text-transform: uppercase;
+              color: #f7d0cb; }
   #blog #carouselBlog .item a {
     height: 512px; }
   #blog .figure .figure-img {
@@ -6466,10 +6547,14 @@ small {
     padding: 70px 35px; }
     #contactus-page #contactus-form .section-form .contactus-detail-card .contactus-detail .figure {
       margin-right: 20px; }
-  #whyus-page .content.fade-in .figure img {
-    width: 80%; }
-  #whyus-page .content.fade-in .figcaption h1 {
-    font-size: 50px; } }
+  #whyus-page {
+    overflow: hidden; }
+    #whyus-page .row p {
+      font-size: 16px; }
+    #whyus-page .content.fade-in .figure img {
+      width: 80%; }
+    #whyus-page .content.fade-in .figcaption h1 {
+      font-size: 50px; } }
 
 @media (min-width: 1120px) {
   #banner {
@@ -6483,7 +6568,19 @@ small {
   #blogs-page .row .figure.column {
     height: 512px; }
   #blogsdetail-page .related #carouselRelated.owl-carousel .owl-item .item a {
-    height: 512px; } }
+    height: 512px; }
+  #hospitality-page .discover-section #discover-accordion .box-menu .oxford-mb {
+    display: none !important;
+    width: auto;
+    margin-bottom: 0; }
+  #hospitality-page .discover-section #discover-accordion .box-menu .oxford-dt {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-item .oxford-mb {
+    display: none !important; }
+  #hospitality-page .discover-section #discover-accordion .box-content .box-item .oxford-dt {
+    display: block !important; } }
 
 @media (min-width: 1152px) {
   nav.navbar .navbar-nav li .nav-link {
@@ -6584,7 +6681,9 @@ small {
   #hospitality-page .discover-section #discover-accordion .box-content fieldset legend {
     width: 40%; }
   #hospitality-page .discover-section #discover-accordion .box-link h3 {
-    font-size: 35px; } }
+    font-size: 35px; }
+  #whyus-page .row p {
+    font-size: 20px; } }
 
 @media (min-width: 1400px) {
   nav.navbar .navbar-nav li .nav-link {
