@@ -6423,6 +6423,8 @@ small {
 @media (min-width: 1024px) {
   #footer .row._first .nav li a {
     padding: .5rem; }
+  #banner {
+    height: 100vh !important; }
   #locations {
     height: 100vh; }
     #locations .row .modal-area {
@@ -6470,6 +6472,8 @@ small {
     font-size: 50px; } }
 
 @media (min-width: 1120px) {
+  #banner {
+    height: 100vh !important; }
   #locations {
     height: 100vh; }
     #locations .row .modal-area {

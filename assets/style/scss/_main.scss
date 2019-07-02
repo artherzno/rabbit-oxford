@@ -10732,6 +10732,10 @@ $breadcrumb-divider: quote(">");
     }
   }
 
+  #banner {
+    height: 100vh !important;
+  }
+
   #locations {
     height: 100vh;
 
@@ -10942,6 +10946,10 @@ $breadcrumb-divider: quote(">");
 }
 
 @media (min-width: 1120px) {
+  #banner {
+    height: 100vh !important;
+  }
+
   #locations {
     height: 100vh;
 
