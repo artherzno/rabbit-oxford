@@ -26,7 +26,7 @@ $(document).ready(function(){
 
     } else {
       var winWidthCurr = screen.availWidth;
-      if(winWidthCurr < 1024) {
+      if(winWidthCurr < 1023) {
         $('.dontOrientation').addClass('show');
       }
     }
@@ -34,7 +34,7 @@ $(document).ready(function(){
     window.addEventListener("orientationchange", function() {
       var winWidthCurr = screen.availWidth;
       console.log(winWidthCurr);
-      if(winWidthCurr < 1024) {
+      if(winWidthCurr < 1023) {
         // console.log(window.orientation);
         if(window.orientation == 0 || window.orientation == undefined) {
           $('.dontOrientation').removeClass('show');
