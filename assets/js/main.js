@@ -25,36 +25,39 @@ $(document).ready(function(){
       },500);
 
     } else {
-      $('.dontOrientation').addClass('show');
+      var winWidthCurr = screen.availWidth;
+      if(winWidthCurr < 1024) {
+        $('.dontOrientation').addClass('show');
+      }
     }
 
     window.addEventListener("orientationchange", function() {
-      // console.log(window.orientation);
-      if(window.orientation == 0 || window.orientation == undefined) {
-        $('.dontOrientation').removeClass('show');
-      } else {
-        $('.dontOrientation').addClass('show');
+      var winWidthCurr = screen.availWidth;
+      console.log(winWidthCurr);
+      if(winWidthCurr < 1024) {
+        // console.log(window.orientation);
+        if(window.orientation == 0 || window.orientation == undefined) {
+          $('.dontOrientation').removeClass('show');
+        } else {
+          $('.dontOrientation').addClass('show');
+        }
       }
     }, false);
   }
   // orientationScreen();
 
   function detectMobileTablet() {
-    var winW = $(window).width();
-    console.log(winW);
-    if(winW < 1024) {
-      if( navigator.userAgent.match(/Android/i)
-      || navigator.userAgent.match(/webOS/i)
-      || navigator.userAgent.match(/iPhone/i)
-      || navigator.userAgent.match(/iPad/i)
-      || navigator.userAgent.match(/iPod/i)
-      || navigator.userAgent.match(/BlackBerry/i)
-      || navigator.userAgent.match(/Windows Phone/i)
-      ){
-        // console.log('true');
-        // console.log(navigator.userAgent);
-        orientationScreen();
-      }
+   if( navigator.userAgent.match(/Android/i)
+   || navigator.userAgent.match(/webOS/i)
+   || navigator.userAgent.match(/iPhone/i)
+   || navigator.userAgent.match(/iPad/i)
+   || navigator.userAgent.match(/iPod/i)
+   || navigator.userAgent.match(/BlackBerry/i)
+   || navigator.userAgent.match(/Windows Phone/i)
+   ){
+      // console.log('true');
+      // console.log(navigator.userAgent);
+      orientationScreen();
     }
   }
   detectMobileTablet();
