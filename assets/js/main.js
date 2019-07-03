@@ -26,6 +26,7 @@ $(document).ready(function(){
 
     } else {
       var winWidthCurr = screen.availWidth;
+      $('#carouselHospitality .owl-item h1').removeAttr('style');
       if(winWidthCurr < 1024) {
         $('.dontOrientation').addClass('show');
       }
