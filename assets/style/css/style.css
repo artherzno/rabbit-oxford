@@ -3720,7 +3720,7 @@ small {
   background-image: url("../../images/financialtransformation/oxf_bg_banner.jpg"); }
 
 .practics-page {
-  background-color: #fff; }
+  background-color: #000; }
   .practics-page .banner {
     width: 100%;
     height: 890px;
@@ -3756,7 +3756,8 @@ small {
       transform: translateY(0); }
   .practics-page .content {
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    background-color: #fff; }
     .practics-page .content .row {
       height: 100%;
       position: relative;
@@ -3814,7 +3815,8 @@ small {
       -ms-transform: translateY(0);
       transform: translateY(0); }
   .practics-page .breadcrumb {
-    margin: 70px 0 60px;
+    padding: 70px 0 60px;
+    margin: 0;
     opacity: 0;
     -webkit-transform: translateY(50%);
     -ms-transform: translateY(50%);
@@ -4873,7 +4875,7 @@ small {
       right: 5%;
       bottom: 5%; }
   .practics-page .breadcrumb {
-    margin: 40px 0; }
+    padding: 40px 0; }
   .practics-page .content {
     padding-bottom: 26%; }
     .practics-page .content .row {
@@ -6496,7 +6498,7 @@ small {
           padding: 0; }
           #hospitality-page .hospitality-modal .modal-dialog .modal-content .modal-body .flip-card-list {
             text-align: center;
-            width: 70%;
+            width: 90%;
             position: absolute;
             top: 50%;
             left: 50%;

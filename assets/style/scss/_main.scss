@@ -4430,7 +4430,7 @@ small {
 
 // #hospitality-page, #strategy-page, #demandgeneration-page, #demandfulfillment-page,  #financialtransformation-page, #organisationaloptimisation-page {
 .practics-page {
-  background-color: $white;
+  background-color: $black;
 
   .banner {
     width: 100%;
@@ -4472,6 +4472,7 @@ small {
   .content {
     position: relative;
     z-index: 2;
+    background-color: $white;
 
     .row {
       height: 100%;
@@ -4537,7 +4538,9 @@ small {
   }
 
   .breadcrumb {
-    margin: 70px 0 60px;
+    // margin: 70px 0 60px;
+    padding: 70px 0 60px;
+    margin: 0;
     opacity: 0;
     @include transform(translateY(50%));
     @include transition(all 0.8s ease-out);
@@ -6907,7 +6910,8 @@ $breadcrumb-divider: quote(">");
     }
 
     .breadcrumb {
-      margin: 40px 0;
+      // margin: 40px 0;
+      padding: 40px 0;
     }
 
     .content {
@@ -10866,7 +10870,7 @@ $breadcrumb-divider: quote(">");
 
             .flip-card-list {
               text-align: center;
-              width: 70%;
+              width: 90%;
               position: absolute;
               top: 50%;
               left: 50%;
