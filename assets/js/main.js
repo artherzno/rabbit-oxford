@@ -13,8 +13,12 @@ $(document).ready(function(){
 
   // Detect Orientation change /////////////////////////////////////////////////
   function orientationScreen() {
+    console.log(window.orientation+',');
     if(window.orientation == 0 || window.orientation == undefined) {
-      $('.dontOrientation').removeClass('show');
+      var winWidthCurr = screen.availWidth;
+      if(winWidthCurr < 1024) {
+        $('.dontOrientation').removeClass('show');
+      }
 
       var winWidth = $(window).width();
       setTimeout(function(){
@@ -32,37 +36,41 @@ $(document).ready(function(){
       }
     }
 
-    window.addEventListener("orientationchange", function() {
-      var winWidthCurr = screen.availWidth;
-      // console.log(winWidthCurr);
-      if(winWidthCurr < 1024) {
-        // console.log(window.orientation);
-        if(window.orientation == 0 || window.orientation == undefined) {
-          $('.dontOrientation').removeClass('show');
-        } else {
-          $('.dontOrientation').addClass('show');
-        }
-      }
-    }, false);
+    // window.addEventListener("orientationchange", function() {
+    //   var winWidthCurr = screen.availWidth;
+    //   // console.log(winWidthCurr);
+    //   if(winWidthCurr < 1024) {
+    //     // console.log(window.orientation);
+    //     if(window.orientation == 0 || window.orientation == undefined) {
+    //       $('.dontOrientation').removeClass('show');
+    //     } else {
+    //       $('.dontOrientation').addClass('show');
+    //     }
+    //   }
+    // }, false);
   }
   // orientationScreen();
 
   function detectMobileTablet() {
-   if( navigator.userAgent.match(/Android/i)
-   || navigator.userAgent.match(/webOS/i)
-   || navigator.userAgent.match(/iPhone/i)
-   || navigator.userAgent.match(/iPad/i)
-   || navigator.userAgent.match(/iPod/i)
-   || navigator.userAgent.match(/BlackBerry/i)
-   || navigator.userAgent.match(/Windows Phone/i)
-   ){
-      // console.log('true');
-      // console.log(navigator.userAgent);
-      var winWidthCurr = screen.availWidth;
-      // console.log(winWidthCurr);
-      if(winWidthCurr < 1024) {
-        orientationScreen();
-      }
+  //  if( navigator.userAgent.match(/Android/i)
+  //  || navigator.userAgent.match(/webOS/i)
+  //  || navigator.userAgent.match(/iPhone/i)
+  //  || navigator.userAgent.match(/iPad/i)
+  //  || navigator.userAgent.match(/iPod/i)
+  //  || navigator.userAgent.match(/BlackBerry/i)
+  //  || navigator.userAgent.match(/Windows Phone/i)
+  //  ){
+  //     // console.log('true');
+  //     // console.log(navigator.userAgent);
+  //     var winWidthCurr = screen.availWidth;
+  //     // console.log(winWidthCurr);
+  //     if(winWidthCurr < 1024) {
+  //       orientationScreen();
+  //     }
+  //   }
+    var winWidthCurr = screen.availWidth;
+    if(winWidthCurr < 1024) {
+      orientationScreen();
     }
   }
   detectMobileTablet();
