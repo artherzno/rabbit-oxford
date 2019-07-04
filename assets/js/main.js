@@ -15,10 +15,7 @@ $(document).ready(function(){
   function orientationScreen() {
     
     if(window.orientation == 0 || window.orientation == undefined) {
-      var winWidthCurr = screen.availWidth;
-      if(winWidthCurr < 800) {
-        $('.dontOrientation').removeClass('show');
-      }
+      $('.dontOrientation').removeClass('show');
 
       var winWidth = $(window).width();
       setTimeout(function(){
@@ -29,11 +26,8 @@ $(document).ready(function(){
       },500);
 
     } else {
-      var winWidthCurr = screen.availWidth;
       $('#carouselHospitality .owl-item h1').removeAttr('style');
-      if(winWidthCurr < 800) {
-        $('.dontOrientation').addClass('show');
-      }
+      $('.dontOrientation').addClass('show');
     }
 
     // window.addEventListener("orientationchange", function() {
@@ -69,7 +63,7 @@ $(document).ready(function(){
   //     }
   //   }
     var winWidthCurr = screen.availWidth;
-    if(winWidthCurr < 800) {
+    if(winWidthCurr < 1023) {
       orientationScreen();
     }
   }
@@ -433,7 +427,8 @@ $(document).ready(function(){
 
 // Window Resize ///////////////////////////////////////////////////////////////
  $(window).resize(function(event) {
-   orientationScreen();
+  //  orientationScreen();
+   detectMobileTablet();
    checkWindowWidth();
  });
 
