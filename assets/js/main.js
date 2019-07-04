@@ -46,25 +46,18 @@ $(document).ready(function(){
   // orientationScreen();
 
   function detectMobileTablet() {
-  //  if( navigator.userAgent.match(/Android/i)
-  //  || navigator.userAgent.match(/webOS/i)
-  //  || navigator.userAgent.match(/iPhone/i)
-  //  || navigator.userAgent.match(/iPad/i)
-  //  || navigator.userAgent.match(/iPod/i)
-  //  || navigator.userAgent.match(/BlackBerry/i)
-  //  || navigator.userAgent.match(/Windows Phone/i)
-  //  ){
-  //     // console.log('true');
-  //     // console.log(navigator.userAgent);
-  //     var winWidthCurr = screen.availWidth;
-  //     // console.log(winWidthCurr);
-  //     if(winWidthCurr < 1024) {
-  //       orientationScreen();
-  //     }
-  //   }
-    var winWidthCurr = screen.availWidth;
-    if(winWidthCurr < 960) {
-      orientationScreen();
+   if( navigator.userAgent.match(/Android/i)
+   || navigator.userAgent.match(/webOS/i)
+   || navigator.userAgent.match(/iPhone/i)
+   || navigator.userAgent.match(/iPad/i)
+   || navigator.userAgent.match(/iPod/i)
+   || navigator.userAgent.match(/BlackBerry/i)
+   || navigator.userAgent.match(/Windows Phone/i)
+   ){
+      var winWidthCurr = screen.availWidth;
+      if(winWidthCurr < 767) {
+        orientationScreen();
+      }
     }
   }
   detectMobileTablet();
