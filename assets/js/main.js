@@ -63,7 +63,8 @@ $(document).ready(function(){
   //     }
   //   }
     var winWidthCurr = screen.availWidth;
-    if(winWidthCurr < 1023) {
+    console.log(winWidthCurr);
+    if(winWidthCurr < 767) {
       orientationScreen();
     }
   }
@@ -428,7 +429,7 @@ $(document).ready(function(){
 // Window Resize ///////////////////////////////////////////////////////////////
  $(window).resize(function(event) {
   //  orientationScreen();
-    setTimeoutsetTimeout(function(){
+    setTimeout(function(){
 
       detectMobileTablet();
     }, 100);
