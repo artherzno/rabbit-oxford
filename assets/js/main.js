@@ -13,7 +13,7 @@ $(document).ready(function(){
 
   // Detect Orientation change /////////////////////////////////////////////////
   function orientationScreen() {
-    console.log(window.orientation+',');
+    alert(screen.availWidth);
     if(window.orientation == 0 || window.orientation == undefined) {
       var winWidthCurr = screen.availWidth;
       if(winWidthCurr < 1024) {
