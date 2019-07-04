@@ -429,10 +429,9 @@ $(document).ready(function(){
 // Window Resize ///////////////////////////////////////////////////////////////
  $(window).resize(function(event) {
   //  orientationScreen();
-    setTimeout(function(){
-
+    // setTimeout(function(){
       detectMobileTablet();
-    }, 100);
+    // }, 100);
     checkWindowWidth();
  });
 
