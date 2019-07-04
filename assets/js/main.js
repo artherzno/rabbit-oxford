@@ -13,10 +13,10 @@ $(document).ready(function(){
 
   // Detect Orientation change /////////////////////////////////////////////////
   function orientationScreen() {
-    alert(screen.availWidth);
+    
     if(window.orientation == 0 || window.orientation == undefined) {
       var winWidthCurr = screen.availWidth;
-      if(winWidthCurr < 1024) {
+      if(winWidthCurr < 800) {
         $('.dontOrientation').removeClass('show');
       }
 
@@ -31,7 +31,7 @@ $(document).ready(function(){
     } else {
       var winWidthCurr = screen.availWidth;
       $('#carouselHospitality .owl-item h1').removeAttr('style');
-      if(winWidthCurr < 1024) {
+      if(winWidthCurr < 800) {
         $('.dontOrientation').addClass('show');
       }
     }
@@ -69,7 +69,7 @@ $(document).ready(function(){
   //     }
   //   }
     var winWidthCurr = screen.availWidth;
-    if(winWidthCurr < 1024) {
+    if(winWidthCurr < 800) {
       orientationScreen();
     }
   }
