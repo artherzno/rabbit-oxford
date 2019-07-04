@@ -428,8 +428,11 @@ $(document).ready(function(){
 // Window Resize ///////////////////////////////////////////////////////////////
  $(window).resize(function(event) {
   //  orientationScreen();
-   detectMobileTablet();
-   checkWindowWidth();
+    setTimeoutsetTimeout(function(){
+
+      detectMobileTablet();
+    }, 100);
+    checkWindowWidth();
  });
 
 
