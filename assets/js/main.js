@@ -55,7 +55,7 @@ $(document).ready(function(){
   //  || navigator.userAgent.match(/Windows Phone/i)
   //  ){
       var winWidthCurr = screen.availWidth;
-      if(winWidthCurr < 767) {
+      if(winWidthCurr < 640) {
         orientationScreen();
       }
     // }
