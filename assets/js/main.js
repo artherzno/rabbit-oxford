@@ -46,18 +46,19 @@ $(document).ready(function(){
   // orientationScreen();
 
   function detectMobileTablet() {
-   if( navigator.userAgent.match(/Android/i)
-   || navigator.userAgent.match(/webOS/i)
-   || navigator.userAgent.match(/iPhone/i)
-   || navigator.userAgent.match(/iPad/i)
-   || navigator.userAgent.match(/iPod/i)
-   || navigator.userAgent.match(/BlackBerry/i)
-   || navigator.userAgent.match(/Windows Phone/i)
-   ){
-      var winWidthCurr = screen.availWidth;
-      if(winWidthCurr < 815) {
+    var winWidthCurr = screen.availWidth;
+    if(winWidthCurr < 815) {
+      // if( navigator.userAgent.match(/Android/i)
+      // || navigator.userAgent.match(/webOS/i)
+      // || navigator.userAgent.match(/iPhone/i)
+      // || navigator.userAgent.match(/iPad/i)
+      // || navigator.userAgent.match(/iPod/i)
+      // || navigator.userAgent.match(/BlackBerry/i)
+      // || navigator.userAgent.match(/Windows Phone/i)
+      // ){
+      
         orientationScreen();
-      }
+      // }
     }
   }
   detectMobileTablet();
@@ -421,9 +422,7 @@ $(document).ready(function(){
 // Window Resize ///////////////////////////////////////////////////////////////
  $(window).resize(function(event) {
     //  orientationScreen();
-    setTimeout(function(){
-      detectMobileTablet();
-    }, 100);
+    detectMobileTablet();
     checkWindowWidth();
  });
 
