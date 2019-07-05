@@ -47,7 +47,7 @@ $(document).ready(function(){
 
   function detectMobileTablet() {
     var winWidthCurr = screen.availWidth;
-    if(winWidthCurr < 600) {
+    if(winWidthCurr < 750) {
       if( navigator.userAgent.match(/Android/i)
       || navigator.userAgent.match(/webOS/i)
       || navigator.userAgent.match(/iPhone/i)
