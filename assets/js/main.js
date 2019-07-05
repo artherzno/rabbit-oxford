@@ -55,7 +55,7 @@ $(document).ready(function(){
    || navigator.userAgent.match(/Windows Phone/i)
    ){
       var winWidthCurr = screen.availWidth;
-      if(winWidthCurr < 760) {
+      if(winWidthCurr < 815) {
         orientationScreen();
       }
     }
@@ -421,7 +421,9 @@ $(document).ready(function(){
 // Window Resize ///////////////////////////////////////////////////////////////
  $(window).resize(function(event) {
     //  orientationScreen();
-    detectMobileTablet();
+    setTimeout(function(){
+      detectMobileTablet();
+    }, 100);
     checkWindowWidth();
  });
 
