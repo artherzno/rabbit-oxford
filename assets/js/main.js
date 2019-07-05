@@ -47,6 +47,7 @@ $(document).ready(function(){
 
   function detectMobileTablet() {
     var winWidthCurr = screen.availWidth;
+    alert(winWidthCurr);
     if(winWidthCurr < 815) {
       // if( navigator.userAgent.match(/Android/i)
       // || navigator.userAgent.match(/webOS/i)
